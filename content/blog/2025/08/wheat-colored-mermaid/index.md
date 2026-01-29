@@ -1,0 +1,32 @@
++++
+title = "小麦色のマーメイド"
+description = "暑い。松田聖子さんの『小麦色のマーメイド』が思い浮かんだので演奏してみました。"
+date = 2025-08-29
+aliases = ["/articles/2025/08/29/wheat-colored-mermaid"]
++++
+
+This song performed by Seiko Matsuda was originally released in July 1982,
+and I remember it well as it was during my first summer away from home.
+
+It was composed by the renowned Japanese singer-songwriter Yumi Matsutoya (under
+the pen name Kuroda Karaho). I was amazed at the time by how brilliantly the
+song captured the languid feeling of summer through sustained bass notes
+using fractional chords and melodies centered on tension notes.
+
+I suddenly remembered this song, so I decided to perform it. Everything
+except the guitar is programmed sequenced. The vocals are done with
+Synthesizer V.
+
+<SoundCloudEmbed
+  apiurl="https://api.soundcloud.com/tracks/2161359513"
+  url="https://soundcloud.com/yostos/m6lxfowipg2j"
+  title="小麦色のマーメイド"
+/>
+
+松田聖子さんが歌うこの曲の原曲は 1982 年 7 月にリリースされ、地元を離れた最初の
+夏だったのでよく憶えています。
+
+呉田軽穂こと松任谷由実さんの作曲で、夏の気だるさを分数和音を使ったベースの継続音
+とテンションノート中心のメロディで上手く表現した素晴らしい楽曲だと当時驚いたものです。
+
+ふと思い出したので、演奏してみました。ギター以外は打ち込みです。ヴォーカルは Syntesizer V です。

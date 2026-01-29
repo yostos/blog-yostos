@@ -1,0 +1,59 @@
+base_url = "https://blog.yostos.org"
+title = "Coded Chords"
+description = "A personal blog"
+author = "yostos"
+
+theme = "tabi"
+
+default_language = "en"
+compile_sass = true
+minify_html = true
+build_search_index = false  # 日本語非対応のためPagefindを別途使用
+generate_feeds = true
+
+taxonomies = [{name = "tags", feed = true}]
+
+[slugify]
+anchors = "safe"  # 日本語見出しのアンカーリンクを保持
+
+[search]
+include_title = true
+include_description = true
+include_path = true
+include_content = true
+index_format = "elasticlunr_json"
+
+[markdown]
+bottom_footnotes = true
+definition_list = true
+
+[markdown.highlighting]
+theme = "catppuccin-frappe"
+style = "class"  # tabi必須
+
+[extra]
+theme_switcher = true
+show_reading_time = true
+show_date = true
+long_date_format = "%Y-%m-%d"
+short_date_format = "%Y-%m-%d"
+archive_date_format = "%Y-%m-%d"
+toc = true
+social_media_card = "images/coded-chords.webp"
+favicon = "apple-touch-icon.png"
+copy_button = true
+mermaid = false  # ページ単位で [extra] mermaid = true で有効化
+stylesheets = ["custom.css"]
+
+menu = [
+    { name = "blog", url = "blog", trailing_slash = true },
+    { name = "archive", url = "archive", trailing_slash = true },
+    { name = "tags", url = "tags", trailing_slash = true },
+    { name = "uses", url = "uses", trailing_slash = true },
+    { name = "about", url = "about", trailing_slash = true },
+]
+
+show_remote_source = false
+show_remote_changes = false
+iine = false
+enable_csp = false

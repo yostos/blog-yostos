@@ -1,0 +1,68 @@
++++
+title = "Universal Audio/UAFX Max Preamp & Dual Compressorを買う"
+description = "Strymon Compadreに満足していなかったわけではありませんが、少し安く売られているのを見つけたので、UAFX Max Preamp & Dual Compressorを購入してしまいました。"
+date = 2025-05-24
+aliases = ["/articles/2025/05/24/max"]
++++
+
+![UAFX Max Preamp & Dual Compressor](max.webp)
+
+## UAFX Max Preamp & Dual Compressor の概要
+
+[UAFX Max Preamp & Dual Compressor](https://amzn.to/4jhLWgM) は Amazon が他よりも少し安く購入できました。
+
+本機は Universal Audio から発売されているコンパクトなエフェクターですが、
+伝説的なコンプ 3 機種である Dyna Comp, LA-2A, UA 1176 を再現できる
+夢のようなエフェクターです。
+
+しかもコンプレッサーは 2 つを同時にしようできます。UA 1176 を 2 台直列に繋ぐよう
+なことも可能です。スマートフォンと接続すれば接続方法もシリアルからパラレルに
+カスタマイズできます。
+
+これだけでも十分美味しいのですが、更に UA のチューブ・マイク・プリアンプ 610 を
+シミュレートしたプリアンプが搭載されており、甘い質感で音をブーストすることも
+可能です。
+
+## 実際に弾いてみた
+
+まず、プリアンプは Universal Audio が誇るビンテージチューブプリアンプである
+UA610 をシミュレートしています。
+ブースター的な使い方でなくサチュレーションを付与するためゲインを稼ぐ効果が
+期待できます。音に厚みや温かみを与えることができます。
+
+すべてのコンプレッサーの経験があるわけではありませんが、Dyna Comp のブーミー
+さや緻密な 1176 などかなり再現性が高いと思います。
+
+また、シリアルに 2 台つなげることが可能です。LA-2A で音を整えて UA1176 でサス
+ティーンを稼ぐなど、実際にポストレコーディングで行われているような処理を足下
+で扱えるのは感動です。
+
+
+ちょっとだけ弾いてみました。クリーントーンは Epiphone Casino に Dyna Comp +
+UA 1176 です。ディストーションは Aria Pro II PE-1500 に LA-2A + Overdriveland
+です。
+
+<SoundCloudEmbed
+url="https://soundcloud.com/yostos/youre-everything-i-see?si=acc4d37d1a0345dbb6547d83bf11981f&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing"
+apiulr="https://api.soundcloud.com/tracks/2101336863"
+title="You're Everything I See"
+/>
+
+## 使ってみた感想
+
+内部はデジタルな処理をしていると思いますが、コントロールはつまみを使ったアナログです。
+使いやすいのですが、次の点が気になりました。
+
+- コンプによって有効なつまみが違うので編集時に戸惑う
+- 同じコントロールを 2 台のコンプで共有する形になっておりトグルスイッチで切り
+替える方式のため、現在のコントロールの状態がどちらのものか分からない。
+
+私は自宅のレコーディングでしか使わないので大きな問題ではありませんが、
+ライブとか使う場合は混乱してしまいそうです。
+
+音については、さすがに伝説のコンプたちでとても高品質です。
+それぞれ性格が異なり本機はシリアルに順番も自由につなげることもできるので
+組み合わせもバリエーションがあり、UA1176 などは制御できるパラメーターが多いの
+で研究は必要です。
+
+伝説のコンプ 3 台がこの価格であれば十分価値があります。

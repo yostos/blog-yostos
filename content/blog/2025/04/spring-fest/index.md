@@ -1,0 +1,11 @@
++++
+title = "スプラトゥーン3：Sprintg Fest"
+description = "今週末のスプラトゥーンは春フェスでした。"
+date = 2025-04-13
+aliases = ["/articles/2025/04/13/spring-fest"]
++++
+
+もう大きな改修はないはずですが、
+Nintedo はこうやってフェスを定期的にやってくれています。ありがたい。
+
+{{ youtube(id="5s3rJRe7GwY") }}

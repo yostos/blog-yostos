@@ -1,0 +1,37 @@
++++
+title = "Beer O'clock Bottle shop"
+description = "千葉で有名なクラフトビールの店 Beer O'clockが移転したと思っていたら、旧店舗跡で別の形態で営業されていました。"
+date = 2024-11-27
+aliases = ["/articles/2024/11/27/beer-oclock-botton-shop"]
++++
+
+![トニックウォーター](glass.jpg)
+
+Beer O'clock, the renowned craft beer spot in Chiba, recently relocated. Curious about what became of its former location, I decided to check it out and discovered that it’s still operating as the [Beer O'clock Bottle Shop](https://www.instagram.com/beer_oclock_bottle_shop/).
+
+While chatting with the staff, I noticed a tonic water called [Our Tonic](https://can-pany.com/products/can-003-our-tonic-6pack) on the menu. Intrigued, I asked for more details and learned that it’s produced by a company called CAN-PANY, which also makes an herbal liqueur called [MITASOYA](https://mitosaya.com/products/eau-107-rhum-agricole) using herbs from Ōtaki Town. Apparently, they’re based in Kiyosumi Shirakawa...
+
+In the end, after trying the Our Tonic,
+I went for a drink made with [107 RHUM AGRICOLE](https://mitosaya.com/products/eau-107-rhum-agricole?_pos=7&_sid=59c6a47b8&_ss=r).
+It is liqueur from the same MITASOYA line that’s crafted with Chiba-made agricole rum, mixed with Our Tonic.
+
+“What? They make agricole rum in Chiba?” I had to confirm with the distillery.
+
+Wow, what a discovery that was.
+
+On the way home, I ended up ordering rum from the [Bōsō Ōikura Distillery](https://rhumboso.com/) online shop.
+
+---
+
+千葉で有名なクラフトビールの店 Beer O'clock が移転したので跡地がどうなっているのかなと見に行ってみたら
+[Beer O'clock Botton Shop](https://www.instagram.com/beer_oclock_bottle_shop/)としてまだ営業していました。
+
+お店の方はお話していて、[Our Tonic](https://can-pany.com/products/can-003-our-tonic-6pack)というトニックウォーターがメニューに有ったので、詳しく話を伺うと「[MITASOYA](https://mitosaya.com/products/eau-107-rhum-agricole)という大多喜町の薬草を使ったリキュールをやっている CAN-PANY という会社がやっていて清住白河に」。
+
+結局 Our Toic をいただいた後、この会社の MITASOYA というリキュールから[107 RHUM AGRICOLE](https://mitosaya.com/products/eau-107-rhum-agricole?_pos=7&_sid=59c6a47b8&_ss=r)という千葉のラム酒ベースのリキュールを Our Tonic で割ってたものをいただいた。
+
+「え？　千葉でアグリコールのラム酒作ってんの？」となって蔵元を確認。
+
+いやぁ、収穫だったなぁ。
+
+帰りには[房総大井倉蒸留所](https://rhumboso.com/)のオンラインショップでラム酒をポチってました。

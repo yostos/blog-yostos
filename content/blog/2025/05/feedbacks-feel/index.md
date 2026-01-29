@@ -1,0 +1,23 @@
++++
+title = "Feedback's Feel"
+description = "ディストーションにBOSS DF-1を使っていて、うっかり位相をそのままミックスダウンしていました。修正版です。"
+date = 2025-05-17
+aliases = ["/articles/2025/05/17/feedbacks-feel"]
++++
+
+![](feedback.png)
+
+「なんあエンディングでディストーションの音が埋もれてるなぁ」と思ったら、
+ポラリティ反転を放置していました。修正したら、原曲に近づきすぎて SoundCloud で
+Reject されるようなってしまいました。
+
+仕方なく、ここで公開です。
+
+- [Feedback's Feek](https://e.pcloud.link/publink/show?code=XZAfvqZQaPSyTaYnLmRjRmWj8L9ABbXVqr7)
+
+クリーンとディストーションの効いたギターが交互に絡み合う曲です。
+
+エンディングにギターのフィードバックが延々と続きますが、
+そんな大音量でアンプを鳴らせないので BOSS DF−2 を中古で買いました。
+ちょっとわざとらしいフィードバック音ですが、雰囲気は出ているかと。
+もう廃盤になってかなり経ちますが、一定のニーズがあるのか高かったです。
