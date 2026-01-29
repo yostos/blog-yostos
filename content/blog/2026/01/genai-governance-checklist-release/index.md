@@ -33,7 +33,7 @@ canonical_url = "https://zenn.dev/yostos/articles/genai-governance-checklist-rel
 - 抜け漏れがあったらどうしよう
 - 完成しても「これで大丈夫」と言い切れない
 
-**そんなあなたのために、チェックリストを作りました。**
+そんなあなたのために、チェックリストを作りました。
 
 <https://yostos.github.io/genai-governance-checklist/>
 
@@ -41,13 +41,13 @@ canonical_url = "https://zenn.dev/yostos/articles/genai-governance-checklist-rel
 
 ### 誰のためのチェックリストか
 
-**専門のIT部門を持たない中小規模の組織**で、専門家ではない生成AIの利用ガイドラインを策定・点検する担当者を想定しています。
+専門のIT部門を持たない中小規模の組織で、専門家ではない生成AIの利用ガイドラインを策定・点検する担当者を想定しています。
 
 AIやリスク管理の専門知識がなくても、項目を順に確認できるよう、各項目に「説明」と「定義例」を付けています。
 
 ### 何を対象としているか
 
-**ChatGPT・Claude・Gemini等のチャット型SaaS生成AIサービス**を業務で利用する場面が対象です。IT部門を持たない組織では、おそらくこれらのチャット型の生成AIから始めるケースが多いと考えられるためです。
+ChatGPT・Claude・Gemini等のチャット型SaaS生成AIサービスを業務で利用する場面が対象です。IT部門を持たない組織では、おそらくこれらのチャット型の生成AIから始めるケースが多いと考えられるためです。
 
 以下は対象外です。
 
@@ -61,29 +61,28 @@ AIやリスク管理の専門知識がなくても、項目を順に確認でき
 
 > 「で、このガイドラインが正しいという根拠は何？」
 
-この質問に答えられるよう、本チェックリストは**NIST AI RMF**を軸に構成しています。
+この質問に答えられるよう、本チェックリストはNIST AI RMFを軸に構成しています。
 
 ### NISTとは何か
 
-**NIST（米国国立標準技術研究所）** は、米国商務省傘下の連邦機関です。
+NIST（米国国立標準技術研究所）は、米国商務省傘下の連邦機関です。
 
 NISTが策定する標準・ガイドラインは、米国政府機関だけでなく世界中の組織で採用されています。
-サイバーセキュリティ分野では**NIST Cybersecurity Framework（CSF）**
-が事実上の世界標準となっており、日本でも金融庁や経済産業省のガイドラインがNIST CSFを参照しています。
+サイバーセキュリティ分野ではNIST Cybersecurity Framework（CSF）が事実上の世界標準となっており、日本でも金融庁や経済産業省のガイドラインがNIST CSFを参照しています。
 
 ### NIST AI RMFとは何か
 
-**AI Risk Management Framework（AI RMF 1.0）** は、NISTが2023年1月に公開したAIリスク管理の国際的な基本枠組みです。
+AI Risk Management Framework（AI RMF 1.0）は、NISTが2023年1月に公開したAIリスク管理の国際的な基本枠組みです。
 
 - 米国議会の指示（National AI Initiative Act of 2020）に基づいて策定
 - 産官学の幅広いステークホルダーとの協議を経て完成
 - AIシステムの開発・運用におけるリスク管理の4機能（GOVERN・MAP・MEASURE・MANAGE）を体系化
 
-さらに2024年7月には、生成AI固有のリスクを扱う拡張文書**NIST AI 600-1（Generative AI Profile）** が公開されました。
+さらに2024年7月には、生成AI固有のリスクを扱う拡張文書NIST AI 600-1（Generative AI Profile）が公開されました。
 
 ### なぜNISTを軸にすべきか
 
-日本にも経済産業省やIPAのガイドラインがありますが、これらは**NIST AI RMFを参照して策定されています**。
+日本にも経済産業省やIPAのガイドラインがありますが、これらはNIST AI RMFを参照して策定されています。
 
 | ガイドライン                                | NISTとの関係                    |
 | ------------------------------------------- | ------------------------------- |
@@ -100,8 +99,8 @@ NISTを軸に、国内外の主要基準を横断的に参照しています。
 
 | 略称         | 正式名称                                                         |
 | ------------ | ---------------------------------------------------------------- |
-| **NIST**     | NIST AI Risk Management Framework (AI RMF 1.0)                   |
-| **NIST-GAI** | NIST AI RMF Generative AI Profile (NIST AI 600-1)                |
+| NIST     | NIST AI Risk Management Framework (AI RMF 1.0)                   |
+| NIST-GAI | NIST AI RMF Generative AI Profile (NIST AI 600-1)                |
 | METI         | 経済産業省・総務省「AI事業者ガイドライン」                       |
 | JDLA         | 日本ディープラーニング協会「生成AIの利用ガイドライン」           |
 | IPA          | IPA「テキスト生成AI導入・運用ガイドライン」                      |
@@ -124,7 +123,7 @@ NISTを軸に、国内外の主要基準を横断的に参照しています。
 
 - ドロップダウンで「対応済／一部対応／未対応／該当なし」を選択
 - サマリーシートで対応率を自動集計
-- まずは **Required（必須）項目** の対応率100%を目指す
+- まずは Required（必須）項目 の対応率100%を目指す
 
 ### 3. 定義例を参考にガイドラインを書く
 
@@ -150,9 +149,9 @@ NISTを軸に、国内外の主要基準を横断的に参照しています。
 
 | 準拠レベル      | 意味                                                     |
 | --------------- | -------------------------------------------------------- |
-| **Required**    | 必ず記載すべき。欠落すると法令違反や重大リスクにつながる |
-| **Recommended** | 記載を強く推奨。除外する場合は理由を説明できること       |
-| **Option**      | 記載があると望ましい。組織の規模や業種に応じて検討       |
+| Required    | 必ず記載すべき。欠落すると法令違反や重大リスクにつながる |
+| Recommended | 記載を強く推奨。除外する場合は理由を説明できること       |
+| Option      | 記載があると望ましい。組織の規模や業種に応じて検討       |
 
 ## チェックリストの構成
 
@@ -170,9 +169,9 @@ NIST AI RMFの4機能（GOVERN・MAP・MEASURE・MANAGE）に沿って構成し�
 
 ## リンク集
 
-- **オンライン版**: <https://yostos.github.io/genai-governance-checklist/>
-- **GitHubリポジトリ**: <https://github.com/yostos/genai-governance-checklist>
-- **Excel版**: [genai-governance-checklist.xlsx](https://github.com/yostos/genai-governance-checklist/raw/main/excel/genai-governance-checklist.xlsx)
+- オンライン版: <https://yostos.github.io/genai-governance-checklist/>
+- GitHubリポジトリ: <https://github.com/yostos/genai-governance-checklist>
+- Excel版: [genai-governance-checklist.xlsx](https://github.com/yostos/genai-governance-checklist/raw/main/excel/genai-governance-checklist.xlsx)
 
 MITライセンスで公開しています。商用・非商用問わず自由に利用できます。
 
@@ -188,6 +187,6 @@ MITライセンスで公開しています。商用・非商用問わず自由�
 
 ---
 
-現在 **v1.0.0-rc.1（リリース候補版）** です。フィードバックを募集しています。
+現在 v1.0.0-rc.1（リリース候補版）です。フィードバックを募集しています。
 
 <https://github.com/yostos/genai-governance-checklist/issues>

@@ -46,10 +46,6 @@ copy_button = true
 mermaid = false  # ページ単位で [extra] mermaid = true で有効化
 stylesheets = ["custom.css"]
 
-[extra.analytics]
-service = "goatcounter"
-id = "yostos"
-
 menu = [
     { name = "blog", url = "blog", trailing_slash = true },
     { name = "archive", url = "archive", trailing_slash = true },
@@ -57,6 +53,10 @@ menu = [
     { name = "uses", url = "uses", trailing_slash = true },
     { name = "about", url = "about", trailing_slash = true },
 ]
+
+[extra.analytics]
+service = "goatcounter"
+id = "yostos"
 
 show_remote_source = false
 show_remote_changes = false

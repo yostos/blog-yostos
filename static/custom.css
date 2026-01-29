@@ -1,58 +1,135 @@
 .page-header,
 .section-title,
 .article-title {
-    font-size: 1.5em;
+  font-size: 1.5em;
+  font-weight: 700;
 }
 
 :root {
-    --sans-serif-font: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", "Noto Sans JP", sans-serif;
+  --sans-serif-font:
+    "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans",
+    "Noto Sans JP", sans-serif;
+  --serif-font:
+    "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans",
+    "Noto Sans JP", sans-serif;
 }
 
 /* 一般的な日本語ブログに合わせたフォントサイズ */
 @media all and (min-width: 600px) {
-    html {
-        font-size: 16px;
-    }
+  html {
+    font-size: 16px;
+  }
 }
 
 @media all and (min-width: 960px) {
-    html {
-        font-size: 18px;
-    }
+  html {
+    font-size: 18px;
+  }
 }
 
 /* 目次のフォントサイズを小さく */
 .toc-container {
-    font-size: 0.9em;
+  font-size: 0.9em;
 }
 
 .toc-container h3 {
-    font-size: 1.1em;
+  font-size: 1.1em;
 }
 
 #banner-container-home #image-container-home {
-    max-width: 7rem;
+  max-width: 7rem;
 }
 
 #banner-container-home #image-container-home #banner-home-img {
-    border-radius: 1rem;
-    transform: rotate(3deg);
+  border-radius: 1rem;
+  transform: rotate(3deg);
 }
 
 /* Zenn風の見出しスタイル */
 article h1 {
-    font-weight: 700;
-    font-size: 1.7em;
+  font-weight: 700;
+  font-size: 1.7em;
+}
+
+article h1::before {
+  content: "# ";
+  color: #d1d5db;
 }
 
 article h2 {
-    font-weight: 700;
-    font-size: 1.4em;
-    padding-bottom: 0.3em;
-    border-bottom: 1px solid #d1d5db;
+  font-weight: 700;
+  font-size: 1.2em;
+  padding-bottom: 0.3em;
+  border-bottom: 1px solid #d1d5db;
+}
+
+article h2::before {
+  content: "## ";
+  color: #d1d5db;
 }
 
 article h3 {
-    font-weight: 700;
-    font-size: 1.2em;
+  font-weight: 700;
+  font-size: 1em;
+}
+
+article h3::before {
+  content: "### ";
+  color: #d1d5db;
+}
+
+/* テーブルのフォントサイズ */
+article table th,
+article table td {
+  font-size: 0.85em;
+}
+
+/* パラグラフ間の余白 */
+article p {
+  margin-bottom: 0.8em;
+}
+
+/* 脚注 */
+.footnotes {
+  font-size: 0.7em;
+  border-top: 1px solid #d1d5db;
+  padding-top: 1em;
+  margin-top: 2em;
+}
+
+.footnotes::before {
+  content: "Footnotes";
+  display: block;
+  font-weight: 700;
+  font-size: 1.2em;
+  margin-bottom: 0.5em;
+}
+
+.footnotes p,
+.footnotes li {
+  margin-bottom: 0.3em;
+  line-height: 1.4;
+}
+
+/* Tagsページの行間 */
+#tag-cloud .tags-item {
+  margin-block-end: 0.3rem;
+}
+
+/* Blogページの記事間の余白を詰める */
+.bloglist-container .bloglist-meta {
+  padding-block: 1rem;
+}
+
+.bloglist-container .bloglist-content {
+  padding: 1rem 0;
+}
+
+/* Blogページの記事内要素の行間を詰める */
+.bloglist-content div .bloglist-tags {
+  margin-top: -0.2rem;
+}
+
+.bloglist-content div .description p {
+  margin: 0.3rem 0 0.5rem;
 }
