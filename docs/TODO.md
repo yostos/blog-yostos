@@ -15,10 +15,10 @@ Zolaブログを Cloudflare Pages でホスティングする作業計画。
 
 ### 1. GitHubリポジトリ作成・プッシュ
 
-- [ ] GitHubに `blog-yostos` リポジトリを作成
-- [ ] `.gitignore` に `public/` を追加
-- [ ] ローカルリポジトリを初期化
-- [ ] リモートリポジトリにプッシュ
+- [x] GitHubに `blog-yostos` リポジトリを作成
+- [x] `.gitignore` に `public/` を追加
+- [x] ローカルリポジトリを初期化
+- [x] リモートリポジトリにプッシュ
 
 ### 2. Cloudflare Pages 設定
 

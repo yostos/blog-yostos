@@ -31,4 +31,31 @@
 
 ---
 
+### 2026-01-29: GitHubリポジトリ作成・プッシュ
+
+#### 実施内容
+
+1. `.gitignore` 作成
+   - gitignore.io で macOS, Vim, Rust 用テンプレートを生成
+   - Zola ビルド出力 `public/` を追加
+
+2. Git リポジトリ初期化
+   ```bash
+   git init
+   git add .
+   git commit -m "Initial commit: Zola blog with tabi theme"
+   ```
+
+3. GitHub リポジトリ作成・プッシュ
+   ```bash
+   gh repo create blog-yostos --public --source=. --remote=origin --push
+   ```
+   - リポジトリURL: https://github.com/yostos/blog-yostos
+
+#### 次のステップ
+
+- Cloudflare Pages の設定
+
+---
+
 <!-- 以下に作業を追記 -->
