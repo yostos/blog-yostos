@@ -7,6 +7,11 @@ aliases = ["/articles/2026/01/24/overseas-business-trip-essentials-for-newbies"]
 
 ![Air Port](airport.webp)
 
+ <details>
+  <summary>Table of Contents</summary>
+  <!-- toc -->
+  </details>
+
 ## PCの持参と機内持ち込み
 
 海外出張にノートPCは必須です。仕事はもちろん、現地でのコミュニケーションや情報収集にも欠かせません。

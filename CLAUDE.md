@@ -17,13 +17,15 @@ zola check          # エラーチェック
 ## Project Structure
 
 ```
-content/           # 記事（各記事はディレクトリ形式）
-  _index.md        # ホームページ設定
-  slug-name/
-    index.md       # 記事本体
-    image.png      # 記事内画像
-themes/tabi/       # tabiテーマ
-docs/TODO.md       # 移行作業のドキュメント
+content/
+  _index.md              # ホームページ設定
+  blog/
+    _index.md            # ブログセクション設定
+    YYYY/MM/slug/        # ブログ記事（年/月/スラッグ形式）
+      index.md           # 記事本体
+      image.png          # 記事内画像
+themes/tabi/             # tabiテーマ
+docs/TODO.md             # 移行作業のドキュメント
 ```
 
 ## Theme: tabi

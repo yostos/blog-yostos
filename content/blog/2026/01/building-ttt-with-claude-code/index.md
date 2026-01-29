@@ -11,6 +11,11 @@ tags = ["Tech", "OSS", "Go", "Task Management"]
 canonical_url = "https://zenn.dev/yostos/articles/building-ttt-with-claude-code"
 +++
 
+ <details>
+  <summary>Table of Contents</summary>
+  <!-- toc -->
+  </details>
+
 ## はじめに
 
 ターミナルで作業中、ふと「あれもやらなきゃ」と思いついたとき、頭の中を書き出す場所が欲しくなります。

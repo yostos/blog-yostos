@@ -38,12 +38,17 @@ show_date = true
 long_date_format = "%Y-%m-%d"
 short_date_format = "%Y-%m-%d"
 archive_date_format = "%Y-%m-%d"
-toc = true
+toc = false
+quick_navigation_buttons = true
 social_media_card = "images/coded-chords.webp"
 favicon = "apple-touch-icon.png"
 copy_button = true
 mermaid = false  # ページ単位で [extra] mermaid = true で有効化
 stylesheets = ["custom.css"]
+
+[extra.analytics]
+service = "goatcounter"
+id = "yostos"
 
 menu = [
     { name = "blog", url = "blog", trailing_slash = true },
