@@ -2,12 +2,12 @@
 
 ## 概要
 
-Zolaブログを Cloudflare Pages でホスティングする作業計画。
+Zolaブログを **GitHub Pages + Cloudflare CDN** でホスティングする作業計画。
 
-- **ホスティング先**: Cloudflare Pages
+- **ホスティング先**: GitHub Pages + Cloudflare CDN
 - **カスタムドメイン**: blog.yostos.org
-- **DNS管理**: Fastmail
-- **GitHubリポジトリ**: blog-yostos（新規作成）
+- **DNS管理**: Fastmail（またはCloudflare）
+- **GitHubリポジトリ**: yostos/blog-yostos
 
 ---
 
@@ -19,33 +19,34 @@ Zolaブログを Cloudflare Pages でホスティングする作業計画。
 - [x] `.gitignore` に `public/` を追加
 - [x] ローカルリポジトリを初期化
 - [x] リモートリポジトリにプッシュ
+- [x] テーマをサブモジュールとして設定
 
-### 2. Cloudflare Pages 設定
+### 2. ホスティング先検討（完了）
 
-- [ ] Cloudflare にログイン
-- [ ] Pages で新規プロジェクト作成
-- [ ] GitHubリポジトリと連携
-- [ ] ビルド設定:
-  - フレームワーク: Zola
-  - ビルドコマンド: `zola build`
-  - 出力ディレクトリ: `public`
-  - 環境変数: `ZOLA_VERSION` = 最新版
+- [x] Cloudflare Pages を試行 → Zola V2サポート問題で断念
+- [x] 代替案を比較検討
+- [x] **GitHub Pages + Cloudflare CDN** に決定
 
-### 3. カスタムドメイン設定
+### 3. GitHub Pages 設定
 
-- [ ] Cloudflare Pages でカスタムドメイン追加（blog.yostos.org）
-- [ ] Fastmail DNS に CNAME レコード追加:
-  ```
-  blog  CNAME  <project>.pages.dev
-  ```
-- [ ] DNS 反映を待機
+- [ ] GitHub Actions ワークフロー作成（Zolaビルド）
+- [ ] GitHub Pages 有効化（gh-pages ブランチ）
+- [ ] 初回デプロイ確認
 
-### 4. 確認・テスト
+### 4. Cloudflare CDN + カスタムドメイン設定
+
+- [ ] Cloudflare にサイト追加（blog.yostos.org）
+- [ ] DNS設定（CNAMEまたはプロキシ）
+- [ ] SSL/TLS 設定
+- [ ] キャッシュ設定
+
+### 5. 確認・テスト
 
 - [ ] デプロイ成功を確認
 - [ ] カスタムドメインでアクセス確認
 - [ ] HTTPS 有効化確認
 - [ ] 各ページの表示確認
+- [ ] 速度テスト
 
 ---
 
