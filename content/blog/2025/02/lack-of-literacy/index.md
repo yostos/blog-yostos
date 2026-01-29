@@ -3,6 +3,9 @@ title = "Concerns Raised Over Politicians' Digital Skills"
 description = "Chairman Onodera, overly concerned about Chinese AI, reveals a lack of technical understanding and literacy."
 date = 2025-02-02
 aliases = ["/articles/2025/02/02/lack-of-literacy"]
+
+[taxonomies]
+tags = ["Current Affairs", "Generative AI"]
 +++
 
 It seems that Itsunori Onodera, the Policy Research Council Chairman, raised an issue in the House of Representatives Budget Committee.

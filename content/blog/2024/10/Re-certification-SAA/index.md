@@ -3,6 +3,9 @@ title = "AWS SAA再認定"
 description = "AWSを離れたのでもう要らないかなと思いましたが、自分を説明するのにSAAくらいは持っていたほうが分かりやすいなと思いSAA再認定を取りました。"
 date = 2024-10-11
 aliases = ["/articles/2024/10/11/Re-certification-SAA"]
+
+[taxonomies]
+tags = ["Career", "Certification","AWS"]
 +++
 
 「SAP じゃなく、3 年前の SAA の再認定だし楽勝だ」と思いフラリと受験しました。

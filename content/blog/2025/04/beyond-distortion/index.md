@@ -3,6 +3,9 @@ title = "Beyond Distortion : Rethinking My Guitar Effects Chain"
 description = "In pursuit of deeper amp-driven distortion, I recently upgraded from theStrymon Iridium to the Simplifier MK-II. This gear transition became theperfect opportunity to thoroughly revisit my long-neglected effects setup,beginning a journey of rediscovering sonic possibilities."
 date = 2025-04-06
 aliases = ["/articles/2025/04/06/beyond-distortion"]
+
+[taxonomies]
+tags = ["Guitar Pedals"]
 +++
 
 アンプの歪みをより深く追求するため、

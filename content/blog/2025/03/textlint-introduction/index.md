@@ -3,6 +3,9 @@ title = "textlintで日本語ブログの品質を向上させよう"
 description = "textlintを活用して日本語の技術ブログ記事の品質を向上させる方法を紹介します。特にこのブログではMarkdownでなくMDXを使用しているので、MDXファイルに対する最適な設定と導入手順を解説します。"
 date = 2025-03-23
 aliases = ["/articles/2025/03/23/textlint-introduction"]
+
+[taxonomies]
+tags = ["Tech","Writing","Software","Weblog"]
 +++
 
 ## textlintとは

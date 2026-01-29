@@ -3,9 +3,14 @@ title = "Free The Tone - Overdriveland"
 description = "Free The Toneのオーバードライブ Overdrivelandを購入しました。2023年末に発売されて2024年は入荷待ちになるほど人気でしたが、使ってみると確かに究極のオーバードライブと言われるのもわかります。"
 date = 2025-05-02
 aliases = ["/articles/2025/05/02/ftt-overdriveland"]
+
+[taxonomies]
+tags = ["Guitar Pedals"]
 +++
 
 ![Overdriveland](od1.webp)
+
+Free The Toneのオーバードライブ Overdrivelandを購入しました。2023年末に発売されて2024年は入荷待ちになるほど人気でしたが、使ってみると確かに究極のオーバードライブと言われるのもわかります。
 
 ## Overdrivelandとは
 

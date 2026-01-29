@@ -3,6 +3,9 @@ title = "Beer O'clock Bottle shop"
 description = "千葉で有名なクラフトビールの店 Beer O'clockが移転したと思っていたら、旧店舗跡で別の形態で営業されていました。"
 date = 2024-11-27
 aliases = ["/articles/2024/11/27/beer-oclock-botton-shop"]
+
+[taxonomies]
+tags = ["Gourmet"]
 +++
 
 ![トニックウォーター](glass.jpg)

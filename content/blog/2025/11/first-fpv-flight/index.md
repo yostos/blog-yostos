@@ -3,6 +3,9 @@ title = "First Manual Mode FPV Flight Session"
 description = "Initial attempt at manual flight control with the DJI Neo. From simulator training to real-world flight testing, experiencing the complexity and thrill of FPV drone piloting."
 date = 2025-11-04
 aliases = ["/articles/2025/11/04/first-fpv-flight"]
+
+[taxonomies]
+tags = ["Drone"]
 +++
 
 During a recent aerial photography session at Lake Sasagawa, I forgot my DJI Air 3S and had to rely on the DJI Neo as a backup. While capturing standard high-altitude shots, I noticed the potential for more dynamic, FPV-style cinematography.

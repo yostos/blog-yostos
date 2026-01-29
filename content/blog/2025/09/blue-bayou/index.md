@@ -3,6 +3,9 @@ title = "Blue Bayou"
 description = "Performed Linda Ronstadt's \"Blue Bayou\" inspired by the Netflix movie \"Man on Fire\". Reflecting on the 1977 Western music scene."
 date = 2025-09-28
 aliases = ["/articles/2025/09/28/blue-bayou"]
+
+[taxonomies]
+tags = ["Music", "Guitar"]
 +++
 
 I watched the Denzel Washington movie "Man on Fire" on Netflix, a slightly older film (known as "My Bodyguard" in Japan).

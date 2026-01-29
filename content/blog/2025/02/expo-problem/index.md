@@ -3,6 +3,9 @@ title = "大阪万博 EXPO 2025の個人情報取扱問題"
 description = "大阪万博 EXPO 2025の個人情報規約が『ヤバすぎる』とSNSでプチ炎上しているようです。"
 date = 2025-02-14
 aliases = ["/articles/2025/02/14/expo-problem"]
+
+[taxonomies]
+tags = ["Current Affairs", "Security"]
 +++
 
 2025 年 2 月 8 日の読売新聞で「

@@ -3,6 +3,9 @@ title = "Weekly Buzz🐝 2024-11-01"
 description = "すっかり肌寒くなりました。先週末帰省して、初めて買ったギターを発見して、手を入れたりしていました。今週はジャパンビンテージギター、Amazonの出社命令、スーパーカブ50ccについてまとめました。"
 date = 2024-11-01
 aliases = ["/articles/2024/11/01/Weekly-buzz-20241101"]
+
+[taxonomies]
+tags = ["Weekly Buzz", "Current Affairs"]
 +++
 
 今週は次の 3 つについてまとめました。

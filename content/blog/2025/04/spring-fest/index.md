@@ -3,6 +3,9 @@ title = "スプラトゥーン3：Sprintg Fest"
 description = "今週末のスプラトゥーンは春フェスでした。"
 date = 2025-04-13
 aliases = ["/articles/2025/04/13/spring-fest"]
+
+[taxonomies]
+tags = ["Splatoon", "Game"]
 +++
 
 もう大きな改修はないはずですが、

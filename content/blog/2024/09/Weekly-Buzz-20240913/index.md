@@ -3,6 +3,9 @@ title = "Weekly Buzz🐝 2024-09-13"
 description = "今週の気になった記事や出来事は、フジテレビ「牛の屠殺」発言、CharGPT o1-previewリリース、Amazon Q Developer、個人のタスク管理についてです。"
 date = 2024-09-13
 aliases = ["/articles/2024/09/15/Weekly-Buzz-20240913"]
+
+[taxonomies]
+tags = ["Weekly Buzz", "Current Affairs"]
 +++
 
 ## フジテレビ、「牛の屠殺」発言について

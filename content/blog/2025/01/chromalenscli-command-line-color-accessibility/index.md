@@ -3,6 +3,9 @@ title = "ChromaLensCLI: Command Line Color Accessibility Validation"
 description = "デザイン入門のようなコースをうけていて「色覚異常の方もいるので気をつけましょうね」とか説明されてんだけど、そんな適当な説明じゃなくちゃんとAccessibilityについて説明しろよと思う。だいたい「気をつける」のでなく、世の中にはちゃんとチェックするツールもあるし・・・・"
 date = 2025-01-25
 aliases = ["/articles/2025/01/25/chromalenscli-command-line-color-accessibility"]
+
+[taxonomies]
+tags = ["Tech", "Software","CLI","Accessibility"]
 +++
 
 とりあえず色覚異常の方にも画像が正しく認識できてるか確認するためのツール `ChromaLens CLI`を作ってみた。

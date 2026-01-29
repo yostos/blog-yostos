@@ -3,6 +3,9 @@ title = "ロジクール MX ERGO Sレビュー"
 description = "Amazonのプライム感謝先行セールで少し安くなっていたので、ロジクールのMX ERGO Sを購入しました。"
 date = 2025-10-09
 aliases = ["/articles/2025/10/09/mx-ergo-s"]
+
+[taxonomies]
+tags = ["Tech"]
 +++
 
 ![MX ERGO S](ergo-s.webp)

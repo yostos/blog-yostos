@@ -3,6 +3,9 @@ title = "成田山参拝"
 description = "少し遅いですが、初詣でに成田山新勝寺に行ってきました。"
 date = 2025-02-13
 aliases = ["/articles/2025/02/13/naritasan"]
+
+[taxonomies]
+tags = ["Travel"]
 +++
 
 <figure>

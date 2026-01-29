@@ -3,6 +3,9 @@ title = "閉館予定のDIC川村記念美術館"
 description = "今月一杯で閉館してしまう。千葉県佐倉市のDIC川村記念美術館に行ってってきました。"
 date = 2025-03-18
 aliases = ["/articles/2025/03/18/Karamura-musium"]
+
+[taxonomies]
+tags = ["Current Affairs","Art","Chiba"]
 +++
 
 ![](kawamura.jpg)

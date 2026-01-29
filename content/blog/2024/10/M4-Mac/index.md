@@ -3,6 +3,9 @@ title = "M4 Macbook has been announced"
 description = "The MacBook Pro featuring the M4 chip has been announced."
 date = 2024-10-31
 aliases = ["/articles/2024/10/31/M4-Mac"]
+
+[taxonomies]
+tags = ["Tech","Apple","Mac"]
 +++
 
 I'm currently using a MacBook Pro with M3 Max, so I've made a comparison between the M3 Max and M4 Max. I think I'll continue using my current MacBook Pro for a while longer rather than upgrading.

@@ -3,6 +3,9 @@ title = "Not Ready To Fly - Test Flight"
 description = "\"Ready To Fly\"のコピー中。イントロのギターアンサンブルのような部分を再現してみました。"
 date = 2025-08-30
 aliases = ["/articles/2025/08/30/not-ready-to-fly"]
+
+[taxonomies]
+tags = ["Music", "Guitar"]
 +++
 
 Currently copying Masayoshi Takanaka's 'Ready To Fly'. First, I tried to

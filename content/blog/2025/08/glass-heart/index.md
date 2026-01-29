@@ -3,6 +3,9 @@ title = "Netflix『グラス・ハート』から「Matrix」を弾いてみた"
 description = "Netflix『グラス・ハート』の劇中歌「Matrix」を自分で演奏してみました。俳優の方々の素晴らしい演奏シーンに感動し、ギターの演奏をコピーしてみました。"
 date = 2025-08-17
 aliases = ["/articles/2025/08/17/glass-heart"]
+
+[taxonomies]
+tags = ["Music", "Guitar"]
 +++
 
 Netflix で配信が始まった『グラス・ハート』の評判がよいようです。

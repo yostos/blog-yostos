@@ -3,6 +3,9 @@ title = "Archetype: Cory Wong X"
 description = "Neural DSPのブラックフライデーセールでArchetype: Cory Wong XとPliniを購入しました。Cory Wong Xの3つのアンプモデル(D.I. Funk Console、The Clean Machine、The Amp Snob)をテストした感想をまとめています。"
 date = 2025-11-24
 aliases = ["/articles/2025/11/24/archetype-cory-wong"]
+
+[taxonomies]
+tags = ["Guitar", "Software"]
 +++
 
 <SoundCloudEmbed

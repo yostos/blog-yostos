@@ -3,6 +3,9 @@ title = "Oyama Senmaida(大山千枚田)"
 description = "美しい棚田が並ぶ大山千枚田に入ってきました。"
 date = 2024-08-26
 aliases = ["/articles/2024/08/26/Oyama-senmaida"]
+
+[taxonomies]
+tags = ["Travel", "Photography"]
 +++
 
 ![](R0000090.jpg)

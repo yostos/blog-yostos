@@ -3,6 +3,9 @@ title = "リバイバル上映:映画『機動警察パトレイバー THE MOVIE
 description = "映画『機動警察パトレイバー THE MOVIE』(1989年)のリバイバル上映を今晩見てきました。"
 date = 2024-09-24
 aliases = ["/articles/2024/09/24/Patlabor-the-movie"]
+
+[taxonomies]
+tags = ["Movies","Anime", "Entertainment"]
 +++
 
 ![](patlabor.jpg)

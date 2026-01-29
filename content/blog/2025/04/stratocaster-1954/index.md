@@ -3,10 +3,14 @@ title = "Fender 70th Anniversary American Vintage II 1954 Stratocaster"
 description = "I always wanted an original Fender🎸 at least once in my life. And by purechance, I stumbled upon a 70th Anniversary American Vintage II 1954Stratocaster and it's only 3.5Kg  - an absolute gem! I sped off in mycar and bought it on the spot! Now, I'll let it sit for a while to cool off."
 date = 2025-04-27
 aliases = ["/articles/2025/04/27/stratocaster-1954"]
+
+[taxonomies]
+tags = ["Guitar"]
 +++
 
-そう言えば、昨年購入したストラトを仕様を忘れそうなので残しておきましょう。
+I always wanted an original Fender🎸 at least once in my life. And by purechance, I stumbled upon a 70th Anniversary American Vintage II 1954Stratocaster and it's only 3.5Kg - an absolute gem! I sped off in mycar and bought it on the spot! Now, I'll let it sit for a while to cool off.
 
+そう言えば、昨年購入したストラトを仕様を忘れそうなので残しておきましょう。
 
 ![Stratocaster](strato.webp)
 
@@ -85,25 +89,3 @@ Custom Shop モデルの間に位置するプレミアムモデルです。
 たのはこの個体だけでした。
 
 軽いアッシュボディとメイプルのネックのためか、明るくからりと乾いた良い音がします。
-
-## サンプル
-
-最近このギターを使った曲です。
-"STRAIGHT FROM YOUR HEART"はクリーントーン部分のみ、他の 2 曲はすべてこのギ
-ターで演奏し w ています。
-
-<SoundCloudEmbed
-  url="https://soundcloud.com/yostos/straight-from-your-heart?si=018988d9fbaa4b99a3bc06a0eff3dbd5&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing"
-  title="STRAIGHT FROM YOUR HEART"
-/>
-
-<SoundCloudEmbed
-  url="https://soundcloud.com/yostos/to-you?si=6be15916d96a48cea28a4c3223739760&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing"
-  title="To You"
-/>
-
-<SoundCloudEmbed
-  url="https://soundcloud.com/yostos/we-are-all-alone-downtempo?si=b30c1400087943e18f9081219c309f75&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing"
-  title="We Are All Alone - Downtemp Version"
-  apiurl="https://api.soundcloud.com/tracks/2086283364"
-/>

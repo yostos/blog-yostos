@@ -3,9 +3,17 @@ title = "ワークマンの空調ウェア「ウィンドコア」を試す"
 description = "ワークマンの空調ウェア「ウィンドコア」を購入して試してみました。大阪万博への暑さ対策として、建設現場で使われるファンウェアの実力を体験レポートします。"
 date = 2025-06-27
 aliases = ["/articles/2025/06/27/workman-windcore"]
+
+[taxonomies]
+tags = ["Gadget","Seasons"]
 +++
 
 ![Workman Windcore](windcore.webp)
+
+<details>
+<summary>Table of Contents</summary>
+<!-- toc -->
+</details>
 
 来月地獄の大阪万博に行く予定なので、熱中症対策が必要になりました。
 散歩中に建設現場の作業員の方を見ていて「そうだ、空調ウェアだ。ワークマンに行

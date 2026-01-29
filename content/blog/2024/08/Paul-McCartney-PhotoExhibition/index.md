@@ -3,6 +3,9 @@ title = "Paul McCartney’s photo exhibition"
 description = "Paul McCartneyの写真展が六本木でやっていたので見に行ってきました。"
 date = 2024-08-08
 aliases = ["/articles/2024/08/08/Paul-McCartney-PhotoExhibition"]
+
+[taxonomies]
+tags = ["Photography", "Art", "Beatles"]
 +++
 
 ![Paul McCartney’s photo exhibition](paul.jpg)

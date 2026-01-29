@@ -3,6 +3,9 @@ title = "一新されたドローン飛行日誌サービス FwriteDown"
 description = "6月からドローンの飛行日誌サービスであるFwriteDownが一新されDIPS2.0との連携など革新的な機能を追加してきました。以前から使用していたので、その使い勝手を確認してみました。"
 date = 2025-06-02
 aliases = ["/articles/2025/06/02/fwritedown"]
+
+[taxonomies]
+tags = ["Drone"]
 +++
 
 ![FwriteDown](top.webp)

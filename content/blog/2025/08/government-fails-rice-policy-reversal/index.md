@@ -3,6 +3,9 @@ title = "日本政府が無能露呈、「米増産」への転換"
 description = "日本政府が米増産への政策転換を表明しましたが、昨年3月の農林水産省のデータから米の供給不足は明らかでした。なぜ政府の対応が1年も遅れたのか、減反政策の問題点と併せて検証します。"
 date = 2025-08-06
 aliases = ["/articles/2025/08/06/government-fails-rice-policy-reversal"]
+
+[taxonomies]
+tags = ["Current Affairs"]
 +++
 
 2025 年 8 月 5 日、石破総理は[第3回米の安定供給等実現関係閣僚会議](https://www.kantei.go.jp/jp/103/actions/202508/05kome_anteikyoukyuu.html)を開催し、ついに米の生産量不足を認め、増産への政策転換を表明しました。

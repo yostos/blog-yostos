@@ -3,6 +3,9 @@ title = "主要AI企業によるAIの理解能力喪失への警告"
 description = "OpenAI、Google DeepMind、Meta、Anthropicの研究者たちが共同で発表した、AIの思考過程の透明性が失われる危険性についての重要な警告が発信されました。無能な人間のリスクを常に懸念していた私としては、「賢すぎるAIのリスク」は興味深く印象的でした。私なりの解説をしてみました。(Researchers from OpenAI, Google DeepMind, Meta, and Anthropic jointly issued an important warning about the risk of losing transparency in AI's thinking processes. As someone who has always been concerned about the risks of incompetent humans, I found the \"risks of overly intelligent AI\" fascinating and memorable. Here's my personal take on this development.)"
 date = 2025-07-24
 aliases = ["/articles/2025/07/24/ai-transparency-warning"]
+
+[taxonomies]
+tags = ["Tech", "Generative AI","Security"]
 +++
 
 ## 主要AI企業による警告

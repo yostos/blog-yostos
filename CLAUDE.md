@@ -4,52 +4,86 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-Zola静的サイトジェネレーターによるブログ。Next.js/MDXブログからの移行プロジェクト。
+A blog powered by Zola static site generator. Migration project from Next.js/MDX blog.
 
 ## Common Commands
 
 ```bash
-zola serve          # 開発サーバー起動（ライブリロード）
-zola build          # 本番ビルド（public/に出力）
-zola check          # エラーチェック
+zola serve          # Dev server with live reload
+zola build          # Production build (outputs to public/)
+zola check          # Error check
 ```
+
+## Git Operations
+
+- **Commit**: Use `/simple-commit:commit` skill (auto-generates Conventional Commits format)
+- Do not use `git commit` directly
+- Local rules: See `.claude/simple-commit.local.md`
 
 ## Project Structure
 
 ```
 content/
-  _index.md              # ホームページ設定
+  _index.md              # Homepage settings
   blog/
-    _index.md            # ブログセクション設定
-    YYYY/MM/slug/        # ブログ記事（年/月/スラッグ形式）
-      index.md           # 記事本体
-      image.png          # 記事内画像
-themes/tabi/             # tabiテーマ
-docs/TODO.md             # 移行作業のドキュメント
+    _index.md            # Blog section settings
+    YYYY/MM/slug/        # Blog articles (year/month/slug format)
+      index.md           # Article body
+      image.png          # Article images
+themes/tabi/             # tabi theme
+docs/TODO.md             # Migration task documentation
 ```
 
 ## Theme: tabi
 
-- テーマ: [tabi](https://github.com/welpo/tabi)
-- 言語: 日本語（`default_language = "ja"`）
-- 検索: 無効（日本語未サポート）
+- Theme: [tabi](https://github.com/welpo/tabi)
+- Language: Japanese (`default_language = "ja"`)
+- Search: Disabled (Japanese not supported)
 
-## 記事のfrontmatter形式
+## Article Frontmatter Format
 
 ```toml
 +++
 title = "記事タイトル"
 description = "説明"
 date = 2026-01-23
-aliases = ["/old/url/path"]  # リダイレクト用
+aliases = ["/old/url/path"]  # For redirects
 
 [extra]
-canonical_url = "https://..."  # 正規URL（他サイトがオリジナルの場合）
+canonical_url = "https://..."  # Canonical URL (when another site is the original)
 +++
 ```
 
-## 移行元
+## Tag Naming Conventions
 
-- パス: `/Users/yostos/ghq/github.com/yostos/blog-yostos/src/app/articles/`
-- 形式: MDX（Next.js App Router）
-- 詳細: `docs/TODO.md` 参照
+Follow English-language blog/media site conventions.
+
+| Category | Format | Reference |
+|----------|--------|-----------|
+| Books | **Books** | NYT, The Guardian, NPR |
+| Manga | **Manga** | Japanese comics recognized as "Manga" |
+| Movies | **Movies** | NYT (Movies) |
+| Music | **Music** | Singular/uncountable |
+| Music Production | **Music Production** | DAW, Synthesizer V, etc. "DTM" is Japanese-only term |
+| Guitar | **Guitar** | Singular |
+| Effects pedals | **Pedals** or **Effects** | "Effector" is Japanese-only term |
+| Technology | **Tech** or **Technology** | Medium, BBC, The Verge |
+| Travel | **Travel** | Singular |
+| Certification | **Certification** | Singular |
+| Photography | **Photography** | As activity/hobby |
+| Security | **Security** | Singular |
+| Design | **Design** | Medium |
+| Culture | **Culture** | The Guardian |
+| Korea | **Korea** | Use "North Korea" explicitly for DPRK |
+| Accessibility | **Accessibility** | Uncountable |
+| Seasons | **Seasons** | Seasonal topics (cherry blossoms, autumn leaves, etc.) |
+| Productivity | **Productivity** | Productivity tools in general |
+| Note-taking | **Note-taking** | LogSeq, Workflowy, nb, etc. |
+
+**Principle**: Singular form is standard. Books and Movies are exceptions where plural is established.
+
+## Migration Source
+
+- Path: `/Users/yostos/ghq/github.com/yostos/blog-yostos/src/app/articles/`
+- Format: MDX (Next.js App Router)
+- Details: See `docs/TODO.md`

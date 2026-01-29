@@ -3,6 +3,9 @@ title = "日本料理発祥の地 - 勝山浮島"
 description = "千葉県鋸南町勝山浮島を撮影してきました。古代の神話に縁のある地が多く興味深い地域です。"
 date = 2025-08-24
 aliases = ["/articles/2025/08/24/ukishima"]
+
+[taxonomies]
+tags = ["Drone", "Travel"]
 +++
 
 浮島は千葉県鋸南町の勝山漁港の目の間にある無人島です。

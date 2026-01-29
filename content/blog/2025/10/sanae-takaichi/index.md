@@ -3,6 +3,9 @@ title = "高市早苗総裁爆誕"
 description = "自民党立党70年にして初の女性総裁となった高市早苗氏。戦略的国家投資やエネルギー自給率100%を掲げる明確な国家戦略は、抽象的な数値目標に留まる他候補と一味違っているので、当然かなと思いました。実際には党員票で圧倒的支持を集めた民意の反映とも言える結果でしたが、前日までの「小泉進次郎優勢」と報道したオールドメディアの予想の偏向報道が浮き彫りになりました。"
 date = 2025-10-05
 aliases = ["/articles/2025/10/05/sanae-takaichi"]
+
+[taxonomies]
+tags = ["Current Affairs"]
 +++
 
 Sanae Takaichi, my fellow Kobe University alumna, has been elected as the new president of the Liberal Democratic Party (LDP). This marks the birth of the first female president in the party's 70-year history.

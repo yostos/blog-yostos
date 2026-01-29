@@ -3,6 +3,9 @@ title = "Because Your Tech Ignorance Is Now a Business Liability"
 description = "この記事はIT部門を持たず、非技術部門だけでベンダーに作らせた業務システムを所有し運用している組織について想定しています。きっとランサムウェアで危機に見舞われているアサヒビールやアスクルを見て震え上がって、何をすればいいか焦っている組織も多いと思います。そんな組織が行なうべき第一歩として業務システム台帳の整備について解説しています。"
 date = 2025-11-08
 aliases = ["/articles/2025/11/08/tech-ignorance-is-business-liability"]
+
+[taxonomies]
+tags = ["Tech", "Security"]
 +++
 
 ![No IT dept](noitdept.webp)

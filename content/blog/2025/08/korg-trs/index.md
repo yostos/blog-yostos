@@ -3,6 +3,9 @@ title = "KORG Nu:tekt TR-S (POWER TUBE REACTOR)を試す"
 description = "KORG Nu:tekt TR-S (POWER TUBE REACTOR)の詳細レビューです。Nutube技術による真空管パワー管のサグ感とコンプレッション感を再現するユニークなエフェクターで、アンプシミュレーターとの組み合わせでリアルな真空管サウンドを実現できます。"
 date = 2025-08-01
 aliases = ["/articles/2025/08/01/korg-trs"]
+
+[taxonomies]
+tags = ["Guitar", "Pedals"]
 +++
 
 ![KORG Nu:tekt TR-S](trs.webp)

@@ -3,6 +3,9 @@ title = "You Can Never Come To This Place"
 description = "数ヶ月前の高中正義のコンサート、アンコールで演奏された名曲「You Can Never Come To This Place」に感動しました。年内にこの難易度の高い楽曲に挑戦しようと練習を重ねた記録です。演奏は完璧ではありませんが、コンサートで感じた感動とこの曲への愛情を込めて弾きました。"
 date = 2025-12-30
 aliases = ["/articles/2025/12/30/you-can-never-come-to-this-place"]
+
+[taxonomies]
+tags = ["Music", "Guitar"]
 +++
 
 <SoundCloudEmbed

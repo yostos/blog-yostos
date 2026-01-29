@@ -3,6 +3,9 @@ title = "OpenAI Chairman Says a Dot-Com-Like Bust Wouldn’t Be All Bad"
 description = "OpenAI会長のインタビューから、生成AIブームとドットコム・バブルの比較、創造的破壊の重要性を考察。日本の補助金政策が経済の新陳代謝を妨げている問題と、実質的な価値を生まない見かけ倒しのAIプロジェクトへの警鐘について論じる。"
 date = 2025-10-31
 aliases = ["/articles/2025/10/31/dot-com-like-bust"]
+
+[taxonomies]
+tags = ["Tech", "Generative AI", "Current Affairs"]
 +++
 
 「[OpenAI Chairman Says a Dot-Com-Like Bust Wouldn’t Be All Bad](https://news.bloomberglaw.com/artificial-intelligence/openai-chairman-says-a-dot-com-like-bust-wouldnt-be-all-bad)」

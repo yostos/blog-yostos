@@ -3,7 +3,15 @@ title = "Claude Proに週間利用制限が導入へ - 2025年8月28日から"
 description = "Anthropic announced the introduction of weekly usage limits for Claude Pro users. This article explains the details and background of the new restrictions starting August 28, 2025, and response methods for affected users.(AnthropicからClaude Proユーザー向けに週間利用制限の導入が発表されました。2025年8月28日から開始される新しい制限の詳細と背景、影響を受けるユーザーへの対応方法について解説します。)"
 date = 2025-07-29
 aliases = ["/articles/2025/07/29/claude-pro-weekly-usage-limits"]
+
+[taxonomies]
+tags = ["Tech", "Generative AI"]
 +++
+
+<details>
+<summary>Table of Contents</summary>
+<!-- toc -->
+</details>
 
 2025 年 7 月 28 日、Anthropic から Claude Pro ユーザー向けに「Important updates to your Pro account usage limits」というタイトルのメールが配信されました。このメールでは、2025 年 8 月 28 日から導入される新しい週間利用制限について詳細が説明されています。本記事では、この変更内容と背景について解説します。
 
@@ -61,4 +69,3 @@ Anthropic は今回の新しい利用制限により、アカウント共有や�
 Anthropic は急速な成長、ポリシー違反、極端な利用パターンによるシステム負荷の増大に対処するため、この制限導入を決定しました。大多数のユーザー（95％以上）には影響がないとされていますが、重度の利用者にとっては利用パターンの見直しが必要になる可能性があります。
 
 今後も開発者の利用パターンを学習し、コミュニティのニーズに合わせて制限を調整していく方針が示されており、Anthropic が Claude Code の持続可能な運営を目指していることが伺えます。
-

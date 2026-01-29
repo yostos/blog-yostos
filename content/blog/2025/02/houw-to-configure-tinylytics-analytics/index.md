@@ -3,6 +3,9 @@ title = "How to Configure Tinylytics Analytics for Production Environment Only"
 description = "I have tried to prevent tinylytics stats from being retrieved outside of the production environment."
 date = 2025-02-25
 aliases = ["/articles/2025/02/25/houw-to-configure-tinylytics-analytics"]
+
+[taxonomies]
+tags = ["Tech","Weblog"]
 +++
 
 ## Why is this code needed?

@@ -3,12 +3,15 @@ title = "Synthersizer V Studio 2 Pro"
 description = "歌声合成ソフトウェア「Synthesizer V」の新バージョンである、「Synthesizer V 2」が3月21日に発売されていたので、アップグレードしました。"
 date = 2025-04-15
 aliases = ["/articles/2025/04/15/synthesizer-v-studio-2-pro"]
+
+[taxonomies]
+tags = ["Music", "Software", "Music Production"]
 +++
 
 とりあえず、昨年 Synthersizer V 1 で作った藤原さくらさんの「[Just One Girl](https://soundcloud.com/yostos/just-one-girl-1?si=b7db2a56715c423eb6402905f5029c64&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing)
 」を Synthesizer V 2 でヴォーカル部分をリテイクしてみました。
 
-<SoundCloudEmbed url="https://soundcloud.com/yostos/just-one-girl-retake?si=4d14fe57fb2343a29d03095a2ba889f2&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing" />
+<iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/soundcloud%253Atracks%253A2078817968&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/yostos" title="Yostos" target="_blank" style="color: #cccccc; text-decoration: none;">Yostos</a> · <a href="https://soundcloud.com/yostos/just-one-girl-retake" title="Just One Girl - Retake" target="_blank" style="color: #cccccc; text-decoration: none;">Just One Girl - Retake</a></div>
 
 以前のバージョンでもかなりリアルなヴォーカルなのであまり改善点がわからないか
 もしれませんが、以下に変更点をまとめておきます。

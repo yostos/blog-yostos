@@ -3,6 +3,9 @@ title = "やはり買ってしまったBOSS PX-1"
 description = "海外では大変バッシングされているBOSSの新しいコンパクトエフェクター PX-1ですが、日本ではどの楽器店でもSOLD OUTで大変人気なようです。そんな中BOSS PX-1の在庫を見つけてしまったので、思わず買ってしまいました。"
 date = 2025-09-27
 aliases = ["/articles/2025/09/27/purchased-boss-px-1"]
+
+[taxonomies]
+tags = ["Guitar", "Pedals"]
 +++
 
 ![BOSS PX-1](px-1.webp)

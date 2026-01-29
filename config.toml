@@ -1,7 +1,7 @@
 base_url = "https://blog.yostos.org"
 title = "Coded Chords"
 description = "A personal blog"
-author = "yostos"
+author = "Toshiyuki Yoshida"
 
 theme = "tabi"
 
@@ -32,6 +32,7 @@ theme = "catppuccin-frappe"
 style = "class"  # tabi必須
 
 [extra]
+enable_csp = false
 theme_switcher = true
 show_reading_time = true
 show_date = true
@@ -44,7 +45,12 @@ social_media_card = "images/coded-chords.webp"
 favicon = "apple-touch-icon.png"
 copy_button = true
 mermaid = false  # ページ単位で [extra] mermaid = true で有効化
+show_previous_next_article_links = true
 stylesheets = ["custom.css"]
+copyright = "© $CURRENT_YEAR $AUTHOR • Content licensed under [CC BY-NC-ND 4.0](https://creativecommons.org/licenses/by-nc-nd/4.0/)"
+remote_repository_url = "https://github.com/yostos/blog-yostos"
+show_remote_source = true
+show_remote_changes = true
 
 menu = [
     { name = "blog", url = "blog", trailing_slash = true },
@@ -54,11 +60,35 @@ menu = [
     { name = "about", url = "about", trailing_slash = true },
 ]
 
+socials = [
+    { name = "github", url = "https://github.com/yostos", icon = "github" },
+    { name = "bluesky", url = "https://bsky.app/profile/yostos.bsky.social", icon = "bluesky" },
+    { name = "linkedin", url = "https://www.linkedin.com/in/toshiyukiyoshida/", icon = "linkedin" },
+    { name = "nostr", url = "https://nostter.app/nprofile1qqsz8c9hcxxw2rydxkg8r0x32d4ql8h6mdkgrdf4982jfqclay7cakgvxxml9", icon = "nostr" },
+]
+
+footer_menu = [
+    { url = "license", name = "license", trailing_slash = true },
+]
+
 [extra.analytics]
 service = "goatcounter"
 id = "yostos"
 
-show_remote_source = false
-show_remote_changes = false
-iine = false
-enable_csp = false
+[extra.giscus]
+enabled_for_all_posts = true
+automatic_loading = true
+repo = "yostos/blog-comments"
+repo_id = "R_kgDOOI4xBQ"
+category = "Announcements"
+category_id = "DIC_kwDOOI4xBc4CoDXE"
+mapping = "pathname"  # TODO: 既存コメント移行後に "slug" に変更検討
+strict_title_matching = 0
+enable_reactions = 1
+comment_box_above_comments = false
+light_theme = "light"
+dark_theme = "dark"
+lang = "ja"
+lazy_loading = true
+
+iine = true

@@ -3,6 +3,9 @@ title = "映画『鬼滅の刃 - 無限城編 第一章 猗窩座再来』を見
 description = "I watched the movie \"Demon Slayer: Kimetsu no Yaiba - Infinity Castle Arc Chapter 1: Akaza's Return\"."
 date = 2025-09-19
 aliases = ["/articles/2025/09/19/kimetsu-no-yaiba"]
+
+[taxonomies]
+tags = ["Anime", "Movies"]
 +++
 
 ![鬼滅の刃](kimetsu.webp)

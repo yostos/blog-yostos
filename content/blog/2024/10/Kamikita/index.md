@@ -3,6 +3,9 @@ title = "フォレストかみきたに行ってきた"
 description = "世界遺産「大峯奥駈道」と日本百名山「大台ケ原」に囲まれた奈良県上北山村。この地の「フォレストかみきた」で週末を過ごしました。"
 date = 2024-10-28
 aliases = ["/articles/2024/10/28/Kamikita"]
+
+[taxonomies]
+tags = ["Travel"]
 +++
 
 宿の脇を流れる小谷川は大台ケ原からの伏流水が注ぐ清流。上流に人は住まないため
@@ -13,15 +16,13 @@ aliases = ["/articles/2024/10/28/Kamikita"]
 
 雄大な自然に囲まれた静かな時間は、心身ともにリフレッシュできる贅沢な体験となりました。
 
-
 ![小谷川](kamikita.jpg)
 
-<ShopInfo
-  name="フォレストかみきた"
-  address="奈良県吉野郡上北山村大字河合552-2"
-  osmAddress="34.139024, 136.000662"
-  phone="07468-3-0001"
-  closedDays="不明"
-  website="https://forest-kamikita.com/"
-/>
-;
+| 項目 | 内容 |
+|------|------|
+| 店名 | フォレストかみきた |
+| 住所 | 奈良県吉野郡上北山村大字河合552-2 |
+| 地図 | [OpenStreetMap](https://www.openstreetmap.org/?mlat=34.139024&mlon=136.000662#map=17/34.139024/136.000662) |
+| 電話 | 07468-3-0001 |
+| 定休日 | 不明 |
+| ウェブサイト | <https://forest-kamikita.com/> |

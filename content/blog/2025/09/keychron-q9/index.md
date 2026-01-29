@@ -3,6 +3,9 @@ title = "Purchased Keychron Q9"
 description = "A review of the Keychron Q9 40% keyboard - exploring its unique design, layer configuration, usage experience, and customization options for this compact keyboard."
 date = 2025-09-25
 aliases = ["/articles/2025/09/25/keychron-q9"]
+
+[taxonomies]
+tags = ["Tech"]
 +++
 
 ![Keychron Q9](keychron-q9.webp)

@@ -3,6 +3,9 @@ title = "Movie Review: Scarlet"
 description = "I finished my errands at the mall way earlier than expected, and since it was a weekday and the theater was pretty empty, I decided to catch a movie.It was such a spontaneous decision that I didn't even research what was playing—I just jumped into whatever was starting soonest, barely glancing at the title.That movie turned out to be \"Scarlet\" (果てしなきスカーレット). Unexpectedly, it was absolutely fantastic."
 date = 2025-11-21
 aliases = ["/articles/2025/11/21/scarlet"]
+
+[taxonomies]
+tags = ["Movies"]
 +++
 
 ![Scarlet](scarlet.webp)

@@ -3,9 +3,19 @@ title = "Mission Impossible - Final Recgningを観ました"
 description = "『ミッション・インポッシブル』の 最新作『ファイナル・レコニング』を観てきました。前作の『デッドレコニング』からの続編で、タイトルからしてシリーズ最終作となるので集大成ではありました。ネタバレ含みます。"
 date = 2025-06-15
 aliases = ["/articles/2025/06/15/mission-impossible"]
+
+[taxonomies]
+tags = ["Movies","Entertainment"]
 +++
 
+<details>
+<summary>Table of Contents</summary>
+<!-- toc -->
+</details>
+
 ![Mission Impossible](mi.webp)
+
+『ミッション・インポッシブル』の 最新作『ファイナル・レコニング』を観てきました。前作の『デッドレコニング』からの続編で、タイトルからしてシリーズ最終作となるので集大成ではありました。ネタバレ含みます。
 
 正直、イマイチでした。
 

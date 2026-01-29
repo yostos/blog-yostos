@@ -3,9 +3,14 @@ title = "Universal Audio/UAFX Max Preamp & Dual Compressorを買う"
 description = "Strymon Compadreに満足していなかったわけではありませんが、少し安く売られているのを見つけたので、UAFX Max Preamp & Dual Compressorを購入してしまいました。"
 date = 2025-05-24
 aliases = ["/articles/2025/05/24/max"]
+
+[taxonomies]
+tags = ["Guitar Pedals","Guitar","Music"]
 +++
 
 ![UAFX Max Preamp & Dual Compressor](max.webp)
+
+Strymon Compadreに満足していなかったわけではありませんが、少し安く売られているのを見つけたので、UAFX Max Preamp & Dual Compressorを購入してしまいました。
 
 ## UAFX Max Preamp & Dual Compressor の概要
 
@@ -37,16 +42,11 @@ UA610 をシミュレートしています。
 ティーンを稼ぐなど、実際にポストレコーディングで行われているような処理を足下
 で扱えるのは感動です。
 
-
 ちょっとだけ弾いてみました。クリーントーンは Epiphone Casino に Dyna Comp +
 UA 1176 です。ディストーションは Aria Pro II PE-1500 に LA-2A + Overdriveland
 です。
 
-<SoundCloudEmbed
-url="https://soundcloud.com/yostos/youre-everything-i-see?si=acc4d37d1a0345dbb6547d83bf11981f&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing"
-apiulr="https://api.soundcloud.com/tracks/2101336863"
-title="You're Everything I See"
-/>
+<iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/soundcloud%253Atracks%253A2101336863&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/yostos" title="Yostos" target="_blank" style="color: #cccccc; text-decoration: none;">Yostos</a> · <a href="https://soundcloud.com/yostos/youre-everything-i-see" title="You&#x27;re Everything I See" target="_blank" style="color: #cccccc; text-decoration: none;">You&#x27;re Everything I See</a></div>
 
 ## 使ってみた感想
 
@@ -55,7 +55,7 @@ title="You're Everything I See"
 
 - コンプによって有効なつまみが違うので編集時に戸惑う
 - 同じコントロールを 2 台のコンプで共有する形になっておりトグルスイッチで切り
-替える方式のため、現在のコントロールの状態がどちらのものか分からない。
+  替える方式のため、現在のコントロールの状態がどちらのものか分からない。
 
 私は自宅のレコーディングでしか使わないので大きな問題ではありませんが、
 ライブとか使う場合は混乱してしまいそうです。

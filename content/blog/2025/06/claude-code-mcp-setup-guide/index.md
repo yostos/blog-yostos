@@ -3,11 +3,20 @@ title = "Claude Code MCPセットアップガイド：Inkdrop統合の実践"
 description = "Claude CodeでInkdrop MCPサーバーを設定し、リモートMCPサーバーとして統合する手順を詳しく解説します。実際のセットアップから高度なワークフローの実演まで、ステップバイステップで紹介。"
 date = 2025-06-21
 aliases = ["/articles/2025/06/21/claude-code-mcp-setup-guide"]
+
+[taxonomies]
+tags = ["Tech", "Generative AI","Claude Code"]
 +++
+
+<details>
+<summary>Table of Contents</summary>
+<!-- toc -->
+</details>
 
 5 月 Claude Code が正式リリースされて以来手放せなくなっています。
 Anthropic の
-ブログに"[Remote MCP support in Claude Code](https://www.anthropic.com/news/claude-code-remote-mcp?campaignId=13926158&source=i_email&medium=email&content=Oct2024AnalysisTool&messageTypeId=140367)"
+ブログに"
+[Remote MCP support in Claude Code](https://www.anthropic.com/news/claude-code-remote-mcpcampaignId=13926158&source=i_email&medium=email&content=Oct2024AnalysisTool&messageTypeId=140367)"
 という記事が掲載されました。
 
 早速 Claude Code で Inkdrop MCP サーバーを設定し、リモート MCP サーバーとして統合

@@ -3,15 +3,21 @@ title = "MulmoCast: AIと人間が協働する次世代プレゼンテーショ�
 description = "AIネイティブなプレゼンテーション・プラットフォーム「MulmoCast」を実際に検証してみました。一つのスクリプトから動画、ポッドキャスト、PDFなど複数フォーマットに自動変換できる革新的なツールの使い方と実用性について詳しく解説します。"
 date = 2025-06-24
 aliases = ["/articles/2025/06/24/mulmocast-ai-collaboration-platform"]
+
+[taxonomies]
+tags = ["Tech", "Generative AI"]
 +++
+
+<details>
+<summary>Table of Contents</summary>
+<!-- toc -->
+</details>
 
 あの中島聡氏が開発している
 [mulmocast](https://github.com/receptron/mulmocast-cli) の検証しました。
 ガイドにしたがって、ビジネスプレゼンテーションと子供用の絵本的な動画を作って
 みました。生成 AI のモデルは Claude や Gemini も選択できるようですが、今回は
 デフォルトのまま OpenAI を使いました。
-
-<!-- toc -->
 
 ## MulmoCastとは何か？その意義は？
 

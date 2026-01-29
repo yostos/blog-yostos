@@ -3,6 +3,9 @@ title = "国税庁の法人番号システムWeb-APIの検証"
 description = "I had a requirement at work to uniquely identify companies, and to utilize the corporate number system, I created code to verify the Web API of the Corporate Number System provided by the National Tax Agency."
 date = 2025-04-18
 aliases = ["/articles/2025/04/18/company-info-api"]
+
+[taxonomies]
+tags = ["Tech","API"]
 +++
 
 仕事で企業を一意に特定するという要件があり、法人番号制度を利用するために

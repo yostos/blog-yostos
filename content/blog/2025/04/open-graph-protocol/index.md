@@ -3,6 +3,9 @@ title = "Open Graph Protocol対応"
 description = "このブログは適当に実装したので、Open Graph Protocolに対応してしていませんでした。今更ですが、Open Graph Protorol対応しSNSでリンクを投稿した時に記事情報が表示できるようにしてみました。"
 date = 2025-04-07
 aliases = ["/articles/2025/04/07/open-graph-protocol"]
+
+[taxonomies]
+tags = ["Tech", "Web"]
 +++
 
 ## Open Graph Protocolとは

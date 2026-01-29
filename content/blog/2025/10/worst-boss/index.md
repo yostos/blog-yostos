@@ -3,6 +3,9 @@ title = "管理職にしてはいけない人が必ず口にする言葉"
 description = "管理職として不適格な人が必ず口にする言葉、「とりあえず、検討させて」という記事を読みました。いやぁ、実例を間近で見て「ほんとにそうなんだな」と感心しました。"
 date = 2025-10-07
 aliases = ["/articles/2025/10/07/worst-boss"]
+
+[taxonomies]
+tags = ["Career"]
 +++
 
 Diamond Online で素敵な記事を見つけました。

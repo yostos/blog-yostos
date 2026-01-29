@@ -3,6 +3,9 @@ title = "真空管の歪みを実現するStrymon Fairfax"
 description = "Strymon から Fairfaxという新しい歪み系のペダルが発売されました。Strymonには既にSunsetとRiversideという歪み系ペダルが既にあります。なぜStrymonは更に新しい歪みペダルをリリースしたのでしょう?この記事では50年以上に渡るエレキギターのオーバードライブサウンドの歴史から、Strymon Fairfaxの技術的な意義を紐解いてみたいと思います。"
 date = 2025-12-21
 aliases = ["/articles/2025/12/21/fairfax"]
+
+[taxonomies]
+tags = ["Guitar", "Pedals"]
 +++
 
 ![Strymon Fairfax](fairfax.webp)

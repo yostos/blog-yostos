@@ -3,6 +3,9 @@ title = "Nothing Phone (3)を購入"
 description = "Pixel 8 Proからの買い替えでNothing Phone (3)を2週間使用したレビュー。透明な背面デザイン、Glyphマトリックス、Nothing OS 3.0の使い勝手、カメラ性能などを詳しく紹介。デザインにこだわりがあるユーザーにおすすめの一台。"
 date = 2025-09-17
 aliases = ["/articles/2025/09/17/nothing-phone3"]
+
+[taxonomies]
+tags = ["Tech"]
 +++
 
 ![Nothing Phone (3)](nothing.webp)

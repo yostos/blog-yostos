@@ -3,6 +3,9 @@ title = "A Command to Sync EXIF Data with File System Timestamps"
 description = "I recently embarked on a journey to digitize my old photographs. Since mypre-digital photos exist only as physical prints, I decided to invest in aPFU scanner to bring these memories into the digital age."
 date = 2024-12-30
 aliases = ["/articles/2024/12/30/exif-tool"]
+
+[taxonomies]
+tags = ["Tech", "Photography"]
 +++
 
 The scanner&apos;s performance has been impressive - it handled even my old San Francisco business trip photos from 2001 beautifully, producing crisp, clear scans.

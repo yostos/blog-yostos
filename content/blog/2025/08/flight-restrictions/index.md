@@ -3,6 +3,9 @@ title = "大韓民国李在明大統領来日に伴う無人航空機等の飛�
 description = "国土交通省から韓国大統領来日に伴う無人航空機の飛行規制がアナウンスされました。"
 date = 2025-08-23
 aliases = ["/articles/2025/08/23/flight-restrictions"]
+
+[taxonomies]
+tags = ["Drone", "Current Affairs"]
 +++
 
 おそらく DISP2.0 の利用者に向けて国道交通省から以下のメールが発信されました。

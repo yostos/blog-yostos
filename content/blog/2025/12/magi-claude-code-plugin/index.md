@@ -3,6 +3,9 @@ title = "MAGIシステムをClaude Code Pluginで実装してみた"
 description = "エヴァンゲリオンに登場するMAGIシステムを参考に、複数の専門AIエージェントによる合議制意思決定支援システムをClaude Code Pluginとして実装しました。MELCHIOR、BALTHASAR、CASPERの3つのエージェントが、科学的、法律的、感情的な視点から独立して分析を行い、多数決で結論を導くシステムです。"
 date = 2025-12-12
 aliases = ["/articles/2025/12/12/magi-claude-code-plugin"]
+
+[taxonomies]
+tags = ["Tech", "Generative AI"]
 +++
 
 ## Claude Code Pluginとは

@@ -3,7 +3,12 @@ title = "DJI Air3S 初飛行"
 description = "購入していたDJI Air3S の初飛行です。ドローンを飛ばすために必要なこともまとめておきました。"
 date = 2025-05-17
 aliases = ["/articles/2025/05/17/dji-air3s-flight"]
+
+[taxonomies]
+tags = ["Drone"]
 +++
+
+購入していたDJI Air3S の初飛行です。ドローンを飛ばすために必要なこともまとめておきました。
 
 ## 実際の飛行
 

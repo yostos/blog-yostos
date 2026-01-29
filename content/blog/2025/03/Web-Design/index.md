@@ -3,6 +3,9 @@ title = "ウェブデザイン技能検定は必要か？ - 技術変化の時�
 description = "最近気になってWEBデザイン関連の認定資格を調べていたら、「ウェブデザイン技能検定」という国家検定があるのに気付きました。折角なので、深掘りして調べてみました。"
 date = 2025-03-09
 aliases = ["/articles/2025/03/09/Web-Design"]
+
+[taxonomies]
+tags = ["Certification", "Tech"]
 +++
 
 少しだけ通った VY 訓練校では、[Webクリエイター能力認定試験](https://www.sikaku.gr.jp/web/wc/)が取得できそうことを言っていました。内容見ると、メモ帳で HTML を書かすようなアホな試験でした。

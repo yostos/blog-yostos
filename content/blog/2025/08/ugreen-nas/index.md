@@ -3,6 +3,9 @@ title = "A New Proposal for the Cloud Era: How UGREEN NAS is changing the future
 description = "A 2-month review of the excellent cost-performance UGREEN NASync DXP2800. This popular NAS offers outstanding specs for its price range. From tool-free easy setup and SSD cache acceleration to UGOS practicality, we explain in detail why we recommend it to NAS beginners and how to use it effectively. We provide an honest evaluation including concerns about Chinese manufacturers."
 date = 2025-08-31
 aliases = ["/articles/2025/08/31/ugreen-nas"]
+
+[taxonomies]
+tags = ["Tech"]
 +++
 
 ![UGREEN NAS](ugreen-nas.webp)

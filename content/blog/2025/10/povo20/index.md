@@ -3,6 +3,9 @@ title = "楽天モバイルからPovo2.0に移行"
 description = "楽天モバイルの通信品質に不満を感じ、Povo2.0に移行しました。混雑時に通信不能になる楽天モバイルと比べ、Povoは高速で安定した通信品質を提供しています。トッピング制による柔軟な料金体系も魅力的です。"
 date = 2025-10-13
 aliases = ["/articles/2025/10/13/povo20"]
+
+[taxonomies]
+tags = ["Tech"]
 +++
 
 ![POVO2.0](povo.webp)

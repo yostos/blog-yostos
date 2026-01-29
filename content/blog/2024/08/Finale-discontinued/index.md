@@ -3,6 +3,9 @@ title = "Finaleがフィナーレを迎える"
 description = "採譜アプリとして有名なFinaleが開発・販売を修了するそうです。"
 date = 2024-08-27
 aliases = ["/articles/2024/08/27/Finale-discontinued"]
+
+[taxonomies]
+tags = ["Music", "Software"]
 +++
 
 採譜ソフトの Finale が開発・販売を終了するそうです。

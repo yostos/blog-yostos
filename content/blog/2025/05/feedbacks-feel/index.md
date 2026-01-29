@@ -3,7 +3,12 @@ title = "Feedback's Feel"
 description = "ディストーションにBOSS DF-1を使っていて、うっかり位相をそのままミックスダウンしていました。修正版です。"
 date = 2025-05-17
 aliases = ["/articles/2025/05/17/feedbacks-feel"]
+
+[taxonomies]
+tags = ["Music", "Guitar"]
 +++
+
+ディストーションにBOSS DF-1を使っていて、うっかり位相をそのままミックスダウンしていました。修正版です。
 
 ![](feedback.png)
 

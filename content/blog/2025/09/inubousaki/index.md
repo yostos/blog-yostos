@@ -3,6 +3,9 @@ title = "Viewing a Meiji Era Lighthouse from Above - Inubosaki Lighthouse"
 description = "Drone footage of Inubosaki Lighthouse, located at the easternmost point of the Kanto region. Capturing the white lighthouse that has watched over the Pacific Ocean since 1874 in the mystical light of early morning."
 date = 2025-09-30
 aliases = ["/articles/2025/09/30/inubousaki"]
+
+[taxonomies]
+tags = ["Drone", "Photography"]
 +++
 
 ![Inubosaki Lighthouse](inbousaki.webp)

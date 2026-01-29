@@ -3,6 +3,9 @@ title = "小麦色のマーメイド"
 description = "暑い。松田聖子さんの『小麦色のマーメイド』が思い浮かんだので演奏してみました。"
 date = 2025-08-29
 aliases = ["/articles/2025/08/29/wheat-colored-mermaid"]
+
+[taxonomies]
+tags = ["Music", "Guitar"]
 +++
 
 This song performed by Seiko Matsuda was originally released in July 1982,

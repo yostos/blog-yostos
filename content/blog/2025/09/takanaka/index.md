@@ -3,6 +3,9 @@ title = "高中正義 SUPER TAKANAKA WORLD LIVE 2025-2026"
 description = "40年ぶりくらいに高中正義さんのライブに行ってきました。本当によかった。生きている間に見ることが出来て良かった。"
 date = 2025-09-21
 aliases = ["/articles/2025/09/21/takanaka"]
+
+[taxonomies]
+tags = ["Music"]
 +++
 
 ![高中正義 SUPER TAKANAKA WORLD LIVE 2025-2026](takanaka.webp)

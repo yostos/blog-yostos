@@ -3,6 +3,9 @@ title = "Akio Yamaguchi's Appointment as Managing Director of Keizai Doyukai"
 description = "Akio Yamaguchi, President of IBM Japan, has been appointed as a managing director of Keizai Doyukai (Japan Association of Corporate Executives)."
 date = 2025-12-16
 aliases = ["/articles/2025/12/16/akio-yamaguchi"]
+
+[taxonomies]
+tags = ["Current Affairs"]
 +++
 
 ![Akio Yamaguchi](akio.jpg)

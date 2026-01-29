@@ -3,6 +3,9 @@ title = "Weekly Buzz🐝 2024-10-18"
 description = "ちょっと間が開いてしまいましたが、この間にすっかり秋らしくなって涼しくなってきました。ただ、今週末も夏日になるというので油断できません。今週は宮崎空港不発弾事件とNintendo Alarmoについてです。"
 date = 2024-10-18
 aliases = ["/articles/2024/10/19/Weekly-buzz-20241019"]
+
+[taxonomies]
+tags = ["Weekly Buzz", "Current Affairs"]
 +++
 
 ## 宮崎空港不発弾について

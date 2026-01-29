@@ -3,6 +3,9 @@ title = "制度の迷宮を解読：ドローン操縦士資格の取得体験�
 description = "昨年末に「空を飛びたい」と思い立ち、ドローンを飛ばすために二等無人航空機操縦士のライセンスに取り組みましたが、やっと技能証明申請まで漕ぎ着けました"
 date = 2025-03-22
 aliases = ["/articles/2025/03/22/drown-lisense"]
+
+[taxonomies]
+tags = ["Certification","Drone"]
 +++
 
 ## 技能証明申請者番号の取得

@@ -3,6 +3,9 @@ title = "鬼滅の刃 映画制作発表！"
 description = "鬼滅の刃の最終章である『無限城』の制作発表がありました。"
 date = 2024-12-31
 aliases = ["/articles/2024/12/31/kimetsu-no-yaiba"]
+
+[taxonomies]
+tags = ["Movies","Anime", "Entertainment"]
 +++
 
 Hold onto your Nichirin Swords.

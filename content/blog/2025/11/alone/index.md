@@ -3,6 +3,9 @@ title = "Heart - Alone(Cover)"
 description = "1987年、社会人になったばかりの頃にラジオから流れてきたこの曲。80年代っぽいかっこよさのある曲で懐かしく、ギターパートをコピーしてみました。"
 date = 2025-11-29
 aliases = ["/articles/2025/11/29/alone"]
+
+[taxonomies]
+tags = ["Music", "Guitar"]
 +++
 
 <SoundCloudEmbed

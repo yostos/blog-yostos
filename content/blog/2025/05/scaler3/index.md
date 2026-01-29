@@ -3,10 +3,18 @@ title = "Scaler3で作曲支援"
 description = "先日発売されたScaler3ですが、音楽理論を知らなくても作曲や編曲ができると話題なので購入してみました。"
 date = 2025-05-31
 aliases = ["/articles/2025/05/31/scaler3"]
+
+[taxonomies]
+tags = ["Music Procution", "Software"]
 +++
 
 ![Scaler3](scaler3.webp)
+先日発売されたScaler3ですが、音楽理論を知らなくても作曲や編曲ができると話題なので購入してみました。
 
+<details>
+<summary>Table of Contents</summary>
+<!-- toc -->
+</details>
 ## Scaler3とは
 
 [Scaler3](https://scalermusic.com/products/scaler-3/)は音楽理論やコード理論
@@ -36,14 +44,14 @@ title="Scaler3テスト" />
 オリジナルは、G Major で次のようなコード進行です。
 
 ```
-G Em7 | C D | G Em7 | C D | Em B7 | Em7 A7 | D Bm7| Am7 
+G Em7 | C D | G Em7 | C D | Em B7 | Em7 A7 | D Bm7| Am7
 ```
 
 ですが、 Scaler3 でもっともノートとコードにのマッチ度が高かった B Phrygian
 Mode でコードを構成してみました。
 
 ```
-  Bm G | C D | Em G | Am G | Em7 Dsus2 | Bm Em | A7 D| Bm7 
+  Bm G | C D | Em G | Am G | Em7 Dsus2 | Bm Em | A7 D| Bm7
 ```
 
 メロディから判断され推奨されるコードはブルーで示されますが、

@@ -3,6 +3,9 @@ title = "『御上先生』のラーメン店"
 description = "近くのラーメン店にふらりとは言ったら、なんとドラマ『御上先生』のロケが行われたお店でした。"
 date = 2025-03-17
 aliases = ["/articles/2025/03/17/Teacher-Mikami"]
+
+[taxonomies]
+tags = ["Gourmet", "Entertainment","Movies"]
 +++
 
 今クールのドラマの中では『御上先生』を一番楽しみにしています。
@@ -23,10 +26,10 @@ aliases = ["/articles/2025/03/17/Teacher-Mikami"]
   <figcaption>めん花</figcaption>
 </figure>
 
-<ShopInfo
-  name="HOTめん花"
-  address="千葉県千葉市美浜区幸町1-37-13"
-  osmAddress="35.609007, 140.101358"
-  phone="043-245-9174"
-  closedDays="無休"
-/>
+| 項目   | 内容                                                                                                       |
+| ------ | ---------------------------------------------------------------------------------------------------------- |
+| 店名   | HOTめん花                                                                                                  |
+| 住所   | 千葉県千葉市美浜区幸町1-37-13                                                                              |
+| 地図   | [OpenStreetMap](https://www.openstreetmap.org/?mlat=35.609007&mlon=140.101358#map=17/35.609007/140.101358) |
+| 電話   | 043-245-9174                                                                                               |
+| 定休日 | 無休                                                                                                       |

@@ -3,6 +3,9 @@ title = "Zero-Wat Amp Simplifier MK-II"
 description = "I purchased the Simplifier MK-II from Simplifier Amp which was the best ampsimulator I've ever seen!"
 date = 2025-02-11
 aliases = ["/articles/2025/02/11/simplifier-mk2"]
+
+[taxonomies]
+tags = ["Guitar", "Pedals"]
 +++
 
 I had no major complaints about the Strymon Iridium I had been using for a long time,

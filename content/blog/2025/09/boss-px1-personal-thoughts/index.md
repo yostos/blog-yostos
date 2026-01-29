@@ -3,6 +3,9 @@ title = "Personal Thoughts on the BOSS PX-1 Plugout FX"
 description = "A dream-like compact effect pedal that can recreate BOSS's legendary effects in a single unit has been announced. While it's been received relatively positively in Japan, overseas reactions have been quite harsh and critical. I haven't purchased it myself, but I'd like to share my personal thoughts based on the product information."
 date = 2025-09-08
 aliases = ["/articles/2025/09/08/boss-px1-personal-thoughts"]
+
+[taxonomies]
+tags = ["Guitar", "Pedals"]
 +++
 
 ![BOSS PX-1](px-1.webp)

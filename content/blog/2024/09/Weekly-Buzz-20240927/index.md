@@ -3,6 +3,9 @@ title = "Weekly Buzz🐝 2024-09-27"
 description = "昨日くらいから随分と秋らしくなりました。今週は自宅キッチンのリフォームのためあまりニュースなどを追えませんでした。今週は、映画『機動警察パトレイバー THE MOVIE』、ジャーナルツール jrnl、自動車業界におけるITについてです。"
 date = 2024-09-27
 aliases = ["/articles/2024/09/29/Weekly-Buzz-20240927"]
+
+[taxonomies]
+tags = ["Weekly Buzz", "Current Affairs"]
 +++
 
 ## 『機動警察パトレイバー THE MOVIE』リバイバル上映を見て

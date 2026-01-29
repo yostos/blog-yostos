@@ -3,7 +3,17 @@ title = "Anthropic Claude4を発表"
 description = "Anthropic が開発者会議「Code with Claude」で推論能力と深い思考能力が大きく向上した新しいモデルClaude 4を発表しました。"
 date = 2025-05-23
 aliases = ["/articles/2025/05/23/claude4"]
+
+[taxonomies]
+tags = ["Tech", "Generative AI"]
 +++
+
+Anthropic が開発者会議「Code with Claude」で推論能力と深い思考能力が大きく向上した新しいモデルClaude 4を発表しました。
+
+<details>
+<summary>Table of Contens</summary>
+<!-- toc -->
+</details>
 
 ## Claude 4 の内容
 

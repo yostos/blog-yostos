@@ -3,6 +3,9 @@ title = "Neural DSP Archetypeプラグインを買おう"
 description = "Thanksgiving Day is coming up soon.Neural DSP, which develops and sells music-related devices and software,also typically starts its Black Friday sale in the third week of November each year.The Neural DSP Archetype plugin for guitar that I've always wanted will probably be half-priced on Black Friday.Let's make sure to prepare thoroughly and decide which ones to buy before the sales starts."
 date = 2025-11-16
 aliases = ["/articles/2025/11/16/archetype"]
+
+[taxonomies]
+tags = ["Guitar", "Software"]
 +++
 
 ![Neural DSP Archetype](archetype.webp)

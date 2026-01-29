@@ -3,6 +3,9 @@ title = "読了『地下鉄サリン事件はなぜ防げなかったのか』"
 description = "本書は、オウム真理教が事件を起こした当時警察庁刑事局長として警察を率いていた垣見隆氏がオウム真理教事件の捜査全内幕を初めて証言したものです。"
 date = 2025-03-26
 aliases = ["/articles/2025/03/26/tokyo-subway-sarin-attack"]
+
+[taxonomies]
+tags = ["Books"]
 +++
 
 ![](sarin.webp)
@@ -11,75 +14,7 @@ aliases = ["/articles/2025/03/26/tokyo-subway-sarin-attack"]
 程を詳細に描いています。東京地裁が世界平和統一家庭連合（旧統一教会）に対して
 解散命令を下したタイミングでタイムリーなので手に取りました。
 
-<section>
-  <div className="border rounded-lg p-4 shadow-sm overflow-hidden">
-    <div className="flex flex-col md:flex-row gap-4 md:gap-6">
-      <div className="flex-shrink-0 flex items-start">
-        <img
-          src="https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/0319/9784022520319_1_7.jpg?_ex=150x150"
-          alt="書籍表紙"
-          className="w-auto h-auto max-w-[150px] max-h-[225px] rounded-none shadow-md"
-        />
-      </div>
-
-      <div className="flex-1 flex flex-col justify-between h-full">
-        <div>
-          <span
-            className="font-medium text-sm text-blue-700 hover:text-blue-900 transition-colors mt-0 mb-0">
-          <a href="https://amzn.to/3R96i0t" >
-            地下鉄サリン事件はなぜ防げなかったのか　元警察庁刑事局長　30 年後の証言
-          </a>
-          </span>
-          <span className="text-sm text-gray-600 mt-0 mb-1">
-            垣見隆朝日新聞出版 2025 年 02 月 07 日頃
-          </span>
-        </div>
-
-        <div className="flex flex-wrap gap-2 mt-auto">
-          <a
-            href="https://hb.afl.rakuten.co.jp/hgc/1300574f.7d238558.13005750.4bcd8088/yomereba_main_202503261007023029?pc=http%3A%2F%2Fbooks.rakuten.co.jp%2Frb%2F18122328%2F%3Frafcid%3Dwsc_b_bs_1051722217600006323%3Fscid%3Daf_ich_link_urltxt%26m%3Dhttp%3A%2F%2Fm.rakuten.co.jp%2Fev%2Fbook%2F"
-            className="inline-flex items-center justify-center bg-white hover:bg-gray-50 text-black border border-gray-300 rounded px-3 py-1 text-sm font-medium transition-colors"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <img
-              src="/rakuten.svg"
-              alt="楽天"
-              className="h-4 w-16 rounded-none"
-            />
-          </a>
-
-          <a
-            href="https://amzn.to/3FHwD32"
-            className="inline-flex items-center justify-center bg-white hover:bg-gray-50 text-black border border-gray-300 rounded px-3 py-1 text-sm font-medium transition-colors"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <img
-              src="/amazon.svg"
-              alt="Amazon"
-              className="h-4 w-16 rounded-none"
-            />
-          </a>
-
-          <a
-            href="https://amzn.to/3Y6sM5V"
-            className="inline-flex items-center justify-center bg-white hover:bg-gray-50 text-black border border-gray-300 rounded px-3 py-1 text-sm font-medium transition-colors"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <img
-              src="/kindle.svg"
-              alt="Kindle"
-              className="h-4 w-24 rounded-none"
-            />
-          </a>
-        </div>
-      </div>
-    </div>
-
-  </div>
-</section>
+<div class="booklink-box" style="text-align:left;padding-bottom:20px;font-size:small;zoom: 1;overflow: hidden;"><div class="booklink-image" style="float:left;margin:0 15px 10px 0;"><a href="https://hb.afl.rakuten.co.jp/hgc/1300574f.7d238558.13005750.4bcd8088/yomereba_main_202601292229111619?pc=http%3A%2F%2Fbooks.rakuten.co.jp%2Frb%2F18122328%2F%3Frafcid%3Dwsc_b_bs_1051722217600006323%3Fscid%3Daf_ich_link_urltxt%26m%3Dhttp%3A%2F%2Fm.rakuten.co.jp%2Fev%2Fbook%2F" target="_blank" ><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/0319/9784022520319_1_7.jpg?_ex=200x200" style="border: none;" /></a></div><div class="booklink-info" style="line-height:120%;zoom: 1;overflow: hidden;"><div class="booklink-name" style="margin-bottom:10px;line-height:120%"><a href="https://hb.afl.rakuten.co.jp/hgc/1300574f.7d238558.13005750.4bcd8088/yomereba_main_202601292229111619?pc=http%3A%2F%2Fbooks.rakuten.co.jp%2Frb%2F18122328%2F%3Frafcid%3Dwsc_b_bs_1051722217600006323%3Fscid%3Daf_ich_link_urltxt%26m%3Dhttp%3A%2F%2Fm.rakuten.co.jp%2Fev%2Fbook%2F" target="_blank" >地下鉄サリン事件はなぜ防げなかったのか　元警察庁刑事局長　30年後の証言</a><div class="booklink-powered-date" style="font-size:8pt;margin-top:5px;font-family:verdana;line-height:120%">posted with <a href="https://yomereba.com" rel="nofollow" target="_blank">ヨメレバ</a></div></div><div class="booklink-detail" style="margin-bottom:5px;">垣見隆 朝日新聞出版 2025年02月07日頃    </div><div class="booklink-link2" style="margin-top:10px;"><div class="shoplinkrakuten" style="display:inline;margin-right:5px"><a href="https://hb.afl.rakuten.co.jp/hgc/1300574f.7d238558.13005750.4bcd8088/yomereba_main_202601292229111619?pc=http%3A%2F%2Fbooks.rakuten.co.jp%2Frb%2F18122328%2F%3Frafcid%3Dwsc_b_bs_1051722217600006323%3Fscid%3Daf_ich_link_urltxt%26m%3Dhttp%3A%2F%2Fm.rakuten.co.jp%2Fev%2Fbook%2F" target="_blank" >楽天ブックス</a></div><div class="shoplinkamazon" style="display:inline;margin-right:5px"><a href="https://www.amazon.co.jp/exec/obidos/asin/4022520310/yostosweb-22/" target="_blank" >Amazon</a></div><div class="shoplinkkindle" style="display:inline;margin-right:5px"><a href="https://www.amazon.co.jp/gp/search?keywords=%E5%9C%B0%E4%B8%8B%E9%89%84%E3%82%B5%E3%83%AA%E3%83%B3%E4%BA%8B%E4%BB%B6%E3%81%AF%E3%81%AA%E3%81%9C%E9%98%B2%E3%81%92%E3%81%AA%E3%81%8B%E3%81%A3%E3%81%9F%E3%81%AE%E3%81%8B%E3%80%80%E5%85%83%E8%AD%A6%E5%AF%9F%E5%BA%81%E5%88%91%E4%BA%8B%E5%B1%80%E9%95%B7%E3%80%8030%E5%B9%B4%E5%BE%8C%E3%81%AE%E8%A8%BC%E8%A8%80&__mk_ja_JP=%83J%83%5E%83J%83i&url=node%3D2275256051&tag=yostosweb-22" target="_blank" >Kindle</a></div>                                           </div></div><div class="booklink-footer" style="clear: left"></div></div>
 
 ## オウム真理教について
 

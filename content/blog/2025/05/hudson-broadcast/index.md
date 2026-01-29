@@ -3,9 +3,19 @@ title = "Hudson Broadcastレビュー：クラシックなコンソールサウ�
 description = "多くのブティックエフェクターが溢れる現代のギターシーンで、真に個性を放つペダルは稀有な存在です。英国Hudson Electronicsの「Broadcast」は、60年代放送コンソールの回路を再解釈した異色のオーバードライブで、クリーンブーストからファジーな歪みまでをカバー。そのユニークなゲルマニウム＆トランスの組み合わせは、デジタル時代に失われつつあるアナログの温かみと複雑さを呼び覚まします。このレビューでは、この特別なペダルの魅力に迫ります。"
 date = 2025-05-20
 aliases = ["/articles/2025/05/20/hudson-broadcast"]
+
+[taxonomies]
+tags = ["Guitar Pedals"]
 +++
 
 ![Hudson Broadcast](broadcast.webp)
+
+<details>
+<summary>Table of Contents</summary>
+<!-- toc -->
+</details>
+
+多くのブティックエフェクターが溢れる現代のギターシーンで、真に個性を放つペダルは稀有な存在です。英国Hudson Electronicsの「Broadcast」は、60年代放送コンソールの回路を再解釈した異色のオーバードライブで、クリーンブーストからファジーな歪みまでをカバー。そのユニークなゲルマニウム＆トランスの組み合わせは、デジタル時代に失われつつあるアナログの温かみと複雑さを呼び覚まします。このレビューでは、この特別なペダルの魅力に迫ります。
 
 ## 1. Hudson Broadcastとは
 

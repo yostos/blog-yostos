@@ -3,6 +3,9 @@ title = "Goodbye Bartender!"
 description = "Macのメニュー管理アプリのBartenderが結構まずいことになっていました。"
 date = 2024-11-12
 aliases = ["/articles/2024/11/12/goodbye-bartender"]
+
+[taxonomies]
+tags = ["Tech","Software","Mac"]
 +++
 
 [Bartender](https://www.macbartender.com/) was menu bar wizard I'd been geeking out over. Turned out Ben Surtees had sold it to some shadowy outfit called Applause in March 2024. Reddit blew up with users freaking out.

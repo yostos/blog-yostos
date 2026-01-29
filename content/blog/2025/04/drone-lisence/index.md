@@ -3,6 +3,9 @@ title = "新DIPS包括申請と二等無人航空機操縦士"
 description = "やっと二等無人航空機操縦士の技能証明書が郵送されてきたので、新DIPSで改正後の包括申請を行いました。"
 date = 2025-04-10
 aliases = ["/articles/2025/04/10/drown-lisence"]
+
+[taxonomies]
+tags = ["Certification", "Drone"]
 +++
 
 ## 二等無人航空機操縦士技能証明書

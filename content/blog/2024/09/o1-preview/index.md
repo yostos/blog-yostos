@@ -3,6 +3,9 @@ title = "OpenAI o1-preview"
 description = "OpenAIのo1-previewを現在評価しています。"
 date = 2024-09-17
 aliases = ["/articles/2024/09/17/o1-preview"]
+
+[taxonomies]
+tags = ["Tech", "Generative AI"]
 +++
 
 Currently evaluating OpenAI's o1-preview. Although it is said that it is not

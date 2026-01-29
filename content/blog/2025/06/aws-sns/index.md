@@ -3,6 +3,12 @@ title = "AWSからSMSにメッセージを送る"
 description = "AWSが提供するAmazon SNS(Simple Notification Service)を使って、SMSにメッセージを送信するサンプルコードを作ってみました。"
 date = 2025-06-09
 aliases = ["/articles/2025/06/09/aws-sns"]
+[extra]
+mermaid = true
+
+[taxonomies]
+tags = ["Tech", "AWS","Python"]
+
 +++
 
 ## 機密文書のメールでの共有
@@ -37,63 +43,58 @@ GUI から任意の電話番号に SMS を送信できます。
 
 Python の実行環境が必要です。
 
-{
-// `mermaid
-// graph TD
-//     A[ユーザー] --> B[Python GUI アプリケーション]
-//     B --> C[.env.local ファイル]
-//     C --> D[AWS認証情報<br/>ACCESS_KEY_ID<br/>SECRET_ACCESS_KEY<br/>REGION]
-//
-//     B --> E[電話番号入力<br/>+81XXXXXXXXX]
-//     B --> F[メッセージ入力<br/>パスワード等]
-//     B --> G[送信ボタン]
-//
-//     G --> H[boto3 SDK]
-//     H --> I[AWS SNS API]
-//     I --> J{SMS Sandbox?}
-//
-//     J -->|Sandbox Mode| K[検証済み番号のみ]
-//     J -->|Production Mode| L[全世界の番号]
-//
-//     K --> M[国内キャリア<br/>DoCoMo/au/SoftBank]
-//     L --> M
-//
-//     M --> N[受信者の携帯電話]
-//
-//     I --> O[CloudWatch Logs]
-//     O --> P[配信ログ<br/>成功/失敗/料金]
-//
-//     Q[料金] --> R[$0.06-0.1/SMS<br/>約6-10円/通]
-//
-//     subgraph "ローカル環境"
-//         B
-//         C
-//     end
-//
-//     subgraph "AWS Cloud"
-//         I
-//         J
-//         O
-//         P
-//     end
-//
-//     subgraph "日本国内"
-//         M
-//         N
-//     end
-//     style A fill:#e1f5fe
-//     style B fill:#f3e5f5
-//     style I fill:#fff3e0
-//     style N fill:#e8f5e8
-//     style R fill:#ffebee
-//
-//`
-}
-
-
 処理概要です。あくまでデモです。
 
-![概要図](diagram.webp)
+{% mermaid() %}
+graph TD
+A[ユーザー] --> B[Python GUI アプリケーション]
+B --> C[.env.local ファイル]
+C --> D[AWS認証情報<br/>ACCESS_KEY_ID<br/>SECRET_ACCESS_KEY<br/>REGION]
+
+    B --> E[電話番号入力<br/>+81XXXXXXXXX]
+    B --> F[メッセージ入力<br/>パスワード等]
+    B --> G[送信ボタン]
+
+    G --> H[boto3 SDK]
+    H --> I[AWS SNS API]
+    I --> J{SMS Sandbox?}
+
+    J -->|Sandbox Mode| K[検証済み番号のみ]
+    J -->|Production Mode| L[全世界の番号]
+
+    K --> M[国内キャリア<br/>DoCoMo/au/SoftBank]
+    L --> M
+
+    M --> N[受信者の携帯電話]
+
+    I --> O[CloudWatch Logs]
+    O --> P[配信ログ<br/>成功/失敗/料金]
+
+    Q[料金] --> R[$0.06-0.1/SMS<br/>約6-10円/通]
+
+    subgraph "ローカル環境"
+        B
+        C
+    end
+
+    subgraph "AWS Cloud"
+        I
+        J
+        O
+        P
+    end
+
+    subgraph "日本国内"
+        M
+        N
+    end
+    style A fill:#e1f5fe
+    style B fill:#f3e5f5
+    style I fill:#fff3e0
+    style N fill:#e8f5e8
+    style R fill:#ffebee
+
+{% end %}
 
 実際に任意の SMS に送信するには、AWS の管理コンソールで SANDBOX を解除する必要が
 あります。また、このままだとユーザー認証していないので誰でも送信できてし
@@ -225,4 +226,8 @@ AWS の IAM でアクセスキーを作成して、`.env.local`などに保存�
 AWS_ACCESS_KEY_ID=A@@@@@@@@@@@@@@@@
 AWS_SECRET_ACCESS_KEY=@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 AWS_DEFAULT_REGION=ap-northeast-1
+```
+
+```
+
 ```

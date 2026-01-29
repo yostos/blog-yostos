@@ -3,6 +3,9 @@ title = "知らない内に中丸氏と対戦"
 description = "スプラでKAT-TUN中丸氏と対戦？"
 date = 2024-07-24
 aliases = ["/articles/2024/07/24/Nakamaru"]
+
+[taxonomies]
+tags = ["Current Affairs", "Game", "Splatoon"]
 +++
 
 ![](nakamaru.webp)

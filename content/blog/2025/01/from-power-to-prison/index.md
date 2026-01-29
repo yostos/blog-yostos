@@ -3,6 +3,9 @@ title = "From Power to Prison: The Recurring Fate of South Korean Presidents"
 description = "It appears that a joint investigation team, including police forces, has begun moving forward with the execution of an arrest warrant for current South Korean President Yoon Suk-yeol."
 date = 2025-01-15
 aliases = ["/articles/2025/01/15/from-power-to-prison"]
+
+[taxonomies]
+tags = ["Current Affairs","Korea"]
 +++
 
 South Korea has a strong national anti-Japanese consciousness, and although it is a neighboring country, I usually pay no attention to it. However, the fate of not only this incident but also that of successive presidents is so extraordinary that I decided to compile this overview.

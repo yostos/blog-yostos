@@ -3,6 +3,9 @@ title = "Vin Antique PPSE Classic - Artisanal Warmth Over Drive"
 description = "Vin Antique, a small effects pedal brand from Kyoto, has released a newoverdrive pedal called \"PPSE Classic\". Although it was produced in smallquantities, I was fortunate enough to get my hands on one."
 date = 2024-12-26
 aliases = ["/articles/2024/12/26/ppse-classic"]
+
+[taxonomies]
+tags = ["Guitar","Guitar Pedals"]
 +++
 
 ![PPSE Classic and '79](r0000634.jpg)

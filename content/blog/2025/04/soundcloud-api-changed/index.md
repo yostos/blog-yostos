@@ -3,7 +3,12 @@ title = "SoundCloud API仕様の変更"
 description = "直近数日の内にSoundCloudはAPIの仕様を変更したようです。自作のTypeScriptコンポーネントがうまく機能しなくなったために対応しました。"
 date = 2025-04-28
 aliases = ["/articles/2025/04/28/soundcloud-api-changed"]
+
+[taxonomies]
+tags = ["Tech","API"]
 +++
+
+直近数日の内にSoundCloudはAPIの仕様を変更したようです。自作のTypeScriptコンポーネントがうまく機能しなくなったために対応しました。
 
 ## 変更のポイント
 

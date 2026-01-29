@@ -3,6 +3,9 @@ title = "Berkeley Mono: A Worthy Successor to MonoLisa in My Terminal"
 description = "ずっとMacのターミナルではMonoLisaフォントを利用してきましたが、Berkeley Monoフォントに入れ替えました。"
 date = 2024-12-19
 aliases = ["/articles/2024/12/19/berkeley-mono"]
+
+[taxonomies]
+tags = ["Tech","Font"]
 +++
 
 ずっと Mac のターミナルでは[MonoLisa](https://www.monolisa.dev/)フォントを利用してきましたが、
@@ -57,7 +60,6 @@ Berkeley Mono は少し前に一部で話題になっていましたが、リガ
 ## フォント比較
 
 以下のスクリーンショットは、適当なプログラム Cascadia Next / MonoLisa / Berkeley Mono を使って表示させた例です。
-
 
 ![Fonts Comparison](fonts.jpg)
 

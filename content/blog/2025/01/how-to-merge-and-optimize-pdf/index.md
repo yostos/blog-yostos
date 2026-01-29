@@ -3,6 +3,9 @@ title = "How to Merge and Optimize Your PDF Files"
 description = "I recently purchased a DJI Neo drone, and in Japan, it's mandatory to register your drone with the Ministry of Land, Infrastructure, Transport and Tourism (MLIT). During registration, you need to submit a user manual that includes both handling instructions and specifications. However, the DJI Neo manual only contains references to specifications on DJI's website. Therefore, for the registration, I needed to merge the user manual with the specifications from the website."
 date = 2025-01-10
 aliases = ["/articles/2025/01/10/how-to-merge-and-optimize-pdf"]
+
+[taxonomies]
+tags = ["Tech","PDF","CLI"]
 +++
 
 ## Bypassing PDF Password Protection

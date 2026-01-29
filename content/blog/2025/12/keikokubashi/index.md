@@ -3,6 +3,9 @@ title = "青と赤のコントラスト - 渓谷橋と宝衛橋"
 description = "養老渓谷の象徴的な2つの橋、青い渓谷橋と赤い宝衛橋をドローンで撮影しました。江戸時代後期から行われた「川廻し」による治水の歴史と、昭和の開発によって生まれた美しい橋の物語を紹介します。"
 date = 2025-12-13
 aliases = ["/articles/2025/12/13/keikokubashi"]
+
+[taxonomies]
+tags = ["Drone", "Photography"]
 +++
 
 ![渓谷橋](keikokubashi.webp)

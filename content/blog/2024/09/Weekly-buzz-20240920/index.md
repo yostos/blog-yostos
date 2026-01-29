@@ -3,6 +3,9 @@ title = "Weekly Buzz🐝 2024-09-20"
 description = "今週気になったのは、Android界隈の動き、Amazon Bedrock、自民党総裁選、自宅のキッチン改装です。"
 date = 2024-09-20
 aliases = ["/articles/2024/09/20/Weekly-buzz-20240920"]
+
+[taxonomies]
+tags = ["Weekly Buzz", "Current Affairs"]
 +++
 
 今週の気になった記事や出来事は次の 3 つです。

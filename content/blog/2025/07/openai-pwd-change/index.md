@@ -3,6 +3,9 @@ title = "OpenAIではパスワード変更機能が提供されていない？"
 description = "OpenAIでパスワードを変更しようとして、パスワード変更機能が提供されていないことに気付きました。"
 date = 2025-07-18
 aliases = ["/articles/2025/07/18/openai-pwd-change"]
+
+[taxonomies]
+tags = ["Tech", "Security"]
 +++
 
 最近はずっと Claude を利用していて ChatGPT/OpenAI はご無沙汰しています。

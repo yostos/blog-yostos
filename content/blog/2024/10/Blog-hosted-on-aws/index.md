@@ -3,6 +3,9 @@ title = "メインブログのAWS移行"
 description = "メインブログを CloudflareからAWS S3に移行してみました。"
 date = 2024-10-21
 aliases = ["/articles/2024/10/21/Blog-hosted-on-aws"]
+
+[taxonomies]
+tags = ["Tech", "AWS","Weblog"]
 +++
 
 特に困っていたわけではありませんが、デプロイの自動化していると環境の違いで悩むこともあるのでローカルで生成したものをアップロードしようかなという気まぐれです。

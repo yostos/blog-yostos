@@ -3,12 +3,18 @@ title = "NeoVimからClaude Codeを使う"
 description = "Anthropic の Developer Partner Program に Join してClaude Codeを使うモチベーションが高まっています。Claude CodeをNeoVimから使用するためのClaude Code Neovim Pluginをインストールしました。Claude Code Neovim Plugin を NeoVim で使う方法を説明します。"
 date = 2025-05-04
 aliases = ["/articles/2025/05/04/claude-code-nvim"]
+
+[taxonomies]
+tags = ["Tech", "Generative AI"]
 +++
 
 ![Claude-Code-Nvim](claude-code-nvim.webp)
+Anthropic の Developer Partner Program に Join してClaude Codeを使うモチベーションが高まっています。Claude CodeをNeoVimから使用するためのClaude Code Neovim Pluginをインストールしました。Claude Code Neovim Plugin を NeoVim で使う方法を説明します。
 
+<details>
+<summary>Table of Contents</summary>
 <!-- toc -->
-
+</details>
 ## Claude Code Neovim Plugin
 
 今回導入したのは、[Claude Code Neovim Plugin](https://github.com/greggh/claude-code.nvim) `claude-code.nvim` です。

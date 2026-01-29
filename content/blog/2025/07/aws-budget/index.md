@@ -3,7 +3,17 @@ title = "AWS Budget設定ガイド - 個人AWSアカウントのコスト管理"
 description = "個人AWSアカウントのコスト管理を効率的に行うためのAWS Budget設定ガイド。月額数ドルの利用でも予期しない請求を防ぐため、ゼロ支出予算、月次全体予算、サービス別予算の3層構造で監視する実践的な設定方法を紹介。CloudFormation、CLI、Terraformを使った具体的な実装例付き。"
 date = 2025-07-05
 aliases = ["/articles/2025/07/05/aws-budget"]
+
+[taxonomies]
+tags = ["Tech", "AWS"]
 +++
+
+<details>
+<summary>Table of Contents</summary>
+<!-- toc -->
+</details>
+
+個人AWSアカウントのコスト管理を効率的に行うためのAWS Budget設定ガイド。月額数ドルの利用でも予期しない請求を防ぐため、ゼロ支出予算、月次全体予算、サービス別予算の3層構造で監視する実践的な設定方法を紹介。CloudFormation、CLI、Terraformを使った具体的な実装例付き。
 
 ## 1. AWS Budgetとは
 

@@ -3,6 +3,9 @@ title = "任天堂 Switch Pro Controller 5代目"
 description = "任天堂 Switch 2は当たる気配もありませんが、プロコンが壊れたので新調しました。"
 date = 2025-08-19
 aliases = ["/articles/2025/08/19/pro-controller"]
+
+[taxonomies]
+tags = ["Game"]
 +++
 
 プロコンが壊れました。

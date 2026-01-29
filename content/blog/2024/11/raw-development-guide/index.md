@@ -3,6 +3,9 @@ title = "The Ultimate Guide to RAW Development: Data-Driven Insights"
 description = "RAW現像について、SILKYPIX, Pixelmator Pro, GR IIIx JPEG の比較を行っています。"
 date = 2024-11-25
 aliases = ["/articles/2024/11/25/raw-development-guide"]
+
+[taxonomies]
+tags = ["Photography", "Tech"]
 +++
 
 ## Introduction

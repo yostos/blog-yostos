@@ -3,6 +3,9 @@ title = "Weekly Buzz🐝 2024-11-15"
 description = "すっかり寒くなり、先週末にGoogle Cloudの資格取得で新橋に行ったときにすっかり風邪を引いてしまいました。今週はVMWare、GCP、ストラトキャスターです。"
 date = 2024-11-15
 aliases = ["/articles/2024/11/15/weekly-buzz-20241115"]
+
+[taxonomies]
+tags = ["Weekly Buzz", "Current Affairs"]
 +++
 
 今週は次の 3 つのトピックです。

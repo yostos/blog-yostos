@@ -3,6 +3,9 @@ title = "AWS Document MCP Serverを試す"
 description = "4月1日のAWS公式ブログで、AWS MCP Serversの記事が掲載されました。早速AWS公式ドキュメントをMCPサーバーとして利用できるAWS Documentation MCP Serverを試してみました。"
 date = 2025-04-16
 aliases = ["/articles/2025/04/16/aws-mcp-servers"]
+
+[taxonomies]
+tags = ["Tech", "AWS", "Generative AI"]
 +++
 
 ## 公式ブログ記事の概要

@@ -3,6 +3,9 @@ title = "映画『ジェラシック・ワールド 復活の大地』"
 description = "『ジェラシック・パーク』シリーズの最新作を見てきました。あまりにもアレで、ジョン・ウィリアムズの名曲を弾いてみました。"
 date = 2025-08-26
 aliases = ["/articles/2025/08/26/jurassic-world-rebirth"]
+
+[taxonomies]
+tags = ["Movies", "Music"]
 +++
 
 上演時間が短く感じるほど退屈はしませんでした。楽しめはします。

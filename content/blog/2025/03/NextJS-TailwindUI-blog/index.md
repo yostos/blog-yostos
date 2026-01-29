@@ -3,6 +3,9 @@ title = "エンジニア的ブログ再構築 : Next.js × Tailwind Plusで得�
 description = "Micro.blogを利用したブログを運用していましたが、Next.js + Tailwind Plus(旧Tailwind UI)を使ってエンジニアから見て柔軟なブログを再構築してみました。"
 date = 2025-03-17
 aliases = ["/articles/2025/03/17/NextJS-TailwindUI-blog"]
+
+[taxonomies]
+tags = ["Tech","Web","Weblog"]
 +++
 
 ## Micro.blogから移行
@@ -111,14 +114,14 @@ export function ShopInfo({
 
 このコンポーネントを使用すると、以下のように店舗情報を簡単に表示できます。
 
-<ShopInfo
-  name="スターバックスコーヒー 学園都市キャンパススクェア店"
-  address="兵庫県 神戸市西区 学園西町1-4 キャンパススクェア"
-  osmAddress="34.683006, 135.057619"
-  phone="078-798-7613"
-  closedDays="不定休"
-  website="https://store.starbucks.co.jp/detail-1718/"
-/>
+| 項目         | 内容                                                                                                       |
+| ------------ | ---------------------------------------------------------------------------------------------------------- |
+| 店名         | スターバックスコーヒー 学園都市キャンパススクェア店                                                        |
+| 住所         | 兵庫県 神戸市西区 学園西町1-4 キャンパススクェア                                                           |
+| 地図         | [OpenStreetMap](https://www.openstreetmap.org/?mlat=34.683006&mlon=135.057619#map=17/34.683006/135.057619) |
+| 電話         | 078-798-7613                                                                                               |
+| 定休日       | 不定休                                                                                                     |
+| ウェブサイト | <https://store.starbucks.co.jp/detail-1718/>                                                               |
 
 レストランやカフェだけでなく、様々な店舗情報を表示できます。
 

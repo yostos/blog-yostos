@@ -3,6 +3,9 @@ title = "残暑見舞い"
 description = "箱根で聞いたひぐらしの声が忘れられず、この曲を弾いてみました。"
 date = 2025-08-15
 aliases = ["/articles/2025/08/15/late-summer-greetings"]
+
+[taxonomies]
+tags = ["Music", "Guitar"]
 +++
 
 残暑お見舞い申し上げます。 いかがお過ごしでしょうか？

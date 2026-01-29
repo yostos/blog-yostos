@@ -3,6 +3,9 @@ title = "AWS最終日"
 description = "ついにAWSの最終日です"
 date = 2024-07-31
 aliases = ["/articles/2024/07/31/Last-day"]
+
+[taxonomies]
+tags = ["Life", "Career", "AWS"]
 +++
 
 I returned the company Mac a while ago and have been busy with private matters, so I had forgotten, but today was my last day as an Amazonian. I guess I'll go return my health insurance card.

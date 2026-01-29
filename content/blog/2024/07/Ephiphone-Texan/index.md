@@ -3,6 +3,9 @@ title = "Epiphone USA Texan 購入"
 description = "ついにEpiphone USA Texanを購入してしまいました。"
 date = 2024-07-24
 aliases = ["/articles/2024/07/24/Ephiphone-Texan"]
+
+[taxonomies]
+tags = ["Guitar","Epiphone","Texan"]
 +++
 
 ![](texan.jpg)

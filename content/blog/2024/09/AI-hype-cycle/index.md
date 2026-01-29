@@ -3,6 +3,9 @@ title = "生成AIハイプ・サイクル"
 description = "ガートナージャパンは9月10日、「生成AIのハイプ・サイクル：2024年」を発表したようです。"
 date = 2024-09-11
 aliases = ["/articles/2024/09/11/AI-hype-cycle"]
+
+[taxonomies]
+tags = ["Tech", "Generative AI"]
 +++
 
 幻滅期に入っているとも言われますが、「マルチモーダル」は AI の使い勝手を劇的に変えてくれます。

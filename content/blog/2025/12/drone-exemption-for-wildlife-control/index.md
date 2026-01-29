@@ -3,6 +3,9 @@ title = "熊被害抑止のためのドローン飛行特例"
 description = "2025年12月5日、航空法第132条の92の特例に獣害対策が追加されました。市街地への熊の侵入防止や頭数確認のため、地方自治体の依頼により、飛行許可・承認なしでドローンを飛行できるようになります。目視外飛行や夜間飛行も特例の対象です。"
 date = 2025-12-10
 aliases = ["/articles/2025/12/10/drone-exemption-for-wildlife-control"]
+
+[taxonomies]
+tags = ["Drone", "Current Affairs"]
 +++
 
 ## 航空法第132条の92の特例とは

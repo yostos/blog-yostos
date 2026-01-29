@@ -3,6 +3,9 @@ title = "TypePad終了：ブログ革命の一時代の終焉"
 description = "TypePadが2025年9月30日でサービス終了。2003年から22年間続いたブログプラットフォームの歴史を振り返り、初期ブログ文化からSNS時代、そして個人所有メディアへの回帰まで、Web発信環境の変遷を考察。"
 date = 2025-09-09
 aliases = ["/articles/2025/09/09/typepad-shutdown-end-of-blog-era"]
+
+[taxonomies]
+tags = ["Tech", "Weblog"]
 +++
 
 ![Typepad](typepad.webp)

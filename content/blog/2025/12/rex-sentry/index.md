@@ -3,6 +3,9 @@ title = "異次元のステンレス両刃カミソリ REX Sentry"
 description = "米国REX Supply社のステンレス製両刃カミソリ「REX Sentry」のレビュー。極端なBlade Camberと微妙なSlant Presentationにより、マイルドでありながら深剃りが可能な独特の剃り味を実現。ギロチンから着想を得たという高精度なマリングレードステンレス加工により、一生ものの品質を誇る一本。"
 date = 2025-12-19
 aliases = ["/articles/2025/12/19/rex-sentry"]
+
+[taxonomies]
+tags = ["Life"]
 +++
 
 ![REX Sentry](rex1.webp)

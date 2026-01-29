@@ -3,6 +3,9 @@ title = "ヘッドレスCMS Contentfulを活用したつぶやき機能の実装
 description = "このブログでは直接App Router配下に記事を書いていますが、ヘッドレスCMSを使うことも検討して諦めました。今回、ライトにつぶやき程度であればできそうかなとContentfulを使って実装してみました。"
 date = 2025-03-24
 aliases = ["/articles/2025/03/24/contentful"]
+
+[taxonomies]
+tags = ["Tech","Web"]
 +++
 
 ## Contentfulとは
@@ -36,7 +39,6 @@ Contentful ではまず Space を作ることになりますが、今回は無�
 次に**Content Model**を作成します。今回は `whisper`と名付けました。
 シンプルに以下のようにしました。id は現時点では不要ですが、将来編集アプリを作
 る時に備えて一応用意しました。
-
 
 ![Content Model](content-model.webp)
 
@@ -91,7 +93,6 @@ Pagination については、まず 10 個を上限で読み出し改ページ�
 
 Location は緯度・軽度が記録されているので、緯度経度の表示とともに
 Open Street Map へのリンクも埋め込みました。
-
 
 <figure>
   <img src="whisper.webp" alt="Whisper実現イメージ" />

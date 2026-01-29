@@ -3,7 +3,17 @@ title = "Anthropic、東京拠点と日本語版Claudeのリリース発表"
 description = "Anthropicが2025年秋に東京拠点の開設とClaude日本語版のリリースを発表。企業向けAI活用の加速と、Claude CodeやMaxプランの利用体験について考察します。"
 date = 2025-06-26
 aliases = ["/articles/2025/06/26/anthropic-will-launch-tokyo-center"]
+
+[taxonomies]
+tags = ["Tech", "Generative AI"]
 +++
+
+<details>
+<summary>Table of Contents</summary>
+<!-- toc -->
+</details>
+
+Anthropicが2025年秋に東京拠点の開設とClaude日本語版のリリースを発表。企業向けAI活用の加速と、Claude CodeやMaxプランの利用体験について考察します。
 
 ## Anthropic、日本拠点開設
 

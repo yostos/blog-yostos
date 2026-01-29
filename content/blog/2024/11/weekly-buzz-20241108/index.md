@@ -3,6 +3,9 @@ title = "Weekly Buzz🐝 2024-11-08"
 description = "ますます寒くなり、秋を経ずして冬になった印象です。しかし、来週にはまた夏日が予想されています。寒暖差で体調を崩さないように気をつけましょう。今週はAI関連とGeo Productについてです。"
 date = 2024-11-08
 aliases = ["/articles/2024/11/08/weekly-buzz-20241108"]
+
+[taxonomies]
+tags = ["Weekly Buzz", "Current Affairs"]
 +++
 
 今週はトランプが再選され、一時的にリスクの高いセクターの株が上昇し米国株市場

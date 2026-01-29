@@ -16,7 +16,7 @@ aliases = ["/articles/2026/01/21/takaichi-dissolution-speech"]
 
 {{ youtube(id="v6674b-RsfY") }}
 
-[記者会見全文を読む](/docs/takaichi-kaisan-kaiken.html)
+[記者会見全文を読む](kaiken/)
 
 ## 評価できる点
 

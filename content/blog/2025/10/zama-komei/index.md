@@ -3,6 +3,9 @@ title = "ざまぁ！ 公明党"
 description = "自民党と日本維新の会との連立合意について。公明党との連立解消という政治の変化に対する率直な感想。"
 date = 2025-10-20
 aliases = ["/articles/2025/10/20/zama-komei"]
+
+[taxonomies]
+tags = ["Current Affairs"]
 +++
 
 自民党と日本維新の会との「連立」が合意されたようです。

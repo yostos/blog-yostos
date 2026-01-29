@@ -3,6 +3,9 @@ title = "暑中お見舞い - 2025"
 description = "あまりの日本の酷暑に音楽的な逃避行してしまいました。懐かしい1984年の夏を思い出して『ようこそ、夏の王国へ』を演奏してみました。"
 date = 2025-08-07
 aliases = ["/articles/2025/08/07/summer-greetings"]
+
+[taxonomies]
+tags = ["Music", "Guitar"]
 +++
 
 暑中お見舞い申し上げます。

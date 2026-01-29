@@ -3,6 +3,9 @@ title = "InkdropとClaudeのMCP統合"
 description = "Inkdropの作者の方が、InkdropとClaudeのMCP統合についてYoutubeを上げていたので、早速検証しましたが、自分の書きためたKnowledgeをClaudeで活用できることがこんなに便利かと驚きました。"
 date = 2025-03-28
 aliases = ["/articles/2025/03/28/claude-integration-with-inkdrop"]
+
+[taxonomies]
+tags = ["Tech", "Generative AI"]
 +++
 
 作者の方の記事「

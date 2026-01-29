@@ -3,6 +3,9 @@ title = "エンジニアのためのポートフォリオサイトの構築"
 description = "あまり経験してこなかった技術スタックでポートフォリオサイトを作ってみました"
 date = 2025-03-08
 aliases = ["/articles/2025/03/08/Portfolio-site-for-engieer"]
+
+[taxonomies]
+tags = ["Tech","Web"]
 +++
 
 今更ながら年初から Web デザインを教わるというシーンがありました。

@@ -3,6 +3,9 @@ title = "Goodbye Super Cub!"
 description = "Honda announced that Super Cub 50cc will end production."
 date = 2024-11-01
 aliases = ["/articles/2024/11/01/Super-Cub"]
+
+[taxonomies]
+tags = ["Current Affairs","Motor Cycle"]
 +++
 
 Honda's Super Cub 50cc, which has been in production for nearly 80 years,

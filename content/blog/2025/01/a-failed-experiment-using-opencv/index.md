@@ -3,6 +3,9 @@ title = "A Failed Experiment: Using OpenCV to Read Printed Dates from Scanned Ph
 description = "I recently purchased a scanner and was challenged to see if I could capture the shooting date from the images when digitizing old photos that have dates printed on them."
 date = 2025-01-06
 aliases = ["/articles/2025/01/06/a-failed-experiment-using-opencv"]
+
+[taxonomies]
+tags = ["Tech", "Photography","Python"]
 +++
 
 ### Organizing Old Photographs

@@ -3,6 +3,9 @@ title = "The New Year's Card Season Has Arrived"
 description = "In Japan, there's a tradition where people exchange greeting postcardscalled nengajo, carefully timed to arrive on New Year's Day."
 date = 2024-12-25
 aliases = ["/articles/2024/12/25/new-years-card"]
+
+[taxonomies]
+tags = ["Life"]
 +++
 
 Years ago, I used to enjoy making woodblock prints and illustrations for

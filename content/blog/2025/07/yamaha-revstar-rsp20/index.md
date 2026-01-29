@@ -3,6 +3,9 @@ title = "YAMAHA REVSTAR RSP20を購入"
 description = "ギター不況と言われ、あのフェルナンデスが倒産してしまう今日ですが、独自に自社で良いギター作りをしているヤマハの現在のフラッグシップとも言えるREVSTARを軽い気持ちで見ていたら、つい購入してしまいました。"
 date = 2025-07-22
 aliases = ["/articles/2025/07/22/yamaha-revstar-rsp20"]
+
+[taxonomies]
+tags = ["Guitar"]
 +++
 
 ![YAMAHA REVSTAR](revstar.webp)
@@ -60,7 +63,6 @@ REVSTAR は 2022 年のモデル変更で鳴りの良さを計算したチャン
 ていますが、やっぱりこのご時世にギターを進化させ続けて日本で生産しているとい
 う企業の姿勢に惚れてしまいました。
 
-
 ![日本製](japanese.webp)
 
 購入したのはムーンライトブルーと言う色です。
@@ -70,11 +72,7 @@ REVSTAR は 2022 年のモデル変更で鳴りの良さを計算したチャン
 
 ## YAMAHA REVSTARを弾いてみた
 
-<SoundCloudEmbed
-  apiurl="https://api.soundcloud.com/tracks/2134293801"
-  url="https://on.soundcloud.com/bwoygrnBzvYFAAl7zU"
-  title="YAMAHA REVSTAR RSP20 Demo"
-/>
+<iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/soundcloud%253Atracks%253A2134293801&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/yostos" title="Yostos" target="_blank" style="color: #cccccc; text-decoration: none;">Yostos</a> · <a href="https://soundcloud.com/yostos/yamaha_revstar-rsp20-demo" title="YAMAHA REVSTAR RSP20 Demo" target="_blank" style="color: #cccccc; text-decoration: none;">YAMAHA REVSTAR RSP20 Demo</a></div>
 
 とても鳴りがいいなと思いました。ボディ構成やチャンバー加工、カーボンファイン
 バーのネックとボディへの埋設もあると思いますが

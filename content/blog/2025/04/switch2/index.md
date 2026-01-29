@@ -3,11 +3,12 @@ title = "Nintendo Switch 2発表"
 description = "ついにNintendo DirectでSwitch 2を発表。本日22時からNintendo Directで発表がありました。6月5日発売です。"
 date = 2025-04-02
 aliases = ["/articles/2025/04/02/switch2"]
+
+[taxonomies]
+tags = ["Game"]
 +++
 
-<a href="https://www.youtube.com/live/nkaodTSlhbU?si=5bYJKeb8Ss0yhWft">
 ![Switch2](switch.webp)
-</a>
 本日 22 時から[Nintendo
 Direct](https://www.youtube.com/live/nkaodTSlhbU?si=5bYJKeb8Ss0yhWft)で Switch2
 の発表がありました。

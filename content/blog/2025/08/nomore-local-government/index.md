@@ -3,6 +3,9 @@ title = "The Case Against Local Governments"
 description = "After working at a local government affiliated organization, the Minister of Internal Affairs' statement that \"300 municipalities would suffice\" caught my attention."
 date = 2025-08-28
 aliases = ["/articles/2025/08/28/nomore-local-government"]
+
+[taxonomies]
+tags = ["Current Affairs", "Career"]
 +++
 
 I was intrigued by Minister of Internal Affairs Seiichiro Murakami's remarks at the House of Representatives Committee on Internal Affairs and Communications.

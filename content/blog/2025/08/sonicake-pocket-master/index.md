@@ -3,6 +3,9 @@ title = "Sonicake Pocket Masterを購入"
 description = "8,800円という脅威の低価格でNAMまで使えてしまうマルチプロセッサーSonicake Pocket Masterを購入してためしてみました。"
 date = 2025-08-26
 aliases = ["/articles/2025/08/26/sonicake-pocket-master"]
+
+[taxonomies]
+tags = ["Guitar", "Pedals"]
 +++
 
 ![Sonic Pocket Master](pocket-master.webp)

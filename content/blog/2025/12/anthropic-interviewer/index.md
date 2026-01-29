@@ -3,6 +3,9 @@ title = "Anthropic Interviewer"
 description = "昨日Claudeに「Anthropic Interviewerに参加しませんか？」と見慣れぬポップアップが表示されました。回答していくと、生成AIであるClaudeに生成AIの活用方法や将来の役割をインタビューされるという奇妙な体験でした。"
 date = 2025-12-07
 aliases = ["/articles/2025/12/07/anthropic-interviewer"]
+
+[taxonomies]
+tags = ["Tech", "Generative AI"]
 +++
 
 ## Anthropic Interviewerとは

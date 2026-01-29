@@ -3,6 +3,9 @@ title = "Xotic AC Booster V2レビュー"
 description = "Xotic AC Booster V2が発表されましたが、発表前から予約し入手したので早速使ってみました。"
 date = 2025-04-20
 aliases = ["/articles/2025/04/20/ac-booster-v2"]
+
+[taxonomies]
+tags = ["Guitar Pedals","Guitar","Music"]
 +++
 
 ![AC Booster V2](ac-booster-v2.webp)
@@ -52,7 +55,7 @@ Boost スイッチは踏んで 9 時方向です。EQ は Treble が 1 時、Bas
 Simplifier MK-II から DI で直接 Mac に取り込み、リバーブとディレイは Logic Pro で
 かけています。
 
-<SoundCloudEmbed url="https://soundcloud.com/yostos/jumping-take-off?si=e65329aec0d140fa991c1fd046fe5ac7&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing" />
+<iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/soundcloud%253Atracks%253A2081879274&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/yostos" title="Yostos" target="_blank" style="color: #cccccc; text-decoration: none;">Yostos</a> · <a href="https://soundcloud.com/yostos/jumping-take-off" title="JUMPING TAKE OFF" target="_blank" style="color: #cccccc; text-decoration: none;">JUMPING TAKE OFF</a></div>
 
 Distortion まで行かないけれど、ちょっと荒々しい歪みと適度なコンプレッション感
 で弾いていて楽しいペダルです。

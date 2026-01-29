@@ -3,6 +3,9 @@ title = "Software Development Using Generative AI"
 description = "Recently, I had a conversation with someone about software development using ChatGPT, and a few things caught my attention. I decided to summarize my thoughts here."
 date = 2024-08-09
 aliases = ["/articles/2024/08/09/Software-Development-Using-AI"]
+
+[taxonomies]
+tags = ["Tech", "Generative AI","Software Engineering"]
 +++
 
 日本語は下の方に。

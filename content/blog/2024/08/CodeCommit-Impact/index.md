@@ -3,6 +3,9 @@ title = "AWS CodeCommit新規受付凍結の影響について"
 description = "Business Insider などを読んでいるとAWSのCodeCommitやCloud9の新規受付凍結は、米国でもかなり問題になっている模様。"
 date = 2024-08-13
 aliases = ["/articles/2024/08/13/CodeCommit-Impact"]
+
+[taxonomies]
+tags = ["Tech", "AWS", "Cloud"]
 +++
 
 <blockquote>

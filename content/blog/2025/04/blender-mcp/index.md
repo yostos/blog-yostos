@@ -3,9 +3,17 @@ title = "MCP接続でClaudeにBlenderで3Dモデリングさせてみた"
 description = "Blender界隈でBlenderとClaudeをMCP接続してClaudeに3Dモデリングさせるというのが話題なので実際に試してみました。自然言語で依頼するとClaudeがモデリングツールを操作してくれます。"
 date = 2025-04-23
 aliases = ["/articles/2025/04/23/blender-mcp"]
+
+[taxonomies]
+tags = ["Tech", "Generative AI"]
 +++
 
+Blender界隈でBlenderとClaudeをMCP接続してClaudeに3Dモデリングさせるというのが話題なので実際に試してみました。自然言語で依頼するとClaudeがモデリングツールを操作してくれます。
+
+<details>
+<summary>Table of Contents</summary>
 <!-- toc -->
+</details>
 
 ## 前提
 
