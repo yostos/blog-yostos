@@ -5,8 +5,15 @@ date = 2025-09-20
 aliases = ["/articles/2025/09/20/otedit-problem"]
 
 [taxonomies]
-tags = ["Design", "Tech"]
+tags = ["Design","Font", "Tech","Python"]
 +++
+
+<details>
+<summary>Table of Contents</summary>
+  <!-- toc -->
+</details>
+
+フォント編集ソフト「OTEdit」で作成されたフォントの空グリフ問題について解説。Adobe-Japan1文字集合選択時に発生する空グリフによりフォールバック機能が正常に動作しない問題と、Pythonスクリプトを使った修正方法を紹介。
 
 ## OTEditとは
 
@@ -55,7 +62,7 @@ Adobe の規格と並べると下表のような食い違いがあります。
 
 ### 分析スクリプト
 
-```python:font_analyze.py showLineNumbers
+```python,name=font_analyze.py
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
@@ -141,7 +148,7 @@ def analyze_font_glyphs(font_path):
 
 ### 自動修正スクリプト
 
-```python:font_cleaner_final.py showLineNumbers
+```python,name=font_cleaner_final.py
 def fix_font_cmap_only(input_path, output_path):
     """OTEで作成されたフォントのcmapテーブルから空グリフエントリを削除"""
 

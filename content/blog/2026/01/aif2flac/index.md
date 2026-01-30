@@ -3,11 +3,14 @@ title = "Logic ProのAIFファイルをラウドネス正規化してFLACに変�
 description = "Logic Proでバウンスした音声ファイルをFLACに変換する際、ffmpegのloudnormフィルタによる2パス処理を自動化するBashスクリプトを作成しました。測定と適用を一度のコマンドで完結させ、作業効率を大幅に向上させます。"
 date = 2026-01-14
 aliases = ["/articles/2026/01/14/aif2flac"]
+
+[taxonomies]
+tags = ["Music Production","CLI"]
 +++
 
 ## 背景
 
-Logic Proでバウンスした音声ファイルをFLACに変換する際、適切な音量に正規化する必要があります。ffmpegの`loudnorm`フィルタを使うと高品質なラウドネス正規化が可能ですが、最良の結果を得るには2パス処理が推奨されます。
+Logic Proでバウンスした音声ファイル(Aiff)をFLACに変換する際、適切な音量に正規化する必要があります。ffmpegの`loudnorm`フィルタを使うと高品質なラウドネス正規化が可能ですが、最良の結果を得るには2パス処理が推奨されます。
 
 この2パス処理は以下のような手順です。
 
@@ -21,7 +24,7 @@ Logic Proでバウンスした音声ファイルをFLACに変換する際、適�
 
 現時点のコードは以下です。[Gist](https://gist.github.com/yostos/004e57e4a905f933e227aa183e3a8fec)でも公開しています。
 
-```bash:aif2flac.sh
+```bash,name=aif2flac.sh
 #!/bin/bash
 
 # Script to convert AIF files to FLAC

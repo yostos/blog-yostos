@@ -5,10 +5,15 @@ date = 2025-08-31
 aliases = ["/articles/2025/08/31/ugreen-nas"]
 
 [taxonomies]
-tags = ["Tech"]
+tags = ["Tech","Gadget"]
 +++
 
 ![UGREEN NAS](ugreen-nas.webp)
+
+<details>
+<summary>Table of Contents</summary>
+<!-- toc -->
+</details>
 
 ## Why I Chose UGREEN NAS
 

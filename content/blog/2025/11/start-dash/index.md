@@ -8,4 +8,6 @@ aliases = ["/articles/2025/11/01/start-dash"]
 tags = ["Splatoon", "Game"]
 +++
 
+マニュコラにスタートダッシュと対物性能アップを積んで、ガチホコで一気に決着をつけに行くという戦法です。イライラが溜まった時には、最高に気持ちよくなれます。
+
 {{ youtube(id="CoVYfCCLkbY") }}

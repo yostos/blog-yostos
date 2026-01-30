@@ -5,7 +5,7 @@ date = 2025-12-19
 aliases = ["/articles/2025/12/19/rex-sentry"]
 
 [taxonomies]
-tags = ["Life"]
+tags = ["Gadget"]
 +++
 
 ![REX Sentry](rex1.webp)
@@ -49,7 +49,6 @@ REX Sentryは米国のRex Supply社のものです。
 前者のBlade Camberは、切り刃を押し下げて短辺全体が「∩」のような緩やかな弓形になるよう、刃にテンションが掛かった状態です。
 これはどんなカミソリでも刃を安定させ肌に対して角度を付けるために必ず採用されています。
 しかし、REX Sentryではこの湾曲が極端なのです。その結果、刃が肌に対して通常のカミソリより角度を持った状態で剃ることになります。
-
 
 ![REX Sentry](rex2.webp)
 

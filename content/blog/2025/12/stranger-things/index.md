@@ -5,7 +5,7 @@ date = 2025-12-24
 aliases = ["/articles/2025/12/24/stranger-things"]
 
 [taxonomies]
-tags = ["Entertainment"]
+tags = ["Entertainment","Movies"]
 +++
 
 {{ youtube(id="tk9FDjJd6zM") }}

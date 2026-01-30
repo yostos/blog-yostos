@@ -5,7 +5,7 @@ date = 2025-08-26
 aliases = ["/articles/2025/08/26/sonicake-pocket-master"]
 
 [taxonomies]
-tags = ["Guitar", "Pedals"]
+tags = ["Guitar Pedals"]
 +++
 
 ![Sonic Pocket Master](pocket-master.webp)

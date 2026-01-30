@@ -5,10 +5,15 @@ date = 2025-09-17
 aliases = ["/articles/2025/09/17/nothing-phone3"]
 
 [taxonomies]
-tags = ["Tech"]
+tags = ["Gadget"]
 +++
 
 ![Nothing Phone (3)](nothing.webp)
+
+<details>
+<summary>Table of Contents</summary>
+<!-- toc -->
+</details>
 
 Pixel 8 Pro のバッテリーの持ちが悪くなってきたので、日本での発表当日
 Nothing Phone(3)を予約購入しました。

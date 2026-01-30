@@ -5,10 +5,15 @@ date = 2025-08-01
 aliases = ["/articles/2025/08/01/korg-trs"]
 
 [taxonomies]
-tags = ["Guitar", "Pedals"]
+tags = ["Guitar Pedals"]
 +++
 
 ![KORG Nu:tekt TR-S](trs.webp)
+
+<details>
+<summary>Table of Contents</summary>
+<!-- toc -->
+</details>
 
 KORG Nu:tekt TR-S (POWER TUBE REACTOR)を購入しました。
 
@@ -46,11 +51,7 @@ Nutube でシミュレーションしてくるエフェクターです。
 
 ## KORG TR-Sで弾いてみた
 
-<SoundCloudEmbed
-  apiurl="https://api.soundcloud.com/tracks/2140117485"
-  url="https://soundcloud.com/yostos/can-i-sing-for-you-korg"
-  title="Can I Sing For You?"
-/>
+<iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/soundcloud%253Atracks%253A2140117485&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/yostos" title="Yostos" target="_blank" style="color: #cccccc; text-decoration: none;">Yostos</a> · <a href="https://soundcloud.com/yostos/can-i-sing-for-you-korg" title="Can I Sing For You?" target="_blank" style="color: #cccccc; text-decoration: none;">Can I Sing For You?</a></div>
 
 パワー管ということで、アンプシミュレーターの Simplifier MK-II の Send - Return に
 KORG TR-S をセットしてみましたが、インピーダンスの関係か Simplifier MK-II

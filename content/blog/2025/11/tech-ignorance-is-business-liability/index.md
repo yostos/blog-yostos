@@ -10,6 +10,11 @@ tags = ["Tech", "Security"]
 
 ![No IT dept](noitdept.webp)
 
+<details>
+<summary>Table of Contents</summary>
+  <!-- toc -->
+</details>
+
 ## What is Application System Inventory?
 
 "Application System Inventory" is an inventory that records and keeps a list of application systems the organization owns. The important point is that it does not manage the internal structure of each system or technical details.
@@ -80,5 +85,3 @@ Organizations that have not even established an Application System Inventory, ev
 What matters is the mechanism to maintain it. It is important to embed the mechanism for updating and maintaining the Inventory into the unavoidable processes that accompany the flow of money: budget, procurement, and accounting.
 
 Conversely, if you simply establish this mechanism, you can take the first step toward IT governance. It is not difficult. You just need to capture the flow of money related to systems. If you cannot even do that, your organization does not have the fundamentals of corporate governance in place even before considering IT governance—though that is likely the case.
-
-[Japanese version](./tech-ignorance-is-business-liability-ja/)

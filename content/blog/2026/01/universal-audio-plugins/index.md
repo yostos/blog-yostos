@@ -1,19 +1,20 @@
 +++
-title = "Logic Proで使う5つのクラシックUADプラグイン：黄金時代のスタジオレジェンド"
+title = "5つのクラシックUADプラグイン：黄金時代のスタジオレジェンド"
 description = "Universal Audioのセールを活用して、マスタリング中心のプラグインコレクションを構築しました。今回購入した5つの伝説的なプラグイン—Pultec EQP-1A、LA-2A、Lexicon 224、SSL G Bus Compressor、Ampex ATR-102—について、ビートルズから1980年代ポップスまでの魅力的な歴史と、Logic Proで個別トラック、バス、マスターチャンネルでの実際の使い方を詳しく解説します。"
 date = 2026-01-11
 aliases = ["/articles/2026/01/11/universal-audio-plugins"]
+
+[taxonomies]
+tags = ["Music Production","Software"]
 +++
 
 I took advantage of Universal Audio's sale to build my mastering-focused plugin collection. Here's a deep dive into the 5 legendary plugins I picked up. These include the Pultec EQP-1A, LA-2A, and Lexicon 224. I also got the SSL G Bus Compressor and Ampex ATR-102. I'll cover their fascinating history from The Beatles to 1980s pop. You'll also learn exactly how to use each one in Logic Pro on individual tracks, buses, or the master channel for professional results.
 
 ## The Plugins I Purchased
 
-
 ### Pultec EQP-1A
 
 ![Pultec EQP-1A](pultec-eqp.webp)
-
 
 Developed by Pulse Techniques in 1951, the EQP-1A has been cherished for over 70 years as the most musical passive equalizer. Its unique design combining tube amplification with passive components prevents phase distortion even when boosting or cutting, creating a beautiful harmonic enhancement effect.
 
@@ -24,6 +25,7 @@ The famous "low-end trick" of simultaneously boosting and cutting the low freque
 <div style={{ clear: 'both' }}></div>
 
 ### LA-2A Tube Compressor
+
 ![LA-2A Tube Compressor](la-2a-comp.webp)
 
 Released by Teletronix in 1965, the LA-2A is a legendary compressor combining tube amplification with a T4 optical element. Its unique operation with automatically adjusted attack and release times achieves extremely natural and musical compression for vocals, bass, and guitar. Particularly for vocal processing, it has been beloved for nearly 60 years as "smooth and transparent compression," used on countless classic albums from Motown to modern pop. Despite its simple operation, the sound quality it delivers is irreplaceable.
@@ -39,6 +41,7 @@ Its characteristics are best showcased when applied to specific sources rather t
 <div style={{ clear: 'both' }}></div>
 
 ### Lexicon 224 Digital Reverb
+
 ![Lexicon 224 Digital Reverb](lexicon-224.webp)
 
 Introduced in 1978, the Lexicon 224 revolutionized music production as the world's first commercial digital reverb. It achieved precisely controlled spatial representation that was impossible with previous plate or spring reverbs. This created the rich and expansive reverb that characterized 1980s pop, rock, and fusion sounds. The "sparkling and three-dimensional reverberation" when used on drums and vocals became an iconic sound of that era.
@@ -50,6 +53,7 @@ The most common applications include drum overheads and room mics for creating c
 <div style={{ clear: 'both' }}></div>
 
 ### SSL G Bus Compressor
+
 ![SSL G Bus Compressor](ssl-g-bus-comp.webp)
 
 In the 1980s, the master bus compressor installed in the SSL 4000 G Series console established a legendary status. It became known as equipment that imparts a "glue" effect to the entire mix.
@@ -64,10 +68,10 @@ The SSL G Bus Compressor is also effective on **submix buses**. On drum buses, i
 It's also commonly used on instrument group buses (all guitars, all synths, background vocals) to create a more unified sound within each section.
 Unlike individual track compressors like the LA-2A, the SSL G Bus Compressor reveals its true value in processing multiple elements simultaneously. It's not suitable for application to single tracks.
 
-
 <div style={{ clear: 'both' }}></div>
 
 ### Ampex ATR-102 Mastering Tape Recorder
+
 ![Ampex ATR-102 Mastering Tape Recorder](ampex-atr-102.webp)
 
 Introduced in the late 1970s, the Ampex ATR-102 is known as the pinnacle of 2-track mastering tape recorders. Through its unique sonic characteristics of tape saturation, tape compression, and high-frequency roll-off, it adds warmth and depth lacking in digital recordings. Many engineers have passed tracks through this equipment in the final mastering stage, imparting cohesion and a "glue-like" effect to the entire work. The UAD emulation also allows selection of tape speed (15/30 ips) and tape type.
@@ -84,21 +88,23 @@ adding analog character to specific elements before they reach the master fader.
 
 However, its primary purpose is processing in the final mastering stage, providing the "analog finish" typical of digital production.
 
-
 ## Summary
 
 These five Universal Audio plugins represent different eras of studio technology, but when used together they form a comprehensive toolkit for modern music production. Understanding where each plugin fits in the signal flow is key to using them effectively.
 
 **Individual Track Processing (Audio FX)**
+
 - Start with Pultec EQP-1A for tonal shaping of kick drums, bass, and vocals
 - Follow with LA-2A for natural, musical compression on vocals, bass, and guitars
 
 **Group Processing (Buses)**
+
 - Use Pultec on instrument buses (drum bus, vocal bus) to add cohesive tonal character
 - Apply SSL G Bus Compressor to submix buses for punch and glue
 - Send multiple sources to Lexicon 224 on an Aux track for shared spatial processing
 
 **Mix Finishing (Master Track)**
+
 - Insert SSL G Bus Compressor early in the master chain for overall mix cohesion
 - Add Pultec for final tonal sweetness and harmonic enhancement
 - Finish with Ampex ATR-102 as the final "analog finish" before limiting

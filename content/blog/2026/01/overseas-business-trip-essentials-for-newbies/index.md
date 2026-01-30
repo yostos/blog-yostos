@@ -3,6 +3,9 @@ title = "初めて海外出張に行く君に"
 description = "初めての海外出張が決まると、何を準備すればいいのか分からず不安になるものです。この記事では、現地で困らないための実務的な準備ポイントをまとめました。特に通信手段やお金の管理など、事前に整えておかないと現地で苦労する項目を中心に解説します。"
 date = 2026-01-24
 aliases = ["/articles/2026/01/24/overseas-business-trip-essentials-for-newbies"]
+
+[taxonomies]
+tags = ["Travel","Tips"]
 +++
 
 ![Air Port](airport.webp)

@@ -3,6 +3,9 @@ title = "DJI機へのRemote IDインポート"
 description = "DJI NEOの修理後にRemote IDが消えていたため再インポートを試みたところ、スマートフォンとの互換性問題に直面しました。DJI RC 2を使用した解決策を紹介します。"
 date = 2026-01-20
 aliases = ["/articles/2026/01/20/dji-remote-id-import"]
+
+[taxonomies]
+tags = ["Drone"]
 +++
 
 ![DJI NEO with FPV Goggles](drone.webp)

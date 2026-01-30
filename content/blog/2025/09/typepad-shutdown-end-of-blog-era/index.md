@@ -10,7 +10,11 @@ tags = ["Tech", "Weblog"]
 
 ![Typepad](typepad.webp)
 
+<details>
+<summary>Table of Contents</summary>
+
 <!-- toc -->
+</details>
 
 An article titled "[Typepad is shutting down](https://everything.typepad.com/blog/2025/08/typepad-is-shutting-down.html)" has been published on TypePad's official blog.
 
@@ -64,9 +68,11 @@ Regarding the microblog concept advocated by the IndieWeb movement, while I pers
 
 ## Current Choice: Self-Built Blog Based on Next.js
 
-With such thinking, I currently operate a self-built blog based on Next.js on my own domain. This is one answer I've reached through a long evolution of personal web usage from TypePad.
+With such thinking, I currently operate a self-built blog based on Next.js on my own domain[^1]. This is one answer I've reached through a long evolution of personal web usage from TypePad.
 
 From TypePad era's "creativity within constraints," through Blogger and Static Site Generators' "freedom and management complexity," to now choosing "complete technical autonomy." In terms of avoiding platform dependency risks and building an environment where I can control my own publishing, this could be seen as a return to the spirit of early blogging days.
+
+[^1]: I've moved to Zola in 2026.
 
 ## The Fragility and Inheritance of Digital Culture
 
@@ -133,7 +139,9 @@ IndieWeb ムーブメントが主張するマイクロブログのコンセプ�
 
 ## 現在の選択：Next.jsベースの自作ブログ
 
-そうした考えもあって、私は現在、自身が所有するドメインで Next.js をベースとした自作のブログを運営しています。これは、TypePad からの長い個人 Web 利用の変遷を経て到達した、ひとつの回答でもあります。
+そうした考えもあって、私は現在、自身が所有するドメインで Next.js をベースとした自作のブログを運営しています[^2]。これは、TypePad からの長い個人 Web 利用の変遷を経て到達した、ひとつの回答でもあります。
+
+[^2]: 2026年にZolaに移行しました。
 
 TypePad 時代の「制約の中での創造性」から、Blooger や Static Site Generator での「自由度と管理の複雑さ」を経て、現在は「技術的完全自律性」を選択したという流れ。プラットフォーム依存のリスクを避け、自分の発信を自分でコントロールできる環境を構築するという意味では、まさに初期ブログ時代の精神への回帰とも言えるかもしれません。
 
@@ -152,4 +160,3 @@ TypePad の終了は、デジタル時代における文化的資産の脆弱性
 ---
 
 _参考：TypePadは2025年9月30日をもってサービス終了予定。コンテンツのエクスポートは同日までに完了する必要があります。_
-

@@ -5,10 +5,15 @@ date = 2025-12-21
 aliases = ["/articles/2025/12/21/fairfax"]
 
 [taxonomies]
-tags = ["Guitar", "Pedals"]
+tags = ["Guitar Pedals"]
 +++
 
 ![Strymon Fairfax](fairfax.webp)
+
+<details>
+<summary>Table of Contentes</summary>
+  <!-- toc -->
+</details>
 
 Strymonは、既に優れた歪み系ペダルを2つリリースしています。
 6種類のオーバードライブを2段重ねできるSunsetと、3つのモードを持つオーバードライブRiversideです。

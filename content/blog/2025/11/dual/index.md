@@ -8,4 +8,6 @@ aliases = ["/articles/2025/11/21/dual"]
 tags = ["Splatoon", "Game"]
 +++
 
+映画『果てしなきスカーレット』を見て影響されたためか、スプラでもデュアルスイーパーで復讐を果たしてきました。
+
 {{ youtube(id="K8Va2dllbOU") }}

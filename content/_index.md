@@ -5,4 +5,4 @@ section_path = "blog/_index.md"
 max_posts = 10
 +++
 
-This blog shares daily discoveries and insights ranging from technology information about AWS and Apple products to guitar playing, photography, and book reviews.
+Ex-IBM/AWS engineer who can't stop tinkering. Keyboard nerd (HHKB) who prefers CLI over GUI. Guitar tone chaser, DAW plugin collector, and occasional drone pilot when the weather permits. This blog is my digital notebook—writing about tech, music production, gear, and whatever rabbit holes I fall into.

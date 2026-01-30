@@ -1,3 +1,33 @@
+/* Berkeley Mono フォント */
+@font-face {
+  font-family: "BerkeleyMono";
+  src: url("https://d3w0x7oesq9q1.cloudfront.net/BerkeleyMono-Regular.woff2") format("woff2");
+  font-display: swap;
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "BerkeleyMono";
+  src: url("https://d3w0x7oesq9q1.cloudfront.net/BerkeleyMono-Bold.woff2") format("woff2");
+  font-display: swap;
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "BerkeleyMono";
+  src: url("https://d3w0x7oesq9q1.cloudfront.net/BerkeleyMono-Oblique.woff2") format("woff2");
+  font-display: swap;
+  font-weight: 400;
+  font-style: oblique;
+}
+@font-face {
+  font-family: "BerkeleyMono";
+  src: url("https://d3w0x7oesq9q1.cloudfront.net/BerkeleyMono-Bold-Oblique.woff2") format("woff2");
+  font-display: swap;
+  font-weight: 700;
+  font-style: oblique;
+}
+
 .page-header,
 .section-title,
 .article-title {
@@ -12,6 +42,7 @@
   --serif-font:
     "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans",
     "Noto Sans JP", sans-serif;
+  --code-font: "BerkeleyMono", "Cascadia Code", monospace;
 }
 
 /* 一般的な日本語ブログに合わせたフォントサイズ */
@@ -38,6 +69,13 @@
 
 #banner-container-home #image-container-home {
   max-width: 7rem;
+}
+
+/* トップページのヘッダー文の行間調整 */
+#banner-container-home #home-banner-text #banner-home-subtitle p {
+  font-size: 1rem !important;
+  line-height: 1.6 !important;
+  margin-bottom: 0.3em !important;
 }
 
 #banner-container-home #image-container-home #banner-home-img {

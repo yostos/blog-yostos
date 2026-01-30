@@ -3,6 +3,9 @@ title = "The aespa Controversy and NHK Kohaku Ratings Drop"
 description = "Examining the controversy surrounding aespa's appearance on NHK's New Year's Eve music show and the coincidental viewership ratings decline."
 date = 2026-01-01
 aliases = ["/articles/2026/01/01/dirty-aespa"]
+
+[taxonomies]
+tags = ["Current Affairs", "Old Media", "NHK"]
 +++
 
 ## The Ratings Drop Mystery
@@ -16,7 +19,6 @@ However, the reality is quite different and somewhat ironic. aespa's actual perf
 ## The Broader Issue
 
 Regardless of the timing discrepancy, I cannot forgive NHK's decision to feature this controversial group while ignoring the voices of many viewers. This is particularly insensitive given that the show's hosts, Hiroyuki Ariyoshi and Haruka Ayase, are both from Hiroshima.
-
 
 The group's insensitive actions and NHK's controversial decision to feature them remain deeply problematic. This is true even if one considers that their behavior may stem from anti-Japanese education.
 
@@ -34,5 +36,3 @@ The group's insensitive actions and NHK's controversial decision to feature them
 しかし、反日教育されているとはいえ、あの非常識なグループと多くの視聴者の声を無視したNHKのことは、絶対に許しません。
 
 だって、司会をやっていた有吉弘行と綾瀬はるかは広島出身だからな。
-
-

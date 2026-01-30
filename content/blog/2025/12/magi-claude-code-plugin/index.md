@@ -5,9 +5,13 @@ date = 2025-12-12
 aliases = ["/articles/2025/12/12/magi-claude-code-plugin"]
 
 [taxonomies]
-tags = ["Tech", "Generative AI"]
+tags = ["Tech", "Generative AI","Claude Code"]
 +++
 
+<details>
+<summary>Table of Contents</summary>
+  <!-- toc -->
+</details>
 ## Claude Code Pluginとは
 
 Claude Code Pluginは、AnthropicのClaude Code CLI向けの拡張機能システムです。プラグインを使用することで、Claudeに新しいコマンド、エージェント、スキル、フックなどを追加できます。
@@ -43,7 +47,6 @@ MAGIは、アニメ「新世紀エヴァンゲリオン」に登場する架空�
 ### システム構成
 
 Magiシステムは4つのエージェントで構成されています。
-
 
 ![Magi Overview](magi.svg)
 

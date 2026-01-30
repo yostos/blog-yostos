@@ -5,7 +5,7 @@ date = 2025-12-30
 aliases = ["/articles/2025/12/30/mercury-m2"]
 
 [taxonomies]
-tags = ["Tech", "Game"]
+tags = ["Gadget", "Game"]
 +++
 
 ![Mercury M2](m2.webp)

@@ -8,6 +8,7 @@ aliases = ["/articles/2025/08/23/flight-restrictions"]
 tags = ["Drone", "Current Affairs"]
 +++
 
+国土交通省から韓国大統領来日に伴う無人航空機の飛行規制がアナウンスされました。
 おそらく DISP2.0 の利用者に向けて国道交通省から以下のメールが発信されました。
 
 <blockquote>

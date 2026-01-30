@@ -5,7 +5,7 @@ date = 2025-11-16
 aliases = ["/articles/2025/11/16/archetype"]
 
 [taxonomies]
-tags = ["Guitar", "Software"]
+tags = ["Guitar", "Software","Music Production"]
 +++
 
 ![Neural DSP Archetype](archetype.webp)

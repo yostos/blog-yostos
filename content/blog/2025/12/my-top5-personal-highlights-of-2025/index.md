@@ -8,6 +8,11 @@ aliases = ["/articles/2025/12/31/my-top5-personal-highlights-of-2025"]
 tags = ["Life"]
 +++
 
+<details>
+<summary>Table of Contents</summary>
+  <!-- toc -->
+</details>
+
 2025年も残すところあと数時間です。今年は技術、社会、個人の各領域で大きな変化があった一年でした。印象深かった5つのハイライトを記録として残します。
 
 ## 1. AIエージェントが切り拓いた新時代

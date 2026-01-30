@@ -5,7 +5,7 @@ date = 2025-12-05
 aliases = ["/articles/2025/12/05/automating-npm-publish-with-github-actions"]
 
 [taxonomies]
-tags = ["Tech"]
+tags = ["Tech","Node"]
 +++
 
 本記事では、私が開発している[jrnl-mcp](https://github.com/yostos/jrnl-mcp)パッケージで実装した、

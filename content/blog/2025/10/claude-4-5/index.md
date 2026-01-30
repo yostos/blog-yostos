@@ -5,8 +5,13 @@ date = 2025-10-03
 aliases = ["/articles/2025/10/03/claude-4-5"]
 
 [taxonomies]
-tags = ["Tech", "Generative AI"]
+tags = ["Tech", "Generative AI","Claude","Claude Code"]
 +++
+
+<details>
+<summary>Table of Contents</summary>
+  <!-- toc -->
+</details>
 
 ## tl;dr
 

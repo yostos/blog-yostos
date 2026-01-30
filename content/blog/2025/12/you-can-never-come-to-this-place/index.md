@@ -8,11 +8,7 @@ aliases = ["/articles/2025/12/30/you-can-never-come-to-this-place"]
 tags = ["Music", "Guitar"]
 +++
 
-<SoundCloudEmbed
-  apiurl="https://api.soundcloud.com/tracks/soundcloud%253Atracks%253A2237610962"
-  url="https://soundcloud.com/yostos/you-can-never-come-to-this-place"
-  title="You Can Never Come To This Place"
-/>
+<iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/soundcloud%253Atracks%253A2237610962&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/yostos" title="Yostos" target="_blank" style="color: #cccccc; text-decoration: none;">Yostos</a> · <a href="https://soundcloud.com/yostos/you-can-never-come-to-this-place" title="You Can Never Come To This Place" target="_blank" style="color: #cccccc; text-decoration: none;">You Can Never Come To This Place</a></div>
 
 A few months ago, I [attended a Takanaka Masayoshi concert](/articles/2025/09/21/takanaka). The encore finale was "You Can Never Come To This Place" - I never imagined I'd get to hear this beloved track from the legendary album "Rainbow Grapefruit" performed live, and I was truly moved.
 

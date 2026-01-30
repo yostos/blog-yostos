@@ -5,7 +5,7 @@ date = 2025-09-14
 aliases = ["/articles/2025/09/14/amazon-amplify-node-versionup"]
 
 [taxonomies]
-tags = ["Tech", "AWS"]
+tags = ["Tech", "AWS","Node"]
 +++
 
 I recieved the following email from AWS.

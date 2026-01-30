@@ -5,7 +5,7 @@ date = 2025-11-18
 aliases = ["/articles/2025/11/18/amber-glint"]
 
 [taxonomies]
-tags = ["Photography"]
+tags = ["Photography", "Photo Friday"]
 +++
 
 ![Amber Glint](amber-glint.webp)

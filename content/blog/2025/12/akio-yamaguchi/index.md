@@ -5,7 +5,7 @@ date = 2025-12-16
 aliases = ["/articles/2025/12/16/akio-yamaguchi"]
 
 [taxonomies]
-tags = ["Current Affairs"]
+tags = ["Current Affairs","IBM"]
 +++
 
 ![Akio Yamaguchi](akio.jpg)

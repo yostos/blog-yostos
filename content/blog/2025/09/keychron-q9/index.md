@@ -5,7 +5,7 @@ date = 2025-09-25
 aliases = ["/articles/2025/09/25/keychron-q9"]
 
 [taxonomies]
-tags = ["Tech"]
+tags = ["Gadget","Keyboard"]
 +++
 
 ![Keychron Q9](keychron-q9.webp)
@@ -67,7 +67,6 @@ Therefore, key mapping changes are essential if you want to use it properly.
 - **Backspace**: Since this is also a familiar position, set it to the backslash key. Backslash is now accessible via Fn2. However, it might be better to train myself to use Ctrl-H instead.
 - **Control**: Replaced Caps Lock with Control
 - **Fn2**: Replaced the Control key position with Fn2. This creates a setup with two Fn2 keys on both left and right sides
-
 
 <figure>
   <img src="layer0.webp" alt="LAYER0" />

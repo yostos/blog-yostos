@@ -10,6 +10,11 @@ tags = ["Current Affairs"]
 
 中島聡氏のメールマガジンに「戦争責任にケジメをつけて前に進む必要性」という興味深い記事がありました。日本が第二次世界大戦における戦争責任にケジメをつけられない理由についての分析で、納得できる部分が多くあったため、ここに記録しておきます。
 
+<details>
+<summary>Table of Contents</summary>
+<!-- toc -->
+</details>
+
 ## 中島氏の基本的な見解
 
 中島氏の基本的な立場は明確です。
@@ -98,7 +103,9 @@ A 級戦犯は 25 人が有罪となり 7 人が処刑されました。
   <footer>
     <cite>
       産経新聞記事 -
-      「[石破首相よ、戦後80年「個人の見解」で中国の反日宣伝に手を貸すな](https://www.sankei.com/article/20250804-CBJSJPFKFFNBZNNKWI6RGYKDSM/)」
+      「<a href="https://www.sankei.com/article/20250804-CBJSJPFKFFNBZNNKWI6RGYKDSM/">
+石破首相よ、戦後80年「個人の見解」で中国の反日宣伝に手を貸すな
+    </a>」
     </cite>
   </footer>
 </blockquote>

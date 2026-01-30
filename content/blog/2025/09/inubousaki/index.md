@@ -10,6 +10,11 @@ tags = ["Drone", "Photography"]
 
 ![Inubosaki Lighthouse](inbousaki.webp)
 
+<details>
+<summary>Table of Contentes</summary>
+  <!-- toc -->
+</details>
+
 Today, I captured drone footage of Inubosaki Lighthouse, located at the easternmost point of the Kanto region.
 
 {{ youtube(id="dv22mPGs-j8") }}

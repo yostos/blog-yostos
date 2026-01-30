@@ -5,10 +5,15 @@ date = 2025-10-13
 aliases = ["/articles/2025/10/13/povo20"]
 
 [taxonomies]
-tags = ["Tech"]
+tags = ["Gadget"]
 +++
 
 ![POVO2.0](povo.webp)
+
+<details>
+<summary>Table of Contens</summary>
+  <!-- toc -->
+</details>
 
 ## 楽天モバイルの問題
 

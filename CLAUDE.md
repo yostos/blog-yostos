@@ -40,6 +40,17 @@ docs/TODO.md             # Migration task documentation
 - Language: Japanese (`default_language = "ja"`)
 - Search: Disabled (Japanese not supported)
 
+## Code Block Syntax
+
+To display a filename on a code block, use the `name=` parameter (Zola 0.20.0+):
+
+````markdown
+```bash,name=script.sh
+#!/bin/bash
+echo "Hello"
+```
+````
+
 ## Article Frontmatter Format
 
 ```toml

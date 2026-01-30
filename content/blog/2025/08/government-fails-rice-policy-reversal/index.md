@@ -43,7 +43,7 @@ tags = ["Current Affairs"]
 
   <footer>
     <cite>
-      Coded Chords - 「<a href="https://www.maff.go.jp/j/council/seisaku/syokuryo/240305/attach/pdf/240305-15.pdf">
+      Coded Chords - 「<a href="https://blog.yostos.org/articles/2024/09/06/Weekly-buzz-20240906">
         Weekly Buzz🐝 2024-09-06
       </a>」
     </cite>
