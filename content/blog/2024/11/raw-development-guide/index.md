@@ -23,17 +23,17 @@ With macOS now supporting RAW files natively, a variety of apps are available fo
 - **Image 2**: A JPEG file developed using Pixelmator Pro, also without adjustments. Pixelmator Pro takes advantage of macOS's native RAW support, ensuring high compatibility and efficient processing of RAW files.
 - **Image 3**: A JPEG image saved directly from the GR IIIx at the time of capture, with the "Negative Film" preset applied via Image Control.
 
-私は RICOH GR IIIx で撮影した RAW 画像の現像に SILKYPIX を使用してきました。しかし、最近こう考え始めています：このソフトウェアを使い続ける価値は本当にあるのだろうか？
-ためらいの主な理由は 2 つあります。
+私はRICOH GR IIIxで撮影したRAW画像の現像にSILKYPIXを使用してきました。しかし、最近こう考え始めています：このソフトウェアを使い続ける価値は本当にあるのだろうか？
+ためらいの主な理由は2つあります。
 
 処理に相当な時間がかかる。
 プレビュー機能が遅く、長時間使用すると頻繁にフリーズする。
 
-macOS が現在 RAW ファイルをネイティブにサポートするようになり、これらのファイルを編集するための様々なアプリが利用可能です。選択肢を探るために、Python ベースの画像比較ツールを作成し、3 つの画像を分析して比較しました。
+macOSが現在RAWファイルをネイティブにサポートするようになり、これらのファイルを編集するための様々なアプリが利用可能です。選択肢を探るために、Pythonベースの画像比較ツールを作成し、3つの画像を分析して比較しました。
 
-画像 1：macOS 版の SILKYPIX を使用して現像した JPEG ファイル（調整なし）。
-画像 2：Pixelmator Pro を使用して現像した JPEG ファイル（同じく調整なし）。Pixelmator Pro は macOS のネイティブ RAW サポートを活用し、RAW ファイルの高い互換性と効率的な処理を確保しています。
-画像 3：撮影時に GR IIIx から直接保存された JPEG 画像で、イメージコントロールを通じて「ネガティブフィルム」プリセットが適用されています。
+画像1：macOS版のSILKYPIXを使用して現像したJPEGファイル（調整なし）。
+画像2：Pixelmator Proを使用して現像したJPEGファイル（同じく調整なし）。Pixelmator ProはmacOSのネイティブRAWサポートを活用し、RAWファイルの高い互換性と効率的な処理を確保しています。
+画像3：撮影時にGR IIIxから直接保存されたJPEG画像で、イメージコントロールを通じて「ネガティブフィルム」プリセットが適用されています。
 
 ## 1. Analyzing the JPEG Files Using Data
 
@@ -41,7 +41,7 @@ The image I used for comparison was a park scene with autumn leaves illuminated 
 Here are the results from my Python program:
 
 比較に使用した画像は、夕日に照らされた秋の紅葉がある公園の風景です。
-以下が私の Python プログラムからの結果です。
+以下が私のPythonプログラムからの結果です。
 
 
 ![Result of Comparison](comparison-result.webp)
@@ -112,39 +112,39 @@ From the comparison results, the following observations can be made:
 
 ータに基づく各画像の特徴は以下の通りです。
 
-- SILKYPIX 画像
+- SILKYPIX画像
   - 穏やかなトーンの適度な明るさ。
   - 適切な彩度で、鮮やかさと自然さのバランスを実現。
   - 安定した明るさにより、均一な仕上がりになっている。
-- Pixelmator Pro 画像
+- Pixelmator Pro画像
   - 最も暗い出力で、影を強調。
   - 最も高い彩度で、鮮やかさに焦点。
   - ダイナミックな色調の変化により、ドラマチックな印象を作り出す。
-- GR IIIx JPEG 画像（ネガティブフィルムスタイル）
+- GR IIIx JPEG画像（ネガティブフィルムスタイル）
   - 最も明るい出力で、明るく柔らかいトーン。
   - 最も低い彩度で、落ち着いた自然な色調を提供。
   - 適度な明るさのバリエーションにより、滑らかで自然なグラデーションを提供。
 
 比較結果から、以下の観察が可能です。
 
-SSIM（構造的類似性指標）に基づくと、SILKYPIX と Pixelmator Pro は明るさと彩
-度に顕著な違いがあり、構造が大きく異なります。GR IIIx JPEG は SILKYPIX と比較的
+SSIM（構造的類似性指標）に基づくと、SILKYPIXとPixelmator Proは明るさと彩
+度に顕著な違いがあり、構造が大きく異なります。GR IIIx JPEGはSILKYPIXと比較的
 似ていますが、より控えめな彩度となっています。
-ヒストグラム相関によると、SILKYPIX と Pixelmator Pro は明らかに異なる色分布を示しています。GR IIIx JPEG と比較すると、SILKYPIX にはある程度の類似性がありますが、Pixelmator Pro は大きな違いを示しています。
+ヒストグラム相関によると、SILKYPIXとPixelmator Proは明らかに異なる色分布を示しています。GR IIIx JPEGと比較すると、SILKYPIXにはある程度の類似性がありますが、Pixelmator Proは大きな違いを示しています。
 
 ### 2.2. Evaluating RAW Development Apps
 
 Based on the analysis, here’s my evaluation of each tool:
 
 - **SILKYPIX**  
-  SILKYPIX delivers vivid colors and a balanced brightness level, making it ideal for landscapes or scenes where vibrant colors are essential. Its versatility makes it suitable for various scenarios.SILKYPIX は鮮やかな色とバランスの取れた明るさのレベルを提供し、鮮やかな色が重要な風景やシーンに理想的。その多様性により、様々なシナリオに適している。
+  SILKYPIX delivers vivid colors and a balanced brightness level, making it ideal for landscapes or scenes where vibrant colors are essential. Its versatility makes it suitable for various scenarios.SILKYPIXは鮮やかな色とバランスの取れた明るさのレベルを提供し、鮮やかな色が重要な風景やシーンに理想的。その多様性により、様々なシナリオに適している。
 
 - **Pixelmator Pro**  
-  With its darker tones and shadow emphasis, Pixelmator Pro works well for dramatic compositions or print projects. However, additional adjustments might be required for darker areas.より暗いトーンと影の強調により、Pixelmator Pro はドラマチックな構図や印刷プロジェクトに適している。ただし、暗い部分には追加の調整が必要な場合がある。
+  With its darker tones and shadow emphasis, Pixelmator Pro works well for dramatic compositions or print projects. However, additional adjustments might be required for darker areas.より暗いトーンと影の強調により、Pixelmator Proはドラマチックな構図や印刷プロジェクトに適している。ただし、暗い部分には追加の調整が必要な場合がある。
 
 - **GR IIIx JPEG (Negative Film Preset)**  
    The GR IIIx JPEG provides a bright, soft tone with natural colors, making
-  it great for everyday photography and relaxed scenes.GR IIIx JPEG は明るく柔
+  it great for everyday photography and relaxed scenes.GR IIIx JPEGは明るく柔
   らかいトーンと自然な色を提供し、日常の写真や落ち着いたシーンに最適。
 
 ## 3. Final Thoughts
@@ -153,9 +153,9 @@ From this comparison, SILKYPIX proves to be a reliable tool, and the numerical d
 
 A practical workflow could be to shoot in RAW + JPEG mode, using the JPEGs directly for most situations and turning to SILKYPIX for advanced adjustments when needed.
 
-この比較から、SILKYPIX は信頼性の高いツールであり、数値データがその強みを裏付けています。驚いたことに、ネガティブフィルムプリセットを適用した GR IIIx JPEG に魅力を感じました。
-実用的なワークフローとしては、RAW + JPEG モードで撮影し、
-ほとんどの状況では直接 JPEG を使用し、必要に応じて SILKYPIX を使用して調整することが考えられます。
+この比較から、SILKYPIXは信頼性の高いツールであり、数値データがその強みを裏付けています。驚いたことに、ネガティブフィルムプリセットを適用したGR IIIx JPEGに魅力を感じました。
+実用的なワークフローとしては、RAW + JPEGモードで撮影し、
+ほとんどの状況では直接JPEGを使用し、必要に応じてSILKYPIXを使用して調整することが考えられます。
 
 ## Appendix. Python Program for Image Analysis
 

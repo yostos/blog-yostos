@@ -1,11 +1,16 @@
 +++
 title = "Sublime Text - 職人主義的ソフトウェアの美学と持続可能なビジネスモデル"
-description = "高速性と簡潔さを追求し続けるテキストエディタ Sublime Text。主流の座を退いても品質を保ち続ける独自の設計思想と、成長至上主義に依存しない持続可能なビジネスモデルについて考察します。"
+description = """
+高速性と簡潔さを追求し続けるテキストエディタSublime Text。
+VS Codeに市場シェアを奪われても品質を保ち続ける職人主義的な
+設計思想と、サブスクリプションに依存しないワンタイム購入モデルの
+持続可能性について考察します。
+"""
 date = 2026-01-08
-aliases = ["/articles/2026/01/08/sublime-text"]
+aliases =["/articles/2026/01/08/sublime-text"]
 
 [taxonomies]
-tags = ["Tech","Software", "Editor"]
+tags =["Tech","Software", "Editor"]
 +++
 
 <details>

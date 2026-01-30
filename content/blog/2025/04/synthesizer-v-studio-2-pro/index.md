@@ -8,8 +8,8 @@ aliases = ["/articles/2025/04/15/synthesizer-v-studio-2-pro"]
 tags = ["Music", "Software", "Music Production"]
 +++
 
-とりあえず、昨年 Synthersizer V 1 で作った藤原さくらさんの「[Just One Girl](https://soundcloud.com/yostos/just-one-girl-1?si=b7db2a56715c423eb6402905f5029c64&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing)
-」を Synthesizer V 2 でヴォーカル部分をリテイクしてみました。
+とりあえず、昨年Synthersizer V 1で作った藤原さくらさんの「[Just One Girl](https://soundcloud.com/yostos/just-one-girl-1?si=b7db2a56715c423eb6402905f5029c64&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing)
+」をSynthesizer V 2でヴォーカル部分をリテイクしてみました。
 
 <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/soundcloud%253Atracks%253A2078817968&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/yostos" title="Yostos" target="_blank" style="color: #cccccc; text-decoration: none;">Yostos</a> · <a href="https://soundcloud.com/yostos/just-one-girl-retake" title="Just One Girl - Retake" target="_blank" style="color: #cccccc; text-decoration: none;">Just One Girl - Retake</a></div>
 
@@ -22,16 +22,16 @@ tags = ["Music", "Software", "Music Production"]
 
 ### 歌声生成速度の改善
 
-Synthesizer V 2 では歌声の生成速度が改善され、以前の Synthesizer V に比べると 300% 速くなったとのことです。
+Synthesizer V 2では歌声の生成速度が改善され、以前のSynthesizer Vに比べると300% 速くなったとのことです。
 
-以前のバージョンでは編集時にノート 1 つ音程を変更しただけで少し待たないと再生できませんでしたが、
-Synthesizer V 2 では、ノートの編集後に再生できるまでの時間が短くなり待たされ
+以前のバージョンでは編集時にノート1つ音程を変更しただけで少し待たないと再生できませんでしたが、
+Synthesizer V 2では、ノートの編集後に再生できるまでの時間が短くなり待たされ
 るという感覚がほぼありません。
 
 ### 新しいボーカルモードの機能
 
 ボーカルモードはシンガーの歌声にバリエーションを持たせる機能ですが、
-Synthesizer V 2 では各パラメータが「ピッチ(Pitch)」「音色(Timbre)」「発声
+Synthesizer V 2では各パラメータが「ピッチ(Pitch)」「音色(Timbre)」「発声
 (Pronun)」へと分解可能となりました。
 
 これにより、ピッチに関しては「Clear」スタイルを強く適用するけれど
@@ -39,31 +39,31 @@ Synthesizer V 2 では各パラメータが「ピッチ(Pitch)」「音色(Timbr
 
 ### AIリテイク機能の改善
 
-AI リテイクは、AI の技術を用いて異なる歌い方を生成できる機能です。
+AIリテイクは、AIの技術を用いて異なる歌い方を生成できる機能です。
 
 以前のバージョンでは、「ピッチ」と「声色」のみがリテイク可能でしたが、
-Synthesizer V 2 から「タイミング」も生成できるようになりました。
+Synthesizer V 2から「タイミング」も生成できるようになりました。
 
-AI リテイク生成時のパラメータは XY パッドのようなインターフェイスとなり、
+AIリテイク生成時のパラメータはXYパッドのようなインターフェイスとなり、
 「Vibrant」「Refined」「Stable」「Raw」をコントロールする方式となりました。
 より直感的に音を調整できます。
 
 ### スマートピッチコントロール
 
-以前の Syhthesizer V では、ピッチ関係のパラメータは「ピッチ推移」や「ビブラー
+以前のSyhthesizer Vでは、ピッチ関係のパラメータは「ピッチ推移」や「ビブラー
 ト」がありましたが、どのように変化するか分かりづらいものがありました。
 
-V2 ではピアノロール状でピッチ制御点を直接追加できます。制御点を通るピッチカー
+V2ではピアノロール状でピッチ制御点を直接追加できます。制御点を通るピッチカー
 ブが自動生成され、制御点をドラッグするとリアルタイムにカーブが変化します。
 これまでよりずいぶんと分かりやすくなりました。
 
 ### アクティベーション方法の変更
 
 これまでアクティベーションコードを製品に入力する方式だったと思いますが、
-今回から Dreamtonics のアカウントと紐付いて製品がアクティベーションを行うよう
+今回からDreamtonicsのアカウントと紐付いて製品がアクティベーションを行うよう
 になりました。
 
-従って Dreamtonics のアカウントを作成し、そこに製品登録をきちんとやっておく必
+従ってDreamtonicsのアカウントを作成し、そこに製品登録をきちんとやっておく必
 要があります。
 
 ## まとめ

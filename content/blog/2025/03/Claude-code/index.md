@@ -12,19 +12,19 @@ tags = ["Tech", "Generative AI","Claude Code"]
 
 [Claude Code][Claude Code]を試してみました。
 
-Claude Code は、Anthropic が開発した最新の AI 駆動型コーディングアシスタントです。
-コマンドラインコーディングツールで、Anthropic のサーバーに API を介して接続し
-Claude 3.7 Sonnet モデルを活用して開発者を支援します。従って、
-ブラウザから Claude 3.7 Sonnet を扱うのと同等の高度な AI 推論の支援を受けることができます。
+Claude Codeは、Anthropicが開発した最新のAI駆動型コーディングアシスタントです。
+コマンドラインコーディングツールで、AnthropicのサーバーにAPIを介して接続し
+Claude 3.7 Sonnetモデルを活用して開発者を支援します。従って、
+ブラウザからClaude 3.7 Sonnetを扱うのと同等の高度なAI推論の支援を受けることができます。
 
 ## Getting Started With Claude Code
 
-Claude Code を使う前提がいくつかあります。
+Claude Codeを使う前提がいくつかあります。
 
-1. Claude Code はまだβ版で Research Preview のため、
-   [Claude Codeのページ][Claude Code]からβ版参加の Waiting List の登録して、アクセ
+1. Claude Codeはまだβ版でResearch Previewのため、
+   [Claude Codeのページ][Claude Code]からβ版参加のWaiting Listの登録して、アクセ
    ス許可をもらう必要があ。
-2. Node.js 18 以上が必要。以下のソフトウェアはオプション。
+2. Node.js 18以上が必要。以下のソフトウェアはオプション。
 
 - git 2.23+
 - GitHub or GitLab CLI for PR workflows
@@ -33,19 +33,19 @@ Claude Code を使う前提がいくつかあります。
 3. [Supported Countries](https://www.anthropic.com/supported-countries)に居
    る必要。日本は対象となっているので大丈夫。
 
-もちろん、ターミナルから使うものなので、Mac であれば iTerm2 などがあったほうが
+もちろん、ターミナルから使うものなので、MacであればiTerm2などがあったほうが
 よいでしょう。
 
-上記がクリアできたら、Claude Code を認証して使用するために、Anthropic から API
+上記がクリアできたら、Claude Codeを認証して使用するために、AnthropicからAPI
 キーを生成して払い出しておきます。
 
-Claude Code のインストールは以下のコマンドで行います。
+Claude Codeのインストールは以下のコマンドで行います。
 
 ```bash
 npm install -g @anthropic/claude-code
 ```
 
-インストールが完了したら、次のコマンドで Claude Code を起動して、初回だけ OAuth
+インストールが完了したら、次のコマンドでClaude Codeを起動して、初回だけOAuth
 認証を完了させておきます。
 
 ```bash
@@ -59,7 +59,7 @@ claude
 ](https://github.com/yostos/yostos-portfolio)について、分析したのに
 `README.md`の更新を依頼してみました。引用ブロック担っている部分が私の指示したものです。
 
-単純な Web サイトですが、Next.js を使いそこそこコードの量もありましたが、
+単純なWebサイトですが、Next.jsを使いそこそこコードの量もありましたが、
 数秒で私が適当に書いていた`README.md`を依存ソフトウェアなども正確に記載し完璧に仕上
 げてくれました。
 
@@ -237,16 +237,16 @@ to automatically optimize and load [Geist](https://vercel.com/font), a new font 
 
 ## まとめ
 
-今回は Anthropic が開発した AI 駆動型コーディングアシスタント「Claude Code」を試
-してみました。まだ Research Preview の段階ですが、その能力は非常に印象的です。
+今回はAnthropicが開発したAI駆動型コーディングアシスタント「Claude Code」を試
+してみました。まだResearch Previewの段階ですが、その能力は非常に印象的です。
 コマンドラインから簡単に使用でき、コードベースの分析や更新を数秒で行うことが
 できます。
 
-実際の使用例として示したように、プロジェクトの概要を理解し、README の更新を行
-う作業も正確かつ迅速に実行してくれました。Claude 3.7 Sonnet モデルの高度な推
+実際の使用例として示したように、プロジェクトの概要を理解し、READMEの更新を行
+う作業も正確かつ迅速に実行してくれました。Claude 3.7 Sonnetモデルの高度な推
 論能力をコマンドラインから活用できることで、開発ワークフローが大幅に効率化さ
 れる可能性を感じました。
 
-AI 駆動型の開発支援ツールはますます進化しており、Claude Code はその最前線にあ
-るツールの 1 つと言えるでしょう。今後の正式リリースや機能拡張に期待したいと思
+AI駆動型の開発支援ツールはますます進化しており、Claude Codeはその最前線にあ
+るツールの1つと言えるでしょう。今後の正式リリースや機能拡張に期待したいと思
 います。

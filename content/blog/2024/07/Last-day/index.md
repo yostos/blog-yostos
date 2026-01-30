@@ -10,4 +10,4 @@ tags = ["Life", "Career", "AWS"]
 
 I returned the company Mac a while ago and have been busy with private matters, so I had forgotten, but today was my last day as an Amazonian. I guess I'll go return my health insurance card.
 
-会社の Mac も随分前に返却しているしプライベートでバタバタしていて失念していたけれど、今日がアマゾニアンとしての最終日だった。 保険証を返送しにいくか。
+会社のMacも随分前に返却しているしプライベートでバタバタしていて失念していたけれど、今日がアマゾニアンとしての最終日だった。 保険証を返送しにいくか。

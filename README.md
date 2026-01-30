@@ -1,6 +1,7 @@
 # Coded Chords
 
 [![Deploy to GitHub Pages](https://github.com/yostos/blog-yostos/actions/workflows/deploy.yml/badge.svg)](https://github.com/yostos/blog-yostos/actions/workflows/deploy.yml)
+[![Textlint](https://github.com/yostos/blog-yostos/actions/workflows/textlint.yml/badge.svg)](https://github.com/yostos/blog-yostos/actions/workflows/textlint.yml)
 [![Zola](https://img.shields.io/badge/Zola-0.19.2-blue?logo=zola)](https://www.getzola.org/)
 [![Theme: tabi](https://img.shields.io/badge/Theme-tabi-orange)](https://github.com/welpo/tabi)
 [![Articles](https://img.shields.io/badge/Articles-226+-green)](https://blog.yostos.org)
@@ -33,6 +34,8 @@ The blog has been running since 2024, with **226+ articles** covering these topi
 | Hosting | GitHub Pages |
 | Comments | [giscus](https://giscus.app/) |
 | CI/CD | GitHub Actions |
+| Linting | [textlint](https://textlint.github.io/) |
+| Git Hooks | [Husky](https://typicode.github.io/husky/) + [lint-staged](https://github.com/lint-staged/lint-staged) |
 
 ## Development
 
@@ -45,6 +48,12 @@ zola build
 
 # Check for errors
 zola check
+
+# Run textlint
+npm run lint
+
+# Fix textlint errors automatically
+npm run lint:fix
 ```
 
 ## Project Structure

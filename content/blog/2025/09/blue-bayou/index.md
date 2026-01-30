@@ -24,7 +24,7 @@ Looking back now, melodic songs were the mainstream, but it was an era when clas
 
 NetflixでDenzel Washington主演の少し古い映画『Man on Fire』(邦題は『マイ・ボディガード』)を見ました。
 
-劇中で主人公が心の支えにしている曲が Linda Ronstadtの"Blue Bayou"でした。
+劇中で主人公が心の支えにしている曲がLinda Ronstadtの"Blue Bayou"でした。
 懐かしくなって、演奏してみました。
 
 1977年と言えば、中学生になって洋楽を聴き始めた年です。

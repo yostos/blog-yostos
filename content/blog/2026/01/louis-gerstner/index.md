@@ -1,11 +1,15 @@
 +++
 title = "IBMを救った伝説のCEO、Louis Gerstner氏逝去"
-description = "Louis V. Gerstner Jr.氏が2025年12月27日、83歳で逝去されました。1990年代に破綻寸前だったIBMを劇的に再生させた伝説的な経営者です。御冥福をお祈りいたします。"
+description = """
+1990年代に破綻寸前だったIBMを劇的に再生させた伝説的経営者、
+Louis V. Gerstner Jr.氏が2025年12月27日、83歳で逝去されました。
+心よりご冥福をお祈りいたします。
+"""
 date = 2026-01-01
-aliases = ["/articles/2026/01/01/louis-gerstner"]
+aliases =["/articles/2026/01/01/louis-gerstner"]
 
 [taxonomies]
-tags = ["Current Affairs","IBM"]
+tags =["Current Affairs","IBM"]
 +++
 
 IBMの現CEO、アービンド・クリシュナ氏が2025年12月28日（日曜日）に従業員へのメールで

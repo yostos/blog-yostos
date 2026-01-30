@@ -17,6 +17,13 @@ I was intrigued by Minister of Internal Affairs Seiichiro Murakami's remarks at 
   </footer>
 </blockquote>
 
-While I'm appalled by the Minister's incompetence in accepting population decline as a given rather than addressing it, having worked at a local government affiliated organization, I agree with the notion that municipalities are unnecessary.
+I'm appalled by the Minister's incompetence in accepting
+population decline as a given rather than addressing it.
+However, having worked at a local government affiliated
+organization, I agree that municipalities are unnecessary.
 
-These local governments and their affiliated organizations create work by piling up internal administrative operations without being held accountable for results, failing to do what truly needs to be done. Witnessing this firsthand makes me want to agree with his position.
+These local governments and their affiliated organizations
+create work by piling up internal administrative operations
+without being held accountable for results.
+They fail to do what truly needs to be done.
+Witnessing this firsthand makes me want to agree with his position.

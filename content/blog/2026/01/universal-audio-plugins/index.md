@@ -1,11 +1,18 @@
 +++
 title = "5つのクラシックUADプラグイン：黄金時代のスタジオレジェンド"
-description = "Universal Audioのセールを活用して、マスタリング中心のプラグインコレクションを構築しました。今回購入した5つの伝説的なプラグイン—Pultec EQP-1A、LA-2A、Lexicon 224、SSL G Bus Compressor、Ampex ATR-102—について、ビートルズから1980年代ポップスまでの魅力的な歴史と、Logic Proで個別トラック、バス、マスターチャンネルでの実際の使い方を詳しく解説します。"
+description = """
+Universal Audioのセールを活用して、マスタリング中心の
+プラグインコレクションを構築しました。今回購入した5つの
+伝説的なプラグイン—Pultec EQP-1A、LA-2A、Lexicon 224、
+SSL G Bus Compressor、Ampex ATR-102—について、
+ビートルズから1980年代ポップスまでの魅力的な歴史と、
+Logic Proでの実際の使い方を詳しく解説します。
+"""
 date = 2026-01-11
-aliases = ["/articles/2026/01/11/universal-audio-plugins"]
+aliases =["/articles/2026/01/11/universal-audio-plugins"]
 
 [taxonomies]
-tags = ["Music Production","Software"]
+tags =["Music Production","Software"]
 +++
 
 I took advantage of Universal Audio's sale to build my mastering-focused plugin collection. Here's a deep dive into the 5 legendary plugins I picked up. These include the Pultec EQP-1A, LA-2A, and Lexicon 224. I also got the SSL G Bus Compressor and Ampex ATR-102. I'll cover their fascinating history from The Beatles to 1980s pop. You'll also learn exactly how to use each one in Logic Pro on individual tracks, buses, or the master channel for professional results.

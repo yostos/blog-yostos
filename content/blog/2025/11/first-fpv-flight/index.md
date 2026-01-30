@@ -12,8 +12,16 @@ During a recent aerial photography session at Lake Sasagawa, I forgot my DJI Air
 
 This sparked my interest in maximizing the Neo's capabilities, so I've been grinding simulator hours to master manual mode control. Today marked my first real-world manual flight test with the actual hardware.
 
-My current setup consists of DJI Goggles N3 paired with the DJI FPV Remote Controller 3. As expected, the physics and latency characteristics differ significantly from simulation environments, but after approximately one hour of iterative testing, I managed to develop basic muscle memory for the control scheme.
+My current setup consists of DJI Goggles N3 paired with
+the DJI FPV Remote Controller 3. As expected, the physics
+and latency characteristics differ significantly from
+simulation environments. After approximately one hour of
+iterative testing, I managed to develop basic muscle memory
+for the control scheme.
 
-Still requires substantial practice to achieve proficiency, but the low-level flight dynamics offer a completely different piloting experience compared to traditional high-altitude aerial photography workflows.
+Still requires substantial practice to achieve proficiency.
+The low-level flight dynamics offer a completely different
+piloting experience compared to traditional high-altitude
+aerial photography workflows.
 
 {{ youtube(id="OCa_NgF0AIs") }}

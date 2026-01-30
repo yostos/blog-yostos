@@ -12,7 +12,7 @@ tags = ["Tech","API"]
 
 ## 変更のポイント
 
-以下のコードは以前使用していたもので SoundCloud の曲を Web に埋め込むためのコー
+以下のコードは以前使用していたものでSoundCloudの曲をWebに埋め込むためのコー
 ドです。
 
 ```javascript
@@ -57,8 +57,8 @@ export const SoundCloudEmbed: React.FC<SoundCloudEmbedProps> = ({ url }) => {
 };
 ```
 
-以前は iframe の src に指定する url は曲ページへのリンクと同じリンクを指定すればよかった
-のですが、ここ数日の変更で iframe の src の指定は API 専用の URL でなければならなく
+以前はiframeのsrcに指定するurlは曲ページへのリンクと同じリンクを指定すればよかった
+のですが、ここ数日の変更でiframeのsrcの指定はAPI専用のURLでなければならなく
 なったようです。
 
 この変更は既にアップロードされている曲には遡及していないようで、直近にアップ
@@ -66,12 +66,12 @@ export const SoundCloudEmbed: React.FC<SoundCloudEmbedProps> = ({ url }) => {
 
 ## SoundCloudEmbed コンポーネントの変更
 
-本来は SoundCloud で Javascript のコードを取得すべきです。
-このブログでは MDX を使っている関係で取得したコードでは修正が必要なため、
+本来はSoundCloudでJavascriptのコードを取得すべきです。
+このブログではMDXを使っている関係で取得したコードでは修正が必要なため、
 `SoundCloudEmbed`というコンポーネントを作っていました。
-この変更で Share Link のみ指定していた SoundCloudEmbed は動かなくなりました。
+この変更でShare Linkのみ指定していたSoundCloudEmbedは動かなくなりました。
 
-仕方がないので API 用の URL を指定できようように修正しました。またタイトルの固定
+仕方がないのでAPI用のURLを指定できようように修正しました。またタイトルの固定
 でなく曲名を指定できるよう変更しています。
 
 ```typescript
@@ -122,5 +122,5 @@ export const SoundCloudEmbed: React.FC<SoundCloudEmbedProps> = ({
 };
 ```
 
-API 用 URL だけ取得はできないので、結局埋め込み用の Javascript のコードを SoundCloud から取得して URL を取り出して貼り付けることになります。
+API用URLだけ取得はできないので、結局埋め込み用のJavascriptのコードをSoundCloudから取得してURLを取り出して貼り付けることになります。
 手間は貼り付けるより面倒なので、コンポーネントにした意味がないかもしれません。

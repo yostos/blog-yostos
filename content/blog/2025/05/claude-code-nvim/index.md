@@ -9,7 +9,7 @@ tags = ["Tech", "Generative AI"]
 +++
 
 ![Claude-Code-Nvim](claude-code-nvim.webp)
-Anthropic の Developer Partner Program に Join してClaude Codeを使うモチベーションが高まっています。Claude CodeをNeoVimから使用するためのClaude Code Neovim Pluginをインストールしました。Claude Code Neovim Plugin を NeoVim で使う方法を説明します。
+AnthropicのDeveloper Partner ProgramにJoinしてClaude Codeを使うモチベーションが高まっています。Claude CodeをNeoVimから使用するためのClaude Code Neovim Pluginをインストールしました。Claude Code Neovim PluginをNeoVimで使う方法を説明します。
 
 <details>
 <summary>Table of Contents</summary>
@@ -19,24 +19,24 @@ Anthropic の Developer Partner Program に Join してClaude Codeを使うモ�
 
 今回導入したのは、[Claude Code Neovim Plugin](https://github.com/greggh/claude-code.nvim) `claude-code.nvim` です。
 
-基本的にやっていることは NeoVim のターミナルを使い、Claude Code を呼び出してい
+基本的にやっていることはNeoVimのターミナルを使い、Claude Codeを呼び出してい
 るようです。
 
 次のような機能がサポートされます。
 
-- ターミナルウィンドウでキー一押しだけで Claude Code を切り替え
-- --continue などのコマンドライン引数やカスタムバリアントのサポート
-- Claude Code によって変更されたファイルを自動検出して再読み込み
+- ターミナルウィンドウでキー一押しだけでClaude Codeを切り替え
+- --continueなどのコマンドライン引数やカスタムバリアントのサポート
+- Claude Codeによって変更されたファイルを自動検出して再読み込み
 - ファイルが外部で変更された際のリアルタイムバッファ更新
 - カスタマイズ可能なウィンドウ位置とサイズ
 - which-key（利用可能な場合）との統合
-- 作業ディレクトリとして git プロジェクトのルートを自動的に使用（利用可能な場合）
+- 作業ディレクトリとしてgitプロジェクトのルートを自動的に使用（利用可能な場合）
 
 当たり前ですが、[Claude Code CLI](https://github.com/anthropics/claude-code)がインストールされている必要があります。
 
-注意点としては、Claude Desktop などを呼び出しているのでなく、Claude Code を呼
-び出しているため、　**APIの使用料がかかります**。 Claude API でなく Claude
-Code をの呼び出しているため、Anthropic Developer Partner Programe のディスカウン
+注意点としては、Claude Desktopなどを呼び出しているのでなく、Claude Codeを呼
+び出しているため、　**APIの使用料がかかります**。 Claude APIでなくClaude
+Codeをの呼び出しているため、Anthropic Developer Partner Programeのディスカウン
 ト対象とはなります。
 
 ## `claud-code.nvim`のインストール
@@ -69,18 +69,18 @@ return {
 | 会話ピッカーで選択して再開 | :ClaudeCodeResume    | N/A          |
 | Verboseモード              | `:ClaudeCodeVerbose` | `<leader>cV` |
 
-Claude Code ターミナルでは次のキーが使用できます。
+Claude Codeターミナルでは次のキーが使用できます。
 
 - `<C-h>`,`<C-j>`,`<C-k>`,`<C-l>` : ウィンドウ間の移動
 - `<C-f>`,`<C-b>`: ページスクロール
 
 ## まとめ
 
-今回は Claude Code を NeoVim から直接使用できる `claude-code.nvim` プラグインを紹介しました。ターミナルから Claude Code を呼び出す方法よりも、コーディング作業の流れを止めることなく AI の支援を受けられるようになります。
+今回はClaude CodeをNeoVimから直接使用できる `claude-code.nvim` プラグインを紹介しました。ターミナルからClaude Codeを呼び出す方法よりも、コーディング作業の流れを止めることなくAIの支援を受けられるようになります。
 
-このプラグインを使うことで、NeoVim 内で簡単に Claude Code へアクセスでき、
-シームレスなコードの修正や生成を行えるようになります。特に git プロジェクトの
+このプラグインを使うことで、NeoVim内で簡単にClaude Codeへアクセスでき、
+シームレスなコードの修正や生成を行えるようになります。特にgitプロジェクトの
 コンテキストを自動的に認識する機能は、大規模なプロジェクトでの作業に役立ちま
 す。
 
-一点注意が必要なのは、API 使用料がかかる点です。ただし、Anthropic Developer Partner Program に参加している場合は割引が適用されるので、Claude API を直接呼び出すより合理的です。コーディング効率向上のためのツールとして、検討する価値は十分にあるでしょう。
+一点注意が必要なのは、API使用料がかかる点です。ただし、Anthropic Developer Partner Programに参加している場合は割引が適用されるので、Claude APIを直接呼び出すより合理的です。コーディング効率向上のためのツールとして、検討する価値は十分にあるでしょう。

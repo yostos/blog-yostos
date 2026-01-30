@@ -8,12 +8,12 @@ aliases = ["/articles/2024/08/25/Pubkey-of-nostr"]
 tags = ["Tech"]
 +++
 
-Nostr で Vanity pubkey の Mining をやってみました。
-プリフィックスに`yostos`と近い`y0st0s`を得るため、`rana`を使って数時間 Mining しました。
+NostrでVanity pubkeyのMiningをやってみました。
+プリフィックスに`yostos`と近い`y0st0s`を得るため、`rana`を使って数時間Miningしました。
 
-得られた、Pubkey が`npub1y0st0svvu5xg6dvswx7dz5m2p7004kmvsx6n22w4yjp3l6fa3mvsef2zz7`で、npub1 に続く部分が`y0st0s`となっています。自己満足ですが。
+得られた、Pubkeyが`npub1y0st0svvu5xg6dvswx7dz5m2p7004kmvsx6n22w4yjp3l6fa3mvsef2zz7`で、npub1に続く部分が`y0st0s`となっています。自己満足ですが。
 
-rana のインストールと使い方は次の通りです。Rust の実行環境が事前に必要です。
+ranaのインストールと使い方は次の通りです。Rustの実行環境が事前に必要です。
 
 ```bash
 cargo install rana
@@ -32,6 +32,6 @@ Nsec private key: nsec1@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 
 ```
 
-プリフィックスに指定する桁数が増えるほどマイニングに時間がかかるので注意しましょう。上記の例では M3 MAX の Macbook Pro で 1 時間ほどかかりました。
+プリフィックスに指定する桁数が増えるほどマイニングに時間がかかるので注意しましょう。上記の例ではM3 MAXのMacbook Proで1時間ほどかかりました。
 
-また、Pubkey は Native SegWit(Bech32)でエンコードされており、小文字で l,b,i,o を除いた 32 文字しか使えません。これらの文字については数字などに置き換えて指定する必要があります（yostos->y0st0s など）
+また、PubkeyはNative SegWit(Bech32)でエンコードされており、小文字でl,b,i,oを除いた32文字しか使えません。これらの文字については数字などに置き換えて指定する必要があります（yostos->y0st0sなど）

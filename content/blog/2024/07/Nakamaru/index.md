@@ -10,5 +10,5 @@ tags = ["Current Affairs", "Game", "Splatoon"]
 
 ![](nakamaru.webp)
 
-知らない内に KAT―TUN 中丸雄一さんとスプラトゥーン 3 で対戦してたらしい。
-しかも、Youtube でめっちゃ負けとる動画を公開されとる。
+知らない内にKAT―TUN中丸雄一さんとスプラトゥーン3で対戦してたらしい。
+しかも、Youtubeでめっちゃ負けとる動画を公開されとる。

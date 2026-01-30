@@ -1,6 +1,6 @@
 +++
 title = "Fender 70th Anniversary American Vintage II 1954 Stratocaster"
-description = "I always wanted an original Fender🎸 at least once in my life. And by purechance, I stumbled upon a 70th Anniversary American Vintage II 1954Stratocaster and it's only 3.5Kg  - an absolute gem! I sped off in mycar and bought it on the spot! Now, I'll let it sit for a while to cool off."
+description = "I always wanted an original Fender🎸 at least once in my life. And by purechance, I stumbled upon a 70th Anniversary American Vintage II 1954Stratocaster and it's only 3.5Kg  - an absolute gem. I sped off in mycar and bought it on the spot. Now, I'll let it sit for a while to cool off."
 date = 2025-04-27
 aliases = ["/articles/2025/04/27/stratocaster-1954"]
 
@@ -8,7 +8,7 @@ aliases = ["/articles/2025/04/27/stratocaster-1954"]
 tags = ["Guitar"]
 +++
 
-I always wanted an original Fender🎸 at least once in my life. And by purechance, I stumbled upon a 70th Anniversary American Vintage II 1954Stratocaster and it's only 3.5Kg - an absolute gem! I sped off in mycar and bought it on the spot! Now, I'll let it sit for a while to cool off.
+I always wanted an original Fender🎸 at least once in my life. And by purechance, I stumbled upon a 70th Anniversary American Vintage II 1954Stratocaster and it's only 3.5Kg - an absolute gem. I sped off in mycar and bought it on the spot. Now, I'll let it sit for a while to cool off.
 
 そう言えば、昨年購入したストラトを仕様を忘れそうなので残しておきましょう。
 
@@ -16,23 +16,23 @@ I always wanted an original Fender🎸 at least once in my life. And by purechan
 
 ## 70周年記念モデル
 
-ストラトキャスター誕生 70 周年記念モデルとして昨年発売されたモデルです。
+ストラトキャスター誕生70周年記念モデルとして昨年発売されたモデルです。
 
-American Vintage II シリーズです。Fender のラインナップの中でも伝統的な
+American Vintage IIシリーズです。Fenderのラインナップの中でも伝統的な
 位置づけを持つモデルです。
-基本的に特定の年代の Fender ギターを忠実に再現しようとする「レプリカ」
+基本的に特定の年代のFenderギターを忠実に再現しようとする「レプリカ」
 または「リイシュー」モデルです。
 
-位置づけとしては、現代的な改良を加えた American Professional や、
+位置づけとしては、現代的な改良を加えたAmerican Professionalや、
 カスタムショップのマスタービルダーによる高級な
-Custom Shop モデルの間に位置するプレミアムモデルです。
+Custom Shopモデルの間に位置するプレミアムモデルです。
 
 メイプルネックなのはもちろんですが、
-それだけでなく 1954 年当時のモデルを忠実に復刻してます。
+それだけでなく1954年当時のモデルを忠実に復刻してます。
 
 - ピックアップカバーも当時のシェイプに変更
-- ピックアップは当時のヴォイシングを再生するようにチューンされた 70th
-  Anniversary 18953 single-Coil Strat ピックアップという専用品
+- ピックアップは当時のヴォイシングを再生するようにチューンされた70th
+  Anniversary 18953 single-Coil Stratピックアップという専用品
 - ボディはアッシュ材
 - スイッチは三点式（ハーフトーンが面倒だが、一応五点式も付属している）
 - バックプレートの穴も当時と同じく真円
@@ -79,13 +79,13 @@ Custom Shop モデルの間に位置するプレミアムモデルです。
 
 ## 3.5Kgを切れ
 
-昨年 1981 年製 Fernandes RST-50 THE REVIVAL を手に入れて「本物ほしい」病気を
-患っていたところに、よいタイミングで 70 周年記念モデルです。次の 80 周年記念モデ
+昨年1981年製Fernandes RST-50 THE REVIVALを手に入れて「本物ほしい」病気を
+患っていたところに、よいタイミングで70周年記念モデルです。次の80周年記念モデ
 ルまで生きているかわからないので、買うしかないでしょう。
 
 当時片っ端からこのモデルを売っているお店でギターの重量を比較して
 わざわざこのギターは町田まで購入しに行ってきました。アッシュ材自体の入手が
-困難なためか、3.5Kg〜4.0Kg と結構重量にばらつきがありました。3.5Kg を切ってい
+困難なためか、3.5Kg〜4.0Kgと結構重量にばらつきがありました。3.5Kgを切ってい
 たのはこの個体だけでした。
 
 軽いアッシュボディとメイプルのネックのためか、明るくからりと乾いた良い音がします。

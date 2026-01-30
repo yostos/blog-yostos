@@ -17,10 +17,11 @@ tags = ["Tech","Gadget"]
 
 ## Why I Chose UGREEN NAS
 
-Among numerous NAS products, I selected the UGREEN NASync DXP2800 for its
-outstanding cost-performance ratio. Despite being significantly cheaper than
-equivalent products like the Synology DS224+, it comes standard with an
-Intel N100 processor, 8GB DDR5 memory, 2.5GbE port, and dual M.2 slots.
+Among numerous NAS products, I selected the UGREEN NASync DXP2800
+for its outstanding cost-performance ratio.
+Despite being significantly cheaper than the Synology DS224+,
+it comes standard with an Intel N100 processor and 8GB DDR5 memory.
+It also includes a 2.5GbE port and dual M.2 slots.
 The 2.5GbE port is particularly rare in this price range and offers
 future-proofing.
 

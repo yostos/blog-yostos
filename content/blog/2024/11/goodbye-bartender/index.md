@@ -13,7 +13,7 @@ Today, I've now ditched Bartender for Ice,too.
 
 Keep it FOSS, keep it safe, am I right?
 
-[バーテンダー](https://www.macbartender.com/)はメニューバーの魔術師で、私は熱中していました。ベン・サーティーズが 2024 年 3 月に Applause という正体不明の会社に売却していたことが判明しました。Reddit ではユーザーたちが大騒ぎしていました。
-今日、私もバーテンダーを捨てて Ice に乗り換えました。
+[バーテンダー](https://www.macbartender.com/)はメニューバーの魔術師で、私は熱中していました。ベン・サーティーズが2024年3月にApplauseという正体不明の会社に売却していたことが判明しました。Redditではユーザーたちが大騒ぎしていました。
+今日、私もバーテンダーを捨ててIceに乗り換えました。
 
 オープンソースを守れば安全、そうでしょ？

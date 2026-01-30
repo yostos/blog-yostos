@@ -1,11 +1,16 @@
 +++
 title = "Logic ProのAIFファイルをラウドネス正規化してFLACに変換するスクリプト"
-description = "Logic Proでバウンスした音声ファイルをFLACに変換する際、ffmpegのloudnormフィルタによる2パス処理を自動化するBashスクリプトを作成しました。測定と適用を一度のコマンドで完結させ、作業効率を大幅に向上させます。"
+description = """
+Logic Proでバウンスした音声ファイルをFLACに変換する際、
+ffmpegのloudnormフィルタによる2パス処理を自動化する
+Bashスクリプトを作成しました。測定と適用を一度のコマンドで
+完結させ、手作業を排除して作業効率を大幅に向上させます。
+"""
 date = 2026-01-14
-aliases = ["/articles/2026/01/14/aif2flac"]
+aliases =["/articles/2026/01/14/aif2flac"]
 
 [taxonomies]
-tags = ["Music Production","CLI"]
+tags =["Music Production","CLI"]
 +++
 
 ## 背景

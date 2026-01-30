@@ -32,10 +32,18 @@ Plus, I happened to catch the IMAX version, and the booming, realistic sound mad
 
 I was also blown away by the powerful voice performances from the protagonist and other main characters.
 
-I didn't know who was voicing them while watching, but when I saw the ending credits, I was shocked. The cast includes Mana Ashida, Masao Okada, Koji Yakusho, Masachika Ichimura, Kotaro Yoshida, Yuki Saito, Yutaka Matsushige, and Shota Sometani—an incredibly star-studded lineup.
+I didn't know who was voicing them while watching, but when
+I saw the ending credits, I was shocked. The cast includes
+Mana Ashida, Masao Okada, Koji Yakusho, and Masachika Ichimura.
+It also features Kotaro Yoshida, Yuki Saito, Yutaka Matsushige,
+and Shota Sometani—an incredibly star-studded lineup.
 
 Especially Mana Ashida as the protagonist—she brings a genuine intensity that typical voice actors can't quite capture. I found myself muttering "she's amazing" during the credits.
 
 ## 3. The Ending Song
 
-And yes, Mana Ashida also sings the ending song. I'm not sure how skilled of a singer she is, and nowadays there's probably quite a bit of audio enhancement, but the ending—which begins with a phrase from the film—had a persuasive power that could only come from her voice.
+And yes, Mana Ashida also sings the ending song. I'm not sure
+how skilled of a singer she is. Nowadays there's probably
+quite a bit of audio enhancement. But the ending—which begins
+with a phrase from the film—had a persuasive power that could
+only come from her voice.

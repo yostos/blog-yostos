@@ -1,11 +1,16 @@
 +++
 title = "スキャンPDFの処理を自動化するClaude Codeプラグインを作った"
-description = "書籍をスキャナーで読み取ってPDF化した後の処理を簡単にするため、pdf-processorというClaude Codeプラグインを開発しました。複数PDFのマージ、OCR処理、目次の追加を自動化し、スキャン書籍を実用的なデジタル書籍に変換できます。"
+description = """
+書籍をスキャナーで読み取ってPDF化した後の処理を簡単にするため、
+Claude Codeプラグイン「pdf-processor」を開発しました。
+複数PDFのマージ、OCR処理、ファイルサイズ最適化、目次の追加を
+自動化し、スキャン書籍を実用的なデジタル書籍に変換します。
+"""
 date = 2026-01-02
-aliases = ["/articles/2026/01/02/pdf-processor-plugin"]
+aliases =["/articles/2026/01/02/pdf-processor-plugin"]
 
 [taxonomies]
-tags = ["Tech","Claude Code","PDF"]
+tags =["Tech","Claude Code","PDF"]
 +++
 
 ## はじめに

@@ -8,7 +8,7 @@ aliases = ["/articles/2024/08/27/Finale-discontinued"]
 tags = ["Music", "Software"]
 +++
 
-採譜ソフトの Finale が開発・販売を終了するそうです。
+採譜ソフトのFinaleが開発・販売を終了するそうです。
 
 音楽はざっくり言うと作曲->アレンジ->採譜->演奏というプロセスが必要ですが、
 「採譜」というプロセスは現代では端折られることも多いし、
@@ -16,7 +16,7 @@ tags = ["Music", "Software"]
 が無くなったというのは確かにそうなんだろうと思います。
 
 ただ日本のクラシック音楽界隈ではデファクトスタンダードなどで、関係者には
-「Finale がフィナーレを迎えた」などと冗談を言える雰囲気ではないくらい深刻なよ
+「Finaleがフィナーレを迎えた」などと冗談を言える雰囲気ではないくらい深刻なよ
 うです。
 
 The music notation software Finale will be discontinued in terms of

@@ -19,7 +19,7 @@ KORG Nu:tekt TR-S (POWER TUBE REACTOR)を購入しました。
 
 ## KORG Nu:tekt TR-S(POWER TUBE REACTOR)とは
 
-KORG Nu:tekt TR-S(POWER TUBE REACTOR)は、KORG とノリタケ伊勢電子（株）が開発
+KORG Nu:tekt TR-S(POWER TUBE REACTOR)は、KORGとノリタケ伊勢電子（株）が開発
 した
 [Nutube](https://info.shimamura.co.jp/digital/special/2015/01/44294)という蛍光表示管の技術を応用した新しい真空管
 を使用したエフェクターです。
@@ -31,10 +31,10 @@ KORG Nu:tekt TR-S(POWER TUBE REACTOR)は、KORG とノリタケ伊勢電子（�
   </footer>
 </figure>
 
-これまで Nutube を利用したオーバードライブやプリアンプはありましたが、
-KORG Nu:tekt TR-S はいわゆる歪み系のエフェクターでなく、
+これまでNutubeを利用したオーバードライブやプリアンプはありましたが、
+KORG Nu:tekt TR-Sはいわゆる歪み系のエフェクターでなく、
 "POWER TUBE REACTOR"とネーミングされているように、真空管アンプのパワー管を
-Nutube でシミュレーションしてくるエフェクターです。
+Nutubeでシミュレーションしてくるエフェクターです。
 
 パワー管がプッシュされた時の飽和感や、コンプ感を再現してくれるものです。
 
@@ -53,9 +53,9 @@ Nutube でシミュレーションしてくるエフェクターです。
 
 <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/soundcloud%253Atracks%253A2140117485&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/yostos" title="Yostos" target="_blank" style="color: #cccccc; text-decoration: none;">Yostos</a> · <a href="https://soundcloud.com/yostos/can-i-sing-for-you-korg" title="Can I Sing For You?" target="_blank" style="color: #cccccc; text-decoration: none;">Can I Sing For You?</a></div>
 
-パワー管ということで、アンプシミュレーターの Simplifier MK-II の Send - Return に
-KORG TR-S をセットしてみましたが、インピーダンスの関係か Simplifier MK-II
-のボリュームを最大にしないとほぼ反応しません。そのため普通に Simplifier MK-II
+パワー管ということで、アンプシミュレーターのSimplifier MK-IIのSend - Returnに
+KORG TR-Sをセットしてみましたが、インピーダンスの関係かSimplifier MK-II
+のボリュームを最大にしないとほぼ反応しません。そのため普通にSimplifier MK-II
 のインプットに挿しています。
 
 かなりオーバーに掛けて弾いているとはっきりと違うのですが、
@@ -85,7 +85,7 @@ KORG TR-S をセットしてみましたが、インピーダンスの関係か 
 ただ、結構セッティングがシビアなので、今回みたいに極端な設定では少し不自然さ
 が増したりします。音を聞きながら最初にしっかり設定をする必要があります。
 
-ただ、トリマーの 3 つのつまみは実は音への影響が大きく、セッティングではよくい
+ただ、トリマーの3つのつまみは実は音への影響が大きく、セッティングではよくい
 じることなると思うので、もう少しアクセスしやすい設置方法を考えて欲しかったで
 す。
 
@@ -99,6 +99,6 @@ KORG Nu:tekt TR-S (POWER TUBE REACTOR)は、一見地味なエフェクターか
 - 真空管アンプの「サグ感」や「コンプレッション」を求める方
 - 既存のセットアップにアナログ的な温かみを加えたい方
 
-一方で、セッティングの繊細さや内部トリマーへのアクセス性など、日常的な使用において改善の余地もあります。しかし、これらの課題を上回る価値が、この Nutube 技術によるユニークなサウンドキャラクターにはあると感じます。
+一方で、セッティングの繊細さや内部トリマーへのアクセス性など、日常的な使用において改善の余地もあります。しかし、これらの課題を上回る価値が、このNutube技術によるユニークなサウンドキャラクターにはあると感じます。
 
 従来のオーバードライブやディストーションとは全く異なる、新しいカテゴリーのエフェクターとして、ギタリストの表現の幅を確実に広げてくれる一台です。

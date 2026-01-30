@@ -9,4 +9,7 @@ tags = ["Drone"]
 +++
 
 こういうことがあると心配で公園にも行けなくなります。
+
+<!-- textlint-disable -->
 {{ youtube(id="ZiJLiOgLkzE") }}
+<!-- textlint-enable -->

@@ -10,10 +10,10 @@ tags = ["Tech", "Generative AI", "Current Affairs"]
 
 「[OpenAI Chairman Says a Dot-Com-Like Bust Wouldn’t Be All Bad](https://news.bloomberglaw.com/artificial-intelligence/openai-chairman-says-a-dot-com-like-bust-wouldnt-be-all-bad)」
 
-Bloomberg に掲載された OpenAI 会長 Bret Taylor のインタビュー記事です。
+Bloombergに掲載されたOpenAI会長Bret Taylorのインタビュー記事です。
 
-今の生成 AI ブームを 2000 年代のドットコム・バブルと重ねて、
-バブルが崩壊したとしてもそこから Google や Amazon のような企業が
+今の生成AIブームを2000年代のドットコム・バブルと重ねて、
+バブルが崩壊したとしてもそこからGoogleやAmazonのような企業が
 生まれ生き残り次の世代の主役になったことを考えると、健全だと語っています。
 
 確かに今年のノーベル経済学賞を受賞した「アギヨン・ホーウィット理論」
@@ -25,7 +25,7 @@ Bloomberg に掲載された OpenAI 会長 Bret Taylor のインタビュー記�
 非効率な企業を温存することで、本来そこに投入されるべきリソース（人材、資金、土地）が、
 より生産性の高い新興企業や成長分野に回らない。この硬直化が日本経済の停滞の一因となっています。
 
-また、Taylor 氏が指摘する**上司や取締役を喜ばせるための見かけ倒しの AI プロジェクトはやめるべきだ**という警鐘も重要です。
-先日、方針やビジョンを出さないにも関わらず、「課員に向けた生成 AI 研修をやってくれ」という
+また、Taylor氏が指摘する**上司や取締役を喜ばせるための見かけ倒しの AI プロジェクトはやめるべきだ**という警鐘も重要です。
+先日、方針やビジョンを出さないにも関わらず、「課員に向けた生成AI研修をやってくれ」という
 厚顔無恥さを発揮した理事長を目にしました。
-これこそ、実質的な価値を生まない「見かけ倒しの AI プロジェクト」の典型例でしょう。
+これこそ、実質的な価値を生まない「見かけ倒しのAIプロジェクト」の典型例でしょう。

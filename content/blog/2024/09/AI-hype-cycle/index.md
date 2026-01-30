@@ -8,8 +8,8 @@ aliases = ["/articles/2024/09/11/AI-hype-cycle"]
 tags = ["Tech", "Generative AI"]
 +++
 
-幻滅期に入っているとも言われますが、「マルチモーダル」は AI の使い勝手を劇的に変えてくれます。
-すでに業界をリードする OpenAI/Microsoft、Google、Anthropic の御三家は「マルチモーダル」をリリース済みですが、やはり OpenAI の使い勝手がよいようでです。
+幻滅期に入っているとも言われますが、「マルチモーダル」はAIの使い勝手を劇的に変えてくれます。
+すでに業界をリードするOpenAI/Microsoft、Google、Anthropicの御三家は「マルチモーダル」をリリース済みですが、やはりOpenAIの使い勝手がよいようでです。
 
 <blockquote cite="https://japan.zdnet.com/article/35223718/">
   同ハイプ・サイクルにおいて、「マルチモーダル生成 AI」は「オープンソースの

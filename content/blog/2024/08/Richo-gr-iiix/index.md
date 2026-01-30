@@ -8,9 +8,9 @@ aliases = ["/articles/2024/08/27/Richo-gr-iiix"]
 tags = ["Photography"]
 +++
 
-久しぶりにデジタルカメラを購入しました。RICOH GR IIIx HDF です。
+久しぶりにデジタルカメラを購入しました。RICOH GR IIIx HDFです。
 
-以前持っていた初代 GR DIGITAL と比べると、画質の向上には驚かされました。まるで一眼レフに匹敵するほどです。
-しかも、このカメラのベースとなっているモデルは、実は 5 年前のものなのです。
+以前持っていた初代GR DIGITALと比べると、画質の向上には驚かされました。まるで一眼レフに匹敵するほどです。
+しかも、このカメラのベースとなっているモデルは、実は5年前のものなのです。
 
 ![Sample photo taken with the GR IIIx](R0000316.jpg)

@@ -8,8 +8,8 @@ aliases = ["/articles/2024/08/23/Exiftool"]
 tags = ["Tech", "Photography", "CLI"]
 +++
 
-デジカメの日付の設定を間違え Exif の日付を修正したかったが、
-AppStore から余計なアプリをインストールしたくなかったので、Homebrew で exiftool をインストールして修正。
+デジカメの日付の設定を間違えExifの日付を修正したかったが、
+AppStoreから余計なアプリをインストールしたくなかったので、Homebrewでexiftoolをインストールして修正。
 
 ```bash
 # Install exiftool using Homebrew

@@ -8,11 +8,11 @@ aliases = ["/articles/2024/11/05/Fixing-s3-cloudfront-index-resolution"]
 tags = ["Tech", "AWS","Weblog"]
 +++
 
-メインブログを Cloudflare から AWS S3 へと移行した際、
-S3 の Block pubic access をオフ、Static website hosting をオンにしていたので、
-CloudFront が S3 の REST API エンドポイントを使用するよう修正しました。
+メインブログをCloudflareからAWS S3へと移行した際、
+S3のBlock pubic accessをオフ、Static website hostingをオンにしていたので、
+CloudFrontがS3のREST APIエンドポイントを使用するよう修正しました。
 
-この場合 CloudFront はサブディレクトリの index.html ファイルを自動的に解決できないので、以下の URL のパスを適切に変換する CloudFront Functions を追加しました。
+この場合CloudFrontはサブディレクトリのindex.htmlファイルを自動的に解決できないので、以下のURLのパスを適切に変換するCloudFront Functionsを追加しました。
 
 ありがちな事ですね。
 

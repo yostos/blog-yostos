@@ -34,7 +34,15 @@ In recent months, an increasing number of enterprises have been attacked by rans
 
 No one would be able to understand what has been destroyed and what should be restored. Which systems are most critical for business operations? Where are the data backups for each system located? How many systems were operating across the organization in the first place? Without this basic information, recovery efforts would become extremely chaotic, and business resumption would be significantly delayed. Application System Inventory is the most fundamental infrastructure for crisis management.
 
-Another important aspect is driven by accounting requirements. Systems developed under a work contract ("Ukeoi" contract) need to be depreciated as intangible fixed assets, and functional enhancements during the operational phase are also subject to capitalization. However, with only the accounting asset ledger, it is difficult to make judgments specific to Application Systems, such as which functional enhancements warrant capitalization. An Application System Inventory that is aligned with the accounting asset ledger is necessary.
+Another important aspect is driven by accounting requirements.
+Systems developed under a work contract ("Ukeoi" contract)
+need to be depreciated as intangible fixed assets.
+Functional enhancements during the operational phase are also
+subject to capitalization. However, with only the accounting
+asset ledger, it is difficult to make judgments specific to
+Application Systems, such as which functional enhancements
+warrant capitalization. An Application System Inventory that
+is aligned with the accounting asset ledger is necessary.
 
 ## Why Organizations Cannot Maintain Application System Inventory
 
@@ -64,15 +72,40 @@ The important point is not to require Inventory updates to maintain it, but to i
 
 The introduction, modification, and maintenance of Application Systems always incur expenditures. In organizations without an established IT department, these expenditures are typically processed through the procurement or accounting departments. This procurement process itself becomes the most reliable trigger for maintaining the Inventory.
 
-Orders and contracts related to Application Systems should be identifiable based on which budget they are tied to. For procurements identified as related to Application Systems, it should be mandatory to ensure linkage and consistency with the Application System Inventory both at the time of ordering and at delivery. This prevents failure patterns such as "a department independently procured a system, but it was never added to the Inventory."
+Orders and contracts related to Application Systems should be
+identifiable based on which budget they are tied to.
 
-By embedding an Inventory consistency check within the procurement process, many companies treat any procurement that bypasses this check as a deviation—a "BYPASS"—and impose penalties on the requesting department. In the future, these checks will also function as part of the organization's IT Governance framework, serving as a review point to verify whether systems being introduced align with the organization's intended architecture.
+For procurements related to Application Systems,
+it should be mandatory to ensure linkage and consistency
+with the Application System Inventory.
+This applies both at the time of ordering and at delivery.
+This prevents failure patterns such as
+"a department independently procured a system, but it was
+never added to the Inventory."
+
+By embedding an Inventory consistency check within the
+procurement process, many companies treat any procurement
+that bypasses this check as a deviation—a "BYPASS".
+They impose penalties on the requesting department.
+
+In the future, these checks will also function as part of
+the organization's IT Governance framework. They serve as a
+review point to verify whether systems being introduced
+align with the organization's intended architecture.
 
 ### Fixed Asset Accounting
 
 Application Systems developed under contract should be recorded as intangible fixed assets of the organization and are subject to depreciation. Service-based agreements such as SaaS are not capitalized as assets, but systems that are ordered and delivered must still be properly managed from an accounting perspective.
 
-In organizations without an IT department, there is no "handover" capture process; therefore, a mechanism that links the update of the intangible fixed asset ledger with the update of the Application System Inventory upon delivery is essential. The system owner must determine whether a functional enhancement qualifies for capitalization and request the accounting department to update the ledger. By designing a process that prevents acceptance until this consistency check is completed, both ledgers are reliably updated.
+In organizations without an IT department, there is no
+"handover" capture process. Therefore, a mechanism that links
+the update of the intangible fixed asset ledger with the
+Application System Inventory upon delivery is essential.
+The system owner must determine whether a functional
+enhancement qualifies for capitalization and request the
+accounting department to update the ledger. By designing
+a process that prevents acceptance until this consistency
+check is completed, both ledgers are reliably updated.
 
 This mechanism has two effects. If the organization's accounting practices are accurate, the intangible fixed asset ledger should correctly record all systems that need to be capitalized. Maintaining consistency with this ledger enhances the reliability of the Application System Inventory. Conversely, if accounting practices are inaccurate, establishing a mechanism to ensure consistency with the Application System Inventory helps prevent improper accounting treatments.
 

@@ -26,10 +26,10 @@ Despite this, Japanese media have largely ignored the issue. This suggests that 
 
 米国国際開発庁（USAID）の閉鎖に関する報道は、日本のメディアではほとんど取り上げられていません。仮に報じられたとしても、「米国が対外援助を削減する」という表面的な内容にとどまっています。
 
-一方で、イーロン・マスク氏の発言などを見ると、USAID は深刻な不正を行っている組織として描かれています。実際、過去には CIA のような工作活動を行っていたとの指摘もあります。
+一方で、イーロン・マスク氏の発言などを見ると、USAIDは深刻な不正を行っている組織として描かれています。実際、過去にはCIAのような工作活動を行っていたとの指摘もあります。
 
 このように評価が大きく分かれる中、真実はどこにあるのでしょうか。
 
-注目すべきは、日本の国策企業とも言える NTT データが、USAID から[2億1,800万ドルの契約](https://us.nttdata.com/en/news/press-release/2019/may/ntt-data-awarded-$218-million-contract-by-united-states-agency-for-international-development?s=09)を受注していた点です。NTT データは、日本政府が株式の三分の一以上を保有する日本電信電話（NTT）グループの中核企業であり、この契約は単なる民間企業の取引を超え、日本の国益に直結する案件と考えられます。
+注目すべきは、日本の国策企業とも言えるNTTデータが、USAIDから[2億1,800万ドルの契約](https://us.nttdata.com/en/news/press-release/2019/may/ntt-data-awarded-$218-million-contract-by-united-states-agency-for-international-development?s=09)を受注していた点です。NTTデータは、日本政府が株式の三分の一以上を保有する日本電信電話（NTT）グループの中核企業であり、この契約は単なる民間企業の取引を超え、日本の国益に直結する案件と考えられます。
 
 それにもかかわらず、日本のメディアがこの問題をほとんど報じていない現状は、偶然とは考えにくいものです。むしろ、意図的な情報管理が行われている可能性を強く示唆しています。国民の「知る権利」という観点から見ても、この報道の空白は極めて深刻な問題と言えるでしょう。

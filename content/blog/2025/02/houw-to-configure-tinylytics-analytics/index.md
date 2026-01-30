@@ -17,8 +17,8 @@ When incorporating tinylytics javascript, accesses during development are also r
 This code works as follows:
 
 1. When the page loads, JavaScript checks the current hostname (domain)
-2. Only if the hostname exactly matches "your.domain.com", it will dynamically add the tinylytics script
-3. For all other domains (localhost, 127.0.0.1, staging environments, etc.), the script won't be added, and only a console message will be displayed
+2. Only if the hostname exactly matches "your.domain.com", it will add the tinylytics script
+3. For all other domains (such as localhost or staging environments), the script won't be added. Only a console message will be displayed
 
 ## Implementation
 

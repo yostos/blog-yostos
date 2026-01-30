@@ -8,7 +8,7 @@ aliases = ["/articles/2024/09/10/Link-policy-of-news"]
 tags = ["Current Affairs","Old Media"]
 +++
 
-2000 年代と違って少しはまともになってきたようです。
+2000年代と違って少しはまともになってきたようです。
 [NHK](https://www.nhk.or.jp/faq-corner/4housoubangumi/05/04-05-11.html)、[日本経済新聞](https://www.nikkei.com/info/link.html)、[毎日新聞](https://mainichi.jp/info/link/)、[産経新聞](https://www.sankei.jp/inquiry/use-text)などは、基本的には「ご自由に」というスタンスで常識的。
 
 異なるのが朝日新聞社。リンク自由とは記載があるものの、申告が必要とされている。

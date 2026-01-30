@@ -14,10 +14,10 @@ they were not unique. Oh, I wish someone would bVuy the license for ZO-3 and
 Sustainer and continue them.
 
 フェルナンデスが倒産したのか。品質のよい日本のギターメーカーだったけれど、特
-徴はなかったからなぁ。あっ、ZO-3 とサスティナーはどこかがライセンス買って継
+徴はなかったからなぁ。あっ、ZO-3とサスティナーはどこかがライセンス買って継
 続してほしいなぁ。
 
 - [悲報、フェルナンデス倒産](https://notes.inegales.com/2024/07/14/bankruptcy-of-fernandes/)
-- Fernandes お知らせ[^fernandes]
+- Fernandesお知らせ[^fernandes]
 
 [^fernandes]: フェルナンデス公式サイトは倒産により閉鎖されました

@@ -1,11 +1,16 @@
 +++
-title = "多機能Todoに疲れた人へ ─ 「一枚の紙」だけのタスク管理CLI"
-description = "ターミナルで作業中に思いついたタスクをすぐに書き出せる、「一枚の紙」のシンプルさを再現したミニマルなタスク管理ツール Tiny Task Tool (ttt) を作りました。Claude Code との協働開発でドキュメント駆動と TDD がいかに効果的だったかを紹介します。"
+title = "多機能Todoに疲れた人へ ─「一枚の紙」だけのタスク管理CLI"
+description = """
+多機能Todoアプリに疲れた方へ。「一枚の紙」だけのシンプルさを
+再現したミニマルなタスク管理CLI「Tiny Task Tool (ttt)」を
+開発しました。Claude Codeとの協働開発で実感した、
+ドキュメント駆動とTDDの効果的な組み合わせをご紹介します。
+"""
 date = 2026-01-23
-aliases = ["/articles/2026/01/23/building-ttt-with-claude-code"]
+aliases =["/articles/2026/01/23/building-ttt-with-claude-code"]
 
 [taxonomies]
-tags = ["Tech", "OSS", "Go", "CLI","Task Management"]
+tags =["Tech", "OSS", "Go", "CLI", "Task Management"]
 
 [extra]
 canonical_url = "https://zenn.dev/yostos/articles/building-ttt-with-claude-code"

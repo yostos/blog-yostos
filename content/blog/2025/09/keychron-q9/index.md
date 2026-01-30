@@ -39,9 +39,10 @@ The Keychron Q9 has a 5-layer structure as follows:
 | Layer 4 | Function keys, numbers, etc. Accessed with fn2 key combination        |
 
 The system toggle switch allows switching between Mac and Windows.
-Specifically, for Mac, Layer 0 and Layer 2 (when Fn1 is pressed) are automatically selected,
-while for Windows, Layer 1 and Layer 3 (when Fn1 is pressed) are selected.
-Layer 4 is common to both Mac/Windows and is activated when Fn2 is pressed for numbers and function keys.
+For Mac, Layer 0 and Layer 2 (when Fn1 is pressed) are selected.
+For Windows, Layer 1 and Layer 3 (when Fn1 is pressed) are used.
+Layer 4 is common to both Mac/Windows.
+It activates when Fn2 is pressed for numbers and function keys.
 
 The Q9 features a 5-layer structure designed to support both Mac and Windows.
 
@@ -92,7 +93,14 @@ typing efficiency does decrease.
 While it's marketed as a 40% keyboard, the depth is indeed space-saving since it's reduced by one row of number keys. Compared to HHKB, you can save about 2cm in depth.
 However, the width is about 1.5cm wider on each side compared to typical 60% keyboards.
 
-Personally, I can't imagine scenarios where I'd feel the space-saving benefits at this level, but if you have extreme desk constraints, this unique size that no other keyboard can offer would be the only choice.
+Personally, I can't imagine scenarios where I'd feel the
+space-saving benefits at this level.
+However, if you have extreme desk constraints, this unique size
+that no other keyboard offers would be the only choice.
 
-As for myself, I'll continue using this keyboard purely for the sake of "showing off the minimal number of keys."
-In a degenerate workplace with useless individuals, using a favorite keyboard is about the only motivation I have. This should keep me entertained for about a month.
+As for myself, I'll continue using this keyboard purely
+for the sake of "showing off the minimal number of keys."
+
+In a degenerate workplace with useless individuals,
+using a favorite keyboard is about the only motivation I have.
+This should keep me entertained for about a month.

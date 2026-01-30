@@ -8,7 +8,7 @@ aliases = ["/articles/2025/05/30/revolution"]
 tags = ["Music", "Guitar"]
 +++
 
-The Beatles の"Revolution"のイントロの割れた Casino の音が、
+The Beatlesの"Revolution"のイントロの割れたCasinoの音が、
 まさにコンソールでギターを直接挿して歪ませたのだそうです。
 折角コンソールをベースにした[Hudson Broadcast](https://amzn.to/4kEhheL)を購
 入したので、この曲を演奏してみました。

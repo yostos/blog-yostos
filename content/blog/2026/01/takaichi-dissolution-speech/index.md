@@ -1,11 +1,15 @@
 +++
 title = "高市総理の衆議院解散表明 - 覚悟の政策転換"
-description = "高市総理の衆議院解散表明に胸が震えました。これほど多岐にわたる具体的政策を掲げ、自らの進退を国民の判断に委ねた首相を、私は知りません。"
+description = """
+高市総理の衆議院解散表明に胸が震えました。これほど多岐にわたる
+具体的政策を掲げ、自らの進退を国民の判断に委ねた首相を、
+私は知りません。覚悟の政策転換に込められた思いを綴ります。
+"""
 date = 2026-01-21
-aliases = ["/articles/2026/01/21/takaichi-dissolution-speech"]
+aliases =["/articles/2026/01/21/takaichi-dissolution-speech"]
 
 [taxonomies]
-tags = ["Current Affairs"]
+tags =["Current Affairs"]
 +++
 
 <figure>

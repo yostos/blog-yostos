@@ -22,13 +22,13 @@ tags = ["Tech", "Software","CLI","Accessibility"]
 レーションした画像が出力されます。
 `type` オプションの指定は次の通りです。
 
-- protanopia (1 型色覚)
-- deuteranopia (2 型色覚)
-- tritanopia (3 型色覚)
+- protanopia (1型色覚)
+- deuteranopia (2型色覚)
+- tritanopia (3型色覚)
 
 #### ChromeLens CLIの環境設定
 
-以下は、venv で Python の仮想環境を作って必要なパッケージをインストールする手順です。
+以下は、venvでPythonの仮想環境を作って必要なパッケージをインストールする手順です。
 
 ```bash
 python3 -m venv venv

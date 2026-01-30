@@ -6,12 +6,16 @@ aliases = ["/articles/2025/12/12/magi-claude-code-plugin"]
 
 [taxonomies]
 tags = ["Tech", "Generative AI","Claude Code"]
+
+[extra]
+mermaid = true
 +++
 
 <details>
 <summary>Table of Contents</summary>
   <!-- toc -->
 </details>
+
 ## Claude Code Pluginとは
 
 Claude Code Pluginは、AnthropicのClaude Code CLI向けの拡張機能システムです。プラグインを使用することで、Claudeに新しいコマンド、エージェント、スキル、フックなどを追加できます。
@@ -48,30 +52,33 @@ MAGIは、アニメ「新世紀エヴァンゲリオン」に登場する架空�
 
 Magiシステムは4つのエージェントで構成されています。
 
-![Magi Overview](magi.svg)
+{% mermaid() %}
 
-{
-// flowchart LR
-// U[fa:fa-user User]
-// subgraph magi
-// A[ARBITRATOR]
-// B[MELCHIOR]
-// C[BALTHASAR]
-// D[CASPER]
-// end
-//  
-// U -->|1.request| A
-// U <-->|2.調整| A
-// A -->B
-// A -->C
-// A -->D
-// A --->|5.result|U
-}
+flowchart LR
+   U[fa:fa-user User]
+    subgraph magi
+      A[ARBITRATOR]
+      B[MELCHIOR]
+      C[BALTHASAR]
+      D[CASPER]
+    end
+ 
+    U -->|1.request| A
+    A -->|2.reconcile| U
+    A -->B
+    A -->C
+    A -->D
+    A --->|5.result|U
 
-1. **ARBITRATOR（アービトレーター）**: 課題の構造化と最終調停を担当
-2. **MELCHIOR（メルキオール）**: 科学的・技術的な分析を担当
-3. **BALTHASAR（バルタザール）**: 法律的・倫理的な分析を担当
-4. **CASPER（キャスパー）**: 感情的・トレンド分析を担当
+    
+{% end %}
+
+| Agent | Role |
+| - | - | 
+|ARBITRATOR（アービトレーター）| 課題の構造化と最終調停を担当 |
+| MELCHIOR（メルキオール）| 科学的・技術的な分析を担当 |
+| BALTHASAR（バルタザール）| 法律的・倫理的な分析を担当 |
+| CASPER（キャスパー）| 感情的・トレンド分析を担当 |
 
 ### 動作フロー
 

@@ -11,32 +11,32 @@ tags = ["Tech", "AWS", "Generative AI"]
 ## 公式ブログ記事の概要
 
 公開されたのは「[Introducting AWS MCP Servers for code assistants(Part1)](https://aws.amazon.com/blogs/machine-learning/introducing-aws-mcp-servers-for-code-assistants-part-1/)
-」という記事です。AWS MCP サーバーが紹介されています。
+」という記事です。AWS MCPサーバーが紹介されています。
 
-これらは、AWS のベストプラクティスを開発ワークフローに直接統合する特化型の
+これらは、AWSのベストプラクティスを開発ワークフローに直接統合する特化型の
 Model Context Protocol（MCP）サーバーのオープンソーススイートです。
-このサーバー群は、AI アシスタントと AWS の深い知識を組み合わせ、開発時間を大幅に
-短縮しながら、セキュリティコントロール、コスト最適化、AWS Well-Architected の
+このサーバー群は、AIアシスタントとAWSの深い知識を組み合わせ、開発時間を大幅に
+短縮しながら、セキュリティコントロール、コスト最適化、AWS Well-Architectedの
 ベストプラクティスを取り入れることを目的としているようです。
 
-主要な特化型 MCP サーバーとして以下が提供されています。
+主要な特化型MCPサーバーとして以下が提供されています。
 
-- **コア：** AI プロセスパイプライン機能を提供する基盤サーバー
-- **AWS CDK：** CDK の知識とベストプラクティス実装ツールを提供
+- **コア：** AIプロセスパイプライン機能を提供する基盤サーバー
+- **AWS CDK：** CDKの知識とベストプラクティス実装ツールを提供
 - **Amazon Bedrock Knowledge Bases：** 企業の知識ベースへシームレスにアクセス
-- **Amazon Nova Canvas：** Amazon Bedrock を通じた画像生成機能を提供
-- **コスト分析：** AWS サービスのコストを分析し、詳細なレポートを生成
+- **Amazon Nova Canvas：** Amazon Bedrockを通じた画像生成機能を提供
+- **コスト分析：** AWSサービスのコストを分析し、詳細なレポートを生成
 
-具体的にどのような MCP サーバーが提供されているかは、[GitHub](https://github.com/awslabs/mcp/)で公開されています。
+具体的にどのようなMCPサーバーが提供されているかは、[GitHub](https://github.com/awslabs/mcp/)で公開されています。
 
 ## AWS Documentation MCP Serverを試す
 
-手っ取り早そうなので、AWS Documentation MCP Server を試してみました。
+手っ取り早そうなので、AWS Documentation MCP Serverを試してみました。
 
-この API では、AWS の公式ドキュメントとベストプラクティスにアクセスしたり、
-ドキュメントを Markdown 形式にコンバートできるようです。
+このAPIでは、AWSの公式ドキュメントとベストプラクティスにアクセスしたり、
+ドキュメントをMarkdown形式にコンバートできるようです。
 
-AWS の提供する設定サンプルを見ると、Astral 社が開発した Python 向けのツール管理
+AWSの提供する設定サンプルを見ると、Astral社が開発したPython向けのツール管理
 コマンド `uv`を使用しているようです。まず、`uv`をインストールします。
 
 ```bash
@@ -47,7 +47,7 @@ $ curl -LsSf https://astral.sh/uv/install.sh | sh
 $ brew install uv
 ```
 
-デスクトップ版 Claude からアクセスする想定で設定します。
+デスクトップ版Claudeからアクセスする想定で設定します。
 設定メニュー内の開発者メニューから、`claude_desktop_config.json`を開いて編集
 します。
 
@@ -80,18 +80,19 @@ $ brew install uv
 }
 ```
 
-この例では、Inkdrop, Claude Code も MCP サーバーとして登録していますが、
-必要なのは最後の例だけです。なお、上記は Homebrew でインストールした場合です。
+この例では、Inkdrop, Claude CodeもMCPサーバーとして登録していますが、
+必要なのは最後の例だけです。なお、上記はHomebrewでインストールした場合です。
 公式インストーラーを使用した場合、パスが異なりますから注意してください。
 
-上記の設定後、Claude の再起動が必要です。
+上記の設定後、Claudeの再起動が必要です。
 
 早速確認してみましょう。
 
-デスクトップ版 Claude から、
-「aws_document から東京リージョンで現在 Bedrock で利用可能なモデルの一覧を作成してください」と依頼してみました。
+デスクトップ版Claudeから、
+「aws_documentから東京リージョンでBedrockにて
+利用可能なモデルの一覧を作成してください」と依頼してみました。
 
-以下ように、MCP 使用の許可を求めてながら処理を行っています。
+以下のように、MCP使用の許可を求めながら処理を行っています。
 
 ```txt
 お手伝いします。AWS Bedrockで現在利用可能なモデルの一覧を作成するために、AWS
@@ -120,24 +121,24 @@ Converseで利用可能なモデルを確認します：
 AWS Bedrockで現在利用可能なモデルの一覧をまとめました。
 ```
 
-結果、完成したドキュメント[^1]は、AWS の Solution Architect が作成したような丁寧な回答でした。
+結果、完成したドキュメント[^1]は、AWSのSolution Architectが作成したような丁寧な回答でした。
 
 [^1]: Claude Artifactsで生成されたドキュメント（一時URLのため現在はアクセス不可）
 
 ## まとめ
 
-今回は AWS Documentation MCP Server をデスクトップ版 Claude からアクセスすること
+今回はAWS Documentation MCP Serverをデスクトップ版Claudeからアクセスすること
 を試してみました。
 
-最近の Claude は Web 検索をやってくれるので、MCP サーバーを使用
+最近のClaudeはWeb検索をやってくれるので、MCPサーバーを使用
 しなくても同様の結果は得ることができそうです。
 しかし、ソースを限定して「公式ドキュメントから」と指定できるのは安心です。
 
-Core MCP Server というものが提供されており、一連の MCP サーバーのオーケストレー
+Core MCP Serverというものが提供されており、一連のMCPサーバーのオーケストレー
 ションを行うようです。もしかすると今回の使い方は想定と違うのかもしれません。
 
-AWS Diagram MCP Server は AWS ダイアグラムを生成してくれるようなのです。
-実際の環境からその各種ダイアグラムを GraphViz で描いてくれるなら、
+AWS Diagram MCP ServerはAWSダイアグラムを生成してくれるようなのです。
+実際の環境からその各種ダイアグラムをGraphVizで描いてくれるなら、
 取っても便利そうです。
 
-やっぱり、今 MCP は熱いですね。
+やっぱり、今MCPは熱いですね。

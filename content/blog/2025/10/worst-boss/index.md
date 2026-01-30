@@ -8,7 +8,7 @@ aliases = ["/articles/2025/10/07/worst-boss"]
 tags = ["Career"]
 +++
 
-Diamond Online で素敵な記事を見つけました。
+Diamond Onlineで素敵な記事を見つけました。
 この手のビジネス書はあまり読まないし信用していないのだけれど、
 今回は **実例が身近にある** だけに異様に心に刺さったので引用しておきます。
 

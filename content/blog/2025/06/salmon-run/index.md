@@ -8,5 +8,6 @@ aliases = ["/articles/2025/06/10/salmon-run"]
 tags = ["Splatoon", "Game"]
 +++
 
-仕事できる奴らと仕事すると楽しいが・・・
+仕事できる奴らと仕事すると楽しいです。
+
 {{ youtube(id="Z6qtbWfwKfQ") }}

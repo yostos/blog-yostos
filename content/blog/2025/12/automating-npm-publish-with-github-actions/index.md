@@ -9,38 +9,38 @@ tags = ["Tech","Node"]
 +++
 
 本記事では、私が開発している[jrnl-mcp](https://github.com/yostos/jrnl-mcp)パッケージで実装した、
-GitHub が発表した[npmの認証強化](https://github.blog/changelog/2025-09-29-strengthening-npm-security-important-changes-to-authentication-and-token-management/)
+GitHubが発表した[npmの認証強化](https://github.blog/changelog/2025-09-29-strengthening-npm-security-important-changes-to-authentication-and-token-management/)
 対応の
 Trusted Publishing (OIDC) を使用したトークン管理不要の自動公開について記載しています。
 
 ## npmの認証変更の背景
 
-GitHub は 2025 年 9 月 29 日に、npm のセキュリティ強化として以下の変更を発表しました。
+GitHubは2025年9月29日に、npmのセキュリティ強化として以下の変更を発表しました。
 
-- Classic Access Token の廃止
-- Trusted Publishing (OIDC) または Granular Access Token への移行推奨
+- Classic Access Tokenの廃止
+- Trusted Publishing (OIDC) またはGranular Access Tokenへの移行推奨
 - より細かい権限管理の実現
 
-移行先として 2 つの選択肢があります。
+移行先として2つの選択肢があります。
 
 1. Granular Access Token
 2. Trusted Publishing (OIDC)
 
-Granular Access Token は、従来のトークン方式を改良したものでパッケージごとの権限管理が可能となっていますが、定期的なトークンのローテーションが必要です。
-Trusted Publishing はトークンを完全に排除した新しい認証方式で、公開を自動化しトークンを完全に排除したものです。
+Granular Access Tokenは、従来のトークン方式を改良したものでパッケージごとの権限管理が可能となっていますが、定期的なトークンのローテーションが必要です。
+Trusted Publishingはトークンを完全に排除した新しい認証方式で、公開を自動化しトークンを完全に排除したものです。
 
-jrnl-mcp では、トークン管理の手間を完全に排除できる **Trusted Publishing** を採用しました。
+jrnl-mcpでは、トークン管理の手間を完全に排除できる **Trusted Publishing** を採用しました。
 
 ## 自動公開の仕組み
 
 ### 全体のフロー
 
-jrnl-mcp では、以下のフローで自動公開を実現しています。
+jrnl-mcpでは、以下のフローで自動公開を実現しています。
 
-1. GitHub でリリースを作成
-2. GitHub Actions が自動起動
+1. GitHubでリリースを作成
+2. GitHub Actionsが自動起動
 3. 依存関係のインストールとテストを実行
-4. npm へ自動公開
+4. npmへ自動公開
 
 この仕組みにより、リリース作成だけでパッケージの公開が完了します。
 
@@ -84,55 +84,55 @@ jobs:
 
 重要なポイントは、
 
-1. GitHub のリリース機能を使用することで、手動でのトリガーが可能になる。これにより、意図しないタイミングでの公開を防ぐ。
-2. `permissions`の設定により、GitHub Actions は npm に対して一時的な OIDC トークンを発行・認証する。長期的なトークンを Secret に保存する必要がない。
-3. `npm publish --provenance --access public`により自動的に provenance（出所証明）が生成され、パッケージがどのリポジトリから公開されたか検証可能となる。
+1. GitHubのリリース機能を使用することで、手動でのトリガーが可能になる。これにより、意図しないタイミングでの公開を防ぐ。
+2. `permissions`の設定により、GitHub Actionsはnpmに対して一時的なOIDCトークンを発行・認証する。長期的なトークンをSecretに保存する必要がない。
+3. `npm publish --provenance --access public`により自動的にprovenance（出所証明）が生成され、パッケージがどのリポジトリから公開されたか検証可能となる。
 4. `npm run test:ci`により公開前のテストを自動化する。
 
 ## Trusted Publishing の設定方法
 
-Trusted Publishing を使用する場合、npm 側での設定が必要です。
+Trusted Publishingを使用する場合、npm側での設定が必要です。
 
 ### 1. npm でパッケージを公開
 
-まず、通常の方法で初回のパッケージを公開します（トークンを使用）。npm 側でパッケージが存在している必要があるためです。
+まず、通常の方法で初回のパッケージを公開します（トークンを使用）。npm側でパッケージが存在している必要があるためです。
 
 ### 2. npm で Trusted Publishing を設定
 
 1. [npm のパッケージ設定](https://www.npmjs.com/)にアクセス
 2. 公開したパッケージの"Settings"タブを開く
 3. "Publishing access"セクションで"Add a publisher"を選択
-4. GitHub Actions を選択し、以下を設定する
+4. GitHub Actionsを選択し、以下を設定する
    - Repository: `<username>/<repository-name>`（例: `yostos/jrnl-mcp`）
    - Workflow: ワークフローファイル名（例: `publish.yml`）
    - Environment: 未指定（デフォルト）または特定の環境名
 
 ### 3. GitHub Actions の設定
 
-前述のワークフロー設定で、`id-token: write` 権限を付与するだけで完了です。トークンを Secret に保存する必要はありません。
+前述のワークフロー設定で、`id-token: write` 権限を付与するだけで完了です。トークンをSecretに保存する必要はありません。
 
 ### トークンベースとの比較
 
-Trusted Publishing を使用することで、以下の作業が不要になります。
+Trusted Publishingを使用することで、以下の作業が不要になります。
 
-- npm トークンの作成と保存
-- GitHub Secrets へのトークン登録
-- トークンの定期的なローテーション（Granular Access Token の場合、最大 90 日ごと）
+- npmトークンの作成と保存
+- GitHub Secretsへのトークン登録
+- トークンの定期的なローテーション（Granular Access Tokenの場合、最大90日ごと）
 - トークン漏洩のリスク管理
 
 ## まとめ
 
-Trusted Publishing (OIDC) と GitHub Actions を使用した npm パッケージの自動公開により、以下のメリットが得られました。
+Trusted Publishing (OIDC) とGitHub Actionsを使用したnpmパッケージの自動公開により、以下のメリットが得られました。
 
 - 公開作業の効率化
 - トークン管理の完全な排除
 - セキュリティの向上
 - 品質の担保
-- 透明性の確保（自動 provenance 生成）
+- 透明性の確保（自動provenance生成）
 
-特に、Trusted Publishing の導入により、トークンの定期的なローテーションや漏洩リスクの心配が不要になり、セキュリティと運用性が大幅に向上しました。npm パッケージを公開している方は、ぜひ Trusted Publishing への移行と GitHub Actions による自動化を検討してみてください。
+特に、Trusted Publishingの導入により、トークンの定期的なローテーションや漏洩リスクの心配が不要になり、セキュリティと運用性が大幅に向上しました。npmパッケージを公開している方は、ぜひTrusted Publishingへの移行とGitHub Actionsによる自動化を検討してみてください。
 
-Granular Access Token でもセキュリティは向上しますが、定期的なローテーション（最大 90 日ごと）が必要なため、可能であれば Trusted Publishing の使用を推奨します。
+Granular Access Tokenでもセキュリティは向上しますが、定期的なローテーション（最大90日ごと）が必要なため、可能であればTrusted Publishingの使用を推奨します。
 
 ## 参考リンク
 

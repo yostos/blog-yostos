@@ -1,11 +1,15 @@
 +++
 title = "The aespa Controversy and NHK Kohaku Ratings Drop"
-description = "Examining the controversy surrounding aespa's appearance on NHK's New Year's Eve music show and the coincidental viewership ratings decline."
+description = """
+NHK紅白歌合戦でのaespa出演をめぐる騒動と、午後8時台の
+視聴率低下の偶然の一致について検証します。原爆きのこ雲画像投稿への
+批判と、実際のデータから見える視聴者動向を客観的に分析しました。
+"""
 date = 2026-01-01
-aliases = ["/articles/2026/01/01/dirty-aespa"]
+aliases =["/articles/2026/01/01/dirty-aespa"]
 
 [taxonomies]
-tags = ["Current Affairs", "Old Media"]
+tags =["Current Affairs", "Old Media"]
 +++
 
 ## The Ratings Drop Mystery

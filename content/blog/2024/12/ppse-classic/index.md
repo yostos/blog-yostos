@@ -25,12 +25,12 @@ Below is a sound sample where I play with the PPSE Classic in the first half and
 
 ---
 
-京都発の小さなエフェクターブランド Vin Antique から新しい Over Drive "PPSE Classic"が発売されました。小ロットしか出荷されなかったようですが、幸いにも入手できました。
+京都発の小さなエフェクターブランドVin Antiqueから新しいOver Drive "PPSE Classic"が発売されました。小ロットしか出荷されなかったようですが、幸いにも入手できました。
 
-Vin Antique は PPSE '79 という Over Drive をリリースしており高い評価を受けていますが、今回の PPSE Classic は姉妹版ということになります。 PPSE は"Pike Place Smoky Emerald"の略でシアトルのパイクプレース・マーケットの看板の色に因んだネーミングだそうで、
+Vin AntiqueはPPSE '79というOver Driveをリリースしており高い評価を受けていますが、今回のPPSE Classicは姉妹版ということになります。 PPSEは"Pike Place Smoky Emerald"の略でシアトルのパイクプレース・マーケットの看板の色に因んだネーミングだそうで、
 アルミ削り出しのエフェクター筐体がその色に塗られています。
-今回 Classic ということで「看板の褪色する前の色」ということで PPSE'79 より若干鮮やかな色で塗装されています。
+今回Classicということで「看板の褪色する前の色」ということでPPSE'79より若干鮮やかな色で塗装されています。
 
-PPSE'79 が非対称クリッピングで倍音を多く含んだざらっとした歪みなのに対して、PPSE Classic は対称クリッピングで本家の Tube Screamer に近く輪郭がしっかりしアンプをブーストするのにいい感じです。
+PPSE'79が非対称クリッピングで倍音を多く含んだざらっとした歪みなのに対して、PPSE Classicは対称クリッピングで本家のTube Screamerに近く輪郭がしっかりしアンプをブーストするのにいい感じです。
 
 どちらも直列に繋いで使い分けようかな。

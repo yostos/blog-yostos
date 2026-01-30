@@ -1,12 +1,17 @@
 +++
 title = "終わらない物語:『ストレンジャー・シングス』へのオマージュ"
-description = "『Stranger Things』シーズン3最終話で、極限状況の中で響いた Dustin と Susie の『Never Ending Story』。あの瞬間が持つ温度と余韻を、楽曲の再現を通じて振り返ります。"
+description = """
+『Stranger Things』シーズン3最終話で、極限状況の中で響いた
+DustinとSusieの『Never Ending Story』。世界の危機と
+無線越しのデュエットという対比が生んだ、あの瞬間の温度と余韻を、
+楽曲の再現を通じて振り返ります。
+"""
 date = 2026-01-04
-aliases = ["/articles/2026/01/04/never-ending-story"]
+aliases =["/articles/2026/01/04/never-ending-story"]
 
 
 [taxonomies]
-tags = ["Music","Movies"]
+tags =["Music","Movies"]
 +++
 
 『Stranger Things』の最終話を見終え、私はまだ余韻に浸っています。

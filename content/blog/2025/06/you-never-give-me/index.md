@@ -12,16 +12,16 @@ tags = ["Music", "Guitar"]
 
 この曲には先日購入したHudson Broadcastが合うかなと思いしてみました。
 
-この曲はイントロからピアノに絡んでくる George Harrison のギターが印象的です。
+この曲はイントロからピアノに絡んでくるGeorge Harrisonのギターが印象的です。
 オリジナルでは、
-レスポールのフロントピックアップでボリュームを絞って FuzzFace を Fender
+レスポールのフロントピックアップでボリュームを絞ってFuzzFaceをFender
 TwinReverb(Silver Face)で鳴らしているのかなと思います。
 
-Hudson Broadcast で似たような音になりそうだったので、演奏してみました。
+Hudson Broadcastで似たような音になりそうだったので、演奏してみました。
 
-途中で John Lennon が弾いていると思われる Epiphone Casino も TwinReverb で
-クリーンで鳴らされています。オーバーダブされ左右で鳴っているので同じように再
-現してみました。
+途中でJohn Lennonが弾いていると思われるEpiphone Casinoも
+TwinReverbのクリーントーンで鳴らされています。
+オーバーダブされ左右で鳴っているので同じように再現してみました。
 
-ベースは Rickenbacker 4003 だと思いますので、Modo Bass 2 のモデリングされたもの
+ベースはRickenbacker 4003だと思いますので、Modo Bass 2のモデリングされたもの
 を打ち込みで鳴らしています。
