@@ -40,6 +40,19 @@ docs/TODO.md             # Migration task documentation
 - Language: Japanese (`default_language = "ja"`)
 - Search: Disabled (Japanese not supported)
 
+## Table of Contents
+
+To add a collapsible table of contents:
+
+```markdown
+<details>
+<summary>Table of Contents</summary>
+
+<!-- toc -->
+
+</details>
+```
+
 ## Code Block Syntax
 
 To display a filename on a code block, use the `name=` parameter (Zola 0.20.0+):
@@ -68,6 +81,15 @@ canonical_url = "https://..."  # Canonical URL (when another site is the origina
 ## Tag Naming Conventions
 
 See `docs/tag-rule.md` for comprehensive tagging rules and guidelines.
+
+## Writing Style
+
+- **文体**: ですます調（敬体）を使用する
+- 技術記事でも読者に語りかける丁寧な文体を維持
+- 「：」で終わる文は禁止（「〜します。」「〜です。」などで終える）
+- **行の長さ**: 1行80バイト以内に収める（日本語は1文字3バイト）
+- **セクション分割**: 過度に細かいセクション分割は避ける
+- **太字**: 多用しない。本当に強調が必要な箇所のみ使用
 
 ## Migration Source
 
