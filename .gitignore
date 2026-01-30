@@ -76,6 +76,5 @@ public/
 
 ### Node.js (for textlint) ###
 node_modules/
-package-lock.json
 
 # End of https://www.toptal.com/developers/gitignore/api/macos,vim,rust,zola
