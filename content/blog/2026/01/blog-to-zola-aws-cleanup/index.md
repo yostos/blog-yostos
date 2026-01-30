@@ -6,6 +6,8 @@ date = 2026-01-30
 tags = ["Tech", "Weblog", "AWS"]
 +++
 
+![Zola](./zola.webp)
+
 <details>
 <summary>Table of Contents</summary>
 
