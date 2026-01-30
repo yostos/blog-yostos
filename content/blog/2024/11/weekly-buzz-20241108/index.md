@@ -38,7 +38,7 @@ tags = ["Weekly Buzz", "Current Affairs"]
 
 これらの投資の大半は GPU など「学習プロセス」を司るインフラでしょう。
 
-[9月6日の記事](https://blog.yostos.org/2024/09/06/weekly-buzz.html)で NVIDIA
+[9月6日の記事](/articles/2024/09/06/Weekly-buzz-20240906)で NVIDIA
 について次のように書きましたが、まだまだ「学習プロセス」の時代は続きそうで
 す。
 

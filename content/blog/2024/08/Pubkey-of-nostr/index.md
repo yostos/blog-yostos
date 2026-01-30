@@ -5,7 +5,7 @@ date = 2024-08-25
 aliases = ["/articles/2024/08/25/Pubkey-of-nostr"]
 
 [taxonomies]
-tags = ["Tech", "SNS","NOSTR"]
+tags = ["Tech"]
 +++
 
 Nostr で Vanity pubkey の Mining をやってみました。

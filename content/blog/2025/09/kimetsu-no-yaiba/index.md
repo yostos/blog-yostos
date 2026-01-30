@@ -5,7 +5,7 @@ date = 2025-09-19
 aliases = ["/articles/2025/09/19/kimetsu-no-yaiba"]
 
 [taxonomies]
-tags = ["Anime", "Movies"]
+tags = ["Anime", "Movies", "Entertainment"]
 +++
 
 ![鬼滅の刃](kimetsu.webp)

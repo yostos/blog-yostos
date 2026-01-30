@@ -5,7 +5,7 @@ date = 2025-05-31
 aliases = ["/articles/2025/05/31/scaler3"]
 
 [taxonomies]
-tags = ["Music Procution", "Software"]
+tags = ["Music Production", "Software"]
 +++
 
 ![Scaler3](scaler3.webp)

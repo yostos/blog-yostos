@@ -5,7 +5,7 @@ date = 2025-08-26
 aliases = ["/articles/2025/08/26/jurassic-world-rebirth"]
 
 [taxonomies]
-tags = ["Movies", "Music"]
+tags = ["Movies", "Music", "Entertainment"]
 +++
 
 上演時間が短く感じるほど退屈はしませんでした。楽しめはします。

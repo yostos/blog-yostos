@@ -120,8 +120,9 @@ Converseで利用可能なモデルを確認します：
 AWS Bedrockで現在利用可能なモデルの一覧をまとめました。
 ```
 
-結果、完成したドキュメントが[これ](https://claude.site/artifacts/818704bd-4127-4a9c-84a5-e0fd1e26e556)です。
-AWS の Solution Architect が作成したような丁寧な回答です。
+結果、完成したドキュメント[^1]は、AWS の Solution Architect が作成したような丁寧な回答でした。
+
+[^1]: Claude Artifactsで生成されたドキュメント（一時URLのため現在はアクセス不可）
 
 ## まとめ
 

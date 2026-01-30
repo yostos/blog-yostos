@@ -5,7 +5,7 @@ date = 2025-02-25
 aliases = ["/articles/2025/02/25/Movie-Under-Ninja"]
 
 [taxonomies]
-tags = ["Movies"]
+tags = ["Movies","Entertainment"]
 +++
 
 昨日映画『アンダーニンジャ』を見てきました。

@@ -5,7 +5,7 @@ date = 2025-03-31
 aliases = ["/articles/2025/03/31/nhk-ibm"]
 
 [taxonomies]
-tags = ["Tech", "Current Affairs","IBM","NHK"]
+tags = ["Tech", "Current Affairs", "IBM"]
 +++
 
 ![NHK問題](nhk.webp)

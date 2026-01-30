@@ -16,7 +16,7 @@ tags = ["Tech", "Generative AI","Claude Code"]
 5 月 Claude Code が正式リリースされて以来手放せなくなっています。
 Anthropic の
 ブログに"
-[Remote MCP support in Claude Code](https://www.anthropic.com/news/claude-code-remote-mcpcampaignId=13926158&source=i_email&medium=email&content=Oct2024AnalysisTool&messageTypeId=140367)"
+[Remote MCP support in Claude Code](https://www.anthropic.com/news/claude-code-remote-mcp)"
 という記事が掲載されました。
 
 早速 Claude Code で Inkdrop MCP サーバーを設定し、リモート MCP サーバーとして統合

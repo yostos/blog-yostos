@@ -5,7 +5,7 @@ date = 2024-08-08
 aliases = ["/articles/2024/08/08/Paul-McCartney-PhotoExhibition"]
 
 [taxonomies]
-tags = ["Photography", "Art", "Beatles"]
+tags = ["Photography", "Art"]
 +++
 
 ![Paul McCartney’s photo exhibition](paul.jpg)

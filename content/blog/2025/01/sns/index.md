@@ -5,7 +5,7 @@ date = 2025-01-04
 aliases = ["/articles/2025/01/04/sns"]
 
 [taxonomies]
-tags = ["Current Affairs","SNS"]
+tags = ["Tech","Current Affairs"]
 +++
 
 ### 1. なぜ店舗はSNSのみで情報発信するのか

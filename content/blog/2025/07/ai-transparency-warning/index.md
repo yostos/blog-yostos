@@ -10,7 +10,9 @@ tags = ["Tech", "Generative AI","Security"]
 
 ## 主要AI企業による警告
 
-VentureBeat で「[OpenAI, Google DeepMind and Anthropic sound alarm: 'We may be losing the ability to understand AI'](https://venturebeat.com/ai/openai-google-deepmind-and-anthropic-sound-alarm-we-may-be-losing-the-ability-to-understand-ai/)」という記事を見つけました。
+[VentureBeat](https://venturebeat.com/)で「OpenAI, Google DeepMind and Anthropic sound alarm: 'We may be losing the ability to understand AI'」[^1]という記事を見つけました。
+
+[^1]: 元記事は削除または移動された可能性があります
 
 内容は、OpenAI、Google DeepMind、Meta、Anthropic の 40 人以上の研究者が共同
 で今後 AI の思考を監視できなくなる可能性があるという重要な警告を発表したとい

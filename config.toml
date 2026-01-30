@@ -92,3 +92,18 @@ lang = "ja"
 lazy_loading = true
 
 iine = true
+
+[link_checker]
+# 外部リンクチェックから除外するURLプレフィックス
+skip_prefixes = [
+    # 政府系サイト（User-Agentベースのアクセス制限）
+    "https://www.gov-online.go.jp/",
+    "https://www.mofa.go.jp/",
+    "https://www.mlit.go.jp/",
+    "https://laws.e-gov.go.jp/",
+    # アンカー仕様問題
+    "https://www.openstreetmap.org/",
+    # サーバー接続問題・レート制限
+    "https://flyers.plus/",
+    "https://venturebeat.com/",
+]

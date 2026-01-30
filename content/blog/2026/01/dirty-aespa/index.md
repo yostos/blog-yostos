@@ -5,7 +5,7 @@ date = 2026-01-01
 aliases = ["/articles/2026/01/01/dirty-aespa"]
 
 [taxonomies]
-tags = ["Current Affairs", "Old Media", "NHK"]
+tags = ["Current Affairs", "Old Media"]
 +++
 
 ## The Ratings Drop Mystery

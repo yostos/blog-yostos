@@ -18,4 +18,6 @@ Sustainer and continue them.
 続してほしいなぁ。
 
 - [悲報、フェルナンデス倒産](https://notes.inegales.com/2024/07/14/bankruptcy-of-fernandes/)
-- [Fernandes お知らせ](https://www.fernandes.co.jp/info/9540.html)
+- Fernandes お知らせ[^fernandes]
+
+[^fernandes]: フェルナンデス公式サイトは倒産により閉鎖されました

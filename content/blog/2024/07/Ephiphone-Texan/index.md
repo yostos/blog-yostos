@@ -5,7 +5,7 @@ date = 2024-07-24
 aliases = ["/articles/2024/07/24/Ephiphone-Texan"]
 
 [taxonomies]
-tags = ["Guitar","Epiphone","Texan"]
+tags = ["Music","Guitar"]
 +++
 
 ![](texan.jpg)

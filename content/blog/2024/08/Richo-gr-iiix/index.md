@@ -5,7 +5,7 @@ date = 2024-08-27
 aliases = ["/articles/2024/08/27/Richo-gr-iiix"]
 
 [taxonomies]
-tags = ["Photography", "Photo"]
+tags = ["Photography"]
 +++
 
 久しぶりにデジタルカメラを購入しました。RICOH GR IIIx HDF です。

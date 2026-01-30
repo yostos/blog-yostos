@@ -77,6 +77,8 @@ iPhone ユーザーであれば **iMessage** は無難でしょう。完全に E
 
 - [暗号化ホワイトペーパー](https://d.line-scdn.net/stf/linecorp/en/csr/line-encryption-whitepaper-ver2.1.pdf)(doc.1)
 - [プライバシーポリシー](https://terms2.line.me/globalnews_PP/sp)(doc.2)
-- [透明性レポート](https://linecorp.com/en/security/encryption/2022h1/)(doc.3)
+- 透明性レポート(doc.3)[^linecorp]
+
+[^linecorp]: 元のレポートページは削除されました
 
 私自身は[Threema](https://threema.ch/en)を使用しています。

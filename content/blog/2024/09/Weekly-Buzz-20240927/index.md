@@ -61,5 +61,5 @@ brew install jrnl
 タンがはみ出すという初歩的で致命的なバグがあり初期設定すらできません。パソコ
 ン版のビューアーアプリは Widnows 版しか提供しておらず、Mac がサポートされて
 いません。仕方なくディーラーで設定してもらいました。
-[GlobalStats](https://gs.statcounter.com/os-market-share/desktop/worldwide/#monthly-200901-202408)の情報を見ると、Windows のシェアは結構下がっており、Mac は 20%程度のシェアがあります。
+[GlobalStats](https://gs.statcounter.com/os-market-share/desktop/worldwide/)の情報を見ると、Windows のシェアは結構下がっており、Mac は 20%程度のシェアがあります。
 自動車業界は自動運転にフォーカスし米巨大テック企業がこぞって参加しようという状況なのに、ソフトウェア開発は社外に放り投げてマルチプラットフォームのサポートもしない日本の自動車関連機器メーカーとしてはのんびりしたもんです。

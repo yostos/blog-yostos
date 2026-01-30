@@ -5,7 +5,7 @@ date = 2025-11-21
 aliases = ["/articles/2025/11/21/scarlet"]
 
 [taxonomies]
-tags = ["Movies"]
+tags = ["Movies","Entertainment"]
 +++
 
 ![Scarlet](scarlet.webp)

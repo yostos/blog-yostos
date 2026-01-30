@@ -5,7 +5,7 @@ date = 2025-08-17
 aliases = ["/articles/2025/08/17/glass-heart"]
 
 [taxonomies]
-tags = ["Music", "Guitar","Movies"]
+tags = ["Music", "Guitar", "Movies", "Entertainment"]
 +++
 
 Netflix で配信が始まった『グラス・ハート』の評判がよいようです。

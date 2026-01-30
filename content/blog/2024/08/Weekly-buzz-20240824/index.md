@@ -12,8 +12,7 @@ tags = ["Weekly Buzz","Current Affairs"]
 
 今週は『[劇場総集編 ぼっち・ざ・ろっくRe:Re:](https://bocchi.rocks/)』を見てきました。
 平日だったので観客はまばらでしたが、
-「[公開4日で興収2.5億円突破](https://news.yahoo.co.jp/articles/28595adacdd86054fcd06a1eb2116abacf1265ea)」
-という記事もあるのでヒットしているのでしょう。
+公開4日で興収2.5億円突破という記事もあったのでヒットしているのでしょう。
 
 「ギターヒーロー不在の時代」とも言われますが、『ぼっち・ざ・ろっく』ではギター
 ヒーローとも言える YouTube で 10 万人近い登録者を持つ凄腕の女子高生ギタリストの
@@ -95,7 +94,7 @@ AWS の新しい CEO Matt Garman が以下のように語ったと報じられ�
 
 人間が作成したアルゴリズムを使わずニューラルネットでシステムを作成すると言う[Software2.0](https://karpathy.medium.com/software-2-0-a64152b37c35)は、最先端でも理解しているエンジニアもほとんどいないため実案件で使われるようになるには少し時間が掛かるでしょう。
 
-[以前の記事](https://blog.yostos.org/2024/08/09/software-development-using.html)で書いたよう、当面は Copliot のような AI の補完ツール、Anthropic 社の[Cloude3 Sonnet Artifacts]のような AI と協働して開発を進めるモデルを経て AI にアルゴリズムを開発させる形態へと徐々に移行していくでしょう。
+[以前の記事](/articles/2024/08/09/Software-Development-Using-AI)で書いたよう、当面は Copliot のような AI の補完ツール、Anthropic 社の[Cloude3 Sonnet Artifacts]のような AI と協働して開発を進めるモデルを経て AI にアルゴリズムを開発させる形態へと徐々に移行していくでしょう。
 
 この文脈で AI が活用されている間は最終的な成果物の評価はエンジニアに委ねられるため、
 これまで以上に高度なコーディングスキルが求められるでしょう。
