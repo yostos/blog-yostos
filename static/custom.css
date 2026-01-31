@@ -1,3 +1,11 @@
+/* Monaspace Neon フォント */
+@font-face {
+  font-family: "Monaspace Neon";
+  src: url("https://cdn.jsdelivr.net/npm/monaspace-font@1.0.0/fonts/variable/MonaspaceNeon[wght].woff2") format("woff2-variations");
+  font-weight: 100 900;
+  font-display: swap;
+}
+
 /* Berkeley Mono フォント */
 /* Regular (400) */
 @font-face {
@@ -124,10 +132,8 @@
   --sans-serif-font:
     "BerkeleyMono", "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN",
     "Hiragino Sans", "Noto Sans JP", sans-serif;
-  --serif-font:
-    "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans",
-    "Noto Sans JP", sans-serif;
-  --code-font: "BerkeleyMono", "Cascadia Code", monospace;
+  --serif-font: var(--sans-serif-font);
+  --code-font: "Monaspace Neon", "Cascadia Code", monospace;
 }
 
 /* 一般的な日本語ブログに合わせたフォントサイズ */
@@ -268,4 +274,12 @@ article dd {
   line-height: 1.5;
   margin-left: 1.5em;
   margin-bottom: 0.5em;
+}
+
+/* コードブロックのリガチャ有効化 */
+code,
+pre,
+.code-font {
+  font-feature-settings: "liga" 1, "calt" 1;
+  font-variant-ligatures: common-ligatures contextual;
 }
