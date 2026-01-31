@@ -23,6 +23,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Changed
 - use Monaspace Neon for code and enable ligatures
 - add Berkeley Mono weights and definition list styling
+- skip workflows for Claude bot
 - remove deprecated Husky pre-push hook format
 - update Zola to 0.22.1 for definition list support
 - standardize tags and fix external links
