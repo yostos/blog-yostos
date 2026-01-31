@@ -1,4 +1,5 @@
 /* Berkeley Mono フォント */
+/* Regular (400) */
 @font-face {
   font-family: "BerkeleyMono";
   src: url("https://d3w0x7oesq9q1.cloudfront.net/BerkeleyMono-Regular.woff2")
@@ -9,19 +10,57 @@
 }
 @font-face {
   font-family: "BerkeleyMono";
-  src: url("https://d3w0x7oesq9q1.cloudfront.net/BerkeleyMono-Bold.woff2")
-    format("woff2");
-  font-display: swap;
-  font-weight: 700;
-  font-style: normal;
-}
-@font-face {
-  font-family: "BerkeleyMono";
   src: url("https://d3w0x7oesq9q1.cloudfront.net/BerkeleyMono-Oblique.woff2")
     format("woff2");
   font-display: swap;
   font-weight: 400;
   font-style: oblique;
+}
+
+/* Medium (500) */
+@font-face {
+  font-family: "BerkeleyMono";
+  src: url("https://d3w0x7oesq9q1.cloudfront.net/BerkeleyMono-Medium.woff2")
+    format("woff2");
+  font-display: swap;
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "BerkeleyMono";
+  src: url("https://d3w0x7oesq9q1.cloudfront.net/BerkeleyMono-Medium-Oblique.woff2")
+    format("woff2");
+  font-display: swap;
+  font-weight: 500;
+  font-style: oblique;
+}
+
+/* SemiBold (600) */
+@font-face {
+  font-family: "BerkeleyMono";
+  src: url("https://d3w0x7oesq9q1.cloudfront.net/BerkeleyMono-SemiBold.woff2")
+    format("woff2");
+  font-display: swap;
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "BerkeleyMono";
+  src: url("https://d3w0x7oesq9q1.cloudfront.net/BerkeleyMono-SemiBold-Oblique.woff2")
+    format("woff2");
+  font-display: swap;
+  font-weight: 600;
+  font-style: oblique;
+}
+
+/* Bold (700) */
+@font-face {
+  font-family: "BerkeleyMono";
+  src: url("https://d3w0x7oesq9q1.cloudfront.net/BerkeleyMono-Bold.woff2")
+    format("woff2");
+  font-display: swap;
+  font-weight: 700;
+  font-style: normal;
 }
 @font-face {
   font-family: "BerkeleyMono";
@@ -32,10 +71,46 @@
   font-style: oblique;
 }
 
+/* ExtraBold (800) */
+@font-face {
+  font-family: "BerkeleyMono";
+  src: url("https://d3w0x7oesq9q1.cloudfront.net/BerkeleyMono-ExtraBold.woff2")
+    format("woff2");
+  font-display: swap;
+  font-weight: 800;
+  font-style: normal;
+}
+@font-face {
+  font-family: "BerkeleyMono";
+  src: url("https://d3w0x7oesq9q1.cloudfront.net/BerkeleyMono-ExtraBold-Oblique.woff2")
+    format("woff2");
+  font-display: swap;
+  font-weight: 800;
+  font-style: oblique;
+}
+
+/* Black (900) */
+@font-face {
+  font-family: "BerkeleyMono";
+  src: url("https://d3w0x7oesq9q1.cloudfront.net/BerkeleyMono-Black.woff2")
+    format("woff2");
+  font-display: swap;
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: "BerkeleyMono";
+  src: url("https://d3w0x7oesq9q1.cloudfront.net/BerkeleyMono-Black-Oblique.woff2")
+    format("woff2");
+  font-display: swap;
+  font-weight: 900;
+  font-style: oblique;
+}
+
 /* サイトタイトル */
 .home-title {
   font-family: "BerkeleyMono", sans-serif;
-  font-weight: 700;
+  font-weight: 900;
 }
 
 .page-header,
@@ -180,4 +255,17 @@ article p {
 
 .bloglist-content div .description p {
   margin: 0.3rem 0 0.5rem;
+}
+
+/* Definition List スタイル */
+article dt {
+  font-weight: 500;
+  margin-top: 1em;
+}
+
+article dd {
+  font-size: 0.95em;
+  line-height: 1.5;
+  margin-left: 1.5em;
+  margin-bottom: 0.5em;
 }
