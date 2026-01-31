@@ -11,13 +11,15 @@ date = 2026-01-30
 tags =["Tech", "Weblog", "AWS"]
 +++
 
-![Zola](./zola.webp)
+<!-- textlint-disable -->
+
+{{ full_width_image(src="./zola.webp",alt="Zola")}}
+
+<!-- textlint-enable -->
 
 <details>
 <summary>Table of Contents</summary>
-
 <!-- toc -->
-
 </details>
 
 技術検証目的で1年ほどNext.js + Amazon Amplify構成のブログを運用していました。
@@ -96,11 +98,13 @@ aws acm list-certificates --region us-east-1 \
 調査が終わったら、リソースを削除していきます。
 
 <!-- textlint-disable -->
+
 {% admonition(type="warning", title="削除作業の注意") %}
 以下ではコマンド例を示していますが、実際の削除作業では各コマンドの出力を目視で
 確認し、削除対象が正しいことを1つずつ確かめながら進めました。
 AWSリソースの削除は取り消しができないため、慎重に作業することをおすすめします。
 {% end %}
+
 <!-- textlint-enable -->
 
 Amplify Hosting（WEB_COMPUTEタイプ）の場合、アプリを削除するとCloudFrontと
