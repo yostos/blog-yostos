@@ -4,7 +4,9 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-A blog powered by Zola static site generator. Migration project from Next.js/MDX blog.
+- **Project Name**: blog-yostos
+- **Description**: A blog powered by Zola static site generator.
+  Migration project from Next.js/MDX blog.
 
 ## General Rules
 
