@@ -27,16 +27,9 @@ npm run lint:fix    # Auto-fix textlint errors
 - **Commit**: Use `/simple-commit:commit` skill (auto-generates Conventional Commits format)
 - Do not use `git commit` directly
 - Local rules: See `.claude/simple-commit.local.md`
-
-### コミット前の確認事項
-
-コミット前に必ず `git status` で以下を確認すること：
-
-- **新規ディレクトリを作成した場合**: `_index.md` が必要か確認
-  - `content/blog/YYYY/MM/` を新規作成 → `_index.md` も作成・コミット
-- **関連ファイルの漏れ**: 記事本体だけでなく、同時に作成・変更した
-  ファイルがすべてステージングされているか確認
-- **Untracked files**: 意図せず残っているファイルがないか確認
+- **Staging**: 常に `git add .` を使用する（ファイルを個別に選ばない）
+  - `themes/` はsubmoduleなので自動的に除外される
+  - 漏れを防ぐため、全変更をまとめてステージング
 
 ## Project Structure
 
