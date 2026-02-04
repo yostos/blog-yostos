@@ -4,6 +4,8 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
+<!-- jrnl-project: blog-yostos -->
+
 - **Project Name**: blog-yostos
 - **Description**: A blog powered by Zola static site generator.
   Migration project from Next.js/MDX blog.
@@ -105,10 +107,12 @@ canonical_url = "https://..."  # Canonical URL (when another site is the origina
 - **フォーマット**: 長い場合はTOMLの複数行文字列（`"""`）を使用
 
 例：
+
 - ❌ 悪い例: `"Claude Codeプラグインの開発方法"`（体言止め）
 - ❌ 悪い例: `"Claude Codeプラグインを開発"`（助詞で終わる）
 - ❌ 悪い例: `"プラグインを開発しました。"` (情報が少なすぎる)
 - ✅ 良い例:
+
   ```toml
   description = """
   Claude Codeプラグインの開発方法を実践的に解説します。
@@ -141,11 +145,14 @@ See `docs/tag-rule.md` for comprehensive tagging rules and guidelines.
 - **ショートコードの除外**:
   `%}` で終わるショートコード（例: `{% admonition %}...{% end %}`）を
   使用する場合は、必ず textlint 除外コメントで囲む
+
   ```markdown
   <!-- textlint-disable -->
+
   {% admonition(type="warning", title="タイトル") %}
   内容
   {% end %}
+
   <!-- textlint-enable -->
   ```
 
