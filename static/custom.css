@@ -164,8 +164,8 @@
 
 /* トップページのヘッダー文の行間調整 */
 #banner-container-home #home-banner-text #banner-home-subtitle p {
-  font-size: 1rem !important;
-  line-height: 1.6 !important;
+  font-size: 0.85rem !important;
+  line-height: 1.5rem !important;
   margin-bottom: 0.3em !important;
 }
 
