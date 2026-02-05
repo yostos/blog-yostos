@@ -107,4 +107,8 @@ skip_prefixes = [
     # サーバー接続問題・レート制限
     "https://flyers.plus/",
     "https://venturebeat.com/",
+    # botアクセスをブロック（403 Forbidden）
+    "https://www.bloomberg.com/",
+    "https://soundcloud.com/",
+    "https://flic.kr/",
 ]

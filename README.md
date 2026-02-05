@@ -37,6 +37,49 @@ The blog has been running since 2024, with **226+ articles** covering these topi
 | Linting | [textlint](https://textlint.github.io/) |
 | Git Hooks | [Husky](https://typicode.github.io/husky/) + [lint-staged](https://github.com/lint-staged/lint-staged) |
 
+## CI/CD Pipeline
+
+This project has a 3-stage quality gate for content:
+
+```
+[Local Development]
+     │
+     ├─ git commit → pre-commit (lint-staged: changed files only)
+     │
+     └─ git push   → pre-push (npm run lint: all files)
+            │
+            ▼
+[GitHub Actions]
+     │
+     ├─ textlint.yml ──────────── Text quality check
+     │
+     ├─ deploy.yml ────────────── zola build (internal link validation)
+     │
+     └─ zola-check-scheduled.yml ─ Monthly external link check
+```
+
+### Workflows
+
+| Workflow | Trigger | Purpose |
+|----------|---------|---------|
+| **Textlint** | Push/PR to main | Lint all Markdown files |
+| **Deploy** | Push to main | Build and deploy to GitHub Pages |
+| **Zola Check** | Monthly (15th) / Manual | Validate external links |
+
+### Local Hooks (Husky)
+
+| Hook | Command | Scope |
+|------|---------|-------|
+| **pre-commit** | `npx lint-staged` | Staged Markdown files |
+| **pre-push** | `npm run lint` | All `content/**/*.md` |
+
+To bypass hooks in emergencies (not recommended):
+
+```bash
+git commit --no-verify  # Skip pre-commit
+git push --no-verify    # Skip pre-push
+```
+
 ## Development
 
 ```bash
