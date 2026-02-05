@@ -79,6 +79,20 @@ echo "Hello"
 ```
 ````
 
+## YouTube Shortcode
+
+To embed a YouTube video:
+
+```markdown
+<!-- textlint-disable -->
+
+{{ youtube(id="VIDEO_ID") }}
+
+<!-- textlint-enable -->
+```
+
+`VIDEO_ID` is the part after `v=` or `youtu.be/` in the URL.
+
 ## Article Frontmatter Format
 
 ```toml
