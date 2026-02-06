@@ -117,4 +117,46 @@
 
 ---
 
+### 2026-02-06: セキュリティヘッダー検討
+
+#### 発端
+
+セキュリティスキャナーで以下のヘッダー欠如が指摘された：
+
+- Strict-Transport-Security
+- Content-Security-Policy
+- X-Frame-Options
+- X-Content-Type-Options
+- Referrer-Policy
+- Permissions-Policy
+
+#### 調査結果
+
+1. **GitHub Pagesの制限**
+   - HTTPレスポンスヘッダーのカスタマイズ機能がない
+   - `.htaccess` 等のサーバー設定も使用不可
+
+2. **Cloudflare CDN導入の検討**
+   - 計画では「GitHub Pages + Cloudflare CDN」構成だった
+   - 実際にはCloudflare CDN未設定（GitHub Pages直結）
+   - 現状確認: `dig blog.yostos.org` → `185.199.x.153`（GitHub Pages IP）
+
+3. **Cloudflare導入の障壁**
+   - 無料プランはネームサーバー移管が必須
+   - 現在 Fastmail DNS を使用中
+   - メール設定（MX, SPF, DKIM等）の移行リスクが高い
+
+#### 決定事項
+
+**セキュリティヘッダー未設定のまま放置**
+
+理由：
+
+- 静的ブログサイトであり、実質的なセキュリティリスクは低い
+- ユーザー入力を受け付けないためXSS等の攻撃面がない
+- DNS移管のリスク ＞ セキュリティヘッダー追加のメリット
+- スキャナーの警告は「ベストプラクティス未達」であり「脆弱性」ではない
+
+---
+
 <!-- 以下に作業を追記 -->

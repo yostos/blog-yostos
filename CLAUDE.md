@@ -79,6 +79,24 @@ echo "Hello"
 ```
 ````
 
+## Mermaid Diagram
+
+記事でMermaidを使用する場合：
+
+1. frontmatterに `[extra] mermaid = true` を追加
+2. tabiのショートコード形式で記述（textlint除外コメントで囲む）
+
+```markdown
+<!-- textlint-disable -->
+
+{% mermaid() %}
+flowchart LR
+    A[開始] --> B[処理] --> C[終了]
+{% end %}
+
+<!-- textlint-enable -->
+```
+
 ## YouTube Shortcode
 
 To embed a YouTube video:
@@ -146,6 +164,8 @@ See `docs/tag-rule.md` for comprehensive tagging rules and guidelines.
 - 「：」で終わる文は禁止（「〜します。」「〜です。」などで終える）
 - **行の長さ**: 1行80バイト以内に収める（日本語は1文字3バイト）
 - **セクション分割**: 過度に細かいセクション分割は避ける
+  - レベル3見出し（`###`）は原則使用禁止。必要な場合はユーザーに確認する
+  - 太字（`**text**`）を見出し的に使用することも禁止
 - **太字**: 多用しない。本当に強調が必要な箇所のみ使用
 
 ## textlint Rules
