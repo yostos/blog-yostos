@@ -16,9 +16,15 @@ canonical_url = "https://zenn.dev/yostos/articles/hhkb-why-changed-architecture"
 tags = ["Gadget", "Keyboard", "HHKB"]
 +++
 
-> この記事は
-> [Zenn](https://zenn.dev/yostos/articles/hhkb-why-changed-architecture)
-> からの転載です。
+<!-- textlint-disable -->
+
+{% admonition(type="note") %}
+この記事は
+[Zenn](https://zenn.dev/yostos/articles/hhkb-why-changed-architecture)
+からの転載です。
+{% end %}
+
+<!-- textlint-enable -->
 
 <details>
 <summary>Table of Contents</summary>
@@ -72,12 +78,12 @@ tags = ["Gadget", "Keyboard", "HHKB"]
 
 ## 2. 初代HHKBからProfessionalへの移行
 
-| 項目 | 初代HHKB（1996年） | HHKB Professional（2003年） |
-| --- | --- | --- |
-| キートップ構造 | シリンドリカルカーブド | シリンドリカルステップ |
-| スイッチ方式 | メンブレン | 静電容量無接点 |
-| 押下圧 | 約50g | 約45g |
-| 製造コスト配分 | 形状設計に重点 | スイッチ機構に重点 |
+| 項目           | 初代HHKB（1996年）     | HHKB Professional（2003年） |
+| -------------- | ---------------------- | --------------------------- |
+| キートップ構造 | シリンドリカルカーブド | シリンドリカルステップ      |
+| スイッチ方式   | メンブレン             | 静電容量無接点              |
+| 押下圧         | 約50g                  | 約45g                       |
+| 製造コスト配分 | 形状設計に重点         | スイッチ機構に重点          |
 
 PFUはProfessionalへの移行で
 「指の疲労に最も効くのは、
@@ -124,11 +130,11 @@ PFUはProfessionalへの移行で
     PCBパッド   ← 距離が重要（信号 ∝ 1/距離）
 ```
 
-| 距離の変動 | 信号への影響 | 実用上の問題 |
-| --- | --- | --- |
-| ±0.1mm | 有意 | 打鍵点のばらつき |
-| ±0.2mm | 大きい | キーフィールの不均一 |
-| ±0.5mm | 致命的 | 入力が認識されない可能性 |
+| 距離の変動 | 信号への影響 | 実用上の問題             |
+| ---------- | ------------ | ------------------------ |
+| ±0.1mm     | 有意         | 打鍵点のばらつき         |
+| ±0.2mm     | 大きい       | キーフィールの不均一     |
+| ±0.5mm     | 致命的       | 入力が認識されない可能性 |
 
 カーブド筐体では各キー位置で距離が異なるため、
 均一なキーフィールの実現が困難です。
@@ -268,7 +274,7 @@ smoothnessIndex = smoothSum / (width - 61);
 
 ![プロファイル比較解析](./profile_comparison.webp)
 
-*上段: 両モデルの側面写真とエッジ検出によるプロファイルライン。下段左: プロファイルのオーバーレイ比較（赤=初代カーブド、青=Professionalステップ）。下段右: 高さの差分と相関係数。*
+_上段: 両モデルの側面写真とエッジ検出によるプロファイルライン。下段左: プロファイルのオーバーレイ比較（赤=初代カーブド、青=Professionalステップ）。下段右: 高さの差分と相関係数。_
 
 初代HHKBのプロファイル（赤線）は
 滑らかな曲線を描くのに対し、
@@ -276,11 +282,11 @@ Professional（青線）は階段状の段差が明確です。
 相関係数0.9215は
 「似ているが有意に異なる」ことを示しています。
 
-| 解析手法 | 初代（Curved） | Professional（Step） | 差分 |
-| --- | --- | --- | --- |
-| プロファイル相関係数 | - | 0.9215 | 有意差あり |
-| Smoothness Index（Python） | 29.9 | 35.2 | 17.7% |
-| Smoothness Index（Fiji） | 2.64 | 3.34 | 26.3% |
+| 解析手法                   | 初代（Curved） | Professional（Step） | 差分       |
+| -------------------------- | -------------- | -------------------- | ---------- |
+| プロファイル相関係数       | -              | 0.9215               | 有意差あり |
+| Smoothness Index（Python） | 29.9           | 35.2                 | 17.7%      |
+| Smoothness Index（Fiji）   | 2.64           | 3.34                 | 26.3%      |
 
 Smoothness Index
 （隣接位置間の角度変化の標準偏差）は
@@ -343,11 +349,11 @@ IBM Model MとTopre Realforceとの比較が有効です。
 UNIX哲学に基づく配列とコンパクトさを
 追求しました。
 
-| キーボード | 主眼 | 人間観 |
-| --- | --- | --- |
-| IBM Model M | 入力の確実性 | 人は間違える |
-| Topre Realforce | 疲労軽減 | 人は壊れる |
-| HHKB Professional | 思考の流れ | 人は考える |
+| キーボード        | 主眼         | 人間観       |
+| ----------------- | ------------ | ------------ |
+| IBM Model M       | 入力の確実性 | 人は間違える |
+| Topre Realforce   | 疲労軽減     | 人は壊れる   |
+| HHKB Professional | 思考の流れ   | 人は考える   |
 
 重要な点として、
 HHKBはModel MとRealforceの
@@ -415,20 +421,20 @@ Drop CTRL / ALT
 <details>
 <summary>検証済み項目一覧</summary>
 
-| 項目 | 記述内容 | 検証結果 | 情報ソース |
-| --- | --- | --- | --- |
-| 初代HHKB発売年 | 1996年 | 正確（1996年12月20日） | PFU公式、Wikipedia |
-| 初代HHKBスイッチ | メンブレン | 正確 | [PFU 初代HHKB仕様](https://happyhackingkb.com/jp/products/discontinued/hhkb_kb02/) |
-| 初代HHKB押下圧 | 約50g | 正確（50g） | [PFU 初代HHKB仕様](https://happyhackingkb.com/jp/products/discontinued/hhkb_kb02/) |
-| 初代HHKBキートップ | シリンドリカルカーブド | 正確 | [PFU 高品位キー仕様](https://happyhackingkb.com/jp/products/discontinued/keyspec.html) |
-| HHKB Professional発売年 | 2003年 | 正確（2003年5月） | [PFU HHKB History](https://happyhackingkb.com/jp/history/page4.html) |
-| Professionalスイッチ | 静電容量無接点 | 正確（Topre方式） | [PFU HHKB History](https://happyhackingkb.com/jp/history/page4.html) |
-| Professional押下圧 | 約45g | 正確 | [PFU HHKB History](https://happyhackingkb.com/jp/history/page4.html) |
-| Professionalキートップ | シリンドリカルステップ | 正確 | [PFU 高品位キー仕様](https://happyhackingkb.com/jp/products/discontinued/keyspec.html) |
-| IBM Model M発売年 | 1985年 | 正確 | [Wikipedia Model M](https://en.wikipedia.org/wiki/Model_M_keyboard) |
-| Model Mスイッチ | Buckling Spring | 正確 | [Wikipedia Model M](https://en.wikipedia.org/wiki/Model_M_keyboard) |
-| Topre Realforce | 2000年代初頭 | 正確（2001年） | [東プレ公式](https://www.topre.co.jp/products/elec/keyboards.html) |
-| MT3プロファイル | 1970〜80年代IBMターミナルにインスパイア | 正確 | [matt3o MT3 History](https://matt3o.com/mt3-keycap-profile-a-brief-history/) |
+| 項目                    | 記述内容                                | 検証結果               | 情報ソース                                                                             |
+| ----------------------- | --------------------------------------- | ---------------------- | -------------------------------------------------------------------------------------- |
+| 初代HHKB発売年          | 1996年                                  | 正確（1996年12月20日） | PFU公式、Wikipedia                                                                     |
+| 初代HHKBスイッチ        | メンブレン                              | 正確                   | [PFU 初代HHKB仕様](https://happyhackingkb.com/jp/products/discontinued/hhkb_kb02/)     |
+| 初代HHKB押下圧          | 約50g                                   | 正確（50g）            | [PFU 初代HHKB仕様](https://happyhackingkb.com/jp/products/discontinued/hhkb_kb02/)     |
+| 初代HHKBキートップ      | シリンドリカルカーブド                  | 正確                   | [PFU 高品位キー仕様](https://happyhackingkb.com/jp/products/discontinued/keyspec.html) |
+| HHKB Professional発売年 | 2003年                                  | 正確（2003年5月）      | [PFU HHKB History](https://happyhackingkb.com/jp/history/page4.html)                   |
+| Professionalスイッチ    | 静電容量無接点                          | 正確（Topre方式）      | [PFU HHKB History](https://happyhackingkb.com/jp/history/page4.html)                   |
+| Professional押下圧      | 約45g                                   | 正確                   | [PFU HHKB History](https://happyhackingkb.com/jp/history/page4.html)                   |
+| Professionalキートップ  | シリンドリカルステップ                  | 正確                   | [PFU 高品位キー仕様](https://happyhackingkb.com/jp/products/discontinued/keyspec.html) |
+| IBM Model M発売年       | 1985年                                  | 正確                   | [Wikipedia Model M](https://en.wikipedia.org/wiki/Model_M_keyboard)                    |
+| Model Mスイッチ         | Buckling Spring                         | 正確                   | [Wikipedia Model M](https://en.wikipedia.org/wiki/Model_M_keyboard)                    |
+| Topre Realforce         | 2000年代初頭                            | 正確（2001年）         | [東プレ公式](https://www.topre.co.jp/products/elec/keyboards.html)                     |
+| MT3プロファイル         | 1970〜80年代IBMターミナルにインスパイア | 正確                   | [matt3o MT3 History](https://matt3o.com/mt3-keycap-profile-a-brief-history/)           |
 
 </details>
 

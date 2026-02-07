@@ -14,6 +14,16 @@ mermaid = true
 canonical_url = "https://zenn.dev/yostos/articles/github-pages-security-headers"
 +++
 
+<!-- textlint-disable -->
+
+{% admonition(type="note") %}
+この記事は
+[Zenn.dev](https://zenn.dev/yostos/articles/github-pages-security-headers)
+に掲載した記事の転載です。
+{% end %}
+
+<!-- textlint-enable -->
+
 ## TL;DR
 
 - GitHub Pagesではセキュリティヘッダーを設定する機能がなく、スキャナーの警告がでる
