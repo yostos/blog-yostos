@@ -1,1 +1,20 @@
+# Check for missing OGP images in staged articles
+missing_ogp=()
+for file in $(git diff --cached --name-only --diff-filter=ACM | grep 'content/blog/.*/index\.md$'); do
+  dir=$(dirname "$file")
+  if [ ! -f "$dir/ogp.webp" ]; then
+    missing_ogp+=("$dir")
+  fi
+done
+
+if [ ${#missing_ogp[@]} -gt 0 ]; then
+  echo "Error: Missing ogp.webp for the following articles:"
+  for dir in "${missing_ogp[@]}"; do
+    echo "  - $dir"
+  done
+  echo ""
+  echo "Run 'npm run ogp' to generate OGP images."
+  exit 1
+fi
+
 npx lint-staged
