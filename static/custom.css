@@ -1,4 +1,4 @@
-/* KADOMA フォント */
+/* KADOMA フォント - 日本語用 */
 @font-face {
   font-family: "KADOMA";
   src: url("https://d3w0x7oesq9q1.cloudfront.net/KADOMA-R-fixed.woff2")
@@ -6,6 +6,7 @@
   font-display: swap;
   font-weight: 400;
   font-style: normal;
+  unicode-range: U+3000-9FFF, U+FF00-FFEF;
 }
 
 /* /* Monaspace Neon フォント */
@@ -124,6 +125,11 @@
   font-display: swap;
   font-weight: 900;
   font-style: oblique;
+}
+
+/* ヘッダー・ナビゲーション */
+header {
+  font-family: var(--sans-serif-font);
 }
 
 /* サイトタイトル */
