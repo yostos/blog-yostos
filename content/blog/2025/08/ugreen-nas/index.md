@@ -6,6 +6,8 @@ aliases = ["/articles/2025/08/31/ugreen-nas"]
 
 [taxonomies]
 tags = ["Tech","Gadget"]
+[extra]
+social_media_card = "ogp.webp"
 +++
 
 ![UGREEN NAS](ugreen-nas.webp)

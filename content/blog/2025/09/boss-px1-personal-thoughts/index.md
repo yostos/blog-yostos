@@ -6,6 +6,8 @@ aliases = ["/articles/2025/09/08/boss-px1-personal-thoughts"]
 
 [taxonomies]
 tags = ["Guitar Pedals"]
+[extra]
+social_media_card = "ogp.webp"
 +++
 
 ![BOSS PX-1](px-1.webp)

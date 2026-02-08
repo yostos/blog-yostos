@@ -6,6 +6,8 @@ aliases = ["/articles/2025/03/22/drown-lisense"]
 
 [taxonomies]
 tags = ["Certification","Drone"]
+[extra]
+social_media_card = "ogp.webp"
 +++
 
 ## 技能証明申請者番号の取得

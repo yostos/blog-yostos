@@ -6,6 +6,8 @@ aliases = ["/articles/2025/11/16/archetype"]
 
 [taxonomies]
 tags = ["Guitar", "Software","Music Production"]
+[extra]
+social_media_card = "ogp.webp"
 +++
 
 ![Neural DSP Archetype](archetype.webp)

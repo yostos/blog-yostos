@@ -6,6 +6,8 @@ aliases = ["/articles/2025/08/18/war-responsibility"]
 
 [taxonomies]
 tags = ["Current Affairs"]
+[extra]
+social_media_card = "ogp.webp"
 +++
 
 中島聡氏のメールマガジンに「戦争責任にケジメをつけて前に進む必要性」という興味深い記事がありました。日本が第二次世界大戦における戦争責任にケジメをつけられない理由についての分析で、納得できる部分が多くあったため、ここに記録しておきます。

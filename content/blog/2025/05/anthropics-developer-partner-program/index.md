@@ -6,6 +6,8 @@ aliases = ["/articles/2025/05/02/anthropics-developer-partner-program"]
 
 [taxonomies]
 tags = ["Tech", "Generative AI"]
+[extra]
+social_media_card = "ogp.webp"
 +++
 
 Claude Code APIの利用料割引が可能となるDeveloper Partner ProgrameがAnthropicより発表されました。今後のモデル改善のためのプログラムで参加するとClaude 3.5 SonnetおよびClaude 3.7SonnetモデルのClaude Code入力トークンが30%割引になる可能性があります。

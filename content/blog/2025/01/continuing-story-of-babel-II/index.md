@@ -6,6 +6,8 @@ aliases = ["/articles/2025/01/24/continuing-story-of-babel-II"]
 
 [taxonomies]
 tags = ["Books", "Anime","Manga"]
+[extra]
+social_media_card = "ogp.webp"
 +++
 
 すると、11巻完結だと思っていた『バビル2世』が12巻まであるではないです

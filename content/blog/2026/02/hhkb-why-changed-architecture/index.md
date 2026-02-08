@@ -10,6 +10,7 @@ description = """
 date = 2026-02-05
 
 [extra]
+social_media_card = "ogp.webp"
 canonical_url = "https://zenn.dev/yostos/articles/hhkb-why-changed-architecture"
 
 [taxonomies]

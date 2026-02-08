@@ -6,6 +6,8 @@ aliases = ["/articles/2025/02/07/the-information-gap-on-usaid"]
 
 [taxonomies]
 tags = ["Current Affairs"]
+[extra]
+social_media_card = "ogp.webp"
 +++
 
 ![](censorship.webp)

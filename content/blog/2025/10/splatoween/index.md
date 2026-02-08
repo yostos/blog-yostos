@@ -6,6 +6,8 @@ aliases = ["/articles/2025/10/25/splatoween"]
 
 [taxonomies]
 tags = ["Splatoon", "Game"]
+[extra]
+social_media_card = "ogp.webp"
 +++
 
 {{ youtube(id="EO5AW_CMf7M") }}

@@ -6,6 +6,8 @@ aliases = ["/articles/2024/09/24/Patlabor-the-movie"]
 
 [taxonomies]
 tags = ["Movies","Anime", "Entertainment"]
+[extra]
+social_media_card = "ogp.webp"
 +++
 
 ![](patlabor.jpg)

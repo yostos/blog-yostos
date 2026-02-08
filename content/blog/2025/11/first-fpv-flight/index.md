@@ -6,6 +6,8 @@ aliases = ["/articles/2025/11/04/first-fpv-flight"]
 
 [taxonomies]
 tags = ["Drone"]
+[extra]
+social_media_card = "ogp.webp"
 +++
 
 During a recent aerial photography session at Lake Sasagawa, I forgot my DJI Air 3S and had to rely on the DJI Neo as a backup. While capturing standard high-altitude shots, I noticed the potential for more dynamic, FPV-style cinematography.

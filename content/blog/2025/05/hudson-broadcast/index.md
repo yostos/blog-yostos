@@ -6,6 +6,8 @@ aliases = ["/articles/2025/05/20/hudson-broadcast"]
 
 [taxonomies]
 tags = ["Guitar Pedals"]
+[extra]
+social_media_card = "ogp.webp"
 +++
 
 ![Hudson Broadcast](broadcast.webp)

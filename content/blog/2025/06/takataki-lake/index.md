@@ -6,6 +6,8 @@ aliases = ["/articles/2025/06/13/takataki-lake"]
 
 [taxonomies]
 tags = ["Drone", "Photography"]
+[extra]
+social_media_card = "ogp.webp"
 +++
 
 <details>

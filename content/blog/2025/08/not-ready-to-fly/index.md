@@ -6,6 +6,8 @@ aliases = ["/articles/2025/08/30/not-ready-to-fly"]
 
 [taxonomies]
 tags = ["Music", "Guitar"]
+[extra]
+social_media_card = "ogp.webp"
 +++
 
 Currently copying Masayoshi Takanaka's 'Ready To Fly'. First, I tried to

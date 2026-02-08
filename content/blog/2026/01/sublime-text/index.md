@@ -11,6 +11,8 @@ aliases =["/articles/2026/01/08/sublime-text"]
 
 [taxonomies]
 tags =["Tech","Software", "Editor"]
+[extra]
+social_media_card = "ogp.webp"
 +++
 
 <details>

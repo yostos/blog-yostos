@@ -6,6 +6,8 @@ aliases = ["/articles/2024/07/24/Nakamaru"]
 
 [taxonomies]
 tags = ["Current Affairs", "Game", "Splatoon"]
+[extra]
+social_media_card = "ogp.webp"
 +++
 
 ![](nakamaru.webp)

@@ -6,6 +6,8 @@ aliases = ["/articles/2025/04/06/beyond-distortion"]
 
 [taxonomies]
 tags = ["Guitar Pedals"]
+[extra]
+social_media_card = "ogp.webp"
 +++
 
 アンプの歪みをより深く追求するため、

@@ -6,6 +6,8 @@ aliases = ["/articles/2024/12/30/exif-tool"]
 
 [taxonomies]
 tags = ["Tech", "Photography"]
+[extra]
+social_media_card = "ogp.webp"
 +++
 
 The scanner&apos;s performance has been impressive - it handled even my old San Francisco business trip photos from 2001 beautifully, producing crisp, clear scans.

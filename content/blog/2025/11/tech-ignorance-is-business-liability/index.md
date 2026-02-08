@@ -6,6 +6,8 @@ aliases = ["/articles/2025/11/08/tech-ignorance-is-business-liability"]
 
 [taxonomies]
 tags = ["Tech", "Security"]
+[extra]
+social_media_card = "ogp.webp"
 +++
 
 ![No IT dept](noitdept.webp)

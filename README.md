@@ -99,6 +99,33 @@ npm run lint
 npm run lint:fix
 ```
 
+## OGP Image Generation
+
+Each article has an auto-generated OGP image (`ogp.webp`) for social media sharing.
+
+**How it works**:
+- If an article has an image ≥1200×630px, it's used as the background
+- Otherwise, the default background (`static/images/coded-chords.webp`) is used
+- Title, blog name, and author are overlaid on all images
+
+**Usage**:
+
+```bash
+# Generate OGP images for new articles (skips existing)
+npm run ogp
+
+# Preview what would be generated (dry-run)
+npm run ogp:dry-run
+
+# Regenerate all OGP images (force overwrite)
+npm run ogp -- --force
+```
+
+**Font Setup** (required for first run):
+
+Place a Japanese font (`.ttf` or `.otf`) in `scripts/fonts/`.
+This directory is gitignored to allow use of licensed fonts.
+
 ## Project Structure
 
 ```
@@ -106,8 +133,12 @@ content/
   blog/
     YYYY/MM/slug/     # Blog articles (year/month/slug format)
       index.md        # Article content (TOML frontmatter)
+      ogp.webp        # OGP image (auto-generated)
       *.webp          # Article images
 themes/tabi/          # tabi theme (git submodule)
+scripts/
+  generate-ogp.mjs    # OGP image generator
+  fonts/              # Japanese fonts (gitignored)
 config.toml           # Zola configuration
 CLAUDE.md             # Claude Code guidance
 ```

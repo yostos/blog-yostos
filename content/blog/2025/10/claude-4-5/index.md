@@ -6,6 +6,8 @@ aliases = ["/articles/2025/10/03/claude-4-5"]
 
 [taxonomies]
 tags = ["Tech", "Generative AI", "Claude Code"]
+[extra]
+social_media_card = "ogp.webp"
 +++
 
 <details>

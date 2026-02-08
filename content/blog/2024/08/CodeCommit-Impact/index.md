@@ -6,6 +6,8 @@ aliases = ["/articles/2024/08/13/CodeCommit-Impact"]
 
 [taxonomies]
 tags = ["Tech", "AWS", "Cloud"]
+[extra]
+social_media_card = "ogp.webp"
 +++
 
 <blockquote>

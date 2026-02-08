@@ -6,6 +6,8 @@ aliases = ["/articles/2025/03/25/creating-sitemap"]
 
 [taxonomies]
 tags = ["Tech","Web"]
+[extra]
+social_media_card = "ogp.webp"
 +++
 
 ウェブサイトを検索エンジンに正しくインデックスしてもらうためには、`sitemap.xml`と`robots.txt`の適切な実装が不可欠です。

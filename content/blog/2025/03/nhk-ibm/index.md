@@ -6,6 +6,8 @@ aliases = ["/articles/2025/03/31/nhk-ibm"]
 
 [taxonomies]
 tags = ["Tech", "Current Affairs", "IBM"]
+[extra]
+social_media_card = "ogp.webp"
 +++
 
 ![NHK問題](nhk.webp)

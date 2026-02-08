@@ -6,6 +6,8 @@ aliases = ["/articles/2025/12/07/anthropic-interviewer"]
 
 [taxonomies]
 tags = ["Tech", "Generative AI"]
+[extra]
+social_media_card = "ogp.webp"
 +++
 
 ## Anthropic Interviewerとは

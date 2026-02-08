@@ -6,6 +6,8 @@ aliases = ["/articles/2025/04/13/spring-fest"]
 
 [taxonomies]
 tags = ["Splatoon", "Game"]
+[extra]
+social_media_card = "ogp.webp"
 +++
 
 もう大きな改修はないはずですが、

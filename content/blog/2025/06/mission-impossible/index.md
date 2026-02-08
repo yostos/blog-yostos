@@ -6,6 +6,8 @@ aliases = ["/articles/2025/06/15/mission-impossible"]
 
 [taxonomies]
 tags = ["Movies","Entertainment"]
+[extra]
+social_media_card = "ogp.webp"
 +++
 
 <details>

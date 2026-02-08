@@ -6,6 +6,8 @@ aliases = ["/articles/2025/05/30/revolution"]
 
 [taxonomies]
 tags = ["Music", "Guitar"]
+[extra]
+social_media_card = "ogp.webp"
 +++
 
 The Beatlesの"Revolution"のイントロの割れたCasinoの音が、

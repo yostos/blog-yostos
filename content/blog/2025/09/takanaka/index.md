@@ -6,6 +6,8 @@ aliases = ["/articles/2025/09/21/takanaka"]
 
 [taxonomies]
 tags = ["Music"]
+[extra]
+social_media_card = "ogp.webp"
 +++
 
 ![高中正義 SUPER TAKANAKA WORLD LIVE 2025-2026](takanaka.webp)

@@ -6,6 +6,8 @@ aliases = ["/articles/2025/01/15/postcards"]
 
 [taxonomies]
 tags = ["Current Affairs"]
+[extra]
+social_media_card = "ogp.webp"
 +++
 
 2025年度は前年度25%減で民営化以来最低の発行部数だったようです。

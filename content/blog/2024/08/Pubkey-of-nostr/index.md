@@ -6,6 +6,8 @@ aliases = ["/articles/2024/08/25/Pubkey-of-nostr"]
 
 [taxonomies]
 tags = ["Tech"]
+[extra]
+social_media_card = "ogp.webp"
 +++
 
 NostrでVanity pubkeyのMiningをやってみました。

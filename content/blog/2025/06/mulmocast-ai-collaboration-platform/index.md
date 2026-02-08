@@ -6,6 +6,8 @@ aliases = ["/articles/2025/06/24/mulmocast-ai-collaboration-platform"]
 
 [taxonomies]
 tags = ["Tech", "Generative AI"]
+[extra]
+social_media_card = "ogp.webp"
 +++
 
 <details>

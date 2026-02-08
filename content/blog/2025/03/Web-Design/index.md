@@ -6,6 +6,8 @@ aliases = ["/articles/2025/03/09/Web-Design"]
 
 [taxonomies]
 tags = ["Certification", "Tech"]
+[extra]
+social_media_card = "ogp.webp"
 +++
 
 少しだけ通ったVY訓練校では、[Webクリエイター能力認定試験](https://www.sikaku.gr.jp/web/wc/)が取得できそうことを言っていました。内容見ると、メモ帳でHTMLを書かすようなアホな試験でした。

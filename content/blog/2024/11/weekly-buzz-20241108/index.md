@@ -6,6 +6,8 @@ aliases = ["/articles/2024/11/08/weekly-buzz-20241108"]
 
 [taxonomies]
 tags = ["Weekly Buzz", "Current Affairs"]
+[extra]
+social_media_card = "ogp.webp"
 +++
 
 今週はトランプが再選され、一時的にリスクの高いセクターの株が上昇し米国株市場

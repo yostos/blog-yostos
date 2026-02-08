@@ -6,6 +6,8 @@ aliases = ["/articles/2025/12/30/mercury-m2"]
 
 [taxonomies]
 tags = ["Gadget", "Game"]
+[extra]
+social_media_card = "ogp.webp"
 +++
 
 ![Mercury M2](m2.webp)

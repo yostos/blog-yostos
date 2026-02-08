@@ -6,6 +6,8 @@ aliases = ["/articles/2025/04/18/company-info-api"]
 
 [taxonomies]
 tags = ["Tech","API"]
+[extra]
+social_media_card = "ogp.webp"
 +++
 
 仕事で企業を一意に特定するという要件があり、法人番号制度を利用するために

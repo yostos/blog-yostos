@@ -6,6 +6,8 @@ aliases = ["/articles/2025/03/23/textlint-introduction"]
 
 [taxonomies]
 tags = ["Tech","Writing","Software","Weblog"]
+[extra]
+social_media_card = "ogp.webp"
 +++
 
 ## textlintとは

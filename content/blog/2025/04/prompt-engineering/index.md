@@ -6,6 +6,8 @@ aliases = ["/articles/2025/04/15/prompt-engineering"]
 
 [taxonomies]
 tags = ["Tech", "Generative AI"]
+[extra]
+social_media_card = "ogp.webp"
 +++
 
 [AI Baseの記事](https://www.aibase.com/ja/news/17051)でこのホワイトペーパーが紹介されていたので、

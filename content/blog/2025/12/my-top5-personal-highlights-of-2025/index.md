@@ -6,6 +6,8 @@ aliases = ["/articles/2025/12/31/my-top5-personal-highlights-of-2025"]
 
 [taxonomies]
 tags = ["Life"]
+[extra]
+social_media_card = "ogp.webp"
 +++
 
 <details>

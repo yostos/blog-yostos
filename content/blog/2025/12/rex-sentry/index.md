@@ -6,6 +6,8 @@ aliases = ["/articles/2025/12/19/rex-sentry"]
 
 [taxonomies]
 tags = ["Gadget"]
+[extra]
+social_media_card = "ogp.webp"
 +++
 
 ![REX Sentry](rex1.webp)

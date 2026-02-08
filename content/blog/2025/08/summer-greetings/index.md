@@ -6,6 +6,8 @@ aliases = ["/articles/2025/08/07/summer-greetings"]
 
 [taxonomies]
 tags = ["Music", "Guitar"]
+[extra]
+social_media_card = "ogp.webp"
 +++
 
 暑中お見舞い申し上げます。

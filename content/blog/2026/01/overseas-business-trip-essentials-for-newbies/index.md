@@ -11,6 +11,8 @@ aliases =["/articles/2026/01/24/overseas-business-trip-essentials-for-newbies"]
 
 [taxonomies]
 tags =["Travel","Tips"]
+[extra]
+social_media_card = "ogp.webp"
 +++
 
 ![Air Port](airport.webp)

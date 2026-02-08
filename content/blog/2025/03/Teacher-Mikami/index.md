@@ -6,6 +6,8 @@ aliases = ["/articles/2025/03/17/Teacher-Mikami"]
 
 [taxonomies]
 tags = ["Gourmet", "Entertainment","Movies"]
+[extra]
+social_media_card = "ogp.webp"
 +++
 
 今クールのドラマの中では『御上先生』を一番楽しみにしています。

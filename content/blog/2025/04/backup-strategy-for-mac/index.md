@@ -6,6 +6,8 @@ aliases = ["/articles/2025/04/18/backup-strategy-for-mac"]
 
 [taxonomies]
 tags = ["Tech", "Mac","Apple"]
+[extra]
+social_media_card = "ogp.webp"
 +++
 
 ## Macのバックアップ戦略

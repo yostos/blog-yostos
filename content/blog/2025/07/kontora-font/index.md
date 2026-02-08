@@ -6,6 +6,8 @@ aliases = ["/articles/2025/07/15/kontora-font"]
 
 [taxonomies]
 tags = ["Design","Font"]
+[extra]
+social_media_card = "ogp.webp"
 +++
 
 ![コントラ体](kontora.svg)

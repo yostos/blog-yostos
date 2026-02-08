@@ -6,6 +6,8 @@ aliases = ["/articles/2024/07/24/Ephiphone-Texan"]
 
 [taxonomies]
 tags = ["Music","Guitar"]
+[extra]
+social_media_card = "ogp.webp"
 +++
 
 ![](texan.jpg)

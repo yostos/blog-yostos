@@ -6,6 +6,8 @@ aliases = ["/articles/2025/03/17/NextJS-TailwindUI-blog"]
 
 [taxonomies]
 tags = ["Tech","Web","Weblog"]
+[extra]
+social_media_card = "ogp.webp"
 +++
 
 ## Micro.blogから移行

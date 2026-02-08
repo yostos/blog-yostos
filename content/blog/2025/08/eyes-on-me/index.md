@@ -6,6 +6,8 @@ aliases = ["/articles/2025/08/10/eyes-on-me"]
 
 [taxonomies]
 tags = ["Music", "Guitar"]
+[extra]
+social_media_card = "ogp.webp"
 +++
 
 Fanal Fantasy VIIIの主題歌で1999年にヒットした曲ですが、現在版権の問題なの

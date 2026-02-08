@@ -6,6 +6,8 @@ aliases = ["/articles/2025/09/20/otedit-problem"]
 
 [taxonomies]
 tags = ["Design","Font", "Tech","Python"]
+[extra]
+social_media_card = "ogp.webp"
 +++
 
 <details>

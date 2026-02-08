@@ -8,6 +8,8 @@ Anthropicが最新モデルClaude Opus 4.6を発表しました。
 date = 2026-02-06
 [taxonomies]
 tags = ["Claude", "Generative AI", "Anthropic"]
+[extra]
+social_media_card = "ogp.webp"
 +++
 
 <!-- textlint-disable -->

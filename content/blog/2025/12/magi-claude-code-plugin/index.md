@@ -8,6 +8,7 @@ aliases = ["/articles/2025/12/12/magi-claude-code-plugin"]
 tags = ["Tech", "Generative AI","Claude Code"]
 
 [extra]
+social_media_card = "ogp.webp"
 mermaid = true
 +++
 

@@ -6,6 +6,8 @@ aliases = ["/articles/2024/12/31/kimetsu-no-yaiba"]
 
 [taxonomies]
 tags = ["Movies","Anime", "Entertainment"]
+[extra]
+social_media_card = "ogp.webp"
 +++
 
 Hold onto your Nichirin Swords.

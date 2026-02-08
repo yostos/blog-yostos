@@ -6,6 +6,8 @@ aliases = ["/articles/2025/12/24/stranger-things"]
 
 [taxonomies]
 tags = ["Entertainment","Movies"]
+[extra]
+social_media_card = "ogp.webp"
 +++
 
 {{ youtube(id="tk9FDjJd6zM") }}

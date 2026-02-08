@@ -6,6 +6,8 @@ aliases = ["/articles/2025/01/04/sns"]
 
 [taxonomies]
 tags = ["Tech","Current Affairs"]
+[extra]
+social_media_card = "ogp.webp"
 +++
 
 ### 1. なぜ店舗はSNSのみで情報発信するのか

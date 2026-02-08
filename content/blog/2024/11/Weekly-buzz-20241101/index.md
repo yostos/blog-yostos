@@ -6,6 +6,8 @@ aliases = ["/articles/2024/11/01/Weekly-buzz-20241101"]
 
 [taxonomies]
 tags = ["Weekly Buzz", "Current Affairs"]
+[extra]
+social_media_card = "ogp.webp"
 +++
 
 今週は次の3つについてまとめました。

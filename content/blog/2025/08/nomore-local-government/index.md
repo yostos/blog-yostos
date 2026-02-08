@@ -6,6 +6,8 @@ aliases = ["/articles/2025/08/28/nomore-local-government"]
 
 [taxonomies]
 tags = ["Current Affairs", "Career"]
+[extra]
+social_media_card = "ogp.webp"
 +++
 
 I was intrigued by Minister of Internal Affairs Seiichiro Murakami's remarks at the House of Representatives Committee on Internal Affairs and Communications.

@@ -6,6 +6,8 @@ aliases = ["/articles/2025/09/30/inubousaki"]
 
 [taxonomies]
 tags = ["Drone", "Photography"]
+[extra]
+social_media_card = "ogp.webp"
 +++
 
 ![Inubosaki Lighthouse](inbousaki.webp)

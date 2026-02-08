@@ -6,6 +6,8 @@ aliases = ["/articles/2025/10/22/onoda-minister-of-economic-security"]
 
 [taxonomies]
 tags = ["Current Affairs"]
+[extra]
+social_media_card = "ogp.webp"
 +++
 
 かつて、これほど打てば響くような記者会見を行なう大臣がいただろうか？

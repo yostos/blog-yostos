@@ -6,6 +6,8 @@ aliases = ["/articles/2025/06/08/noon"]
 
 [taxonomies]
 tags = ["Photography","Photo Friday"]
+[extra]
+social_media_card = "ogp.webp"
 +++
 
 Photo Friday: [#noon](https://www.photofriday.com/yostos/16519/newest_first)

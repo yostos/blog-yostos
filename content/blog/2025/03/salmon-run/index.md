@@ -6,6 +6,8 @@ aliases = ["/articles/2025/03/20/salmon-run"]
 
 [taxonomies]
 tags = ["Splatoon", "Game"]
+[extra]
+social_media_card = "ogp.webp"
 +++
 
 今日のステージはムニ・エール海洋発電所です。

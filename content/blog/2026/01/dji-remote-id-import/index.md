@@ -10,6 +10,8 @@ aliases =["/articles/2026/01/20/dji-remote-id-import"]
 
 [taxonomies]
 tags =["Drone"]
+[extra]
+social_media_card = "ogp.webp"
 +++
 
 ![DJI NEO with FPV Goggles](drone.webp)

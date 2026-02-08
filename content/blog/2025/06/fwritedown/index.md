@@ -6,6 +6,8 @@ aliases = ["/articles/2025/06/02/fwritedown"]
 
 [taxonomies]
 tags = ["Drone"]
+[extra]
+social_media_card = "ogp.webp"
 +++
 
 ![FwriteDown](top.webp)

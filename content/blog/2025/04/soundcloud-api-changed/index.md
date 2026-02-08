@@ -6,6 +6,8 @@ aliases = ["/articles/2025/04/28/soundcloud-api-changed"]
 
 [taxonomies]
 tags = ["Tech","API"]
+[extra]
+social_media_card = "ogp.webp"
 +++
 
 直近数日の内にSoundCloudはAPIの仕様を変更したようです。自作のTypeScriptコンポーネントがうまく機能しなくなったために対応しました。

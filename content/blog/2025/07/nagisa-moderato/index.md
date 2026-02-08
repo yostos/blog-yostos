@@ -6,6 +6,8 @@ aliases = ["/articles/2025/07/26/nagisa-moderato"]
 
 [taxonomies]
 tags = ["Music", "Guitar"]
+[extra]
+social_media_card = "ogp.webp"
 +++
 
 ![YAMAHA REVSTAR](revstar.webp)

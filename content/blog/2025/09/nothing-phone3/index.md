@@ -6,6 +6,8 @@ aliases = ["/articles/2025/09/17/nothing-phone3"]
 
 [taxonomies]
 tags = ["Gadget"]
+[extra]
+social_media_card = "ogp.webp"
 +++
 
 ![Nothing Phone (3)](nothing.webp)

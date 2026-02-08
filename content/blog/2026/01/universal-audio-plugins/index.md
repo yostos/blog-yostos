@@ -13,6 +13,8 @@ aliases =["/articles/2026/01/11/universal-audio-plugins"]
 
 [taxonomies]
 tags =["Music Production","Software"]
+[extra]
+social_media_card = "ogp.webp"
 +++
 
 I took advantage of Universal Audio's sale to build my mastering-focused plugin collection. Here's a deep dive into the 5 legendary plugins I picked up. These include the Pultec EQP-1A, LA-2A, and Lexicon 224. I also got the SSL G Bus Compressor and Ampex ATR-102. I'll cover their fascinating history from The Beatles to 1980s pop. You'll also learn exactly how to use each one in Logic Pro on individual tracks, buses, or the master channel for professional results.

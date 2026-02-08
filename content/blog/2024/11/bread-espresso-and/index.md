@@ -6,6 +6,8 @@ aliases = ["/articles/2024/11/28/bread-espresso-and"]
 
 [taxonomies]
 tags = [ "Gourmet"]
+[extra]
+social_media_card = "ogp.webp"
 +++
 
 千葉公園に

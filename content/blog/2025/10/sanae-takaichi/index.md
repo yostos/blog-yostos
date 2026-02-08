@@ -6,6 +6,8 @@ aliases = ["/articles/2025/10/05/sanae-takaichi"]
 
 [taxonomies]
 tags = ["Current Affairs"]
+[extra]
+social_media_card = "ogp.webp"
 +++
 
 <details>

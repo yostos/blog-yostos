@@ -6,6 +6,8 @@ aliases = ["/articles/2025/08/29/wheat-colored-mermaid"]
 
 [taxonomies]
 tags = ["Music", "Guitar"]
+[extra]
+social_media_card = "ogp.webp"
 +++
 
 This song performed by Seiko Matsuda was originally released in July 1982,

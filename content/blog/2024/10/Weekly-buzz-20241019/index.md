@@ -6,6 +6,8 @@ aliases = ["/articles/2024/10/19/Weekly-buzz-20241019"]
 
 [taxonomies]
 tags = ["Weekly Buzz", "Current Affairs"]
+[extra]
+social_media_card = "ogp.webp"
 +++
 
 ## 宮崎空港不発弾について

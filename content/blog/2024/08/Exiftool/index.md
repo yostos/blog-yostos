@@ -6,6 +6,8 @@ aliases = ["/articles/2024/08/23/Exiftool"]
 
 [taxonomies]
 tags = ["Tech", "Photography", "CLI"]
+[extra]
+social_media_card = "ogp.webp"
 +++
 
 デジカメの日付の設定を間違えExifの日付を修正したかったが、

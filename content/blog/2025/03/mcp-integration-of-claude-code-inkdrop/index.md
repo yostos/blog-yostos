@@ -5,6 +5,7 @@ date = 2025-03-29
 aliases = ["/articles/2025/03/29/mcp-integration-of-claude-code-inkdrop"]
 
 [extra]
+social_media_card = "ogp.webp"
 mermaid = true
 
 [taxonomies]

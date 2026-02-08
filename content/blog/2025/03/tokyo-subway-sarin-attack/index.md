@@ -6,6 +6,8 @@ aliases = ["/articles/2025/03/26/tokyo-subway-sarin-attack"]
 
 [taxonomies]
 tags = ["Books"]
+[extra]
+social_media_card = "ogp.webp"
 +++
 
 ![](sarin.webp)

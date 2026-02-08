@@ -8,6 +8,8 @@ date = 2026-02-07
 
 [taxonomies]
 tags = ["drone", "Chiba"]
+[extra]
+social_media_card = "ogp.webp"
 +++
 
 1月に南房総へドローン空撮に行ってきました。

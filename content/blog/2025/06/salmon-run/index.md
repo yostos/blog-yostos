@@ -6,6 +6,8 @@ aliases = ["/articles/2025/06/10/salmon-run"]
 
 [taxonomies]
 tags = ["Splatoon", "Game"]
+[extra]
+social_media_card = "ogp.webp"
 +++
 
 仕事できる奴らと仕事すると楽しいです。

@@ -6,6 +6,8 @@ aliases = ["/articles/2024/09/15/Weekly-Buzz-20240913"]
 
 [taxonomies]
 tags = ["Weekly Buzz", "Current Affairs"]
+[extra]
+social_media_card = "ogp.webp"
 +++
 
 ## フジテレビ、「牛の屠殺」発言について

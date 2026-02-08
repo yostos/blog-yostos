@@ -6,6 +6,8 @@ aliases = ["/articles/2025/02/14/expo-problem"]
 
 [taxonomies]
 tags = ["Current Affairs", "Security"]
+[extra]
+social_media_card = "ogp.webp"
 +++
 
 2025年2月8日の読売新聞で「

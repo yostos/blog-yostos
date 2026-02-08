@@ -6,6 +6,8 @@ aliases = ["/articles/2025/04/13/to-you"]
 
 [taxonomies]
 tags = ["Music", "Guitar"]
+[extra]
+social_media_card = "ogp.webp"
 +++
 
 1983年ごろにシングルでリリースされた高中正義さんの「[To You](https://soundcloud.com/yostos/to-you?si=454fd11c1e9746e287ef038f9ad18a14&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing)」を弾いてみました。

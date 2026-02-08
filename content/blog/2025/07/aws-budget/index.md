@@ -6,6 +6,8 @@ aliases = ["/articles/2025/07/05/aws-budget"]
 
 [taxonomies]
 tags = ["Tech", "AWS"]
+[extra]
+social_media_card = "ogp.webp"
 +++
 
 <details>

@@ -6,6 +6,8 @@ aliases = ["/articles/2024/11/05/Fixing-s3-cloudfront-index-resolution"]
 
 [taxonomies]
 tags = ["Tech", "AWS","Weblog"]
+[extra]
+social_media_card = "ogp.webp"
 +++
 
 メインブログをCloudflareからAWS S3へと移行した際、

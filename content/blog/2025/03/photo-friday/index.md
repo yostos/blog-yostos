@@ -6,6 +6,8 @@ aliases = ["/articles/2025/03/25/photo-friday"]
 
 [taxonomies]
 tags = ["Photography","Photo Friday"]
+[extra]
+social_media_card = "ogp.webp"
 +++
 
 Photo Friday: [#contours](https://www.photofriday.com/yostos/16302)

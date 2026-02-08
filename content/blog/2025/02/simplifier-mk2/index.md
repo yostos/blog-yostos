@@ -6,6 +6,8 @@ aliases = ["/articles/2025/02/11/simplifier-mk2"]
 
 [taxonomies]
 tags = ["Guitar", "Guitar Pedals"]
+[extra]
+social_media_card = "ogp.webp"
 +++
 
 I had no major complaints about the Strymon Iridium I had been using for a long time,

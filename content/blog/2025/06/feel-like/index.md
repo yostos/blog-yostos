@@ -6,6 +6,8 @@ aliases = ["/articles/2025/06/06/feel-like"]
 
 [taxonomies]
 tags = ["Music", "Guitar"]
+[extra]
+social_media_card = "ogp.webp"
 +++
 
 ネオソウルのギター教室に行くと必ず課題曲になるという\"Feel Like Makin' Love\"。ギターを習いに行ったことないのでわかりませんが、弾いてみました。午後は東京湾ですが、スープを作って海岸でランチをいただきながらリラックスできました。

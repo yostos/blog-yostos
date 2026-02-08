@@ -78,3 +78,6 @@ public/
 node_modules/
 
 # End of https://www.toptal.com/developers/gitignore/api/macos,vim,rust,zola
+
+# OGP generation fonts (use local fonts)
+scripts/fonts/

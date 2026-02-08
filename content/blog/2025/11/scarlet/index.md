@@ -6,6 +6,8 @@ aliases = ["/articles/2025/11/21/scarlet"]
 
 [taxonomies]
 tags = ["Movies","Entertainment"]
+[extra]
+social_media_card = "ogp.webp"
 +++
 
 ![Scarlet](scarlet.webp)

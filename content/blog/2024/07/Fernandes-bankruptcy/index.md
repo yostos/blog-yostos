@@ -6,6 +6,8 @@ aliases = ["/articles/2024/07/15/Fernandes-bankruptcy"]
 
 [taxonomies]
 tags = ["Guitar","Current Affairs"]
+[extra]
+social_media_card = "ogp.webp"
 +++
 
 Fernandes went bankrupt.

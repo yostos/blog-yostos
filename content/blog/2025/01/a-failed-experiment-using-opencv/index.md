@@ -6,6 +6,8 @@ aliases = ["/articles/2025/01/06/a-failed-experiment-using-opencv"]
 
 [taxonomies]
 tags = ["Tech", "Photography","Python"]
+[extra]
+social_media_card = "ogp.webp"
 +++
 
 ### Organizing Old Photographs

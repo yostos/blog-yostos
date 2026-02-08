@@ -6,6 +6,8 @@ aliases = ["/articles/2025/04/15/synthesizer-v-studio-2-pro"]
 
 [taxonomies]
 tags = ["Music", "Software", "Music Production"]
+[extra]
+social_media_card = "ogp.webp"
 +++
 
 とりあえず、昨年Synthersizer V 1で作った藤原さくらさんの「[Just One Girl](https://soundcloud.com/yostos/just-one-girl-1?si=b7db2a56715c423eb6402905f5029c64&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing)

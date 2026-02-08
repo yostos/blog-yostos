@@ -6,6 +6,8 @@ aliases = ["/articles/2025/08/26/sonicake-pocket-master"]
 
 [taxonomies]
 tags = ["Guitar Pedals"]
+[extra]
+social_media_card = "ogp.webp"
 +++
 
 ![Sonic Pocket Master](pocket-master.webp)

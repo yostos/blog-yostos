@@ -6,6 +6,8 @@ aliases = ["/articles/2024/08/25/Weekly-buzz-20240824"]
 
 [taxonomies]
 tags = ["Weekly Buzz","Current Affairs"]
+[extra]
+social_media_card = "ogp.webp"
 +++
 
 ## 『劇場総集編 ぼっち・ざ・ろっく Re:Re:』鑑賞からの考察

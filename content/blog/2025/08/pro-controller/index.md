@@ -6,6 +6,8 @@ aliases = ["/articles/2025/08/19/pro-controller"]
 
 [taxonomies]
 tags = ["Game"]
+[extra]
+social_media_card = "ogp.webp"
 +++
 
 プロコンが壊れました。

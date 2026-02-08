@@ -6,6 +6,8 @@ aliases = ["/articles/2024/08/09/Software-Development-Using-AI"]
 
 [taxonomies]
 tags = ["Tech", "Generative AI","Software Engineering"]
+[extra]
+social_media_card = "ogp.webp"
 +++
 
 日本語は下の方に。

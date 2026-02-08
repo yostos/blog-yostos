@@ -6,6 +6,8 @@ aliases = ["/articles/2025/07/18/openai-pwd-change"]
 
 [taxonomies]
 tags = ["Tech", "Security"]
+[extra]
+social_media_card = "ogp.webp"
 +++
 
 最近はずっとClaudeを利用していてChatGPT/OpenAIはご無沙汰しています。

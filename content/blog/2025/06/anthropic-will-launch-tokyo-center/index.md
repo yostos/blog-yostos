@@ -6,6 +6,8 @@ aliases = ["/articles/2025/06/26/anthropic-will-launch-tokyo-center"]
 
 [taxonomies]
 tags = ["Tech", "Generative AI"]
+[extra]
+social_media_card = "ogp.webp"
 +++
 
 <details>

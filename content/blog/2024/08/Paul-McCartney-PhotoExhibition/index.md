@@ -6,6 +6,8 @@ aliases = ["/articles/2024/08/08/Paul-McCartney-PhotoExhibition"]
 
 [taxonomies]
 tags = ["Photography", "Art"]
+[extra]
+social_media_card = "ogp.webp"
 +++
 
 ![Paul McCartney’s photo exhibition](paul.jpg)

@@ -6,6 +6,8 @@ aliases = ["/articles/2024/12/19/berkeley-mono"]
 
 [taxonomies]
 tags = ["Tech","Font"]
+[extra]
+social_media_card = "ogp.webp"
 +++
 
 ずっとMacのターミナルでは[MonoLisa](https://www.monolisa.dev/)フォントを利用してきましたが、

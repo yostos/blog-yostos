@@ -6,6 +6,8 @@ aliases = ["/articles/2025/04/10/drown-lisence"]
 
 [taxonomies]
 tags = ["Certification", "Drone"]
+[extra]
+social_media_card = "ogp.webp"
 +++
 
 ## 二等無人航空機操縦士技能証明書

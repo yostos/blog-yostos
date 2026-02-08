@@ -6,6 +6,8 @@ aliases = ["/articles/2024/08/27/Richo-gr-iiix"]
 
 [taxonomies]
 tags = ["Photography"]
+[extra]
+social_media_card = "ogp.webp"
 +++
 
 久しぶりにデジタルカメラを購入しました。RICOH GR IIIx HDFです。

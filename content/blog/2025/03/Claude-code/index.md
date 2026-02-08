@@ -6,6 +6,8 @@ aliases = ["/articles/2025/03/12/Claude-code"]
 
 [taxonomies]
 tags = ["Tech", "Generative AI","Claude Code"]
+[extra]
+social_media_card = "ogp.webp"
 +++
 
 [Claude Code]: https://docs.anthropic.com/en/docs/agents-and-tools/claude-code/overview

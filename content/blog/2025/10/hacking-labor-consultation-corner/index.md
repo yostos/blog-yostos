@@ -6,6 +6,8 @@ aliases = ["/articles/2025/10/28/hacking-labor-consultation-corner"]
 
 [taxonomies]
 tags = ["Career"]
+[extra]
+social_media_card = "ogp.webp"
 +++
 
 ![CIAC](ciac.webp)

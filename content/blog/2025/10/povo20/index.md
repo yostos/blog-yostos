@@ -6,6 +6,8 @@ aliases = ["/articles/2025/10/13/povo20"]
 
 [taxonomies]
 tags = ["Gadget"]
+[extra]
+social_media_card = "ogp.webp"
 +++
 
 ![POVO2.0](povo.webp)

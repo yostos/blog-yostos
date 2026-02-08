@@ -6,6 +6,8 @@ aliases = ["/articles/2024/08/26/Oyama-senmaida"]
 
 [taxonomies]
 tags = ["Travel", "Photography"]
+[extra]
+social_media_card = "ogp.webp"
 +++
 
 ![](R0000090.jpg)

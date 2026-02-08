@@ -6,6 +6,8 @@ aliases = ["/articles/2025/03/08/Portfolio-site-for-engieer"]
 
 [taxonomies]
 tags = ["Tech","Web"]
+[extra]
+social_media_card = "ogp.webp"
 +++
 
 今更ながら年初からWebデザインを教わるというシーンがありました。

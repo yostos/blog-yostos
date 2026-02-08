@@ -6,6 +6,8 @@ aliases = ["/articles/2025/06/17/2025-summer-sizzle-season"]
 
 [taxonomies]
 tags = ["Splatoon", "Game"]
+[extra]
+social_media_card = "ogp.webp"
 +++
 
 今更ですが、新シーズンなのでがんばりましょう。新武器がたくさん追加されましたが、今シーズンはケルビンで戦いましょう。

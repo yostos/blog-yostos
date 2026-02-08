@@ -6,6 +6,8 @@ aliases = ["/articles/2025/12/03/minister-of-finance"]
 
 [taxonomies]
 tags = ["Current Affairs"]
+[extra]
+social_media_card = "ogp.webp"
 +++
 
 ## 内閣発足1ヶ月で示された、本質的な改革

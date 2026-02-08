@@ -6,6 +6,8 @@ aliases = ["/articles/2025/11/18/amber-glint"]
 
 [taxonomies]
 tags = ["Photography", "Photo Friday"]
+[extra]
+social_media_card = "ogp.webp"
 +++
 
 ![Amber Glint](amber-glint.webp)

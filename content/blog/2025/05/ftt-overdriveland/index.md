@@ -6,6 +6,8 @@ aliases = ["/articles/2025/05/02/ftt-overdriveland"]
 
 [taxonomies]
 tags = ["Guitar Pedals"]
+[extra]
+social_media_card = "ogp.webp"
 +++
 
 ![Overdriveland](od1.webp)

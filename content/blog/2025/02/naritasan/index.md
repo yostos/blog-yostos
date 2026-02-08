@@ -6,6 +6,8 @@ aliases = ["/articles/2025/02/13/naritasan"]
 
 [taxonomies]
 tags = ["Travel"]
+[extra]
+social_media_card = "ogp.webp"
 +++
 
 <figure>

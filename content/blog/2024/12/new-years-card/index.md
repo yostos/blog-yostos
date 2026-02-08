@@ -6,6 +6,8 @@ aliases = ["/articles/2024/12/25/new-years-card"]
 
 [taxonomies]
 tags = ["Life"]
+[extra]
+social_media_card = "ogp.webp"
 +++
 
 Years ago, I used to enjoy making woodblock prints and illustrations for

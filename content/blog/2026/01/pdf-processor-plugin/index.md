@@ -11,6 +11,8 @@ aliases =["/articles/2026/01/02/pdf-processor-plugin"]
 
 [taxonomies]
 tags =["Tech","Claude Code","PDF"]
+[extra]
+social_media_card = "ogp.webp"
 +++
 
 ## はじめに

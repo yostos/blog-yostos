@@ -6,6 +6,8 @@ aliases = ["/articles/2025/06/28/summer-you"]
 
 [taxonomies]
 tags = ["Music", "Guitar"]
+[extra]
+social_media_card = "ogp.webp"
 +++
 
 夏です。6月で梅雨明け宣言はまだですが、マジで夏です。

@@ -6,6 +6,8 @@ aliases = ["/articles/2024/10/28/Kamikita"]
 
 [taxonomies]
 tags = ["Travel"]
+[extra]
+social_media_card = "ogp.webp"
 +++
 
 宿の脇を流れる小谷川は大台ケ原からの伏流水が注ぐ清流。上流に人は住まないため

@@ -6,6 +6,8 @@ aliases = ["/articles/2025/10/07/worst-boss"]
 
 [taxonomies]
 tags = ["Career"]
+[extra]
+social_media_card = "ogp.webp"
 +++
 
 Diamond Onlineで素敵な記事を見つけました。

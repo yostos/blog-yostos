@@ -5,6 +5,8 @@
   "scripts": {
     "lint": "textlint \"content/**/*.md\"",
     "lint:fix": "textlint --fix \"content/**/*.md\"",
+    "ogp": "node scripts/generate-ogp.mjs",
+    "ogp:dry-run": "node scripts/generate-ogp.mjs --dry-run",
     "prepare": "husky"
   },
   "lint-staged": {
@@ -13,9 +15,14 @@
     ]
   },
   "devDependencies": {
+    "@resvg/resvg-js": "^2.6.2",
     "@textlint-rule/textlint-rule-no-invalid-control-character": "^3.0.0",
+    "glob": "^13.0.1",
+    "gray-matter": "^4.0.3",
     "husky": "^9.1.7",
     "lint-staged": "^15.3.0",
+    "satori": "^0.19.1",
+    "sharp": "^0.34.5",
     "textlint": "^15.5.1",
     "textlint-filter-rule-allowlist": "^4.0.0",
     "textlint-filter-rule-comments": "^1.3.0",
@@ -23,6 +30,7 @@
     "textlint-plugin-mdx": "^1.0.2",
     "textlint-rule-no-mix-dearu-desumasu": "^6.0.4",
     "textlint-rule-preset-ja-spacing": "^2.4.3",
-    "textlint-rule-preset-ja-technical-writing": "^12.0.2"
+    "textlint-rule-preset-ja-technical-writing": "^12.0.2",
+    "toml": "^3.0.0"
   }
 }

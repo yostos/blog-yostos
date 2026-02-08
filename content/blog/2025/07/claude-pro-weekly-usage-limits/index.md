@@ -6,6 +6,8 @@ aliases = ["/articles/2025/07/29/claude-pro-weekly-usage-limits"]
 
 [taxonomies]
 tags = ["Tech", "Generative AI"]
+[extra]
+social_media_card = "ogp.webp"
 +++
 
 <details>

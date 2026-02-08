@@ -6,6 +6,8 @@ aliases = ["/articles/2024/12/26/ppse-classic"]
 
 [taxonomies]
 tags = ["Guitar","Guitar Pedals"]
+[extra]
+social_media_card = "ogp.webp"
 +++
 
 ![PPSE Classic and '79](r0000634.jpg)

@@ -6,6 +6,8 @@ aliases = ["/articles/2024/09/20/Weekly-buzz-20240920"]
 
 [taxonomies]
 tags = ["Weekly Buzz", "Current Affairs"]
+[extra]
+social_media_card = "ogp.webp"
 +++
 
 今週の気になった記事や出来事は次の3つです。

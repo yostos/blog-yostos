@@ -6,6 +6,8 @@ aliases = ["/articles/2024/11/18/awk"]
 
 [taxonomies]
 tags = ["Tech","Programming","Books"]
+[extra]
+social_media_card = "ogp.webp"
 +++
 
 『[プログラミング言語AWK 第2版](https://amzn.to/43TVF97)』が出ていました。

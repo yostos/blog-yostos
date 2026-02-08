@@ -6,6 +6,8 @@ aliases = ["/articles/2025/06/28/claude-desktop-fastmail-mcp"]
 
 [taxonomies]
 tags = ["Tech", "Generative AI"]
+[extra]
+social_media_card = "ogp.webp"
 +++
 
 ![Mail with AI](mail.webp)

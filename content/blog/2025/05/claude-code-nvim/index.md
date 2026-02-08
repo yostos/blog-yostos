@@ -6,6 +6,8 @@ aliases = ["/articles/2025/05/04/claude-code-nvim"]
 
 [taxonomies]
 tags = ["Tech", "Generative AI"]
+[extra]
+social_media_card = "ogp.webp"
 +++
 
 ![Claude-Code-Nvim](claude-code-nvim.webp)

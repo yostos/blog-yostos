@@ -6,6 +6,8 @@ aliases = ["/articles/2025/04/10/anthropic-max-plan"]
 
 [taxonomies]
 tags = ["Tech", "Generative AI"]
+[extra]
+social_media_card = "ogp.webp"
 +++
 
 今朝Anthropicから新しいプランの案内する次のようなメールが来ていました。

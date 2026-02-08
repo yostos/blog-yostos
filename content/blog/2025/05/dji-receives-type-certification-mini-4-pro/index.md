@@ -6,6 +6,8 @@ aliases = ["/articles/2025/05/29/dji-receives-type-certification-mini-4-pro"]
 
 [taxonomies]
 tags = ["Drone"]
+[extra]
+social_media_card = "ogp.webp"
 +++
 
 <details>

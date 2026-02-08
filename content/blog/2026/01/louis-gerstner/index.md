@@ -10,6 +10,8 @@ aliases =["/articles/2026/01/01/louis-gerstner"]
 
 [taxonomies]
 tags =["Current Affairs","IBM"]
+[extra]
+social_media_card = "ogp.webp"
 +++
 
 IBMの現CEO、アービンド・クリシュナ氏が2025年12月28日（日曜日）に従業員へのメールで

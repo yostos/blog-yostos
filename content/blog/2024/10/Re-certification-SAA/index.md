@@ -6,6 +6,8 @@ aliases = ["/articles/2024/10/11/Re-certification-SAA"]
 
 [taxonomies]
 tags = ["Career", "Certification","AWS"]
+[extra]
+social_media_card = "ogp.webp"
 +++
 
 「SAPじゃなく、3年前のSAAの再認定だし楽勝だ」と思いフラリと受験しました。

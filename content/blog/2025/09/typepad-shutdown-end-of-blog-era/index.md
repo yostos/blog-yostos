@@ -6,6 +6,8 @@ aliases = ["/articles/2025/09/09/typepad-shutdown-end-of-blog-era"]
 
 [taxonomies]
 tags = ["Tech", "Weblog"]
+[extra]
+social_media_card = "ogp.webp"
 +++
 
 ![Typepad](typepad.webp)

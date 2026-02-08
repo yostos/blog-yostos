@@ -6,6 +6,8 @@ aliases = ["/articles/2025/08/06/government-fails-rice-policy-reversal"]
 
 [taxonomies]
 tags = ["Current Affairs"]
+[extra]
+social_media_card = "ogp.webp"
 +++
 
 2025年8月5日、石破総理は[第3回米の安定供給等実現関係閣僚会議](https://www.kantei.go.jp/jp/103/actions/202508/05kome_anteikyoukyuu.html)を開催し、ついに米の生産量不足を認め、増産への政策転換を表明しました。

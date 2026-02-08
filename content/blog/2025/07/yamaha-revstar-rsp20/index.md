@@ -6,6 +6,8 @@ aliases = ["/articles/2025/07/22/yamaha-revstar-rsp20"]
 
 [taxonomies]
 tags = ["Guitar"]
+[extra]
+social_media_card = "ogp.webp"
 +++
 
 ![YAMAHA REVSTAR](revstar.webp)

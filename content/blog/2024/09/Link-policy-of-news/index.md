@@ -6,6 +6,8 @@ aliases = ["/articles/2024/09/10/Link-policy-of-news"]
 
 [taxonomies]
 tags = ["Current Affairs","Old Media"]
+[extra]
+social_media_card = "ogp.webp"
 +++
 
 2000年代と違って少しはまともになってきたようです。

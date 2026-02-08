@@ -6,6 +6,8 @@ aliases = ["/articles/2025/10/01/workplace"]
 
 [taxonomies]
 tags = ["Splatoon", "Game"]
+[extra]
+social_media_card = "ogp.webp"
 +++
 
 スプラトゥーンやっていたら、どこかの職場みたいな状況で草。

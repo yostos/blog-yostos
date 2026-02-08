@@ -6,6 +6,8 @@ aliases = ["/articles/2025/04/07/pe-1500ri"]
 
 [taxonomies]
 tags = ["Guitar"]
+[extra]
+social_media_card = "ogp.webp"
 +++
 
 ![Aria Pro II PE1500RI](pe-1500.webp)

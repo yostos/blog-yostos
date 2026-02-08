@@ -6,6 +6,8 @@ aliases = ["/articles/2025/04/20/ac-booster-v2"]
 
 [taxonomies]
 tags = ["Guitar Pedals","Guitar","Music"]
+[extra]
+social_media_card = "ogp.webp"
 +++
 
 ![AC Booster V2](ac-booster-v2.webp)

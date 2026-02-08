@@ -6,6 +6,8 @@ aliases = ["/articles/2025/08/01/korg-trs"]
 
 [taxonomies]
 tags = ["Guitar Pedals"]
+[extra]
+social_media_card = "ogp.webp"
 +++
 
 ![KORG Nu:tekt TR-S](trs.webp)

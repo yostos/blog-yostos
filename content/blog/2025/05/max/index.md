@@ -6,6 +6,8 @@ aliases = ["/articles/2025/05/24/max"]
 
 [taxonomies]
 tags = ["Guitar Pedals","Guitar","Music"]
+[extra]
+social_media_card = "ogp.webp"
 +++
 
 ![UAFX Max Preamp & Dual Compressor](max.webp)

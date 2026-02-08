@@ -6,6 +6,8 @@ aliases = ["/articles/2025/09/19/kimetsu-no-yaiba"]
 
 [taxonomies]
 tags = ["Anime", "Movies", "Entertainment"]
+[extra]
+social_media_card = "ogp.webp"
 +++
 
 ![鬼滅の刃](kimetsu.webp)

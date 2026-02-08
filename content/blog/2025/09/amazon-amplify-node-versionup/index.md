@@ -6,6 +6,8 @@ aliases = ["/articles/2025/09/14/amazon-amplify-node-versionup"]
 
 [taxonomies]
 tags = ["Tech", "AWS","Node"]
+[extra]
+social_media_card = "ogp.webp"
 +++
 
 I recieved the following email from AWS.

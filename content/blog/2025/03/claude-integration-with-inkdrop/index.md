@@ -6,6 +6,8 @@ aliases = ["/articles/2025/03/28/claude-integration-with-inkdrop"]
 
 [taxonomies]
 tags = ["Tech", "Generative AI"]
+[extra]
+social_media_card = "ogp.webp"
 +++
 
 作者の方の記事「

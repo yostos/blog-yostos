@@ -4,6 +4,7 @@ description = "AWSが提供するAmazon SNS(Simple Notification Service)を使�
 date = 2025-06-09
 aliases = ["/articles/2025/06/09/aws-sns"]
 [extra]
+social_media_card = "ogp.webp"
 mermaid = true
 
 [taxonomies]

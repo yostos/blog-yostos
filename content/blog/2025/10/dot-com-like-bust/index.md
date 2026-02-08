@@ -6,6 +6,8 @@ aliases = ["/articles/2025/10/31/dot-com-like-bust"]
 
 [taxonomies]
 tags = ["Tech", "Generative AI", "Current Affairs"]
+[extra]
+social_media_card = "ogp.webp"
 +++
 
 「[OpenAI Chairman Says a Dot-Com-Like Bust Wouldn’t Be All Bad](https://news.bloomberglaw.com/artificial-intelligence/openai-chairman-says-a-dot-com-like-bust-wouldnt-be-all-bad)」

@@ -6,6 +6,8 @@ aliases = ["/articles/2025/04/08/openai-mcp-support"]
 
 [taxonomies]
 tags = ["Tech", "Generative AI"]
+[extra]
+social_media_card = "ogp.webp"
 +++
 
 ## AltmanのツイートによるMCP対応のアナウンス

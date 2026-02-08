@@ -6,6 +6,8 @@ aliases = ["/articles/2025/03/27/to-sir-with-love"]
 
 [taxonomies]
 tags = ["Music","Guitar"]
+[extra]
+social_media_card = "ogp.webp"
 +++
 
 1967年公開の映画『To Sir, With Love』[^1] の主題歌だったらしく、

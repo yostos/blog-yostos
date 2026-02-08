@@ -6,6 +6,8 @@ aliases = ["/articles/2025/10/09/mx-ergo-s"]
 
 [taxonomies]
 tags = ["Gadget"]
+[extra]
+social_media_card = "ogp.webp"
 +++
 
 ![MX ERGO S](ergo-s.webp)

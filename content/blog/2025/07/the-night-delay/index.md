@@ -6,6 +6,8 @@ aliases = ["/articles/2025/07/18/the-night-delay"]
 
 [taxonomies]
 tags = ["Music", "Guitar"]
+[extra]
+social_media_card = "ogp.webp"
 +++
 
 ## 箱根仙石原の夜空

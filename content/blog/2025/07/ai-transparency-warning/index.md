@@ -6,6 +6,8 @@ aliases = ["/articles/2025/07/24/ai-transparency-warning"]
 
 [taxonomies]
 tags = ["Tech", "Generative AI","Security"]
+[extra]
+social_media_card = "ogp.webp"
 +++
 
 ## 主要AI企業による警告

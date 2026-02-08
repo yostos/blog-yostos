@@ -6,6 +6,8 @@ aliases = ["/articles/2025/04/02/switch2"]
 
 [taxonomies]
 tags = ["Game"]
+[extra]
+social_media_card = "ogp.webp"
 +++
 
 ![Switch2](switch.webp)

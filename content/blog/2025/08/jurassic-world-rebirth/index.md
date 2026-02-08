@@ -6,6 +6,8 @@ aliases = ["/articles/2025/08/26/jurassic-world-rebirth"]
 
 [taxonomies]
 tags = ["Movies", "Music", "Entertainment"]
+[extra]
+social_media_card = "ogp.webp"
 +++
 
 上演時間が短く感じるほど退屈はしませんでした。楽しめはします。

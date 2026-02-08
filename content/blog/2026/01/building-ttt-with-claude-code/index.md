@@ -13,6 +13,7 @@ aliases =["/articles/2026/01/23/building-ttt-with-claude-code"]
 tags =["Tech", "OSS", "Go", "CLI", "Task Management"]
 
 [extra]
+social_media_card = "ogp.webp"
 canonical_url = "https://zenn.dev/yostos/articles/building-ttt-with-claude-code"
 +++
 

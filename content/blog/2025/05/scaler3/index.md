@@ -6,6 +6,8 @@ aliases = ["/articles/2025/05/31/scaler3"]
 
 [taxonomies]
 tags = ["Music Production", "Software"]
+[extra]
+social_media_card = "ogp.webp"
 +++
 
 ![Scaler3](scaler3.webp)

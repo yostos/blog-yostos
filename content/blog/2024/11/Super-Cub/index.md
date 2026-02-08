@@ -6,6 +6,8 @@ aliases = ["/articles/2024/11/01/Super-Cub"]
 
 [taxonomies]
 tags = ["Current Affairs","Motor Cycle"]
+[extra]
+social_media_card = "ogp.webp"
 +++
 
 Honda's Super Cub 50cc, which has been in production for nearly 80 years,

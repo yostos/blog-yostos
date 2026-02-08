@@ -6,6 +6,8 @@ aliases = ["/articles/2025/04/07/open-graph-protocol"]
 
 [taxonomies]
 tags = ["Tech", "Web"]
+[extra]
+social_media_card = "ogp.webp"
 +++
 
 ## Open Graph Protocolとは

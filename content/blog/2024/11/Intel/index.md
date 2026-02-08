@@ -6,6 +6,8 @@ aliases = ["/articles/2024/11/01/Intel"]
 
 [taxonomies]
 tags = ["Tech", "Current Affairs"]
+[extra]
+social_media_card = "ogp.webp"
 +++
 
 <blockquote cite="https://www3.nhk.or.jp/news/html/20241101/k10014625881000.html">

@@ -6,6 +6,8 @@ aliases = ["/articles/2024/10/23/Modern-messaging-apps"]
 
 [taxonomies]
 tags = ["Tech","Messaging Apps" ,"Security"]
+[extra]
+social_media_card = "ogp.webp"
 +++
 
 市川強盗傷害事件で犯人たちが「秘匿性が高い通信アプリを使用」とアプリ名を伏せて報道されています。

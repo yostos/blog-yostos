@@ -10,6 +10,7 @@ date = 2026-02-06
 [taxonomies]
 tags = ["Security", "SSG"]
 [extra]
+social_media_card = "ogp.webp"
 mermaid = true
 canonical_url = "https://zenn.dev/yostos/articles/github-pages-security-headers"
 +++

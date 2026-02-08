@@ -6,6 +6,8 @@ aliases = ["/articles/2025/04/16/aws-mcp-servers"]
 
 [taxonomies]
 tags = ["Tech", "AWS", "Generative AI"]
+[extra]
+social_media_card = "ogp.webp"
 +++
 
 ## 公式ブログ記事の概要

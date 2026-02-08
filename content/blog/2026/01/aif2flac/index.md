@@ -11,6 +11,8 @@ aliases =["/articles/2026/01/14/aif2flac"]
 
 [taxonomies]
 tags =["Music Production","CLI"]
+[extra]
+social_media_card = "ogp.webp"
 +++
 
 ## 背景

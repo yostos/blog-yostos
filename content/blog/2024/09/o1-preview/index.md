@@ -6,6 +6,8 @@ aliases = ["/articles/2024/09/17/o1-preview"]
 
 [taxonomies]
 tags = ["Tech", "Generative AI"]
+[extra]
+social_media_card = "ogp.webp"
 +++
 
 Currently evaluating OpenAI's o1-preview. Although it is said that it is not

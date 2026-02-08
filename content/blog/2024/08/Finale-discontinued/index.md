@@ -6,6 +6,8 @@ aliases = ["/articles/2024/08/27/Finale-discontinued"]
 
 [taxonomies]
 tags = ["Music", "Software"]
+[extra]
+social_media_card = "ogp.webp"
 +++
 
 採譜ソフトのFinaleが開発・販売を終了するそうです。

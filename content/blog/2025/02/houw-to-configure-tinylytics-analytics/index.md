@@ -6,6 +6,8 @@ aliases = ["/articles/2025/02/25/houw-to-configure-tinylytics-analytics"]
 
 [taxonomies]
 tags = ["Tech","Weblog"]
+[extra]
+social_media_card = "ogp.webp"
 +++
 
 ## Why is this code needed?

@@ -6,6 +6,8 @@ aliases = ["/articles/2025/05/17/feedbacks-feel"]
 
 [taxonomies]
 tags = ["Music", "Guitar"]
+[extra]
+social_media_card = "ogp.webp"
 +++
 
 ディストーションにBOSS DF-1を使っていて、うっかり位相をそのままミックスダウンしていました。修正版です。

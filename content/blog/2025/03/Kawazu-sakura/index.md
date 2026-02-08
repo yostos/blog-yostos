@@ -6,6 +6,8 @@ aliases = ["/articles/2025/03/06/Kawazu-sakura"]
 
 [taxonomies]
 tags = ["Photography","Seasons"]
+[extra]
+social_media_card = "ogp.webp"
 +++
 
 寒さが厳しいと思いながら千葉ポートパークを散歩していたら、もう桜が咲いていました。カワヅザクラかな。

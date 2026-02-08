@@ -6,6 +6,8 @@ aliases = ["/articles/2025/10/20/zama-komei"]
 
 [taxonomies]
 tags = ["Current Affairs"]
+[extra]
+social_media_card = "ogp.webp"
 +++
 
 自民党と日本維新の会との「連立」が合意されたようです。

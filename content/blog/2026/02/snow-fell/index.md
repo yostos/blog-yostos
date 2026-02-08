@@ -6,7 +6,11 @@ Living in Chiba, snow is a rare sight. Today, February 8, 2026, it's snowing on 
 date = 2026-02-08
 [taxonomies]
 tags =["Current Affairs"]
+[extra]
+social_media_card = "ogp.webp"
 +++
+
+![Cover](./cover.webp)
 
 Living in Chiba, snow is a rare sight. Today, February 8, 2026, it's snowing on
 election day. I walked through the park this morning to capture the snow-covered

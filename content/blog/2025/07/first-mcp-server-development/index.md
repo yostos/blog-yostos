@@ -6,6 +6,8 @@ aliases = ["/articles/2025/07/08/first-mcp-server-development"]
 
 [taxonomies]
 tags = ["Tech", "Generative AI","CLI","TypeScript"]
+[extra]
+social_media_card = "ogp.webp"
 +++
 
 <details>

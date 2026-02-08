@@ -6,6 +6,8 @@ aliases = ["/articles/2025/08/24/ukishima"]
 
 [taxonomies]
 tags = ["Drone", "Travel"]
+[extra]
+social_media_card = "ogp.webp"
 +++
 
 浮島は千葉県鋸南町の勝山漁港の目の間にある無人島です。

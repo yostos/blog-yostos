@@ -6,6 +6,8 @@ aliases = ["/articles/2025/01/01/logseq"]
 
 [taxonomies]
 tags = ["Tech", "Software","Productivity","Note-taking"]
+[extra]
+social_media_card = "ogp.webp"
 +++
 
  <details>

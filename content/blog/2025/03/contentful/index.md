@@ -6,6 +6,8 @@ aliases = ["/articles/2025/03/24/contentful"]
 
 [taxonomies]
 tags = ["Tech","Web"]
+[extra]
+social_media_card = "ogp.webp"
 +++
 
 ## Contentfulとは

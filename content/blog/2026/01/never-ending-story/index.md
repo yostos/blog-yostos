@@ -12,6 +12,8 @@ aliases =["/articles/2026/01/04/never-ending-story"]
 
 [taxonomies]
 tags =["Music","Movies"]
+[extra]
+social_media_card = "ogp.webp"
 +++
 
 『Stranger Things』の最終話を見終え、私はまだ余韻に浸っています。

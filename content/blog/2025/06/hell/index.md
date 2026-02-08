@@ -6,6 +6,8 @@ aliases = ["/articles/2025/06/10/hell"]
 
 [taxonomies]
 tags = ["Drone"]
+[extra]
+social_media_card = "ogp.webp"
 +++
 
 こういうことがあると心配で公園にも行けなくなります。

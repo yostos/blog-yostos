@@ -6,6 +6,8 @@ aliases = ["/articles/2025/05/23/claude4"]
 
 [taxonomies]
 tags = ["Tech", "Generative AI"]
+[extra]
+social_media_card = "ogp.webp"
 +++
 
 Anthropicが開発者会議「Code with Claude」で推論能力と深い思考能力が大きく向上した新しいモデルClaude 4を発表しました。

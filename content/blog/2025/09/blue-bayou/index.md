@@ -6,6 +6,8 @@ aliases = ["/articles/2025/09/28/blue-bayou"]
 
 [taxonomies]
 tags = ["Music", "Guitar", "Movies", "Entertainment"]
+[extra]
+social_media_card = "ogp.webp"
 +++
 
 I watched the Denzel Washington movie "Man on Fire" on Netflix, a slightly older film (known as "My Bodyguard" in Japan).

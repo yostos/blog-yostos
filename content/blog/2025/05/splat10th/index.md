@@ -6,6 +6,8 @@ aliases = ["/articles/2025/05/28/splat10th"]
 
 [taxonomies]
 tags = ["Splatoon", "Game"]
+[extra]
+social_media_card = "ogp.webp"
 +++
 
 今シーズンあまりできませんでしたが、10周年おめでとう。

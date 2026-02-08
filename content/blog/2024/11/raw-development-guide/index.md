@@ -6,6 +6,8 @@ aliases = ["/articles/2024/11/25/raw-development-guide"]
 
 [taxonomies]
 tags = ["Photography", "Tech"]
+[extra]
+social_media_card = "ogp.webp"
 +++
 
 ## Introduction

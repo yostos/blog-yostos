@@ -6,6 +6,8 @@ aliases = ["/articles/2025/12/13/keikokubashi"]
 
 [taxonomies]
 tags = ["Drone", "Photography"]
+[extra]
+social_media_card = "ogp.webp"
 +++
 
 ![渓谷橋](keikokubashi.webp)

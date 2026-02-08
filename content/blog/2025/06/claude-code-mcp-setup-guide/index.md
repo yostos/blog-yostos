@@ -6,6 +6,8 @@ aliases = ["/articles/2025/06/21/claude-code-mcp-setup-guide"]
 
 [taxonomies]
 tags = ["Tech", "Generative AI","Claude Code"]
+[extra]
+social_media_card = "ogp.webp"
 +++
 
 <details>

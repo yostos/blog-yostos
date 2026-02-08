@@ -6,6 +6,8 @@ aliases = ["/articles/2025/04/23/blender-mcp"]
 
 [taxonomies]
 tags = ["Tech", "Generative AI"]
+[extra]
+social_media_card = "ogp.webp"
 +++
 
 Blender界隈でBlenderとClaudeをMCP接続してClaudeに3Dモデリングさせるというのが話題なので実際に試してみました。自然言語で依頼するとClaudeがモデリングツールを操作してくれます。

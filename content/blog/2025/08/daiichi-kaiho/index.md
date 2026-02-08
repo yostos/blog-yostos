@@ -6,6 +6,8 @@ aliases = ["/articles/2025/08/11/daiichi-kaiho"]
 
 [taxonomies]
 tags = ["Drone", "Travel"]
+[extra]
+social_media_card = "ogp.webp"
 +++
 
 <details>

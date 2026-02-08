@@ -6,6 +6,8 @@ aliases = ["/articles/2025/06/27/workman-windcore"]
 
 [taxonomies]
 tags = ["Gadget","Seasons"]
+[extra]
+social_media_card = "ogp.webp"
 +++
 
 ![Workman Windcore](windcore.webp)

@@ -6,6 +6,8 @@ aliases = ["/articles/2025/01/10/how-to-merge-and-optimize-pdf"]
 
 [taxonomies]
 tags = ["Tech","PDF","CLI"]
+[extra]
+social_media_card = "ogp.webp"
 +++
 
 ## Bypassing PDF Password Protection

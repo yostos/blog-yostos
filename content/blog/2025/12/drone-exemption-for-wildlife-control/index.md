@@ -6,6 +6,8 @@ aliases = ["/articles/2025/12/10/drone-exemption-for-wildlife-control"]
 
 [taxonomies]
 tags = ["Drone", "Current Affairs"]
+[extra]
+social_media_card = "ogp.webp"
 +++
 
 ## 航空法第132条の92の特例とは

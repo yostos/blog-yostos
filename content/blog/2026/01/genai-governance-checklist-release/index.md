@@ -12,6 +12,7 @@ date = 2026-01-29
 tags =["Tech","Generative AI","IT Governance"]
 
 [extra]
+social_media_card = "ogp.webp"
 canonical_url = "https://zenn.dev/yostos/articles/genai-governance-checklist-release"
 +++
 

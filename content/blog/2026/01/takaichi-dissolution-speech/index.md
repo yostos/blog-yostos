@@ -10,6 +10,8 @@ aliases =["/articles/2026/01/21/takaichi-dissolution-speech"]
 
 [taxonomies]
 tags =["Current Affairs"]
+[extra]
+social_media_card = "ogp.webp"
 +++
 
 <figure>

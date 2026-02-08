@@ -10,6 +10,8 @@ aliases =["/articles/2026/01/01/dirty-aespa"]
 
 [taxonomies]
 tags =["Current Affairs", "Old Media"]
+[extra]
+social_media_card = "ogp.webp"
 +++
 
 ## The Ratings Drop Mystery

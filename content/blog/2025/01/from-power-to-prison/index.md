@@ -6,6 +6,8 @@ aliases = ["/articles/2025/01/15/from-power-to-prison"]
 
 [taxonomies]
 tags = ["Current Affairs","Korea"]
+[extra]
+social_media_card = "ogp.webp"
 +++
 
 South Korea has a strong national anti-Japanese consciousness, and although it is a neighboring country, I usually pay no attention to it. However, the fate of not only this incident but also that of successive presidents is so extraordinary that I decided to compile this overview.

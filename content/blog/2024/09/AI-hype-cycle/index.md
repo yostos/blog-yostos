@@ -6,6 +6,8 @@ aliases = ["/articles/2024/09/11/AI-hype-cycle"]
 
 [taxonomies]
 tags = ["Tech", "Generative AI"]
+[extra]
+social_media_card = "ogp.webp"
 +++
 
 幻滅期に入っているとも言われますが、「マルチモーダル」はAIの使い勝手を劇的に変えてくれます。

@@ -6,6 +6,8 @@ aliases = ["/articles/2025/09/15/kadoma-r"]
 
 [taxonomies]
 tags = ["Design","Font"]
+[extra]
+social_media_card = "ogp.webp"
 +++
 
 ![カドマ-R](kadoma-r.webp)

@@ -6,6 +6,8 @@ aliases = ["/articles/2025/12/21/fairfax"]
 
 [taxonomies]
 tags = ["Guitar Pedals"]
+[extra]
+social_media_card = "ogp.webp"
 +++
 
 ![Strymon Fairfax](fairfax.webp)

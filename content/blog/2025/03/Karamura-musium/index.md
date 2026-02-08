@@ -6,6 +6,8 @@ aliases = ["/articles/2025/03/18/Karamura-musium"]
 
 [taxonomies]
 tags = ["Current Affairs","Art","Chiba"]
+[extra]
+social_media_card = "ogp.webp"
 +++
 
 ![](kawamura.jpg)

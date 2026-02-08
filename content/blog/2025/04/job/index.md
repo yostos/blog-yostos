@@ -6,6 +6,8 @@ aliases = ["/articles/2025/04/07/job"]
 
 [taxonomies]
 tags = ["Career","Splatoon","Game"]
+[extra]
+social_media_card = "ogp.webp"
 +++
 
 そう言えば、しばらくぶらぶらしていましたが、4月から仕事に復帰しました。

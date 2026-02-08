@@ -6,6 +6,8 @@ aliases = ["/articles/2025/02/02/lack-of-literacy"]
 
 [taxonomies]
 tags = ["Current Affairs", "Generative AI"]
+[extra]
+social_media_card = "ogp.webp"
 +++
 
 It seems that Itsunori Onodera, the Policy Research Council Chairman, raised an issue in the House of Representatives Budget Committee.

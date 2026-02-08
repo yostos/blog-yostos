@@ -6,6 +6,8 @@ aliases = ["/articles/2025/12/05/automating-npm-publish-with-github-actions"]
 
 [taxonomies]
 tags = ["Tech","Node"]
+[extra]
+social_media_card = "ogp.webp"
 +++
 
 本記事では、私が開発している[jrnl-mcp](https://github.com/yostos/jrnl-mcp)パッケージで実装した、

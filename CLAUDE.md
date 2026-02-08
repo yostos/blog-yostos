@@ -16,6 +16,15 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
   - Japanese characters: 3 bytes per character
   - Apply to all text files: Markdown, code, configuration files, etc.
 
+## Available CLI Tools
+
+- `gh` - GitHub CLI for repository operations
+- `jq` - JSON processor for parsing API responses
+- `curl` - HTTP client for API requests
+- `ffmpeg` - Video/audio processing
+- `imagemagick` - Image processing (convert, mogrify, etc.)
+- `lychee` - Link checker for broken URLs in Markdown files
+
 ## Common Commands
 
 ```bash
@@ -24,6 +33,8 @@ zola build          # Production build (outputs to public/)
 zola check          # Error check
 npm run lint        # Run textlint on all content
 npm run lint:fix    # Auto-fix textlint errors
+npm run ogp         # Generate OGP images for articles without ogp.webp
+npm run ogp:dry-run # Preview OGP generation without creating files
 ```
 
 ## Git Operations
@@ -91,7 +102,7 @@ echo "Hello"
 
 {% mermaid() %}
 flowchart LR
-    A[開始] --> B[処理] --> C[終了]
+A[開始] --> B[処理] --> C[終了]
 {% end %}
 
 <!-- textlint-enable -->
@@ -121,9 +132,24 @@ date = 2026-01-23
 aliases = ["/old/url/path"]  # For redirects
 
 [extra]
-canonical_url = "https://..."  # Canonical URL (when another site is the original)
+social_media_card = "ogp.webp"  # OGP image (required)
+canonical_url = "https://..."   # Canonical URL (optional)
 +++
 ```
+
+新規記事作成後、`npm run ogp` を実行してOGP画像を生成してください。
+
+## OGP画像生成
+
+OGP画像は `npm run ogp` で生成します。日本語フォントが必要です。
+
+```
+scripts/fonts/NotoSansJP-Regular.ttf  # または好みのフォント（.ttf/.otf）
+```
+
+フォントは `.gitignore` で除外されているため、各自で配置してください。
+Noto Sans JPは[Google Fonts](https://fonts.google.com/noto/specimen/Noto+Sans+JP)
+から無料でダウンロードできます。
 
 ### Description Field Rules
 

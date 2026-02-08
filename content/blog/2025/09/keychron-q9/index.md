@@ -6,6 +6,8 @@ aliases = ["/articles/2025/09/25/keychron-q9"]
 
 [taxonomies]
 tags = ["Gadget","Keyboard"]
+[extra]
+social_media_card = "ogp.webp"
 +++
 
 ![Keychron Q9](keychron-q9.webp)

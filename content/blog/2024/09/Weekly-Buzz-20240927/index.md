@@ -6,6 +6,8 @@ aliases = ["/articles/2024/09/29/Weekly-Buzz-20240927"]
 
 [taxonomies]
 tags = ["Weekly Buzz", "Current Affairs"]
+[extra]
+social_media_card = "ogp.webp"
 +++
 
 ## 『機動警察パトレイバー THE MOVIE』リバイバル上映を見て

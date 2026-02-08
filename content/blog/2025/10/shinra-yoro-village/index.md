@@ -6,6 +6,8 @@ aliases = ["/articles/2025/10/26/shinra-yoro-village"]
 
 [taxonomies]
 tags = ["Travel"]
+[extra]
+social_media_card = "ogp.webp"
 +++
 
 昨年オープンしたShinra Yoro Valleyで温泉を堪能してきました。

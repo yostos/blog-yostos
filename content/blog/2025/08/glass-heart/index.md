@@ -6,6 +6,8 @@ aliases = ["/articles/2025/08/17/glass-heart"]
 
 [taxonomies]
 tags = ["Music", "Guitar", "Movies", "Entertainment"]
+[extra]
+social_media_card = "ogp.webp"
 +++
 
 Netflixで配信が始まった『グラス・ハート』の評判がよいようです。

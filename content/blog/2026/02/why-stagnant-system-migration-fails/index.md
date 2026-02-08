@@ -11,6 +11,7 @@ date = 2026-02-05
 tags = ["IT Governance", "Tech"]
 
 [extra]
+social_media_card = "ogp.webp"
 mermaid = true
 canonical_url = "https://zenn.dev/yostos/articles/why-stagnant-system-migration-fails"
 +++

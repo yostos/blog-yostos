@@ -6,6 +6,8 @@ aliases = ["/articles/2025/01/25/chromalenscli-command-line-color-accessibility"
 
 [taxonomies]
 tags = ["Tech", "Software","CLI","Accessibility"]
+[extra]
+social_media_card = "ogp.webp"
 +++
 
 とりあえず色覚異常の方にも画像が正しく認識できてるか確認するためのツール `ChromaLens CLI`を作ってみた。

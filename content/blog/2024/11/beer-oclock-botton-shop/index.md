@@ -6,6 +6,8 @@ aliases = ["/articles/2024/11/27/beer-oclock-botton-shop"]
 
 [taxonomies]
 tags = ["Gourmet"]
+[extra]
+social_media_card = "ogp.webp"
 +++
 
 ![トニックウォーター](glass.jpg)

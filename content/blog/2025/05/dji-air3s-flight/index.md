@@ -6,6 +6,8 @@ aliases = ["/articles/2025/05/17/dji-air3s-flight"]
 
 [taxonomies]
 tags = ["Drone"]
+[extra]
+social_media_card = "ogp.webp"
 +++
 
 購入していたDJI Air3Sの初飛行です。ドローンを飛ばすために必要なこともまとめておきました。
