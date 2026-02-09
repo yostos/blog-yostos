@@ -24,6 +24,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 - `ffmpeg` - Video/audio processing
 - `imagemagick` - Image processing (convert, mogrify, etc.)
 - `lychee` - Link checker for broken URLs in Markdown files
+- `nb` - Knowledge base for reference and storing discussion notes
 
 ## Common Commands
 
