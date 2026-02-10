@@ -298,6 +298,11 @@ article dd {
   margin-bottom: 0.5em;
 }
 
+/* NEXT/PREVIOUS 記事タイトル */
+.article-navigation div p {
+  font-weight: 400;
+}
+
 /* コードブロックのリガチャ有効化 */
 code,
 pre,
