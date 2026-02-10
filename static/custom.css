@@ -22,6 +22,16 @@
 /* } */
 
 /* Berkeley Mono フォント */
+/* Light (300) */
+@font-face {
+  font-family: "BerkeleyMono";
+  src: url("https://d3w0x7oesq9q1.cloudfront.net/BerkeleyMono-Light.woff2")
+    format("woff2");
+  font-display: swap;
+  font-weight: 300;
+  font-style: normal;
+}
+
 /* Regular (400) */
 @font-face {
   font-family: "BerkeleyMono";
