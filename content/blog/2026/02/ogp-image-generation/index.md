@@ -153,6 +153,14 @@ OGP画像がないとエラーになるのが
 いずれビルドプロセスへの組み込みも
 検討したいところです。
 
-実装の技術的な詳細については、
-Zenn.devに記事を投稿しましたので
-そちらも参考にしていただければ幸いです。
+<!-- textlint-disable -->
+
+{% admonition(type="info", title="関連記事") %}
+実装の技術的な詳細は
+Zennに投稿しています。
+
+[Zola + tabiテーマでOGP画像を自動生成する
+（Zenn）](https://zenn.dev/yostos/articles/zola-ogp-auto-generation)
+{% end %}
+
+<!-- textlint-enable -->
