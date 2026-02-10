@@ -258,6 +258,6 @@ git push --no-verify      # pre-pushをスキップ
 
 ## Migration Source
 
-- Path: `/Users/yostos/ghq/github.com/yostos/blog-yostos/src/app/articles/`
+- Path: `src/app/articles/` (relative to project root)
 - Format: MDX (Next.js App Router)
 - Details: See `docs/TODO.md`

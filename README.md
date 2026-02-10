@@ -2,9 +2,9 @@
 
 [![Deploy to GitHub Pages](https://github.com/yostos/blog-yostos/actions/workflows/deploy.yml/badge.svg)](https://github.com/yostos/blog-yostos/actions/workflows/deploy.yml)
 [![Textlint](https://github.com/yostos/blog-yostos/actions/workflows/textlint.yml/badge.svg)](https://github.com/yostos/blog-yostos/actions/workflows/textlint.yml)
-[![Zola](https://img.shields.io/badge/Zola-0.19.2-blue?logo=zola)](https://www.getzola.org/)
+[![Zola](https://img.shields.io/badge/Zola-0.22.1-blue?logo=zola)](https://www.getzola.org/)
 [![Theme: tabi](https://img.shields.io/badge/Theme-tabi-orange)](https://github.com/welpo/tabi)
-[![Articles](https://img.shields.io/badge/Articles-226+-green)](https://blog.yostos.org)
+[![Articles](https://img.shields.io/badge/Articles-237+-green)](https://blog.yostos.org)
 
 **Live Site**: [https://blog.yostos.org](https://blog.yostos.org)
 
@@ -23,7 +23,7 @@ This blog covers a diverse range of topics:
 - **Books & Manga** — Reviews and recommendations
 - **Life & Career** — Personal reflections
 
-The blog has been running since 2024, with **226+ articles** covering these topics.
+The blog has been running since 2024, with **237+ articles** covering these topics.
 
 ## Tech Stack
 
@@ -44,7 +44,7 @@ This project has a 3-stage quality gate for content:
 ```
 [Local Development]
      │
-     ├─ git commit → pre-commit (lint-staged: changed files only)
+     ├─ git commit → pre-commit (OGP check + lint-staged)
      │
      └─ git push   → pre-push (npm run lint: all files)
             │
@@ -70,7 +70,7 @@ This project has a 3-stage quality gate for content:
 
 | Hook | Command | Scope |
 |------|---------|-------|
-| **pre-commit** | `npx lint-staged` | Staged Markdown files |
+| **pre-commit** | OGP check + `npx lint-staged` | Staged article files |
 | **pre-push** | `npm run lint` | All `content/**/*.md` |
 
 To bypass hooks in emergencies (not recommended):
@@ -82,7 +82,15 @@ git push --no-verify    # Skip pre-push
 
 ## Development
 
+### Prerequisites
+
+- [Zola](https://www.getzola.org/) 0.22.1+
+- [Node.js](https://nodejs.org/) 20+
+
 ```bash
+# Install dependencies
+npm install
+
 # Start dev server with live reload
 zola serve
 
@@ -135,12 +143,14 @@ content/
       index.md        # Article content (TOML frontmatter)
       ogp.webp        # OGP image (auto-generated)
       *.webp          # Article images
+templates/            # Custom templates and shortcodes
+static/               # Static assets (CSS, images, favicon)
 themes/tabi/          # tabi theme (git submodule)
 scripts/
   generate-ogp.mjs    # OGP image generator
   fonts/              # Japanese fonts (gitignored)
 config.toml           # Zola configuration
-CLAUDE.md             # Claude Code guidance
+CLAUDE.md             # Claude Code AI assistant configuration
 ```
 
 ## Author
@@ -153,4 +163,5 @@ CLAUDE.md             # Claude Code guidance
 
 ## License
 
-Blog content is copyrighted by the author. The [tabi theme](https://github.com/welpo/tabi) is licensed under MIT.
+- **Blog content** (`content/`) — [CC BY-NC-ND 4.0](https://creativecommons.org/licenses/by-nc-nd/4.0/)
+- **Everything else** — [MIT](./LICENSE)

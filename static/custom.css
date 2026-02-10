@@ -1,13 +1,16 @@
-/* KADOMA フォント - 日本語用 */
-@font-face {
-  font-family: "KADOMA";
-  src: url("https://d3w0x7oesq9q1.cloudfront.net/KADOMA-R-fixed.woff2")
-    format("woff2");
-  font-display: swap;
-  font-weight: 400;
-  font-style: normal;
-  unicode-range: U+3000-9FFF, U+FF00-FFEF;
-}
+/* /* KADOMA フォント - 日本語用 */ */
+/* @font-face { */
+/*   font-family: "KADOMA"; */
+/*   src: url("https://d3w0x7oesq9q1.cloudfront.net/KADOMA-R-fixed.woff2") */
+/*     format("woff2"); */
+/*   font-display: swap; */
+/*   font-weight: 400; */
+/*   font-style: normal; */
+/*   unicode-range: U+3000-9FFF, U+FF00-FFEF; */
+/* } */
+
+/* IBM Ples Sans JP */
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+JP&display=swap');
 
 /* /* Monaspace Neon フォント */
 */
@@ -147,7 +150,7 @@ header {
 
 :root {
   --sans-serif-font:
-    "BerkeleyMono", "KADOMA", "Helvetica Neue", Arial,
+    "BerkeleyMono", "IBM Plex Sans JP", "Helvetica Neue", Arial,
     "Hiragino Kaku Gothic ProN", "Hiragino Sans", "Noto Sans JP", sans-serif;
   --serif-font: var(--sans-serif-font);
   --code-font: "BerkeleyMono", "Cascadia Code", monospace;
