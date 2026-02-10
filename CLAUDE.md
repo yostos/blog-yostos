@@ -66,6 +66,10 @@ docs/TODO.md             # Migration task documentation
 - Theme: [tabi](https://github.com/welpo/tabi)
 - Language: Japanese (`default_language = "ja"`)
 - Search: Disabled (Japanese not supported)
+- **`themes/` 配下のファイルを絶対に編集しないこと**
+  - テーマのカスタマイズは `static/custom.css` で上書きする
+  - テンプレートの変更が必要な場合は `templates/` に
+    オーバーライドファイルを作成する
 
 ## Table of Contents
 
