@@ -1,14 +1,14 @@
 +++
-title = "ZolaブログにOGP画像の自動生成を組み込んだ話"
+title = "ZolaブログにOGP画像自動生成を組み込んだ"
 description = """
 静的サイトジェネレーターZolaとtabiテーマの組み合わせで
-運用しているブログに、OGP画像の自動生成を導入しました。
+運用しているこのブログに、OGP画像の自動生成を導入しました。
 Zolaに組み込みの仕組みがない中でどう対応したか、
 検討から導入までの経緯を記録します。
 """
 date = 2026-02-10
 [taxonomies]
-tags = ["Tech", "Weblog"]
+tags = ["Tech", "Weblog", "Zola"]
 [extra]
 social_media_card = "ogp.webp"
 +++
