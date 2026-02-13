@@ -7,6 +7,20 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.1.0] - 2026-02-13
+
+### Added
+- Linkcard feature for displaying URLs as cards in articles
+  - GitHub repository cards with Octocat icon, owner/repo,
+    description, and language via GitHub API
+  - Hatenablog card iframe for automatic OGP preview of other URLs
+  - Generate-linkcard.mjs script for GitHub metadata caching
+  - Zola shortcode {{ linkcard(url="...") }} for easy integration
+  - Dark mode support and mobile responsive design
+  - Comprehensive specification document at docs/linkcard.md
+  - npm scripts: `linkcard` and `linkcard:dry-run` for metadata
+    management with `--force` option for cache refresh
+
 ## [1.0.1] - 2026-02-13
 
 ### Added
