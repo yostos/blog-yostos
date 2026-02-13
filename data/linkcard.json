@@ -1,0 +1,18 @@
+{
+  "https://github.com/yostos/claude-code-plugins": {
+    "type": "github",
+    "owner": "yostos",
+    "repo": "claude-code-plugins",
+    "description": "My Claude Code Plugins Library",
+    "language": "Shell",
+    "fetched_at": "2026-02-13T06:06:04.052Z"
+  },
+  "https://blog.yostos.org/blog/2026/02/ai-human-divergence/": {
+    "title": "Coded Chords • 生成AI時代、重力に魂を引かれるな",
+    "description": null,
+    "image": null,
+    "favicon": "https://blog.yostos.org/apple-touch-icon.png",
+    "site_name": "blog.yostos.org",
+    "fetched_at": "2026-02-13T06:06:04.671Z"
+  }
+}
