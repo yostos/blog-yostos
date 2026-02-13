@@ -50,6 +50,10 @@ canonical_url = "https://zenn.dev/yostos/articles/claude-code-jrnl-context-hando
 - 2026年2月5日にリリースされた
   **Auto Memory**との棲み分けも解説
 
+<!-- textlint-disable -->
+ {{ linkcard(url="https://github.com/yostos/claude-code-plugins") }}
+<!-- textlint-enable -->
+
 ## きっかけ — MCPからプラグインへ、そして活用法の発見
 
 Claude Codeで複雑なリファクタリングを
@@ -654,8 +658,6 @@ jrnlのインストールとプラグインの導入は
 この記事のコメントや
 GitHubリポジトリのIssueで
 気軽にお聞かせください。
-
-<https://github.com/yostos/claude-code-plugins>
 
 [^jrnl-mcp]:
     以前
