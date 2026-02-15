@@ -14,5 +14,13 @@
     "favicon": "https://blog.yostos.org/apple-touch-icon.png",
     "site_name": "blog.yostos.org",
     "fetched_at": "2026-02-13T06:06:04.671Z"
+  },
+  "https://github.com/yostos/genai-governance-checklist": {
+    "type": "github",
+    "owner": "yostos",
+    "repo": "genai-governance-checklist",
+    "description": null,
+    "language": "Python",
+    "fetched_at": "2026-02-14T22:03:59.427Z"
   }
 }

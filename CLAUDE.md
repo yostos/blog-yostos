@@ -36,6 +36,7 @@ npm run lint        # Run textlint on all content
 npm run lint:fix    # Auto-fix textlint errors
 npm run ogp         # Generate OGP images for articles without ogp.webp
 npm run ogp:dry-run # Preview OGP generation without creating files
+npm run linkcard    # Fetch GitHub metadata for linkcard shortcodes
 ```
 
 ## Git Operations
@@ -127,6 +128,25 @@ To embed a YouTube video:
 
 `VIDEO_ID` is the part after `v=` or `youtu.be/` in the URL.
 
+## Link Card Shortcode
+
+URLをカード形式で表示するショートコードです。
+GitHubリポジトリと一般URLの両方に対応しています。
+
+```markdown
+<!-- textlint-disable -->
+
+{{ linkcard(url="https://github.com/owner/repo") }}
+
+<!-- textlint-enable -->
+```
+
+GitHubリポジトリの場合は `npm run linkcard` を実行して
+メタデータを取得してからコミットしてください。
+一般URLの場合はOGP情報を自動取得するため事前実行は不要です。
+
+詳細: `docs/linkcard.md`
+
 ## Article Frontmatter Format
 
 ```toml
@@ -202,6 +222,10 @@ See `docs/tag-rule.md` for comprehensive tagging rules and guidelines.
 - **太字**: 多用しない。本当に強調が必要な箇所のみ使用
 
 ## textlint Rules
+
+- **ドラフト作成時はtextlintを実行しない**:
+  記事のドラフト作成中は、ユーザーの指示があるまで
+  `npm run lint` を実行しないこと
 
 - **textlint除外コメントの使用禁止**:
   エラー回避のために `<!-- textlint-disable -->` /
