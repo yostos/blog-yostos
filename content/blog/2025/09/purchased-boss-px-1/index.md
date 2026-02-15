@@ -35,7 +35,7 @@ Bluetoothで接続してエフェクターを追加しようとしても「Insta
 
 手順は次の通りです。
 
-1. Mac/Windowsで[BOSSのサイト](https://www.boss.info/jp/support/by_product/px-1/updates_drivers/646108a8-2e7d-44a7-976e-133ebc4059fb/)からアップデータをダウンロードして解凍しておく。(現在はVer1.10である)
+1. Mac/Windowsで[BOSSのサイト](https://www.boss.info/jp/products/px-1/downloads/)からアップデータをダウンロードして解凍しておく。(現在はVer1.10である)
 2. PX-1のペダルを押しながらアダプタを接続し電源を入れると、UPDATERの画面が表示される。
 3. Mac/WindowsからはPX-1がリムーバブルドライブに見えているので、解凍したファイル群をPX-1にコピーしてドライブを切り離す。この時、いきなりケーブルを抜かずにち
    ゃんと「ドライブの切り離し」を行なう。
