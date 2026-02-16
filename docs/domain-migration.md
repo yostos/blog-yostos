@@ -373,11 +373,13 @@ GitHub Pages → Cloudflare Workers 向けに
   `deploy` を実行
 - リポジトリに `wrangler.toml` を追加
   （静的アセットのディレクトリ指定等）
-- GitHub Secrets に以下を登録済み：
-  - `CF_ACCOUNT_ID`:
+- GitHub Repository Secrets
+  （Settings → Secrets and variables → Actions）
+  に以下を登録済み：
+  - `CLOUDFLARE_ACCOUNT_ID`:
     Cloudflare Dashboard → ドメイン選択 →
     Overview ページ右サイドバーから取得
-  - `CF_API_TOKEN`:
+  - `CLOUDFLARE_API_TOKEN`:
     既存の「blog-yostos build token」を使用
     （Workers スクリプト:編集 権限あり）
 
