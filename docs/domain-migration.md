@@ -383,22 +383,19 @@ GitHub Pages → Cloudflare Workers 向けに
     既存の「blog-yostos build token」を使用
     （Workers スクリプト:編集 権限あり）
 
-#### 6-3. カスタムドメイン接続
+#### [済] 6-3/6-5/6-6. カスタムドメイン接続・DNS 切り替え
 
-Workers のプロジェクト設定 →
-Custom domains → `codedchords.dev` を追加。
-DNS が同じ Cloudflare アカウントのため、
-DNS レコードが自動設定される。
-SSL 証明書も Cloudflare が自動発行・管理する。
+以下の順序で実施した：
 
-注意: この手順は GitHub Pages 側のカスタム
-ドメイン解除（6-5）と DNS 切り替え（6-6）
-を同時に行う必要がある。ダウンタイムを
-最小化するため、以下の順序で実施する：
+1. GitHub Pages のカスタムドメインを解除
+   （リポジトリ Settings → Pages）
+2. Cloudflare DNS で既存の GitHub Pages 向け
+   A レコード4つと www CNAME を削除
+3. Workers のドメインとルート → + 追加 →
+   カスタムドメイン `codedchords.dev` を追加
 
-1. Workers でドメインを追加
-2. GitHub Pages のカスタムドメインを解除
-3. DNS レコードを切り替え
+Cloudflare が DNS レコードを自動設定し、
+`https://codedchords.dev` での表示を確認済み。
 
 #### 6-4. セキュリティヘッダー設定
 
@@ -423,35 +420,24 @@ CSP では以下の外部ドメインを許可する：
 - `giscus.app`（コメント）
 - `hatenablog-parts.com`（linkcard iframe）
 
-#### 6-5. GitHub Pages 設定解除
+#### [済]（6-5 の補足）
 
-リポジトリの Settings → Pages で：
+GitHub Pages の無効化は Settings → Pages で
+Source を一度 Branch に切り替えてから
+None に設定する必要がある
+（GitHub Actions が選択されている状態では
+None に変更できない）。
 
-- Custom domain を削除
-- Source を None に変更（GitHub Pages を無効化）
+#### （6-6 は 6-3 に統合）
 
-#### 6-6. DNS 切り替え
-
-Cloudflare の DNS 設定で以下を実施：
-
-- 既存の GitHub Pages 向け A レコード
-  4つを削除：
-  - `185.199.108.153`
-  - `185.199.109.153`
-  - `185.199.110.153`
-  - `185.199.111.153`
-- 既存の www CNAME（`yostos.github.io`）を削除
-- Cloudflare Pages がカスタムドメイン接続時に
-  自動作成した CNAME を確認
-
-#### 6-7. `static/CNAME` 削除
+#### [済] 6-7. `static/CNAME` 削除
 
 GitHub Pages 用の `static/CNAME` ファイルを
 リポジトリから削除する。Cloudflare Workers では
 カスタムドメインをダッシュボードで管理するため
 不要。
 
-#### 6-8. GitHub Pages 関連の設定削除
+#### [済] 6-8. GitHub Pages 関連の設定削除
 
 GitHub Actions の `deploy.yml` は 6-2 で
 Cloudflare Workers 向けに変更済みのため、
@@ -505,10 +491,10 @@ S3 から配信している（Phase 4 で設定済み）。
   （`coded-chords`）
 - [x] 6-2: GitHub Actions デプロイ設定変更
   （deploy.yml を Cloudflare Workers 向けに修正）
-- [ ] 6-3/6-5/6-6: カスタムドメイン接続・
+- [x] 6-3/6-5/6-6: カスタムドメイン接続・
   GitHub Pages 解除・DNS 切り替え
 - [ ] 6-4: セキュリティヘッダー設定
   （`static/_headers`）
-- [ ] 6-7: `static/CNAME` 削除
-- [ ] 6-8: GitHub Pages 関連の設定削除
+- [x] 6-7: `static/CNAME` 削除
+- [x] 6-8: GitHub Pages 関連の設定削除
 - [ ] 6-9: フォント配信の確認
