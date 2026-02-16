@@ -2,7 +2,6 @@
 title = "Beyond Distortion : Rethinking My Guitar Effects Chain"
 description = "In pursuit of deeper amp-driven distortion, I recently upgraded from theStrymon Iridium to the Simplifier MK-II. This gear transition became theperfect opportunity to thoroughly revisit my long-neglected effects setup,beginning a journey of rediscovering sonic possibilities."
 date = 2025-04-06
-aliases = ["/articles/2025/04/06/beyond-distortion"]
 
 [taxonomies]
 tags = ["Guitar Pedals"]
@@ -33,7 +32,7 @@ ProvidenceのVitalizer付のジャンクションボックスを利用してい�
 
 ## 変更後
 
-Iridiumに替えて、[2月の記事](https://blog.yostos.org/articles/2025/02/11/simplifier-mk2)で
+Iridiumに替えて、[2月の記事](/blog/2025/02/simplifier-mk2/)で
 紹介したようアンプ部はフルアナログのSimplifier MK-IIを導入しています。
 
 <figure>
@@ -54,7 +53,7 @@ Iridiumに替えて、[2月の記事](https://blog.yostos.org/articles/2025/02/1
     積極的に音作りで切るブースターとしても優秀
 
 現時点ではこんなところです。「
-[Biscayne Blue](https://blog.yostos.org/articles/2025/04/04/biscayne-blue)
+[Biscayne Blue](/blog/2025/04/biscayne-blue/)
 」は、このシステムで使い弾きました。
 
 悩んでいるのは次のような点です。

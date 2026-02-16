@@ -2,7 +2,6 @@
 title = "中村書体室のフォント「カドマ-R」を購入"
 description = "中村書体室の「カドマ-R」を購入しました。スクエアなのに丸みや柔らかさを感じる独特な印象のフォントで、ターミナルにぜひ使用したいと思いました。Berkeley Monoと組み合わせて使用しています。"
 date = 2025-09-15
-aliases = ["/articles/2025/09/15/kadoma-r"]
 
 [taxonomies]
 tags = ["Design","Font"]

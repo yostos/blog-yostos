@@ -2,7 +2,6 @@
 title = "The Ultimate Showdown: A Deep Dive into Modern Messaging Apps"
 description = "市川強盗傷害事件で犯人たちがSignalを使っていたということで、「SIgnalは危険アプリ」とか言い出すバカがいそうなのでまとめてみました。"
 date = 2024-10-23
-aliases = ["/articles/2024/10/23/Modern-messaging-apps"]
 
 [taxonomies]
 tags = ["Tech","Messaging Apps" ,"Security"]

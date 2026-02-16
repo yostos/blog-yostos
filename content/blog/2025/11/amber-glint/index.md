@@ -2,7 +2,6 @@
 title = "Photo Friday: Amber Glint"
 description = "A fleeting amber glint dances across autumn leaves, as afternoon light filters through the canopy, illuminating the quiet transition of seasons."
 date = 2025-11-18
-aliases = ["/articles/2025/11/18/amber-glint"]
 
 [taxonomies]
 tags = ["Photography", "Photo Friday"]

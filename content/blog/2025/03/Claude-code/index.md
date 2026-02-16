@@ -2,7 +2,6 @@
 title = "Exploring Claude Code: Hands-On with Anthropic's AI-Powered Coding Assistant"
 description = "I tried Claude Code.Claude Code is the latest AI-driven coding assistant developed by Anthropic.It's a command-line coding tool that connects to Anthropic's servers via API andutilizes the Claude 3.7 Sonnet model to support developers. Therefore,you can receive the same level of advanced AI reasoning support as when using Claude 3.7 Sonnet from a browser."
 date = 2025-03-12
-aliases = ["/articles/2025/03/12/Claude-code"]
 
 [taxonomies]
 tags = ["Tech", "Generative AI","Claude Code"]

@@ -2,7 +2,6 @@
 title = "To You"
 description = "I tried covering a song by Masayoshi Takanaka from around 1983. I remember it playing in Mazda 323 (Familia) TV commercials at that time."
 date = 2025-04-13
-aliases = ["/articles/2025/04/13/to-you"]
 
 [taxonomies]
 tags = ["Music", "Guitar"]

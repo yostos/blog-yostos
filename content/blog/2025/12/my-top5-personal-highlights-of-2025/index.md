@@ -2,7 +2,6 @@
 title = "My Top 5 Personal Highlights of 2025"
 description = "2025年を振り返り、AI技術の進化、ドローン空撮への挑戦、日本初の女性首相誕生、YAMAHA REVSTARギターとの出会い、そして公益財団法人の実態という5つのハイライトを記録します。技術、社会、個人の各領域で経験した変化と学びについて。"
 date = 2025-12-31
-aliases = ["/articles/2025/12/31/my-top5-personal-highlights-of-2025"]
 
 [taxonomies]
 tags = ["Life"]

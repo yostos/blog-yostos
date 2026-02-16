@@ -2,7 +2,6 @@
 title = "Amazon AmplifyのNode.jsバージョンアップ対応"
 description = "2025年9月15日からAWS AmplifyがNode.js 14/16/18のサポートを終了するため、Node.js 24に更新した記録です。"
 date = 2025-09-14
-aliases = ["/articles/2025/09/14/amazon-amplify-node-versionup"]
 
 [taxonomies]
 tags = ["Tech", "AWS","Node"]

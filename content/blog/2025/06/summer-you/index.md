@@ -2,7 +2,6 @@
 title = "Summer You"
 description = "来週から7月となります。まだ6月というのにこれ以上の夏があるかというくらい夏です。「ならば」と懐かしいこの曲を演奏してみました。"
 date = 2025-06-29
-aliases = ["/articles/2025/06/28/summer-you"]
 
 [taxonomies]
 tags = ["Music", "Guitar"]

@@ -2,7 +2,6 @@
 title = "プロンプトエンジニアリング技法の総合ガイド"
 description = "最近GoogleのLee Boonstrが最近発表した69ページのプロンプトエンジニアリングに関するホワイトペーパーを読みました。このホワイトペーパーでは大規模言語モデル（LLM）との対話を最適化するための包括的なガイドを提供されています。これまでなんとなく経験や勘で作っていたプロンプトを、テクニックとして整理することができます。"
 date = 2025-04-15
-aliases = ["/articles/2025/04/15/prompt-engineering"]
 
 [taxonomies]
 tags = ["Tech", "Generative AI"]

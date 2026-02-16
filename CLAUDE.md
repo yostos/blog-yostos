@@ -36,7 +36,6 @@ npm run lint        # Run textlint on all content
 npm run lint:fix    # Auto-fix textlint errors
 npm run ogp         # Generate OGP images for articles without ogp.webp
 npm run ogp:dry-run # Preview OGP generation without creating files
-npm run linkcard    # Fetch GitHub metadata for linkcard shortcodes
 ```
 
 ## Git Operations
@@ -131,21 +130,15 @@ To embed a YouTube video:
 ## Link Card Shortcode
 
 URLをカード形式で表示するショートコードです。
-GitHubリポジトリと一般URLの両方に対応しています。
+はてなブログカード（iframe）で表示します。
 
 ```markdown
 <!-- textlint-disable -->
 
-{{ linkcard(url="https://github.com/owner/repo") }}
+{{ linkcard(url="https://example.com/page") }}
 
 <!-- textlint-enable -->
 ```
-
-GitHubリポジトリの場合は `npm run linkcard` を実行して
-メタデータを取得してからコミットしてください。
-一般URLの場合はOGP情報を自動取得するため事前実行は不要です。
-
-詳細: `docs/linkcard.md`
 
 ## Article Frontmatter Format
 

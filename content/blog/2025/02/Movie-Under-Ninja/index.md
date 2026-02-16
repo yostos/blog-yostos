@@ -2,7 +2,6 @@
 title = "Movie \"Under Ninja” Review: Merits and Demerits of Director Fukuda"
 description = "I saw the movie Under Ninja yesterday.I was looking forward to seeing it because it is based on a popular manga and an animated series."
 date = 2025-02-25
-aliases = ["/articles/2025/02/25/Movie-Under-Ninja"]
 
 [taxonomies]
 tags = ["Movies","Entertainment"]

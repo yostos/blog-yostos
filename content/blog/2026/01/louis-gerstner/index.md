@@ -6,7 +6,6 @@ Louis V. Gerstner Jr.氏が2025年12月27日、83歳で逝去されました。
 心よりご冥福をお祈りいたします。
 """
 date = 2026-01-01
-aliases =["/articles/2026/01/01/louis-gerstner"]
 
 [taxonomies]
 tags =["Current Affairs","IBM"]

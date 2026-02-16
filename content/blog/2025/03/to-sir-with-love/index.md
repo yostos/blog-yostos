@@ -2,7 +2,6 @@
 title = "Lulu 「To Sir With Love」"
 description = "たしか就職した頃に初めて聞いて、1960代っぽい曲だなと気になっていたので、演奏してみました。"
 date = 2025-03-27
-aliases = ["/articles/2025/03/27/to-sir-with-love"]
 
 [taxonomies]
 tags = ["Music","Guitar"]

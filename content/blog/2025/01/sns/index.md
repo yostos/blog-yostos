@@ -2,7 +2,6 @@
 title = "店舗のSNS依存 - 顧客に届かない情報発信"
 description = "最近営業日の告知をInstgramやfacebookにしか掲載しないお店があるが、一体どういうつもりなんだろう。Instagramを使っていない客がいるとか想像できないのだろうか？"
 date = 2025-01-04
-aliases = ["/articles/2025/01/04/sns"]
 
 [taxonomies]
 tags = ["Tech","Current Affairs"]

@@ -2,7 +2,6 @@
 title = "GravaStar Gaming Mouse Mercury M2"
 description = "After four years with my previous mouse, I upgraded to the GravaStar Mercury M2, featuring a transparent black body and LED lighting. This gaming mouse offers a lightweight 79g design, three connection methods, and web-based configuration."
 date = 2025-12-30
-aliases = ["/articles/2025/12/30/mercury-m2"]
 
 [taxonomies]
 tags = ["Gadget", "Game"]

@@ -2,7 +2,6 @@
 title = "中森明菜復活を祝い・・"
 description = "中森明菜さんが7年ぶりに復活か？"
 date = 2024-07-15
-aliases = ["/articles/2024/07/15/Akinas-revival"]
 
 [taxonomies]
 tags = ["Guitar","Music"]

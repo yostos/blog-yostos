@@ -2,7 +2,6 @@
 title = "こだわりのNostr Pubkeyを手に入れる"
 description = "Nostrで自分の好きなPubkeyを入手するためにがんばってみました。"
 date = 2024-08-25
-aliases = ["/articles/2024/08/25/Pubkey-of-nostr"]
 
 [taxonomies]
 tags = ["Tech"]

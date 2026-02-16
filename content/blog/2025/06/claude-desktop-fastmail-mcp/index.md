@@ -2,7 +2,6 @@
 title = "生成AIでメール管理 - Claude Desktop x FastmailMCP連携"
 description = "Claude Desktopの最新機能であるMCP（Model Context Protocol）を使って、プライバシー重視のメールサービス「Fastmail」とClaude Desktopを連携させ、AIアシスタントにメール管理を手伝ってもらう方法をご紹介します。"
 date = 2025-06-28
-aliases = ["/articles/2025/06/28/claude-desktop-fastmail-mcp"]
 
 [taxonomies]
 tags = ["Tech", "Generative AI"]

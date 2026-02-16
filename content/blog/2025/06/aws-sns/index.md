@@ -2,7 +2,6 @@
 title = "AWSからSMSにメッセージを送る"
 description = "AWSが提供するAmazon SNS(Simple Notification Service)を使って、SMSにメッセージを送信するサンプルコードを作ってみました。"
 date = 2025-06-09
-aliases = ["/articles/2025/06/09/aws-sns"]
 [extra]
 social_media_card = "ogp.webp"
 mermaid = true

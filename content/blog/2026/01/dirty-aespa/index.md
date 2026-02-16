@@ -6,7 +6,6 @@ NHK紅白歌合戦でのaespa出演をめぐる騒動と、午後8時台の
 批判と、実際のデータから見える視聴者動向を客観的に分析しました。
 """
 date = 2026-01-01
-aliases =["/articles/2026/01/01/dirty-aespa"]
 
 [taxonomies]
 tags =["Current Affairs", "Old Media"]

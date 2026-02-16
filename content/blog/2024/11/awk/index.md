@@ -2,7 +2,6 @@
 title = "『プログラミング言語AWK 第2版』"
 description = "35年ぶりの刷新だそうです。つい買ってしまいました。"
 date = 2024-11-15
-aliases = ["/articles/2024/11/18/awk"]
 
 [taxonomies]
 tags = ["Tech","Programming","Books"]

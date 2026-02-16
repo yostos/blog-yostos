@@ -2,7 +2,6 @@
 title = "Berkeley Mono: A Worthy Successor to MonoLisa in My Terminal"
 description = "ずっとMacのターミナルではMonoLisaフォントを利用してきましたが、Berkeley Monoフォントに入れ替えました。"
 date = 2024-12-19
-aliases = ["/articles/2024/12/19/berkeley-mono"]
 
 [taxonomies]
 tags = ["Tech","Font"]

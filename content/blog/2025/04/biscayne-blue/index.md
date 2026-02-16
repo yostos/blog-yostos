@@ -2,7 +2,6 @@
 title = "Biscayne Blue"
 description = "高中正義さんの1988年リリースのアルバム『Hot Pepper』から”Biscayne Blue\"をコピーしてみました。"
 date = 2025-04-04
-aliases = ["/articles/2025/04/04/biscayne-blue"]
 
 [taxonomies]
 tags = ["Music", "Guitar"]

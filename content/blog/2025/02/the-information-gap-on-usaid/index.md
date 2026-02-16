@@ -2,7 +2,6 @@
 title = "The Information Gap on USAID Closure: Relations with Japan's National Policy Companies and Concerns Over Information Control"
 description = "Chairman Onodera, overly concerned about Chinese AI, reveals a lack of technical understanding and literacy."
 date = 2025-02-07
-aliases = ["/articles/2025/02/07/the-information-gap-on-usaid"]
 
 [taxonomies]
 tags = ["Current Affairs"]

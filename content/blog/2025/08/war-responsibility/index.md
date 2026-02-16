@@ -2,7 +2,6 @@
 title = "戦争責任について"
 description = "中島聡氏のメールマガジンに「戦争責任にケジメをつけて前に進む必要性」という記事がありました。なぜ日本が第二次世界大戦にケジメとつけられないかという仮説を述べており、一部「なるほどな」と思ったので書き留めておきます。"
 date = 2025-08-18
-aliases = ["/articles/2025/08/18/war-responsibility"]
 
 [taxonomies]
 tags = ["Current Affairs"]

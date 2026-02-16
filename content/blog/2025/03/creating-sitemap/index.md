@@ -2,7 +2,6 @@
 title = "Next.jsでsitemap.xmlとrobots.txtを実装する"
 description = "うっかり実装を忘れていたsitemap.xmlとrobots.txtをNext.jsのApp Routerを使用して実装しました。合わせて、検索エンジン最適化のためのベストプラクティスもまとめています。"
 date = 2025-03-25
-aliases = ["/articles/2025/03/25/creating-sitemap"]
 
 [taxonomies]
 tags = ["Tech","Web"]

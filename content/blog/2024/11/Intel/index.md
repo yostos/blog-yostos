@@ -2,7 +2,6 @@
 title = "Intel、大丈夫か？"
 description = "Intelは今期も赤字で、しかも2兆円を上回る赤字だったそうです。"
 date = 2024-11-01
-aliases = ["/articles/2024/11/01/Intel"]
 
 [taxonomies]
 tags = ["Tech", "Current Affairs"]

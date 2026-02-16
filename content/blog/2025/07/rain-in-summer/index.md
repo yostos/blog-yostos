@@ -2,7 +2,6 @@
 title = "『真夏の雨』"
 description = "REBECCAの1987年リリースの『真夏の雨』を演奏してみました。11月リリースだったはずですが、なぜか夏を連想するタイトルですね。サポートギタリストだった是永巧一氏のギターが冴える曲で、気に入っていました。"
 date = 2025-07-06
-aliases = ["/articles/2025/07/06/rain-in-summer"]
 
 [taxonomies]
 tags = ["Music", "Guitar"]

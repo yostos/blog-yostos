@@ -2,7 +2,6 @@
 title = "洋食屋ダイニングみどりかわ"
 description = "東船橋の洋食屋さんに言ってきました。"
 date = 2024-07-15
-aliases = ["/articles/2024/07/15/Dining-Midorikawa"]
 
 [taxonomies]
 tags = ["Gourmet"]

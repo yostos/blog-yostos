@@ -2,7 +2,6 @@
 title = "LogSeq at a Glance: An Overview for Beginners"
 description = "I created this simple guide to LogSeq to help friends get started with the tool. Written in Japanese, this overview aims to help new users understand LogSeq's key features and daily usage patterns from a bird's-eye perspective."
 date = 2025-01-01
-aliases = ["/articles/2025/01/01/logseq"]
 
 [taxonomies]
 tags = ["Tech", "Software","Productivity","Note-taking"]

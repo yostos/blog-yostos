@@ -2,7 +2,6 @@
 title = "S3静的ウェブサイトのインデックス解決をCloudFront Functionsで修正"
 description = "CloudFlareからブログを移行した際に、パスの指定で問題がでていたので修正しました。"
 date = 2024-11-05
-aliases = ["/articles/2024/11/05/Fixing-s3-cloudfront-index-resolution"]
 
 [taxonomies]
 tags = ["Tech", "AWS","Weblog"]

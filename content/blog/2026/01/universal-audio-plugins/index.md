@@ -9,7 +9,6 @@ SSL G Bus Compressor、Ampex ATR-102—について、
 Logic Proでの実際の使い方を詳しく解説します。
 """
 date = 2026-01-11
-aliases =["/articles/2026/01/11/universal-audio-plugins"]
 
 [taxonomies]
 tags =["Music Production","Software"]

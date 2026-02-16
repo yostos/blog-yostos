@@ -2,7 +2,6 @@
 title = "エンジニア的ブログ再構築 : Next.js × Tailwind Plusで得る柔軟性"
 description = "Micro.blogを利用したブログを運用していましたが、Next.js + Tailwind Plus(旧Tailwind UI)を使ってエンジニアから見て柔軟なブログを再構築してみました。"
 date = 2025-03-17
-aliases = ["/articles/2025/03/17/NextJS-TailwindUI-blog"]
 
 [taxonomies]
 tags = ["Tech","Web","Weblog"]

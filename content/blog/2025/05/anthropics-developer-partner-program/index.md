@@ -2,7 +2,6 @@
 title = "Claude Codeのディスカウントを得る - Developer Partner Program"
 description = "Claude Code APIの利用料割引が可能となるDeveloper Partner ProgrameがAnthropicより発表されました。今後のモデル改善のためのプログラムで参加するとClaude 3.5 Sonnet および Claude 3.7Sonnet モデルの Claude Code 入力トークンが30%割引になる可能性があります。"
 date = 2025-05-02
-aliases = ["/articles/2025/05/02/anthropics-developer-partner-program"]
 
 [taxonomies]
 tags = ["Tech", "Generative AI"]

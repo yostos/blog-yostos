@@ -661,7 +661,7 @@ GitHubリポジトリのIssueで
 
 [^jrnl-mcp]:
     以前
-    [jrnl-mcp](https://blog.yostos.org/blog/2025/07/first-mcp-server-development/)
+    [jrnl-mcp](/blog/2025/07/first-mcp-server-development/)
     というMCPサーバーを作り、
     Claude DesktopやClaude Codeから
     jrnlを操作できるようにしていました。

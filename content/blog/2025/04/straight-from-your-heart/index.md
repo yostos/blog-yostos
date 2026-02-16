@@ -2,7 +2,6 @@
 title = "Straight From Your Heart"
 description = "1983 年リリースの高中正義さんのアルバム『CAN I SING?』から『STRAIGHT FROMYOUR HEART』を弾いてみました。"
 date = 2025-04-09
-aliases = ["/articles/2025/04/09/straight-from-your-heart"]
 
 [taxonomies]
 tags = ["Music", "Guitar"]

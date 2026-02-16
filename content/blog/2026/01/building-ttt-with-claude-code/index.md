@@ -7,7 +7,6 @@ description = """
 ドキュメント駆動とTDDの効果的な組み合わせをご紹介します。
 """
 date = 2026-01-23
-aliases =["/articles/2026/01/23/building-ttt-with-claude-code"]
 
 [taxonomies]
 tags =["Tech", "OSS", "Go", "CLI", "Task Management"]

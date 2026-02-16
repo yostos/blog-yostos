@@ -2,7 +2,6 @@
 title = "Claude CodeをMCPサーバーとして利用する利点"
 description = "前回はInkdropとClaudeのMCP統合について紹介しましたが、今回はClaude Codeを MCPサーバーとして活用する方法とそのメリットについて解説します。 開発者にとって、Claude CodeとInkdropの組み合わせがどのように効率的な 知識管理と開発プロセスの向上につながるかを探ります。"
 date = 2025-03-29
-aliases = ["/articles/2025/03/29/mcp-integration-of-claude-code-inkdrop"]
 
 [extra]
 social_media_card = "ogp.webp"

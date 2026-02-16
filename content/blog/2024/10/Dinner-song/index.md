@@ -2,7 +2,6 @@
 title = "晩餐歌"
 description = "tuki.の楽曲『晩餐歌』のカバーです。最近お気に入りの曲なので弾いてみました。"
 date = 2024-10-15
-aliases = ["/articles/2024/10/15/Dinner-song"]
 
 [taxonomies]
 tags = ["Music", "Guitar"]

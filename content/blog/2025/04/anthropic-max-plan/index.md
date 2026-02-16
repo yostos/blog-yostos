@@ -2,7 +2,6 @@
 title = "Anthropic announced Claude Max Plan"
 description = "Anthropic announced Claude Max Plan"
 date = 2025-04-10
-aliases = ["/articles/2025/04/10/anthropic-max-plan"]
 
 [taxonomies]
 tags = ["Tech", "Generative AI"]

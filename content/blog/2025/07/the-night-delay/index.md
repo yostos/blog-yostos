@@ -2,7 +2,6 @@
 title = "THE NIGHT DELAY"
 description = "高中正義さんの1981年リリースのアルバム『Alone』の収録曲「THE NIGHT DELAY」を演奏してみました。"
 date = 2025-07-18
-aliases = ["/articles/2025/07/18/the-night-delay"]
 
 [taxonomies]
 tags = ["Music", "Guitar"]

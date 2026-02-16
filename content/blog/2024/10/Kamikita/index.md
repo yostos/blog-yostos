@@ -2,7 +2,6 @@
 title = "フォレストかみきたに行ってきた"
 description = "世界遺産「大峯奥駈道」と日本百名山「大台ケ原」に囲まれた奈良県上北山村。この地の「フォレストかみきた」で週末を過ごしました。"
 date = 2024-10-28
-aliases = ["/articles/2024/10/28/Kamikita"]
 
 [taxonomies]
 tags = ["Travel"]

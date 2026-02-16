@@ -2,7 +2,6 @@
 title = "DJI Air3S 初飛行"
 description = "購入していたDJI Air3S の初飛行です。ドローンを飛ばすために必要なこともまとめておきました。"
 date = 2025-05-17
-aliases = ["/articles/2025/05/17/dji-air3s-flight"]
 
 [taxonomies]
 tags = ["Drone"]
@@ -58,7 +57,7 @@ social_media_card = "ogp.webp"
 
 この飛行承認では、操縦者の技量も審査され飛行経験などが問われます。
 ただ、そうすると技量と積むための飛行の承認はどうやって取るかという問題になり
-ます。この部分を一番手っ取り早く解決するのは「[二等無人航空機操縦士](https://blog.yostos.org/articles/2025/04/10/drown-lisence)」
+ます。この部分を一番手っ取り早く解決するのは「[二等無人航空機操縦士](/blog/2025/04/drone-lisence/)」
 の資格を取ってしまうの事です。私は目視外飛行、夜間飛行の限定解除付で
 資格取得をしました。
 

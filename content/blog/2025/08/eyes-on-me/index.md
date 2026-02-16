@@ -2,7 +2,6 @@
 title = "Eyes On Me"
 description = "This song appears to be unavailable for streaming due to copyright issues. So I gave it a try by playing it myself."
 date = 2025-08-10
-aliases = ["/articles/2025/08/10/eyes-on-me"]
 
 [taxonomies]
 tags = ["Music", "Guitar"]

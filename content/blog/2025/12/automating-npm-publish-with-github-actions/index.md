@@ -2,7 +2,6 @@
 title = "GitHub Actionsでnpmパッケージ公開を自動化する - Trusted Publishingで実現するトークンレス運用"
 description = "npm パッケージの公開を手動で行っていると、毎回トークンの管理やビルド、テストの実行など煩雑な作業が発生します。また、2025 年 9 月 29 日に GitHub が発表したnpmの認証強化により、Classic Token の廃止と、Trusted Publishing または Granular Access Token への移行が必要になりました。Trusted Publishing (OIDC) を使ってトークン管理不要のセキュアな公開フローを構築した手順を解説します。"
 date = 2025-12-05
-aliases = ["/articles/2025/12/05/automating-npm-publish-with-github-actions"]
 
 [taxonomies]
 tags = ["Tech","Node"]

@@ -2,7 +2,6 @@
 title = "千葉刑場と厳島神社"
 description = "同僚から千葉市中央区の登戸辺りに向かい刑場があったと聞いて調査してみました。"
 date = 2025-06-22
-aliases = ["/articles/2025/06/22/samukawa-kangoku"]
 
 [taxonomies]
 tags = ["Travel","Chiba"]

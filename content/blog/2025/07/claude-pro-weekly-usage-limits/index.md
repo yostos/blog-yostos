@@ -2,7 +2,6 @@
 title = "Claude Proに週間利用制限が導入へ - 2025年8月28日から"
 description = "Anthropic announced the introduction of weekly usage limits for Claude Pro users. This article explains the details and background of the new restrictions starting August 28, 2025, and response methods for affected users.(AnthropicからClaude Proユーザー向けに週間利用制限の導入が発表されました。2025年8月28日から開始される新しい制限の詳細と背景、影響を受けるユーザーへの対応方法について解説します。)"
 date = 2025-07-29
-aliases = ["/articles/2025/07/29/claude-pro-weekly-usage-limits"]
 
 [taxonomies]
 tags = ["Tech", "Generative AI"]

@@ -2,7 +2,6 @@
 title = "『御上先生』のラーメン店"
 description = "近くのラーメン店にふらりとは言ったら、なんとドラマ『御上先生』のロケが行われたお店でした。"
 date = 2025-03-17
-aliases = ["/articles/2025/03/17/Teacher-Mikami"]
 
 [taxonomies]
 tags = ["Gourmet", "Entertainment","Movies"]

@@ -2,7 +2,6 @@
 title = "Apple Silicon時代のMacバックアップ最新戦略"
 description = "4月に入って日本語対応のApple IntelligenceをサポートしたmacOS Sequoia15.4、4月16日にはセキュリティアップデートのための15.1、その他Command LineToolsのアップデートなどが続いています。これらの更新の前には都度Macのバックアップと取っていますが、改めてMacのバックアップについて検討してみました。"
 date = 2025-04-18
-aliases = ["/articles/2025/04/18/backup-strategy-for-mac"]
 
 [taxonomies]
 tags = ["Tech", "Mac","Apple"]

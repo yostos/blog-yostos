@@ -7,7 +7,6 @@ DustinとSusieの『Never Ending Story』。世界の危機と
 楽曲の再現を通じて振り返ります。
 """
 date = 2026-01-04
-aliases =["/articles/2026/01/04/never-ending-story"]
 
 
 [taxonomies]

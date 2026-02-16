@@ -2,7 +2,6 @@
 title = "読了『地下鉄サリン事件はなぜ防げなかったのか』"
 description = "本書は、オウム真理教が事件を起こした当時警察庁刑事局長として警察を率いていた垣見隆氏がオウム真理教事件の捜査全内幕を初めて証言したものです。"
 date = 2025-03-26
-aliases = ["/articles/2025/03/26/tokyo-subway-sarin-attack"]
 
 [taxonomies]
 tags = ["Books"]

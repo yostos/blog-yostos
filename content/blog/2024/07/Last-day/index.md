@@ -2,7 +2,6 @@
 title = "AWS最終日"
 description = "ついにAWSの最終日です"
 date = 2024-07-31
-aliases = ["/articles/2024/07/31/Last-day"]
 
 [taxonomies]
 tags = ["Life", "Career", "AWS"]

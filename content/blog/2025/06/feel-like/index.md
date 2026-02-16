@@ -2,7 +2,6 @@
 title = "Feel Like Makin Love"
 description = "ネオソウルのギター教室に行くと必ず課題曲になるという\"Feel Like Makin' Love\"。ギターを習いに行ったことないのでわかりませんが、弾いてみました。午後は東京湾ですが、スープを作って海岸でランチをいただきながらリラックスできました。"
 date = 2025-06-05
-aliases = ["/articles/2025/06/06/feel-like"]
 
 [taxonomies]
 tags = ["Music", "Guitar"]

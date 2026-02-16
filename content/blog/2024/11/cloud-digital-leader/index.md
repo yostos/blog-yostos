@@ -2,7 +2,6 @@
 title = "Google Cloud Digital Leader"
 description = "Google CloudのCloud Digital Leaderを受験してきました。レベル的にはAWSのCloudPractitioner相当だと思いますので、ほぼ準備せずに受験しても大丈夫でした。"
 date = 2024-11-08
-aliases = ["/articles/2024/11/08/cloud-digital-leader"]
 
 [taxonomies]
 tags = ["Career","Certification", "Google Cloud"]

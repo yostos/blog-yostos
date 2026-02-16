@@ -2,7 +2,6 @@
 title = "Goodbye Bartender!"
 description = "Macのメニュー管理アプリのBartenderが結構まずいことになっていました。"
 date = 2024-11-12
-aliases = ["/articles/2024/11/12/goodbye-bartender"]
 
 [taxonomies]
 tags = ["Tech","Software","Mac"]

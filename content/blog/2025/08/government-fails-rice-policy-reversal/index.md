@@ -2,7 +2,6 @@
 title = "日本政府が無能露呈、「米増産」への転換"
 description = "日本政府が米増産への政策転換を表明しましたが、昨年3月の農林水産省のデータから米の供給不足は明らかでした。なぜ政府の対応が1年も遅れたのか、減反政策の問題点と併せて検証します。"
 date = 2025-08-06
-aliases = ["/articles/2025/08/06/government-fails-rice-policy-reversal"]
 
 [taxonomies]
 tags = ["Current Affairs"]
@@ -30,14 +29,14 @@ social_media_card = "ogp.webp"
 
 なぜ今になって？ 遅すぎる対応ではないでしょうか。
 
-過去の記事を確認すると、[昨年9月](https://blog.yostos.org/articles/2024/09/06/Weekly-buzz-20240906)に既に<q>ベースとして米の収穫量が足りていないのです。</q>と書いています。
+過去の記事を確認すると、[昨年9月](/blog/2024/09/Weekly-buzz-20240906/)に既に<q>ベースとして米の収穫量が足りていないのです。</q>と書いています。
 農林水産省が公表している資料を丹念に読めば、
 昨年の段階で誰でも米の供給が足りないことは明白でした。
 一体、何をやっていたんでしょう？
 
 以下がその抜粋です。
 
-<blockquote cite="https://blog.yostos.org/articles/2024/09/06/Weekly-buzz-20240906">
+<blockquote cite="/blog/2024/09/Weekly-buzz-20240906/">
 
 結局、根本的には減反政策により米の生産量自体が落ちていることが問題で、ちょっとした需給のバランスで価格高騰したり品不足になったりという状況なのでしょう。安倍内閣の時に減反をやめたと認識していましたが、目標値設定がなくなっただけで減反に伴う補助金は出続けており事実上継続されています。そもそも需給がバランスしておらず、農林水産省の「<a href="https://www.maff.go.jp/j/council/seisaku/syokuryo/240305/attach/pdf/240305-15.pdf">
 米の消費および生産の近年の動向について</a>」という資料を見ると、2023 年の需要量が 691 万トンに対して主食向け収穫量が
@@ -45,7 +44,7 @@ social_media_card = "ogp.webp"
 
   <footer>
     <cite>
-      Coded Chords - 「<a href="https://blog.yostos.org/articles/2024/09/06/Weekly-buzz-20240906">
+      Coded Chords - 「<a href="/blog/2024/09/Weekly-buzz-20240906/">
         Weekly Buzz🐝 2024-09-06
       </a>」
     </cite>

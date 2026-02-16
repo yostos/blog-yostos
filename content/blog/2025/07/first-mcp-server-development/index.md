@@ -2,7 +2,6 @@
 title = "初めてのMCPサーバー開発 - jrnl-mcpを作ってみた"
 description = "Model Context Protocol（MCP）を使って、コマンドラインジャーナルツール「jrnl」とClaudeを連携させるMCPサーバーを開発しました。初めてのMCPサーバー開発の体験記として、選んだ理由から実装のポイント、学んだことまでを詳しく紹介します。"
 date = 2025-07-08
-aliases = ["/articles/2025/07/08/first-mcp-server-development"]
 
 [taxonomies]
 tags = ["Tech", "Generative AI","CLI","TypeScript"]

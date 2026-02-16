@@ -2,7 +2,6 @@
 title = "Scaler3で作曲支援"
 description = "先日発売されたScaler3ですが、音楽理論を知らなくても作曲や編曲ができると話題なので購入してみました。"
 date = 2025-05-31
-aliases = ["/articles/2025/05/31/scaler3"]
 
 [taxonomies]
 tags = ["Music Production", "Software"]

@@ -2,7 +2,6 @@
 title = "メインブログのAWS移行"
 description = "メインブログを CloudflareからAWS S3に移行してみました。"
 date = 2024-10-21
-aliases = ["/articles/2024/10/21/Blog-hosted-on-aws"]
 
 [taxonomies]
 tags = ["Tech", "AWS","Weblog"]

@@ -2,7 +2,6 @@
 title = "Revolution"
 description = "先日購入したHudson Broadcastですが、1960年代のクラシックな放送用コンソールをベースにした歪みエフェクターと謳われています。だとすると、この曲を演らない訳にはいかないでしょう。"
 date = 2025-05-30
-aliases = ["/articles/2025/05/30/revolution"]
 
 [taxonomies]
 tags = ["Music", "Guitar"]

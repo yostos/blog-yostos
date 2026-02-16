@@ -2,7 +2,6 @@
 title = "Weekly Buzz🐝 2024-08-25"
 description = "今週の気になった記事や出来事は、映画『ぼっち・ざ・ろっく』、AWS新CEO、誹謗中傷についてです。"
 date = 2024-08-25
-aliases = ["/articles/2024/08/25/Weekly-buzz-20240824"]
 
 [taxonomies]
 tags = ["Weekly Buzz","Current Affairs"]

@@ -2,7 +2,6 @@
 title = "Landslide"
 description = "Fleetwood MacのStevie Nicksの懐かしい1970年代の名曲を弾いてみました。親しい人の苦難を週末に聞いてショックを受けてしまいました。落ち込む中でこの曲がなとなく頭に浮かびました。"
 date = 2025-05-05
-aliases = ["/articles/2025/05/05/landslide"]
 
 [taxonomies]
 tags = ["Music", "Guitar"]

@@ -6,7 +6,6 @@ DJI NEOの修理後にRemote IDが消失。スマートフォンとの
 解決できました。同じ問題に遭遇した方への解決策をご紹介します。
 """
 date = 2026-01-20
-aliases =["/articles/2026/01/20/dji-remote-id-import"]
 
 [taxonomies]
 tags =["Drone"]

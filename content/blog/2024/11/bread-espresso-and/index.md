@@ -2,7 +2,6 @@
 title = "千葉公園の『パンとエスプレッソと』"
 description = "千葉公園が一部リニューアルして同時にオープンした『パンとエスプレッソと』というカフェに行ってきました。"
 date = 2024-11-28
-aliases = ["/articles/2024/11/28/bread-espresso-and"]
 
 [taxonomies]
 tags = [ "Gourmet"]

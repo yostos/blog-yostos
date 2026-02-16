@@ -2,7 +2,6 @@
 title = "渚・モデラート"
 description = "A guitar performance of \"Nagisa Moderato\" by Masayoshi Takanaka using the newly acquired YAMAHA REVSTAR RSP20. Exploring the guitar's tonal characteristics and reflecting on the nostalgic connection to this 1985 classic during university days."
 date = 2025-07-26
-aliases = ["/articles/2025/07/26/nagisa-moderato"]
 
 [taxonomies]
 tags = ["Music", "Guitar"]

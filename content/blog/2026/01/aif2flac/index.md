@@ -7,7 +7,6 @@ Bashスクリプトを作成しました。測定と適用を一度のコマン�
 完結させ、手作業を排除して作業効率を大幅に向上させます。
 """
 date = 2026-01-14
-aliases =["/articles/2026/01/14/aif2flac"]
 
 [taxonomies]
 tags =["Music Production","CLI"]

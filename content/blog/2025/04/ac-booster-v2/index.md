@@ -2,7 +2,6 @@
 title = "Xotic AC Booster V2レビュー"
 description = "Xotic AC Booster V2が発表されましたが、発表前から予約し入手したので早速使ってみました。"
 date = 2025-04-20
-aliases = ["/articles/2025/04/20/ac-booster-v2"]
 
 [taxonomies]
 tags = ["Guitar Pedals","Guitar","Music"]

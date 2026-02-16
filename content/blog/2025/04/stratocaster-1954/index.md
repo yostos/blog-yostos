@@ -2,7 +2,6 @@
 title = "Fender 70th Anniversary American Vintage II 1954 Stratocaster"
 description = "I always wanted an original Fender🎸 at least once in my life. And by purechance, I stumbled upon a 70th Anniversary American Vintage II 1954Stratocaster and it's only 3.5Kg  - an absolute gem. I sped off in mycar and bought it on the spot. Now, I'll let it sit for a while to cool off."
 date = 2025-04-27
-aliases = ["/articles/2025/04/27/stratocaster-1954"]
 
 [taxonomies]
 tags = ["Guitar"]

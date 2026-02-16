@@ -2,7 +2,6 @@
 title = "NHK vs 日本IBM：89億円案件の破綻を勝手に思考する"
 description = "NHKが日本IBMに対して54億円の損害賠償を求めて提訴した大型システム移行の失敗。元IBM社員の視点から、組織管理の問題点、プロジェクトが頓挫した原因、そして2027年に迫るメインフレームEOLへの対応策を勝手に検討してみました。"
 date = 2025-03-31
-aliases = ["/articles/2025/03/31/nhk-ibm"]
 
 [taxonomies]
 tags = ["Tech", "Current Affairs", "IBM"]

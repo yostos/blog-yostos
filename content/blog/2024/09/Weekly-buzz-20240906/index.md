@@ -2,7 +2,6 @@
 title = "Weekly Buzz🐝 2024-09-06"
 description = "今週、気になったのは、イトーヨーカドー閉店、NVIDIA株急落、米不足です。"
 date = 2024-09-06
-aliases = ["/articles/2024/09/06/Weekly-buzz-20240906"]
 
 [taxonomies]
 tags = ["Weekly Buzz", "Current Affairs"]

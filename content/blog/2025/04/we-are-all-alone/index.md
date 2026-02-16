@@ -2,7 +2,6 @@
 title = "連休にまったりとギターを楽しむ"
 description = "五月の穏やかな午後に柔らかな日差しを浴びながら、まったりとストラトキャスターで先日購入した AC Booster V2 を楽しみました。このシンプルな瞬間こそが、私にとっての最高の贅沢なのかもしれません。"
 date = 2025-04-27
-aliases = ["/articles/2025/04/27/we-are-all-alone"]
 
 [taxonomies]
 tags = ["Music", "Guitar"]

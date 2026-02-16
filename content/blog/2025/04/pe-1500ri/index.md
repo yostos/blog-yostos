@@ -2,7 +2,6 @@
 title = "Aria Pro II PE-1500のブリッジについて"
 description = "PE-1500RIにはオリジナルのブリッジが付いていますが、ずっと弦の貼り方を間違っていたことに1年近く経って気付きました。"
 date = 2025-04-07
-aliases = ["/articles/2025/04/07/pe-1500ri"]
 
 [taxonomies]
 tags = ["Guitar"]

@@ -2,7 +2,6 @@
 title = "報道機関のリンクポリシー"
 description = "ちょっと必要があって報道各社のリンクポリシーを確認しました。"
 date = 2024-09-10
-aliases = ["/articles/2024/09/10/Link-policy-of-news"]
 
 [taxonomies]
 tags = ["Current Affairs","Old Media"]

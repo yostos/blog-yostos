@@ -2,7 +2,6 @@
 title = "NeoVimからClaude Codeを使う"
 description = "Anthropic の Developer Partner Program に Join してClaude Codeを使うモチベーションが高まっています。Claude CodeをNeoVimから使用するためのClaude Code Neovim Pluginをインストールしました。Claude Code Neovim Plugin を NeoVim で使う方法を説明します。"
 date = 2025-05-04
-aliases = ["/articles/2025/05/04/claude-code-nvim"]
 
 [taxonomies]
 tags = ["Tech", "Generative AI"]

@@ -2,7 +2,6 @@
 title = "Synthersizer V Studio 2 Pro"
 description = "歌声合成ソフトウェア「Synthesizer V」の新バージョンである、「Synthesizer V 2」が3月21日に発売されていたので、アップグレードしました。"
 date = 2025-04-15
-aliases = ["/articles/2025/04/15/synthesizer-v-studio-2-pro"]
 
 [taxonomies]
 tags = ["Music", "Software", "Music Production"]

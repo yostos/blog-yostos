@@ -7,7 +7,6 @@ VS Codeに市場シェアを奪われても品質を保ち続ける職人主義�
 持続可能性について考察します。
 """
 date = 2026-01-08
-aliases =["/articles/2026/01/08/sublime-text"]
 
 [taxonomies]
 tags =["Tech","Software", "Editor"]

@@ -2,7 +2,6 @@
 title = "Claude Code MCPセットアップガイド：Inkdrop統合の実践"
 description = "Claude CodeでInkdrop MCPサーバーを設定し、リモートMCPサーバーとして統合する手順を詳しく解説します。実際のセットアップから高度なワークフローの実演まで、ステップバイステップで紹介。"
 date = 2025-06-21
-aliases = ["/articles/2025/06/21/claude-code-mcp-setup-guide"]
 
 [taxonomies]
 tags = ["Tech", "Generative AI","Claude Code"]

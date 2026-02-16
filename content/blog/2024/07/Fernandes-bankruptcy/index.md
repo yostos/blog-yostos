@@ -2,7 +2,6 @@
 title = "フェルナンデス倒産！"
 description = "国産ギターメーカーのフェルナンデスが倒産しました。"
 date = 2024-07-15
-aliases = ["/articles/2024/07/15/Fernandes-bankruptcy"]
 
 [taxonomies]
 tags = ["Guitar","Current Affairs"]

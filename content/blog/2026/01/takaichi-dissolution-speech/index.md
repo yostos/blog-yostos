@@ -6,7 +6,6 @@ description = """
 私は知りません。覚悟の政策転換に込められた思いを綴ります。
 """
 date = 2026-01-21
-aliases =["/articles/2026/01/21/takaichi-dissolution-speech"]
 
 [taxonomies]
 tags =["Current Affairs"]

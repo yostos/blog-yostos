@@ -7,7 +7,6 @@ Claude Codeプラグイン「pdf-processor」を開発しました。
 自動化し、スキャン書籍を実用的なデジタル書籍に変換します。
 """
 date = 2026-01-02
-aliases =["/articles/2026/01/02/pdf-processor-plugin"]
 
 [taxonomies]
 tags =["Tech","Claude Code","PDF"]

@@ -2,7 +2,6 @@
 title = "Historical Trend in New Year's Card Volume in Japan"
 description = "今年年賀状で「年賀状仕舞い」の挨拶を結構いただき気になったので、年賀はがきの発行枚数の推移を調べてみました。"
 date = 2025-01-15
-aliases = ["/articles/2025/01/15/postcards"]
 
 [taxonomies]
 tags = ["Current Affairs"]

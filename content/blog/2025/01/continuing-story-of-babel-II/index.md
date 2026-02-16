@@ -2,7 +2,6 @@
 title = "Continuing story of Babel The Second"
 description = "先日実家の漫画を整理した際に小学生の頃に始めて買った漫画の単行本『バビル2世』も処分してしまったのですが、読み返したくなって電子書籍で再購入しました。"
 date = 2025-01-24
-aliases = ["/articles/2025/01/24/continuing-story-of-babel-II"]
 
 [taxonomies]
 tags = ["Books", "Anime","Manga"]

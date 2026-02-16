@@ -2,7 +2,6 @@
 title = "MulmoCast: AIと人間が協働する次世代プレゼンテーション・プラットフォームを試してみた"
 description = "AIネイティブなプレゼンテーション・プラットフォーム「MulmoCast」を実際に検証してみました。一つのスクリプトから動画、ポッドキャスト、PDFなど複数フォーマットに自動変換できる革新的なツールの使い方と実用性について詳しく解説します。"
 date = 2025-06-24
-aliases = ["/articles/2025/06/24/mulmocast-ai-collaboration-platform"]
 
 [taxonomies]
 tags = ["Tech", "Generative AI"]

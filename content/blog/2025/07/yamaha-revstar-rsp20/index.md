@@ -2,7 +2,6 @@
 title = "YAMAHA REVSTAR RSP20を購入"
 description = "ギター不況と言われ、あのフェルナンデスが倒産してしまう今日ですが、独自に自社で良いギター作りをしているヤマハの現在のフラッグシップとも言えるREVSTARを軽い気持ちで見ていたら、つい購入してしまいました。"
 date = 2025-07-22
-aliases = ["/articles/2025/07/22/yamaha-revstar-rsp20"]
 
 [taxonomies]
 tags = ["Guitar"]

@@ -2,7 +2,6 @@
 title = "コマンドラインで画像のExif修正"
 description = "デジカメの日付の設定を間違えたので、Exifの日付をコマンドラインで一括修正する方法を見つけました。"
 date = 2024-08-23
-aliases = ["/articles/2024/08/23/Exiftool"]
 
 [taxonomies]
 tags = ["Tech", "Photography", "CLI"]

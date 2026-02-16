@@ -8,7 +8,6 @@ Neural DSP Archetype Cory Wong Xで音作りをしています。
 フュージョンの名曲を現代のデジタル技術で再現しました。
 """
 date = 2026-01-25
-aliases =["/articles/2026/01/25/plumed-bird"]
 
 [taxonomies]
 tags =["Music","Guitar"]

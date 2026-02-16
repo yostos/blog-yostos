@@ -2,7 +2,6 @@
 title = "OpenAI will support MCP"
 description = "MCPをサポートしたAnthropicのClaudeで試しましたが、その可能性に驚きました。3月末にはOpenAIもMCP対応を表明していたので楽しみです。"
 date = 2025-04-08
-aliases = ["/articles/2025/04/08/openai-mcp-support"]
 
 [taxonomies]
 tags = ["Tech", "Generative AI"]

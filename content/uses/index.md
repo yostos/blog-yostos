@@ -2,7 +2,6 @@
 title = "Uses"
 description = "I often get asked about the things I use to build software, the tools I rely on to stay productive, my favorite guitars and effects, and the gadgets I love. Here's a big list of all of my favorite stuff."
 path = "uses"
-aliases = ["/uses"]
 +++
 
 ## Workstation

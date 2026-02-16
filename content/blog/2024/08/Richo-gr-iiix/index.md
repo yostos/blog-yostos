@@ -2,7 +2,6 @@
 title = "RICOH GR IIIx HDF"
 description = "デジタルカメラを買いました。久しぶりのRICOH GRです。"
 date = 2024-08-27
-aliases = ["/articles/2024/08/27/Richo-gr-iiix"]
 
 [taxonomies]
 tags = ["Photography"]

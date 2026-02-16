@@ -2,7 +2,6 @@
 title = "First Manual Mode FPV Flight Session"
 description = "Initial attempt at manual flight control with the DJI Neo. From simulator training to real-world flight testing, experiencing the complexity and thrill of FPV drone piloting."
 date = 2025-11-04
-aliases = ["/articles/2025/11/04/first-fpv-flight"]
 
 [taxonomies]
 tags = ["Drone"]

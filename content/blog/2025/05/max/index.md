@@ -2,7 +2,6 @@
 title = "Universal Audio/UAFX Max Preamp & Dual Compressorを買う"
 description = "Strymon Compadreに満足していなかったわけではありませんが、少し安く売られているのを見つけたので、UAFX Max Preamp & Dual Compressorを購入してしまいました。"
 date = 2025-05-24
-aliases = ["/articles/2025/05/24/max"]
 
 [taxonomies]
 tags = ["Guitar Pedals","Guitar","Music"]

@@ -7,9 +7,7 @@
     "lint:fix": "textlint --fix \"content/**/*.md\"",
     "ogp": "node scripts/generate-ogp.mjs",
     "ogp:dry-run": "node scripts/generate-ogp.mjs --dry-run",
-    "linkcard": "node scripts/generate-linkcard.mjs",
-    "linkcard:dry-run": "node scripts/generate-linkcard.mjs --dry-run",
-    "prepare": "husky"
+"prepare": "husky"
   },
   "lint-staged": {
     "content/**/*.md": [

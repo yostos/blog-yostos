@@ -2,7 +2,6 @@
 title = "夜明けの高滝湖"
 description = "湖畔には市原湖畔美術館が建っている高滝湖を夜明けに、DJI Air3Sで空撮してきました。"
 date = 2025-06-13
-aliases = ["/articles/2025/06/13/takataki-lake"]
 
 [taxonomies]
 tags = ["Drone", "Photography"]

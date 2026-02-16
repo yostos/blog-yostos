@@ -2,7 +2,6 @@
 title = "ヘッドレスCMS Contentfulを活用したつぶやき機能の実装"
 description = "このブログでは直接App Router配下に記事を書いていますが、ヘッドレスCMSを使うことも検討して諦めました。今回、ライトにつぶやき程度であればできそうかなとContentfulを使って実装してみました。"
 date = 2025-03-24
-aliases = ["/articles/2025/03/24/contentful"]
 
 [taxonomies]
 tags = ["Tech","Web"]

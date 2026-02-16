@@ -2,7 +2,6 @@
 title = "Stranger Things Season 5: A Tale of Growth and Resurrection"
 description = "Season 5 of Stranger Things has begun streaming. Exploring the charm of the final season through themes of growth and resurrection."
 date = 2025-12-24
-aliases = ["/articles/2025/12/24/stranger-things"]
 
 [taxonomies]
 tags = ["Entertainment","Movies"]

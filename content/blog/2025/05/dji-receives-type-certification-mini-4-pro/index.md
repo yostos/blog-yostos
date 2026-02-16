@@ -2,7 +2,6 @@
 title = "祝 DJI Mini 4 Pro、ホビー機初の型式認証取得！ ＆ Air3S自動飛行レポート"
 description = "ドローン界に歴史的な転換点が到来？ DJIがMini 4 Proで一般向け機種として初の第二種型式認証を取得しました。飛行申請が大幅に簡略化されるのか？ また、DJI Air 3Sのウェイポイント自動飛行をテストしてきました。"
 date = 2025-05-29
-aliases = ["/articles/2025/05/29/dji-receives-type-certification-mini-4-pro"]
 
 [taxonomies]
 tags = ["Drone"]

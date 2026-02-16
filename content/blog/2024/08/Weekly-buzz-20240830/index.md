@@ -2,7 +2,6 @@
 title = "Weekly Buzz🐝 2024-08-30"
 description = "今週は、NVIDIA関連、Telegram CEO逮捕、台風などを扱います。"
 date = 2024-08-30
-aliases = ["/articles/2024/08/30/Weekly-buzz-20240830"]
 
 [taxonomies]
 tags = ["Weekly Buzz","Current Affairs"]

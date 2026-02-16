@@ -2,7 +2,6 @@
 title = "You Never Give Me Your Money"
 description = "この曲には先日購入したHudson Broadcastが合うかなと思いしてみました。"
 date = 2025-06-20
-aliases = ["/articles/2025/06/20/you-never-give-me"]
 
 [taxonomies]
 tags = ["Music", "Guitar"]
