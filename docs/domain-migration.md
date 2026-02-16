@@ -448,7 +448,7 @@ Cloudflare Workers 向けに変更済みのため、
 - `claude.yml`（Claude Code）
 - `claude-code-review.yml`（コードレビュー）
 
-#### 6-9. フォント配信（CloudFront）の確認
+#### [済] 6-9. フォント配信（CloudFront）の確認
 
 BerkeleyMono フォントは CloudFront 経由で
 S3 から配信している（Phase 4 で設定済み）。
@@ -493,4 +493,4 @@ S3 から配信している（Phase 4 で設定済み）。
   （`static/_headers`、CSP は見送り）
 - [x] 6-7: `static/CNAME` 削除
 - [x] 6-8: GitHub Pages 関連の設定削除
-- [ ] 6-9: フォント配信の確認
+- [x] 6-9: フォント配信の確認
