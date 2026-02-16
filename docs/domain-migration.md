@@ -397,28 +397,24 @@ GitHub Pages → Cloudflare Workers 向けに
 Cloudflare が DNS レコードを自動設定し、
 `https://codedchords.dev` での表示を確認済み。
 
-#### 6-4. セキュリティヘッダー設定
+#### [済] 6-4. セキュリティヘッダー設定
 
-`static/_headers` ファイルを作成する。
+`static/_headers` ファイルを作成した。
 Cloudflare Workers の静的アセット機能は
 `_headers` ファイルをビルド出力に含めると
 レスポンスヘッダーに自動適用する。
 
-設定するヘッダー：
+設定したヘッダー：
 
 - `X-Content-Type-Options: nosniff`
 - `X-Frame-Options: DENY`
 - `Referrer-Policy: strict-origin-when-cross-origin`
-- `Permissions-Policy`（カメラ・マイク等を無効化）
-- `Content-Security-Policy`
+- `Permissions-Policy: camera=(), microphone=(), geolocation=()`
 
-CSP では以下の外部ドメインを許可する：
-
-- `d3w0x7oesq9q1.cloudfront.net`
-  （BerkeleyMono フォント配信）
-- `*.goatcounter.com`（アクセス解析）
-- `giscus.app`（コメント）
-- `hatenablog-parts.com`（linkcard iframe）
+CSP は見送り。外部リソース（SoundCloud、YouTube、
+OpenStreetMap、GoatCounter、Giscus、はてな
+ブログカード等）が多く、管理コストに対して
+静的サイトでの実益が限定的なため。
 
 #### [済]（6-5 の補足）
 
@@ -493,8 +489,8 @@ S3 から配信している（Phase 4 で設定済み）。
   （deploy.yml を Cloudflare Workers 向けに修正）
 - [x] 6-3/6-5/6-6: カスタムドメイン接続・
   GitHub Pages 解除・DNS 切り替え
-- [ ] 6-4: セキュリティヘッダー設定
-  （`static/_headers`）
+- [x] 6-4: セキュリティヘッダー設定
+  （`static/_headers`、CSP は見送り）
 - [x] 6-7: `static/CNAME` 削除
 - [x] 6-8: GitHub Pages 関連の設定削除
 - [ ] 6-9: フォント配信の確認
