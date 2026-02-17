@@ -281,4 +281,4 @@ Claude Code Pluginの仕組みを活用することで、このような複雑�
 
 - [Claude Code Plugin Documentation](https://docs.anthropic.com/claude/docs/claude-code)
 - [Magi Plugin Repository](https://github.com/yostos/claude-code-plugins)
-- [新世紀エヴァンゲリオン](https://www.evangelion.co.jp/)
+- [新世紀エヴァンゲリオン](https://ja.wikipedia.org/wiki/%E6%96%B0%E4%B8%96%E7%B4%80%E3%82%A8%E3%83%B4%E3%82%A1%E3%83%B3%E3%82%B2%E3%83%AA%E3%82%AA%E3%83%B3)
