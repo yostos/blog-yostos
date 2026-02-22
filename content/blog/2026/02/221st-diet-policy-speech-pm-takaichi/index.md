@@ -18,14 +18,12 @@ tags = ["Current Affairs"]
 social_media_card = "ogp.webp"
 +++
 
-<!-- textlint-disable -->
-
-<!-- image -->
-
 <details>
 <summary>Table of Contents</summary>
 <!-- toc -->
 </details>
+
+<!-- textlint-disable --> <!-- author-approved: 英語本文のため -->
 
 On February 20, 2026, Prime Minister
 Sanae Takaichi delivered her policy speech
@@ -66,9 +64,9 @@ on the Prime Minister's Office website
 
 ## Confronting China's Naked Hegemonism
 
-"Our country must take the wheel itself,
+<q>Our country must take the wheel itself,
 with a long-term perspective,
-and decide where we are headed."
+and decide where we are headed.</q>
 PM Takaichi opened the foreign affairs
 and security section with this declaration.
 Not reactive diplomacy,
@@ -77,14 +75,14 @@ but Japan proactively charting its own course.
 Behind this declaration lies
 China's brazen hegemonism. The speech
 explicitly stated that China has been
-"intensifying attempts to change
+<q>intensifying attempts to change
 the status quo by force or coercion
-in the East China Sea and South China Sea"
-and "expanding and intensifying
-military activities around Japan."
+in the East China Sea and South China Sea</q>
+and <q>expanding and intensifying
+military activities around Japan.</q>
 She also noted China's
-"strengthening military cooperation
-with Russia."
+<q>strengthening military cooperation
+with Russia.</q>
 
 The construction of military outposts
 in the South China Sea,
@@ -110,11 +108,11 @@ in the slightest.
 
 In the speech, she did offer
 the diplomatic formality of
-"comprehensively advancing
+<q>comprehensively advancing
 the mutually beneficial relationship
 based on strategic interests
 and building a constructive
-and stable relationship" with China.
+and stable relationship</q> with China.
 But what deserves attention
 is not the words — it is the policies.
 The creation of a "Japanese CFIUS"
@@ -171,9 +169,9 @@ centerpiece: "responsible proactive
 fiscal policy."
 
 PM Takaichi declared she would
-"break the long-standing trend
+<q>break the long-standing trend
 of excessive fiscal austerity
-and underinvestment in the future."
+and underinvestment in the future.</q>
 Investment rests on two pillars:
 "crisis management investment"
 to minimize risks in areas like
@@ -192,18 +190,18 @@ while growth investment secures
 Japan's technological edge.
 In an era of global competition
 in industrial policy,
-the argument that "we should not
+the argument that <q>we should not
 hesitate to deploy fiscal resources
-where necessary" stems from
+where necessary</q> stems from
 PM Takaichi's realist approach
 of treating security and economics
 as inseparable.
 
 She also plans to fundamentally
 reform budget formulation.
-She will "break with the practice
+She will <q>break with the practice
 of budget formulation that assumes
-supplementary budgets every year"
+supplementary budgets every year</q>
 and allocate necessary funding
 in the initial budget.
 Crisis management and growth investments
@@ -212,8 +210,8 @@ a "multi-year, separate-track framework."
 This is a major reform
 spanning roughly two years.
 
-She also stated that "this does not mean
-adopting reckless fiscal policy,"
+She also stated that <q>this does not mean
+adopting reckless fiscal policy,</q>
 explicitly setting a fiscal discipline
 that caps the growth rate
 of outstanding debt
@@ -243,9 +241,9 @@ the nation's underlying strength grows.
 This virtuous cycle is the essence
 of "responsible proactive fiscal policy."
 
-"We will keep pushing the growth switch —
+<q>We will keep pushing the growth switch —
 push, push, push,
-and push it to the limit."
+and push it to the limit.</q>
 This powerful declaration encapsulates
 the determination behind
 the economic policy agenda.
@@ -269,9 +267,9 @@ various ministries into a unified system
 for sound decision-making.
 
 She further stated that she would
-"advance institutional design to prevent
+<q>advance institutional design to prevent
 improper interference from
-foreign countries." This can be read as
+foreign countries.</q> This can be read as
 laying the groundwork for legislation
 akin to an anti-espionage law —
 a highly significant statement.
@@ -330,7 +328,9 @@ in local currency terms[^1].
 
 <canvas id="gdpChart" width="800" height="450"></canvas>
 
-<script src="https://cdn.jsdelivr.net/npm/chart.js@4"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.5.1/dist/chart.umd.min.js"
+  integrity="sha384-jb8JQMbMoBUzgWatfe6COACi2ljcDdZQ2OxczGA3bGNeWe+6DChMTBJemed7ZnvJ"
+  crossorigin="anonymous"></script>
 <script>
 new Chart(document.getElementById('gdpChart'), {
   type: 'line',
@@ -450,10 +450,10 @@ function effectively?
 The hurdles are far from low.
 
 Yet, as the closing words suggest —
-"A nation that does not take on
+<q>A nation that does not take on
 challenges has no future.
 Politics that only defends
-cannot create hope" — this speech
+cannot create hope</q> — this speech
 carries an unmistakable will
 to reject the status quo.
 It is a policy speech that conveys
@@ -461,6 +461,8 @@ the determination to chart Japan's
 own course and act on it.
 
 ---
+
+<!-- textlint-enable -->
 
 <details>
 <summary>日本語版 / Japanese Version</summary>
@@ -477,11 +479,11 @@ own course and act on it.
 「日本列島を、強く豊かに。」
 このメッセージの下、高市総理は
 日本の総合的な国力を構成するものとして
-六つの「力」を掲げました。
+6つの「力」を掲げました。
 経済力、技術力、外交力、防衛力、
 情報力、そして人材力です。
 約48分にわたる演説では、
-この六つの柱それぞれについて
+この6つの柱それぞれについて
 具体的な施策が示されました。
 
 本記事ではその全体像を踏まえた上で、
@@ -499,11 +501,11 @@ own course and act on it.
 
 [第２２１回国会における高市内閣総理大臣施政方針演説 全文](https://www.kantei.go.jp/jp/105/statement/2026/0220shiseihoshin.html)
 
-### 覇権主義も露わな中国への対峙
+## 覇権主義も露わな中国への対峙
 
-「我が国が自ら考えてハンドルを握り、
+<q>我が国が自ら考えてハンドルを握り、
 長期的目線をもって、
-どこに向かっていくのかを決めることです」。
+どこに向かっていくのかを決めることです</q>。
 高市総理は外交・安全保障の冒頭で
 こう述べました。受動的な外交ではなく、
 日本が主体的に方向を定めるという宣言です。
@@ -511,12 +513,12 @@ own course and act on it.
 この宣言の背景にあるのは、
 中国の露骨な覇権主義です。
 演説では、中国が
-「東シナ海・南シナ海での力又は威圧による
-一方的な現状変更の試みを強化」し、
-「我が国周辺での軍事活動を拡大・
-活発化させている」と明確に指摘しました。
-さらに「ロシアとの軍事的連携を
-強化している」とも述べています。
+<q>東シナ海・南シナ海での力又は威圧による
+一方的な現状変更の試みを強化</q>し、
+<q>我が国周辺での軍事活動を拡大・
+活発化させている</q>と明確に指摘しました。
+さらに<q>ロシアとの軍事的連携を
+強化している</q>とも述べています。
 
 南シナ海における軍事拠点の建設、
 東シナ海での領海侵入の常態化、
@@ -537,8 +539,8 @@ own course and act on it.
 まったく揺らいでいません。
 
 演説では、中国との関係について
-「戦略的互恵関係を包括的に推進し、
-建設的かつ安定的な関係を構築していく」
+<q>戦略的互恵関係を包括的に推進し、
+建設的かつ安定的な関係を構築していく</q>
 という外交辞令も述べていますが、
 注目すべきは言葉ではなく政策です。
 「日本版CFIUS」（対日外国投資委員会）の
@@ -562,19 +564,18 @@ own course and act on it.
 という言葉には、中国の覇権に対抗する
 地域秩序構築への強い意志が感じられます。
 
-防衛面でも、国家安全保障戦略など
-「三文書」の本年中の前倒し改定、
+防衛面でも具体的な強化策が並びます。
+国家安全保障戦略など「三文書」の
+本年中の前倒し改定、
 航空自衛隊の「航空宇宙自衛隊」への改編、
 「宇宙作戦集団」の新編成、
-防衛装備移転の五類型見直しなど、
-具体的な強化策が並びます。
+防衛装備移転の五類型見直しなどです。
 
-こうした中国への対峙を
-実効あるものにするために、
-高市総理が示したのが
-経済力と情報力の二本の柱です。
+こうした対中戦略を実効あるものとすべく、
+高市総理は経済力と情報力の
+二本の柱を示しました。
 
-### 第一の柱：経済力 — 「責任ある積極財政」
+## 第一の柱：経済力 — 「責任ある積極財政」
 
 中国と対峙するためには、
 まず日本自身が強くなければなりません。
@@ -583,35 +584,35 @@ own course and act on it.
 「責任ある積極財政」です。
 
 高市総理は
-「長年続いてきた過度な緊縮志向、
-未来への投資不足の流れを断ち切る」と
-宣言しました。投資の柱は二つです。
+<q>長年続いてきた過度な緊縮志向、
+未来への投資不足の流れを断ち切る</q>と
+宣言しました。投資の柱は2つです。
 経済安全保障やエネルギー安全保障、
 国土強靱化などのリスクを最小化する
 「危機管理投資」と、
 AI、半導体、造船など
 先端技術分野への「成長投資」です。
 
-この二つの投資は対中戦略と
+この2つの投資は対中戦略と
 密接に結びついています。
 危機管理投資は中国への
 経済的依存からの脱却を進め、
 成長投資は日本の技術的優位を確保します。
 世界が産業政策の大競争時代にある中、
-「必要な財政出動をためらうべきではない」
+<q>必要な財政出動をためらうべきではない</q>
 という主張は、安全保障と経済を
 一体として捉える高市総理の
 現実主義的な発想から来ています。
 
 予算編成のあり方も根本から改めます。
-「毎年補正予算が組まれることを前提とした
-予算編成と決別」し、
+<q>毎年補正予算が組まれることを前提とした
+予算編成と決別</q>し、
 必要な予算は当初予算で措置する。
 危機管理投資や成長投資は
-「多年度で別枠で管理する仕組み」を
+「多年度にわたり別枠で管理する仕組み」を
 導入する。約二年がかりの大改革です。
 
-「野放図な財政政策をとるわけではない」
+<q>野放図な財政政策をとるわけではない</q>
 とも述べ、成長率の範囲内に
 債務残高の伸び率を抑える
 財政規律を明示しました。
@@ -637,13 +638,15 @@ AI、半導体、造船など
 この好循環こそが
 「責任ある積極財政」の本質です。
 
-「とにかく成長のスイッチを押して、
+<!-- textlint-disable --> <!-- author-approved: 演説の直接引用 -->
+<q>とにかく成長のスイッチを押して、
 押して、押して、押して、
-押しまくってまいります」。
+押しまくってまいります</q>。
+<!-- textlint-enable -->
 この力強い言葉に、
 経済政策にかける決意が凝縮されています。
 
-### 第二の柱：情報力 — 国家情報会議の創設
+## 第二の柱：情報力 — 国家情報会議の創設
 
 施政方針演説に「情報力」を
 独立した柱として掲げたことは、
@@ -659,8 +662,8 @@ AI、半導体、造船など
 的確な意思決定につなげる体制の
 構築です。
 
-さらに「外国からの不当な干渉を
-防止するための制度設計を進める」とも
+さらに<q>外国からの不当な干渉を
+防止するための制度設計を進める</q>とも
 述べています。いわゆるスパイ防止法的な
 法整備への布石とも読み取れる、
 注目すべき言及です。
@@ -687,7 +690,7 @@ AI、半導体、造船など
 中国の覇権主義に毅然と対峙する
 外交・防衛政策が実効性を持ちます。
 
-### 対中融和内閣が重ねた失策
+## 対中融和内閣が重ねた失策
 
 高市総理の「責任ある積極財政」と
 毅然とした対中姿勢は、
@@ -743,7 +746,7 @@ AI、半導体、造船など
 「情報力の強化」で断ち切ろうとしている
 のは、まさにこの悪循環です。
 
-### 演説の評価
+## 演説の評価
 
 今回の施政方針演説は、
 歴代首相の演説と比較しても
@@ -752,12 +755,11 @@ AI、半導体、造船など
 まず、**対中政策の一貫性**です。
 昨年の台湾有事をめぐる発言以降、
 メディアや親中派議員からの批判に
-さらされながらも、
-経済安全保障の強化、
-日本版CFIUSの創設、
+さらされながらも、実質的な対策を
+着実に積み上げてきました。
+経済安全保障の強化や日本版CFIUSの創設、
 サプライチェーンの再構築、
-国家情報会議の設置など、
-実質的な対策を着実に積み上げてきました。
+国家情報会議の設置などです。
 演説では外交辞令的な表現を
 用いつつも、政策面では毅然とした対応が
 盛り込まれています。
@@ -788,9 +790,9 @@ AI、半導体、造船など
 実効的に機能するのか。
 ハードルは決して低くありません。
 
-しかし、「挑戦しない国に未来はありません。
+しかし、<q>挑戦しない国に未来はありません。
 守るだけの政治に『希望』は
-生まれません」という
+生まれません</q>という
 結びの言葉が象徴するように、
 この演説には現状維持を良しとしない
 明確な意志があります。
@@ -799,5 +801,3 @@ AI、半導体、造船など
 施政方針演説でした。
 
 </details>
-
-<!-- textlint-enable -->

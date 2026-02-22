@@ -211,7 +211,9 @@ See `docs/tag-rule.md` for comprehensive tagging rules and guidelines.
   - 1〜2段落程度の短い内容にセクション見出しを付けない
   - 「撮影機材」「アクセス」など短い情報は本文に自然に組み込む
   - レベル3見出し（`###`）は原則使用禁止。必要な場合はユーザーに確認
-  - 太字（`**text**`）を見出し的に使用することも禁止
+  - 太字（`**text**`）だけで独立した行を作り、
+    見出し代わりにすることは禁止
+    （文中でキーワードを強調する用途は問題ない）
 - **太字**: 多用しない。本当に強調が必要な箇所のみ使用
 
 ## textlint Rules
@@ -224,8 +226,12 @@ See `docs/tag-rule.md` for comprehensive tagging rules and guidelines.
   エラー回避のために `<!-- textlint-disable -->` /
   `<!-- textlint-enable -->` を使用することは禁止
   - 例外: ユーザーが明示的に承認した場合
+    （`author-approved` コメントを付与する）
   - 例外: ショートコード部分（下記参照）
   - 例外: ライセンス文や引用など、変更すべきでない文章
+  - 承認済みの disable には必ず理由コメントを併記する:
+    `<!-- textlint-disable --> <!-- author-approved: 理由 -->`
+  - 理由なしの `<!-- textlint-disable -->` 単独使用はルール違反
 - **ショートコードの除外**:
   `%}` で終わるショートコード（例: `{% admonition %}...{% end %}`）を
   使用する場合は、必ず textlint 除外コメントで囲む
