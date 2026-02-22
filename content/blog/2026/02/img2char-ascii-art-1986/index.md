@@ -189,7 +189,7 @@ img2char input_640x200.png
 - [ASCII art - Wikipedia (English)](https://en.wikipedia.org/wiki/ASCII_art) -- タイプライターアート（1898年）からの世界的な歴史
 - [The history of ASCII Art - ASCII Art Archive](https://www.asciiart.eu/history-of-ascii-art) -- ベル研のノウルトン（1967年）による自動変換の歴史
 - [X1 (コンピュータ) - Wikipedia](https://ja.wikipedia.org/wiki/X1_%28%E3%82%B3%E3%83%B3%E3%83%94%E3%83%A5%E3%83%BC%E3%82%BF%29) -- Sharp X1のハードウェア仕様
-- [Z80の16ビットI/Oアドレスについての考察](http://retropc.net/ohishi/museum/16bitIO.htm) -- Z80のI/O命令が16ビットアドレスを出力する仕様の解説
+- Z80の16ビットI/Oアドレスについての考察（大石氏） -- Z80のI/O命令が16ビットアドレスを出力する仕様の解説（サイト閉鎖）
 - [パーソナルなコンピュータのメモリ事情（第3回：8ビット中期）- Electrelic](https://electrelic.com/electrelic/node/639) -- X1とPC-8801のGVRAM配置方式の比較
 - [パソコン通信の歴史 - 木暮仁](http://www.kogures.com/hitoshi/history/pc-tushin/index.html) -- PC-VAN、NIFTY-Serve、草の根BBSの歴史
 
