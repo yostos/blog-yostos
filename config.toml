@@ -45,6 +45,7 @@ social_media_card = "images/coded-chords.webp"
 favicon = "apple-touch-icon.png"
 copy_button = true
 mermaid = false  # ページ単位で [extra] mermaid = true で有効化
+serve_local_mermaid = false  # CDNから最新版Mermaidを読み込む
 show_previous_next_article_links = true
 stylesheets = ["custom.css"]
 copyright = "© $CURRENT_YEAR $AUTHOR • Content licensed under [CC BY-NC-ND 4.0](https://creativecommons.org/licenses/by-nc-nd/4.0/)"
