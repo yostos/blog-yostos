@@ -44,6 +44,7 @@ quick_navigation_buttons = true
 social_media_card = "images/coded-chords.webp"
 favicon = "apple-touch-icon.png"
 copy_button = true
+code_block_name_links = true
 mermaid = false  # ページ単位で [extra] mermaid = true で有効化
 serve_local_mermaid = false  # CDNから最新版Mermaidを読み込む
 show_previous_next_article_links = true
@@ -52,6 +53,7 @@ copyright = "© $CURRENT_YEAR $AUTHOR • Content licensed under [CC BY-NC-ND 4.
 remote_repository_url = "https://github.com/yostos/blog-yostos"
 show_remote_source = true
 show_remote_changes = true
+full_content_in_feed = true
 
 menu = [
     { name = "blog", url = "blog", trailing_slash = true },
@@ -94,6 +96,10 @@ lang = "ja"
 lazy_loading = true
 
 iine = true
+
+[extra.webmentions]
+enable = true
+domain = "codedchords.dev"
 
 [link_checker]
 # 外部リンクチェックから除外するURLプレフィックス

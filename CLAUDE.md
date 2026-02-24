@@ -95,17 +95,39 @@ echo "Hello"
 ```
 ````
 
-## Mermaid Diagram
+## Shortcodes
 
-記事でMermaidを使用する場合：
+ボディ型ショートコード（`{% %} ... {% end %}`）は
+必ず textlint 除外コメントで囲むこと。
+インライン型（`{{ }}`）もショートコード構文が
+textlint に引っかかるため同様に囲む。
 
-1. frontmatterに `[extra] mermaid = true` を追加
-2. tabiのショートコード形式で記述（textlint除外コメントで囲む）
+### admonition — 警告・情報ボックス
 
 ```markdown
 <!-- textlint-disable -->
 
-{% mermaid() %}
+{% admonition(type="warning", title="注意") %}
+内容テキスト（Markdown使用可）
+{% end %}
+
+<!-- textlint-enable -->
+```
+
+- `type`: info（デフォルト）, warning, tip, note,
+  danger, bug, example, quote, abstract, success,
+  question, failure
+- `title`: 見出し（デフォルトはtypeの大文字表記）
+- `icon`: アイコン（デフォルトはtype準拠）
+
+### mermaid — Mermaid図
+
+frontmatterに `[extra] mermaid = true` を追加すること。
+
+```markdown
+<!-- textlint-disable -->
+
+{% mermaid(invertible=true, full_width=false) %}
 flowchart LR
 A[開始] --> B[処理] --> C[終了]
 {% end %}
@@ -113,9 +135,98 @@ A[開始] --> B[処理] --> C[終了]
 <!-- textlint-enable -->
 ```
 
-## YouTube Shortcode
+- `invertible`: ダークモードで色反転
+  （デフォルト: true）
+- `full_width`: 全幅表示（デフォルト: false）
 
-To embed a YouTube video:
+### spoiler — ネタバレ隠し
+
+```markdown
+<!-- textlint-disable -->
+
+{% spoiler() %}
+隠したいテキスト
+{% end %}
+
+<!-- textlint-enable -->
+```
+
+- `fixed_blur`: 固定ぼかし（デフォルト: false）
+- クリックで内容を表示
+
+### aside — サイドノート
+
+```markdown
+<!-- textlint-disable -->
+
+{% aside() %}
+補足テキスト
+{% end %}
+
+<!-- textlint-enable -->
+```
+
+- `position`: 表示位置（任意）
+
+### references — 参考文献
+
+参考サイトを掲載する場合はこのショートコードを使用する。
+必ず `## References`（参考文献）セクションを設けること。
+
+記法：
+
+- 日本語: `サイト名. 「[記事タイトル](URL)」`
+- 英語: `サイト名. "[Article Title](URL)"`
+- 書籍: `著者. (出版年). 『[書籍名](URL)』`
+
+引用符はリンクの外に配置する。
+日本語は「」、英語は""を使用する。
+
+```markdown
+<!-- textlint-disable -->
+
+{% references() %}
+- Zenn. [「Zolaで技術ブログを作る」](https://zenn.dev/example)
+- 結城浩. (2020). [『数学ガール』](https://example.com/book)
+{% end %}
+
+<!-- textlint-enable -->
+```
+
+### multilingual_quote — 多言語引用切替
+
+```markdown
+<!-- textlint-disable -->
+
+{{ multilingual_quote(
+  translated="翻訳文",
+  original="Original text",
+  author="著者名",
+  lang="en"
+) }}
+
+<!-- textlint-enable -->
+```
+
+- `translated`: 翻訳テキスト（必須）
+- `original`: 原文テキスト（必須）
+- `lang`: 原文の言語コード（必須）
+- `author`: 著者名（任意）
+- クリックで翻訳と原文を切替表示
+
+### wide_container — 全幅コンテナ
+
+```markdown
+<!-- textlint-disable -->
+
+{% wide_container() %}
+全幅で表示したい内容
+{% end %}
+
+<!-- textlint-enable -->
+```
+
+### youtube — YouTube埋め込み（カスタム）
 
 ```markdown
 <!-- textlint-disable -->
@@ -125,12 +236,12 @@ To embed a YouTube video:
 <!-- textlint-enable -->
 ```
 
-`VIDEO_ID` is the part after `v=` or `youtu.be/` in the URL.
+`VIDEO_ID` は URL の `v=` または `youtu.be/` の後の部分。
 
-## Link Card Shortcode
+### linkcard — リンクカード（カスタム）
 
-URLをカード形式で表示するショートコードです。
-はてなブログカード（iframe）で表示します。
+URLをカード形式で表示する。
+はてなブログカード（iframe）で表示。
 
 ```markdown
 <!-- textlint-disable -->
@@ -147,15 +258,30 @@ URLをカード形式で表示するショートコードです。
 title = "記事タイトル"
 description = "説明"
 date = 2026-01-23
-aliases = ["/old/url/path"]  # For redirects
+updated = 2026-01-25        # 更新時に必ずセット
+aliases = ["/old/url/path"]  # リダイレクト用
+
+[taxonomies]
+tags = ["タグ1", "タグ2"]    # docs/tag-rule.md 参照
 
 [extra]
-social_media_card = "ogp.webp"  # OGP image (required)
-canonical_url = "https://..."   # Canonical URL (optional)
+social_media_card = "ogp.webp"  # OGP画像（必須）
+canonical_url = "https://..."   # 正規URL（任意）
+tldr = "記事の要約テキスト"      # TL;DRボックス（任意）
+katex = true                    # 数式表示（任意）
 +++
 ```
 
-新規記事作成後、`npm run ogp` を実行してOGP画像を生成してください。
+プロジェクトページでカード画像を表示する場合：
+
+```toml
+[extra]
+local_image = "path/to/image.webp"
+local_image_dark = "path/to/image-dark.webp"
+```
+
+新規記事作成後、`npm run ogp` を実行して
+OGP画像を生成してください。
 
 ## OGP画像生成
 
