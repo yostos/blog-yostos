@@ -1,0 +1,18 @@
+/* Uses page specific styles */
+h1.bottom-divider {
+    border-bottom: none;
+}
+
+dt {
+    font-weight: bold;
+}
+
+dd + dt {
+    margin-top: 1.5em;
+}
+
+h2 {
+    border-bottom: var(--divider-color) solid 0.5px;
+    padding-bottom: 0.3rem;
+    margin-top: 3rem;
+}

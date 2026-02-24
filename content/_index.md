@@ -1,6 +1,6 @@
 +++
 [extra]
-header = { title = "", img = "images/profile.webp", img_alt = "yostos" }
+header = { title = "⠽⠕⠎⠞⠕⠎", img = "images/profile.webp", img_dark = "images/profile-r.webp", img_alt = "yostos" }
 section_path = "blog/_index.md"
 max_posts = 10
 +++

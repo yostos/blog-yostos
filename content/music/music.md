@@ -1,6 +1,6 @@
 +++
 title = "Music"
-description = "I play guitar and create music as a hobby. Here are my original tracks and cover songs available on SoundCloud."
+template = "info-page.html"
 path = "music"
 +++
 
