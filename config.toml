@@ -32,6 +32,7 @@ theme = "catppuccin-frappe"
 style = "class"  # tabi必須
 
 [extra]
+skin = "evangelion"
 enable_csp = false
 theme_switcher = true
 show_reading_time = true
@@ -60,6 +61,7 @@ menu = [
     { name = "archive", url = "archive", trailing_slash = true },
     { name = "tags", url = "tags", trailing_slash = true },
     { name = "music", url = "music", trailing_slash = true },
+    { name = "projects", url = "projects", trailing_slash = true },
     { name = "uses", url = "uses", trailing_slash = true },
     { name = "about", url = "about", trailing_slash = true },
 ]
