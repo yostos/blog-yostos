@@ -79,5 +79,8 @@ node_modules/
 
 # End of https://www.toptal.com/developers/gitignore/api/macos,vim,rust,zola
 
+# Pagefind search index (generated at build time)
+public/pagefind/
+
 # OGP generation fonts (use local fonts)
 scripts/fonts/

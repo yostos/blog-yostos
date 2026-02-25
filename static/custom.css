@@ -324,6 +324,38 @@ pre,
   font-variant-ligatures: common-ligatures contextual;
 }
 
+/* Pagefind 検索UI
+   pagefind-ui.css が <main> 内で読み込まれ :root を
+   上書きするため、.pagefind-ui で特異度を確保する */
+.pagefind-ui {
+  --pagefind-ui-primary: var(--primary-color);
+  --pagefind-ui-text: var(--text-color);
+  --pagefind-ui-background: var(--background-color);
+  --pagefind-ui-border: var(--divider-color);
+  --pagefind-ui-tag: var(--bg-0);
+  --pagefind-ui-font: var(--sans-serif-font);
+}
+
+/* tabi の a:hover グローバルスタイルを
+   Pagefind 検索結果エリアで無効化 */
+.pagefind-ui a:hover,
+.pagefind-ui a:focus {
+  background-color: transparent;
+  color: var(--primary-color);
+}
+
+.pagefind-ui a:not(.no-hover-padding):hover::before {
+  display: none;
+}
+
+.pagefind-ui__result-link {
+  color: var(--primary-color);
+}
+
+.pagefind-ui__result-link:hover {
+  text-decoration: underline;
+}
+
 /* はてなブログカード */
 .hatenablogcard {
   display: block;

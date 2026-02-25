@@ -1,0 +1,4 @@
+site: public
+vite_plugin_mode: false
+glob: "blog/**/*.html"
+force_language: ja

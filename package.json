@@ -7,7 +7,9 @@
     "lint:fix": "textlint --fix \"content/**/*.md\"",
     "ogp": "node scripts/generate-ogp.mjs",
     "ogp:dry-run": "node scripts/generate-ogp.mjs --dry-run",
-"prepare": "husky"
+    "search": "pagefind --site public",
+    "search:dry-run": "pagefind --site public --dry-run",
+    "prepare": "husky"
   },
   "lint-staged": {
     "content/**/*.md": [
@@ -21,6 +23,7 @@
     "gray-matter": "^4.0.3",
     "husky": "^9.1.7",
     "lint-staged": "^15.3.0",
+    "pagefind": "^1.4.0",
     "satori": "^0.19.1",
     "sharp": "^0.34.5",
     "textlint": "^15.5.1",

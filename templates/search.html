@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+
+{% block main_content %}
+<main>
+  <div class="wide-container">
+    <link
+      href="/pagefind/pagefind-ui.css"
+      rel="stylesheet"
+    />
+    <div id="search"></div>
+    <script
+      src="/pagefind/pagefind-ui.js"
+    ></script>
+    <script>
+      window.addEventListener('DOMContentLoaded', () => {
+        new PagefindUI({
+          element: "#search",
+          showSubResults: true,
+          showImages: false,
+          translations: {
+            placeholder: "検索キーワードを入力…",
+            zero_results:
+              "[SEARCH_TERM] の検索結果はありません",
+            many_results: "[COUNT] 件の検索結果",
+            clear_search: "クリア",
+          }
+        });
+      });
+    </script>
+  </div>
+</main>
+{% endblock main_content %}
