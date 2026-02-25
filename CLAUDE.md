@@ -41,7 +41,7 @@ npx pagefind --dry-run # インデックス生成のプレビュー
 # ローカル検索テスト手順:
 # zola build
 # find public -name '*.html' \
-#   -exec sed -i '' 's/<body>/<\/head><body>/g' {} +
+#   -exec sed -i '' 's/<body>/<\/head><body>/' {} +
 # npx pagefind
 # zola serve
 ```
