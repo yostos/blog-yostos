@@ -40,12 +40,6 @@ jobs:
       - name: Build
         run: zola build
 
-      # Workaround: Zola minify_html strips </head> closing
-      # tag, causing Pagefind to fail language detection.
-      # Remove this step when Zola preserves </head>.
-      - name: Fix HTML for Pagefind
-        run: find public -name '*.html' -exec sed -i 's/<body>/<\/head><body>/' {} +
-
       - name: Build search index
         run: npx pagefind
 

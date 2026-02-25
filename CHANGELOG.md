@@ -7,6 +7,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.2.1] - 2026-02-25
+
+### Changed
+- Disable `minify_html` to fix Pagefind compatibility
+  - Zola's HTML minification stripped `</head>`, causing
+    Pagefind to fail language detection
+  - Removed `sed` workaround from CI/CD pipeline
+  - Simplified local search test procedure in CLAUDE.md
+
 ## [1.2.0] - 2026-02-25
 
 ### Added
@@ -24,7 +33,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   - npm scripts: `search` and `search:dry-run` for local
     testing
   - GitHub Actions CI/CD integration with automatic index
-    generation and HTML compatibility fix for Zola minification
+    generation
   - Architectural Decision Record (ADR-0001) and implementation
     plan documentation
 
