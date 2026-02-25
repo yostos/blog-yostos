@@ -64,6 +64,7 @@ menu = [
     { name = "projects", url = "projects", trailing_slash = true },
     { name = "uses", url = "uses", trailing_slash = true },
     { name = "about", url = "about", trailing_slash = true },
+    { name = "search", url = "search", trailing_slash = true },
 ]
 
 socials = [

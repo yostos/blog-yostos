@@ -7,6 +7,27 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.2.0] - 2026-02-25
+
+### Added
+- Site-wide search powered by Pagefind
+  - Full-text search indexing for 303 blog articles (17,217
+    words)
+  - Japanese language support with CJK segmentation (extended
+    Pagefind)
+  - Static search index generation at build time, no external
+    service needed
+  - Dark mode support with tabi evangelion skin integration
+  - Dedicated `/search/` page with custom search UI
+  - Search link in main navigation menu
+  - Zola integration: `pagefind.yml` configuration file
+  - npm scripts: `search` and `search:dry-run` for local
+    testing
+  - GitHub Actions CI/CD integration with automatic index
+    generation and HTML compatibility fix for Zola minification
+  - Architectural Decision Record (ADR-0001) and implementation
+    plan documentation
+
 ## [1.1.0] - 2026-02-13
 
 ### Added

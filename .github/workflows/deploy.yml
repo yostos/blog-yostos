@@ -28,8 +28,26 @@ jobs:
         with:
           tool: zola@0.22.1
 
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
       - name: Build
         run: zola build
+
+      # Workaround: Zola minify_html strips </head> closing
+      # tag, causing Pagefind to fail language detection.
+      # Remove this step when Zola preserves </head>.
+      - name: Fix HTML for Pagefind
+        run: find public -name '*.html' -exec sed -i 's/<body>/<\/head><body>/' {} +
+
+      - name: Build search index
+        run: npx pagefind
 
       - name: Deploy to Cloudflare
         uses: cloudflare/wrangler-action@v3

@@ -36,6 +36,14 @@ npm run lint        # Run textlint on all content
 npm run lint:fix    # Auto-fix textlint errors
 npm run ogp         # Generate OGP images for articles without ogp.webp
 npm run ogp:dry-run # Preview OGP generation without creating files
+npx pagefind           # 検索インデックス生成（要: 先にHTML修正）
+npx pagefind --dry-run # インデックス生成のプレビュー
+# ローカル検索テスト手順:
+# zola build
+# find public -name '*.html' \
+#   -exec sed -i '' 's/<body>/<\/head><body>/' {} +
+# npx pagefind
+# zola serve
 ```
 
 ## Git Operations
