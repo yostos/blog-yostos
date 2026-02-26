@@ -1,22 +1,19 @@
 +++
-title = "Zolaブログに日本語検索を導入した"
+title = "ZolaブログにPagefindで日本語検索を導入した"
 description = """
 静的サイトジェネレーターZolaで運用しているこのブログに、
 Pagefindを使った日本語対応のサイト内検索を導入しました。
 選定の経緯から実装時のハマりどころまでを記録します。
 """
-date = 2026-02-25T21:58:30+09:00
-draft = true
+date = 2026-02-26T07:58:30+09:00
 [taxonomies]
 tags = ["Tech", "Weblog", "Zola"]
 [extra]
 social_media_card = "ogp.webp"
 tldr = """
 Zolaの組み込み検索は日本語非対応のため、
-Pagefindを導入した。minify_htmlが</head>を
-省略してインデックス生成が失敗する問題や、
-tabiテーマとのCSS競合など、いくつかの落とし穴を
-乗り越えて検索機能を実現した。
+日本語のセグメンテーションに対応したPagefindを導入しました。
+Zolaとの組み合わせでいくつか落とし穴があるので解説しています。
 """
 +++
 
@@ -248,21 +245,20 @@ Pagefind v1.4.0のHTMLパーサーは
 `</head>`がないとページを正しく解析できず、
 言語検出に失敗していました。
 
-対処として、ビルド後に`sed`で`</head>`を
-挿入するワークアラウンドを入れました。
+このブログの規模ではHTML minifyの
+恩恵は無視できるため、
+`config.toml`で`minify_html = false`に
+変更して対処しました。
 
-```bash
-# <body>の直前に</head>を挿入
-find public -name '*.html' \
-  -exec sed -i '' \
-  's/<body>/<\/head><body>/' {} +
+```toml,name=config.toml
+minify_html = false
 ```
 
 これはZolaの不具合ではなく
 Pagefindのパーサー側の制約です。
-将来どちらかのバージョンアップで
-解消される可能性はありますが、
-現時点ではこの方法で安定動作しています。
+将来Pagefindが`</head>`省略に
+対応すれば`minify_html`を
+再度有効化できます。
 
 ### テーマとの共存で踏んだCSS問題
 
@@ -333,26 +329,12 @@ Cloudflare Workersにデプロイしています。
 - name: Build
   run: zola build
 
-# Workaround: Zola minify_html strips
-# </head>, causing Pagefind to fail
-- name: Fix HTML for Pagefind
-  run: >-
-    find public -name '*.html'
-    -exec sed -i
-    's/<body>/<\/head><body>/' {} +
-
 - name: Build search index
   run: npx pagefind
 ```
 
-`zola build`→ HTML修正 → `npx pagefind`
-の順で実行します。
-なお、前述の`sed`コマンドは
-ローカル（macOS）とCI（Linux）で
-オプションが異なる点に注意が必要です。
-macOSの`sed`は`-i`の後に
-バックアップ拡張子（空文字列`''`）が
-必須ですが、LinuxのGNU sedでは不要です。
+`zola build` → `npx pagefind`の
+2ステップだけで完結します。
 
 ## まとめ
 
