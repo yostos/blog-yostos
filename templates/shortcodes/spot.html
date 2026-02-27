@@ -1,0 +1,65 @@
+{% set parts = geo | split(pat="?") %}
+{% set coords = parts[0] | replace(from="geo:", to="") | split(pat=",") %}
+{% set lat = coords[0] | trim %}
+{% set lon = coords[1] | trim %}
+{% set_global zoom = 15 %}
+{% if parts | length > 1 %}
+  {% for param in parts[1] | split(pat="&") %}
+    {% if param is starting_with("z=") %}
+      {% set_global zoom = param | replace(from="z=", to="") | trim %}
+    {% endif %}
+  {% endfor %}
+{% endif %}
+
+<div class="spot">
+
+  <div class="spot-map">
+    <div class="openstreetmap-wrapper">
+      <div class="openstreetmap-container">
+        <iframe id="osm-{{ lat }}-{{ lon }}" loading="lazy"></iframe>
+      </div>
+      <small class="osm-link">
+        <a href="https://www.openstreetmap.org/?mlat={{ lat }}&mlon={{ lon }}#map={{ zoom }}/{{ lat }}/{{ lon }}" target="_blank" rel="noopener">
+          大きな地図を表示
+        </a>
+      </small>
+    </div>
+  </div>
+
+  {% if name or address or tel or access %}
+  <div class="spot-info">
+    {% if name %}
+      <h4 class="spot-name">{{ name }}</h4>
+    {% endif %}
+
+    <dl class="spot-meta">
+      {% if address %}
+        <dt>住所</dt>
+        <dd>{{ address }}</dd>
+      {% endif %}
+
+      {% if tel %}
+        <dt>電話</dt>
+        <dd>{{ tel }}</dd>
+      {% endif %}
+
+      {% if access %}
+        <dt>アクセス</dt>
+        <dd>{{ access }}</dd>
+      {% endif %}
+    </dl>
+  </div>
+  {% endif %}
+
+</div>
+
+<script>
+(function(){
+  var a={{ lat }},o={{ lon }},z={{ zoom }},
+      d=180/Math.pow(2,z),r=d*.56;
+  document.getElementById("osm-{{ lat }}-{{ lon }}").src=
+    "https://www.openstreetmap.org/export/embed.html?bbox="
+    +(o-d)+"%2C"+(a-r)+"%2C"+(o+d)+"%2C"+(a+r)
+    +"&layer=mapnik&marker="+a+"%2C"+o;
+})();
+</script>

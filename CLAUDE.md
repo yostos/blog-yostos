@@ -12,10 +12,6 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## General Rules
 
-- **Line Length**: Wrap lines at 80 bytes maximum
-  - Japanese characters: 3 bytes per character
-  - Apply to all text files: Markdown, code, configuration files, etc.
-
 ## Available CLI Tools
 
 - `gh` - GitHub CLI for repository operations
@@ -255,6 +251,31 @@ URLをカード形式で表示する。
 <!-- textlint-enable -->
 ```
 
+### spot — スポット情報（地図+施設情報）
+
+OpenStreetMap の地図埋め込みと
+施設情報を表示するカード。
+GEO URIで位置を指定する。
+
+```markdown
+<!-- textlint-disable -->
+
+{{ spot(geo="geo:35.76044,140.10773?z=16"
+        name="新川千本桜",
+        address="千葉県八千代市米本",
+        tel="047-XXX-XXXX",
+        access="最寄りは米本団地バス停"
+) }}
+
+<!-- textlint-enable -->
+```
+
+- `geo`: GEO URI（必須）`geo:緯度,経度?z=ズーム`
+- `name`: スポット名（任意）
+- `address`: 住所（任意）
+- `tel`: 電話番号（任意、空文字で非表示）
+- `access`: アクセス情報（任意）
+
 ## Article Frontmatter Format
 
 ```toml
@@ -304,7 +325,6 @@ Noto Sans JPは[Google Fonts](https://fonts.google.com/noto/specimen/Noto+Sans+J
 - **必ず完全な文章で終える**: 体言止めや文末が助詞で終わる表現は禁止
 - **句点で終える**: 「〜します。」「〜です。」など、必ず句点「。」で終える
 - **文字数制限**: 200文字以内（textlintルール準拠）
-- **行の折り返し**: 80バイト前後で折り返す（複数行の場合）
 - **内容の質**:
   - 記事一覧でリード文として使われることを意識する
   - 読者の興味を引く魅力的な内容にする
@@ -336,7 +356,6 @@ See `docs/tag-rule.md` for comprehensive tagging rules and guidelines.
 - **文体**: ですます調（敬体）を使用する
 - 技術記事でも読者に語りかける丁寧な文体を維持
 - 「：」で終わる文は禁止（「〜します。」「〜です。」などで終える）
-- **行の長さ**: 1行80バイト以内に収める（日本語は1文字3バイト）
 - **セクション分割**: 細かいセクション分割は禁止
   - 1〜2段落程度の短い内容にセクション見出しを付けない
   - 「撮影機材」「アクセス」など短い情報は本文に自然に組み込む
@@ -412,6 +431,33 @@ git push --no-verify      # pre-pushをスキップ
 
 ただし、GitHub ActionsのCIは必ず実行されるため、
 最終的にはtextlintエラーを修正する必要があります。
+
+## カバー画像生成（OpenAI DALL-E 3）
+
+記事のカバー画像を生成する場合に使用します。
+`OPENAI_API_KEY` の設定が必要です。
+
+```bash
+# 16:9 カバー画像の生成
+./scripts/generate-cover.sh \
+  -p "プロンプト" \
+  -o content/blog/YYYY/MM/slug/cover.jpg
+
+# 正方形画像
+./scripts/generate-cover.sh \
+  -p "プロンプト" \
+  -o output.jpg -s 1024x1024
+```
+
+- `-p`: 画像生成プロンプト（必須）
+- `-o`: 出力ファイルパス（必須）
+- `-s`: サイズ（デフォルト: 1792x1024 = 16:9）
+- `-q`: 品質 standard / hd（デフォルト: hd）
+
+利用シーン:
+- ユーザーからカバー画像の作成を依頼された場合
+- 記事の内容に即したイメージ画像が必要な場合
+- 写真素材がなくコンセプチュアルな画像が適切な場合
 
 ## Migration Source
 

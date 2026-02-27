@@ -363,3 +363,71 @@ pre,
   max-width: 100%;
   border: none;
 }
+
+/* Open Streat */
+.spot {
+  margin: 2rem 0;
+}
+
+.spot-map {
+  margin-bottom: 1rem;
+}
+
+.openstreetmap-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+}
+
+.openstreetmap-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 1px solid #ccc;
+}
+
+.osm-link {
+  display: block;
+  text-align: center;
+  margin-top: 0.5rem;
+  font-size: 0.8rem;
+}
+
+.spot-name {
+  margin: 0 0 0.2rem;
+  font-size: 0.8rem;
+}
+
+.spot-meta {
+  margin: 0;
+  font-size: 0.8rem;
+}
+
+.spot-meta dt {
+  font-weight: bold;
+}
+
+.spot-meta dd {
+  margin: 0 0 0.5rem 0;
+}
+
+/* PC横並び */
+@media (min-width: 768px) {
+  .spot {
+    display: flex;
+    gap: 0rem;
+    align-items: flex-start;
+  }
+
+  .spot-map {
+    flex: 2;
+  }
+
+  .spot-info {
+    flex: 0.6;
+  }
+}
