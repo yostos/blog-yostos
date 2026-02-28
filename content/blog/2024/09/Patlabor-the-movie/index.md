@@ -9,7 +9,11 @@ tags = ["Movies","Anime", "Entertainment"]
 social_media_card = "ogp.webp"
 +++
 
-![](patlabor.jpg)
+<!-- textlint-disable -->
+
+{{ image(src="patlabor.jpg") }}
+
+<!-- textlint-enable -->
 
 「思い出補正」で作品評価を必要以上に上げていて見直すとがっかりするのではと懸念していましたが、予想に反してしっかりと楽しむことができました。
 1989年と言えば、昭和天皇の崩御、ベルリンの壁崩壊、冷戦終結の年。三菱地所がロックフェラー・センターを買収し、任天堂がゲームボーイを発売。振り返ると、現代とは異なる世界線だったように感じます。

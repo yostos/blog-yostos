@@ -10,7 +10,11 @@ tags =["Current Affairs"]
 social_media_card = "ogp.webp"
 +++
 
-![Cover](./cover.webp)
+<!-- textlint-disable -->
+
+{{ image(src="./cover.webp", alt="Cover") }}
+
+<!-- textlint-enable -->
 
 Living in Chiba, snow is a rare sight. Today, February 8, 2026, it's snowing on
 election day. I walked through the park this morning to capture the snow-covered

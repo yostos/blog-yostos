@@ -9,7 +9,11 @@ tags = ["Books"]
 social_media_card = "ogp.webp"
 +++
 
-![](sarin.webp)
+<!-- textlint-disable -->
+
+{{ image(src="sarin.webp") }}
+
+<!-- textlint-enable -->
 
 1995年に発生した地下鉄サリン事件から30年を経て出版され、事件の背景や捜査の過
 程を詳細に描いています。東京地裁が世界平和統一家庭連合（旧統一教会）に対して

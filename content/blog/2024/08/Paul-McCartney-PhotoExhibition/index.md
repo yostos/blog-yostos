@@ -9,7 +9,11 @@ tags = ["Photography", "Art"]
 social_media_card = "ogp.webp"
 +++
 
-![Paul McCartney’s photo exhibition](paul.jpg)
+<!-- textlint-disable -->
+
+{{ image(src="paul.jpg", alt="Paul McCartney’s photo exhibition") }}
+
+<!-- textlint-enable -->
 
 I went to Roppongi to see Paul McCartney’s photo exhibition “Eyes of the
 Storm”.

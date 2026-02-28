@@ -9,7 +9,11 @@ tags = ["Gadget"]
 social_media_card = "ogp.webp"
 +++
 
-![POVO2.0](povo.webp)
+<!-- textlint-disable -->
+
+{{ image(src="povo.webp", alt="POVO2.0") }}
+
+<!-- textlint-enable -->
 
 <details>
 <summary>Table of Contens</summary>
@@ -20,7 +24,11 @@ social_media_card = "ogp.webp"
 
 下図は楽天モバイルの最強プランです。1プランで分かりやすく、通信量に応じて料金は上がっていきますが20GB以上は料金が2,980円で固定だと言う点が特徴です。
 
-![楽天モバイルプラン](rakuten-plan.webp)
+<!-- textlint-disable -->
+
+{{ image(src="rakuten-plan.webp", alt="楽天モバイルプラン") }}
+
+<!-- textlint-enable -->
 
 設定が絶妙で、実質的に3GB以下で収まる人はほとんど居ないでしょう。
 つまり、大半のユーザーは1,980円（3-20GB）または2,980円（20GB以上）のどちらかの料金帯に収まる形です。

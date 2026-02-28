@@ -14,7 +14,11 @@ tags = ["Drone", "Photography"]
 social_media_card = "ogp.webp"
 +++
 
-![Cover](./cover.jpg)
+<!-- textlint-disable -->
+
+{{ image(src="./cover.jpg" alt="Cover") }}
+
+<!-- textlint-enable -->
 
 そろそろ河津桜が咲いている頃かなと思い、
 八千代新川の千本桜を撮影に行ってきました。

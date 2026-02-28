@@ -9,7 +9,11 @@ tags = ["Current Affairs"]
 social_media_card = "ogp.webp"
 +++
 
-![](censorship.webp)
+<!-- textlint-disable -->
+
+{{ image(src="censorship.webp") }}
+
+<!-- textlint-enable -->
 
 The closure of the United States Agency for International Development (USAID) has been scarcely covered by Japanese media. Even when reported, it is often limited to a superficial narrative that "the U.S. is reducing foreign aid."
 

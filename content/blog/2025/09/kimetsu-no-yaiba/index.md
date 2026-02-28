@@ -9,7 +9,11 @@ tags = ["Anime", "Movies", "Entertainment"]
 social_media_card = "ogp.webp"
 +++
 
-![鬼滅の刃](kimetsu.webp)
+<!-- textlint-disable -->
+
+{{ image(src="kimetsu.webp", alt="鬼滅の刃") }}
+
+<!-- textlint-enable -->
 
 The visuals and sound were absolutely flawless. Being an IMAX experience, the Infinity Castle sequences were particularly breathtaking. The production team rebuilt the 3D models from scratch. What was initially expected to take 10 years to render was made possible through ultra-high-performance GPUs. The result was stunning. Combined with the powerful audio, I was completely satisfied with how they brought the original manga to life.
 

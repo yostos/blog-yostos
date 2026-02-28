@@ -38,7 +38,11 @@ social_media_card = "ogp.webp"
 ## Nintendo Alarmoがやってきた
 
 
-![Nintendo Alarmo](alarmo.jpg)
+<!-- textlint-disable -->
+
+{{ image(src="alarmo.jpg", alt="Nintendo Alarmo") }}
+
+<!-- textlint-enable -->
 
 任天堂が突然発売した目覚まし時計Alarmoを手に入れることができました。
 ここ数日使っていますが、ベッドに入ると自動的に睡眠を誘う音楽を流してくれ、ス

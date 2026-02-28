@@ -9,7 +9,11 @@ tags = ["Current Affairs","Art","Chiba"]
 social_media_card = "ogp.webp"
 +++
 
-![](kawamura.jpg)
+<!-- textlint-disable -->
+
+{{ image(src="kawamura.jpg") }}
+
+<!-- textlint-enable -->
 
 年初から美術館のWeb Siteで次のようにアナウンスされていたので、
 ある程度は混んでいるのは覚悟していました。

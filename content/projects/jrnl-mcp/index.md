@@ -14,7 +14,11 @@ social_media_card = "cover.webp"
 show_reading_time = false
 +++
 
-![jrnl-mcp](cover.webp)
+<!-- textlint-disable -->
+
+{{ image(src="cover.webp", alt="jrnl-mcp") }}
+
+<!-- textlint-enable -->
 
 An MCP server for the command-line journal tool
 [jrnl](https://jrnl.sh/).

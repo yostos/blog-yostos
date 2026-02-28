@@ -9,7 +9,11 @@ tags = ["Current Affairs", "Game", "Splatoon"]
 social_media_card = "ogp.webp"
 +++
 
-![](nakamaru.webp)
+<!-- textlint-disable -->
+
+{{ image(src="nakamaru.webp") }}
+
+<!-- textlint-enable -->
 
 知らない内にKAT―TUN中丸雄一さんとスプラトゥーン3で対戦してたらしい。
 しかも、Youtubeでめっちゃ負けとる動画を公開されとる。

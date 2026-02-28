@@ -18,6 +18,10 @@ social_media_card = "ogp.webp"
 以下は、OpenAIアカウントのセキュリティ設定画面です。
 
 
-![セキュリティ設定画面](openai-security.webp)
+<!-- textlint-disable -->
+
+{{ image(src="openai-security.webp", alt="セキュリティ設定画面") }}
+
+<!-- textlint-enable -->
 
 多要素認証の設定しかありません。

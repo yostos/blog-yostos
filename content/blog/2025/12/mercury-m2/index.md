@@ -9,7 +9,11 @@ tags = ["Gadget", "Game"]
 social_media_card = "ogp.webp"
 +++
 
-![Mercury M2](m2.webp)
+<!-- textlint-disable -->
+
+{{ image(src="m2.webp", alt="Mercury M2") }}
+
+<!-- textlint-enable -->
 
 ## Replacing My Mouse
 

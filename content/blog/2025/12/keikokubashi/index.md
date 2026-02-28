@@ -9,7 +9,11 @@ tags = ["Drone", "Photography"]
 social_media_card = "ogp.webp"
 +++
 
-![渓谷橋](keikokubashi.webp)
+<!-- textlint-disable -->
+
+{{ image(src="keikokubashi.webp", alt="渓谷橋") }}
+
+<!-- textlint-enable -->
 
 養老渓谷でドローンの撮影をしてきました。
 

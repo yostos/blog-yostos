@@ -17,4 +17,8 @@ social_media_card = "ogp.webp"
 信書便事業から民間を占め出して35%もの値上し、稼ぎ時の商品の出荷数を減らして実態としても値上げ分ビジネスを縮小させるなんて、なんて阿呆な経営なんだろう。
 
 
-![年賀状発行枚数の推移](postcard.png)
+<!-- textlint-disable -->
+
+{{ image(src="postcard.png", alt="年賀状発行枚数の推移") }}
+
+<!-- textlint-enable -->

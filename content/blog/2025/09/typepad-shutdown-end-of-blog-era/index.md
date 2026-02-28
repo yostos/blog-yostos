@@ -9,7 +9,11 @@ tags = ["Tech", "Weblog"]
 social_media_card = "ogp.webp"
 +++
 
-![Typepad](typepad.webp)
+<!-- textlint-disable -->
+
+{{ image(src="typepad.webp", alt="Typepad") }}
+
+<!-- textlint-enable -->
 
 <details>
 <summary>Table of Contents</summary>

@@ -14,7 +14,11 @@ social_media_card = "cover.webp"
 show_reading_time = false
 +++
 
-![img2char](cover.webp)
+<!-- textlint-disable -->
+
+{{ image(src="cover.webp", alt="img2char") }}
+
+<!-- textlint-enable -->
 
 In 1986, I wrote a BASIC program on a Sharp X1
 that converted graphics into ASCII characters

@@ -9,7 +9,11 @@ tags = ["Music", "Guitar"]
 social_media_card = "ogp.webp"
 +++
 
-![YAMAHA REVSTAR](revstar.webp)
+<!-- textlint-disable -->
+
+{{ image(src="revstar.webp", alt="YAMAHA REVSTAR") }}
+
+<!-- textlint-enable -->
 
 折角新しいギター、YAMAHA REVSTAR RSP20を買ったので、『渚・モデラート』を弾い
 てみました。

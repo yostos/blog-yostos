@@ -30,4 +30,8 @@ my life, I&apos;ll be switching to email for New Year&apos;s greetings from next
 onward."
 
 
-![New Year's Card](greetingcard.jpg)
+<!-- textlint-disable -->
+
+{{ image(src="greetingcard.jpg", alt="New Year's Card") }}
+
+<!-- textlint-enable -->

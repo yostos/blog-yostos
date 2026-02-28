@@ -11,4 +11,8 @@ social_media_card = "ogp.webp"
 
 寒さが厳しいと思いながら千葉ポートパークを散歩していたら、もう桜が咲いていました。カワヅザクラかな。
 
-![桜](b39b30279d.jpg)
+<!-- textlint-disable -->
+
+{{ image(src="b39b30279d.jpg", alt="桜") }}
+
+<!-- textlint-enable -->

@@ -14,7 +14,11 @@ social_media_card = "cover.webp"
 show_reading_time = false
 +++
 
-![genai-governance-checklist](cover.webp)
+<!-- textlint-disable -->
+
+{{ image(src="cover.webp", alt="genai-governance-checklist") }}
+
+<!-- textlint-enable -->
 
 ChatGPT・Claude・Gemini等のSaaS型生成AIを
 業務利用するガイドライン策定の際に使える

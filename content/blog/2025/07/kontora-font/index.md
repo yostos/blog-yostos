@@ -9,7 +9,11 @@ tags = ["Design","Font"]
 social_media_card = "ogp.webp"
 +++
 
-![コントラ体](kontora.svg)
+<!-- textlint-disable -->
+
+{{ image(src="kontora.svg", alt="コントラ体") }}
+
+<!-- textlint-enable -->
 
 [中村書体室](https://www.n-font.com/)から新フォント「コントラ体」がリリースされたので、早速購入しました。
 

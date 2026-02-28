@@ -17,7 +17,11 @@ social_media_card = "ogp.webp"
 
 雄大な自然に囲まれた静かな時間は、心身ともにリフレッシュできる贅沢な体験となりました。
 
-![小谷川](kamikita.jpg)
+<!-- textlint-disable -->
+
+{{ image(src="kamikita.jpg", alt="小谷川") }}
+
+<!-- textlint-enable -->
 
 | 項目 | 内容 |
 |------|------|

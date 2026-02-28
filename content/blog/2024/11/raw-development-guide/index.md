@@ -45,7 +45,11 @@ Here are the results from my Python program:
 以下が私のPythonプログラムからの結果です。
 
 
-![Result of Comparison](comparison-result.webp)
+<!-- textlint-disable -->
+
+{{ image(src="comparison-result.webp", alt="Result of Comparison") }}
+
+<!-- textlint-enable -->
 
 ```bash
 ❯ python three-image-comparison.py

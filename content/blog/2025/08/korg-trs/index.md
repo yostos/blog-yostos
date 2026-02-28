@@ -9,7 +9,11 @@ tags = ["Guitar Pedals"]
 social_media_card = "ogp.webp"
 +++
 
-![KORG Nu:tekt TR-S](trs.webp)
+<!-- textlint-disable -->
+
+{{ image(src="trs.webp", alt="KORG Nu:tekt TR-S") }}
+
+<!-- textlint-enable -->
 
 <details>
 <summary>Table of Contents</summary>

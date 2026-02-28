@@ -9,7 +9,11 @@ tags = ["Music","Guitar"]
 social_media_card = "ogp.webp"
 +++
 
-![](texan.jpg)
+<!-- textlint-disable -->
+
+{{ image(src="texan.jpg") }}
+
+<!-- textlint-enable -->
 
 Gibson J-45と弾き比べて、ついEpiphone USA Texan (FT-79)　を買ってしまった。こちらも腐ってもGibson謹製。
 

@@ -9,7 +9,11 @@ tags = ["Music Production", "Software"]
 social_media_card = "ogp.webp"
 +++
 
-![Scaler3](scaler3.webp)
+<!-- textlint-disable -->
+
+{{ image(src="scaler3.webp", alt="Scaler3") }}
+
+<!-- textlint-enable -->
 先日発売されたScaler3ですが、音楽理論を知らなくても作曲や編曲ができると話題なので購入してみました。
 
 <details>

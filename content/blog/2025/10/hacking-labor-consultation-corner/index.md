@@ -9,7 +9,11 @@ tags = ["Career"]
 social_media_card = "ogp.webp"
 +++
 
-![CIAC](ciac.webp)
+<!-- textlint-disable -->
+
+{{ image(src="ciac.webp", alt="CIAC") }}
+
+<!-- textlint-enable -->
 
 <details>
 <summary>Table of Contents</summary>

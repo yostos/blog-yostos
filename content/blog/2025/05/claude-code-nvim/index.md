@@ -9,7 +9,11 @@ tags = ["Tech", "Generative AI"]
 social_media_card = "ogp.webp"
 +++
 
-![Claude-Code-Nvim](claude-code-nvim.webp)
+<!-- textlint-disable -->
+
+{{ image(src="claude-code-nvim.webp", alt="Claude-Code-Nvim") }}
+
+<!-- textlint-enable -->
 AnthropicのDeveloper Partner ProgramにJoinしてClaude Codeを使うモチベーションが高まっています。Claude CodeをNeoVimから使用するためのClaude Code Neovim Pluginをインストールしました。Claude Code Neovim PluginをNeoVimで使う方法を説明します。
 
 <details>

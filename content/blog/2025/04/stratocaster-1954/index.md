@@ -13,7 +13,11 @@ I always wanted an original Fender🎸 at least once in my life. And by purechan
 
 そう言えば、昨年購入したストラトを仕様を忘れそうなので残しておきましょう。
 
-![Stratocaster](strato.webp)
+<!-- textlint-disable -->
+
+{{ image(src="strato.webp", alt="Stratocaster") }}
+
+<!-- textlint-enable -->
 
 ## 70周年記念モデル
 

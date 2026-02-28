@@ -1,0 +1,96 @@
+{#- ============================================================
+    image.html - Image shortcode for Zola
+
+    Copyright (c) 2026 Toshiyuki Yoshida
+    Released under the MIT License.
+    https://opensource.org/licenses/MIT
+
+     Repository: https://github.com/yostos/blog-yostos
+
+
+    Renders an <img> tag with automatic path resolution,
+    image metadata (width/height), cache busting, and lazy loading.
+
+    Parameters:
+      src          - Image path or remote URL (required)
+      alt          - Alt text for accessibility (recommended)
+      caption      - Caption text displayed below the image (optional)
+                     When specified, wraps output in <figure>/<figcaption>
+      lazy_loading - Enable lazy loading (default: true)
+    ============================================================ -#}
+
+{#- Strip leading "./" from src to normalize colocated paths
+    e.g. "./photo.jpg" -> "photo.jpg" -#}
+{%- set src = src | trim_start_matches(pat="./") -%}
+
+{#- ---- URL resolution ---- -#}
+{%- if src is starting_with("http") -%}
+    {#- Remote image: use src as-is. Metadata cannot be retrieved
+        for external URLs, so width/height will not be set. -#}
+    {%- set image_url = src -%}
+
+{%- else -%}
+    {#- Local image: first try resolving relative to the page's
+        colocated directory (e.g. content/blog/my-post/photo.jpg).
+        This supports the co-location pattern where content and
+        assets live in the same directory. -#}
+    {%- set colocated_path = page.colocated_path | default(value="") -%}
+    {%- set resolved_path = colocated_path ~ src -%}
+    {%- set meta = get_image_metadata(path=resolved_path, allow_missing=true) -%}
+
+    {%- if meta -%}
+        {#- Colocated path resolved successfully -#}
+        {%- set image_url = get_url(path=resolved_path, cachebust=true) -%}
+
+    {%- else -%}
+        {#- Fallback: treat src as an absolute path from the project root.
+            This handles images placed under the static/ directory,
+            e.g. src="/images/shared.jpg" -#}
+        {%- set meta = get_image_metadata(path=src, allow_missing=true) -%}
+
+        {%- if meta -%}
+            {%- set image_url = get_url(path=src, cachebust=true) -%}
+        {%- else -%}
+            {#- Neither path worked. Output the URL anyway so the page
+                does not break, but width/height will be omitted.
+                This may indicate a missing or misspelled image path. -#}
+            {%- set image_url = get_url(path=src, cachebust=true) -%}
+        {%- endif -%}
+
+    {%- endif -%}
+{%- endif -%}
+
+{#- ---- Attribute defaults ---- -#}
+
+{#- Default alt to empty string so the attribute is always present.
+    An explicit alt="" is valid for decorative images and is preferred
+    over omitting the attribute entirely for accessibility. -#}
+{%- set alt_text = alt | default(value="") -%}
+
+{#- Lazy loading is enabled by default for better page performance -#}
+{%- set lazy_loading = lazy_loading | default(value=true) -%}
+
+{#- Caption: when specified, wrap in <figure>/<figcaption> -#}
+{%- set caption_text = caption | default(value="") -%}
+
+{#- ---- Output ---- -#}
+{%- if caption_text -%}
+<figure>
+<img
+  src="{{ image_url }}"
+  alt="{{ alt_text }}"
+  {%- if meta and meta.width %} width="{{ meta.width }}"{% endif %}
+  {%- if meta and meta.height %} height="{{ meta.height }}"{% endif %}
+  {%- if lazy_loading %} loading="lazy"{% endif %}
+/>
+<figcaption>{{ caption_text }}</figcaption>
+</figure>
+{%- else -%}
+<img
+  src="{{ image_url }}"
+  alt="{{ alt_text }}"
+  {%- if meta and meta.width %} width="{{ meta.width }}"{% endif %}
+  {%- if meta and meta.height %} height="{{ meta.height }}"{% endif %}
+  {%- if lazy_loading %} loading="lazy"{% endif %}
+/>
+{%- endif -%}

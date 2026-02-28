@@ -17,7 +17,7 @@ social_media_card = "ogp.webp"
 
 <!-- textlint-disable -->
 
-![Cover](./cover.webp)
+{{ image(src="./cover.webp", alt="Cover") }}
 
 <details>
 <summary>Table of Contents</summary>

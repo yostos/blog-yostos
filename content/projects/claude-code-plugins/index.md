@@ -14,7 +14,11 @@ social_media_card = "cover.webp"
 show_reading_time = false
 +++
 
-![claude-code-plugins](cover.webp)
+<!-- textlint-disable -->
+
+{{ image(src="cover.webp", alt="claude-code-plugins") }}
+
+<!-- textlint-enable -->
 
 A collection of Claude Code plugins I built
 and use daily. Includes MAGI — a multi-agent

@@ -16,7 +16,11 @@ tags = ["Music", "Music Production"]
 social_media_card = "ogp.webp"
 +++
 
-![Cover](./cover.webp)
+<!-- textlint-disable -->
+
+{{ image(src="./cover.webp", alt="Cover") }}
+
+<!-- textlint-enable -->
 
 <details>
 <summary>Table of Contents</summary>
@@ -85,7 +89,11 @@ Decibelはストリーミングプラットフォームごとの
 プリセットを持つメータリングプラグインです。
 今回はSpotifyプリセットを使いました。
 
-![Decibel Spotifyプリセット](decibel-spotify-preset.png)
+<!-- textlint-disable -->
+
+{{ image(src="decibel-spotify-preset.png", alt="Decibel Spotifyプリセット") }}
+
+<!-- textlint-enable -->
 
 Spotifyプリセットでは
 次の3つのターゲットが設定されています。
@@ -125,7 +133,11 @@ Decibelは複数のメーターで同時に表示します。
 L4 Ultramaximizerを外した状態で
 楽曲全体を再生した結果です。
 
-![Decibel全体表示（L4なし）](decibel-full-view.webp)
+<!-- textlint-disable -->
+
+{{ image(src="decibel-full-view.webp", alt="Decibel全体表示（L4なし）") }}
+
+<!-- textlint-enable -->
 
 左のSuper MeterにはIntegrated LUFS、
 TRUEDYN、TRUEPEAK MAXが

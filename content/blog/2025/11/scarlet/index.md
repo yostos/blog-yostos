@@ -9,7 +9,11 @@ tags = ["Movies","Entertainment"]
 social_media_card = "ogp.webp"
 +++
 
-![Scarlet](scarlet.webp)
+<!-- textlint-disable -->
+
+{{ image(src="scarlet.webp", alt="Scarlet") }}
+
+<!-- textlint-enable -->
 
 ## What is "Scarlet"?
 

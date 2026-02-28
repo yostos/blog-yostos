@@ -9,7 +9,11 @@ tags = ["Game"]
 social_media_card = "ogp.webp"
 +++
 
-![Switch2](switch.webp)
+<!-- textlint-disable -->
+
+{{ image(src="switch.webp", alt="Switch2") }}
+
+<!-- textlint-enable -->
 本日22時から[Nintendo
 Direct](https://www.youtube.com/live/nkaodTSlhbU?si=5bYJKeb8Ss0yhWft)でSwitch2
 の発表がありました。

@@ -273,7 +273,11 @@ smoothnessIndex = smoothSum / (width - 61);
 
 <!-- textlint-enable -->
 
-![プロファイル比較解析](./profile_comparison.webp)
+<!-- textlint-disable -->
+
+{{ image(src="./profile_comparison.webp", alt="プロファイル比較解析") }}
+
+<!-- textlint-enable -->
 
 _上段: 両モデルの側面写真とエッジ検出によるプロファイルライン。下段左: プロファイルのオーバーレイ比較（赤=初代カーブド、青=Professionalステップ）。下段右: 高さの差分と相関係数。_
 

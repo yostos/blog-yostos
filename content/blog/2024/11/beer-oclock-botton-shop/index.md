@@ -9,7 +9,11 @@ tags = ["Gourmet"]
 social_media_card = "ogp.webp"
 +++
 
-![トニックウォーター](glass.jpg)
+<!-- textlint-disable -->
+
+{{ image(src="glass.jpg", alt="トニックウォーター") }}
+
+<!-- textlint-enable -->
 
 Beer O'clock, the renowned craft beer spot in Chiba, recently relocated. Curious about what became of its former location, I decided to check it out and discovered that it’s still operating as the [Beer O'clock Bottle Shop](https://www.instagram.com/beer_oclock_bottle_shop/).
 

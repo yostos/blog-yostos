@@ -9,7 +9,11 @@ tags = ["Guitar"]
 social_media_card = "ogp.webp"
 +++
 
-![Aria Pro II PE1500RI](pe-1500.webp)
+<!-- textlint-disable -->
+
+{{ image(src="pe-1500.webp", alt="Aria Pro II PE1500RI") }}
+
+<!-- textlint-enable -->
 
 ## Aria Pro II PE-1500RIとは
 

@@ -41,7 +41,11 @@ ContentfulではまずSpaceを作ることになりますが、今回は無料�
 シンプルに以下のようにしました。idは現時点では不要ですが、将来編集アプリを作
 る時に備えて一応用意しました。
 
-![Content Model](content-model.webp)
+<!-- textlint-disable -->
+
+{{ image(src="content-model.webp", alt="Content Model") }}
+
+<!-- textlint-enable -->
 
 | Name         | Field ID    | Attribute   | Unique |
 | ------------ | ----------- | ----------- | ------ |

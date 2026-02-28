@@ -9,7 +9,11 @@ tags = ["Drone"]
 social_media_card = "ogp.webp"
 +++
 
-![FwriteDown](top.webp)
+<!-- textlint-disable -->
+
+{{ image(src="top.webp", alt="FwriteDown") }}
+
+<!-- textlint-enable -->
 
 ## FwriteDownとは
 
@@ -70,7 +74,11 @@ FwriteDownはこれまでブラウザベースで提供されていました。
 
 今回のリニューアル以降は以下のように改変されました。
 
-![Price](price.webp)
+<!-- textlint-disable -->
+
+{{ image(src="price.webp", alt="Price") }}
+
+<!-- textlint-enable -->
 
 無料枠では機体1機、パイロット1名、月に3回までの飛行という制約では、おそらく
 多くの人がぎりぎり収まらないかなという印象です。

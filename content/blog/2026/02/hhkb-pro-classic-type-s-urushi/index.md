@@ -12,7 +12,11 @@ tags = ["Gadget", "Keyboard", "HHKB"]
 social_media_card = "ogp.webp"
 +++
 
-![HHKB Professional Classic Type-S](./0.webp)
+<!-- textlint-disable -->
+
+{{ image(src="./0.webp", alt="HHKB Professional Classic Type-S") }}
+
+<!-- textlint-enable -->
 
 <details>
 <summary>Table of Contents</summary>
@@ -60,7 +64,11 @@ Classic Type-Sの良さを挙げてみます。
 
 ## 輪島塗Esc＆Controlキーセット
 
-![HHKB Professional専用漆塗Esc＆Controlキーセットの箱](./1.webp)
+<!-- textlint-disable -->
+
+{{ image(src="./1.webp", alt="HHKB Professional専用漆塗Esc＆Controlキーセットの箱") }}
+
+<!-- textlint-enable -->
 
 さて、ここからが本題です。
 
@@ -74,12 +82,20 @@ PFUから発売されている
 熟練の職人の手によって何層にも塗り重ねることで、
 深みのある色合いと上品な質感を実現しています。
 
-![HHKB Professional専用漆塗Esc＆Controlキーセットの内容](./2.webp)
+<!-- textlint-disable -->
+
+{{ image(src="./2.webp", alt="HHKB Professional専用漆塗Esc＆Controlキーセットの内容") }}
+
+<!-- textlint-enable -->
 
 箱を開けると「輪島市無形文化財　天日黒目漆使用　大撤」と書かれた証明書が
 入っていました。本物の伝統工芸品であることを実感します。
 
-![HHKB Professional専用漆塗Esc＆Controlキーセットのセット例](./3.webp)
+<!-- textlint-disable -->
+
+{{ image(src="./3.webp", alt="HHKB Professional専用漆塗Esc＆Controlキーセットのセット例") }}
+
+<!-- textlint-enable -->
 
 HHKB「雪」（白）に黒漆のキーを載せると、このとおり。
 白と黒のコントラストが神々しいほど美しいです。

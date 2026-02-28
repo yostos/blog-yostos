@@ -25,7 +25,7 @@ canonical_url = "https://zenn.dev/yostos/articles/img2char-ascii-art-1986"
 
 ## はじめに
 
-![img2charによる変換例](cover.webp)
+{{ image(src="cover.webp", alt="img2charによる変換例") }}
 _左の画像はMidjourneyで生成したものです_
 
 1986年、パソコン通信は黎明期でASCIInetがまだ実験運用の時代でした。その頃の私はグラフィック（おそらくモノクロの有名歌手の画像）を自作プログラムでASCII文字の絵にして、あるパソコン通信のBBS（電子掲示板）に投稿しました。

@@ -39,12 +39,20 @@ OGP画像が未設定の場合、
 タイムラインで見かけても
 何の記事か判別できません。
 
-![対応前：すべての記事で同じ画像](./before.webp)
+<!-- textlint-disable -->
+
+{{ image(src="./before.webp", alt="対応前：すべての記事で同じ画像") }}
+
+<!-- textlint-enable -->
 
 記事ごとにタイトル入りの画像を用意すれば、
 共有リンクだけで内容が伝わります。
 
-![対応後：記事タイトル入りのOGP画像](./after.webp)
+<!-- textlint-disable -->
+
+{{ image(src="./after.webp", alt="対応後：記事タイトル入りのOGP画像") }}
+
+<!-- textlint-enable -->
 
 ## Zola + tabiテーマでのOGP画像の扱い
 

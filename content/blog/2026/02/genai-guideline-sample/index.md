@@ -8,7 +8,7 @@ description = """
 """
 date = 2026-02-15T11:38:57+09:00
 [taxonomies]
-tags = ["Generative AI", "IT Governance", "Tech"]
+tags = ["Generative AI", "Governance", "Tech"]
 [extra]
 social_media_card = "ogp.webp"
 +++
@@ -20,7 +20,11 @@ social_media_card = "ogp.webp"
 <!-- toc -->
 </details>
 
-![Cover](./cover.webp)
+<!-- textlint-disable -->
+
+{{ image(src="./cover.webp",alt="cover")}}
+
+<!-- textlint-enable -->
 
 ## TL;DR
 

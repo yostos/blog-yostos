@@ -14,7 +14,11 @@ social_media_card = "ogp.webp"
 <!-- toc -->
 </details>
 
-![Mission Impossible](mi.webp)
+<!-- textlint-disable -->
+
+{{ image(src="mi.webp", alt="Mission Impossible") }}
+
+<!-- textlint-enable -->
 
 『ミッション・インポッシブル』の最新作『ファイナル・レコニング』を観てきました。前作の『デッドレコニング』からの続編で、タイトルからしてシリーズ最終作となるので集大成ではありました。ネタバレ含みます。
 

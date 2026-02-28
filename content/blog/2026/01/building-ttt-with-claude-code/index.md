@@ -37,7 +37,11 @@ canonical_url = "https://zenn.dev/yostos/articles/building-ttt-with-claude-code"
 
 `ttt`(Tiny Task Tool) は「デジタルなメモ用紙」を目指したTUIタスク管理ツールです。
 
-![ttt demo](demo.gif)
+<!-- textlint-disable -->
+
+{{ image(src="demo.gif", alt="ttt demo") }}
+
+<!-- textlint-enable -->
 
 ### 主な特徴
 

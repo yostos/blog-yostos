@@ -9,7 +9,11 @@ tags = ["Tech", "Generative AI"]
 social_media_card = "ogp.webp"
 +++
 
-![Mail with AI](mail.webp)
+<!-- textlint-disable -->
+
+{{ image(src="mail.webp", alt="Mail with AI") }}
+
+<!-- textlint-enable -->
 
 <details>
 <summary>Table of Contents</summary>

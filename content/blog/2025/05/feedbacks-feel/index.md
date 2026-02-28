@@ -11,7 +11,11 @@ social_media_card = "ogp.webp"
 
 ディストーションにBOSS DF-1を使っていて、うっかり位相をそのままミックスダウンしていました。修正版です。
 
-![](feedback.png)
+<!-- textlint-disable -->
+
+{{ image(src="feedback.png") }}
+
+<!-- textlint-enable -->
 
 「なんあエンディングでディストーションの音が埋もれてるなぁ」と思ったら、
 ポラリティ反転を放置していました。修正したら、原曲に近づきすぎてSoundCloudで

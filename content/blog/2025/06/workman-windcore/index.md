@@ -9,7 +9,11 @@ tags = ["Gadget","Seasons"]
 social_media_card = "ogp.webp"
 +++
 
-![Workman Windcore](windcore.webp)
+<!-- textlint-disable -->
+
+{{ image(src="windcore.webp", alt="Workman Windcore") }}
+
+<!-- textlint-enable -->
 
 <details>
 <summary>Table of Contents</summary>

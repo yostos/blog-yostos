@@ -14,7 +14,11 @@ tags = ["Music", "Music Production"]
 social_media_card = "ogp.webp"
 +++
 
-![Cover](./cover.webp)
+<!-- textlint-disable -->
+
+{{ image(src="./cover.webp", alt="Cover") }}
+
+<!-- textlint-enable -->
 
 <!-- more -->
 

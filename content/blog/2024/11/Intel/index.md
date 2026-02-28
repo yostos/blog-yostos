@@ -25,4 +25,8 @@ social_media_card = "ogp.webp"
 以下はPerplexityで作成したPC向けCPUのシェアです。AppleのIntel離反があるにしてもAMDにかなりやられているのがよくわかります(2021年以前についてはデータがないので、断片情報からの類推が含まれています。)
 
 
-![Intel vs AMD](intel-vs-amd.webp)
+<!-- textlint-disable -->
+
+{{ image(src="intel-vs-amd.webp", alt="Intel vs AMD") }}
+
+<!-- textlint-enable -->

@@ -9,7 +9,11 @@ tags = ["Guitar","Guitar Pedals"]
 social_media_card = "ogp.webp"
 +++
 
-![PPSE Classic and '79](r0000634.jpg)
+<!-- textlint-disable -->
+
+{{ image(src="r0000634.jpg", alt="PPSE Classic and '79") }}
+
+<!-- textlint-enable -->
 
 in Antique has previously released an overdrive pedal called PPSE '79 which received high praise, and this PPSE Classic is considered its sister version. PPSE stands for "Pike Place Smoky Emerald", named after the color of the sign at Seattle's Pike Place Market, and this color is applied to the aluminum CNC-machined pedal enclosure.
 As this is the "Classic" version, it's painted in a slightly more vivid color than the PPSE '79, representing "the sign's color before it faded".

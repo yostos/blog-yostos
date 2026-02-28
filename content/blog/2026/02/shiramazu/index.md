@@ -17,7 +17,11 @@ social_media_card = "ogp.webp"
 
 <!-- more -->
 
-![白間津海岸](./shiramazu.webp)
+<!-- textlint-disable -->
+
+{{ image(src="./shiramazu.webp", alt="白間津海岸") }}
+
+<!-- textlint-enable -->
 
 ## 白間津層
 

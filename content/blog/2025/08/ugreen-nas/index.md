@@ -9,7 +9,11 @@ tags = ["Tech","Gadget"]
 social_media_card = "ogp.webp"
 +++
 
-![UGREEN NAS](ugreen-nas.webp)
+<!-- textlint-disable -->
+
+{{ image(src="ugreen-nas.webp", alt="UGREEN NAS") }}
+
+<!-- textlint-enable -->
 
 <details>
 <summary>Table of Contents</summary>

@@ -9,7 +9,11 @@ tags = ["Current Affairs","IBM"]
 social_media_card = "ogp.webp"
 +++
 
-![Akio Yamaguchi](akio.jpg)
+<!-- textlint-disable -->
+
+{{ image(src="akio.jpg", alt="Akio Yamaguchi") }}
+
+<!-- textlint-enable -->
 
 Akio Yamaguchi, President of IBM Japan, has been [appointed](https://www.doyukai.or.jp/news/hr/251216.html) as a managing director of Keizai Doyukai (Japan Association of Corporate Executives).
 

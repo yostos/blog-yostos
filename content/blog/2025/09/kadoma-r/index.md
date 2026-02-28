@@ -9,7 +9,11 @@ tags = ["Design","Font"]
 social_media_card = "ogp.webp"
 +++
 
-![カドマ-R](kadoma-r.webp)
+<!-- textlint-disable -->
+
+{{ image(src="kadoma-r.webp", alt="カドマ-R") }}
+
+<!-- textlint-enable -->
 
 ターミナル用に[中村書体室](https://www.n-font.com/)の「[カドマ-R](https://www.n-font.com/fonts/kadomar)」
 を購入しました。

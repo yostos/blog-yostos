@@ -14,7 +14,11 @@ but I was drawn to the word "analog" and ended up purchasing the
 [DSM & Humboldt Simplifier MK-II](https://www.simplifieramp.com/simplifier-mk-ii).
 
 
-![Simpilifer MK-II](simlifier-mk2.webp)
+<!-- textlint-disable -->
+
+{{ image(src="simlifier-mk2.webp", alt="Simpilifer MK-II") }}
+
+<!-- textlint-enable -->
 
 ## Zero-Watt Amp
 

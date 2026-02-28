@@ -27,7 +27,11 @@ canonical_url = "https://zenn.dev/yostos/articles/ai-agent-org-adoption-prerequi
 
 <!-- textlint-enable -->
 
-![Cover](./cover.jpg)
+<!-- textlint-disable -->
+
+{{ image(src="./cover.jpg", alt="Cover") }}
+
+<!-- textlint-enable -->
 
 ## この記事の前提
 

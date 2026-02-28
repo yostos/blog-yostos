@@ -9,7 +9,11 @@ tags = ["Guitar", "Software","Music Production"]
 social_media_card = "ogp.webp"
 +++
 
-![Neural DSP Archetype](archetype.webp)
+<!-- textlint-disable -->
+
+{{ image(src="archetype.webp", alt="Neural DSP Archetype") }}
+
+<!-- textlint-enable -->
 
 ## Archetype シリーズとは
 

@@ -14,7 +14,11 @@ social_media_card = "cover.webp"
 show_reading_time = false
 +++
 
-![awsfig](cover.webp)
+<!-- textlint-disable -->
+
+{{ image(src="cover.webp", alt="awsfig") }}
+
+<!-- textlint-enable -->
 
 A tool that generates AWS CDK scripts
 from architecture diagrams.

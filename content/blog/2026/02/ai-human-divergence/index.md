@@ -16,7 +16,11 @@ canonical_url = "https://zenn.dev/yostos/articles/ai-human-divergence"
 social_media_card = "ogp.webp"
 +++
 
-![Cover](./cover.webp)
+<!-- textlint-disable -->
+
+{{ image(src="./cover.webp", alt="Cover") }}
+
+<!-- textlint-enable -->
 
 ## はじめに
 

@@ -14,7 +14,11 @@ social_media_card = "cover.webp"
 show_reading_time = false
 +++
 
-![tiny-task-tool](cover.webp)
+<!-- textlint-disable -->
+
+{{ image(src="cover.webp", alt="tiny-task-tool") }}
+
+<!-- textlint-enable -->
 
 A digital sheet of paper for people tired
 of over-engineered todo apps.

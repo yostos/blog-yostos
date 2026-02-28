@@ -9,7 +9,11 @@ tags = ["Guitar Pedals","Guitar","Music"]
 social_media_card = "ogp.webp"
 +++
 
-![UAFX Max Preamp & Dual Compressor](max.webp)
+<!-- textlint-disable -->
+
+{{ image(src="max.webp", alt="UAFX Max Preamp & Dual Compressor") }}
+
+<!-- textlint-enable -->
 
 Strymon Compadreに満足していなかったわけではありませんが、少し安く売られているのを見つけたので、UAFX Max Preamp & Dual Compressorを購入してしまいました。
 

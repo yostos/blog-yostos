@@ -9,7 +9,11 @@ tags = ["Photography", "Photo Friday"]
 social_media_card = "ogp.webp"
 +++
 
-![Amber Glint](amber-glint.webp)
+<!-- textlint-disable -->
+
+{{ image(src="amber-glint.webp", alt="Amber Glint") }}
+
+<!-- textlint-enable -->
 
 [Amber Glint](https://www.photofriday.com/yostos/17015)
 

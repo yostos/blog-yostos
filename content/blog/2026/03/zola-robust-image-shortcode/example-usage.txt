@@ -1,0 +1,1 @@
+{{ image(src="cover.jpg", alt="カバー画像") }}

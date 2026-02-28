@@ -17,7 +17,11 @@ social_media_card = "ogp.webp"
 
 Online rumors have been circulating that the approximately 4% viewership drop around 8 PM during NHK's New Year's Eve Kohaku music show corresponds to **aespa's** performance time. The group has been embroiled in controversy after posting images of atomic bomb mushroom cloud figures on X (formerly Twitter).
 
-![Viewership ratings around 8 PM on December 31, 2026](ratings.webp)
+<!-- textlint-disable -->
+
+{{ image(src="ratings.webp", alt="Viewership ratings around 8 PM on December 31, 2026") }}
+
+<!-- textlint-enable -->
 
 However, the reality is quite different and somewhat ironic. aespa's actual performance time was later in the evening. The time slot during this ratings dip was actually occupied by Time Machine 3's live broadcast from Kusatsu Onsen hot springs.
 
@@ -33,7 +37,11 @@ The group's insensitive actions and NHK's controversial decision to feature them
 日本への原爆投下のきのこ雲のフィギュアをx.comに投稿した問題で
 炎上している**aespa**の出演時間だとネットではもっぱらの噂になっています。
 
-![2026-12-31 20時前後の視聴率](ratings.webp)
+<!-- textlint-disable -->
+
+{{ image(src="ratings.webp", alt="2026-12-31 20時前後の視聴率") }}
+
+<!-- textlint-enable -->
 
 まぁ、実際には出演時間帯はもう少し遅く、この落ち込んでいる時間帯は
 タイムマシン3号が草津温泉から中継をやっていた時間帯で笑う。

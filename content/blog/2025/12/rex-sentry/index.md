@@ -9,7 +9,11 @@ tags = ["Gadget"]
 social_media_card = "ogp.webp"
 +++
 
-![REX Sentry](rex1.webp)
+<!-- textlint-disable -->
+
+{{ image(src="rex1.webp", alt="REX Sentry") }}
+
+<!-- textlint-enable -->
 
 ## 「スラント」両刃カミソリとは
 
@@ -51,7 +55,11 @@ REX Sentryは米国のRex Supply社のものです。
 これはどんなカミソリでも刃を安定させ肌に対して角度を付けるために必ず採用されています。
 しかし、REX Sentryではこの湾曲が極端なのです。その結果、刃が肌に対して通常のカミソリより角度を持った状態で剃ることになります。
 
-![REX Sentry](rex2.webp)
+<!-- textlint-disable -->
+
+{{ image(src="rex2.webp", alt="REX Sentry") }}
+
+<!-- textlint-enable -->
 
 後者は左右で刃の露出が違うので、ホルダーを真っ直ぐに肌に当てても左右で角度が自然についている状態になります。
 

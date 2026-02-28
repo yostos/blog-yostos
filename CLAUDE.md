@@ -102,6 +102,65 @@ echo "Hello"
 インライン型（`{{ }}`）もショートコード構文が
 textlint に引っかかるため同様に囲む。
 
+### image — 画像表示
+
+記事内の画像表示には Markdown 記法（`![]()`）ではなく
+image ショートコードを使用する。
+自動でパス解決、width/height 付与、
+キャッシュバスティング、遅延読み込みを行う。
+
+```markdown
+<!-- textlint-disable -->
+
+{{ image(src="photo.webp", alt="説明テキスト") }}
+
+<!-- textlint-enable -->
+```
+
+- `src`: 画像パスまたはURL（必須）
+- `alt`: 代替テキスト（推奨）
+- `lazy_loading`: 遅延読み込み（デフォルト: true）
+
+同一ディレクトリの画像は `src="photo.webp"` または
+`src="./photo.webp"` のどちらでも指定可能。
+
+### remote_text — 外部ファイル読み込み（tabi組み込み）
+
+リモートURLまたはローカルファイルの内容を
+コードブロック内に埋め込む。
+ソースコードの引用に使用する。
+
+````markdown
+<!-- textlint-disable -->
+
+```html,name=templates/shortcodes/image.html
+{{ remote_text(src="templates/shortcodes/image.html") }}
+```
+
+<!-- textlint-enable -->
+````
+
+行範囲の指定も可能。
+
+````markdown
+<!-- textlint-disable -->
+
+```rust
+{{ remote_text(src="https://raw.githubusercontent.com/user/repo/main/src/main.rs", start=10, end=25) }}
+```
+
+<!-- textlint-enable -->
+````
+
+- `src`: ファイルパスまたはURL（必須）
+- `start`: 開始行（任意、1始まり）
+- `end`: 終了行（任意）
+- ローカルファイルは記事ディレクトリからの相対パス
+  → プロジェクトルートからのパスの順で解決
+- `remote_text` の出力はショートコードとして
+  再解釈されないため、Tera構文（`{{ }}`、`{% %}`）を
+  含むコードも安全に表示できる
+
 ### admonition — 警告・情報ボックス
 
 ```markdown

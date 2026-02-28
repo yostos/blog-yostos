@@ -9,7 +9,11 @@ tags = ["Music"]
 social_media_card = "ogp.webp"
 +++
 
-![高中正義 SUPER TAKANAKA WORLD LIVE 2025-2026](takanaka.webp)
+<!-- textlint-disable -->
+
+{{ image(src="takanaka.webp", alt="高中正義 SUPER TAKANAKA WORLD LIVE 2025-2026") }}
+
+<!-- textlint-enable -->
 
 久しぶりというのも憚られるほど久しぶりに高中正義さんのライブに行ってきました。
 会場は川崎のカルッツかわさきでした。

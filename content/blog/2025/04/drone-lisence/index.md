@@ -12,7 +12,11 @@ social_media_card = "ogp.webp"
 ## 二等無人航空機操縦士技能証明書
 
 
-![二等無人航空機操縦士技能証明書](lisence.webp)
+<!-- textlint-disable -->
+
+{{ image(src="lisence.webp", alt="二等無人航空機操縦士技能証明書") }}
+
+<!-- textlint-enable -->
 
 やっと届きました。
 

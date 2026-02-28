@@ -14,7 +14,11 @@ social_media_card = "cover.webp"
 show_reading_time = false
 +++
 
-![claude-code-entry](cover.webp)
+<!-- textlint-disable -->
+
+{{ image(src="cover.webp", alt="claude-code-entry") }}
+
+<!-- textlint-enable -->
 
 非エンジニアを対象としたClaude Code入門の
 セルフハンズオン教材です。

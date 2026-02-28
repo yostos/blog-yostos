@@ -14,7 +14,11 @@ tags =["Travel","Tips"]
 social_media_card = "ogp.webp"
 +++
 
-![Air Port](airport.webp)
+<!-- textlint-disable -->
+
+{{ image(src="airport.webp", alt="Air Port") }}
+
+<!-- textlint-enable -->
 
  <details>
   <summary>Table of Contents</summary>

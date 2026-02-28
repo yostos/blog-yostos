@@ -13,7 +13,11 @@ social_media_card = "ogp.webp"
 canonical_url = "https://zenn.dev/yostos/articles/claude-code-entry"
 +++
 
-![Cover](./cover.webp)
+<!-- textlint-disable -->
+
+{{ image(src="./cover.webp", alt="Cover") }}
+
+<!-- textlint-enable -->
 
 <!-- textlint-disable -->
 

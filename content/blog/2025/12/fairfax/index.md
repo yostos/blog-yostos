@@ -9,7 +9,11 @@ tags = ["Guitar Pedals"]
 social_media_card = "ogp.webp"
 +++
 
-![Strymon Fairfax](fairfax.webp)
+<!-- textlint-disable -->
+
+{{ image(src="fairfax.webp", alt="Strymon Fairfax") }}
+
+<!-- textlint-enable -->
 
 <details>
 <summary>Table of Contentes</summary>

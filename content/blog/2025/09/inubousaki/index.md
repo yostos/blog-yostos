@@ -9,7 +9,11 @@ tags = ["Drone", "Photography"]
 social_media_card = "ogp.webp"
 +++
 
-![Inubosaki Lighthouse](inbousaki.webp)
+<!-- textlint-disable -->
+
+{{ image(src="inbousaki.webp", alt="Inubosaki Lighthouse") }}
+
+<!-- textlint-enable -->
 
 <details>
 <summary>Table of Contentes</summary>

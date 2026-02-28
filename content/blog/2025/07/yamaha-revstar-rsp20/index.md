@@ -9,7 +9,11 @@ tags = ["Guitar"]
 social_media_card = "ogp.webp"
 +++
 
-![YAMAHA REVSTAR](revstar.webp)
+<!-- textlint-disable -->
+
+{{ image(src="revstar.webp", alt="YAMAHA REVSTAR") }}
+
+<!-- textlint-enable -->
 
 ## YAMAHA REVSTAR とは
 
@@ -64,7 +68,11 @@ REVSTARは2022年のモデル変更で鳴りの良さを計算したチャンバ
 ていますが、やっぱりこのご時世にギターを進化させ続けて日本で生産しているとい
 う企業の姿勢に惚れてしまいました。
 
-![日本製](japanese.webp)
+<!-- textlint-disable -->
+
+{{ image(src="japanese.webp", alt="日本製") }}
+
+<!-- textlint-enable -->
 
 購入したのはムーンライトブルーと言う色です。
 ブルーだとシェイプがSGに似ているのであの人を思い浮かべます。

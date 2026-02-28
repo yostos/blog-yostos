@@ -50,7 +50,11 @@ social_media_card = "ogp.webp"
 「特定飛行」の場合は**国土交通省の承認**が必要です。
 詳しいフローは国土交通省の次のフローを見ましょう。
 
-![Flow](flow.png)
+<!-- textlint-disable -->
+
+{{ image(src="flow.png", alt="Flow") }}
+
+<!-- textlint-enable -->
 
 条件を緩和しても「目視外飛行」が入ってしまうと、
 ほぼ許可が必要な「カテゴリーII飛行」となることがわかります。

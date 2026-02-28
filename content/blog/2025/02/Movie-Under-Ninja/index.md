@@ -12,7 +12,11 @@ social_media_card = "ogp.webp"
 昨日映画『アンダーニンジャ』を見てきました。
 原作、アニメともに人気だったので、ちょっと期待して見に行きました。
 
-![](under-ninja.webp)
+<!-- textlint-disable -->
+
+{{ image(src="under-ninja.webp") }}
+
+<!-- textlint-enable -->
 
 ## 良かった点
 

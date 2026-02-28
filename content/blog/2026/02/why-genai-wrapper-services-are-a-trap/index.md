@@ -25,7 +25,11 @@ mermaid = true
 
 <!-- textlint-enable -->
 
-![Cover](./cover.webp)
+<!-- textlint-disable -->
+
+{{ image(src="./cover.webp", alt="Cover") }}
+
+<!-- textlint-enable -->
 
 <details>
 <summary>Table of Contents</summary>

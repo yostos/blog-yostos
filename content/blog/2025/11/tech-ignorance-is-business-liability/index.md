@@ -9,7 +9,11 @@ tags = ["Tech", "Security"]
 social_media_card = "ogp.webp"
 +++
 
-![No IT dept](noitdept.webp)
+<!-- textlint-disable -->
+
+{{ image(src="noitdept.webp", alt="No IT dept") }}
+
+<!-- textlint-enable -->
 
 <details>
 <summary>Table of Contents</summary>

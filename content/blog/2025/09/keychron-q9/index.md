@@ -9,7 +9,11 @@ tags = ["Gadget","Keyboard"]
 social_media_card = "ogp.webp"
 +++
 
-![Keychron Q9](keychron-q9.webp)
+<!-- textlint-disable -->
+
+{{ image(src="keychron-q9.webp", alt="Keychron Q9") }}
+
+<!-- textlint-enable -->
 
 ## What is the Keychron Q9?
 

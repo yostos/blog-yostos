@@ -14,7 +14,11 @@ tags = ["Drone", "Photography"]
 social_media_card = "ogp.webp"
 +++
 
-![Cover](./cover.jpg)
+<!-- textlint-disable -->
+
+{{ image(src="./cover.jpg", alt="Cover") }}
+
+<!-- textlint-enable -->
 
 2月20日に常陸利根川（鰐川）で
 ドローンを飛ばしてきました。
@@ -28,7 +32,11 @@ social_media_card = "ogp.webp"
 東関東自動車道の潮来ICから
 神宮橋を渡る際にその姿が目に入ります。
 
-![西の一之鳥居](./torii.jpg)
+<!-- textlint-disable -->
+
+{{ image(src="./torii.jpg", alt="西の一之鳥居") }}
+
+<!-- textlint-enable -->
 
 江戸時代、大船津は水運の要衝であり
 鹿島神宮参拝の玄関口でした。

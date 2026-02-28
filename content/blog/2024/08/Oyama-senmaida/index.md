@@ -9,8 +9,16 @@ tags = ["Travel", "Photography"]
 social_media_card = "ogp.webp"
 +++
 
-![](R0000090.jpg)
-![](R0000093.jpg)
+<!-- textlint-disable -->
+
+{{ image(src="R0000090.jpg") }}
+
+<!-- textlint-enable -->
+<!-- textlint-disable -->
+
+{{ image(src="R0000093.jpg") }}
+
+<!-- textlint-enable -->
 
 I visited **Oyama Senmaida(大山千枚田)** in Chiba Pref, Japan. These
 terraced rice fields, dating back to before the 1600s, are ingeniously built

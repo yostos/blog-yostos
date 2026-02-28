@@ -13,7 +13,11 @@ tags =["Drone"]
 social_media_card = "ogp.webp"
 +++
 
-![DJI NEO with FPV Goggles](drone.webp)
+<!-- textlint-disable -->
+
+{{ image(src="drone.webp", alt="DJI NEO with FPV Goggles") }}
+
+<!-- textlint-enable -->
 
 ## 経緯
 

@@ -85,7 +85,11 @@ the public will.
 
 ## Media Bias
 
-![テレビ朝日ニュースステーションの偏向報道](tv-asahi.webp)
+<!-- textlint-disable -->
+
+{{ image(src="tv-asahi.webp", alt="テレビ朝日ニュースステーションの偏向報道") }}
+
+<!-- textlint-enable -->
 
 Nevertheless, the biased reporting from TV Asahi and other outlets was appalling. The above shows their prediction aired the day before the vote, which significantly diverged from the actual results. For some reason, the old media uniformly pushed for Shinjiro Koizumi.
 

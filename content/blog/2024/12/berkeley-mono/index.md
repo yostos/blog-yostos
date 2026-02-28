@@ -62,6 +62,10 @@ Berkeley Monoは少し前に一部で話題になっていましたが、リガ�
 
 以下のスクリーンショットは、適当なプログラムCascadia Next / MonoLisa / Berkeley Monoを使って表示させた例です。
 
-![Fonts Comparison](fonts.jpg)
+<!-- textlint-disable -->
+
+{{ image(src="fonts.jpg", alt="Fonts Comparison") }}
+
+<!-- textlint-enable -->
 
 文字間隔の違いがよくわかると思います。

@@ -13,5 +13,13 @@ social_media_card = "ogp.webp"
 
 美味しいけど、サラダ、メインディッシュ、パンのみで2700円なのでコスパは良くない。
 
-![イサキ](bbc925adc5.jpg)
-![プリン](f58719e4b0.jpg)
+<!-- textlint-disable -->
+
+{{ image(src="bbc925adc5.jpg", alt="イサキ") }}
+
+<!-- textlint-enable -->
+<!-- textlint-disable -->
+
+{{ image(src="f58719e4b0.jpg", alt="プリン") }}
+
+<!-- textlint-enable -->

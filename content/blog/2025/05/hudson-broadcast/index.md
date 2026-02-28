@@ -9,7 +9,11 @@ tags = ["Guitar Pedals"]
 social_media_card = "ogp.webp"
 +++
 
-![Hudson Broadcast](broadcast.webp)
+<!-- textlint-disable -->
+
+{{ image(src="broadcast.webp", alt="Hudson Broadcast") }}
+
+<!-- textlint-enable -->
 
 <details>
 <summary>Table of Contents</summary>

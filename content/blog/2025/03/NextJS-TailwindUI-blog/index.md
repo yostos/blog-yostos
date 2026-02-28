@@ -41,7 +41,11 @@ Next.jsベースでのブログのStarter Kitのようなものはいくつか�
 興味から有償のTailwind Plusを購入したので、Tailwind Plusが提供する個人向け
 Blogの"Spotlight"という**Template**をベースにカスタマイズしました。
 
-![Tailwind Plus: Spotlight template](spotlight.webp)
+<!-- textlint-disable -->
+
+{{ image(src="spotlight.webp", alt="Tailwind Plus: Spotlight template") }}
+
+<!-- textlint-enable -->
 
 Tailwind PlusのTemplateは、完全に動作するReactベースのアプリケーションコード
 で、Javascript版とTypeScript版が提供されており、Tailwind CSSを利用したUI要素

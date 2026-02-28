@@ -9,7 +9,11 @@ tags = ["Tech", "Current Affairs", "IBM"]
 social_media_card = "ogp.webp"
 +++
 
-![NHK問題](nhk.webp)
+<!-- textlint-disable -->
+
+{{ image(src="nhk.webp", alt="NHK問題") }}
+
+<!-- textlint-enable -->
 
  <details>
   <summary>Table of Contents</summary>

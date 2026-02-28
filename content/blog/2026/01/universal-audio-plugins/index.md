@@ -22,7 +22,11 @@ I took advantage of Universal Audio's sale to build my mastering-focused plugin 
 
 ### Pultec EQP-1A
 
-![Pultec EQP-1A](pultec-eqp.webp)
+<!-- textlint-disable -->
+
+{{ image(src="pultec-eqp.webp", alt="Pultec EQP-1A") }}
+
+<!-- textlint-enable -->
 
 Developed by Pulse Techniques in 1951, the EQP-1A has been cherished for over 70 years as the most musical passive equalizer. Its unique design combining tube amplification with passive components prevents phase distortion even when boosting or cutting, creating a beautiful harmonic enhancement effect.
 
@@ -34,7 +38,11 @@ The famous "low-end trick" of simultaneously boosting and cutting the low freque
 
 ### LA-2A Tube Compressor
 
-![LA-2A Tube Compressor](la-2a-comp.webp)
+<!-- textlint-disable -->
+
+{{ image(src="la-2a-comp.webp", alt="LA-2A Tube Compressor") }}
+
+<!-- textlint-enable -->
 
 Released by Teletronix in 1965, the LA-2A is a legendary compressor combining tube amplification with a T4 optical element. Its unique operation with automatically adjusted attack and release times achieves extremely natural and musical compression for vocals, bass, and guitar. Particularly for vocal processing, it has been beloved for nearly 60 years as "smooth and transparent compression," used on countless classic albums from Motown to modern pop. Despite its simple operation, the sound quality it delivers is irreplaceable.
 
@@ -50,7 +58,11 @@ Its characteristics are best showcased when applied to specific sources rather t
 
 ### Lexicon 224 Digital Reverb
 
-![Lexicon 224 Digital Reverb](lexicon-224.webp)
+<!-- textlint-disable -->
+
+{{ image(src="lexicon-224.webp", alt="Lexicon 224 Digital Reverb") }}
+
+<!-- textlint-enable -->
 
 Introduced in 1978, the Lexicon 224 revolutionized music production as the world's first commercial digital reverb. It achieved precisely controlled spatial representation that was impossible with previous plate or spring reverbs. This created the rich and expansive reverb that characterized 1980s pop, rock, and fusion sounds. The "sparkling and three-dimensional reverberation" when used on drums and vocals became an iconic sound of that era.
 
@@ -62,7 +74,11 @@ The most common applications include drum overheads and room mics for creating c
 
 ### SSL G Bus Compressor
 
-![SSL G Bus Compressor](ssl-g-bus-comp.webp)
+<!-- textlint-disable -->
+
+{{ image(src="ssl-g-bus-comp.webp", alt="SSL G Bus Compressor") }}
+
+<!-- textlint-enable -->
 
 In the 1980s, the master bus compressor installed in the SSL 4000 G Series console established a legendary status. It became known as equipment that imparts a "glue" effect to the entire mix.
 Despite its modest ratio settings, it excels at integrating the entire mix into a cohesive single sound image. It's particularly powerful in rock, pop, and dance music.
@@ -80,7 +96,11 @@ Unlike individual track compressors like the LA-2A, the SSL G Bus Compressor rev
 
 ### Ampex ATR-102 Mastering Tape Recorder
 
-![Ampex ATR-102 Mastering Tape Recorder](ampex-atr-102.webp)
+<!-- textlint-disable -->
+
+{{ image(src="ampex-atr-102.webp", alt="Ampex ATR-102 Mastering Tape Recorder") }}
+
+<!-- textlint-enable -->
 
 Introduced in the late 1970s, the Ampex ATR-102 is known as the pinnacle of 2-track mastering tape recorders. Through its unique sonic characteristics of tape saturation, tape compression, and high-frequency roll-off, it adds warmth and depth lacking in digital recordings. Many engineers have passed tracks through this equipment in the final mastering stage, imparting cohesion and a "glue-like" effect to the entire work. The UAD emulation also allows selection of tape speed (15/30 ips) and tape type.
 

@@ -106,7 +106,11 @@ chmod +x ~/bin/inkdrop-mcp
 設定したInkdropのサーバーの設定をClaude Desktopに追加します。Claude Desktopの設定画面を開くと下記のようになっています。
 
 
-![Setting画面](setup-claude.webp)
+<!-- textlint-disable -->
+
+{{ image(src="setup-claude.webp", alt="Setting画面") }}
+
+<!-- textlint-enable -->
 
 この画面で「構成を編集」というボタンを押すと、Finderが起動して設定ファイルを示してくれます。このボタンを押さなくても、ターミナルから`~/Library/Application
 Support/Claude/claude_desktop_config.json`を開いて編集しても大丈夫です。
@@ -161,12 +165,20 @@ MCP統合で何ができるかは、[inkdrop/mcp-server](https://github.com/inkd
 敢えて英語で聞いてみました。途中MCPの使用を許可するかというダイアログが出てくるので、「このチャットで許可」を押します。
 
 
-![確認画面](dialog-claude.webp)
+<!-- textlint-disable -->
+
+{{ image(src="dialog-claude.webp", alt="確認画面") }}
+
+<!-- textlint-enable -->
 
 何度かダイアログが表示されますが、同様に許可していくと次のように表示されました。英語ですが、きちんとまとめられてます。
 
 
-![結果画面](exampe-claude.webp)
+<!-- textlint-disable -->
+
+{{ image(src="exampe-claude.webp", alt="結果画面") }}
+
+<!-- textlint-enable -->
 
 ## まとめ
 

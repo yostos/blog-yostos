@@ -9,7 +9,11 @@ tags = ["Guitar Pedals"]
 social_media_card = "ogp.webp"
 +++
 
-![Overdriveland](od1.webp)
+<!-- textlint-disable -->
+
+{{ image(src="od1.webp", alt="Overdriveland") }}
+
+<!-- textlint-enable -->
 
 Free The ToneのオーバードライブOverdrivelandを購入しました。2023年末に発売されて2024年は入荷待ちになるほど人気でしたが、使ってみると確かに究極のオーバードライブと言われるのもわかります。
 

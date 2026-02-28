@@ -9,7 +9,11 @@ tags = ["Guitar Pedals"]
 social_media_card = "ogp.webp"
 +++
 
-![Sonic Pocket Master](pocket-master.webp)
+<!-- textlint-disable -->
+
+{{ image(src="pocket-master.webp", alt="Sonic Pocket Master") }}
+
+<!-- textlint-enable -->
 
 Sonicakeの[Pocket Master](https://amzn.to/3UHO4Vz)です。
 一時は品切れで入荷待ちでしたが、最近は普通にAmazonなどで購入できます。

@@ -9,7 +9,11 @@ tags = ["Gadget"]
 social_media_card = "ogp.webp"
 +++
 
-![MX ERGO S](ergo-s.webp)
+<!-- textlint-disable -->
+
+{{ image(src="ergo-s.webp", alt="MX ERGO S") }}
+
+<!-- textlint-enable -->
 
 <details>
 <summary>Table of Contents</summary>

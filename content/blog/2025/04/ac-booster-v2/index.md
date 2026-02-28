@@ -9,7 +9,11 @@ tags = ["Guitar Pedals","Guitar","Music"]
 social_media_card = "ogp.webp"
 +++
 
-![AC Booster V2](ac-booster-v2.webp)
+<!-- textlint-disable -->
+
+{{ image(src="ac-booster-v2.webp", alt="AC Booster V2") }}
+
+<!-- textlint-enable -->
 
 ## Xotic AC Boosterとは
 
