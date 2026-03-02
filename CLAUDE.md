@@ -12,6 +12,11 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## General Rules
 
+- **生成AIの位置づけ**: 生成AIをシステムに組み込むのではなく、
+  「生成AIが使うシステム」を作るという世界観が本ブログの基本思想。
+  Claude Code / MCP のようにAIがエージェントとしてツールやシステムを
+  操作する方向性を前提とする。この立場はすべての記事に通底する。
+
 ## Available CLI Tools
 
 - `gh` - GitHub CLI for repository operations
