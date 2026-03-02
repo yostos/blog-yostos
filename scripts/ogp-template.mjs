@@ -22,6 +22,7 @@ export function createOverlayTemplate({ title, author, blogName }) {
         flexDirection: 'column',
         justifyContent: 'space-between',
         padding: '40px',
+        fontFamily: 'Latin, JP',
       },
       children: [
         // ブログ名（左上）

@@ -43,19 +43,25 @@ const isDryRun = process.argv.includes('--dry-run');
 const isForce = process.argv.includes('--force');
 
 /**
- * フォントディレクトリから最初のフォントファイルを取得
+ * フォントディレクトリからフォントファイル一覧を取得
+ * Berkeley Mono（ラテン文字用）を優先、Kadoma（日本語用）をフォールバックとする
  */
-async function findFontFile() {
+async function findFontFiles() {
   const files = await fs.readdir(FONTS_DIR);
-  const fontFile = files.find((f) =>
-    FONT_EXTENSIONS.includes(path.extname(f).toLowerCase())
-  );
-  if (!fontFile) {
+  const fontFiles = files
+    .filter((f) => FONT_EXTENSIONS.includes(path.extname(f).toLowerCase()))
+    .sort((a, b) => {
+      // Berkeley Mono を先頭にソート（ラテン文字・スペース優先）
+      const aIsBerkeley = a.toLowerCase().includes('berkeley') ? 0 : 1;
+      const bIsBerkeley = b.toLowerCase().includes('berkeley') ? 0 : 1;
+      return aIsBerkeley - bIsBerkeley;
+    });
+  if (fontFiles.length === 0) {
     throw new Error(
       `フォントが見つかりません。scripts/fonts/ に .ttf または .otf を配置してください。`
     );
   }
-  return path.join(FONTS_DIR, fontFile);
+  return fontFiles.map((f) => path.join(FONTS_DIR, f));
 }
 
 /**
@@ -155,9 +161,9 @@ async function meetsMinSize(imagePath) {
  * @param {string} imagePath - 元画像パス
  * @param {string} outputPath - 出力パス
  * @param {string} title - 記事タイトル
- * @param {Buffer} fontData - フォントデータ
+ * @param {Buffer[]} fontsData - フォントデータ配列（優先順）
  */
-async function createOgpFromImage(imagePath, outputPath, title, fontData) {
+async function createOgpFromImage(imagePath, outputPath, title, fontsData) {
   // satoriでオーバーレイSVGを生成
   const template = createOverlayTemplate({
     title,
@@ -169,12 +175,8 @@ async function createOgpFromImage(imagePath, outputPath, title, fontData) {
     width: OGP_WIDTH,
     height: OGP_HEIGHT,
     fonts: [
-      {
-        name: 'Noto Sans JP',
-        data: fontData,
-        weight: 400,
-        style: 'normal',
-      },
+      { name: 'Latin', data: fontsData[0], weight: 400, style: 'normal' },
+      { name: 'JP', data: fontsData[1] || fontsData[0], weight: 400, style: 'normal' },
     ],
   });
 
@@ -208,9 +210,9 @@ async function createOgpFromImage(imagePath, outputPath, title, fontData) {
  * デフォルト背景にタイトルをオーバーレイしてOGP画像を生成
  * @param {string} title - 記事タイトル
  * @param {string} outputPath - 出力パス
- * @param {Buffer} fontData - フォントデータ（事前読み込み済み）
+ * @param {Buffer[]} fontsData - フォントデータ配列（優先順）
  */
-async function createOgpWithOverlay(title, outputPath, fontData) {
+async function createOgpWithOverlay(title, outputPath, fontsData) {
   // satoriでSVGを生成
   const template = createOverlayTemplate({
     title,
@@ -222,12 +224,8 @@ async function createOgpWithOverlay(title, outputPath, fontData) {
     width: OGP_WIDTH,
     height: OGP_HEIGHT,
     fonts: [
-      {
-        name: 'Noto Sans JP',
-        data: fontData,
-        weight: 400,
-        style: 'normal',
-      },
+      { name: 'Latin', data: fontsData[0], weight: 400, style: 'normal' },
+      { name: 'JP', data: fontsData[1] || fontsData[0], weight: 400, style: 'normal' },
     ],
   });
 
@@ -264,11 +262,13 @@ async function main() {
   console.log('---');
 
   // フォントを事前に読み込み（メモリ効率化）
-  let fontData = null;
+  let fontsData = [];
   if (!isDryRun) {
-    const fontPath = await findFontFile();
-    console.log(`フォントを読み込み中: ${path.basename(fontPath)}`);
-    fontData = await fs.readFile(fontPath);
+    const fontPaths = await findFontFiles();
+    for (const fontPath of fontPaths) {
+      console.log(`フォントを読み込み中: ${path.basename(fontPath)}`);
+      fontsData.push(await fs.readFile(fontPath));
+    }
   }
 
   const articleDirs = await getArticleDirs();
@@ -312,14 +312,14 @@ async function main() {
       if (useDefault) {
         console.log(`[デフォルト] ${relativePath} → "${title}"`);
         if (!isDryRun) {
-          await createOgpWithOverlay(title, ogpPath, fontData);
+          await createOgpWithOverlay(title, ogpPath, fontsData);
         }
         fromDefault++;
       } else {
         const imgName = path.basename(largestImage);
         console.log(`[画像使用] ${relativePath} → ${imgName} + "${title}"`);
         if (!isDryRun) {
-          await createOgpFromImage(largestImage, ogpPath, title, fontData);
+          await createOgpFromImage(largestImage, ogpPath, title, fontsData);
         }
         fromImage++;
       }
