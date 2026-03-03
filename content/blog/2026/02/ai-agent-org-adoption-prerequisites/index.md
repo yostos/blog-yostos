@@ -13,6 +13,7 @@ date = 2026-02-27
 tags = ["Generative AI", "IT Governance"]
 
 [extra]
+local_image = "cover.webp"
 social_media_card = "ogp.webp"
 canonical_url = "https://zenn.dev/yostos/articles/ai-agent-org-adoption-prerequisites"
 +++
@@ -29,7 +30,7 @@ canonical_url = "https://zenn.dev/yostos/articles/ai-agent-org-adoption-prerequi
 
 <!-- textlint-disable -->
 
-{{ image(src="./cover.jpg", alt="Cover") }}
+{{ image(src="./cover.webp", alt="Cover") }}
 
 <!-- textlint-enable -->
 

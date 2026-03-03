@@ -12,12 +12,21 @@
     image metadata (width/height), cache busting, and lazy loading.
 
     Parameters:
-      src          - Image path or remote URL (required)
+      src          - Image path, remote URL, or "$local_image" (required)
+                     "$local_image" resolves to page.extra.local_image
       alt          - Alt text for accessibility (recommended)
       caption      - Caption text displayed below the image (optional)
                      When specified, wraps output in <figure>/<figcaption>
       lazy_loading - Enable lazy loading (default: true)
     ============================================================ -#}
+
+{#- Resolve "$local_image" to page.extra.local_image from frontmatter -#}
+{%- if src == "$local_image" -%}
+    {%- set src = page.extra.local_image | default(value="") -%}
+    {%- if src == "" -%}
+        {{ throw(message="image shortcode: src='$local_image' but local_image is not set in [extra] of " ~ page.path) }}
+    {%- endif -%}
+{%- endif -%}
 
 {#- Strip leading "./" from src to normalize colocated paths
     e.g. "./photo.jpg" -> "photo.jpg" -#}

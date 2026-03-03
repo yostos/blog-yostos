@@ -122,12 +122,15 @@ image ショートコードを使用する。
 <!-- textlint-enable -->
 ```
 
-- `src`: 画像パスまたはURL（必須）
+- `src`: 画像パス、URL、または `"$local_image"`（必須）
+  - `"$local_image"`: frontmatter の `local_image` を参照
 - `alt`: 代替テキスト（推奨）
 - `lazy_loading`: 遅延読み込み（デフォルト: true）
 
 同一ディレクトリの画像は `src="photo.webp"` または
 `src="./photo.webp"` のどちらでも指定可能。
+カバー画像を記事冒頭に表示する場合は
+`src="$local_image"` で frontmatter と一元管理できる。
 
 ### remote_text — 外部ファイル読み込み（tabi組み込み）
 
@@ -370,12 +373,16 @@ katex = true                    # 数式表示（任意）
 +++
 ```
 
-プロジェクトページでカード画像を表示する場合：
+カバー画像を記事一覧でカード表示する場合、
+`local_image` にサイトルートからのフルパスを指定する。
+相対パスだと一覧ページで画像が解決できず壊れる。
 
 ```toml
 [extra]
-local_image = "path/to/image.webp"
-local_image_dark = "path/to/image-dark.webp"
+# ブログ記事の場合（フルパス必須）
+local_image = "/blog/YYYY/MM/slug/cover.webp"
+# プロジェクトページの場合
+# local_image = "projects/slug/cover.webp"
 ```
 
 新規記事作成後、`npm run ogp` を実行して

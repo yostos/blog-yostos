@@ -12,11 +12,12 @@ date = 2026-03-02T19:40:00+09:00
 tags = ["Drone"]
 [extra]
 social_media_card = "ogp.webp"
+local_image = "cover.webp"
 +++
 
 <!-- textlint-disable -->
 
-{{ image(src="./cover.webp", alt="Cover") }}
+{{ image(src="$local_image", alt="Cover") }}
 
 <details>
 <summary>Table of Contents</summary>
@@ -78,14 +79,14 @@ Insta360 Antigravity A1に対するDJIの回答と
 まとめておきます。正式発表前のため、
 製品版で変更される可能性があります。
 
-| 項目           |   Avata 360（リーク）   |   Antigravity A1   |  Avata 2（参考）  |
-| -------------- | :---------------------: | :----------------: | :---------------: |
-| 映像           |  8K/60fps HDR（360°）   |  8K/30fps（360°）  |     4K/120fps     |
-| センサー       | 上下2基（1/1.1" リーク） | 上下2基（1/1.28"） |        1基        |
-| 重量           |    377g以上の見込み     |        249g        |       377g        |
-| 飛行時間       |         未公表          |     24分〜39分     |      約23分       |
-| 障害物検知     |    前方+側方+下方    |     前方+下方      |     前方+下方     |
-| 操作系         | Goggles N3 + RC Motion 3 |   Vision + Grip    | Goggles 3 + RC Motion 3 |
+| 項目       |   Avata 360（リーク）    |   Antigravity A1   |     Avata 2（参考）     |
+| ---------- | :----------------------: | :----------------: | :---------------------: |
+| 映像       |   8K/60fps HDR（360°）   |  8K/30fps（360°）  |        4K/120fps        |
+| センサー   | 上下2基（1/1.1" リーク） | 上下2基（1/1.28"） |           1基           |
+| 重量       |     377g以上の見込み     |        249g        |          377g           |
+| 飛行時間   |          未公表          |     24分〜39分     |         約23分          |
+| 障害物検知 |      前方+側方+下方      |     前方+下方      |        前方+下方        |
+| 操作系     | Goggles N3 + RC Motion 3 |   Vision + Grip    | Goggles 3 + RC Motion 3 |
 
 映像性能ではAvata 360にアドバンテージがありますが、
 249gという軽量さはAntigravity A1の大きな強みです。
@@ -124,10 +125,11 @@ Avata 360は非常に気になる存在です。
 ## References
 
 {% references() %}
+
 - [DroneXL](https://dronexl.co/). "The Real DJI AVATA 360 Leaks"
 - [DroneXL](https://dronexl.co/). "DJI Avata 360 Price Leak"
 - [Daily Camera News](https://www.dailycameranews.com/). "DJI Avata 360 Drone Rumors: 2026 Release, Specs, Price"
 - Antigravity. "[Antigravity A1 Specs](https://www.antigravity.tech/us/drone/antigravity-a1/specs)"
-{% end %}
+  {% end %}
 
 <!-- textlint-enable -->

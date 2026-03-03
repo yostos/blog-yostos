@@ -12,11 +12,12 @@ tags = ["Drone", "Photography"]
 
 [extra]
 social_media_card = "ogp.webp"
+local_image = "cover.jpg"
 +++
 
 <!-- textlint-disable -->
 
-{{ image(src="./cover.jpg", alt="Cover") }}
+{{ image(src="$local_image", alt="Cover") }}
 
 <!-- textlint-enable -->
 

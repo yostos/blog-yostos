@@ -10,6 +10,7 @@ date = 2026-03-02T08:37:01+09:00
 [taxonomies]
 tags = ["Current Affairs", "Generative AI"]
 [extra]
+local_image = "cover.webp"
 social_media_card = "ogp.webp"
 tldr = """
 AnthropicとOpenAIは同じ2つのレッドライン（自律型兵器禁止・大規模監視禁止）を
@@ -22,7 +23,7 @@ AnthropicとOpenAIは同じ2つのレッドライン（自律型兵器禁止・�
 
 <!-- textlint-disable -->
 
-{{ image(src="cover.jpg", alt="Cover") }}
+{{ image(src="$local_image", alt="Cover") }}
 
 <!-- textlint-enable -->
 

@@ -11,12 +11,13 @@ date = 2026-02-27T20:15:00+09:00
 tags = ["Drone", "Photography"]
 
 [extra]
+local_image = "cover.jpg"
 social_media_card = "ogp.webp"
 +++
 
 <!-- textlint-disable -->
 
-{{ image(src="./cover.jpg" alt="Cover") }}
+{{ image(src="$local_image" alt="Cover") }}
 
 <!-- textlint-enable -->
 

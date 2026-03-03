@@ -11,6 +11,7 @@ date = 2026-03-01T20:34:29+09:00
 tags = ["Music", "Guitar"]
 
 [extra]
+local_image = "cover.webp"
 social_media_card = "ogp.webp"
 +++
 

@@ -9,6 +9,7 @@ date = 2026-03-01T06:35:31+09:00
 tags = ["Tech", "Weblog"]
 [extra]
 social_media_card = "ogp.webp"
+local_image = "cls.webp"
 tldr = """\
 Zolaの画像にwidth/heightが未設定でCLSが悪化していたため、\
 get_image_metadataで画像サイズを自動取得するショートコードを作成しました。\
@@ -105,10 +106,11 @@ Zola依存にはなりますが、記述を複雑にせずCLS対策ができま�
 <!-- textlint-disable -->
 
 {% references() %}
+
 - web.dev. 「[Cumulative Layout Shift (CLS)](https://web.dev/articles/cls)」
 - web.dev. 「[Core Web Vitals](https://web.dev/articles/vitals)」
 - Zola. "[Shortcodes](https://www.getzola.org/documentation/content/shortcodes/)"
 - Zola. "[Overview - get_image_metadata](https://www.getzola.org/documentation/templates/overview/#get-image-metadata)"
-{% end %}
+  {% end %}
 
 <!-- textlint-enable -->
