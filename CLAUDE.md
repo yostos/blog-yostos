@@ -10,13 +10,6 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 - **Description**: A blog powered by Zola static site generator.
   Migration project from Next.js/MDX blog.
 
-## General Rules
-
-- **生成AIの位置づけ**: 生成AIをシステムに組み込むのではなく、
-  「生成AIが使うシステム」を作るという世界観が本ブログの基本思想。
-  Claude Code / MCP のようにAIがエージェントとしてツールやシステムを
-  操作する方向性を前提とする。この立場はすべての記事に通底する。
-
 ## Available CLI Tools
 
 - `gh` - GitHub CLI for repository operations
@@ -27,22 +20,6 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 - `lychee` - Link checker for broken URLs in Markdown files
 - `nb` - Knowledge base for reference and storing discussion notes
 
-## Common Commands
-
-```bash
-zola serve          # Dev server with live reload
-zola build          # Production build (outputs to public/)
-zola check          # Error check
-npm run lint        # Run textlint on all content
-npm run lint:fix    # Auto-fix textlint errors
-npm run ogp         # Generate OGP images for articles without ogp.webp
-npm run ogp:dry-run # Preview OGP generation without creating files
-npx pagefind           # 検索インデックス生成
-npx pagefind --dry-run # インデックス生成のプレビュー
-# ローカル検索テスト手順:
-# zola build && npx pagefind && zola serve
-```
-
 ## Git Operations
 
 - **Commit**: Use `/simple-commit:commit` skill (auto-generates Conventional Commits format)
@@ -51,30 +28,6 @@ npx pagefind --dry-run # インデックス生成のプレビュー
 - **Staging**: 常に `git add .` を使用する（ファイルを個別に選ばない）
   - `themes/` はsubmoduleなので自動的に除外される
   - 漏れを防ぐため、全変更をまとめてステージング
-
-## Project Structure
-
-```
-content/
-  _index.md              # Homepage settings
-  blog/
-    _index.md            # Blog section settings
-    YYYY/MM/slug/        # Blog articles (year/month/slug format)
-      index.md           # Article body
-      image.png          # Article images
-themes/tabi/             # tabi theme
-docs/TODO.md             # Migration task documentation
-```
-
-## Theme: tabi
-
-- Theme: [tabi](https://github.com/welpo/tabi)
-- Language: Japanese (`default_language = "ja"`)
-- Search: Disabled (Japanese not supported)
-- **`themes/` 配下のファイルを絶対に編集しないこと**
-  - テーマのカスタマイズは `static/custom.css` で上書きする
-  - テンプレートの変更が必要な場合は `templates/` に
-    オーバーライドファイルを作成する
 
 ## Table of Contents
 
@@ -262,9 +215,10 @@ A[開始] --> B[処理] --> C[終了]
 <!-- textlint-disable -->
 
 {% references() %}
+
 - [Zenn](https://zenn.dev/). 「Zolaで技術ブログを作る」
 - 結城浩. (2020). 『[数学ガール](https://example.com/book)』
-{% end %}
+  {% end %}
 
 <!-- textlint-enable -->
 ```
@@ -479,39 +433,6 @@ See `docs/tag-rule.md` for comprehensive tagging rules and guidelines.
 
 このプロジェクトではtextlintの自動チェックが以下のタイミングで実行されます。
 
-### Pre-commit Hook（変更ファイルのみ）
-
-- `git commit` 時に自動実行（Husky + lint-staged）
-- ステージングされたMarkdownファイルのみチェック
-- エラーがある場合はcommitがブロックされる
-- 設定: `.husky/pre-commit`
-
-### Pre-push Hook（全ファイル）
-
-- `git push` 時に自動実行（Husky）
-- `content/**/*.md` の全ファイルをチェック
-- エラーがある場合はpushがブロックされる
-- 設定: `.husky/pre-push`
-
-### GitHub Actions（CI）
-
-- mainブランチへのpush/Pull Request時に自動実行
-- 全ファイルをチェック
-- CIステータスはGitHub上で確認可能
-- 設定: `.github/workflows/textlint.yml`
-
-### Bypass方法（非推奨）
-
-緊急時のみ以下の方法でフックをスキップ可能（非推奨）：
-
-```bash
-git commit --no-verify    # pre-commitをスキップ
-git push --no-verify      # pre-pushをスキップ
-```
-
-ただし、GitHub ActionsのCIは必ず実行されるため、
-最終的にはtextlintエラーを修正する必要があります。
-
 ## カバー画像生成（OpenAI DALL-E 3）
 
 記事のカバー画像を生成する場合に使用します。
@@ -535,12 +456,7 @@ git push --no-verify      # pre-pushをスキップ
 - `-q`: 品質 standard / hd（デフォルト: hd）
 
 利用シーン:
+
 - ユーザーからカバー画像の作成を依頼された場合
 - 記事の内容に即したイメージ画像が必要な場合
 - 写真素材がなくコンセプチュアルな画像が適切な場合
-
-## Migration Source
-
-- Path: `src/app/articles/` (relative to project root)
-- Format: MDX (Next.js App Router)
-- Details: See `docs/TODO.md`
