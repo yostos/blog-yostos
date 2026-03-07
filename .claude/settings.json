@@ -1,0 +1,53 @@
+{
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Bash",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "jq -r '.tool_input.command' | grep -qP '^git add (?!\\.)' && echo '{\"decision\":\"block\",\"reason\":\"git add は常に git add . を使ってください（個別ファイル指定は禁止）\"}' || true"
+          }
+        ]
+      },
+      {
+        "matcher": "Write",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "jq -r '.tool_input.file_path' | grep -q '^themes/' && echo '{\"decision\":\"block\",\"reason\":\"themes/ はサブモジュールです。直接変更しないでください\"}' || true"
+          }
+        ]
+      },
+      {
+        "matcher": "Edit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "jq -r '.tool_input.file_path' | grep -q '^themes/' && echo '{\"decision\":\"block\",\"reason\":\"themes/ はサブモジュールです。直接変更しないでください\"}' || true"
+          }
+        ]
+      }
+    ],
+    "PostToolUse": [
+      {
+        "matcher": "Write",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "FILE=$(jq -r '.tool_input.file_path') && echo \"$FILE\" | grep -q '^content/.*\\.md$' && grep -Pn '!\\[.*\\]\\(' \"$FILE\" 2>/dev/null | head -1 && echo '{\"reason\":\"Markdown画像記法 ![alt](path) を検出しました。image ショートコードを使い、textlint-disable/enable で囲んでください: <!-- textlint-disable --> {{ image(src=path, alt=text) }} <!-- textlint-enable -->\"}' || true"
+          }
+        ]
+      },
+      {
+        "matcher": "Edit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "FILE=$(jq -r '.tool_input.file_path') && echo \"$FILE\" | grep -q '^content/.*\\.md$' && grep -Pn '!\\[.*\\]\\(' \"$FILE\" 2>/dev/null | head -1 && echo '{\"reason\":\"Markdown画像記法 ![alt](path) を検出しました。image ショートコードを使い、textlint-disable/enable で囲んでください: <!-- textlint-disable --> {{ image(src=path, alt=text) }} <!-- textlint-enable -->\"}' || true"
+          }
+        ]
+      }
+    ]
+  }
+}

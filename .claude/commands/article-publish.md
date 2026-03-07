@@ -1,0 +1,38 @@
+---
+description: Publish an article. Run review, regenerate OGP, verify build, commit, and push to main automatically.
+---
+
+# Article Publish
+
+Execute the full publish workflow automatically.
+Prerequisite: the user has already confirmed the article via `zola serve` preview.
+
+## Steps
+
+Execute in order. Stop and report if any step fails.
+
+### 1. Run /article-review
+
+Execute the full article quality review.
+If issues are found, stop and fix them before continuing.
+
+### 2. Regenerate OGP Image
+
+- Delete the existing OGP image (the file specified by social_media_card in frontmatter)
+- Run `npm run ogp` to regenerate
+
+### 3. zola check
+
+Run `zola check` to verify no broken links or build errors.
+
+### 4. Stage & Commit
+
+- `git add .` to stage all changes
+- Use `/simple-commit:commit` skill to create the commit
+  - lint-staged runs textlint automatically on commit
+  - If textlint fails, fix the errors and retry
+
+### 5. Push
+
+Run `git push origin main` to publish.
+GitHub Actions deploy workflow will auto-trigger and deploy to Cloudflare Workers.
