@@ -2,16 +2,16 @@
 title = "gyrotriage — DJIドローン映像のブレを診断し、Gyroflowのパラメータを自動推定するツール"
 description = """\
 Gyroflowのパラメータ調整に毎回悩んでいませんか。\
-gyrotraigeはDJIドローンのMP4ファイルからブレを診断し、\
+gyrotriageはDJIドローンのMP4ファイルからブレを診断し、\
 Gyroflowの5つのパラメータを自動で推定するCLIツールです。\
 導入方法から使い方、出力の読み方までを解説します。\
 """
-date = 2026-03-08T22:00:00+09:00
+date = 2026-03-07T22:00:00+09:00
 [taxonomies]
 tags = ["Drone", "Software"]
 [extra]
 social_media_card = "ogp.webp"
-local_image = "/blog/2026/03/gyrotriage/cover.webp"
+local_image = "cover.webp"
 +++
 
 <!-- textlint-disable -->
@@ -47,7 +47,7 @@ Gyroflowには主に5つの調整パラメータがあります。
 
 1本2本ならまだしも、フライト後に何十本ものクリップを処理するときは正直つらい作業です。
 
-## gyrotraigeでパラメータ推定を自動化する
+## gyrotriageでパラメータ推定を自動化する
 
 <!-- textlint-disable -->
 
@@ -133,7 +133,7 @@ gyrotriage DJI_0001.MP4 --sparkline
 
 ## スコアの読み方
 
-gyrotraigeはブレの重大度を0〜100のスコアで表示します。
+gyrotriageはブレの重大度を0〜100のスコアで表示します。
 
 | レベル   | スコア  | 目安                             |
 | -------- | ------- | -------------------------------- |
@@ -171,7 +171,7 @@ DJI Air 3Sなど3軸ジンバル搭載機はGyroflow自体を必要としない�
 
 ## 実際の効果
 
-gyrotraigeで推定したパラメータを微調整なしでそのままGyroflowに適用した映像（右）と、オリジナルの未処理映像（左）の比較です。
+gyrotriageで推定したパラメータを微調整なしでそのままGyroflowに適用した映像（右）と、オリジナルの未処理映像（左）の比較です。
 
 <!-- textlint-disable -->
 
