@@ -147,7 +147,7 @@
 #### サブカテゴリー
 - **Certification** (5) - 資格（単数形）
 - **Drone** (15) - ドローン（ホビー/テクノロジー両面） ✓ 使用可
-- **Seasons** (2) - 季節
+- **Trivialities** (3) - 日常の雑記・小ネタ（旧Seasonsを統合）
 - **Motor Cycle** (1) - モーターサイクル
 - **Keyboard** (1) - キーボード
 
@@ -197,7 +197,7 @@
 | Design | 単数形 | ✓ Design (3) | |
 | Korea | 国名 | ✓ Korea (1) | |
 | Accessibility | 不可算 | ✓ Accessibility (1) | |
-| Seasons | 複数形 | ✓ Seasons (2) | |
+| Trivialities | 複数形 | ✓ Trivialities (3) | 旧Seasonsを統合 |
 | Productivity | 不可算 | ✓ Productivity (2) | |
 | Note-taking | ハイフン | ✓ Note-taking (2) | |
 | Game | 単数形 | ✓ Game (15) | |
@@ -214,6 +214,7 @@
 | Claude | 製品名（Claude Codeと重複） | Claude Code（または削除） |
 | NHK | 組織名（個別性不要） | 削除（親タグで対応） |
 | SNS | Techに統合 | Tech |
+| Seasons | Trivialitiesに統合 | Trivialities |
 | Progmraming | タイポ | Programming |
 | Music Procution | タイポ | Music Production |
 
@@ -260,7 +261,7 @@ Lifestyle
 ├── Gourmet
 ├── Gadget
 │   └── Drone ✓
-└── Seasons
+└── Trivialities
 
 News & Culture
 ├── Current Affairs
