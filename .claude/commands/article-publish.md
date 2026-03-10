@@ -36,3 +36,12 @@ Run `zola check` to verify no broken links or build errors.
 
 Run `git push origin main` to publish.
 GitHub Actions deploy workflow will auto-trigger and deploy to Cloudflare Workers.
+
+### 6. IndexNow Notification
+
+Notify search engines of the new/updated article URL via IndexNow.
+
+- Determine the article URL from the content path (e.g., `content/posts/my-article/index.md` → `https://codedchords.dev/posts/my-article/`)
+- Run `./scripts/indexnow.sh <article-url>`
+- The script will wait for the URL to return HTTP 200 (deploy completion) before submitting
+- Report the IndexNow result to the user

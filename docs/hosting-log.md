@@ -159,4 +159,27 @@
 
 ---
 
+### 2026-03-11: IndexNow 導入
+
+#### 実施内容
+
+1. **キーファイル配置**
+   - Bing Webmaster Tools から取得したキーファイルを `static/ceaaeaf047f940dcbed3b040f48f1a27.txt` に配置
+   - ビルド後 `https://codedchords.dev/ceaaeaf047f940dcbed3b040f48f1a27.txt` でアクセス可能
+
+2. **送信スクリプト作成**
+   - `scripts/indexnow.sh` を作成
+   - デプロイ完了をポーリング（15秒間隔、最大5分）してから IndexNow API に送信
+   - 複数URL対応、`--no-wait` オプション付き
+
+3. **`/article-publish` に統合**
+   - Step 6 として IndexNow 通知を追加
+   - push 後に自動でデプロイ完了待機 → IndexNow 送信
+
+#### 参考
+
+- 詳細: `docs/indexnow.md`
+
+---
+
 <!-- 以下に作業を追記 -->
