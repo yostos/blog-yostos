@@ -119,4 +119,5 @@ skip_prefixes = [
     "https://www.bloomberg.com/",
     "https://soundcloud.com/",
     "https://flic.kr/",
+    "https://www.npmjs.com/",
 ]
