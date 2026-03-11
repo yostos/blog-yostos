@@ -6,7 +6,6 @@ date = 2026-02-20
 tags = ["Tech", "Security", "Weblog"]
 [extra]
 social_media_card = "ogp.webp"
-canonical_url = "https://zenn.dev/yostos/articles/cloudflare-benefits"
 +++
 
 <!-- textlint-disable -->
@@ -96,41 +95,41 @@ DNS応答の改ざん防止やメールのなりすまし対策など、ドメ�
 - ×: 非対応
 - −: 該当なし
 
-| 機能                                 |   Amplify + CloudFront   |      GitHub Pages       | コメント                                                              |
-| ------------------------------------ | :----------------------: | :---------------------: | --------------------------------------------------------------------- |
-| Always Use HTTPS                     |            ○             |            ○            |                                                                       |
-| HSTS                                 |      △（手動設定）       |            ○            | AWSだけ手動設定の手間がかかる                                         |
-| Minimum TLS Version                  |            ○             |            ×            | GitHub Pagesは古いTLSを拒否できず、セキュリティポリシーを徹底しにくい |
-| Opportunistic Encryption             |            ×             |            ×            | HTTP接続の暗号化への誘導は他のサービスでは提供されていない            |
-| TLS 1.3                              |            ○             |            ○            |                                                                       |
-| Automatic HTTPS Rewrites             |            ×             |            ×            | 他では混在コンテンツを自分で探して直す必要がある                      |
-| Certificate Transparency Monitoring  |      △（ACMの一部）      |            ×            | 不正な証明書発行の早期発見に差が出る                                  |
-| AI Labyrinth                         |            ×             |            ×            | ワンクリックでAIスクレイピングに対抗できる機能は他にない              |
-| Block AI bots                        |   △（WAFルールで対応）   |            ×            | AWSは自前でルールを書く手間とWAF費用がかかる                          |
+| 機能                                 |   Amplify + CloudFront   |      GitHub Pages       | コメント                                                                  |
+| ------------------------------------ | :----------------------: | :---------------------: | ------------------------------------------------------------------------- |
+| Always Use HTTPS                     |            ○             |            ○            |                                                                           |
+| HSTS                                 |      △（手動設定）       |            ○            | AWSだけ手動設定の手間がかかる                                             |
+| Minimum TLS Version                  |            ○             |            ×            | GitHub Pagesは古いTLSを拒否できず、セキュリティポリシーを徹底しにくい     |
+| Opportunistic Encryption             |            ×             |            ×            | HTTP接続の暗号化への誘導は他のサービスでは提供されていない                |
+| TLS 1.3                              |            ○             |            ○            |                                                                           |
+| Automatic HTTPS Rewrites             |            ×             |            ×            | 他では混在コンテンツを自分で探して直す必要がある                          |
+| Certificate Transparency Monitoring  |      △（ACMの一部）      |            ×            | 不正な証明書発行の早期発見に差が出る                                      |
+| AI Labyrinth                         |            ×             |            ×            | ワンクリックでAIスクレイピングに対抗できる機能は他にない                  |
+| Block AI bots                        |   △（WAFルールで対応）   |            ×            | AWSは自前でルールを書く手間とWAF費用がかかる                              |
 | Bot fight mode                       | △（WAF Bot Control有料） |            ×            | AWSで同等機能を得るにはBot Control（月額$10〜＋リクエスト従量課金）が必要 |
-| Browser Integrity Check              |     △（WAFで部分的）     |            ×            | AWSでは同等ルールの自作が必要で、運用負荷が高い                       |
-| Challenge passage                    |         △（WAF）         |            ×            | Cloudflareはチャレンジの有効期間まで細かく制御できる                  |
-| HTTP DDoS attack protection          |      △（WAFは有料）      |            ×            | 無料でWAFまで付くのはCloudflareの大きな強み                           |
-| Manage your robots.txt               |            ×             |            ×            | 増え続けるAIクローラーへの対応を自動化できる機能は他にない            |
-| Network-layer DDoS attack protection |   ○（Shield Standard）   |            ○            |                                                                       |
-| DNSSEC                               |      ○（Route 53）       | △（DNS providerに依存） | Cloudflareはワンクリック、DNS一体管理なので設定が圧倒的に楽           |
-| Email Security                       |      ○（Route 53）       | △（DNS providerに依存） | 同上。DNS管理とセットなのでSPF/DMARCの設定も迷わない                  |
-| Web analytics (RUM)                  | △（CloudWatch RUM有料）  |            ×            | Cloudflareは追加費用なしでCookie不要の計測が使える                    |
-| Speed Brain                          |            ×             |            ×            | ページ先読みによる体感速度向上は他のサービスでは提供されていない      |
-| HTTP/2                               |            ○             |            ○            |                                                                       |
-| HTTP/3                               |            ○             |            ×            | GitHub Pagesは2026年2月時点でHTTP/3未サポート                         |
-| HTTP/2 to Origin                     |            ○             |            −            | オリジンサーバーがある構成でのみ意味がある                            |
-| 0-RTT                                |            ×             |            ×            | 再訪問時の体感速度に差が出る。他のサービスでは無料で提供されていない  |
+| Browser Integrity Check              |     △（WAFで部分的）     |            ×            | AWSでは同等ルールの自作が必要で、運用負荷が高い                           |
+| Challenge passage                    |         △（WAF）         |            ×            | Cloudflareはチャレンジの有効期間まで細かく制御できる                      |
+| HTTP DDoS attack protection          |      △（WAFは有料）      |            ×            | 無料でWAFまで付くのはCloudflareの大きな強み                               |
+| Manage your robots.txt               |            ×             |            ×            | 増え続けるAIクローラーへの対応を自動化できる機能は他にない                |
+| Network-layer DDoS attack protection |   ○（Shield Standard）   |            ○            |                                                                           |
+| DNSSEC                               |      ○（Route 53）       | △（DNS providerに依存） | Cloudflareはワンクリック、DNS一体管理なので設定が圧倒的に楽               |
+| Email Security                       |      ○（Route 53）       | △（DNS providerに依存） | 同上。DNS管理とセットなのでSPF/DMARCの設定も迷わない                      |
+| Web analytics (RUM)                  | △（CloudWatch RUM有料）  |            ×            | Cloudflareは追加費用なしでCookie不要の計測が使える                        |
+| Speed Brain                          |            ×             |            ×            | ページ先読みによる体感速度向上は他のサービスでは提供されていない          |
+| HTTP/2                               |            ○             |            ○            |                                                                           |
+| HTTP/3                               |            ○             |            ×            | GitHub Pagesは2026年2月時点でHTTP/3未サポート                             |
+| HTTP/2 to Origin                     |            ○             |            −            | オリジンサーバーがある構成でのみ意味がある                                |
+| 0-RTT                                |            ×             |            ×            | 再訪問時の体感速度に差が出る。他のサービスでは無料で提供されていない      |
 
 ## AI時代のコンテンツ保護
 
 Cloudflareの無料プランには、AIクローラーに対応する機能が複数用意されています。これらは独立した機能ですが、組み合わせると多層的な防御になります。
 
-| 機能 | レイヤー | 役割 |
-|------|----------|------|
-| Content Signals Policy | 意思表示 | robots.txt内でコンテンツの用途別に許可/拒否を宣言する。強制力はなく、善意あるクローラーへの「お願い」 |
-| Block AI bots | 技術的ブロック | Cloudflareが「AI学習用」と分類するクローラーをWAFレベルでブロックする。検索エンジンやAIアシスタントは対象外 |
-| AI Labyrinth | 欺瞞防御 | ブロックを無視するクローラーに偽コンテンツを読ませ、学習データを汚染させるハニーポット |
+| 機能                   | レイヤー       | 役割                                                                                                        |
+| ---------------------- | -------------- | ----------------------------------------------------------------------------------------------------------- |
+| Content Signals Policy | 意思表示       | robots.txt内でコンテンツの用途別に許可/拒否を宣言する。強制力はなく、善意あるクローラーへの「お願い」       |
+| Block AI bots          | 技術的ブロック | Cloudflareが「AI学習用」と分類するクローラーをWAFレベルでブロックする。検索エンジンやAIアシスタントは対象外 |
+| AI Labyrinth           | 欺瞞防御       | ブロックを無視するクローラーに偽コンテンツを読ませ、学習データを汚染させるハニーポット                      |
 
 ポイントは、Content Signals PolicyとBlock AI botsの役割分担です。Content Signals Policyでは `search=yes, ai-input=yes, ai-train=no` のように宣言し、「検索やAI回答での引用はOKだが、モデルの学習には使うな」という意思を伝えます。しかし宣言はあくまで「お願い」なので、AI学習用クローラーに対してはBlock AI botsがWAFレベルで実際にアクセスを遮断します。それでもすり抜けてくるクローラーにはAI Labyrinthが偽データを食わせます。
 
