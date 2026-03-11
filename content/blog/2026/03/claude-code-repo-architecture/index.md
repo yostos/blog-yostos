@@ -22,7 +22,7 @@ Workflows（Commands）・Guardrails（Hooks）・Progressive Context（docs/）
 
 <!-- textlint-disable -->
 
-{{ image(src="$local_image", alt="Cover") }}
+{{ image(src="cover.webp", alt="Cover") }}
 
 <!-- textlint-enable -->
 

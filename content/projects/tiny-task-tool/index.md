@@ -9,7 +9,7 @@ weight = 20
 tags = ["Go", "CLI"]
 
 [extra]
-local_image = "projects/tiny-task-tool/cover.webp"
+local_image = "cover.webp"
 social_media_card = "cover.webp"
 show_reading_time = false
 +++

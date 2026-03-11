@@ -9,7 +9,7 @@ weight = 10
 tags = ["Go", "CLI"]
 
 [extra]
-local_image = "projects/img2char/cover.webp"
+local_image = "cover.webp"
 social_media_card = "cover.webp"
 show_reading_time = false
 +++

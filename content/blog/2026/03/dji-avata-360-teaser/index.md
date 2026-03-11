@@ -10,12 +10,12 @@ date = 2026-03-06
 tags = ["Drone"]
 [extra]
 social_media_card = "ogp.webp"
-local_image = "/blog/2026/03/dji-avata-360-teaser/cover.webp"
+local_image = "cover.webp"
 +++
 
 <!-- textlint-disable -->
 
-{{ image(src="$local_image", alt="DJI Avata 360 ティザー") }}
+{{ image(src="cover.webp", alt="DJI Avata 360 ティザー") }}
 
 <!-- textlint-enable -->
 

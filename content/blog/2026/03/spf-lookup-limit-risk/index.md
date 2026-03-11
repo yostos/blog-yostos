@@ -19,7 +19,7 @@ tldr = "SPFにはRFC 7208で定められたDNSルックアップ上限10回の�
 
 <!-- textlint-disable -->
 
-{{ image(src="$local_image", alt="Cover") }}
+{{ image(src="cover.webp", alt="Cover") }}
 {% admonition(type="info", title="転載元") %}
 この記事は [Zenn](https://zenn.dev/yostos/articles/spf-lookup-limit-risk) に掲載した記事の転載です。
 {% end %}

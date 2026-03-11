@@ -23,7 +23,7 @@ AnthropicとOpenAIは同じ2つのレッドライン（自律型兵器禁止・�
 
 <!-- textlint-disable -->
 
-{{ image(src="$local_image", alt="Cover") }}
+{{ image(src="cover.webp", alt="Cover") }}
 
 <!-- textlint-enable -->
 

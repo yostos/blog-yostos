@@ -16,7 +16,7 @@ local_image = "cover.webp"
 
 <!-- textlint-disable -->
 
-{{ image(src="$local_image", alt="gyrotriage HUD出力例") }}
+{{ image(src="cover.webp", alt="gyrotriage HUD出力例") }}
 
 <!-- textlint-enable -->
 
