@@ -19,7 +19,7 @@ tldr = "Billboard Hot 100トップ5曲（2000〜2024年、計125曲）をlibrosa
 
 <!-- textlint-disable -->
 
-{{ image(src="$local_image",alt="Cover画像")}}
+{{ image(src="cover.webp", alt="Cover画像") }}
 
 <!-- textlint-enable -->
 

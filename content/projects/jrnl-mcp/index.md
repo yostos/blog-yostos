@@ -9,7 +9,7 @@ weight = 30
 tags = ["TypeScript", "Claude Code"]
 
 [extra]
-local_image = "projects/jrnl-mcp/cover.webp"
+local_image = "cover.webp"
 social_media_card = "cover.webp"
 show_reading_time = false
 +++

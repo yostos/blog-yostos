@@ -17,7 +17,7 @@ local_image = "cover.jpg"
 
 <!-- textlint-disable -->
 
-{{ image(src="$local_image", alt="Cover") }}
+{{ image(src="cover.jpg", alt="Cover") }}
 
 <!-- textlint-enable -->
 

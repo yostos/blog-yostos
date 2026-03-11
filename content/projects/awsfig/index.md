@@ -9,7 +9,7 @@ weight = 70
 tags = ["Python", "AWS"]
 
 [extra]
-local_image = "projects/awsfig/cover.webp"
+local_image = "cover.webp"
 social_media_card = "cover.webp"
 show_reading_time = false
 +++

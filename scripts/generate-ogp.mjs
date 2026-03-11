@@ -18,50 +18,44 @@ import {
   createOverlayTemplate,
   OGP_WIDTH,
   OGP_HEIGHT,
-  DEFAULT_AUTHOR,
-  BLOG_NAME,
 } from './ogp-template.mjs';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const PROJECT_ROOT = path.resolve(__dirname, '..');
 const CONTENT_DIR = path.join(PROJECT_ROOT, 'content', 'blog');
-const DEFAULT_BG_IMAGE = path.join(
-  PROJECT_ROOT,
-  'static',
-  'images',
-  'coded-chords.webp'
-);
+const TEMPLATE_IMAGE = path.join(__dirname, 'images', 'ogp-template.png');
 const FONTS_DIR = path.join(__dirname, 'fonts');
 
-const IMAGE_EXTENSIONS = ['.webp', '.jpg', '.jpeg', '.png'];
-const FONT_EXTENSIONS = ['.ttf', '.otf'];
-const MIN_WIDTH = 1200;
-const MIN_HEIGHT = 630;
+const FONT_FILES = {
+  latin: 'BerkeleyMono-Medium.otf',
+  jp: 'IBMPlexSansJP-Medium.otf',
+};
 
 // コマンドライン引数
 const isDryRun = process.argv.includes('--dry-run');
 const isForce = process.argv.includes('--force');
 
 /**
- * フォントディレクトリからフォントファイル一覧を取得
- * Berkeley Mono（ラテン文字用）を優先、Kadoma（日本語用）をフォールバックとする
+ * フォントファイルを読み込み
  */
-async function findFontFiles() {
-  const files = await fs.readdir(FONTS_DIR);
-  const fontFiles = files
-    .filter((f) => FONT_EXTENSIONS.includes(path.extname(f).toLowerCase()))
-    .sort((a, b) => {
-      // Berkeley Mono を先頭にソート（ラテン文字・スペース優先）
-      const aIsBerkeley = a.toLowerCase().includes('berkeley') ? 0 : 1;
-      const bIsBerkeley = b.toLowerCase().includes('berkeley') ? 0 : 1;
-      return aIsBerkeley - bIsBerkeley;
-    });
-  if (fontFiles.length === 0) {
-    throw new Error(
-      `フォントが見つかりません。scripts/fonts/ に .ttf または .otf を配置してください。`
-    );
+async function loadFonts() {
+  const latinPath = path.join(FONTS_DIR, FONT_FILES.latin);
+  const jpPath = path.join(FONTS_DIR, FONT_FILES.jp);
+
+  for (const [name, fontPath] of [['Latin', latinPath], ['JP', jpPath]]) {
+    try {
+      await fs.access(fontPath);
+    } catch {
+      throw new Error(
+        `フォント ${name} が見つかりません: ${fontPath}\nscripts/fonts/ に配置してください。`
+      );
+    }
   }
-  return fontFiles.map((f) => path.join(FONTS_DIR, f));
+
+  return {
+    latin: await fs.readFile(latinPath),
+    jp: await fs.readFile(jpPath),
+  };
 }
 
 /**
@@ -74,34 +68,21 @@ async function getArticleDirs() {
 
 /**
  * frontmatterからタイトルを取得
- * Zolaのfrontmatter (TOML) から title を正規表現で抽出
  */
-async function getArticleTitle(articleDir) {
-  const indexPath = path.join(articleDir, 'index.md');
-  const content = await fs.readFile(indexPath, 'utf-8');
-
-  // +++で囲まれたfrontmatter部分を抽出
-  const fmMatch = content.match(/^\+\+\+\n([\s\S]*?)\n\+\+\+/);
-  if (!fmMatch) {
-    return 'Untitled';
-  }
-
-  const frontmatter = fmMatch[1];
-
-  // title = """...""" (複数行) を抽出
+function extractTitle(frontmatter) {
+  // title = """...""" (複数行)
   const multiLineMatch = frontmatter.match(/^title\s*=\s*"""([\s\S]*?)"""/m);
   if (multiLineMatch) {
     return multiLineMatch[1].trim();
   }
 
-  // title = "..." を抽出（エスケープされた引用符に対応）
+  // title = "..." （エスケープされた引用符に対応）
   const doubleQuoteMatch = frontmatter.match(/^title\s*=\s*"((?:[^"\\]|\\.)*)"/m);
   if (doubleQuoteMatch) {
-    // エスケープされた引用符を戻す
     return doubleQuoteMatch[1].replace(/\\"/g, '"');
   }
 
-  // title = '...' を抽出
+  // title = '...'
   const singleQuoteMatch = frontmatter.match(/^title\s*=\s*'([^']*)'/m);
   if (singleQuoteMatch) {
     return singleQuoteMatch[1];
@@ -111,143 +92,59 @@ async function getArticleTitle(articleDir) {
 }
 
 /**
- * ディレクトリ内の画像ファイルを取得（ogp.webpを除く）
+ * frontmatterからタグを取得
  */
-async function getImageFiles(articleDir) {
-  const files = await fs.readdir(articleDir);
-  return files
-    .filter((f) => {
-      const ext = path.extname(f).toLowerCase();
-      const name = path.basename(f, ext).toLowerCase();
-      return IMAGE_EXTENSIONS.includes(ext) && name !== 'ogp';
-    })
-    .map((f) => path.join(articleDir, f));
+function extractTags(frontmatter) {
+  const match = frontmatter.match(/^tags\s*=\s*\[(.*?)\]/m);
+  if (!match) return [];
+
+  return match[1]
+    .split(',')
+    .map((t) => t.trim().replace(/^["']|["']$/g, ''))
+    .filter((t) => t.length > 0);
 }
 
 /**
- * 最大ファイルサイズの画像を取得
+ * 記事のfrontmatterを解析してタイトルとタグを取得
  */
-async function getLargestImage(imagePaths) {
-  if (imagePaths.length === 0) return null;
+async function parseArticle(articleDir) {
+  const indexPath = path.join(articleDir, 'index.md');
+  const content = await fs.readFile(indexPath, 'utf-8');
 
-  let largest = null;
-  let largestSize = 0;
-
-  for (const imgPath of imagePaths) {
-    const stats = await fs.stat(imgPath);
-    if (stats.size > largestSize) {
-      largestSize = stats.size;
-      largest = imgPath;
-    }
+  const fmMatch = content.match(/^\+\+\+\n([\s\S]*?)\n\+\+\+/);
+  if (!fmMatch) {
+    return { title: 'Untitled', tags: [] };
   }
 
-  return largest;
+  const frontmatter = fmMatch[1];
+  return {
+    title: extractTitle(frontmatter),
+    tags: extractTags(frontmatter),
+  };
 }
 
 /**
- * 画像がOGPサイズ要件を満たすか確認
+ * テンプレート画像にオーバーレイを合成してOGP画像を生成
  */
-async function meetsMinSize(imagePath) {
-  try {
-    const metadata = await sharp(imagePath).metadata();
-    return metadata.width >= MIN_WIDTH && metadata.height >= MIN_HEIGHT;
-  } catch {
-    return false;
-  }
-}
-
-/**
- * 画像をリサイズしてタイトルオーバーレイ付きOGP画像を生成
- * @param {string} imagePath - 元画像パス
- * @param {string} outputPath - 出力パス
- * @param {string} title - 記事タイトル
- * @param {Buffer[]} fontsData - フォントデータ配列（優先順）
- */
-async function createOgpFromImage(imagePath, outputPath, title, fontsData) {
-  // satoriでオーバーレイSVGを生成
-  const template = createOverlayTemplate({
-    title,
-    author: DEFAULT_AUTHOR,
-    blogName: BLOG_NAME,
-  });
+async function createOgpImage(outputPath, title, tags, fonts) {
+  const template = createOverlayTemplate({ title, tags });
 
   const svg = await satori(template, {
     width: OGP_WIDTH,
     height: OGP_HEIGHT,
     fonts: [
-      { name: 'Latin', data: fontsData[0], weight: 400, style: 'normal' },
-      { name: 'JP', data: fontsData[1] || fontsData[0], weight: 400, style: 'normal' },
+      { name: 'Latin', data: fonts.latin, weight: 500, style: 'normal' },
+      { name: 'JP', data: fonts.jp, weight: 500, style: 'normal' },
     ],
   });
 
-  // SVGをPNGに変換
   const resvg = new Resvg(svg, {
-    fitTo: {
-      mode: 'width',
-      value: OGP_WIDTH,
-    },
+    fitTo: { mode: 'width', value: OGP_WIDTH },
   });
   const overlayPng = resvg.render().asPng();
 
-  // 元画像にオーバーレイを合成
-  await sharp(imagePath)
-    .resize(OGP_WIDTH, OGP_HEIGHT, {
-      fit: 'cover',
-      position: 'center',
-    })
-    .composite([
-      {
-        input: overlayPng,
-        top: 0,
-        left: 0,
-      },
-    ])
-    .webp({ quality: 85 })
-    .toFile(outputPath);
-}
-
-/**
- * デフォルト背景にタイトルをオーバーレイしてOGP画像を生成
- * @param {string} title - 記事タイトル
- * @param {string} outputPath - 出力パス
- * @param {Buffer[]} fontsData - フォントデータ配列（優先順）
- */
-async function createOgpWithOverlay(title, outputPath, fontsData) {
-  // satoriでSVGを生成
-  const template = createOverlayTemplate({
-    title,
-    author: DEFAULT_AUTHOR,
-    blogName: BLOG_NAME,
-  });
-
-  const svg = await satori(template, {
-    width: OGP_WIDTH,
-    height: OGP_HEIGHT,
-    fonts: [
-      { name: 'Latin', data: fontsData[0], weight: 400, style: 'normal' },
-      { name: 'JP', data: fontsData[1] || fontsData[0], weight: 400, style: 'normal' },
-    ],
-  });
-
-  // SVGをPNGに変換
-  const resvg = new Resvg(svg, {
-    fitTo: {
-      mode: 'width',
-      value: OGP_WIDTH,
-    },
-  });
-  const overlayPng = resvg.render().asPng();
-
-  // デフォルト背景画像にオーバーレイを合成
-  await sharp(DEFAULT_BG_IMAGE)
-    .resize(OGP_WIDTH, OGP_HEIGHT, { fit: 'cover' })
-    .composite([
-      {
-        input: overlayPng,
-        top: 0,
-        left: 0,
-      },
-    ])
+  await sharp(TEMPLATE_IMAGE)
+    .composite([{ input: overlayPng, top: 0, left: 0 }])
     .webp({ quality: 85 })
     .toFile(outputPath);
 }
@@ -261,14 +158,10 @@ async function main() {
   console.log(`強制上書き: ${isForce ? 'はい' : 'いいえ'}`);
   console.log('---');
 
-  // フォントを事前に読み込み（メモリ効率化）
-  let fontsData = [];
+  let fonts = null;
   if (!isDryRun) {
-    const fontPaths = await findFontFiles();
-    for (const fontPath of fontPaths) {
-      console.log(`フォントを読み込み中: ${path.basename(fontPath)}`);
-      fontsData.push(await fs.readFile(fontPath));
-    }
+    fonts = await loadFonts();
+    console.log(`フォント読み込み完了: ${FONT_FILES.latin}, ${FONT_FILES.jp}`);
   }
 
   const articleDirs = await getArticleDirs();
@@ -276,8 +169,7 @@ async function main() {
   console.log('');
 
   let skipped = 0;
-  let fromImage = 0;
-  let fromDefault = 0;
+  let generated = 0;
   let errors = 0;
 
   for (const articleDir of articleDirs) {
@@ -288,7 +180,6 @@ async function main() {
     try {
       await fs.access(ogpPath);
       if (!isForce) {
-        console.log(`[スキップ] ${relativePath} (既存)`);
         skipped++;
         continue;
       }
@@ -297,32 +188,13 @@ async function main() {
     }
 
     try {
-      const title = await getArticleTitle(articleDir);
-      const images = await getImageFiles(articleDir);
-      const largestImage = await getLargestImage(images);
-
-      let useDefault = true;
-      if (largestImage) {
-        const meetsSize = await meetsMinSize(largestImage);
-        if (meetsSize) {
-          useDefault = false;
-        }
+      const { title, tags } = await parseArticle(articleDir);
+      const tagStr = tags.length > 0 ? ` [${tags.slice(0, 4).join(', ')}]` : '';
+      console.log(`[生成] ${relativePath} → "${title}"${tagStr}`);
+      if (!isDryRun) {
+        await createOgpImage(ogpPath, title, tags, fonts);
       }
-
-      if (useDefault) {
-        console.log(`[デフォルト] ${relativePath} → "${title}"`);
-        if (!isDryRun) {
-          await createOgpWithOverlay(title, ogpPath, fontsData);
-        }
-        fromDefault++;
-      } else {
-        const imgName = path.basename(largestImage);
-        console.log(`[画像使用] ${relativePath} → ${imgName} + "${title}"`);
-        if (!isDryRun) {
-          await createOgpFromImage(largestImage, ogpPath, title, fontsData);
-        }
-        fromImage++;
-      }
+      generated++;
     } catch (err) {
       console.error(`[エラー] ${relativePath}: ${err.message}`);
       errors++;
@@ -331,8 +203,7 @@ async function main() {
 
   console.log('');
   console.log('---');
-  console.log(`完了: スキップ=${skipped}, 画像使用=${fromImage}, ` +
-    `デフォルト=${fromDefault}, エラー=${errors}`);
+  console.log(`完了: スキップ=${skipped}, 生成=${generated}, エラー=${errors}`);
 }
 
 main().catch((err) => {

@@ -80,7 +80,7 @@ katex = true                    # math rendering (optional)
 
 Cover image is also used within the article.
 The following line is required at the beginning of the article body:
-`{{ image(src="$local_image", alt="Cover") }}`
+`{{ image(src="cover.webp", alt="Cover") }}`
 
 ### Description Field Rules
 

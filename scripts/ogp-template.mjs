@@ -1,17 +1,22 @@
 /**
- * OGP画像のテンプレート（satori用）
- * デフォルト背景画像にタイトル等をオーバーレイする
+ * OGP画像のオーバーレイテンプレート（satori用）
+ * テンプレート画像の上にタイトルとタグを配置する
  */
 
+export const OGP_WIDTH = 1200;
+export const OGP_HEIGHT = 630;
+export const MAX_TAGS = 4;
+
 /**
- * タイトルオーバーレイ用のテンプレートを生成
+ * タイトル・タグオーバーレイ用のテンプレートを生成
  * @param {Object} options
  * @param {string} options.title - 記事タイトル
- * @param {string} options.author - 著者名
- * @param {string} options.blogName - ブログ名
+ * @param {string[]} options.tags - タグ配列（最大4つ）
  * @returns {Object} satori用のJSX-likeオブジェクト
  */
-export function createOverlayTemplate({ title, author, blogName }) {
+export function createOverlayTemplate({ title, tags = [] }) {
+  const displayTags = tags.slice(0, MAX_TAGS);
+
   return {
     type: 'div',
     props: {
@@ -20,101 +25,63 @@ export function createOverlayTemplate({ title, author, blogName }) {
         height: '100%',
         display: 'flex',
         flexDirection: 'column',
-        justifyContent: 'space-between',
-        padding: '40px',
+        justifyContent: 'flex-start',
+        paddingTop: '100px',
+        paddingLeft: '80px',
+        paddingRight: '80px',
         fontFamily: 'Latin, JP',
       },
       children: [
-        // ブログ名（左上）
+        // タイトル
         {
           type: 'div',
           props: {
             style: {
               display: 'flex',
-              justifyContent: 'flex-start',
+              maxWidth: '1080px',
             },
             children: {
               type: 'span',
               props: {
                 style: {
-                  color: 'white',
-                  fontSize: '28px',
-                  fontWeight: 'bold',
-                  textShadow: '2px 2px 4px rgba(0, 0, 0, 0.5)',
+                  color: '#1a1a1a',
+                  fontSize: '48px',
+                  lineHeight: 1.4,
+                  wordBreak: 'break-word',
                 },
-                children: blogName,
+                children: title,
               },
             },
           },
         },
-        // 下部コンテナ（タイトル + 著者名）
-        {
-          type: 'div',
-          props: {
-            style: {
-              display: 'flex',
-              flexDirection: 'column',
-            },
-            children: [
-              // タイトル部分（半透明背景ボックス付き）
+        // タグ
+        ...(displayTags.length > 0
+          ? [
               {
                 type: 'div',
                 props: {
                   style: {
                     display: 'flex',
-                    backgroundColor: 'rgba(0, 0, 0, 0.6)',
-                    borderRadius: '12px',
-                    padding: '24px 32px',
-                    marginBottom: '20px',
-                    maxWidth: '90%',
+                    flexWrap: 'wrap',
+                    gap: '16px',
+                    marginTop: '20px',
                   },
-                  children: {
+                  children: displayTags.map((tag) => ({
                     type: 'span',
                     props: {
                       style: {
-                        color: 'white',
-                        fontSize: '42px',
-                        fontWeight: 'normal',
-                        lineHeight: 1.4,
-                        wordBreak: 'break-word',
+                        color: '#4a9ece',
+                        fontSize: '20px',
+                        fontFamily: 'Latin, JP',
                       },
-                      children: title,
+                      children: `#${tag}`,
                     },
-                  },
+                  })),
                 },
               },
-              // 著者名（右下）
-              {
-                type: 'div',
-                props: {
-                  style: {
-                    display: 'flex',
-                    justifyContent: 'flex-end',
-                    width: '100%',
-                  },
-                  children: {
-                    type: 'span',
-                    props: {
-                      style: {
-                        color: 'white',
-                        fontSize: '24px',
-                        opacity: 0.9,
-                        textShadow: '1px 1px 2px rgba(0, 0, 0, 0.5)',
-                      },
-                      children: author,
-                    },
-                  },
-                },
-              },
-            ],
-          },
-        },
+            ]
+          : []),
       ],
     },
   };
 }
-
-export const OGP_WIDTH = 1200;
-export const OGP_HEIGHT = 630;
-export const DEFAULT_AUTHOR = 'Toshiyuki Yoshida';
-export const BLOG_NAME = 'Coded Chords';

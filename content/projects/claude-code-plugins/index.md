@@ -9,7 +9,7 @@ weight = 40
 tags = ["Claude Code"]
 
 [extra]
-local_image = "projects/claude-code-plugins/cover.webp"
+local_image = "cover.webp"
 social_media_card = "cover.webp"
 show_reading_time = false
 +++

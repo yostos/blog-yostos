@@ -16,7 +16,7 @@ local_image = "cover.webp"
 
 <!-- textlint-disable -->
 
-{{ image(src="$local_image", alt="Cover") }}
+{{ image(src="cover.webp", alt="Cover") }}
 
 <!-- textlint-enable -->
 

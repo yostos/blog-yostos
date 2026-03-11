@@ -9,7 +9,7 @@ weight = 60
 tags = ["Generative AI"]
 
 [extra]
-local_image = "projects/genai-governance-checklist/cover.webp"
+local_image = "cover.webp"
 social_media_card = "cover.webp"
 show_reading_time = false
 +++
