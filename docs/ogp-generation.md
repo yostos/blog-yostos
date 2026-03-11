@@ -81,7 +81,7 @@
 ```bash
 npm run ogp           # OGP画像を生成（既存はスキップ）
 npm run ogp:dry-run   # 対象確認のみ（実際には生成しない）
-npm run ogp --force   # 全記事を強制再生成
+npm run ogp -- --force   # 全記事を強制再生成
 ```
 
 ## ファイル構成
