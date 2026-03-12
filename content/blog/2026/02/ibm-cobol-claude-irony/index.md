@@ -12,7 +12,6 @@ date = 2026-02-24T17:30:00+09:00
 tags = ["IBM", "Generative AI", "Current Affairs"]
 [extra]
 social_media_card = "ogp.webp"
-canonical_url = "https://zenn.dev/yostos/articles/ibm-cobol-claude-irony"
 tldr = """
 AnthropicのClaude Codeによる
 COBOLモダナイゼーション対応発表により
@@ -26,14 +25,6 @@ AWS Blu Ageのいずれであっても、
 失われた業務知識という名の技術的負債。
 """
 +++
-
-<!-- textlint-disable -->
-
-{% admonition(type="info", title="転載記事") %}
-この記事は[Zenn](https://zenn.dev/yostos/articles/ibm-cobol-claude-irony)に掲載した記事の転載です。
-{% end %}
-
-<!-- textlint-enable -->
 
 <details>
 <summary>Table of Contents</summary>
