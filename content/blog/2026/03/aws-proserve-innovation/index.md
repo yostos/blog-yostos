@@ -14,17 +14,8 @@ tags = ["Generative AI", "AWS"]
 [extra]
 social_media_card = "ogp.webp"
 local_image = "cover.webp"
-canonical_url = "https://zenn.dev/yostos/articles/aws-proserve-innovation"
 tldr = "AWS ProServeがAIエージェントを「デジタル従業員」としてプロジェクトに組み込み、75%をFixed Price化する方針を打ち出しました。AIをツールでなく「要員」にする転換です。人月で価値を語ってきた日本のSIerは、成果で問われる時代への備えが急務です。"
 +++
-
-<!-- textlint-disable -->
-
-{% admonition(type="info", title="転載元") %}
-この記事は [Zenn](https://zenn.dev/yostos/articles/aws-proserve-innovation) に掲載した記事の転載です。
-{% end %}
-
-<!-- textlint-enable -->
 
 <!-- textlint-disable -->
 
