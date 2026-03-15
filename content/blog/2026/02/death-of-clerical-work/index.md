@@ -8,16 +8,10 @@ tags = ["Generative AI", "Career", "Current Affairs"]
 
 [extra]
 social_media_card = "ogp.webp"
-canonical_url = "https://zenn.dev/yostos/articles/death-of-clerical-work"
+local_image = "cover.webp"
 +++
 
 <!-- textlint-disable -->
-
-{% admonition(type="note") %}
-この記事は
-[Zenn.dev](https://zenn.dev/yostos/articles/death-of-clerical-work)
-に掲載した記事の転載です。
-{% end %}
 
 {{ image(src="./cover.webp", alt="Cover") }}
 
