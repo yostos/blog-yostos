@@ -15,15 +15,17 @@ social_media_card = "ogp.webp"
 
 <!-- textlint-enable -->
 
+<!-- textlint-disable ja-technical-writing/sentence-length -->
+
 <details>
 <summary>Table of Contents</summary>
 
 <!-- toc -->
 </details>
 
-An article titled "[Typepad is shutting down](https://everything.typepad.com/blog/2025/08/typepad-is-shutting-down.html)" has been published on TypePad's official blog.
+An article titled "Typepad is shutting down" has been published on TypePad's official blog (the site has since been shut down).
 
-<blockquote cite="https://everything.typepad.com/blog/2025/08/typepad-is-shutting-down.html">
+<blockquote>
 We have made the difficult decision to discontinue Typepad, effective September 30, 2025.
 
 **What Does This Mean for You?**
@@ -31,7 +33,7 @@ We have made the difficult decision to discontinue Typepad, effective September 
 After September 30, 2025, access to Typepad – including account management, blogs, and all associated content – will no longer be available. Your account and all related services will be permanently deactivated.
 
 <footer>
-  <cite>Everything Typepad - "<a href="https://everything.typepad.com/blog/2025/08/typepad-is-shutting-down.html">Typepad is shutting down</a>"</cite>
+  <cite>Everything Typepad - "Typepad is shutting down"</cite>
 </footer>
 </blockquote>
 
@@ -91,11 +93,13 @@ Personal publishing environments may be drawing a large circle, going from hoste
 
 Though it's the flow of time, it's still quite sad.
 
+<!-- textlint-enable ja-technical-writing/sentence-length -->
+
 ---
 
-TypePad の公式ブログに「[Typepad is shutting down](https://everything.typepad.com/blog/2025/08/typepad-is-shutting-down.html)」という記事が掲載されました。
+TypePadの公式ブログに「Typepad is shutting down」という記事が掲載されました（サイトは閉鎖済み）。
 
-<blockquote cite="https://everything.typepad.com/blog/2025/08/typepad-is-shutting-down.html">
+<blockquote>
 We have made the difficult decision to discontinue Typepad, effective September 30, 2025.
 
 **What Does This Mean for You?**
@@ -103,7 +107,7 @@ We have made the difficult decision to discontinue Typepad, effective September 
 After September 30, 2025, access to Typepad – including account management, blogs, and all associated content – will no longer be available. Your account and all related services will be permanently deactivated.
 
 <footer>
-  <cite>Everything Typepad - "<a href="https://everything.typepad.com/blog/2025/08/typepad-is-shutting-down.html">Typepad is shutting down</a>"</cite>
+  <cite>Everything Typepad - "Typepad is shutting down"</cite>
 </footer>
 </blockquote>
 ## 初期ブログ文化の象徴的存在

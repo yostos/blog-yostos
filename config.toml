@@ -109,6 +109,7 @@ skip_prefixes = [
     "https://www.gov-online.go.jp/",
     "https://www.mofa.go.jp/",
     "https://www.mlit.go.jp/",
+    "https://www.meti.go.jp/",
     "https://laws.e-gov.go.jp/",
     # アンカー仕様問題
     "https://www.openstreetmap.org/",
