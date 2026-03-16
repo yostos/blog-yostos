@@ -6,15 +6,12 @@ date = 2026-02-20
 tags = ["Tech", "Security", "Weblog"]
 [extra]
 social_media_card = "ogp.webp"
+local_image = "cover.webp"
 +++
 
 <!-- textlint-disable -->
 
-{% admonition(type="note") %}
-この記事は
-[Zenn.dev](https://zenn.dev/yostos/articles/cloudflare-benefits)
-に掲載した記事の転載です。
-{% end %}
+{{ image(src="cover.webp", alt="Cover") }}
 
 ## TL;DR
 
@@ -26,7 +23,7 @@ Cloudflareのアドバンテージは、次の3点です。
 
 ---
 
-つい3日前に[Cloudflareへ移転した](https://zenn.dev/yostos/articles/migration-to-cloudflare)ばかりです。構成はシンプルで、Cloudflareでドメインを取得し、GitHubリポジトリと連携して静的コンテンツをCloudflare Pages[^2]へデプロイしています。この構成だけでも思いの外多くの恩恵が得られたので、まとめておきます。
+つい3日前に[Cloudflareへ移転した](@/blog/2026/02/migration-to-cloudflare/index.md)ばかりです。構成はシンプルで、Cloudflareでドメインを取得し、GitHubリポジトリと連携して静的コンテンツをCloudflare Pages[^2]へデプロイしています。この構成だけでも思いの外多くの恩恵が得られたので、まとめておきます。
 
 ## Cloudflareでの設定
 
