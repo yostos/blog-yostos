@@ -15,6 +15,35 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 - **Commit**: Use `/simple-commit:commit` skill (auto-generates Conventional Commits format)
 - Local rules: See `.claude/simple-commit.local.md`
 
+## Commands
+
+```bash
+zola serve                       # Dev server (http://127.0.0.1:1111)
+zola build                       # Build to public/
+npm run ogp                      # Generate OGP images
+npm run ogp:dry-run              # Preview OGP generation
+npm run search                   # Build pagefind search index
+npm run lint                     # textlint (content/**/*.md)
+npm run lint:fix                 # textlint auto-fix
+bash scripts/indexnow.sh <path>  # Notify IndexNow
+```
+
+## Directory Structure
+
+```
+content/          # Blog articles (Markdown + assets)
+templates/        # Zola template overrides (macros, partials, shortcodes)
+themes/tabi/      # tabi theme (submodule)
+scripts/          # OGP generation, image conversion, IndexNow
+tools/            # Additional tooling and docs
+static/           # Static assets served at site root
+docs/             # Project documentation (tag rules, architecture decisions)
+```
+
+## Hosting
+
+- Cloudflare Pages (`wrangler.toml`), domain: `codedchords.dev`
+
 ## Table of Contents
 
 To add a collapsible table of contents:
