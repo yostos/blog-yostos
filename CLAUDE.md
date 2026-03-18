@@ -83,7 +83,16 @@ All shortcodes must be wrapped in textlint-disable/enable comments:
 ```
 
 References must be placed in a `## References` section using the `references` shortcode.
-Format: `[サイト名](URL). 「記事タイトル」` (Japanese) / `[Site](URL). "Title"` (English)
+**IMPORTANT**: `references` is a body shortcode (`{% %}`), NOT a function shortcode (`{{ }}`):
+
+```markdown
+{% references() %}
+
+- [サイト名](URL). 「記事タイトル」
+- [Site](URL). "Title"
+
+{% end %}
+```
 
 ## Article Frontmatter Format
 

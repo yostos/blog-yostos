@@ -121,4 +121,6 @@ skip_prefixes = [
     "https://soundcloud.com/",
     "https://flic.kr/",
     "https://www.npmjs.com/",
+    # botアクセスをブロック（403 Forbidden、ブラウザでは閲覧可能）
+    "https://www.mizuhobank.co.jp/",
 ]

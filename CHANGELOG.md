@@ -7,6 +7,19 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.2.2] - 2026-03-18
+
+### Added
+- Bluesky auto-post on new article publish
+  - GitHub Actions workflow triggered on push to main
+  - Detects new articles via git diff (Added status only)
+  - Posts "📝 Just published:" with #blog and article tags
+  - Link card with title and description via
+    `app.bsky.embed.external`
+  - Hashtag facets for rich text rendering
+  - `scripts/bluesky-post.sh` for Bluesky AT Protocol API
+  - ADR-0002 and specification document
+
 ## [1.2.1] - 2026-02-25
 
 ### Changed

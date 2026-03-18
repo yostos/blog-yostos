@@ -63,3 +63,54 @@ Zolaの組み込み検索（elasticlunr.js）は
 - デプロイワークフローに `npx pagefind` ステップを追加
 - 検索UIのテンプレートオーバーライドを `templates/` に作成
 - `static/custom.css` にPagefind用のスタイル調整を追加
+
+---
+
+## ADR-0002: 新規記事投稿時のBluesky自動投稿にGitHub Actionsを採用
+
+- **Status**: Accepted
+- **Date**: 2026-03-18
+- **Deciders**: yostos
+
+### Context
+
+ブログ記事を投稿した後、Blueskyに記事リンクとdescriptionを手動で投稿している。
+この手作業を自動化し、新規記事の公開時のみBlueskyへ自動投稿したい。
+
+要件:
+- 新規記事の投稿時のみ発動（更新時は対象外）
+- 記事のURL、title、descriptionをBlueskyに投稿
+- リンクカード（OGPプレビュー）を含める
+
+### Decision
+
+**GitHub Actions** を採用し、mainブランチへのpush時に新規記事を検出してBluesky AT Protocol APIで投稿する。
+
+### Alternatives Considered
+
+| 候補 | 不採用理由 |
+|------|------------|
+| Cloudflare Worker + Deploy Hook | 「新規記事かどうか」の判定に状態管理（KV等）が必要。git diffが使えずロジックが複雑化 |
+| Claude Code Hook（ローカル） | ローカル実行依存。別マシンからの投稿時に動作しない。CI/CDとの整合性も課題 |
+| IFTSS / Zapier等の外部サービス | RSSフィード監視ベースのため遅延が発生。SaaS依存でコスト・プライバシー懸念 |
+
+### Rationale
+
+- **新規記事の正確な判定**: `git diff --name-status HEAD~1` で `A`（Added）ステータスの `content/**/index.md` を検出することで、新規投稿のみを確実に判別できる
+- **既存ワークフローとの統合**: `/article-publish` スキルがcommit & push to mainを行うため、GitHub Actionsのトリガーと自然に連携する
+- **シークレット管理**: BlueskyのアプリパスワードをgitHub Secretsで安全に管理できる
+- **可視性**: 実行ログ・失敗通知がGitHub上で確認でき、デバッグが容易
+- **コスト**: パブリックリポジトリのため無料枠で十分対応可能
+
+### Technical Approach
+
+- **API**: Bluesky AT Protocol（`com.atproto.server.createSession` → `com.atproto.repo.createRecord`）
+- **投稿形式**: `app.bsky.feed.post` に `app.bsky.embed.external` でリンクカードを埋め込み
+- **記事情報の取得**: frontmatter（TOML形式）からtitle, descriptionを抽出
+- **URL生成**: ドメイン `codedchords.dev` + 記事パスから構築
+
+### Consequences
+
+- `.github/workflows/bluesky-post.yml` ワークフローを新規作成
+- GitHub Secretsに `BLUESKY_IDENTIFIER` と `BLUESKY_APP_PASSWORD` を登録
+- 投稿スクリプトを `scripts/` に配置

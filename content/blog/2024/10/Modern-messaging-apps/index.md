@@ -76,7 +76,7 @@ iPhoneユーザーであれば **iMessage** は無難でしょう。完全にE2E
 
 判断は以下の[LINEの公式ドキュメント]より確認しています。
 
-- [暗号化ホワイトペーパー](https://d.line-scdn.net/stf/linecorp/en/csr/line-encryption-whitepaper-ver2.1.pdf)(doc.1)
+- [暗号化ホワイトペーパー](https://scdn.line-apps.com/stf/linecorp/en/csr/line-encryption-whitepaper-ver2.1.pdf)(doc.1)
 - [プライバシーポリシー](https://terms2.line.me/globalnews_PP/sp)(doc.2)
 - 透明性レポート(doc.3)[^linecorp]
 
