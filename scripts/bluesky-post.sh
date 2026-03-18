@@ -33,8 +33,14 @@ if [ -z "$title" ]; then
 fi
 
 # Extract description (handle multi-line """ strings)
+# Remove TOML line continuation backslashes and join lines
 if echo "$frontmatter" | grep -q 'description *= *"""'; then
-  description=$(echo "$frontmatter" | sed -n '/description *= *"""/,/"""/p' | sed '1s/description *= *"""//' | sed '$s/"""//' | tr '\n' ' ' | sed 's/  */ /g;s/^ *//;s/ *$//')
+  description=$(echo "$frontmatter" | sed -n '/description *= *"""/,/"""/p' \
+    | sed '1s/description *= *"""//' \
+    | sed '$s/"""//' \
+    | sed 's/\\$//' \
+    | tr '\n' ' ' \
+    | sed 's/  */ /g;s/^ *//;s/ *$//')
 else
   description=$(echo "$frontmatter" | grep '^description' | head -1 | sed 's/^description *= *"\(.*\)"/\1/')
 fi
@@ -52,26 +58,34 @@ tags=$(echo "$frontmatter" | grep '^tags' | head -1 | sed 's/^tags *= *\[//;s/\]
 relative_path=$(echo "$article_path" | sed 's|^content/||;s|/index\.md$|/|')
 article_url="${SITE_URL}/${relative_path}"
 
+# --- Resolve OGP image path ---
+
+ogp_file=$(echo "$frontmatter" | grep '^social_media_card' | head -1 | sed 's/^social_media_card *= *"\(.*\)"/\1/')
+article_dir=$(dirname "$article_path")
+ogp_path="${article_dir}/${ogp_file}"
+
 echo "Title: $title"
 echo "Description: $description"
 echo "URL: $article_url"
 echo "Tags: $tags"
+echo "OGP: $ogp_path"
 
 # --- Build post text ---
+# Format: header line, then blank line, then hashtags at the end
 
-post_text="📝 Just published:
-
-#blog"
-
-# Add hashtags from tags
+hashtags="#blog"
 while IFS= read -r tag; do
   [ -z "$tag" ] && continue
   # Skip tags containing spaces
   if echo "$tag" | grep -q ' '; then
     continue
   fi
-  post_text="${post_text} #${tag}"
+  hashtags="${hashtags} #${tag}"
 done <<< "$tags"
+
+post_text="📝 Just published:
+
+${hashtags}"
 
 echo "Post text: $post_text"
 
@@ -130,18 +144,76 @@ fi
 
 echo "Authenticated as: $did"
 
+# --- Upload OGP image (if exists) ---
+
+thumb_json="null"
+if [ -n "$ogp_file" ] && [ -f "$ogp_path" ]; then
+  # Determine MIME type
+  mime_type="image/webp"
+  case "$ogp_file" in
+    *.png)  mime_type="image/png" ;;
+    *.jpg|*.jpeg) mime_type="image/jpeg" ;;
+  esac
+
+  echo "Uploading OGP image: $ogp_path ($mime_type)..."
+  upload_response=$(curl -s -X POST "${BSKY_API}/com.atproto.repo.uploadBlob" \
+    -H "Authorization: Bearer ${access_jwt}" \
+    -H "Content-Type: ${mime_type}" \
+    --data-binary "@${ogp_path}")
+
+  blob_ref=$(echo "$upload_response" | jq '.blob // empty')
+  if [ -n "$blob_ref" ] && [ "$blob_ref" != "null" ]; then
+    thumb_json="$blob_ref"
+    echo "OGP image uploaded successfully"
+  else
+    echo "Warning: Failed to upload OGP image, continuing without thumbnail" >&2
+    echo "$upload_response" | jq . >&2
+  fi
+else
+  echo "No OGP image found, skipping thumbnail"
+fi
+
 # --- Create post ---
 
 now=$(date -u +"%Y-%m-%dT%H:%M:%S.000Z")
+
+# Build embed with or without thumb
+if [ "$thumb_json" != "null" ]; then
+  embed=$(jq -n \
+    --arg uri "$article_url" \
+    --arg etitle "$title" \
+    --arg edesc "$description" \
+    --argjson thumb "$thumb_json" \
+    '{
+      "$type": "app.bsky.embed.external",
+      "external": {
+        "uri": $uri,
+        "title": $etitle,
+        "description": $edesc,
+        "thumb": $thumb
+      }
+    }')
+else
+  embed=$(jq -n \
+    --arg uri "$article_url" \
+    --arg etitle "$title" \
+    --arg edesc "$description" \
+    '{
+      "$type": "app.bsky.embed.external",
+      "external": {
+        "uri": $uri,
+        "title": $etitle,
+        "description": $edesc
+      }
+    }')
+fi
 
 record=$(jq -n \
   --arg did "$did" \
   --arg text "$post_text" \
   --arg now "$now" \
   --argjson facets "$facets" \
-  --arg uri "$article_url" \
-  --arg etitle "$title" \
-  --arg edesc "$description" \
+  --argjson embed "$embed" \
   '{
     "repo": $did,
     "collection": "app.bsky.feed.post",
@@ -150,14 +222,7 @@ record=$(jq -n \
       "text": $text,
       "createdAt": $now,
       "facets": $facets,
-      "embed": {
-        "$type": "app.bsky.embed.external",
-        "external": {
-          "uri": $uri,
-          "title": $etitle,
-          "description": $edesc
-        }
-      }
+      "embed": $embed
     }
   }')
 

@@ -23,6 +23,10 @@ frontmatter（TOML形式、`+++` で囲まれた領域）から以下を抽出�
 | `title` | リンクカードのタイトル | Yes |
 | `description` | リンクカードの説明文 | Yes |
 | `[taxonomies].tags` | ハッシュタグ生成 | No |
+| `[extra].social_media_card` | OGP画像（リンクカードのサムネイル） | No |
+
+TOML複数行文字列（`"""\..."""`）の行継続バックスラッシュ `\` は除去して
+単一行に結合する。
 
 ## URL生成
 
@@ -60,9 +64,12 @@ https://codedchords.dev/{content/ からの相対パスでindex.mdを除いた�
 | `uri` | 記事URL |
 | `title` | frontmatterのtitle |
 | `description` | frontmatterのdescription |
+| `thumb` | OGP画像のblobリファレンス（`uploadBlob` で取得） |
 
-OGP画像（`ogp.webp`）のアップロードは初期実装ではスコープ外とする。
-Bluesky側がURLからOGPを自動取得しないため、画像なしのリンクカードとなる。
+Bluesky側はURLからOGPを自動取得しないため、OGP画像は
+`com.atproto.repo.uploadBlob` でアップロードし、返却されたblob
+リファレンスを `thumb` に設定する。画像が存在しない場合は
+`thumb` を省略し、画像なしのリンクカードとなる。
 
 ## Bluesky API仕様
 
@@ -94,7 +101,8 @@ Bluesky側がURLからOGPを自動取得しないため、画像なしのリン�
       "external": {
         "uri": "<記事URL>",
         "title": "<title>",
-        "description": "<description>"
+        "description": "<description>",
+        "thumb": "<blob reference from uploadBlob>"
       }
     }
   }
@@ -131,6 +139,5 @@ scripts/bluesky-post.sh              # 投稿スクリプト本体
 
 ## 将来の拡張（スコープ外）
 
-- OGP画像のアップロードによるリンクカードへの画像表示
 - 投稿済み記事の重複投稿防止（冪等性の担保）
 - 投稿内容のカスタマイズ（記事側のfrontmatterで制御）
