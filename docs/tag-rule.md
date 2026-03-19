@@ -88,6 +88,7 @@
   - Claude Code (5) ✓ 使用可
 - **Cloud**
   - AWS (10)
+  - Cloudflare (1)
   - Google Cloud (1)
 - **プログラミング言語**
   - Python (3)
@@ -233,6 +234,7 @@ Technology (Tech)
 │   └── Claude Code ✓
 ├── Cloud
 │   ├── AWS
+│   ├── Cloudflare
 │   └── Google Cloud
 ├── Security
 ├── Software

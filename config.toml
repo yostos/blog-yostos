@@ -61,13 +61,13 @@ menu = [
     { name = "tags", url = "tags", trailing_slash = true },
     { name = "music", url = "music", trailing_slash = true },
     { name = "projects", url = "projects", trailing_slash = true },
-    { name = "about", url = "about", trailing_slash = true },
-    { name = "search", url = "search", trailing_slash = true },
+    { name = "ask", url = "https://ask.codedchords.dev", trailing_slash = false },
+    { name = "find", url = "search", trailing_slash = true },
 ]
 
 socials = [
     { name = "github", url = "https://github.com/yostos", icon = "github" },
-    { name = "bluesky", url = "https://bsky.app/profile/yostos.bsky.social", icon = "bluesky" },
+    { name = "bluesky", url = "https://bsky.app/profile/codedchords.dev", icon = "bluesky" },
     { name = "linkedin", url = "https://www.linkedin.com/in/toshiyukiyoshida/", icon = "linkedin" },
     { name = "nostr", url = "https://nostter.app/nprofile1qqsz8c9hcxxw2rydxkg8r0x32d4ql8h6mdkgrdf4982jfqclay7cakgvxxml9", icon = "nostr" },
 ]
