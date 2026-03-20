@@ -1,5 +1,5 @@
 +++
-title = "Cloudflare Workers AI + Vectorize で RAG Q&A を作った"
+title = "Cloudflare Workers AI + Vectorize で RAG"
 description = """\
 ブログ記事をナレッジベースにして、著者のペルソナで質問に答える\
 AI Q&Aページを Cloudflare Workers AI と Vectorize で構築しました。\
@@ -37,9 +37,11 @@ Cloudflare スタックだけで構築しました。ask.codedchords.dev で公�
 
 ## 何を作ったのか
 
-このブログのナビゲーションに「ask」というリンクが増えています。[ask.codedchords.dev](https://ask.codedchords.dev) にアクセスすると、テキストで自由に質問できるページが表示されます。質問を入力すると、私のデジタル分身（bot）がブログ記事の内容を踏まえて回答を返します。
+このブログのナビゲーションに「ask」というメニューを追加しました。
+私のデジタル分身(bot)に質問できるページが表示されます。質問を入力すると、ブログ記事の内容を踏まえて私っぽい回答を返します。
 
-ブログに書いてある話題はもちろん、書いていない話題についても「この人ならこう答えるだろう」という推測で回答を生成します。たかだか個人ブログの文書量なので平気で嘘をつきますが、それも含めて楽しんでもらえればと思います。
+ブログに書いてある話題はもちろん、書いていない話題についても「私ならこう答えるだろう」という推測で回答を生成します。
+ただし、たかだか個人ブログの文書量ですから大した学習量ではないため、平気で嘘をつきます。それも含めて楽しんでもらえればと思います。
 
 たとえば、こんな質問を投げてみます。
 
@@ -107,7 +109,7 @@ LLMはLlama 3.3 70B Instruct FP8 Fast（`@cf/meta/llama-3.3-70b-instruct-fp8-fas
 
 ## Workers AI のコード
 
-Workers AIの特徴は `env.AI.run()` というバインディング呼び出しです。APIキーの管理もSDKのインストールも不要で、`wrangler.toml` に `[ai]` と書くだけで使えます。
+Workers AIの特徴は `env.AI.run()` というバインディング呼び出しです。APIキーの管理もSDKのインストールも不要で、`wrangler.toml` の `[ai]` セクションに `binding = "AI"` と書くだけで使えます。
 
 RAGの検索部分（rag.ts）を丸ごと載せます。Embedding生成からVectorize検索まで、これだけで完結しています。
 
