@@ -11,7 +11,7 @@ social_media_card = "ogp.webp"
 
 I had no major complaints about the Strymon Iridium I had been using for a long time,
 but I was drawn to the word "analog" and ended up purchasing the
-[DSM & Humboldt Simplifier MK-II](https://www.simplifieramp.com/simplifier-mk-ii).
+[DSM & Humboldt Simplifier MK-II](https://www.dsmhumboldt.com/simplifier-mk-ii-2).
 
 
 <!-- textlint-disable -->
