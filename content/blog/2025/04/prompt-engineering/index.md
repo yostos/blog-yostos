@@ -22,7 +22,7 @@ LLMの設定（温度、top-K、top-P、トークン制限など）がプロン�
 
 ## 出典情報
 
-- 論文タイトル：「[Prompt Engineering](https://www.gptaiflow.tech/assets/files/2025-01-18-pdf-1-TechAI-Goolge-whitepaper_Prompt%20Engineering_v4-af36dcc7a49bb7269a58b1c9b89a8ae1.pdf)」
+- 論文タイトル：「Prompt Engineering」（※掲載サイトgptaiflow.techは閉鎖済み）
 - 著者：Lee Boonstra（他複数の貢献者）
 - 発行元：Google
 - 発行日：2024年11月
