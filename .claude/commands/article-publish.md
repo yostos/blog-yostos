@@ -41,7 +41,10 @@ GitHub Actions deploy workflow will auto-trigger and deploy to Cloudflare Worker
 
 Notify search engines of the new/updated article URL via IndexNow.
 
-- Determine the article URL from the content path (e.g., `content/posts/my-article/index.md` → `https://codedchords.dev/posts/my-article/`)
+- Determine the article URL by converting the content path directly:
+  - `content/blog/YYYY/MM/slug/index.md` → `https://codedchords.dev/blog/YYYY/MM/slug/`
+  - Example: `content/blog/2026/03/cloudflare-free-security/index.md` → `https://codedchords.dev/blog/2026/03/cloudflare-free-security/`
+  - IMPORTANT: The date path (YYYY/MM) must be included. Do NOT omit it.
 - Run `./scripts/indexnow.sh <article-url>`
 - The script will wait for the URL to return HTTP 200 (deploy completion) before submitting
 - Report the IndexNow result to the user

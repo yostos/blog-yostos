@@ -110,8 +110,6 @@ Claude DesktopにはInkdropもMCP Serverとして登録されているので、�
 
 結果、Claude Codeから取得し分析した結果、Markdown形式でInkdropのNoteとしてドキュメント化してくれました。
 
-作成された結果を[公開](https://e.pcloud.link/publink/show?code=XZiJhdZ3UkXV7lTN8knDkuquFjN147NvQ0y)しておきます。
-
 プロジェクト概要は`README.md`から読み取ったようですが、特筆すべきは、フォルダ構成や各ディレクトリの役割、記事管理の仕組みまで正確に把握・文書化している点です。
 
 仕組みとしては全体像をダイアグラムにしてみました。次の通りです。

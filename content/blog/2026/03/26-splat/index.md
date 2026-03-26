@@ -20,7 +20,7 @@ local_image = "cover.webp"
 
 <!-- textlint-disable -->
 
-{{ youtube(id=”ShHtysakKJc”) }}
+{{ youtube(id="ShHtysakKJc") }}
 
 <!-- textlint-enable -->
 
@@ -28,11 +28,11 @@ local_image = "cover.webp"
 
 <!-- textlint-disable -->
 
-<blockquote cite=”https://www.nintendo.com/jp/switch/av5ja/report/index.html#report16”>
+<blockquote cite="https://www.nintendo.com/jp/switch/av5ja/report/index.html#report16">
 イカフロー状態は、放出された脳内物質により、イカたちの体内のインクが沸き、全身の筋肉が躍動している状態です。
 イカフロー状態に入ったとき、インクが放出され足元を塗り広げます。また、イカフロー状態が続いている間、ギアパワーのヒト移動速度アップ・イカダッシュ速度アップ・相手インク影響軽減・アクション強化と同等の恩恵を受けます。
   <footer>
-<cite><a href=”https://www.nintendo.com/jp/switch/av5ja/report/index.html#report16”>イカ研究所極秘レポート</a></cite>
+<cite><a href="https://www.nintendo.com/jp/switch/av5ja/report/index.html#report16">イカ研究所極秘レポート</a></cite>
 
   </footer>
 </blockquote>
