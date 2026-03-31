@@ -12,6 +12,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Git Operations
 
+- **Staging**: Always use `git add .` to stage all changes. Never stage individual files.
 - **Commit**: Use `/simple-commit:commit` skill (auto-generates Conventional Commits format)
 - Local rules: See `.claude/simple-commit.local.md`
 
@@ -42,7 +43,8 @@ docs/             # Project documentation (tag rules, architecture decisions)
 
 ## Hosting
 
-- Cloudflare Pages (`wrangler.toml`), domain: `codedchords.dev`
+- Cloudflare Workers (`wrangler.toml`), domain: `codedchords.dev`
+- Deploy: push to main triggers GitHub Actions → zola build → Cloudflare Workers
 
 ## Table of Contents
 
@@ -82,7 +84,7 @@ All shortcodes must be wrapped in textlint-disable/enable comments:
 <!-- textlint-enable -->
 ```
 
-References must be placed in a `## References` section using the `references` shortcode.
+When the user requests a references section, place it as `## References` using the `references` shortcode.
 **IMPORTANT**: `references` is a body shortcode (`{% %}`), NOT a function shortcode (`{{ }}`):
 
 ```markdown
