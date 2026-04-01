@@ -19,6 +19,10 @@ tldr = "パランティアQ4決算は「AIを本気で使う企業」と「様�
 
 {{ image(src="cover.webp",alt="Cover") }}
 
+<details>
+<summary>Table of Contents</summary>
+<!-- toc -->
+</details>
 ## 「AI持てる者」と「AI持たざる者」
 
 2026年2月、パランティア・テクノロジーズのCEOアレックス・カープはQ4決算説明会で、世界経済が「AI haves（持てる者）」と「AI have-nots（持たざる者）」に分断されつつあると語りました。同社の米国事業の売上は前年比93%増と急伸する一方、欧州・カナダでは伸びが鈍い。この地域差がそのままAI採用格差の現れだという主張です。

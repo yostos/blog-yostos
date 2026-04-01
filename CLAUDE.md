@@ -138,6 +138,7 @@ See `docs/tag-rule.md` for comprehensive tagging rules and guidelines.
 
 - **Tone**: Use desu/masu style (敬体). Maintain polite tone even in technical articles
 - Sentences must not end with "："
+- **No em-dash paraphrase in Japanese**: Do not use `— 補足説明 —` style inline parenthetical rephrasing. Use natural Japanese syntax instead (e.g. `〜と同様に「補足」という課題`)
 - **Section splitting**: Avoid excessive section splitting
   - Do not add headings to short content (1-2 paragraphs)
   - Integrate short info (e.g. equipment, access) naturally into body text
@@ -145,6 +146,12 @@ See `docs/tag-rule.md` for comprehensive tagging rules and guidelines.
   - Bold text (`**text**`) as standalone heading-substitute lines is prohibited
     (inline emphasis for keywords is fine)
 - **Bold**: Use sparingly. Only where emphasis is truly needed
+
+## Save Destination
+
+- When the user explicitly specifies a save destination (e.g. "CLAUDE.mdに記録して"), always follow that instruction exactly
+- Do not substitute memory or other storage when a specific destination is given
+- Only use your own judgment for save destination when none is specified
 
 ## textlint Rules
 

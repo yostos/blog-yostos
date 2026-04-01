@@ -2,7 +2,7 @@
 title = "GoFデザインパターンは現代でも有用か(1) — OOPのパラダイムシフトとGoFの誕生"
 description = """手続き型からOOPへのパラダイムシフト、そしてOOPの不完全さから生まれたGoFデザインパターン。\
 なぜGoogleはOOPを捨ててGo言語を作ったのか。その背景を整理します。"""
-date = 2026-03-31
+date = 2026-04-01T05:58:00+09:00
 
 [taxonomies]
 tags = ["Tech", "Software", "Go"]
@@ -22,6 +22,11 @@ tldr = """
 {{ image(src="cover.webp", alt="Cover") }}
 
 <!-- textlint-enable -->
+
+<details>
+<summary>Table of Contents</summary>
+<!-- toc -->
+</details>
 
 自宅の本棚の整理をしていて、『[Java言語で学ぶデザインパターン入門](https://amzn.to/4bW36Po)第2版』(結城浩著)[^affiliate]を見つけました。「今どきJava言語かね」
 と思い調べてみると、5年程前に第3版が出版されていました。
@@ -91,7 +96,7 @@ Go言語の設計者たちが出した答えは、複雑さを足すのではな
 
 - クラス継承を排除し、合成（composition）と暗黙的インターフェースで代替した
 - 参照セマンティクスではなく値セマンティクスをデフォルトにした[^semantics]
-- 関数を第一級オブジェクトとし、チャネルとゴルーチンを言語に組み込んだ
+- 振る舞いもオブジェクトに包む制約を廃し、第一級関数とチャネル/ゴルーチンで直接扱えるようにした
 
 確かに近年はC++/JavaのようなOOPでなく、次のような言語を選択するシーンが私自身も増えています。
 
@@ -115,5 +120,3 @@ Go言語の登場は、OOPに続く新たなパラダイムシフトの象徴で
 [^go-creators]: 主導したのはRob Pike（UNIXやPlan 9の開発者）、Ken Thompson（UNIXの共同開発者）、Robert Griesemerの3人です。
 
 [^semantics]: 参照セマンティクス（reference semantics）とは、変数への代入がオブジェクトの参照（ポインタ）をコピーする振る舞いのこと。値セマンティクス（value semantics）とは、変数への代入がデータそのものをコピーする振る舞いのこと。
-
-[^affiliate]: このリンクはAmazonアソシエイトのリンクです。
