@@ -49,6 +49,8 @@ wait_for_url() {
 
 # Poll each URL before submitting
 if [ "$no_wait" = false ]; then
+  echo "Waiting 180s for GitHub Actions deploy to complete..."
+  sleep 180
   for url in "${urls[@]}"; do
     wait_for_url "$url"
   done

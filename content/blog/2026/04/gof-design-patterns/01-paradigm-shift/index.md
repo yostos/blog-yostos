@@ -120,3 +120,5 @@ Go言語の登場は、OOPに続く新たなパラダイムシフトの象徴で
 [^go-creators]: 主導したのはRob Pike（UNIXやPlan 9の開発者）、Ken Thompson（UNIXの共同開発者）、Robert Griesemerの3人です。
 
 [^semantics]: 参照セマンティクス（reference semantics）とは、変数への代入がオブジェクトの参照（ポインタ）をコピーする振る舞いのこと。値セマンティクス（value semantics）とは、変数への代入がデータそのものをコピーする振る舞いのこと。
+
+[^affiliate]: このリンクはAmazonアソシエイトのリンクです。
