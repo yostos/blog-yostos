@@ -1,9 +1,9 @@
 +++
-title = "GoFデザインパターンは現代でも有用か(3) — 現代でも有用なパターンとまとめ"
-description = """GoFの23パターンのうち、OOPに依存しない11のパターンは現代でも有用です。\
-なぜ生き残ったのかを分析し、デザインパターンの本質的価値を考察します。"""
-date = 2026-04-02
-draft = true
+title = "GoFデザインパターンは現代でも有用か(3) — 言語に吸収されたパターンと非推奨のSingleton"
+description = """GoFの残り13パターンのうち、Iteratorは言語機能として吸収され、\
+Singletonは現代の設計手法により非推奨となりました。\
+それぞれの経緯をGo言語のコードとともに検討します。"""
+date = 2026-04-02T10:15+09:00
 
 [taxonomies]
 tags = ["Tech", "Software", "Go"]
@@ -19,6 +19,29 @@ local_image = "cover.webp"
 
 <!-- textlint-enable -->
 
+<details>
+<summary>Table of Contents</summary>
+<!-- toc -->
+</details>
+
+## 前回までの振り返り
+
+[第1回](@/blog/2026/04/gof-design-patterns/01-paradigm-shift/index.md)では、手続き型プログラミングからOOPへのパラダイムシフト、その中でGoFデザインパターンが「OOPでよいコードを書くためのお手本」として体系化された経緯を振り返りました。そして現代では、OOPの中核 — クラス継承、型階層、参照セマンティクス — を意図的に排除したGo言語が登場し、新たなパラダイムシフトが起きていることを確認しました。
+
+[第2回](@/blog/2026/04/gof-design-patterns/02-unnecessary-patterns/index.md)では、Go言語の3つの設計方針がGoFの23パターンのうち10パターンを不要にしたことを検証しました。
+
+<!-- textlint-disable -->
+
+| Go言語の設計方針                                                                          | 不要になったパターン                                      |
+| ----------------------------------------------------------------------------------------- | --------------------------------------------------------- |
+| クラス継承を排除し、合成と暗黙的インターフェースで代替                                    | Template Method, Factory Method, Abstract Factory, Bridge |
+| 参照セマンティクスではなく値セマンティクスをデフォルトに                                  | Prototype, Memento                                        |
+| 振る舞いもオブジェクトに包む制約を廃し、第一級関数とチャネル/ゴルーチンで直接扱えるように | Strategy, Command, Visitor, Observer                      |
+
+<!-- textlint-enable -->
+
+これらはOOPの制約の中で生まれた処方箋であり、制約そのものを取り除いたGo言語では必要なくなったものでした。では、残る13パターンはどうでしょうか。本記事では、言語機能として取り込まれたものと、設計手法の進化で非推奨となったものを検討します。
+
 ## 言語機能として取り込まれたパターン
 
 デザインパターンの中には、その有用性が広く認められた結果、現代の言語では標準的な機能として取り込まれたものがあります。デザインパターンが語られた当時はOOPがまだ成熟しておらず、これらの機能をユーザーで実装していたとも言えます。これらのパターンは「不要になった」のではなく、「わざわざパターンとして意識する必要がなくなった」と言えます。
@@ -29,7 +52,173 @@ Go言語も例外でなく、言語仕様としてこれらのパターンを取
 
 - **Iterator** — イテレータオブジェクトを別途定義し、`hasNext()`/`next()`のようなインターフェースを実装する必要があった
 
-Go言語では、`range`キーワードが組み込みで提供されています。配列、スライス、マップ、チャネルに対して統一的なイテレーションが可能です。さらにGo 1.23ではrange-over-functionが導入され、カスタムなイテレーションも関数として自然に表現できるようになりました。
+『[Java言語で学ぶデザインパターン入門](https://amzn.to/4bW36Po)第3版』(結城浩著)[^affiliate]のIteratorパターンのサンプルコードを見てみます。本棚（BookShelf）に本（Book）を格納し、イテレータで順に取り出すという例です。
+
+```java,name=Book.java
+public class Book {
+    private String name;
+
+    public Book(String name) {
+        this.name = name;
+    }
+
+    public String getName() {
+        return name;
+    }
+}
+```
+
+```java,name=BookShelf.java
+import java.util.Iterator;
+
+public class BookShelf implements Iterable<Book> {
+    private Book[] books;
+    private int last = 0;
+
+    public BookShelf(int maxsize) {
+        this.books = new Book[maxsize];
+    }
+
+    public Book getBookAt(int index) {
+        return books[index];
+    }
+
+    public void appendBook(Book book) {
+        this.books[last] = book;
+        last++;
+    }
+
+    public int getLength() {
+        return last;
+    }
+
+    @Override
+    public Iterator<Book> iterator() {
+        return new BookShelfIterator(this);
+    }
+}
+```
+
+```java,name=BookShelfIterator.java
+import java.util.Iterator;
+import java.util.NoSuchElementException;
+
+public class BookShelfIterator implements Iterator<Book> {
+    private BookShelf bookShelf;
+    private int index;
+
+    public BookShelfIterator(BookShelf bookShelf) {
+        this.bookShelf = bookShelf;
+        this.index = 0;
+    }
+
+    @Override
+    public boolean hasNext() {
+        if (index < bookShelf.getLength()) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    @Override
+    public Book next() {
+        if (!hasNext()) {
+            throw new NoSuchElementException();
+        }
+        Book book = bookShelf.getBookAt(index);
+        index++;
+        return book;
+    }
+}
+```
+
+```java,name=Main.java
+import java.util.Iterator;
+
+public class Main {
+    public static void main(String[] args) {
+        BookShelf bookShelf = new BookShelf(4);
+        bookShelf.appendBook(new Book("Around the World in 80 Days"));
+        bookShelf.appendBook(new Book("Bible"));
+        bookShelf.appendBook(new Book("Cinderella"));
+        bookShelf.appendBook(new Book("Daddy-Long-Legs"));
+
+        // 明示的にIteratorを使う方法
+        Iterator<Book> it = bookShelf.iterator();
+        while (it.hasNext()) {
+            Book book = it.next();
+            System.out.println(book.getName());
+        }
+        System.out.println();
+
+        // 拡張for文を使う方法
+        for (Book book: bookShelf) {
+            System.out.println(book.getName());
+        }
+        System.out.println();
+    }
+}
+```
+
+<!-- textlint-disable -->
+
+<!-- author-approved: MIT License sample code credit -->
+
+上記Javaコードは結城浩氏によるサンプルコード（[MIT License](https://www.hyuki.com/dp/)、Copyright (c) 2001,2004,2021 結城浩 / Hiroshi Yuki）です。
+
+<!-- textlint-enable -->
+
+4つのファイル、約80行のコードが必要です。`BookShelfIterator`クラスが走査の状態（現在のインデックス）を管理し、`hasNext()`と`next()`のインターフェースを実装しています。`BookShelf`は`Iterable<Book>`を実装し、`iterator()`メソッドでイテレータを生成します。
+
+Go言語で同じBookShelfを書くとどうなるでしょうか。Go 1.23で導入されたrange-over-function（`iter.Seq`）を使うと、Javaと同等のカスタムコレクションを以下のように実装できます。
+
+```go,name=main.go
+package main
+
+import (
+    "fmt"
+    "iter"
+)
+
+type Book struct {
+    Name string
+}
+
+type BookShelf struct {
+    books []Book
+}
+
+func (s *BookShelf) Append(book Book) {
+    s.books = append(s.books, book)
+}
+
+func (s *BookShelf) All() iter.Seq[Book] {
+    return func(yield func(Book) bool) {
+        for _, book := range s.books {
+            if !yield(book) {
+                return
+            }
+        }
+    }
+}
+
+func main() {
+    shelf := &BookShelf{}
+    shelf.Append(Book{Name: "Around the World in 80 Days"})
+    shelf.Append(Book{Name: "Bible"})
+    shelf.Append(Book{Name: "Cinderella"})
+    shelf.Append(Book{Name: "Daddy-Long-Legs"})
+
+    for book := range shelf.All() {
+        fmt.Println(book.Name)
+    }
+}
+```
+
+Javaでは`Iterable`インターフェース、`Iterator`実装クラス、`hasNext()`/`next()`メソッドの3層が必要でした。Go言語では`iter.Seq`型の関数を1つ返すだけで済みます。イテレータの状態管理（インデックスの保持、終端判定）はクロージャが担い、専用のクラスを書く必要がありません。
+
+[^affiliate]: このリンクはAmazonアソシエイトのリンクです。
 
 ## 現代の設計手法により非推奨となったパターン
 
@@ -37,7 +226,7 @@ Go言語では、`range`キーワードが組み込みで提供されていま�
 
 - **Singleton** — クラスのインスタンスが1つだけであることを保証し、グローバルなアクセス手段を提供する
 
-典型的な例として、アプリケーションの設定情報（Config）をSingletonで管理するケースを見てみます。
+典型的な例として、アプリケーションの設定情報（Config）をSingletonで管理するケースを見てみます。Go言語で実装した例です。
 
 ```go
 var (
@@ -71,9 +260,14 @@ func (r *UserRepository) FindByID(id int) (*User, error) {
 }
 ```
 
-`UserRepository`は`Config`に依存していますが、その依存は関数の引数に現れません。テスト時に異なる設定を注入することも困難です。
+Configのようなオブジェクトは、システムにインスタンスを1つだけ持つのが都合よいものです。そのため、このような実装が広く行われていました。
+しかし、テストのシーンを考えると、このパターンは問題があります。
+`UserRepository`は`Config`に依存していますが、その依存は関数の引数に現れません。
+テスト時に本番と異なる設定を注入することも困難です。
 
-Singletonは、OOPの副作用とは無関係に、現代のソフトウェア設計において非推奨とされるパターンです。Singletonは実質的にグローバル状態であり、隠れた依存関係を生み、テスト時にモックへの差し替えが困難になります。
+Singletonは、OOPの副作用とは無関係に、現代の多くの設計指針で非推奨とされるパターンです。問題の本質は「インスタンスが1つ」であることではなく、「グローバルなアクセス手段を提供する」という点にあります。`GetConfig()`のようなグローバル関数を通じてどこからでもアクセスできることが、隠れた依存関係を生み、テスト時のモック差し替えを困難にします。
+
+注意すべきは、「ライフサイクルとしてのシングルトン」まで否定しているわけではないことです。DIコンテナがオブジェクトのスコープをシングルトンとして管理すること（SpringのデフォルトスコープやGoのfxにおけるライフサイクル管理など）は、依存関係が明示的である限り問題ありません。非推奨なのは、GoFが定義した「グローバルアクセスを提供するパターンとしてのSingleton」です。
 
 現代では、依存性の注入（Dependency Injection）がこの問題に対するより優れた解法として確立されています。必要な依存を明示的に引数として渡すことで、グローバル状態を排除し、テスト容易性と可読性を確保します。同じ設計をDIで書くと次のようになります。
 
@@ -108,54 +302,11 @@ func main() {
 
 `UserRepository`が何に依存しているかが`NewUserRepository`の引数として明示されています。テスト時には異なる`Config`を渡すだけで済みます。
 
-## 現代でも有用なパターン
+## まとめ
 
-残る11のパターンは、継承と参照セマンティクスのいずれにも依存していません。ここまで見てきたパターンがOOPの言語メカニズムへの処方箋だったのに対し、これらはOOPとは無関係に存在する、ソフトウェア設計の普遍的な課題を解決するものです。つまり、GoFの23パターンの中にはOOPの処方箋と、言語に依存しない設計の原則 — ソフトウェアアーキテクチャの原則 — が混在していたのです。
+本記事では、GoFの残り13パターンのうち2つを検討しました。
 
-生き残ったパターンを、その理由ごとに分類します。
+- **Iterator** — 言語機能として吸収され、パターンとして意識する必要がなくなった
+- **Singleton** — OOPの副作用とは無関係に、グローバル状態という本質的な問題から非推奨となった。依存性の注入（DI）がより優れた解法として確立されている
 
-### 小さな部品を合成して大きな振る舞いを作る
-
-Go言語の設計思想「継承より合成（composition over inheritance）」と直結する分類です。小さな部品を組み合わせて複雑な構造や振る舞いを構築するという原則は、プログラミングパラダイムを問わず有効です。
-
-- **Composite** — 再帰的なツリー構造を合成し、個々の要素と合成要素を同一視する。ファイルシステムやUIコンポーネントなど、階層構造を持つあらゆる領域で使われる
-- **Decorator** — 既存の機能に新しい責務を動的に重ね合わせる。Go言語では`http.Handler`をラップするミドルウェアパターンとして標準的に使われている
-- **Chain of Responsibility** — 処理を連鎖させ、リクエストを適切なハンドラに委譲する。Go言語のHTTPミドルウェアチェーンそのもの
-- **Builder** — 複雑なオブジェクトを段階的に構築する。Go言語ではfunctional optionsパターンとして定着している
-
-### コンポーネント間の境界を制御する
-
-ソフトウェアの規模が大きくなると、コンポーネント間の依存関係やインターフェースの不一致が複雑さの主要因になります。この問題に対処するパターンは、言語やパラダイムに関係なく必要です。
-
-- **Adapter** — 互換性のないインターフェース同士を橋渡しする。外部ライブラリやレガシーシステムとの統合で常に必要になる
-- **Facade** — 複雑なサブシステムに対して統一的な窓口を提供する。Go言語ではパッケージの公開APIを絞ることで自然に実現される
-- **Proxy** — 対象へのアクセスを制御する代理を提供する。遅延初期化、アクセス制御、ログ記録など用途が幅広い
-- **Mediator** — 多対多のオブジェクト間の相互作用を仲介者に集約し、疎結合にする。イベントバスやメッセージブローカーの設計に通じる
-
-### 状態に応じて振る舞いを切り替える
-
-- **State** — 内部状態に応じてオブジェクトの振る舞いを変更する。Go言語ではStateインターフェースを定義し、状態ごとに異なる型で実装する。有限状態マシンの設計に直結する
-
-### 特定領域の問題を解決する
-
-- **Flyweight** — 多数の細粒度オブジェクトの共有によりメモリ使用量を削減する。文字列のインターン化やキャッシュなど、メモリ最適化が必要な場面で有効
-- **Interpreter** — 言語の文法を定義し解釈する。DSL（ドメイン固有言語）や設定ファイルのパーサー、式評価エンジンなど、特定の用途で使われる
-
-## まとめ — デザインパターンの本質的価値とは何だったのか
-
-GoFの功績は、コード内で繰り返し現れるパターンに名前を付け、開発者の共通言語を確立したことにあります。「ここはObserverで」「Adapterを挟もう」と言えば設計意図が伝わる。この語彙の確立は、ソフトウェア開発の生産性に大きく貢献しました。
-
-しかし、本記事の分析が示すように、GoFの23パターンには性質の異なる2種類のものが混在していました。
-
-1つは、パラダイムシフトを起こしたばかりのOOPの未成熟さをカバーするための**実装の工夫**です。継承の副作用を管理するTemplate MethodやVisitor、参照セマンティクスを補完するPrototypeやMemento。これらはOOPという特定のパラダイムの制約の中で必要だった処方箋であり、パラダイムが変われば不要になるものでした。
-
-もう1つは、合成による構築、境界の制御といった**普遍的な設計原則**です。CompositeやDecorator、AdapterやFacadeは、OOPとは無関係に、ソフトウェアの複雑さに対処するためのアーキテクチャの知恵です。
-
-GoFの問題は、この2つがあまり区別されず、同列にカタログ化されたことです。そして当時、OOPが成熟した段階を経験したプログラマが少なかったことも相まって、GoFは必要以上に神格化されました。
-本来はコードレベルの実装パターンであるにもかかわらず、当時は業務システムのアーキテクチャを語る場面でGoFのパターン名が持ち出されるような頓珍漢なエンジニアさえ出現しました。デザインパターンは「設計パターン」と訳されますが、実態は「コードパターン」であったことに留意すべきです。
-
-Go言語が示したのは、OOPの制約に起因するパターンは言語設計で解消できるということです。そして残った11のパターンこそが、GoFの本質的な遺産 — 言語やパラダイムを超えた設計原則 — だったと言えます。
-
-ただし、この結論すら永続的なものではありません。Rustの列挙型とパターンマッチングはStateパターンを言語機能として吸収しつつありますし、名前付き引数やデフォルト値を持つ言語ではBuilderの必要性が薄れます。今日「普遍的な設計原則」に見えるものも、将来の言語やパラダイムの進化によって、さらに整理されていく可能性があります。
-
-デザインパターンの本質的な価値は、23のカタログそのものにはありませんでした。ソフトウェアの複雑さに名前を付け、共有可能な知識として体系化しようとした試み — その営みこそが、GoFの真の貢献だったのではないでしょうか。
+次回は、残る11のパターンがなぜ現代でも有用なのかを分析し、シリーズ全体の結論としてデザインパターンの本質的価値を考察します。
