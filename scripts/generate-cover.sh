@@ -1,12 +1,12 @@
 #!/bin/bash
 set -euo pipefail
 
-# Generate cover image using OpenAI DALL-E 3 API
+# Generate cover image using OpenAI gpt-image-1-mini API
 # Requires: OPENAI_API_KEY, curl, jq
 
-SIZE="1792x1024"
-QUALITY="hd"
-MODEL="dall-e-3"
+SIZE="1536x1024"
+QUALITY="high"
+MODEL="gpt-image-1-mini"
 
 usage() {
   cat <<'USAGE'
@@ -15,9 +15,9 @@ Usage: generate-cover.sh -p <prompt> -o <output> [-s size] [-q quality]
 Options:
   -p  Image generation prompt (required)
   -o  Output file path, e.g. cover.jpg (required)
-  -s  Size: 1792x1024, 1024x1792, 1024x1024
-      (default: 1792x1024 = 16:9)
-  -q  Quality: standard or hd (default: hd)
+  -s  Size: 1536x1024, 1024x1536, 1024x1024
+      (default: 1536x1024 = 3:2)
+  -q  Quality: low, medium, or high (default: high)
 
 Examples:
   # 16:9 cover image
@@ -52,7 +52,7 @@ if [ -z "${OPENAI_API_KEY:-}" ]; then
   exit 1
 fi
 
-echo "Generating image with DALL-E 3..."
+echo "Generating image with gpt-image-1-mini..."
 echo "  Size: $SIZE"
 echo "  Quality: $QUALITY"
 echo "  Prompt: ${PROMPT:0:80}..."
@@ -75,13 +75,20 @@ if [ -n "$ERROR" ]; then
   exit 1
 fi
 
-URL=$(echo "$RESPONSE" | jq -r '.data[0].url')
-if [ -z "$URL" ] || [ "$URL" = "null" ]; then
-  echo "Error: No image URL in response"
+# gpt-image-1-mini returns b64_json; fall back to URL for other models
+B64=$(echo "$RESPONSE" | jq -r '.data[0].b64_json // empty')
+URL=$(echo "$RESPONSE" | jq -r '.data[0].url // empty')
+
+if [ -n "$B64" ]; then
+  echo "Decoding base64 image..."
+  echo "$B64" | base64 -d > "$OUTPUT"
+elif [ -n "$URL" ]; then
+  echo "Downloading image..."
+  curl -s "$URL" -o "$OUTPUT"
+else
+  echo "Error: No image data in response"
   echo "$RESPONSE" | jq .
   exit 1
 fi
 
-echo "Downloading image..."
-curl -s "$URL" -o "$OUTPUT"
 echo "Saved: $OUTPUT ($(du -h "$OUTPUT" | cut -f1))"

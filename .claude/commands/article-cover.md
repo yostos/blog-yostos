@@ -1,10 +1,10 @@
 ---
-description: Generate a cover image for an article using OpenAI DALL-E 3 API. Read article content, craft a prompt, generate 1792x1024 image, and convert to cover.webp.
+description: Generate a cover image for an article using OpenAI gpt-image-1-mini API. Read article content, craft a prompt, generate 1536x1024 image, and convert to cover.webp.
 ---
 
 # Article Cover Image Generation
 
-Generate a cover image (cover.webp) for an article using OpenAI DALL-E 3 API.
+Generate a cover image (cover.webp) for an article using OpenAI gpt-image-1-mini API.
 
 ## Steps
 
@@ -18,7 +18,7 @@ Read the article content to understand the theme and key topics.
 Based on the article content:
 
 - Identify the core theme and visual concepts
-- Craft a DALL-E 3 prompt that captures the article's essence
+- Craft a gpt-image-1-mini prompt that captures the article's essence
 - Show the prompt to the user for approval before generating
 
 ### 3. Generate Image
