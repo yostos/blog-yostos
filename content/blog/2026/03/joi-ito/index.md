@@ -34,11 +34,11 @@ tldr = "エプスタイン文書は、日本政府のデジタル推進に関す
 
 2003年にMovable Typeを利用したブログサービスを私も利用していましたが、[以前の記事](/blog/2025/09/typepad-shutdown-end-of-blog-era/)で書いたように日本でイベントがあった際、TypePadの運営会社であるSixApartの東京のイベントでNeotenyの方と知り合いになり、Neoteny自体が彼の会社でSixApartのファウンダーだと教えてもらいました[^1]。
 
-[^1]: 伊藤氏の当時のブログ https://joi.ito.com/weblog/2004/02/17/six-apart-makes.html でも<q>My company Neoteny is an investor in Six Apart.</q>と語っています。
+[^1]: [伊藤氏の当時のブログ](https://joi.ito.com/weblog/2004/02/17/six-apart-makes.html)でも<q>My company Neoteny is an investor in Six Apart.</q>と語っています。
 
 Movable Typeを開発したBen TrottとMena Trottの夫妻が起業したSixApart社の設立当初から、伊藤氏はベンチャーキャピタリスト兼エンジェル投資家としてNeoteneyという彼の会社を通じて投資していました。
 
-2004年3月からはNeoteneyからの追加投資を止め、SixApartに自身も含めて経営資源を集中すると宣言 https://joi.ito.com/weblog/2004/03/08/some-changes-at.html しています。その後、SixApart Japanの会長となり、日本での事業展開を主導したのだと思います。
+2004年3月からはNeoteneyからの追加投資を止め、SixApartに自身も含めて経営資源を集中すると[宣言](https://joi.ito.com/weblog/2004/03/08/some-changes-at.html)しています。その後、SixApart Japanの会長となり、日本での事業展開を主導したのだと思います。
 
 ## エプスタイン・スキャンダルの経緯
 
