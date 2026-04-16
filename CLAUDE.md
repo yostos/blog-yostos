@@ -24,9 +24,12 @@ zola build                       # Build to public/
 npm run ogp                      # Generate OGP images
 npm run ogp:dry-run              # Preview OGP generation
 npm run search                   # Build pagefind search index
+npm run search:dry-run           # Preview pagefind index
 npm run lint                     # textlint (content/**/*.md)
 npm run lint:fix                 # textlint auto-fix
 bash scripts/indexnow.sh <path>  # Notify IndexNow
+bash scripts/generate-cover.sh   # Generate article cover image (used by article-cover skill)
+python scripts/convert-images.py # Convert images to webp
 ```
 
 ## Directory Structure
@@ -34,7 +37,7 @@ bash scripts/indexnow.sh <path>  # Notify IndexNow
 ```
 content/          # Blog articles (Markdown + assets)
 templates/        # Zola template overrides (macros, partials, shortcodes)
-themes/tabi/      # tabi theme (submodule)
+themes/tabi/      # tabi theme (git submodule — run `git submodule update --init --recursive` after clone)
 scripts/          # OGP generation, image conversion, IndexNow
 tools/            # Additional tooling and docs
 static/           # Static assets served at site root
