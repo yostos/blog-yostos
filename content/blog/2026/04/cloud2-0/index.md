@@ -4,7 +4,6 @@ description = """
 Cloudflareが2026年4月に開催した「Agents Week 2026」では、Cloud 2.0時代の到来が見えてきました。Cloud 1.0で築いた優位がCloud 2.0レイヤーには引き継がれない構造と、エンタープライズが向き合う変化を考えます。
 """
 date = 2026-04-27T07:00:13+09:00
-draft = true
 
 [taxonomies]
 tags = ["Tech", "Cloud"]
