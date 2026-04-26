@@ -1,11 +1,9 @@
 +++
-title = "Splatoon3 : 久しぶりのスタートダッシュ・デュアル"
-description = """
-description
-"""
+title = "久しぶりのスタートダッシュ・デュアル"
+description = "ご無沙汰していたスタートダッシュ・デュアルを久しぶりに握ったら、思いのほかキルが取れて気分よくプレイできました。"
 date = 2026-04-26T10:16:48+09:00
 [taxonomies]
-tags =[ "Entertainment","Game","Splatoon3" ]
+tags = ["Splatoon", "Game", "Entertainment"]
 [extra]
 social_media_card = "ogp.webp"
 local_image = "cover.webp"
