@@ -2,8 +2,8 @@
 title = "DJI Avata 2 シネマティック設定ガイド"
 description = """DJI Avata 2でシネマティックな映像を撮るためのカメラ設定とPost Productionの手順をまとめました。\
 露出、ホワイトバランス、D-Log M、Gyroflow、SkyGrades LUTまで、実際に使っている設定値を共有します。"""
-date = 2026-04-17
-draft = true
+date = 2026-04-27T16:30+09:00
+
 
 [taxonomies]
 tags = ["Drone"]
@@ -19,9 +19,6 @@ local_image = "cover.webp"
 
 <!-- textlint-enable -->
 
-<!-- author-approved: draft記事のためtextlintルールを無効化 -->
-<!-- textlint-disable -->
-
 <details>
 <summary>Table of Contents</summary>
 
@@ -29,7 +26,15 @@ local_image = "cover.webp"
 
 </details>
 
-DJI Avata 2でシネマティックな映像を撮るために、自分が使っているカメラ設定とPost Productionの手順をまとめました。マニュアルモードでの飛行を前提とし、D-Log MとGyroflowを活用したワークフローです。
+DJI Avata 2でシネマティックな映像を撮るために、自分が使っているカメラ設定とPost Productionの手順をまとめました。DJI Goggle 3とDJI FPV送信機3を使ったマニュアルモードでの飛行[^1]を前提とし、D-Log MとGyroflowを活用したワークフローです。
+
+海外のAvata 2ユーザーのブログ記事やYouTubeから情報を集めて研究した設定で、現時点での最適解と考えています。
+
+<!-- textlint-disable -->
+
+{{ youtube(id="ogwig1EU4CQ") }}
+
+<!-- textlint-enable -->
 
 ## 露出設定
 
@@ -37,15 +42,42 @@ DJI Avata 2でシネマティックな映像を撮るために、自分が使っ
 
 ISOはできる限り低く抑えるのが基本で、ISO 100が理想的です。明暗差の大きいエリアを飛行する場合は、Auto ISOに切り替えると露出変化に対応しやすくなります。
 
-シャッタースピードの設定は撮影スタイルによって異なります。いずれもNDフィルター使用時は「180度ルール」[^1]を適用し、シャッタースピードを撮影フレームレートの2倍の分母に設定します。
+シャッタースピードの設定は撮影スタイルによって異なります。いずれもNDフィルター使用時は「180度ルール」を適用し、シャッタースピードを撮影フレームレートの2倍の分母に設定します。
+
+<!-- textlint-disable -->
+
+{% admonition(type="info", title="180度ルールとは") %}
+映画撮影で標準的に用いられるシャッター角度の慣習に由来します。フィルムカメラの回転シャッターが180度（半回転）開いている間に露光することから、露光時間がフレーム間隔の半分になります。デジタルカメラでは「シャッタースピード = 1 /（フレームレート × 2）」と換算します。このルールに従うと、人間の目に自然に見える適度なモーションブラーが得られ、映画的（シネマティック）な質感になります。シャッタースピードをこれより速くするとブラーが減りパラパラとした硬い映像に、遅くするとブラーが過剰になり不明瞭な映像になります。
+{% end %}
+
+<!-- textlint-enable -->
 
 - **通常のシネマティック撮影**
-  - 60FPS / シャッタースピード 1/120秒 / NDフィルター使用
+  - 60FPS / シャッタースピード1/120秒 / NDフィルター使用
   - 60FPSで撮影するのはゴーグルのライブビューがカクつかないため
 - **スローモーションを前提とした撮影**
-  - 100FPS / シャッタースピード 1/200秒 / NDフィルター使用 / 16:9（100FPSは16:9限定）
+  - 100FPS / シャッタースピード1/200秒 / NDフィルター使用 / 16:9（100FPSは16:9限定）
 - **アグレッシブなフリースタイル撮影**
   - 60FPS / NDフィルターなし / 適正露出になるようシャッタースピードを上げて調整
+
+ND濃度は撮影環境の明るさに応じて選びます。私は[K&F ConceptのND/PL複合フィルター（ND8/PL〜ND64/PL）](https://amzn.to/4mT7jZv)を使用しています[^2]。
+
+<!-- textlint-disable -->
+
+{% aside(position="right") %}
+PL（偏光フィルター）は水面やガラスなどの反射を抑え、空を濃く・葉の緑を鮮やかに見せる効果がある。NDとの複合フィルターは光量減衰と偏光の両方を1枚で兼ねる。
+{% end %}
+
+<!-- textlint-enable -->
+
+| 撮影環境             | 推奨ND  |
+| -------------------- | ------- |
+| 曇天・薄暮           | ND8/PL  |
+| 標準的な屋外         | ND16/PL |
+| 晴天                 | ND32/PL |
+| 直射晴天・水面反射等 | ND64/PL |
+
+<div class="kaerebalink-box" style="text-align:left;padding-bottom:20px;font-size:small;zoom: 1;overflow: hidden;"><div class="kaerebalink-image" style="float:left;margin:0 15px 10px 0;"><a href="https://hb.afl.rakuten.co.jp/hgc/g00uisu5.9srincec.g00uisu5.9srio399/kaereba_main_202604271805580227?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fkonanonline%2Fspgm-0ddkmmxxp%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fkonanonline%2Fi%2F10274160%2F&rafcid=wsc_i_is_c7c582dc-0853-4585-9176-66e2a26d9c5b" target="_blank" ><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/konanonline/cabinet/root_sniper_folder/sniper_folder_00090/imgrc0328006604.jpg?_ex=128x128" style="border: none;" /></a></div><div class="kaerebalink-info" style="line-height:120%;zoom: 1;overflow: hidden;"><div class="kaerebalink-name" style="margin-bottom:10px;line-height:120%"><a href="https://hb.afl.rakuten.co.jp/hgc/g00uisu5.9srincec.g00uisu5.9srio399/kaereba_main_202604271805580227?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fkonanonline%2Fspgm-0ddkmmxxp%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fkonanonline%2Fi%2F10274160%2F&rafcid=wsc_i_is_c7c582dc-0853-4585-9176-66e2a26d9c5b" target="_blank" >K&amp;F Concept DJI AVATA2 専用 フィルターセット(ND8/PL+ND16/PL+ND32/PL+ND64/PL) ND&amp;PLフィルター 1枚2役 保護フィルター 装着便利 減光量調整 AGC光学ガラス コントラスト強調 ナノコーティング</a><div class="kaerebalink-powered-date" style="font-size:8pt;margin-top:5px;font-family:verdana;line-height:120%">posted with <a href="https://kaereba.com" rel="nofollow" target="_blank">カエレバ</a></div></div><div class="kaerebalink-detail" style="margin-bottom:5px;"></div><div class="kaerebalink-link1" style="margin-top:10px;"><div class="shoplinkrakuten" style="display:inline;margin-right:5px"><a href="https://hb.afl.rakuten.co.jp/hgc/1300574f.7d238558.13005750.4bcd8088/kaereba_main_202604271805580227?pc=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2FK%2F-%2Ff.1-p.1-s.1-sf.0-st.A-v.2%3Fx%3D0%26scid%3Daf_ich_link_urltxt&m=http%3A%2F%2Fm.rakuten.co.jp%2F" target="_blank" >楽天市場</a></div><div class="shoplinkamazon" style="display:inline;margin-right:5px"><a href="https://www.amazon.co.jp/gp/search?keywords=K&__mk_ja_JP=%E3%82%AB%E3%82%BF%E3%82%AB%E3%83%8A&tag=yostosweb-22" target="_blank" >Amazon</a></div></div></div><div class="booklink-footer" style="clear: left"></div></div>
 
 ## ホワイトバランス
 
@@ -59,11 +91,11 @@ D-Log Mで撮影する場合、ホワイトバランスはPost Productionのカ�
 
 ## 解像度とフレームレート
 
-解像度は4Kを使用します。フレームレートは60FPSを推奨します（30FPSにするとゴーグルのライブ映像がカクつく場合があります）。スローモーション撮影には4K・100FPSを使用します（16:9限定）。
+解像度は4Kを使用します。フレームレートは60FPSを推奨します（30FPSにするとゴーグルのライブ映像でカクつくことがあります）。スローモーション撮影には4K・100FPSを使用します（16:9限定）。
 
 ## カラープロファイル
 
-撮影時に選べるカラープロファイルは、ノーマルカラーとD-Log Mの2種類です。どちらを選ぶかで、撮って出しに近い運用にするか、Post Productionで追い込むかという方向性が決まります。
+撮影時に選べるカラープロファイルは、ノーマルカラーとD-Log Mの2種類です。どちらを選ぶかで、撮って出し寄りの運用にするか、Post Productionで追い込むかという方向性が決まります。
 
 - ノーマルカラー：カメラからそのまま使える色合いが得られるが、ダイナミックレンジが狭く、カラーグレーディングの調整幅は限られる
 - D-Log M：ダイナミックレンジが大幅に広がり、カラーグレーディングの自由度が高い。扱いやすく、きれいに仕上げやすい
@@ -72,7 +104,7 @@ D-Log Mで撮影する場合、ホワイトバランスはPost Productionのカ�
 
 ## 画角と手ぶれ補正
 
-手ぶれ補正はRockSteadyを使用せず、EISをオフにしてGyroflowによるPost Production補正を行います。EISオフ時にジャイロデータが記録され、Gyroflowで処理することでRockSteadyよりもなめらかな仕上がりが得られます。
+手ぶれ補正はRockSteadyを使用せず、EISをオフにしてGyroflowでPost Production補正します。EISオフ時にジャイロデータが記録され、Gyroflowに通すことでRockSteadyよりもなめらかな仕上がりが得られます。
 
 Gyroflowを使用するための条件は以下のとおりです。
 
@@ -88,13 +120,17 @@ FOVについて、ノーマルは画角が狭すぎるため非推奨です。�
 この項目はカメラ設定ではなく、コントローラーのスティック感度と飛行特性の設定です。一般に「Rate」と呼ばれるものです。
 
 シネマティックな映像には滑らかな飛行操作が不可欠なため、飛行スタイルに応じた調整が必要です。
-しかし、個人の感覚に依存するもので最適値は個人差があるため、自分に合う値を探してみてください。。
+しかし、個人の感覚に依存するもので最適値は個人差があるため、自分に合う値を探してみてください。
 
 以下は私のシネマティック撮影向け設定例です。
 
+<!-- textlint-disable -->
+
 {{ image(src="./rate.webp") }}
 
-設定の意図としては、ロールとピッチはある程度の機動性を確保しつつ、Expoを高めにして中央付近の操作を滑らかにしています。ヨーはセンター感度と最大レートを大きく下げ、パン動作が急激にならないようにしています。シネマティック撮影ではヨーの滑らかさが映像品質に直結するため、意図的に鈍感に設定しています。
+<!-- textlint-enable -->
+
+設定の意図としては、ロールとピッチはある程度の機動性を確保しつつ、中央付近の操作が滑らかになるよう、Expoを高めにしています。ヨーはセンター感度と最大レートを大きく下げ、パン動作が急激にならないよう調整しています。シネマティック撮影ではヨーの滑らかさが映像品質に直結するため、意図して鈍感に設定しています。
 
 ## カメラアングル（チルト角）
 
@@ -108,7 +144,7 @@ FOVについて、ノーマルは画角が狭すぎるため非推奨です。�
 | レース                                | 45度以上 |
 
 私は**30度**にしています。
-マニュアルモードでのダイナミックなシネマティック撮影を前提とし、ダイブや高速巡航を含む積極的な飛行に対応しつつ、シネマティックの範囲に収まる角度として設定しています。その場の飛行スタイルで変更するのもよいと思いますが、慣れない内はある程度決まったアングル角で飛ばした方が感覚がつかみやすいと思います。
+マニュアルモードでのダイナミックなシネマティック撮影を前提とし、ダイブや高速巡航を含む積極的な飛行に対応しつつ、シネマティックの範囲に収まる角度として設定しています。その場の飛行スタイルで変更するのもよいでしょう。ただし、慣れない内は決まったアングル角で飛ばすほうが感覚をつかみやすいです。
 
 ## その他のカメラ設定
 
@@ -119,11 +155,26 @@ FOVについて、ノーマルは画角が狭すぎるため非推奨です。�
 
 ## 安全設定と機体保護
 
+大前提ですが、Avata2は100g以上の機体のため航空法の遵守が必要です。
+
+- DIPS2.0での機体登録とリモートID搭載
+- 認証機体でないため、包括申請による飛行承認が必須
+- DIPS2.0での飛行計画通報は必須
+- 国土交通省の定める書式にて飛行日誌の作成が必要
+
 映像設定とは直接関係ありませんが、安全な飛行のために以下の設定を推奨します。
 
 - **RTH高度**：屋外では周囲の障害物より高い高度を設定する
 - **電波ロスト時の動作**：屋外でRTHが可能な環境ではRTH、屋内などRTHが適さない環境ではホバリングに設定する
 - **最大高度**：日本の航空法では150m未満の制限があるため、120mに設定する
+
+<!-- textlint-disable -->
+
+{% aside(position="right") %}
+150m以上の飛行は包括申請の対象外で個別申請が必要となるため、一般的な飛行では150m未満に収める必要がある。
+{% end %}
+
+<!-- textlint-enable -->
 
 また、以下のアクセサリの装着を推奨します。
 
@@ -133,23 +184,46 @@ FOVについて、ノーマルは画角が狭すぎるため非推奨です。�
 
 ## Post Productionの全体の流れ
 
-Post Productionでは、Gyroflowでの手ぶれ補正、モーションブラーの付加、カラーグレーディングの順に処理します。以下、それぞれの工程について説明します。
+Post Productionでは、次のような流れになります。なお、DaVinci Resolveを前提としています。
 
-## Gyroflowによる手ぶれ補正
+1. Timelineの設定と編集
+2. Gyroflowでのぶれ補正
+3. モーションブラーの付加
+4. カラーグレーディング
 
-すべての素材に対して、まずGyroflowで手ぶれ補正を適用します。EISオフ・FOVワイドで撮影した素材にはジャイロデータが記録されており、Gyroflowで処理することでRockSteadyよりもなめらかな補正が得られます。
+以下、それぞれの工程について説明します。
 
-## モーションブラー（RSMB）
+### Timelineの設定と編集
+
+まずDaVinci ResolveのProject SettingにてTimelineの設定を行ないます。
+DJI Avata 2はUltra HD(UHD)で動画記録しているので、TimelineもUHDにしておきます。
+
+Frame Rateについて以下を参考に設定してください。
+
+- アクション感のあるシャープな映像にしたいケース：60FPS
+- 自然なモーションブラーのある映像にしたいケース：30FPS
+- シネマティックな映像にしたいケース：24FPS
+
+### Gyroflowによる手ぶれ補正
+
+すべての素材に対して、まずGyroflowで手ぶれ補正を適用します。EISオフ・FOVワイドで撮影した素材にはジャイロデータが記録されており、
+Gyroflowに通すことでRockSteadyよりもなめらかな補正が得られます。
+
+Gyroflowのパラメータ設定には、[gyrotriage](/blog/2026/03/gyrotriage/)の記事を参照してください。
+
+### モーションブラー（RSMB）
 
 Gyroflow適用後、映像の仕上がりに応じてフレームレートとモーションブラーの処理を変えます。
+撮影は基本的には4K 60FPSで録画します。しかし、映像の目的により出力する映像のFPSを変更するケースがあります。
 
-- **アクション感のあるシャープな映像にしたいケース**：60FPSのまま出力
-- **自然なモーションブラーのある映像にしたいケース**：30FPSに変換してRSMBでモーションブラーを付加
-- **シネマティックな映像にしたいケース**：24FPSに変換してRSMBでモーションブラーを付加
+アクションを狙った映像であればそのまま60FPSで取得すればよいのですが、仕上がりの想定によってはFPSを落としたい場合があります。
 
-60FPSで撮影した素材は180度ルールに従った1/120秒のモーションブラーしか持たないため、30FPSや24FPSに変換しただけではブラーが不足します。RSMB（ReelSmart Motion Blur）はフレーム間のモーションベクトルを解析してブラーを合成するOFXプラグインで、DaVinci ResolveのEditページで直接適用できます。
+しかし、60FPSで撮影した素材は180度ルールに従った1/120秒のモーションブラーしか持ちません。これでは、30FPSや24FPSに変換しただけではブラーが不足します。
 
-## カラーグレーディング
+30FPSや24FPSで映像を出力したい場合は、RSMB（ReelSmart Motion Blur）でブラーを足します。
+このツールは、フレーム間のモーションベクトルを解析してブラーを合成するOFXプラグインで、DaVinci ResolveのEditページで直接適用できます。
+
+### カラーグレーディング
 
 D-Log Mで撮影した場合は、LUTを適用してカラーグレーディングを行います。推奨は[Film Poets SkyGrades Collection](https://www.thefilmpoets.com/edu/store/dji-avata-2-d-log-m-skygrades-collection/)（Natural + Cinemaのセット）です。
 
@@ -158,14 +232,18 @@ SkyGradesが優れている理由は以下のとおりです。
 - DJI機種ごとのD-Log Mカラーサイエンスに合わせて個別設計されており、汎用LUTにありがちな色の破綻が起きにくい
 - D-Log Mのフラットなガンマカーブを数学的に補正し、ダイナミックレンジを最大限維持したまま自然な色を再現する
 - 過度に彩度を上げない設計で、緑の色被りなどDJI特有の問題を補正する
-- NaturalとCinemaの2種類をブレンドすることで、自然な色味からシネマティックな色味まで一つのワークフローでカバーできる
+- NaturalとCinemaの2種類をブレンドすることで、自然な色味からシネマティックな色味まで1つのワークフローでカバーできる
 
 DaVinci Resolveでの適用手順は以下のとおりです。
 
-1. Node 1：SkyGrades Natural LUTを適用
-2. Node 2：SkyGrades Cinema LUTを適用
-3. Node 2のOpacityを調整してNaturalとCinemaのブレンド比率を好みに合わせる（合計が1.0になるように配分する）
+1. Node 1にSkyGrades Natural LUTを適用
+2. シリアルNode 2を追加しSkyGrades Cinema LUTを適用
+3. 各ノードのKey Output Gainを調整して、Naturalの補正強度とCinemaのスタイル強度をそれぞれ好みに合わせる（FCPの公式ガイドではMix 0.5を起点に紹介されている）
 
-[^1]: **180度ルール**とは、映画撮影で標準的に用いられるシャッター角度の慣習に由来します。フィルムカメラの回転シャッターが180度（半回転）開いている間に露光することから、露光時間がフレーム間隔の半分になります。デジタルカメラでは「シャッタースピード = 1 /（フレームレート × 2）」と換算します。このルールに従うと、人間の目に自然に見える適度なモーションブラーが得られ、映画的（シネマティック）な質感になります。シャッタースピードをこれより速くするとブラーが減りパラパラとした硬い映像に、遅くするとブラーが過剰になり不明瞭な映像になります。
+## 作例
 
-<!-- textlint-enable -->
+冒頭で紹介した映像は、千葉県・根本海水浴場で撮影しました。安全マージンを優先して高度を高めに取っています。
+
+[^1]: 著者は二等無人航空機操縦士のライセンスを取得し、目視外飛行の限定解除と包括飛行申請をしたうえでマニュアルモードでのFPV飛行を実施している。これらを取得していない場合は、補助者の配置または個別の飛行許可・承認が必要となる。
+
+[^2]: 本記事には広告（アフィリエイト）リンクが含まれます。
