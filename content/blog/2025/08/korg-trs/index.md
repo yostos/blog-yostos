@@ -26,7 +26,7 @@ KORG Nu:tekt TR-S (POWER TUBE REACTOR)を購入しました。
 
 KORG Nu:tekt TR-S(POWER TUBE REACTOR)は、KORGとノリタケ伊勢電子（株）が開発
 した
-[Nutube](https://info.shimamura.co.jp/digital/special/2015/01/44294)という蛍光表示管の技術を応用した新しい真空管
+[Nutube](https://korgnutube.com/)という蛍光表示管の技術を応用した新しい真空管
 を使用したエフェクターです。
 
 <figure>
