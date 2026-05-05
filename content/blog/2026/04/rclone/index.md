@@ -4,6 +4,7 @@ description = """
 ドローンの動画素材やLogic Proの楽曲データなど、編集後はほとんど触らないが消したくないデータの「眠らせ場所」を、Amazon S3とrcloneで構築した記録です。細回線でも止まらない転送のチューニングから、Glacier Deep Archiveを使った長期保管のコスト設計まで、二段構えでまとめました。
 """
 date = 2026-04-30T08:30:42+09:00
+updated = 2026-05-05
 [taxonomies]
 tags = ["Tech", "Cloud", "AWS"]
 [extra]
@@ -194,9 +195,10 @@ aws s3api get-bucket-lifecycle-configuration --bucket video-backup
 brew install rclone
 ```
 
-リモートの設定は以下のとおりです。
+リモートの設定は `rclone config` を起動して対話的に進めます。新規リモート作成時に入力していく項目を抜粋すると以下のとおりです（`>` の左がプロンプト、右が入力値）。
 
 ```bash
+$ rclone config
 n) New remote
 name> s3-aws
 Storage> s3
@@ -266,8 +268,6 @@ S3では1ファイル内の並列度は `--s3-upload-concurrency` が直接コ�
 ```bash
 caffeinate -i rclone copy ./video/ s3-aws:video-backup/ \
   --transfers 4 \
-  --multi-thread-streams 4 \
-  --multi-thread-cutoff 250M \
   --s3-chunk-size 64M \
   --s3-upload-concurrency 4 \
   --s3-no-check-bucket \
@@ -292,6 +292,72 @@ caffeinate -i rclone copy ./video/ s3-aws:video-backup/ \
 
 ```bash
 sudo pmset -a disablesleep 1   # 蓋を閉じてもスリープしない（作業後は0に戻す）
+```
+
+## 認証情報の管理を1Password CLIに移す（2026-05-05更新）
+
+ここまでの設定では `~/.config/rclone/rclone.conf` にAWSのアクセスキーが平文で残ります。dotfilesで同期したり共用マシンに置く運用では避けたいので、認証情報を [1Password CLI](https://developer.1password.com/docs/cli/) (`op`) に移し、`op run` で実行時に環境変数として注入する構成も用意しました。
+
+`rclone.conf` 側はキーを書かず、`env_auth = true` にしてAWS標準の認証情報チェーン（環境変数→`~/.aws/credentials`→IAMロール）から都度取得する動作に変えます。
+
+```ini,name=~/.config/rclone/rclone.conf
+[s3-aws]
+type = s3
+provider = AWS
+env_auth = true
+region = ap-northeast-1
+location_constraint = ap-northeast-1
+acl = private
+storage_class = STANDARD
+```
+
+発行済みのキーは1Passwordに保管します。
+
+```bash
+op item create --category="API Credential" \
+  --vault=Private \
+  --title="rclone-backup-aws" \
+  username="AKIA..." \
+  credential="..."
+```
+
+参照用のenvテンプレートを `~/.config/rclone/s3-backup.env` として配置します。`rclone.conf` と同じディレクトリで管理でき、値ではなく `op://...` の参照しか書かれないため、dotfilesに含めて同期しても問題ありません。
+
+```bash,name=~/.config/rclone/s3-backup.env
+AWS_ACCESS_KEY_ID=op://Private/rclone-backup-aws/username
+AWS_SECRET_ACCESS_KEY=op://Private/rclone-backup-aws/credential
+```
+
+実行時は `op run --env-file` でラップし、`op` が1Passwordから値を取り出して環境変数として注入します。先述の起動例は以下のように書き換わります。
+
+```bash
+op run --env-file="$HOME/.config/rclone/s3-backup.env" -- rclone copy ./video/ s3-aws:video-backup/ \
+  --transfers 2 \
+  --s3-chunk-size 64M \
+  --s3-upload-concurrency 4 \
+  --s3-no-check-bucket \
+  --checksum \
+  --progress \
+  --retries 10 \
+  --low-level-retries 20 \
+  --log-file=rclone-$(date +%Y%m%d-%H%M%S).log \
+  --log-level INFO
+```
+
+`caffeinate` と組み合わせる場合は、`caffeinate` を最外殻に置きます。
+
+```bash
+caffeinate -i op run --env-file="$HOME/.config/rclone/s3-backup.env" -- rclone copy ./video/ s3-aws:video-backup/ \
+  --transfers 4 \
+  --s3-chunk-size 64M \
+  --s3-upload-concurrency 4 \
+  --s3-no-check-bucket \
+  --checksum \
+  --progress \
+  --retries 10 \
+  --low-level-retries 20 \
+  --log-file=rclone-$(date +%Y%m%d-%H%M%S).log \
+  --log-level INFO
 ```
 
 ## まとめ
