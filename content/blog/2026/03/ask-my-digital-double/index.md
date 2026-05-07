@@ -7,6 +7,7 @@ BGE-M3 による日本語 embedding、Llama 3.3 70B によるペルソナ付き�
 差分 ingest パイプラインまで、Cloudflare スタックだけで完結しています。\
 """
 date = 2026-03-20T00:00:01+09:00
+updated = 2026-05-07
 [taxonomies]
 tags = ["Tech", "Generative AI", "Weblog","Cloudflare"]
 [extra]
@@ -57,6 +58,14 @@ Cloudflare スタックだけで構築しました。ask.codedchords.dev で公�
 <!-- textlint-enable -->
 
 私が答えそうな回答を返してきました。ブログ記事の内容をベースにしつつ、ペルソナの設定に基づいた回答を生成しています。
+
+ソースコードはGitHubで公開しています。
+
+<!-- textlint-disable -->
+
+{{ linkcard(url="https://github.com/yostos/yostos-persona") }}
+
+<!-- textlint-enable -->
 
 ## 動機
 
