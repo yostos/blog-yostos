@@ -1,12 +1,12 @@
 #!/bin/bash
 set -euo pipefail
 
-# Generate cover image using OpenAI gpt-image-1-mini API
+# Generate cover image using OpenAI gpt-image-1 API
 # Requires: OPENAI_API_KEY, curl, jq
 
 SIZE="1536x1024"
 QUALITY="high"
-MODEL="gpt-image-1-mini"
+MODEL="gpt-image-1"
 
 usage() {
   cat <<'USAGE'
@@ -52,7 +52,7 @@ if [ -z "${OPENAI_API_KEY:-}" ]; then
   exit 1
 fi
 
-echo "Generating image with gpt-image-1-mini..."
+echo "Generating image with $MODEL..."
 echo "  Size: $SIZE"
 echo "  Quality: $QUALITY"
 echo "  Prompt: ${PROMPT:0:80}..."
@@ -75,7 +75,7 @@ if [ -n "$ERROR" ]; then
   exit 1
 fi
 
-# gpt-image-1-mini returns b64_json; fall back to URL for other models
+# gpt-image-1 returns b64_json; fall back to URL for other models
 B64=$(echo "$RESPONSE" | jq -r '.data[0].b64_json // empty')
 URL=$(echo "$RESPONSE" | jq -r '.data[0].url // empty')
 
