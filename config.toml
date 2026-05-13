@@ -123,4 +123,8 @@ skip_prefixes = [
     "https://www.npmjs.com/",
     # botアクセスをブロック（403 Forbidden、ブラウザでは閲覧可能）
     "https://www.mizuhobank.co.jp/",
+    # レート制限による偽陽性（実行のたびに別URLが失敗）
+    "https://github.com/",
+    # botアクセスをブロック（ブラウザでは閲覧可能）
+    "https://controlhub.top/",
 ]
