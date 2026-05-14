@@ -11,7 +11,11 @@ social_media_card = "ogp.webp"
 local_image = "cover.webp"
 +++
 
+<!-- textlint-disable -->
+
 {{ image(src="cover.webp",alt="Cover") }}
+
+<!-- textlint-enable -->
 
 マニュアルモードでの飛行はまだまだ練習中ですが、
 夜明けの九十九里浜でAvata2を飛ばしてきました。
@@ -26,4 +30,8 @@ local_image = "cover.webp"
 
 半年ほど前に[DJI Air3S](https://youtu.be/FyY7xCteMH4?si=C_GO8jrUbPye74kX)を同じ場所で飛ばしましたが、まったく印象が違いますね。
 
+<!-- textlint-disable -->
+
 {{ youtube(id="UOYxX1o11uU") }}
+
+<!-- textlint-enable -->
