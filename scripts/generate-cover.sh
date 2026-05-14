@@ -1,44 +1,51 @@
 #!/bin/bash
 set -euo pipefail
 
-# Generate cover image using OpenAI gpt-image-1 API
-# Requires: OPENAI_API_KEY, curl, jq
+# Generate cover image using OpenAI gpt-image-2 API
+# Requires: OPENAI_API_KEY, curl, jq, cwebp
+# Note: gpt-image-2's output_format=webp is currently not honored
+# (returns PNG bytes despite metadata claiming webp). We request PNG
+# and convert to WebP via cwebp.
 
-SIZE="1536x1024"
+SIZE="1536x864"
 QUALITY="high"
-MODEL="gpt-image-1"
+MODEL="gpt-image-2"
+WEBP_QUALITY="80"
 
 usage() {
   cat <<'USAGE'
-Usage: generate-cover.sh -p <prompt> -o <output> [-s size] [-q quality]
+Usage: generate-cover.sh -p <prompt> -o <output> [-s size] [-q quality] [-w webp_quality]
 
 Options:
   -p  Image generation prompt (required)
-  -o  Output file path, e.g. cover.jpg (required)
-  -s  Size: 1536x1024, 1024x1536, 1024x1024
-      (default: 1536x1024 = 3:2)
+  -o  Output file path, e.g. cover.webp (required)
+  -s  Size: 1536x864, 2048x1152, 1024x1024, etc.
+      Must be multiples of 16, aspect ratio within 3:1 to 1:3.
+      (default: 1536x864 = 16:9)
   -q  Quality: low, medium, or high (default: high)
+  -w  WebP encoder quality (0-100, default: 80)
 
 Examples:
-  # 16:9 cover image
+  # 16:9 cover image (default)
   ./scripts/generate-cover.sh \
     -p "A futuristic cityscape" \
-    -o content/blog/2026/02/my-article/cover.jpg
+    -o content/blog/2026/05/my-article/cover.webp
 
-  # Square image
+  # Lower-compression WebP encoding
   ./scripts/generate-cover.sh \
     -p "Abstract pattern" \
-    -o output.jpg -s 1024x1024
+    -o output.webp -w 60
 USAGE
   exit 1
 }
 
-while getopts "p:o:s:q:" opt; do
+while getopts "p:o:s:q:w:" opt; do
   case $opt in
     p) PROMPT="$OPTARG" ;;
     o) OUTPUT="$OPTARG" ;;
     s) SIZE="$OPTARG" ;;
     q) QUALITY="$OPTARG" ;;
+    w) WEBP_QUALITY="$OPTARG" ;;
     *) usage ;;
   esac
 done
@@ -55,6 +62,7 @@ fi
 echo "Generating image with $MODEL..."
 echo "  Size: $SIZE"
 echo "  Quality: $QUALITY"
+echo "  WebP quality: $WEBP_QUALITY"
 echo "  Prompt: ${PROMPT:0:80}..."
 
 RESPONSE=$(curl -s \
@@ -75,20 +83,21 @@ if [ -n "$ERROR" ]; then
   exit 1
 fi
 
-# gpt-image-1 returns b64_json; fall back to URL for other models
 B64=$(echo "$RESPONSE" | jq -r '.data[0].b64_json // empty')
-URL=$(echo "$RESPONSE" | jq -r '.data[0].url // empty')
 
-if [ -n "$B64" ]; then
-  echo "Decoding base64 image..."
-  echo "$B64" | base64 -d > "$OUTPUT"
-elif [ -n "$URL" ]; then
-  echo "Downloading image..."
-  curl -s "$URL" -o "$OUTPUT"
-else
+if [ -z "$B64" ]; then
   echo "Error: No image data in response"
   echo "$RESPONSE" | jq .
   exit 1
 fi
+
+TMP_PNG=$(mktemp -t cover-XXXXXX).png
+trap 'rm -f "$TMP_PNG"' EXIT
+
+echo "Decoding base64 image..."
+echo "$B64" | base64 -d > "$TMP_PNG"
+
+echo "Converting to WebP (quality=$WEBP_QUALITY)..."
+cwebp -quiet -q "$WEBP_QUALITY" "$TMP_PNG" -o "$OUTPUT"
 
 echo "Saved: $OUTPUT ($(du -h "$OUTPUT" | cut -f1))"
