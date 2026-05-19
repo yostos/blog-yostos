@@ -65,6 +65,68 @@ local_image = "cover.webp"
 - Worker が `/fonts/<filename>` を R2 binding に橋渡し
 - CSS は同一オリジンの `/fonts/<filename>` を指す
 
+### protection-model 4 レイヤー (記事引用用要約)
+
+| # | 仕組み | 設定実体 | 遮断する脅威 |
+|---|---|---|---|
+| 1 | バケット非公開 | r2.dev 無効・カスタムドメイン未割当・CORS なし | バケット URL の直接スクレイプ・検索エンジン索引・汎用 S3 クライアント |
+| 2 | R2 Binding 経由のみ | `[[r2_buckets]] bucket_name="web-fonts"`、同一アカウント内に限定 | 他アカウントからの参照・外部ネットワーク経由・bucket 名推測 |
+| 3 | Worker が公開面を制限 | `codedchords.dev/fonts/<file>` のみ・`..` `/` を 400 で拒否 | パストラバーサル・任意キー READ・bucket 列挙 |
+| 4 | 長寿命クレデンシャル不在 | R2 API トークン未発行・`.dev.vars`/`wrangler secret`/S3 互換キーなし | GitHub commit・CI ログ・開発機紛失経由のトークン漏洩 |
+
+設計の本質は「ライセンス違反の最大の発生経路 (公開 bucket URL がクローラに
+拾われる) を消すこと」。閲覧者の DevTools 経由ダウンロードや第三者ホット
+リンクは別レイヤーの話で、Web フォント配信の原理上完全には防げない。
+
+### 最終ソース (記事に貼る分)
+
+`wrangler.toml`:
+
+```toml
+name = "coded-chords"
+main = "src/index.js"
+compatibility_date = "2026-02-17"
+
+[assets]
+directory = "./public"
+binding = "ASSETS"
+
+[[r2_buckets]]
+binding = "FONTS"
+bucket_name = "web-fonts"
+```
+
+`src/index.js` (26 行):
+
+```js
+const FONTS_PREFIX = "/fonts/";
+
+export default {
+  async fetch(req, env) {
+    const url = new URL(req.url);
+
+    if (url.pathname.startsWith(FONTS_PREFIX)) {
+      const key = decodeURIComponent(url.pathname.slice(FONTS_PREFIX.length));
+      // Only flat keys in R2 (no subdir, no traversal). Anything else falls
+      // through to static assets — the theme also publishes under /fonts/.
+      if (key && !key.includes("..") && !key.includes("/")) {
+        const obj = await env.FONTS.get(key);
+        if (obj) {
+          const headers = new Headers();
+          obj.writeHttpMetadata(headers);
+          headers.set("Content-Type", "font/woff2");
+          headers.set("Cache-Control", "public, max-age=31536000, immutable");
+          headers.set("ETag", obj.httpEtag);
+          return new Response(obj.body, { headers });
+        }
+      }
+    }
+
+    return env.ASSETS.fetch(req);
+  },
+};
+```
+
 ## 工程 (作業計画ドラフト)
 
 1. ローカル設定
@@ -137,31 +199,185 @@ protection-model の保護レイヤは:
 旧構成の Referer 検査は S3 が「世界中から READ 可能な状態」だったために
 必要だった補完策で、R2 binding 化により前提自体が消えている。
 
-### デプロイ前の留意点
+### デプロイ前の留意点 → 実際にここで詰まった
 
-- GitHub Actions の `CLOUDFLARE_API_TOKEN` は元々 Static Assets 用で
-  発行されている。`[[r2_buckets]]` バインディングを含む Worker を
-  `wrangler deploy` するには Workers R2 Storage の編集権限が必要。
-  CI で deploy が失敗した場合はトークン権限を見直す
+- GitHub Actions の `CLOUDFLARE_API_TOKEN` は旧構成 (Static Assets only)
+  用で発行されており、R2 binding を含む Worker を `wrangler deploy` する
+  には Workers R2 Storage の編集権限が必要だった
+- 初回 push で `wrangler deploy` が `code: 10000 Authentication error` で
+  失敗。`/accounts/***/r2/buckets/web-fonts` への API 呼び出しが弾かれた
+- 救いは「デプロイ失敗時は旧 Worker のまま」という Cloudflare Workers の
+  原子性。`curl https://codedchords.dev/custom.css` で旧 CloudFront URL が
+  まだ配信されていることを確認できた → CloudFront 経由で Berkeley Mono は
+  生きており、復旧作業中もサイトは見た目を保てた
+- 対応: API トークンを「Edit Cloudflare Workers」テンプレートで再発行し、
+  さらに **Account: Workers R2 Storage → Edit** を追加
+
+CI トークンに最終的に付与した権限セット:
+
+| スコープ | パーミッション | 用途 |
+|---|---|---|
+| Account | Workers Scripts: Edit | Worker スクリプトの deploy |
+| Account | Workers R2 Storage: Edit | R2 binding 宣言時の bucket 存在確認 (テンプレ未収載) |
+| Account | Account Settings: Read | アカウント情報照会 |
+| Zone | Workers Routes: Edit | カスタムルート設定 |
+| User | Memberships: Read | `/memberships` API |
+| User | User Details: Read | `wrangler whoami` 相当 |
+
+GitHub Secrets `CLOUDFLARE_API_TOKEN` を新トークンで上書きし、失敗ジョブを
+再実行:
+
+```bash
+DEPLOY_ID=$(gh run list --branch main \
+  --workflow="Deploy to Cloudflare Workers" --limit 1 \
+  --json databaseId --jq '.[0].databaseId')
+gh run rerun "$DEPLOY_ID" --failed
+```
+
+教訓: 新しい binding (R2 / D1 / KV / Queues 等) を Worker に追加するときは、
+CI トークンの権限を **デプロイ前に** 見直す。Cloudflare 公式の
+「Edit Cloudflare Workers」テンプレートは Workers Scripts までで R2 は含まない。
+
+### 本番検証 (deploy 成功後)
+
+```bash
+curl -sI https://codedchords.dev/fonts/BerkeleyMono-Regular.woff2
+# HTTP/2 200
+# content-type: font/woff2
+# cache-control: public, max-age=31536000, immutable
+# etag: "e11e9fa99f2aead221822f3bb30eb35a"
+
+curl -sI https://codedchords.dev/fonts/Inter4.woff2
+# HTTP/2 200  ← テーマ静的フォントへフォールスルー
+
+curl -sI "https://codedchords.dev/fonts/..%2Fevil"
+# HTTP/2 404  ← パストラバーサル拒否
+
+curl -sI https://codedchords.dev/fonts/does-not-exist.woff2
+# HTTP/2 404  ← R2 ミス → ASSETS で 404
+```
+
+### AWS リソース停止
+
+事前確認:
+
+```bash
+aws sts get-caller-identity  # Account 376851978118 (yostos-admin)
+
+aws cloudfront list-distributions \
+  --query 'DistributionList.Items[*].[Id,DomainName,Enabled]' --output table
+# E263MFQG5J21GH  d3w0x7oesq9q1.cloudfront.net  True
+
+aws s3 ls s3://berkeley-mono/ | wc -l  # 21 ファイル
+```
+
+#### 1. CloudFront ディストリビューションを disable
+
+```bash
+aws cloudfront get-distribution-config --id E263MFQG5J21GH \
+  > /tmp/dist-config.json
+jq -r '.ETag' /tmp/dist-config.json > /tmp/dist-etag.txt
+jq '.DistributionConfig | .Enabled = false' /tmp/dist-config.json \
+  > /tmp/dist-config-disabled.json
+aws cloudfront update-distribution --id E263MFQG5J21GH \
+  --if-match "$(cat /tmp/dist-etag.txt)" \
+  --distribution-config "file:///tmp/dist-config-disabled.json"
+```
+
+`update-distribution` は `Status: InProgress` を返す。`Status: Deployed` に
+なるまで CloudFront の伝播を待つ (実測 約 3 分)。
+
+```bash
+until [ "$(aws cloudfront get-distribution --id E263MFQG5J21GH \
+  --query 'Distribution.Status' --output text)" = "Deployed" ]; do
+  sleep 30
+done
+```
+
+#### 2. CloudFront ディストリビューション削除
+
+```bash
+ETAG=$(aws cloudfront get-distribution --id E263MFQG5J21GH \
+  --query 'ETag' --output text)
+aws cloudfront delete-distribution --id E263MFQG5J21GH --if-match "$ETAG"
+```
+
+#### 3. CloudFront Function `restrict-font-access` 削除
+
+落とし穴: Function は DEVELOPMENT と LIVE の 2 stage を持つ。
+`delete-function` は **DEVELOPMENT 側の ETag** を要求する。LIVE 側の ETag
+を渡すと `PreconditionFailed`。
+
+```bash
+ETAG=$(aws cloudfront describe-function --name restrict-font-access \
+  --stage DEVELOPMENT --query 'ETag' --output text)
+aws cloudfront delete-function --name restrict-font-access --if-match "$ETAG"
+```
+
+#### 4. S3 バケット `berkeley-mono` 削除
+
+```bash
+aws s3 rm s3://berkeley-mono --recursive   # 21 オブジェクト
+aws s3api delete-bucket --bucket berkeley-mono
+```
+
+#### 5. 削除確認
+
+```bash
+aws cloudfront list-distributions \
+  --query 'DistributionList.Items[?Origins.Items[0].DomainName==`berkeley-mono.s3.ap-northeast-1.amazonaws.com`]'
+# []
+
+aws cloudfront list-functions \
+  --query 'FunctionList.Items[?Name==`restrict-font-access`]'
+# []
+
+aws s3 ls | grep berkeley
+# (出力なし)
+
+curl -sI https://codedchords.dev/fonts/BerkeleyMono-Regular.woff2 | head -1
+# HTTP/2 200  ← R2 経由で配信継続
+```
+
+ACM 証明書は今回 `*.cloudfront.net` デフォルトドメインのまま運用していた
+ため発行されておらず、追加削除なし。
 
 
 
-## 確定事項 / 未確定事項
 
-確定:
+## 確定事項
 
-- Worker は JavaScript (`src/index.js`)。ハンドオフ書で確定済。
-- パスプレフィックス: `/fonts/`
+- Worker は JavaScript (`src/index.js`)
+- パスプレフィックス: `/fonts/` (R2 ミス時はテーマ静的アセットへフォールスルー)
 - バインディング名: `FONTS` / `ASSETS`
-- 容易には壊れない置き換え: 公開 URL を持たない R2 binding 経由なので
-  Referer 制限・API キー・CORS が全て不要
+- 記事スコープ: R2 移行 + AWS 全停止を 1 本にまとめる
+- Referer 制限は不要 (protection-model Layer 1〜4 で要件充足)
 
-未確定:
+## 清書時の構成案 (草稿)
 
-- AWS リソース停止 (S3 + CloudFront + CloudFront Function) を
-  本記事に含めるか別記事にするか
-- 記事タイトル / description (最終調整は公開直前)
+1. 導入: blog-to-zola-aws-cleanup の続編位置付け / 残っていた最後の
+   AWS リソースが Berkeley Mono 配信
+2. 動機 (Why): 元の要件 (有償フォントの簡単 DL 防止) と、Cloudflare 集約に
+   寄せることで「Referer 偽装で守る」前提自体が不要になる話
+3. 保護モデル: protection-model の 4 レイヤー表 + 「公開 URL を消すのが本質」
+4. 実装: wrangler.toml + src/index.js のソース掲載 + CSS の URL 差し替え
+5. 落とし穴 (読者の参考になる順):
+   - テーマと `/fonts/` ネームスペース衝突 → ASSETS フォールスルー
+   - CI トークンの R2 権限不足 (テンプレ非収載)
+   - CloudFront Function 削除は DEVELOPMENT ETag
+6. AWS 撤去手順 (コマンド一式)
+7. 結び: コスト・運用負荷の差分
 
-<!-- 公開直前に: draft=false, description確定, cover.webp/ogp.webp 生成 -->
+## 公開時 TODO
+
+- [ ] draft = false
+- [ ] description 確定 (200 文字以内・「。」で完結)
+- [ ] cover.webp 生成 (article-cover skill)
+- [ ] ogp.webp 生成 (`npm run ogp`)
+- [ ] 草稿前メモ・確定事項・清書時の構成案・本 TODO の各ブロックを削除
+- [ ] textlint-disable / textlint-enable ラッパも削除
+- [ ] 記事冒頭の `{{ image(src="cover.webp", alt="Cover") }}` を追加 -->
+
+<!-- textlint-enable -->
 
 <!-- textlint-enable -->
