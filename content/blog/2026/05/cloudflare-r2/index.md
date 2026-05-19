@@ -12,6 +12,8 @@ social_media_card = "ogp.webp"
 local_image = "cover.webp"
 +++
 
+<!-- textlint-disable -->
+
 <!-- =========================================================
 作業ドラフト。記事執筆に必要な事実・コマンド・気付きをここに
 積み上げる。最終構成は作業完了後に整える。
@@ -161,3 +163,5 @@ protection-model の保護レイヤは:
 - 記事タイトル / description (最終調整は公開直前)
 
 <!-- 公開直前に: draft=false, description確定, cover.webp/ogp.webp 生成 -->
+
+<!-- textlint-enable -->
