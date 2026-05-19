@@ -84,3 +84,6 @@ public/pagefind/
 
 # OGP generation fonts (use local fonts)
 scripts/fonts/
+
+# Wrangler local state
+.wrangler/

@@ -1,5 +1,11 @@
 name = "coded-chords"
+main = "src/index.js"
 compatibility_date = "2026-02-17"
 
 [assets]
 directory = "./public"
+binding = "ASSETS"
+
+[[r2_buckets]]
+binding = "FONTS"
+bucket_name = "web-fonts"
