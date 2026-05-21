@@ -1,7 +1,8 @@
 +++
-title = "RICOH GR IV Monochrome に乗り換えました"
-description = """RICOH GR IIIx HDF を手放し、モノクロ写真しか撮れない RICOH GR IV Monochrome を購入しました。\
-高価でニッチな一台ですが、カラーフィルターを持たないセンサーの鮮明さに驚かされています。"""
+title = "RICOH GR IV Monochrome を買うべき理由と推奨設定"
+description = """モノクロ写真しか撮れず、価格は28万円前後。一見すると不便さにお金を払うだけのカメラです。\
+それでも RICOH GR IV Monochrome を選んだ理由と、マニュアル撮影でのISO感度の目安、\
+街歩き・カフェ・風景に分けた3つのユーザーモード設定をまとめます。"""
 date = 2026-05-21
 
 [taxonomies]
