@@ -127,4 +127,7 @@ skip_prefixes = [
     "https://github.com/",
     # botアクセスをブロック（ブラウザでは閲覧可能）
     "https://controlhub.top/",
+    # サーバー接続問題・一時エラー（ブラウザでは200）
+    "https://electrelic.com/",
+    "https://www.sixfivemedia.com/",
 ]
