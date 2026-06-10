@@ -133,4 +133,6 @@ skip_prefixes = [
     # サーバー接続問題・一時エラー（ブラウザでは200）
     "https://electrelic.com/",
     "https://www.sixfivemedia.com/",
+    # Acceptヘッダーなしで415を返す（ブラウザでは200）
+    "https://www.asciiart.eu/",
 ]
