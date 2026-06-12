@@ -364,6 +364,43 @@ pre,
   border: none;
 }
 
+/* 画像と本文の横並び（darktable モジュール解説など） */
+.module {
+  margin: 1.5rem 0;
+}
+
+.module-image {
+  max-width: 256px;
+}
+
+.module-image img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.module-body > p:first-child {
+  margin-top: 0;
+}
+
+/* PC横並び（画像を左、本文を右） */
+@media (min-width: 768px) {
+  .module {
+    display: flex;
+    gap: 1.25rem;
+    align-items: flex-start;
+  }
+
+  .module-image {
+    flex: 0 0 256px;
+  }
+
+  .module-body {
+    flex: 1;
+    min-width: 0;
+  }
+}
+
 /* Open Streat */
 .spot {
   margin: 2rem 0;
