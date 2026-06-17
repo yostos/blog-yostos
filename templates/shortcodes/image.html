@@ -17,6 +17,8 @@
       caption      - Caption text displayed below the image (optional)
                      When specified, wraps output in <figure>/<figcaption>
       lazy_loading - Enable lazy loading (default: true)
+      link_to_self - Wrap the image in a link to the image file itself,
+                     opening in a new tab (default: false)
     ============================================================ -#}
 
 {#- Strip leading "./" from src to normalize colocated paths
@@ -73,9 +75,14 @@
 {#- Caption: when specified, wrap in <figure>/<figcaption> -#}
 {%- set caption_text = caption | default(value="") -%}
 
+{#- When enabled, wrap the image in a link to the image file itself,
+    opening in a new tab so the full-size image can be viewed alone. -#}
+{%- set link_to_self = link_to_self | default(value=false) -%}
+
 {#- ---- Output ---- -#}
 {%- if caption_text -%}
 <figure>
+{%- if link_to_self %}<a href="{{ image_url }}" target="_blank" rel="noopener">{% endif -%}
 <img
   src="{{ image_url }}"
   alt="{{ alt_text }}"
@@ -83,9 +90,11 @@
   {%- if meta and meta.height %} height="{{ meta.height }}"{% endif %}
   {%- if lazy_loading %} loading="lazy"{% endif %}
 />
+{%- if link_to_self %}</a>{% endif %}
 <figcaption>{{ caption_text }}</figcaption>
 </figure>
 {%- else -%}
+{%- if link_to_self %}<a href="{{ image_url }}" target="_blank" rel="noopener">{% endif -%}
 <img
   src="{{ image_url }}"
   alt="{{ alt_text }}"
@@ -93,4 +102,5 @@
   {%- if meta and meta.height %} height="{{ meta.height }}"{% endif %}
   {%- if lazy_loading %} loading="lazy"{% endif %}
 />
+{%- if link_to_self %}</a>{% endif -%}
 {%- endif -%}
