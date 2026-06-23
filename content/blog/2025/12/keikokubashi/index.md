@@ -4,7 +4,7 @@ description = "養老渓谷の象徴的な2つの橋、青い渓谷橋と赤い�
 date = 2025-12-13
 
 [taxonomies]
-tags = ["Drone", "Photography"]
+tags = ["Video","Drone", "Chiba","River"]
 [extra]
 social_media_card = "ogp.webp"
 +++
@@ -22,7 +22,6 @@ social_media_card = "ogp.webp"
 橋から左手(東側)を眺めると、もう一本赤い橋「宝衛橋」が見下ろせます。
 橋の下には養老川が流れています。
 
-
 この地域は蛇行する養老川に作られた「川廻し」の地形です。
 「川廻し」とは、川の湾曲する部分に直線で結ぶ河川を作り、
 曲流していた旧流路に盛土をして新田を開発するという江戸時代後期から行なわれた手法で、
@@ -35,6 +34,3 @@ social_media_card = "ogp.webp"
 今では養老渓谷を象徴する橋となっています。
 
 {{ youtube(id="KZ613jRe8cI") }}
-
-
-

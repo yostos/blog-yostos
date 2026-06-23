@@ -4,7 +4,7 @@ description = """台風6号の接近前、夜明けの凪いだ海でDJI Avata2�
 房総半島南端、白浜の入り江に抱かれた遠浅の塩浦海水浴場をFPVドローンの空撮映像でご紹介します。"""
 date = 2026-06-03T07:29:40+09:00
 [taxonomies]
-tags =[ "Drone", "Photography" ]
+tags =["Video", "Drone", "Chiba","Sea" ]
 [extra]
 social_media_card = "ogp.webp"
 local_image = "cover.webp"

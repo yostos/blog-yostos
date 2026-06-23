@@ -3,7 +3,7 @@ title = "瀬又の鯉のぼり"
 description = "千葉県市原市の村田川に掲げられる「瀬又の鯉のぼり」をドローンで撮影してきました。約30年前に5尾から始まり、今では約120尾が川面にはためく地域の名物です。"
 date = 2026-04-15T08:54:32+09:00
 [taxonomies]
-tags = ["Drone", "Chiba"]
+tags = ["Video","Drone", "Chiba","River"]
 [extra]
 social_media_card = "ogp.webp"
 local_image = "cover.jpg"

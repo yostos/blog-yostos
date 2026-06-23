@@ -4,7 +4,7 @@ description = "富津岬からドローンで撮影した第一海堡の映像�
 date = 2025-08-11
 
 [taxonomies]
-tags = ["Drone", "Travel"]
+tags = ["Video","Drone", "Chiba","Sea"]
 [extra]
 social_media_card = "ogp.webp"
 +++

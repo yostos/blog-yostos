@@ -42,7 +42,7 @@ social_media_card = "ogp.webp"
   </footer>
 </blockquote>
 
-新しい[Claude Maxプラン](https://www.anthropic.com/news/max-plan)の案内です
+新しい[Claude Maxプラン](https://www.anthropic.com/pricing)の案内です
 。
 
 ## Claude Max プランの概要
