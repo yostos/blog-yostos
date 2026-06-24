@@ -13,7 +13,7 @@ economic power and intelligence capability.
 """
 date = 2026-02-22T09:03:07+09:00
 [taxonomies]
-tags = ["Current Affairs"]
+tags = ["Current Affairs", "China"]
 [extra]
 social_media_card = "ogp.webp"
 +++
