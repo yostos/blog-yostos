@@ -21,9 +21,17 @@ If issues are found, stop and fix them before continuing.
 - Delete the existing OGP image (the file specified by social_media_card in frontmatter)
 - Run `npm run ogp` to regenerate
 
-### 3. zola check
+### 3. Link Check
 
-Run `zola check` to verify no broken links or build errors.
+Check only the target article's links with `lychee` (do NOT run site-wide `zola check`, it scans ~350 articles and is too slow):
+
+```bash
+lychee -s https -s http content/blog/YYYY/MM/slug/index.md
+```
+
+- `-s https -s http` restricts checking to external URLs and skips Zola's internal `@/...` link syntax (lychee misinterprets these as local file paths and reports false-positive errors)
+- Verify internal `@/...` references separately by confirming the target file exists, e.g. `test -f content/blog/YYYY/MM/other-slug/index.md`
+- Fix any real errors before continuing
 
 ### 4. Stage & Commit
 

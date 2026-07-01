@@ -2,6 +2,7 @@
 title = "The Ultimate Showdown: A Deep Dive into Modern Messaging Apps"
 description = "市川強盗傷害事件で犯人たちがSignalを使っていたということで、「SIgnalは危険アプリ」とか言い出すバカがいそうなのでまとめてみました。"
 date = 2024-10-23
+updated = 2026-07-01
 
 [taxonomies]
 tags = ["Tech","Messaging Apps" ,"Security"]
@@ -56,9 +57,9 @@ iPhoneユーザーであれば **iMessage** は無難でしょう。完全にE2E
 | 追加機能               | スタンプ/ゲーム/決済/音声・ビデオ通話[PP] | スタンプ/音声・ビデオ通話 | 投票/音声・ビデオ通話 | ステータス/音声・ビデオ通話/決済 | Apple統合/音声・ビデオ通話 | Bot/チャンネル/音声・ビデオ通話 |
 | オープンソース         | 一部のみ[暗号化WP]                        | 完全対応                  | 一部のみ              | なし                             | なし                       | クライアントのみ                |
 
-- ※1: LINEのE2E暗号化（Letter Sealing）対応範囲(doc.1)
-  - 対応: テキスト・位置情報（1対1と50人以下グループ）、1対1音声・ビデオ通話
-  - 非対応: 画像、動画、ファイル添付、50人以上グループ、グループ通話、LINEミーティング
+- ※1: LINEのE2E暗号化（Letter Sealing）対応範囲(doc.1) <ins>（2026年7月追記: 2024年後半にLetter Sealingの保護対象が拡大されました。出典: [LINE暗号化状況レポート（2025年）](https://www.lycorp.co.jp/ja/privacy-security/security/transparency/encryption-report/2025/)）</ins>
+  - 対応: テキスト・位置情報（1対1と50人以下グループ）、1対1音声・ビデオ通話<ins>、画像・動画・音声メッセージ・ファイル添付（2024年後半に対応。1対1と50人以下グループ）</ins>
+  - 非対応: <del>画像、動画、ファイル添付、</del>50人以上グループ、グループ通話、LINEミーティング<ins>、アルバム、ノート</ins>
 - ※2: LINEのメタデータ収集内容(doc.2)
   - アカウント情報（電話番号、メールアドレス）
   - デバイス情報（使用OS、言語設定）
