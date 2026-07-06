@@ -19,4 +19,6 @@ local_image = "cover.webp"
 
 アニメ「スノウボールアース」の主題歌にも使われていた、tuki.の「零 -zero-」をカバーしてみました。
 
+印象的なリフはアンプを使わないDIっぽい音だったので、Archetype - Cony Wong Xのコンソールタイプのアンプを使用しています。
+
 [再生](https://e.pcloud.link/publink/show?code=XZg1ccZOL7p5uANzBk2Ot8sQqWFCfeV57JV)
