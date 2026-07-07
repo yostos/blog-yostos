@@ -129,6 +129,18 @@ AIによるアクセスの重要性が増していることを踏まえて見直
        実効性が未検証 (c) v0.2.0ドラフト段階でエコシステムの普及状況も未検証
        参考: https://github.com/cloudflare/agent-skills-discovery-rfc , https://agentskills.io/
 
+   - 指摘11: 「Web Bot Auth未対応。/.well-known/http-message-signatures-directory に
+     JWKSを公開し、自サイトがbot/agentとしてリクエストを送信する際に署名で身元を証明できるように
+     すべき」
+     - 判断: 対応不要
+     - 理由: このディレクトリを公開するのは送信側のbot/agent運営者(Google、OpenAIなど
+       verified botsとして登録する大規模クローラー運営者)であり、受信側の一般サイトが
+       用意するものではない。このブログは他サイトへ自動でリクエストを送るbot/agentを
+       運用していないため、証明すべき送信者アイデンティティ自体が存在せず、指摘2・4〜8と
+       同根(実体がないので広告先がない)
+       参考: https://developers.cloudflare.com/bots/reference/bot-verification/web-bot-auth/ ,
+       https://datatracker.ietf.org/wg/webbotauth/about/
+
 ## 2026-02-20時点の初期設定との比較(記事執筆時に参照)
 
 - 2026-02-20公開記事「Cloudflare無料プランだけで個人サイトのセキュリティが完結した話」
