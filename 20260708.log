@@ -1,0 +1,151 @@
+# 2026-07-08 Cloudflare AI bot access 見直しログ
+
+このブログ(codedchords.dev)のCloudflare「Manage AI bot access」「AI Crawl Control」まわりの設定を、
+AIによるアクセスの重要性が増していることを踏まえて見直した記録。
+記事化のための作業ログ。
+
+## 背景・方針
+
+- コンテンツライセンスはCC BY-NC-ND 4.0(非営利・改変禁止)
+- 方針: AI学習(training)への転用は拒否する一方、AI検索・AIアシスタントからの参照/引用は歓迎する
+  (「学習は拒否、検索/AI回答エンジンからの参照は歓迎」)
+
+## 対応した設定項目
+
+1. **Manage AI bot access > Block AI training bots**
+   - 現状維持: 「Block on all pages」(全ページで学習用クローラーをブロック)
+   - 理由: CC BY-NC-ND(非営利)ライセンスの意図と一致するため
+
+2. **Manage your robots.txt > Content Signals Policy**
+   - 標準ポリシーのみ有効化(`search=yes, ai-train=no`)
+   - `ai-input`(AI回答へのリアルタイム参照)は明示せず中立のまま
+   - 参考: https://blog.cloudflare.com/content-signals-policy/
+
+3. **AI Crawl Control > Overview > Managed robots.txt トグル**
+   - OFF→ONに変更(上記Content Signals Policyの実装箇所)
+
+4. **AI Crawl Control > Security(Crawlers一覧)**
+   - 既存設定を確認: AI Crawler(学習系: GPTBot, ClaudeBot, Bytespider, Amazonbot, TikTok Spider,
+     Meta-ExternalAgent)はBlock ON、AI Search / AI Assistant(Applebot, PerplexityBot,
+     ChatGPT-User)はBlock OFFで一致しており変更不要と判断
+   - Baidu(Search Engine Crawler)がBlock ONだったが、これは中国のクローラーを避けたいという
+     ユーザーの意向による既存の意図的設定と確認、変更なし
+
+5. **AI Crawl Control > Robots.txt violations**
+   - ClaudeBotがDisallow: /に違反して sitemap.xml 等にリクエストしている実績を確認(監視用途、設定変更なし)
+
+6. **Bot traffic > Block AI bots [レガシー、2026-09-15廃止予定]**
+   - "Mixed purpose crawlers"(Googlebot, Applebot, BingBotなど検索とAI学習を同一パスで兼ねるボット)の
+     扱いに関する経過措置設定
+   - Cloudflareの説明: 学習ブロックを選ぶ以上、技術的に検索/学習を分離できないため最も制限の強い
+     ルール(ブロック)が適用されるのがデフォルト
+     参考: https://blog.cloudflare.com/content-independence-day-ai-options/
+   - 「Mixed purpose crawlers will continue to be allowed」を選択
+     (Googlebot/Applebot/BingBotの検索・AI検索経由の流入を維持するため)
+
+7. **Configure AI bot policies(新UI、レガシーの後継)**
+   - Search: Allow(Recommended) — 維持
+   - Agent: Allow(Recommended) — 維持
+   - Training: Recommended値「Block on pages with ads」から「Block on all pages」に変更
+     - 理由: このブログはディスプレイ広告を出していないため、「Block on pages with ads」は
+       実質ノーブロックと同義になり、CC BY-NC-NDの意図と食い違うため
+
+8. **isitagentready.com(Cloudflare公式のAgent Readinessスキャナ)でのスキャン**
+   - 参考: https://blog.cloudflare.com/agent-readiness/
+   - 指摘1: 「ホームページにLink response header (RFC 8288)がない。api-catalog/service-docを
+     指すLinkヘッダーを追加すべき」という指摘
+     - 判断: このブログはAPIを持たないため api-catalog/service-doc は不適合
+     - 代替: `rel="license"` で `/license/`(CC BY-NC-ND明記ページ)、`rel="alternate"` で
+       `/atom.xml`(フィード)を指すLinkヘッダーを追加する方向に変更
+     - 実装: `static/_headers` に以下を追加
+       ```
+       /
+         Link: </license/>; rel="license", </atom.xml>; rel="alternate"; type="application/atom+xml"
+       ```
+
+   - 指摘2: 「DNS for AI Discovery (DNS-AID) の well-known entrypoint records
+     (`_index._agents` / `_a2a._agents` などのSVCB/HTTPSレコード + DNSSEC署名)が見つからない」
+     - 判断: 対応不要
+     - 理由: DNS-AIDは実際にAIエージェント(チャットボット/MCPサーバー/A2Aエンドポイント等)を
+       運用する組織が、他のエージェントから発見・接続されるために公開するDNSの仕組み。
+       このブログはそうしたエージェントサービスを運用していないため、指し示す実体がなく該当しない。
+       またIETFドラフト段階(RFC未確定、Linux Foundationが2026年発表)の新しい規格でもある
+       参考: https://www.ietf.org/archive/id/draft-mozleywilliams-dnsop-dnsaid-01.html ,
+       https://dns-aid.org/
+
+   - 指摘3: 「Markdown for Agents未対応。Accept: text/markdown リクエストにHTMLでなくMarkdownを
+     返せるようにすべき」
+     - 該当機能はAI Crawl Control Overviewで確認済みのPro以上限定機能(Freeプランでロック中)
+     - 選択肢: (a) Cloudflare Proプランへアップグレード(月$20〜25、
+       https://www.cloudflare.com/plans/pro/ ) (b) 自前でWorker(src/index.js)に
+       Accept: text/markdown 対応のcontent negotiationを実装
+     - 判断: 対応見送り。個人ブログの一機能としてはProプランのコスト($240〜300/年)に見合わない
+
+   - 指摘4: 「API Catalog (RFC 9727) が見つからない。/.well-known/api-catalog で
+     application/linkset+json を返すべき」
+     - 判断: 対応不要
+     - 理由: 稼働しているAPIが存在しないため、カタログ化する対象そのものがない
+       (指摘1のapi-catalog Linkヘッダーと同根の指摘)
+
+   - 指摘5: 「OAuth/OIDC discovery metadata (/.well-known/openid-configuration や
+     /.well-known/oauth-authorization-server) が見つからない」
+     - 判断: 対応不要
+     - 理由: 認証保護されたAPIや会員機能を持たないため、エージェントに認証させる対象が存在しない
+
+   - 指摘6: 「OAuth Protected Resource Metadata (/.well-known/oauth-protected-resource)
+     が見つからない」
+     - 判断: 対応不要
+     - 理由: 指摘5と同根。保護対象のAPIリソース自体が存在しない
+
+   - 指摘7: 「auth.md(エージェント登録用メタデータ)が見つからない」
+     - 判断: 対応不要
+     - 理由: auth.mdはWorkOS提唱のエージェント登録プロトコルで、OAuth Protected Resource
+       Metadataを前提とする(指摘5・6と同根)。認証が必要なAPI/サービスを持たないため該当しない
+       参考: https://workos.com/auth-md
+
+   - 指摘8: 「MCP Server Card (SEP-1649) が見つからない。/.well-known/mcp/server-card.json を
+     公開すべき」
+     - 判断: 対応不要
+     - 理由: MCPサーバー(ツール/リソースをエージェントに提供するサービス)を運用していないため
+       広告すべきエンドポイントが存在しない
+
+   - 指摘9: 「WebMCP (navigator.modelContext.provideContext()) 未対応。
+     ブラウザ内蔵AIエージェントにサイトのツール(検索など)を公開すべき」
+     - 判断: 今回は見送り(時期尚早)
+     - 理由: WebMCPはEarly Preview Program限定の実験段階の規格で、一般ブラウザでは未対応。
+       このブログの操作対象もpagefind検索程度で薄い。標準化が進んだ段階で再検討する
+       参考: https://developer.chrome.com/blog/webmcp-epp
+
+   - 指摘10: 「Agent Skills discovery index (/.well-known/agent-skills/index.json,
+     Agent Skills Discovery RFC v0.2.0) が見つからない」
+     - 判断: 今回は見送り(時期尚早)
+     - 仕様確認: $schema + skills配列(name/type/description/url/sha256digest)を
+       index.jsonに置き、各skillはSKILL.md(YAMLフロントマター+Markdown)として提供する形式。
+       isitagentready.com自身がこの仕組みでSKILL.mdを配信している
+     - 想定用途はコンテンツサイト向けなら「編集アシスタント業務(校正/カテゴリ分類/SEO/alt-text生成)」
+       が主眼で、API/サービス向けなら「認証・デプロイ手順」等
+     - 理由: (a) 編集アシスタント業務は既に自分のClaude Code環境で完結しており公開動機がない
+       (b) 「CC BY-NC-ND引用作法をエージェントに教える」用途は仕様の想定から外れた応用で
+       実効性が未検証 (c) v0.2.0ドラフト段階でエコシステムの普及状況も未検証
+       参考: https://github.com/cloudflare/agent-skills-discovery-rfc , https://agentskills.io/
+
+## 2026-02-20時点の初期設定との比較(記事執筆時に参照)
+
+- 2026-02-20公開記事「Cloudflare無料プランだけで個人サイトのセキュリティが完結した話」
+  (content/blog/2026/02/cloudflare-benefits) を確認
+- 当時はContent Signals Policyで `search=yes, ai-input=yes, ai-train=no` を宣言し、
+  「検索・AI回答引用はOK、学習はNG」という方針を掲げていた
+- 今回のAI Crawl Controlでの一連の設定(Search/Agent: Allow, Training: Block on all pages)は、
+  2月に掲げた方針を実効レイヤー(実際にボットを許可/遮断する層)で改めて確認・再設定したもので、
+  方針そのものに変更はない。Managed robots.txtトグルがOFFになっていた経緯は不明なため、
+  原因については言及しない。標準ポリシー(search=yes, ai-train=no)を再有効化したことのみ記録する
+- AI Labyrinth(ハニーポット機能、Beta)は確認したところ引き続きON。2月から変更なし
+- 一方「Block AI bots [Deprecating on September 15]」は2月時点にはなかった新しい変化。
+  Googlebot/Applebot/BingBotのような検索とAI学習を兼ねる"mixed-purpose crawler"を
+  2026-09-15以降デフォルトでブロック対象に含める、というCloudflare側の仕様変更で、
+  これに対して「Mixed purpose crawlers will continue to be allowed」を選択した
+
+## 未対応・保留
+
+- WebMCP: 標準化・ブラウザ対応が進んだら、pagefind検索をツールとして公開することを再検討
+- Agent Skills discovery index: 規格の普及状況を見て再検討
