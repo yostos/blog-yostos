@@ -1,0 +1,48 @@
++++
+title = "松田聖子「パイナップル・アイランド」をカバーしてみた"
+description = """
+中森明菜さんの「復活」をきっかけに、当時ライバルと言われた松田聖子さんの隠れた名曲「パイナップル・アイランド」を耳コピーでカバーしてみました。
+"""
+date = 2026-07-14T05:47:47+09:00
+[taxonomies]
+tags =[ "Music","Guitar" ]
+[extra]
+social_media_card = "ogp.webp"
+local_image = "cover.webp"
++++
+
+<!-- textlint-disable -->
+
+{{ image(src="cover.webp",alt="Cover") }}
+
+<!-- textlint-enable -->
+
+最近、中森明菜さんがテレビ出演で「復活」と話題になっているのを見て、彼女がライバルとされていた1980年代初頭の松田聖子さんを思い出しました。ちょうど夏らしい曲を探していたこともあり、彼女の古いアルバム『Pineapple』から「パイナップル・アイランド」をカバーしてみました。
+
+<iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay; encrypted-media" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/soundcloud%253Atracks%253A2359590818&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/yostos" title="Yostos" target="_blank" style="color: #cccccc; text-decoration: none;">Yostos</a> · <a href="https://soundcloud.com/yostos/pineapple-island" title="Pineapple Island" target="_blank" style="color: #cccccc; text-decoration: none;">Pineapple Island</a></div>
+
+## アイドルからアーチストへ
+
+1982年5月21日発売の5thオリジナルアルバム『Pineapple』に収録され、作詞は松本隆、作曲は原田真二、編曲は大村雅朗です。
+
+原田真二氏と言えば1977年にヒットした「キャンディ」をよく覚えていますが、彼は1977年10月から12月にかけて3か月連続シングルでデビューし、3曲が同時にオリコンベスト15入りするという日本音楽史上初の快挙をなしたアーチストです。
+歌謡曲やフォーク的な私小説的シンガーソングライターではない、洋楽的なポップ感覚とコード進行の洗練さに驚いたものです。
+
+彼のヒット曲「キャンディ」も作詞が松本隆氏です。松本氏と言えば作詞家ですが、大半の松田聖子の曲の作詞を担当し彼女のアーチスト像を設計した中心人物の一人と言われています。
+実際にこの『Pineapple』では彼のネットワークではっぴいえんど時代の盟友である細野晴臣や大瀧詠一、チューリップの財津和夫、そして松任谷由実（呉田軽穂名義）など
+ニューミュージック系のアーチストが松田聖子への曲提供を行なっています。原田真二氏の参加もその一貫でしょう。
+
+松田聖子が単なるアイドルから「アーチスト」へと完全に転換したアルバムです。
+
+## 「パイナップル・アイランド」について
+
+前作の『風立ちぬ』に収録されていた「いちご畑でつかめて」同様、かなり実験的なトラックです。
+
+Aメロでは `I - IIIm - IV - V7`という標準的な循環コードですが、ルート音が常に上昇しています。
+サビでは `I/III - IV - #IVdim - V7`となるルート音が `III-IV-#IV-V`と半音上昇するパターンが繰り返され、`V7-#V7-bVII-I`と解決しています。
+
+曲と通じて、常にベース音が上昇するパターンで作られており、それが不思議な浮遊感に繋がっています。ベースやギターのリフもこの動きを強調するようなフレーズになっています。
+
+松本隆氏の歌詞も、「海辺->船上->無人島->海の底」とシーンが次々と展開し、曲の浮遊感と非常にマッチしています。
+
+譜面が見当たらなかったので、コード譜を元に全て耳コピーで採譜しました。演奏はYAMAHA SG-175でオーバードライブ2トラック、クリーン2トラックを録り、バッキングは打ち込み、ボーカルはSynthesizer Vです。
