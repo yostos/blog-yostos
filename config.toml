@@ -68,7 +68,6 @@ menu = [
 socials = [
     { name = "github", url = "https://github.com/yostos", icon = "github" },
     { name = "bluesky", url = "https://bsky.app/profile/codedchords.dev", icon = "bluesky" },
-    { name = "linkedin", url = "https://www.linkedin.com/in/toshiyukiyoshida/", icon = "linkedin" },
     { name = "nostr", url = "https://nostter.app/nprofile1qqsz8c9hcxxw2rydxkg8r0x32d4ql8h6mdkgrdf4982jfqclay7cakgvxxml9", icon = "nostr" },
 ]
 
@@ -128,6 +127,8 @@ skip_prefixes = [
     # レート制限による偽陽性（429 Too Many Requests）
     "https://youtu.be/",
     "https://www.youtube.com/",
+    "https://www.uaudio.com/",
+    "https://dmprovisuals.com/",
     # botアクセスをブロック（ブラウザでは閲覧可能）
     "https://controlhub.top/",
     # サーバー接続問題・一時エラー（ブラウザでは200）

@@ -20,7 +20,7 @@ tags = ["Tech", "Generative AI", "Note-taking", "Productivity"]
 Claude Codeを頻繁に活用することでAnthropicへの支払いコストが増加していますが、一度使い始めるとコーディング作業では手放せなくなりつつあります。
 
 そのClaude Codeは、MCP Clientになれることは知っていました。
-しかし、[公式ドキュメント](https://docs.anthropic.com/en/docs/agents-and-tools/claude-code/)を読んでいてMCP Serverにもなれるというチュートリアルを発見しました。
+しかし、[公式ドキュメント](https://code.claude.com/docs/en/mcp)を読んでいてMCP Serverにもなれるというチュートリアルを発見しました。
 
 次のコマンドでMCP Serverとして起動できます。
 

@@ -9,9 +9,7 @@ tags = ["Current Affairs", "Security"]
 social_media_card = "ogp.webp"
 +++
 
-2025年2月8日の読売新聞で「
-[万博チケット購入で『顔画像や指紋など第三者に提供も』、個人情報規約にSNS上『ヤバすぎる』…協会が修正検討](https://www.yomiuri.co.jp/expo2025/20250208-OYT1T50044/)
-」との記事が配信されて結構騒ぎになっています。
+2025年2月8日の読売新聞で「万博チケット購入で『顔画像や指紋など第三者に提供も』、個人情報規約にSNS上『ヤバすぎる』…協会が修正検討」との記事が配信されて結構騒ぎになっています。
 
 もともとはSNSでちょっと炎上していて、2025年2月5日の
 [衆議院予算委員会](https://www.shugiintv.go.jp/jp/index.php?ex=VL&media_type=&deli_id=55503&time=28896.3)で
