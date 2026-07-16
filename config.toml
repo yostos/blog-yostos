@@ -136,4 +136,7 @@ skip_prefixes = [
     "https://www.sixfivemedia.com/",
     # Acceptヘッダーなしで415を返す（ブラウザでは200）
     "https://www.asciiart.eu/",
+    # 商品削除・bot判定で404/405になりやすい（アフィリエイトリンク）
+    "https://amzn.to/",
+    "https://www.amazon.co.jp/",
 ]
