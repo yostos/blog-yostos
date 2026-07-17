@@ -92,9 +92,13 @@ Distortion+は、かなり音量が下がります。
 
 手元にはOrange Squeezerのクローンである[Henretta Engineering Orange Whip Compressor](/blog/2026/06/guitar-effectors/)があったので、同じ順番(Orange Whip Compressor→Distortion+-> クリーンにセッティングしたSimplifier MK-II)で試してみました。
 
-結果は本当に『Saudade』の頃のあの音に近いと感じました。カバー演奏は以下のリンクから聞いてください。
+結果は本当に『Saudade』の頃のあの音に近いと感じました。カバー演奏「A Fair Wind」は以下でお聞きください。
 
-- 「[A Fair Wind](https://e.pcloud.link/publink/show?code=XZhPuoZGbUCoPxJXIY5FWhr8rzGKB3HaBDX)」
+<!-- textlint-disable -->
+
+{{ youtube(id="TJGVagOrk-Q") }}
+
+<!-- textlint-enable -->
 
 演奏はYAMAHA SG-175で前半はリアピックアップ、後半はフロントピックアップです。
 
