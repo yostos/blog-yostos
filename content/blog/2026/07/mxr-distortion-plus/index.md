@@ -96,7 +96,7 @@ Distortion+は、かなり音量が下がります。
 
 <!-- textlint-disable -->
 
-{{ youtube(id="TJGVagOrk-Q") }}
+{{ youtube(id="EpUqd7L04ic") }}
 
 <!-- textlint-enable -->
 
