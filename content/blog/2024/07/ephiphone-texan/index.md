@@ -55,7 +55,7 @@ L.R.Baggs VTCピックアップ・システムもマウントされているの�
 
 大事にしてします。
 
-<SoundCloudEmbed url="https://soundcloud.com/yostos/blackbird?si=62bbd8963c9a4807a1699a8bb54397e6&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing" />
+{{ youtube(id="4Cw-Am4haNQ") }}
 
 ## 2024-07-31追記
 
