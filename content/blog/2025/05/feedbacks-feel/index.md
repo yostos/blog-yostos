@@ -18,12 +18,9 @@ social_media_card = "ogp.webp"
 <!-- textlint-enable -->
 
 「なんあエンディングでディストーションの音が埋もれてるなぁ」と思ったら、
-ポラリティ反転を放置していました。修正したら、原曲に近づきすぎてSoundCloudで
-Rejectされるようなってしまいました。
+ポラリティ反転を放置していました。
 
-仕方なく、ここで公開です。
-
-- [Feedback's Feek](https://e.pcloud.link/publink/show?code=XZAfvqZQaPSyTaYnLmRjRmWj8L9ABbXVqr7)
+{{ youtube(id="oS81Il49fLg") }}
 
 クリーンとディストーションの効いたギターが交互に絡み合う曲です。
 
