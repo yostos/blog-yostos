@@ -20,7 +20,7 @@ social_media_card = "ogp.webp"
 「なんあエンディングでディストーションの音が埋もれてるなぁ」と思ったら、
 ポラリティ反転を放置していました。
 
-{{ youtube(id="oS81Il49fLg") }}
+{{ youtube(id="yuGNJLlGflg") }}
 
 クリーンとディストーションの効いたギターが交互に絡み合う曲です。
 
