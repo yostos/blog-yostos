@@ -26,10 +26,11 @@ If issues are found, stop and fix them before continuing.
 Check only the target article's links with `lychee` (do NOT run site-wide `zola check`, it scans ~350 articles and is too slow):
 
 ```bash
-lychee -s https -s http content/blog/YYYY/MM/slug/index.md
+lychee -s https -s http -u "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36" content/blog/YYYY/MM/slug/index.md
 ```
 
 - `-s https -s http` restricts checking to external URLs and skips Zola's internal `@/...` link syntax (lychee misinterprets these as local file paths and reports false-positive errors)
+- `-u` sends a browser User-Agent. The default (`lychee/x.y.z`) is rejected as a bot by several sites, producing 403 false positives
 - Verify internal `@/...` references separately by confirming the target file exists, e.g. `test -f content/blog/YYYY/MM/other-slug/index.md`
 - Fix any real errors before continuing
 
