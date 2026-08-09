@@ -81,7 +81,7 @@ REVSTARは2022年のモデル変更で鳴りの良さを計算したチャンバ
 
 ## YAMAHA REVSTARを弾いてみた
 
-<iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/soundcloud%253Atracks%253A2134293801&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/yostos" title="Yostos" target="_blank" style="color: #cccccc; text-decoration: none;">Yostos</a> · <a href="https://soundcloud.com/yostos/yamaha_revstar-rsp20-demo" title="YAMAHA REVSTAR RSP20 Demo" target="_blank" style="color: #cccccc; text-decoration: none;">YAMAHA REVSTAR RSP20 Demo</a></div>
+{{ youtube(id="01R8SaT6ctE" )}}
 
 とても鳴りがいいなと思いました。ボディ構成やチャンバー加工、カーボンファイン
 バーのネックとボディへの埋設もあると思いますが
