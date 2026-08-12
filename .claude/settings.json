@@ -27,6 +27,11 @@
           {
             "type": "command",
             "command": "jq -r '.tool_input.command' | grep -qP '^git add (?!\\.)' && echo '{\"decision\":\"block\",\"reason\":\"git add は常に git add . を使ってください（個別ファイル指定は禁止）\"}' || true"
+          },
+          {
+            "type": "command",
+            "command": "\"$CLAUDE_PROJECT_DIR/.claude/hooks/check-commit-prefix.sh\"",
+            "timeout": 10
           }
         ]
       },
