@@ -37,7 +37,20 @@ Check the article body:
 - No bold text (`**text**`) as standalone lines (heading substitute)
 - No excessive section splitting (headings on 1-2 paragraph content)
 
-## 4. Asset Verification
+## 4. References
+
+Check the `## References` section and the article body:
+
+- Do NOT link to news media outlets (newspapers, TV stations, wire services, news sites,
+  news aggregators such as Yahoo!ニュース)
+- References must cite primary sources: government agencies, municipalities, companies,
+  official statistics, and academic sources
+- If a news media link is found, report it and propose removal or replacement with the
+  primary source
+- Listing a news media outlet in References requires the user's explicit approval.
+  Never add one on your own judgment; ask first
+
+## 5. Asset Verification
 
 - OGP image file (social_media_card) exists
 - Cover image file (local_image) exists if specified

@@ -99,6 +99,10 @@ When the user requests a references section, place it as `## References` using t
 {% end %}
 ```
 
+Do NOT list news media outlets (newspapers, TV, wire services, news sites) in References.
+Cite primary sources instead: government agencies, municipalities, companies, and
+official statistics. Facts sourced from news reports may still appear in the body text.
+
 ## Article Frontmatter Format
 
 ```toml
