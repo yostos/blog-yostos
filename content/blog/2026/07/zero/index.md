@@ -22,3 +22,5 @@ local_image = "cover.webp"
 印象的なリフはアンプを使わないDIっぽい音だったので、Archetype - Cony Wong Xのコンソールタイプのアンプを使用しています。
 
 [再生](https://e.pcloud.link/publink/show?code=XZg1ccZOL7p5uANzBk2Ot8sQqWFCfeV57JV)
+
+{{ youtube(id="B-63Xmp4p0s") }}
