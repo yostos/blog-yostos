@@ -15,6 +15,10 @@ social_media_card = "ogp.webp"
 
 ひぐらしを聞くと思い出すこの曲を演奏してみました。どこか懐かしい一曲です。 良かったら聴いてみてください。
 
-- [伊豆甘夏納豆売り](https://e.pcloud.link/publink/show?code=XZ3v3EZtoVPXeQfO886j71IchmFJ5ExTn0X)
+<!-- textlint-disable -->
+
+{{ youtube(id="HrRzPwkYZBs") }}
+
+<!-- textlint-enable -->
 
 まだしばらく暑い日が続きそうですが、どうぞお体ご自愛ください。

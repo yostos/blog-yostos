@@ -15,7 +15,7 @@ social_media_card = "ogp.webp"
 
 <!-- textlint-enable -->
 
-Beer O'clock, the renowned craft beer spot in Chiba, recently relocated. Curious about what became of its former location, I decided to check it out and discovered that it’s still operating as the [Beer O'clock Bottle Shop](https://www.instagram.com/beer_oclock_bottle_shop/).
+Beer O'clock, the renowned craft beer spot in Chiba, recently relocated. Curious about what became of its former location, I decided to check it out and discovered that it’s still operating as the Beer O'clock Bottle Shop.
 
 While chatting with the staff, I noticed a tonic water called "Our Tonic" on the menu. Intrigued, I asked for more details and learned that it's produced by a company called CAN-PANY, which also makes an herbal liqueur called MITASOYA[^mitosaya] using herbs from Ōtaki Town. Apparently, they're based in Kiyosumi Shirakawa...
 
@@ -32,7 +32,7 @@ On the way home, I ended up ordering rum from the [Bōsō Ōikura Distillery](ht
 ---
 
 千葉で有名なクラフトビールの店Beer O'clockが移転したので跡地がどうなっているのかなと見に行ってみたら
-[Beer O'clock Botton Shop](https://www.instagram.com/beer_oclock_bottle_shop/)としてまだ営業していました。
+Beer O'clock Botton Shopとしてまだ営業していました。
 
 お店の方はお話していて、"Our Tonic"というトニックウォーターがメニューに有ったので、詳しく話を伺うと「MITASOYA[^mitosaya]という大多喜町の薬草を使ったリキュールをやっているCAN-PANYという会社がやっていて清住白河に」。
 

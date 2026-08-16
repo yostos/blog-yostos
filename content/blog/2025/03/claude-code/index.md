@@ -9,7 +9,7 @@ tags = ["Tech", "Generative AI","Claude Code"]
 social_media_card = "ogp.webp"
 +++
 
-[Claude Code]: https://docs.anthropic.com/en/docs/agents-and-tools/claude-code/overview
+[Claude Code]: https://code.claude.com/docs
 
 [Claude Code][Claude Code]を試してみました。
 

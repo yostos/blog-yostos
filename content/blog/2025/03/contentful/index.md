@@ -11,9 +11,11 @@ social_media_card = "ogp.webp"
 
 ## Contentfulとは
 
-[Contentful](https://www.contentful.com/)は、ヘッドレスCMSのひとつで、コンテンツ管理とAPI配信に特化したサー
+Contentfulは、ヘッドレスCMSのひとつで、コンテンツ管理とAPI配信に特化したサー
 ビスです。ウェブサイトやアプリ向けのコンテンツを一元管理し、RESTful APIや
 GraphQL APIを通じて、あらゆるデバイスやプラットフォームに配信できます。
+
+https://www.contentful.com/
 
 構造化されたコンテンツモデルを定義でき、マークダウンやリッチテキストエディタを備
 え、多言語対応も可能です。開発者はフロントエンドを自由に構築でき、コンテンツ
