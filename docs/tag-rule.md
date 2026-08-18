@@ -33,6 +33,7 @@
 - **ゲーム**: Splatoon（必ずGameタグと併用）
 - **企業**: IBM
 - **カテゴリー**: Old Media
+- **人物**: Takaichi（高市早苗を主題とする記事。必ずCurrent Affairsタグと併用）
 - **地域**: Chiba
 - **製品カテゴリー**: Drone
 
@@ -166,6 +167,9 @@
 #### 固有名詞（組織）
 - **IBM** (3) ✓ 使用可
 
+#### 固有名詞（人物）
+- **Takaichi** (5) - 高市早苗 ✓ 使用可
+
 ### 7. Location (地域)
 
 - **Chiba** (2) - 千葉県 ✓ 使用可
@@ -271,6 +275,7 @@ News & Culture
 │   └── Old Media ✓
 ├── Books
 ├── Korea
+├── Takaichi ✓
 └── IBM ✓
 
 Productivity
@@ -286,8 +291,9 @@ Productivity
 - Movies → 100% Entertainmentタグと併用（新ルール）
 
 ### 2. 固有名詞タグの制限
-- 使用可能: Claude Code, Splatoon, IBM, Old Media, Chiba, Drone, Photo Friday
+- 使用可能: Claude Code, Splatoon, IBM, Old Media, Chiba, Drone, Photo Friday, Takaichi
 - 使用禁止: ギターブランド/モデル名、アーティスト名、プロトコル名、個別組織名（NHK等）
+- 人物名タグはTakaichiのみ例外的に使用可。他の政治家・著名人には付けない
 
 ### 3. 詳細度のレベル
 - 一般カテゴリー（Tech, Music）

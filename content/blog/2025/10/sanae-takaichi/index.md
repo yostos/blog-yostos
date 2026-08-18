@@ -4,7 +4,7 @@ description = "自民党立党70年にして初の女性総裁となった高市
 date = 2025-10-05
 
 [taxonomies]
-tags = ["Current Affairs"]
+tags = ["Current Affairs", "Takaichi"]
 [extra]
 social_media_card = "ogp.webp"
 +++
