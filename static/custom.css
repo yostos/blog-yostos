@@ -106,6 +106,11 @@
   unicode-range: U+2800-28FF;
 }
 
+/* 点字はトップページのバナー見出しだけに出るため、ここにのみ適用 */
+#home-banner-header {
+  font-family: "SixBraille", var(--sans-serif-font);
+}
+
 /* ヘッダー・ナビゲーション */
 header {
   font-family: var(--sans-serif-font);
@@ -113,7 +118,7 @@ header {
 
 /* サイトタイトル */
 .home-title {
-  font-family: "SixBraille", "BerkeleyMono", sans-serif;
+  font-family: "BerkeleyMono", sans-serif;
   font-weight: 900;
 }
 
@@ -126,7 +131,7 @@ header {
 
 :root {
   --sans-serif-font:
-    "SixBraille", "BerkeleyMono", "IBM Plex Sans JP", "Helvetica Neue", Arial,
+    "BerkeleyMono", "IBM Plex Sans JP", "Helvetica Neue", Arial,
     "Hiragino Kaku Gothic ProN", "Hiragino Sans", "Noto Sans JP", sans-serif;
   --serif-font: var(--sans-serif-font);
   --code-font: "BerkeleyMono", "Cascadia Code", monospace;
