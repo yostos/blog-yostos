@@ -1,40 +1,18 @@
-/* /* KADOMA フォント - 日本語用 */ */
-/* @font-face { */
-/*   font-family: "KADOMA"; */
-/*   src: url("/fonts/KADOMA-R-fixed.woff2") */
-/*     format("woff2"); */
-/*   font-display: swap; */
-/*   font-weight: 400; */
-/*   font-style: normal; */
-/*   unicode-range: U+3000-9FFF, U+FF00-FFEF; */
-/* } */
-
-/* IBM Ples Sans JP */
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+JP&display=swap');
-
-/* /* Monaspace Neon フォント */
-*/
-/* @font-face { */
-/*   font-family: "Monaspace Neon"; */
-/*   src: url("https://cdn.jsdelivr.net/npm/monaspace-font@1.0.0/fonts/variable/MonaspaceNeon[wght].woff2") format("woff2-variations"); */
-/*   font-weight: 100 900; */
-/*   font-display: swap; */
-/* } */
+/* IBM Plex Sans JP */
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+JP&display=swap");
 
 /* Berkeley Mono フォント */
 /* Regular (400) */
 @font-face {
   font-family: "BerkeleyMono";
-  src: url("/fonts/BerkeleyMono-Regular.woff2")
-    format("woff2");
+  src: url("/fonts/BerkeleyMono-Regular.woff2") format("woff2");
   font-display: swap;
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
   font-family: "BerkeleyMono";
-  src: url("/fonts/BerkeleyMono-Oblique.woff2")
-    format("woff2");
+  src: url("/fonts/BerkeleyMono-Oblique.woff2") format("woff2");
   font-display: swap;
   font-weight: 400;
   font-style: oblique;
@@ -43,16 +21,14 @@
 /* Medium (500) */
 @font-face {
   font-family: "BerkeleyMono";
-  src: url("/fonts/BerkeleyMono-Medium.woff2")
-    format("woff2");
+  src: url("/fonts/BerkeleyMono-Medium.woff2") format("woff2");
   font-display: swap;
   font-weight: 500;
   font-style: normal;
 }
 @font-face {
   font-family: "BerkeleyMono";
-  src: url("/fonts/BerkeleyMono-Medium-Oblique.woff2")
-    format("woff2");
+  src: url("/fonts/BerkeleyMono-Medium-Oblique.woff2") format("woff2");
   font-display: swap;
   font-weight: 500;
   font-style: oblique;
@@ -61,16 +37,14 @@
 /* SemiBold (600) */
 @font-face {
   font-family: "BerkeleyMono";
-  src: url("/fonts/BerkeleyMono-SemiBold.woff2")
-    format("woff2");
+  src: url("/fonts/BerkeleyMono-SemiBold.woff2") format("woff2");
   font-display: swap;
   font-weight: 600;
   font-style: normal;
 }
 @font-face {
   font-family: "BerkeleyMono";
-  src: url("/fonts/BerkeleyMono-SemiBold-Oblique.woff2")
-    format("woff2");
+  src: url("/fonts/BerkeleyMono-SemiBold-Oblique.woff2") format("woff2");
   font-display: swap;
   font-weight: 600;
   font-style: oblique;
@@ -79,16 +53,14 @@
 /* Bold (700) */
 @font-face {
   font-family: "BerkeleyMono";
-  src: url("/fonts/BerkeleyMono-Bold.woff2")
-    format("woff2");
+  src: url("/fonts/BerkeleyMono-Bold.woff2") format("woff2");
   font-display: swap;
   font-weight: 700;
   font-style: normal;
 }
 @font-face {
   font-family: "BerkeleyMono";
-  src: url("/fonts/BerkeleyMono-Bold-Oblique.woff2")
-    format("woff2");
+  src: url("/fonts/BerkeleyMono-Bold-Oblique.woff2") format("woff2");
   font-display: swap;
   font-weight: 700;
   font-style: oblique;
@@ -97,16 +69,14 @@
 /* ExtraBold (800) */
 @font-face {
   font-family: "BerkeleyMono";
-  src: url("/fonts/BerkeleyMono-ExtraBold.woff2")
-    format("woff2");
+  src: url("/fonts/BerkeleyMono-ExtraBold.woff2") format("woff2");
   font-display: swap;
   font-weight: 800;
   font-style: normal;
 }
 @font-face {
   font-family: "BerkeleyMono";
-  src: url("/fonts/BerkeleyMono-ExtraBold-Oblique.woff2")
-    format("woff2");
+  src: url("/fonts/BerkeleyMono-ExtraBold-Oblique.woff2") format("woff2");
   font-display: swap;
   font-weight: 800;
   font-style: oblique;
@@ -115,19 +85,25 @@
 /* Black (900) */
 @font-face {
   font-family: "BerkeleyMono";
-  src: url("/fonts/BerkeleyMono-Black.woff2")
-    format("woff2");
+  src: url("/fonts/BerkeleyMono-Black.woff2") format("woff2");
   font-display: swap;
   font-weight: 900;
   font-style: normal;
 }
 @font-face {
   font-family: "BerkeleyMono";
-  src: url("/fonts/BerkeleyMono-Black-Oblique.woff2")
-    format("woff2");
+  src: url("/fonts/BerkeleyMono-Black-Oblique.woff2") format("woff2");
   font-display: swap;
   font-weight: 900;
   font-style: oblique;
+}
+
+/* SixBraille (public domain) - 点字ブロックのみに適用 */
+@font-face {
+  font-family: "SixBraille";
+  src: url("/fonts/sixbraille10.woff2") format("woff2");
+  font-display: swap;
+  unicode-range: U+2800-28FF;
 }
 
 /* ヘッダー・ナビゲーション */
@@ -137,7 +113,7 @@ header {
 
 /* サイトタイトル */
 .home-title {
-  font-family: "BerkeleyMono", sans-serif;
+  font-family: "SixBraille", "BerkeleyMono", sans-serif;
   font-weight: 900;
 }
 
@@ -150,7 +126,7 @@ header {
 
 :root {
   --sans-serif-font:
-    "BerkeleyMono", "IBM Plex Sans JP", "Helvetica Neue", Arial,
+    "SixBraille", "BerkeleyMono", "IBM Plex Sans JP", "Helvetica Neue", Arial,
     "Hiragino Kaku Gothic ProN", "Hiragino Sans", "Noto Sans JP", sans-serif;
   --serif-font: var(--sans-serif-font);
   --code-font: "BerkeleyMono", "Cascadia Code", monospace;
@@ -159,13 +135,13 @@ header {
 /* 一般的な日本語ブログに合わせたフォントサイズ */
 @media all and (min-width: 600px) {
   html {
-    font-size: 16px;
+    font-size: 14px;
   }
 }
 
 @media all and (min-width: 960px) {
   html {
-    font-size: 18px;
+    font-size: 16px;
   }
 }
 
@@ -401,7 +377,7 @@ pre,
   }
 }
 
-/* Open Streat */
+/* OpenStreetMap 埋め込み */
 .spot {
   margin: 2rem 0;
 }

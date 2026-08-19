@@ -87,3 +87,6 @@ scripts/fonts/
 
 # Wrangler local state
 .wrangler/
+
+# Berkeley Mono (paid font, served from R2 in production)
+static/fonts/BerkeleyMono-*.woff2
