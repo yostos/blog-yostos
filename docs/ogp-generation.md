@@ -62,13 +62,60 @@
 
 ## フォント
 
-| フォント | 用途 | 配置ファイル名 |
-|---------|------|--------------|
-| BerkeleyMono-Medium | ラテン文字・タグ表示 | `BerkeleyMono-Medium.otf` |
-| IBMPlexSansJP-Medium | 日本語タイトル（ラテン文字フォールバック含む） | `IBMPlexSansJP-Medium.otf` |
+| フォント | 用途 | 配置ファイル名 | ライセンス |
+|---------|------|--------------|----------|
+| BerkeleyMono-Medium | ラテン文字・タグ | `BerkeleyMono-Medium.otf` | 有償 |
+| IBMPlexSansJP-Medium | 日本語タイトル | `IBMPlexSansJP-Medium.otf` | OFL 1.1 |
 
-- 配置先: `scripts/fonts/`（`.gitignore` 対象）
-- フォントファイルはリポジトリに含めない（有償フォントを含むため）
+IBM Plex Sans JP はラテン文字のフォールバックも兼ねる。
+
+### 配置先とリポジトリ管理
+
+- 配置先: `scripts/fonts/`
+- **このディレクトリは `.gitignore` 対象。リポジトリに含めない**（有償フォントを含むため）
+- したがって **clone しただけでは OGP 生成は動かない**。新規環境では各自でフォントを入手し、
+  上表のファイル名どおりに配置する必要がある
+- `generate-ogp.mjs` はファイル名を完全一致で参照するため、名前を変えてはいけない
+
+### フォント形式の制約
+
+satori（内部で opentype.js を使用）が読めるのは **静的な TrueType / CFF アウトライン**のみ。
+次のファイルは配置しても `Font doesn't contain TrueType or CFF outlines.` で失敗する。
+
+| 使えないもの | 理由 |
+|------------|------|
+| `.woff2` | satori は woff2 を解凍できない |
+| バリアブルフォント（`CFF2` + `fvar`） | opentype.js が CFF2 を解釈できない |
+
+- `static/fonts/` にある Berkeley Mono は Web 配信用の woff2 なので**流用できない**
+- Berkeley Graphics が配布する `Berkeley Mono Variable.otf` は CFF2 バリアブルのため**使えない**
+- どうしても woff2 しか手元にない場合は `woff2_decompress`（Homebrew の `woff2`）で
+  sfnt に戻せる。出力ファイル名は機械的に `.ttf` になるが、中身が `OTTO` ヘッダの CFF なら
+  `.otf` にリネームしてよい
+
+### 入手先
+
+**Berkeley Mono**（有償・要ライセンス購入）
+
+Berkeley Graphics のダウンロードページから **desktop 版（OTF）** を取得する。
+配布パッケージにはウェイト構成の異なる複数のバリアントがあり、
+**Medium を含まないもの（Regular / Oblique / Bold / Bold-Oblique の4ウェイトのみ）がある**。
+`BerkeleyMono-Medium.otf` が含まれるパッケージを選ぶこと。
+
+**IBM Plex Sans JP**（無償・OFL 1.1）
+
+https://github.com/IBM/plex から取得し、
+`fonts/complete/otf/hinted/IBMPlexSansJP-Medium.otf` を使う。
+`~/Library/Fonts` などに入っている `.ttf` 版でも satori は読めるが、
+スクリプトが `.otf` の名前を要求するため OTF 版を使うのが素直。
+
+### 検証方法
+
+配置後、以下で読み込みを確認する。フォントに問題があればここでエラーになる。
+
+```bash
+npm run ogp:dry-run
+```
 
 ## タグの取得
 
@@ -133,7 +180,10 @@ social_media_card = "ogp.webp"
 
 ## セットアップ（新規環境）
 
+`scripts/fonts/` は `.gitignore` 対象のため、clone 後に必ず以下の手順が必要になる。
+
 1. `npm install`（依存パッケージのインストール）
-2. `scripts/fonts/` に以下のフォントを配置:
+2. `scripts/fonts/` を作成し、以下のフォントを配置（入手先は「フォント」の節を参照）
    - `BerkeleyMono-Medium.otf`
    - `IBMPlexSansJP-Medium.otf`
+3. `npm run ogp:dry-run` で読み込みを確認

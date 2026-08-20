@@ -150,8 +150,29 @@ npm run ogp -- --force
 
 **Font Setup** (required for first run):
 
-Place a Japanese font (`.ttf` or `.otf`) in `scripts/fonts/`.
-This directory is gitignored to allow use of licensed fonts.
+`scripts/fonts/` is **gitignored** — it holds a commercially licensed
+font, so the files are not distributed with this repository. A fresh clone
+will therefore fail OGP generation until you obtain the fonts yourself and
+place them there under these exact filenames:
+
+| File | Purpose | License | Source |
+|------|---------|---------|--------|
+| `BerkeleyMono-Medium.otf` | Latin text and tags | Commercial | [Berkeley Graphics](https://usgraphics.com/products/berkeley-mono) (desktop OTF package) |
+| `IBMPlexSansJP-Medium.otf` | Japanese titles | OFL 1.1 | [IBM/plex](https://github.com/IBM/plex) (`fonts/complete/otf/hinted/`) |
+
+Satori only reads **static** TrueType/CFF outlines. Two things that will *not* work:
+
+- `.woff2` files — including the Berkeley Mono already in `static/fonts/`,
+  which is the web build. Decompress with `woff2_decompress` if that is all
+  you have.
+- Variable fonts (`CFF2` + `fvar`), such as `Berkeley Mono Variable.otf`.
+
+Also note that some Berkeley Mono desktop packages ship only four weights and
+omit Medium; pick the one that contains `BerkeleyMono-Medium.otf`.
+
+Verify with `npm run ogp:dry-run` — font loading errors surface there.
+
+See `docs/ogp-generation.md` for details.
 
 ## Project Structure
 
@@ -168,7 +189,7 @@ themes/tabi/          # tabi theme (git submodule)
 scripts/
   generate-ogp.mjs      # OGP image generator
   generate-linkcard.mjs # GitHub metadata fetcher for linkcard
-  fonts/                # Japanese fonts (gitignored)
+  fonts/                # OGP fonts (gitignored - obtain separately, see Font Setup)
 data/
   linkcard.json         # Cached GitHub repo metadata
 config.toml           # Zola configuration
