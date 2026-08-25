@@ -5,4 +5,5 @@ section_path = "blog/_index.md"
 max_posts = 10
 +++
 
-Ex-IBM/AWS engineer who can't stop tinkering. Keyboard nerd (HHKB) who prefers CLI over GUI. Guitar tone chaser, DAW plugin collector, and occasional drone pilot when the weather permits. This blog is my digital notebook—writing about tech, music production, gear, and whatever rabbit holes I fall into. [about→](/about/)
+I write code and music, in roughly equal measure. Keyboard nerd (HHKB) who prefers CLI over GUI, guitar tone chaser, and occasional drone pilot. Former IBM/AWS engineer—old habits die hard. This blog is where I keep the notes: tech, music production, gear, and whatever rabbit holes I fall into.
+[about→](/about/)
