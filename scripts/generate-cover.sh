@@ -2,40 +2,45 @@
 set -euo pipefail
 
 # Generate cover image using OpenAI gpt-image-2 API
-# Requires: OPENAI_API_KEY, curl, jq, cwebp
-# Note: gpt-image-2's output_format=webp is currently not honored
-# (returns PNG bytes despite metadata claiming webp). We request PNG
-# and convert to WebP via cwebp.
+# Requires: OPENAI_API_KEY, curl, jq, avifenc
+# Note: gpt-image-2 does not honor output_format (it returns PNG bytes
+# regardless of the requested format). We request PNG and convert to
+# AVIF via avifenc.
+#
+# AVIF is used for photographic and AI-generated cover images only.
+# Diagrams, charts and screenshots must stay lossless WebP:
+#   cwebp -lossless -z 9 -exact input.png -o output.webp
 
 SIZE="1536x864"
 QUALITY="high"
 MODEL="gpt-image-2"        # image_generation tool model
 HOST_MODEL="gpt-4.1-mini"  # host model that drives the image tool
-WEBP_QUALITY="80"
+AVIF_QUALITY="60"
 
 usage() {
   cat <<'USAGE'
-Usage: generate-cover.sh -p <prompt> -o <output> [-s size] [-q quality] [-w webp_quality]
+Usage: generate-cover.sh -p <prompt> -o <output> [-s size] [-q quality] [-w avif_quality]
 
 Options:
   -p  Image generation prompt (required)
-  -o  Output file path, e.g. cover.webp (required)
+  -o  Output file path, e.g. cover.avif (required)
   -s  Size: 1536x864, 2048x1152, 1024x1024, etc.
       Must be multiples of 16, aspect ratio within 3:1 to 1:3.
       (default: 1536x864 = 16:9)
   -q  Quality: low, medium, or high (default: high)
-  -w  WebP encoder quality (0-100, default: 80)
+  -w  AVIF encoder quality (0-100, default: 60)
+      60 is roughly equivalent to the previous cwebp -q 80.
 
 Examples:
   # 16:9 cover image (default)
   ./scripts/generate-cover.sh \
     -p "A futuristic cityscape" \
-    -o content/blog/2026/05/my-article/cover.webp
+    -o content/blog/2026/05/my-article/cover.avif
 
-  # Lower-compression WebP encoding
+  # Higher-quality AVIF encoding
   ./scripts/generate-cover.sh \
     -p "Abstract pattern" \
-    -o output.webp -w 60
+    -o output.avif -w 75
 USAGE
   exit 1
 }
@@ -46,7 +51,7 @@ while getopts "p:o:s:q:w:" opt; do
     o) OUTPUT="$OPTARG" ;;
     s) SIZE="$OPTARG" ;;
     q) QUALITY="$OPTARG" ;;
-    w) WEBP_QUALITY="$OPTARG" ;;
+    w) AVIF_QUALITY="$OPTARG" ;;
     *) usage ;;
   esac
 done
@@ -63,7 +68,7 @@ fi
 echo "Generating image with $MODEL..."
 echo "  Size: $SIZE"
 echo "  Quality: $QUALITY"
-echo "  WebP quality: $WEBP_QUALITY"
+echo "  AVIF quality: $AVIF_QUALITY"
 echo "  Prompt: ${PROMPT:0:80}..."
 
 RESP_FILE=$(mktemp -t cover-resp-XXXXXX)
@@ -130,7 +135,8 @@ fi
 echo "Decoding base64 image..."
 printf '%s' "$B64" | base64 -d > "$TMP_PNG"
 
-echo "Converting to WebP (quality=$WEBP_QUALITY)..."
-cwebp -quiet -q "$WEBP_QUALITY" "$TMP_PNG" -o "$OUTPUT"
+echo "Converting to AVIF (quality=$AVIF_QUALITY)..."
+avifenc -q "$AVIF_QUALITY" -y 420 -s 6 --ignore-exif --ignore-xmp \
+  "$TMP_PNG" "$OUTPUT" > /dev/null
 
 echo "Saved: $OUTPUT ($(du -h "$OUTPUT" | cut -f1))"

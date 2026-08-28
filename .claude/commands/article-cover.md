@@ -1,10 +1,10 @@
 ---
-description: Generate a cover image for an article using OpenAI gpt-image-2 API. Read article content, craft a prompt, generate 1536x864 (16:9) WebP image.
+description: Generate a cover image for an article using OpenAI gpt-image-2 API. Read article content, craft a prompt, generate 1536x864 (16:9) AVIF image.
 ---
 
 # Article Cover Image Generation
 
-Generate a cover image (cover.webp) for an article using OpenAI gpt-image-2 API.
+Generate a cover image (cover.avif) for an article using OpenAI gpt-image-2 API.
 
 ## Steps
 
@@ -28,10 +28,10 @@ Run `./scripts/generate-cover.sh`:
 ```
 ./scripts/generate-cover.sh \
   -p "<approved prompt>" \
-  -o content/blog/YYYY/MM/slug/cover.webp
+  -o content/blog/YYYY/MM/slug/cover.avif
 ```
 
-The script defaults to 1536x864 (16:9), high quality, and WebP output.
+The script defaults to 1536x864 (16:9), high quality, and AVIF output.
 
 ### 4. Verify Frontmatter
 
@@ -39,6 +39,6 @@ Ensure the article frontmatter has:
 
 ```toml
 [extra]
-local_image = "cover.webp"
+local_image = "cover.avif"
 social_media_card = "ogp.webp"
 ```
