@@ -90,3 +90,7 @@ scripts/fonts/
 
 # Berkeley Mono (paid font, served from R2 in production)
 static/fonts/BerkeleyMono-*.woff2
+
+### Python
+__pycache__/
+*.py[cod]

@@ -9,7 +9,7 @@ FPVと360度撮影を一台に統合した注目機体の\
 """
 date = 2026-03-02T19:40:00+09:00
 [taxonomies]
-tags = ["Drone"]
+tags = ["Gadget", "Drone"]
 [extra]
 social_media_card = "ogp.webp"
 local_image = "cover.webp"

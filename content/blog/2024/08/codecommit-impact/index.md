@@ -4,7 +4,7 @@ description = "Business Insider などを読んでいるとAWSのCodeCommitやCl
 date = 2024-08-13
 
 [taxonomies]
-tags = ["Tech", "AWS", "Cloud"]
+tags = ["Tech", "Cloud"]
 [extra]
 social_media_card = "ogp.webp"
 +++

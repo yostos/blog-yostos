@@ -14,7 +14,7 @@ social_media_card = "ogp.webp"
 canonical_url = "https://zenn.dev/yostos/articles/hhkb-why-changed-architecture"
 
 [taxonomies]
-tags = ["Gadget", "Keyboard", "HHKB"]
+tags = ["Gadget", "Peripherals"]
 +++
 
 <!-- textlint-disable -->

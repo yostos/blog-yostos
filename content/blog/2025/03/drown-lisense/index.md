@@ -4,7 +4,7 @@ description = "昨年末に「空を飛びたい」と思い立ち、ドロー�
 date = 2025-03-22
 
 [taxonomies]
-tags = ["Certification","Drone"]
+tags = ["Current Affairs", "Politics"]
 [extra]
 social_media_card = "ogp.webp"
 +++

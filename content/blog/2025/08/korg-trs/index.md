@@ -4,7 +4,7 @@ description = "KORG Nu:tekt TR-S (POWER TUBE REACTOR)の詳細レビューです
 date = 2025-08-01
 
 [taxonomies]
-tags = ["Guitar Pedals"]
+tags = ["Gadget", "Guitar"]
 [extra]
 social_media_card = "ogp.webp"
 +++

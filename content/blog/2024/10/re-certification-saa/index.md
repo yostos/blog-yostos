@@ -4,7 +4,7 @@ description = "AWSを離れたのでもう要らないかなと思いました�
 date = 2024-10-11
 
 [taxonomies]
-tags = ["Career", "Certification","AWS"]
+tags = ["Tech", "Certification"]
 [extra]
 social_media_card = "ogp.webp"
 +++

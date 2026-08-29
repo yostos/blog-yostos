@@ -4,7 +4,7 @@ description = "米国REX Supply社のステンレス製両刃カミソリ「REX 
 date = 2025-12-19
 
 [taxonomies]
-tags = ["Gadget"]
+tags = ["Gadget", "Everyday Goods"]
 [extra]
 social_media_card = "ogp.webp"
 +++

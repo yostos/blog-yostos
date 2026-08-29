@@ -4,7 +4,7 @@ description = "近くのラーメン店にふらりとは言ったら、なん�
 date = 2025-03-17
 
 [taxonomies]
-tags = ["Gourmet", "Entertainment","Movies"]
+tags = ["Trivialities", "Gourmet"]
 [extra]
 social_media_card = "ogp.webp"
 +++

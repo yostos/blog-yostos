@@ -4,7 +4,7 @@ description = "ますます寒くなり、秋を経ずして冬になった印�
 date = 2024-11-08
 
 [taxonomies]
-tags = ["Weekly Buzz", "Current Affairs"]
+tags = ["Current Affairs", "Weekly Buzz"]
 [extra]
 social_media_card = "ogp.webp"
 +++

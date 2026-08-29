@@ -4,7 +4,7 @@ description = "Xotic AC Booster V2が発表されましたが、発表前から�
 date = 2025-04-20
 
 [taxonomies]
-tags = ["Guitar Pedals","Guitar","Music"]
+tags = ["Gadget", "Guitar"]
 [extra]
 social_media_card = "ogp.webp"
 +++

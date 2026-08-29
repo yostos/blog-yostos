@@ -4,7 +4,7 @@ description = "千葉ポートタワーに散歩に行ったら、もう桜が�
 date = 2025-03-06
 
 [taxonomies]
-tags = ["Photography","Seasons"]
+tags = ["Creative", "Photography"]
 [extra]
 social_media_card = "ogp.webp"
 +++

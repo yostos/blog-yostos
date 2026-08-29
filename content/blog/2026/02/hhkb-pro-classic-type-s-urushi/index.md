@@ -7,7 +7,7 @@ HHKB Professional Classic Type-Sに輪島塗の漆塗りキートップを
 """
 date = 2026-02-03
 [taxonomies]
-tags = ["Gadget", "Keyboard", "HHKB"]
+tags = ["Gadget", "Peripherals"]
 [extra]
 social_media_card = "ogp.webp"
 +++

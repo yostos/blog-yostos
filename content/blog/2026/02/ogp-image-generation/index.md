@@ -8,7 +8,7 @@ Zolaに組み込みの仕組みがない中でどう対応したか、
 """
 date = 2026-02-10
 [taxonomies]
-tags = ["Tech", "Weblog", "Zola"]
+tags = ["Tech", "Weblog"]
 [extra]
 social_media_card = "ogp.webp"
 +++

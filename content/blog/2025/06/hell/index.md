@@ -4,7 +4,7 @@ description = "こういうことがあると心配で公園にも行けなく�
 date = 2025-06-10
 
 [taxonomies]
-tags = ["Drone"]
+tags = ["Trivialities", "Life"]
 [extra]
 social_media_card = "ogp.webp"
 +++

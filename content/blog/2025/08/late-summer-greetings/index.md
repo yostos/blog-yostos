@@ -4,7 +4,7 @@ description = "箱根で聞いたひぐらしの声が忘れられず、この�
 date = 2025-08-15
 
 [taxonomies]
-tags = ["Music", "Guitar"]
+tags = ["Creative", "Guitar Play"]
 [extra]
 social_media_card = "ogp.webp"
 +++

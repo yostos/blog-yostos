@@ -11,8 +11,7 @@ Amazon-Anthropicの三重構造が
 """
 date = 2026-02-15T17:00:00+09:00
 [taxonomies]
-tags = ["AWS", "Generative AI", "Claude Code",
-  "Current Affairs"]
+tags = ["Tech", "Generative AI"]
 [extra]
 social_media_card = "ogp.webp"
 +++

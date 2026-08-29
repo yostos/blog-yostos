@@ -4,7 +4,7 @@ description = "フォント編集ソフト「OTEdit」で作成されたフォ�
 date = 2025-09-20
 
 [taxonomies]
-tags = ["Design","Font", "Tech","Python"]
+tags = ["Tech", "Font"]
 [extra]
 social_media_card = "ogp.webp"
 +++

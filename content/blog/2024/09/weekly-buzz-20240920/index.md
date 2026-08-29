@@ -4,7 +4,7 @@ description = "今週気になったのは、Android界隈の動き、Amazon Bed
 date = 2024-09-20
 
 [taxonomies]
-tags = ["Weekly Buzz", "Current Affairs"]
+tags = ["Current Affairs", "Weekly Buzz"]
 [extra]
 social_media_card = "ogp.webp"
 +++

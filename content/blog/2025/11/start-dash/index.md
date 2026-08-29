@@ -4,7 +4,7 @@ description = "マニュコラにスタートダッシュと対物性能アッ�
 date = 2025-11-01
 
 [taxonomies]
-tags = ["Splatoon", "Game"]
+tags = ["Entertainment", "Game"]
 [extra]
 social_media_card = "ogp.webp"
 +++

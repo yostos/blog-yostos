@@ -4,7 +4,7 @@ description = "CloudFlareからブログを移行した際に、パスの指定�
 date = 2024-11-05
 
 [taxonomies]
-tags = ["Tech", "AWS","Weblog"]
+tags = ["Tech", "Cloud"]
 [extra]
 social_media_card = "ogp.webp"
 +++

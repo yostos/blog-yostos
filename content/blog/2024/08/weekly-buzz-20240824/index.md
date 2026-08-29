@@ -4,7 +4,7 @@ description = "今週の気になった記事や出来事は、映画『ぼっ�
 date = 2024-08-25
 
 [taxonomies]
-tags = ["Weekly Buzz","Current Affairs"]
+tags = ["Current Affairs", "Weekly Buzz"]
 [extra]
 social_media_card = "ogp.webp"
 +++

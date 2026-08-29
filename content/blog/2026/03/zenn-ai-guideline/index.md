@@ -8,7 +8,7 @@ AI利用を禁止せず「人が主体」という原則を掲げました。
 """
 date = 2026-03-11
 [taxonomies]
-tags = ["Generative AI", "Current Affairs"]
+tags = ["Tech", "Generative AI"]
 [extra]
 local_image = "cover.webp"
 social_media_card = "ogp.webp"

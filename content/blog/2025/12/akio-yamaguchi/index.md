@@ -4,7 +4,7 @@ description = "Akio Yamaguchi, President of IBM Japan, has been appointed as a m
 date = 2025-12-16
 
 [taxonomies]
-tags = ["Current Affairs","IBM"]
+tags = ["Current Affairs", "Business"]
 [extra]
 social_media_card = "ogp.webp"
 +++

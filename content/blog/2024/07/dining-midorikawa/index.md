@@ -4,7 +4,7 @@ description = "東船橋の洋食屋さんに言ってきました。"
 date = 2024-07-15
 
 [taxonomies]
-tags = ["Gourmet"]
+tags = ["Trivialities", "Gourmet"]
 [extra]
 social_media_card = "ogp.webp"
 +++

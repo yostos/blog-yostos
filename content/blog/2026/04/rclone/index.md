@@ -6,7 +6,7 @@ description = """
 date = 2026-04-30T08:30:42+09:00
 updated = 2026-05-05
 [taxonomies]
-tags = ["Tech", "Cloud", "AWS"]
+tags = ["Tech", "Cloud"]
 [extra]
 social_media_card = "ogp.webp"
 local_image = "cover.webp"

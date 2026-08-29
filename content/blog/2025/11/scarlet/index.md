@@ -4,7 +4,7 @@ description = "I finished my errands at the mall way earlier than expected, and 
 date = 2025-11-21
 
 [taxonomies]
-tags = ["Movies","Entertainment"]
+tags = ["Entertainment", "Films"]
 [extra]
 social_media_card = "ogp.webp"
 +++

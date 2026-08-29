@@ -4,7 +4,7 @@ description = "I recently purchased a scanner and was challenged to see if I cou
 date = 2025-01-06
 
 [taxonomies]
-tags = ["Tech", "Photography","Python"]
+tags = ["Tech", "CLI"]
 [extra]
 social_media_card = "ogp.webp"
 +++

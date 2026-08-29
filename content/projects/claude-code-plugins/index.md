@@ -6,7 +6,7 @@ MAGI, pdf-processor, and more."""
 weight = 40
 
 [taxonomies]
-tags = ["Claude Code"]
+tags = ["Tech", "Generative AI"]
 
 [extra]
 local_image = "cover.webp"

@@ -7,7 +7,7 @@ Mac環境での導入手順、実際の変換サンプルを紹介します。
 """
 date = 2026-07-10T05:00:00+09:00
 [taxonomies]
-tags =[ "Tech" ]
+tags = ["Tech", "Documentation"]
 [extra]
 social_media_card = "ogp.webp"
 local_image = "cover.webp"

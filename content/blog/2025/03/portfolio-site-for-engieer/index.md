@@ -4,7 +4,7 @@ description = "あまり経験してこなかった技術スタックでポー�
 date = 2025-03-08
 
 [taxonomies]
-tags = ["Tech","Web"]
+tags = ["Tech", "Web"]
 [extra]
 social_media_card = "ogp.webp"
 +++

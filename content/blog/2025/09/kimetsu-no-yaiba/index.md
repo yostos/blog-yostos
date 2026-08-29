@@ -4,7 +4,7 @@ description = "I watched the movie \"Demon Slayer: Kimetsu no Yaiba - Infinity C
 date = 2025-09-19
 
 [taxonomies]
-tags = ["Anime", "Movies", "Entertainment"]
+tags = ["Entertainment", "Films"]
 [extra]
 social_media_card = "ogp.webp"
 +++

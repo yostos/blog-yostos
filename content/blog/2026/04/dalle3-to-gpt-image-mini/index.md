@@ -5,7 +5,7 @@ OpenAIからDALL-E 3廃止の通知を受け、ブログのカバー画像生成
 """
 date = 2026-04-09
 [taxonomies]
-tags = ["Claude Code", "Generative AI"]
+tags = ["Tech", "Generative AI"]
 [extra]
 social_media_card = "ogp.webp"
 local_image = "cover.webp"

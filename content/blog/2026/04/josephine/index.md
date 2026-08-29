@@ -3,7 +3,7 @@ title = "幻のドレッシング「ジョセフィーヌ」"
 description = "千葉県匝瑳市の有限会社エム・オー・ディーが製造する「ジョセフィーヌ」は、既存会員からの紹介がないと買えない会員制ドレッシングです。偶然手に入った一本を開けて、その味と使い勝手を確かめました。"
 date = 2026-04-21T20:20:36+09:00
 [taxonomies]
-tags = ["Gourmet", "Chiba"]
+tags = ["Trivialities", "Gourmet"]
 [extra]
 social_media_card = "ogp.webp"
 local_image = "cover.jpg"

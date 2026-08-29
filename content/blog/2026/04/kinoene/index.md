@@ -3,7 +3,7 @@ title = "きのえね 春の大試飲会に行ってきた"
 description = "千葉の酒蔵・飯沼本家が主催する「春の大試飲会」に参加しました。全国13蔵の日本酒と特製おつまみ弁当を楽しんだ一日の記録です。"
 date = 2026-04-12T09:40:40+09:00
 [taxonomies]
-tags =[ "Gourmet","Sake" ]
+tags = ["Trivialities", "Gourmet"]
 [extra]
 social_media_card = "ogp.webp"
 local_image = "cover.webp"

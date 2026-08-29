@@ -4,7 +4,7 @@ description = "Season 5 of Stranger Things has begun streaming. Exploring the ch
 date = 2025-12-24
 
 [taxonomies]
-tags = ["Entertainment","Movies"]
+tags = ["Entertainment", "Films"]
 [extra]
 social_media_card = "ogp.webp"
 +++

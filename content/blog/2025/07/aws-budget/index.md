@@ -4,7 +4,7 @@ description = "個人AWSアカウントのコスト管理を効率的に行う�
 date = 2025-07-05
 
 [taxonomies]
-tags = ["Tech", "AWS"]
+tags = ["Tech", "Cloud"]
 [extra]
 social_media_card = "ogp.webp"
 +++

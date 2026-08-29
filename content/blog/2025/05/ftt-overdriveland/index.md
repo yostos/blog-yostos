@@ -4,7 +4,7 @@ description = "Free The Toneのオーバードライブ Overdrivelandを購入�
 date = 2025-05-02
 
 [taxonomies]
-tags = ["Guitar Pedals"]
+tags = ["Gadget", "Guitar"]
 [extra]
 social_media_card = "ogp.webp"
 +++

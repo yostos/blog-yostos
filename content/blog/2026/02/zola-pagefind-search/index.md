@@ -7,7 +7,7 @@ Pagefindを使った日本語対応のサイト内検索を導入しました。
 """
 date = 2026-02-26T07:58:30+09:00
 [taxonomies]
-tags = ["Tech", "Weblog", "Zola"]
+tags = ["Tech", "Weblog"]
 [extra]
 social_media_card = "ogp.webp"
 tldr = """

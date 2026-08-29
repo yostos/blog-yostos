@@ -9,7 +9,7 @@ AWS ProServeがAIエージェントを「デジタル従業員」として\
 date = 2026-03-05
 
 [taxonomies]
-tags = ["Generative AI", "AWS"]
+tags = ["Tech", "Generative AI"]
 
 [extra]
 social_media_card = "ogp.webp"

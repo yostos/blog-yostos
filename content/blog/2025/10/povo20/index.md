@@ -4,7 +4,7 @@ description = "楽天モバイルの通信品質に不満を感じ、Povo2.0に�
 date = 2025-10-13
 
 [taxonomies]
-tags = ["Gadget"]
+tags = ["Gadget", "Mobile"]
 [extra]
 social_media_card = "ogp.webp"
 +++

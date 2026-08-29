@@ -10,7 +10,7 @@ ITガバナンスが未成熟な組織こそ取り組むべき\
 date = 2026-02-27
 
 [taxonomies]
-tags = ["Generative AI", "IT Governance"]
+tags = ["Tech", "Generative AI"]
 
 [extra]
 local_image = "cover.webp"

@@ -5,7 +5,7 @@ description = """NVIDIAのジェンスン・ファンCEOが、創業初期の危
 date = 2026-05-22T07:38:24+09:00
 
 [taxonomies]
-tags = ["Current Affairs"]
+tags = ["Current Affairs", "Business"]
 
 [extra]
 social_media_card = "ogp.webp"

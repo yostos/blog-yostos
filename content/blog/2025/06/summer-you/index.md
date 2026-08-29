@@ -4,7 +4,7 @@ description = "来週から7月となります。まだ6月というのにこれ
 date = 2025-06-29
 
 [taxonomies]
-tags = ["Music", "Guitar"]
+tags = ["Creative", "Guitar Play"]
 [extra]
 social_media_card = "ogp.webp"
 +++

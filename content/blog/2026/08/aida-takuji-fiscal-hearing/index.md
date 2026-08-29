@@ -5,7 +5,7 @@ YouTubeで「財務省の嘘」として拡散している動画の元は、2026
 """
 date = 2026-08-25T21:30:00+09:00
 [taxonomies]
-tags =[ "Current Affairs" ]
+tags = ["Current Affairs", "Politics"]
 [extra]
 social_media_card = "ogp.webp"
 local_image = "cover.webp"

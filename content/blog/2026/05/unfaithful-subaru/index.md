@@ -5,7 +5,7 @@ description = """
 """
 date = 2026-05-28T13:50:06+09:00
 [taxonomies]
-tags =[ "Automotive" ]
+tags = ["Automotive", "SUBARU"]
 [extra]
 social_media_card = "ogp.webp"
 local_image = "cover.webp"

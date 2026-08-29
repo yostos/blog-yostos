@@ -4,7 +4,7 @@ description = "デジカメの日付の設定を間違えたので、Exifの日�
 date = 2024-08-23
 
 [taxonomies]
-tags = ["Tech", "Photography", "CLI"]
+tags = ["Tech", "CLI"]
 [extra]
 social_media_card = "ogp.webp"
 +++

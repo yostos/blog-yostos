@@ -6,7 +6,7 @@ pCloudを長らく使用していますが、macOS TahoeにしてからpCloud Dr
 """
 date = 2026-06-27T10:00:00+09:00
 [taxonomies]
-tags =[ "Tech","Mac","Apple","CLI" ]
+tags = ["Tech", "Software"]
 [extra]
 social_media_card = "ogp.webp"
 local_image = "cover.webp"

@@ -4,7 +4,7 @@ description = "OpenAI、Google DeepMind、Meta、Anthropicの研究者たちが�
 date = 2025-07-24
 
 [taxonomies]
-tags = ["Tech", "Generative AI","Security"]
+tags = ["Tech", "Generative AI"]
 [extra]
 social_media_card = "ogp.webp"
 +++

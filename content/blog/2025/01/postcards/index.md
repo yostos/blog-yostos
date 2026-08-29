@@ -4,7 +4,7 @@ description = "今年年賀状で「年賀状仕舞い」の挨拶を結構い�
 date = 2025-01-15
 
 [taxonomies]
-tags = ["Current Affairs"]
+tags = ["Current Affairs", "Business"]
 [extra]
 social_media_card = "ogp.webp"
 +++

@@ -4,7 +4,7 @@ description = "I tried Claude Code.Claude Code is the latest AI-driven coding as
 date = 2025-03-12
 
 [taxonomies]
-tags = ["Tech", "Generative AI","Claude Code"]
+tags = ["Tech", "Generative AI"]
 [extra]
 social_media_card = "ogp.webp"
 +++

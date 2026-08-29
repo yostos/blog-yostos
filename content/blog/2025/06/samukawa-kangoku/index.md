@@ -4,7 +4,7 @@ description = "同僚から千葉市中央区の登戸辺りに向かい刑場�
 date = 2025-06-22
 
 [taxonomies]
-tags = ["Travel","Chiba"]
+tags = ["Trivialities", "Travel"]
 [extra]
 social_media_card = "ogp.webp"
 +++

@@ -4,7 +4,7 @@ description = "養老渓谷の象徴的な2つの橋、青い渓谷橋と赤い�
 date = 2025-12-13
 
 [taxonomies]
-tags = ["Video","Drone", "Chiba","River"]
+tags = ["Creative", "Movie"]
 [extra]
 social_media_card = "ogp.webp"
 +++

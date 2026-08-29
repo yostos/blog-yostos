@@ -6,7 +6,7 @@ description = """\
 date = 2026-05-13T20:00:00+09:00
 
 [taxonomies]
-tags = ["Tech", "Cloud", "AWS", "Generative AI", "Claude"]
+tags = ["Tech", "Cloud"]
 
 [extra]
 social_media_card = "ogp.webp"

@@ -4,7 +4,7 @@ description = "Netflix『グラス・ハート』の劇中歌「Matrix」を自�
 date = 2025-08-17
 
 [taxonomies]
-tags = ["Music", "Guitar", "Movies", "Entertainment"]
+tags = ["Creative", "Guitar Play"]
 [extra]
 social_media_card = "ogp.webp"
 +++

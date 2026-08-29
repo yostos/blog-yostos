@@ -4,7 +4,7 @@ description = "購入していたDJI Air3S の初飛行です。ドローンを�
 date = 2025-05-17
 
 [taxonomies]
-tags = ["Video","Drone","Chiba","Sea"]
+tags = ["Creative", "Movie"]
 [extra]
 social_media_card = "ogp.webp"
 +++

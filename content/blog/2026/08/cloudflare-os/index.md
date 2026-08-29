@@ -7,7 +7,7 @@ Kintoneに近い業務アプリの器として捉え直すと、成果物ごと�
 """
 date = 2026-08-19
 [taxonomies]
-tags = ["Tech", "Generative AI", "Software"]
+tags = ["Tech", "Cloud"]
 [extra]
 social_media_card = "ogp.webp"
 local_image = "cover.webp"

@@ -4,7 +4,7 @@ description = "経産省の推計データを読み解き、AIによって事務
 date = 2026-02-19
 
 [taxonomies]
-tags = ["Generative AI", "Career", "Current Affairs"]
+tags = ["Current Affairs", "Business"]
 
 [extra]
 social_media_card = "ogp.webp"

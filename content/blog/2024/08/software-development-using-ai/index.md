@@ -4,7 +4,7 @@ description = "Recently, I had a conversation with someone about software develo
 date = 2024-08-09
 
 [taxonomies]
-tags = ["Tech", "Generative AI","Software Engineering"]
+tags = ["Tech", "Generative AI"]
 [extra]
 social_media_card = "ogp.webp"
 +++

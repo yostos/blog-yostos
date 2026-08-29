@@ -4,7 +4,7 @@ description = "鬼滅の刃の最終章である『無限城』の制作発表�
 date = 2024-12-31
 
 [taxonomies]
-tags = ["Movies","Anime", "Entertainment"]
+tags = ["Entertainment", "Films"]
 [extra]
 social_media_card = "ogp.webp"
 +++

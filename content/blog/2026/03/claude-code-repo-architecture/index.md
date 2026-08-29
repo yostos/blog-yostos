@@ -8,7 +8,7 @@ AIが忘れないガードレールとセッション間で一貫したワーク
 """
 date = 2026-03-08T07:04:00+09:00
 [taxonomies]
-tags = ["Claude Code", "Generative AI", "Tech"]
+tags = ["Tech", "Generative AI"]
 [extra]
 social_media_card = "ogp.webp"
 local_image = "cover.webp"

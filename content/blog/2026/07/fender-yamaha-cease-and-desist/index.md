@@ -9,7 +9,7 @@ EU著作権判決を追い風に法的キャンペーンを拡大するフェン
 date = 2026-07-16T00:14:27+09:00
 
 [taxonomies]
-tags = ["Guitar", "Current Affairs"]
+tags = ["Current Affairs", "Business"]
 
 [extra]
 social_media_card = "ogp.webp"

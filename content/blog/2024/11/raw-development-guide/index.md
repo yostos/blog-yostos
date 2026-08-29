@@ -4,7 +4,7 @@ description = "RAW現像について、SILKYPIX, Pixelmator Pro, GR IIIx JPEG �
 date = 2024-11-25
 
 [taxonomies]
-tags = ["Photography", "Tech"]
+tags = ["Creative", "Photography"]
 [extra]
 social_media_card = "ogp.webp"
 +++

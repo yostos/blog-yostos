@@ -10,7 +10,7 @@ date = 2026-01-04
 
 
 [taxonomies]
-tags =["Music","Movies"]
+tags = ["Creative", "Guitar Play"]
 [extra]
 social_media_card = "ogp.webp"
 +++

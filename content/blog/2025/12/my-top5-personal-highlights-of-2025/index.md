@@ -4,7 +4,7 @@ description = "2025年を振り返り、AI技術の進化、ドローン空撮�
 date = 2025-12-31
 
 [taxonomies]
-tags = ["Life"]
+tags = ["Trivialities", "Life"]
 [extra]
 social_media_card = "ogp.webp"
 +++

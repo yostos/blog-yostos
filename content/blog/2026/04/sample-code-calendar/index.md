@@ -7,7 +7,7 @@ description = """
 """
 date = 2026-04-01T12:39:43+09:00
 [taxonomies]
-tags =[ "Gadget" ,"Books"]
+tags = ["Entertainment", "Books"]
 [extra]
 social_media_card = "ogp.webp"
 local_image = "cover.webp"

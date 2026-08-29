@@ -9,7 +9,7 @@ description = """
 date = 2026-01-24
 
 [taxonomies]
-tags =["Travel","Tips","China"]
+tags = ["Trivialities", "Insights"]
 [extra]
 social_media_card = "ogp.webp"
 +++

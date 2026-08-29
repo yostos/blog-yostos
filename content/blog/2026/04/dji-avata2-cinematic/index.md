@@ -7,7 +7,7 @@ updated = 2026-05-29
 
 
 [taxonomies]
-tags = ["Drone"]
+tags = ["Creative", "Movie"]
 
 [extra]
 social_media_card = "ogp.webp"

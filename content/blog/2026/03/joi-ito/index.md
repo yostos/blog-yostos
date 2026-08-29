@@ -3,7 +3,7 @@ title = "なぜ日本は伊藤穰一氏を問わないのか――エプスタ�
 description = "TypePadのファウンダーとして記憶していた人物の名前が、エプスタイン文書に8,958件刻まれていた。Bitcoin中核開発者の囲い込み、資金源の隠蔽、そして暗号資産が政治資金規正法の枠外にある日本の制度的死角。米国の大学が協力を拒む中、なぜ日本政府は調査すらしないのか。"
 date = 2026-03-20T11:45:09+09:00
 [taxonomies]
-tags = ["Current Affairs"]
+tags = ["Current Affairs", "Geopolitics"]
 [extra]
 social_media_card = "ogp.webp"
 local_image = "cover.webp"

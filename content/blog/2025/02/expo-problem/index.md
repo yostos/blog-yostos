@@ -4,7 +4,7 @@ description = "大阪万博 EXPO 2025の個人情報規約が『ヤバすぎる�
 date = 2025-02-14
 
 [taxonomies]
-tags = ["Current Affairs", "Security"]
+tags = ["Current Affairs", "Politics"]
 [extra]
 social_media_card = "ogp.webp"
 +++

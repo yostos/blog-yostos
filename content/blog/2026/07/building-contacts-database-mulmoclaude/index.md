@@ -6,7 +6,7 @@ CSVを読み込ませて要件を伝えるだけで、スキーマ定義から�
 """
 date = 2026-07-28T05:10:06+09:00
 [taxonomies]
-tags =[ "Generative AI","Claude" ]
+tags = ["Tech", "Generative AI"]
 [extra]
 social_media_card = "ogp.webp"
 local_image = "cover.webp"

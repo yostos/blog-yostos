@@ -7,7 +7,7 @@ MulmoTerminalで感心したのは、どのエージェントが人間を待っ�
 """
 date = 2026-08-12T07:48:08+09:00
 [taxonomies]
-tags =[ "Tech","Claude","Generative AI" ]
+tags = ["Tech", "Generative AI"]
 [extra]
 tldr = """
 - WezTerm上でMulmoTerminalのように複数のClaude Codeの状態を可視化する

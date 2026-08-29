@@ -4,7 +4,7 @@ description = "中村書体室から新しくリリースされた「コント�
 date = 2025-07-15
 
 [taxonomies]
-tags = ["Design","Font"]
+tags = ["Tech", "Font"]
 [extra]
 social_media_card = "ogp.webp"
 +++

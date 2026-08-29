@@ -4,7 +4,7 @@ description = "少し遅いですが、初詣でに成田山新勝寺に行っ�
 date = 2025-02-13
 
 [taxonomies]
-tags = ["Travel"]
+tags = ["Trivialities", "Travel"]
 [extra]
 social_media_card = "ogp.webp"
 +++

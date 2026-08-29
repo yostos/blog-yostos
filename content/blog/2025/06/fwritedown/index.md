@@ -4,7 +4,7 @@ description = "6月からドローンの飛行日誌サービスであるFwriteD
 date = 2025-06-02
 
 [taxonomies]
-tags = ["Drone"]
+tags = ["Gadget", "Drone"]
 [extra]
 social_media_card = "ogp.webp"
 +++

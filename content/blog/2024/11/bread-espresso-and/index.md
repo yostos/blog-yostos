@@ -4,7 +4,7 @@ description = "千葉公園が一部リニューアルして同時にオープ�
 date = 2024-11-28
 
 [taxonomies]
-tags = [ "Gourmet"]
+tags = ["Trivialities", "Gourmet"]
 [extra]
 social_media_card = "ogp.webp"
 +++

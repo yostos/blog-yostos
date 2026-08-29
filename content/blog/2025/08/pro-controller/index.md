@@ -4,7 +4,7 @@ description = "任天堂 Switch 2は当たる気配もありませんが、プ�
 date = 2025-08-19
 
 [taxonomies]
-tags = ["Game"]
+tags = ["Entertainment", "Game"]
 [extra]
 social_media_card = "ogp.webp"
 +++

@@ -4,7 +4,7 @@ description = "この記事はIT部門を持たず、非技術部門だけでベ
 date = 2025-11-08
 
 [taxonomies]
-tags = ["Tech", "Security"]
+tags = ["Tech", "IT Governance"]
 [extra]
 social_media_card = "ogp.webp"
 +++

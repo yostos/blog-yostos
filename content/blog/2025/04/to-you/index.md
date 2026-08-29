@@ -4,7 +4,7 @@ description = "I tried covering a song by Masayoshi Takanaka from around 1983. I
 date = 2025-04-13
 
 [taxonomies]
-tags = ["Music", "Guitar"]
+tags = ["Creative", "Guitar Play"]
 [extra]
 social_media_card = "ogp.webp"
 +++

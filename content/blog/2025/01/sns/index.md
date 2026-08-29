@@ -4,7 +4,7 @@ description = "最近営業日の告知をInstgramやfacebookにしか掲載し�
 date = 2025-01-04
 
 [taxonomies]
-tags = ["Tech","Current Affairs"]
+tags = ["Tech", "Web"]
 [extra]
 social_media_card = "ogp.webp"
 +++

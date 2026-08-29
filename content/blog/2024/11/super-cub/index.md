@@ -4,7 +4,7 @@ description = "Honda announced that Super Cub 50cc will end production."
 date = 2024-11-01
 
 [taxonomies]
-tags = ["Current Affairs","Motor Cycle"]
+tags = ["Current Affairs", "Business"]
 [extra]
 social_media_card = "ogp.webp"
 +++

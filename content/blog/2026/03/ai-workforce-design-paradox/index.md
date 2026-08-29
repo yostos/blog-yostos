@@ -5,7 +5,7 @@ description = """ジュニアポジションがAIに置き換えられる今、\
 30年コードを書き続けてきた筆者が、この育成のパラドックスについて考察します。"""
 date = 2026-03-24
 [taxonomies]
-tags = ["Generative AI", "Career", "Current Affairs"]
+tags = ["Tech", "Generative AI"]
 [extra]
 social_media_card = "ogp.webp"
 local_image = "cover.webp"

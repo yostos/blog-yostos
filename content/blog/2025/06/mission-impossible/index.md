@@ -4,7 +4,7 @@ description = "『ミッション・インポッシブル』の 最新作『フ�
 date = 2025-06-15
 
 [taxonomies]
-tags = ["Movies","Entertainment"]
+tags = ["Entertainment", "Films"]
 [extra]
 social_media_card = "ogp.webp"
 +++

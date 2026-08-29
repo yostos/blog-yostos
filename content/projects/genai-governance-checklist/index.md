@@ -6,7 +6,7 @@ NIST AI RMF準拠の生成AIガバナンスチェックリストです。\
 weight = 60
 
 [taxonomies]
-tags = ["Generative AI"]
+tags = ["Tech", "Generative AI"]
 
 [extra]
 local_image = "cover.webp"

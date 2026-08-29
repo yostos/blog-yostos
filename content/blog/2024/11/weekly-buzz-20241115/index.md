@@ -4,7 +4,7 @@ description = "すっかり寒くなり、先週末にGoogle Cloudの資格取�
 date = 2024-11-15
 
 [taxonomies]
-tags = ["Weekly Buzz", "Current Affairs"]
+tags = ["Current Affairs", "Weekly Buzz"]
 [extra]
 social_media_card = "ogp.webp"
 +++

@@ -4,7 +4,7 @@ description = "中村書体室の「カドマ-R」を購入しました。スク
 date = 2025-09-15
 
 [taxonomies]
-tags = ["Design","Font"]
+tags = ["Tech", "Font"]
 [extra]
 social_media_card = "ogp.webp"
 +++

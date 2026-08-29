@@ -4,7 +4,7 @@ description = "デジタルカメラを買いました。久しぶりのRICOH GR
 date = 2024-08-27
 
 [taxonomies]
-tags = ["Photography"]
+tags = ["Gadget", "Camera"]
 [extra]
 social_media_card = "ogp.webp"
 +++

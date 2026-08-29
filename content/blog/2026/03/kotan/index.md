@@ -3,7 +3,7 @@ title = "らーめん古潭"
 description = "大学時代に通ったあべちかの「らーめん古潭」に40年ぶりに再訪しました。札幌らーめんを名乗りながら醤油推しという不思議な老舗の、変わらない味についてです。"
 date = 2026-03-28
 [taxonomies]
-tags = ["Gourmet"]
+tags = ["Trivialities", "Gourmet"]
 [extra]
 social_media_card = "ogp.webp"
 local_image = "cover.webp"

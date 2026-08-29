@@ -4,7 +4,7 @@ description = "tuki.の楽曲『晩餐歌』のカバーです。最近お気に
 date = 2024-10-15
 
 [taxonomies]
-tags = ["Music", "Guitar"]
+tags = ["Creative", "Guitar Play"]
 [extra]
 social_media_card = "ogp.webp"
 +++

@@ -4,7 +4,7 @@ description = "In pursuit of deeper amp-driven distortion, I recently upgraded f
 date = 2025-04-06
 
 [taxonomies]
-tags = ["Guitar Pedals"]
+tags = ["Gadget", "Guitar"]
 [extra]
 social_media_card = "ogp.webp"
 +++

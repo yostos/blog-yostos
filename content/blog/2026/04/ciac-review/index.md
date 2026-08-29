@@ -9,7 +9,7 @@ R8事業計画はどう応えたのか。\
 date = 2026-04-07
 
 [taxonomies]
-tags = ["Current Affairs", "Chiba"]
+tags = ["Current Affairs", "Politics"]
 
 [extra]
 social_media_card = "ogp.webp"

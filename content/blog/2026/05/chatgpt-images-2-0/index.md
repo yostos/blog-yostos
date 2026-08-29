@@ -6,7 +6,7 @@ OpenAIが2026年4月21日にリリースしたChatGPT Images 2.0は、画像生�
 date = 2026-05-15T20:00:00+09:00
 
 [taxonomies]
-tags = ["Tech", "Generative AI", "Weblog"]
+tags = ["Tech", "Weblog"]
 
 [extra]
 social_media_card = "ogp.webp"

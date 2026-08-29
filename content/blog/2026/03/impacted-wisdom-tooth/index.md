@@ -7,7 +7,7 @@ description = """\
 """
 date = 2026-03-09
 [taxonomies]
-tags = ["Trivialities"]
+tags = ["Trivialities", "Life"]
 [extra]
 social_media_card = "ogp.webp"
 local_image = "cover.webp"

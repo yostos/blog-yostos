@@ -4,7 +4,7 @@ description = "The MacBook Pro featuring the M4 chip has been announced."
 date = 2024-10-31
 
 [taxonomies]
-tags = ["Tech","Apple","Mac"]
+tags = ["Gadget", "Computers"]
 [extra]
 social_media_card = "ogp.webp"
 +++

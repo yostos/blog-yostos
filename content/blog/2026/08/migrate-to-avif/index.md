@@ -7,7 +7,7 @@ description = """\
 """
 date = 2026-08-29T17:07:36+09:00
 [taxonomies]
-tags =[ "Tech","Weblog" ]
+tags = ["Tech", "Weblog"]
 [extra]
 social_media_card = "ogp.webp"
 local_image = "cover.avif"

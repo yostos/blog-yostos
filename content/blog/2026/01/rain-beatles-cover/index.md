@@ -10,7 +10,7 @@ Chambersなどのビンテージエミュレーションプラグインで
 """
 date = 2026-01-31
 [taxonomies]
-tags = ["Music", "Music Production", "Guitar"]
+tags = ["Creative", "Guitar Play"]
 [extra]
 social_media_card = "ogp.webp"
 +++

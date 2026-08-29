@@ -4,7 +4,7 @@ description = "2020年5月に「コロナの時代」という記事を書きま
 date = 2026-07-16
 
 [taxonomies]
-tags = ["Current Affairs"]
+tags = ["Current Affairs", "Disaster"]
 
 [extra]
 social_media_card = "ogp.webp"

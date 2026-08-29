@@ -4,7 +4,7 @@ description = "Fleetwood MacのStevie Nicksの懐かしい1970年代の名曲を
 date = 2025-05-05
 
 [taxonomies]
-tags = ["Music", "Guitar"]
+tags = ["Creative", "Guitar Play"]
 [extra]
 social_media_card = "ogp.webp"
 +++

@@ -4,7 +4,7 @@ description = "35年ぶりの刷新だそうです。つい買ってしまいま
 date = 2024-11-15
 
 [taxonomies]
-tags = ["Tech","Programming","Books"]
+tags = ["Entertainment", "Books"]
 [extra]
 social_media_card = "ogp.webp"
 +++

@@ -4,7 +4,7 @@ description = "久しぶりにサーモンランをやったら、一人で盛�
 date = 2025-03-20
 
 [taxonomies]
-tags = ["Splatoon", "Game"]
+tags = ["Entertainment", "Game"]
 [extra]
 social_media_card = "ogp.webp"
 +++

@@ -5,7 +5,7 @@ description = """
 """
 date = 2026-08-18T19:34:53+09:00
 [taxonomies]
-tags = ["Current Affairs", "Takaichi"]
+tags = ["Current Affairs", "Politics"]
 [extra]
 social_media_card = "ogp.webp"
 local_image = "cover.webp"

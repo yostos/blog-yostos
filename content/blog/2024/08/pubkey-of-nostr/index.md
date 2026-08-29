@@ -4,7 +4,7 @@ description = "Nostrで自分の好きなPubkeyを入手するためにがんば
 date = 2024-08-25
 
 [taxonomies]
-tags = ["Tech"]
+tags = ["Tech", "Web"]
 [extra]
 social_media_card = "ogp.webp"
 +++

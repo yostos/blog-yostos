@@ -4,7 +4,7 @@ description = "久しぶりのフェスです。"
 date = 2025-10-25
 
 [taxonomies]
-tags = ["Splatoon", "Game"]
+tags = ["Entertainment", "Game"]
 [extra]
 social_media_card = "ogp.webp"
 +++

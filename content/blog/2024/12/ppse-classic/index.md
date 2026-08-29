@@ -4,7 +4,7 @@ description = "Vin Antique, a small effects pedal brand from Kyoto, has released
 date = 2024-12-26
 
 [taxonomies]
-tags = ["Guitar","Guitar Pedals"]
+tags = ["Gadget", "Guitar"]
 [extra]
 social_media_card = "ogp.webp"
 +++

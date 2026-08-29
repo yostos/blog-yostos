@@ -4,7 +4,7 @@ description = "湖畔には市原湖畔美術館が建っている高滝湖を�
 date = 2025-06-13
 
 [taxonomies]
-tags = ["Video","Drone", "Chiba","Lake"]
+tags = ["Creative", "Movie"]
 [extra]
 social_media_card = "ogp.webp"
 +++

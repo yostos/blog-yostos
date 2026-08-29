@@ -4,7 +4,7 @@ description = "ついにNintendo DirectでSwitch 2を発表。本日22時からN
 date = 2025-04-02
 
 [taxonomies]
-tags = ["Game"]
+tags = ["Entertainment", "Game"]
 [extra]
 social_media_card = "ogp.webp"
 +++

@@ -5,7 +5,7 @@ description = """手続き型からOOPへのパラダイムシフト、そして
 date = 2026-04-01T05:58:00+09:00
 
 [taxonomies]
-tags = ["Tech", "Software", "Go"]
+tags = ["Tech", "Software Engineering"]
 
 [extra]
 social_media_card = "ogp.webp"

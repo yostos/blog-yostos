@@ -4,7 +4,7 @@ description = "9月30日にClaude Sonnet 4.5がリリースされました。"
 date = 2025-10-03
 
 [taxonomies]
-tags = ["Tech", "Generative AI", "Claude Code"]
+tags = ["Tech", "Generative AI"]
 [extra]
 social_media_card = "ogp.webp"
 +++

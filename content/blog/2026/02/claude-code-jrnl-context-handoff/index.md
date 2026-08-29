@@ -12,7 +12,7 @@ Auto Memoryとの使い分けまで
 """
 date = 2026-02-13
 [taxonomies]
-tags = ["Tech", "Generative AI", "Claude Code", "CLI"]
+tags = ["Tech", "Generative AI"]
 [extra]
 mermaid = true
 social_media_card = "ogp.webp"

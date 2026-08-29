@@ -4,7 +4,7 @@ description = "『ジェラシック・パーク』シリーズの最新作を�
 date = 2025-08-26
 
 [taxonomies]
-tags = ["Movies", "Music", "Entertainment"]
+tags = ["Creative", "Guitar Play"]
 [extra]
 social_media_card = "ogp.webp"
 +++

@@ -10,7 +10,7 @@ description = """
 date = 2026-06-22
 
 [taxonomies]
-tags = ["Current Affairs", "Chiba"]
+tags = ["Current Affairs", "Politics"]
 
 [extra]
 social_media_card = "ogp.webp"

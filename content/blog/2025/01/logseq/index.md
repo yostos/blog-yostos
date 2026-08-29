@@ -4,7 +4,7 @@ description = "I created this simple guide to LogSeq to help friends get started
 date = 2025-01-01
 
 [taxonomies]
-tags = ["Tech", "Software","Productivity","Note-taking"]
+tags = ["Tech", "Documentation"]
 [extra]
 social_media_card = "ogp.webp"
 +++

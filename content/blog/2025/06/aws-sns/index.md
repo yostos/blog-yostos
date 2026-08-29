@@ -7,7 +7,7 @@ social_media_card = "ogp.webp"
 mermaid = true
 
 [taxonomies]
-tags = ["Tech", "AWS","Python"]
+tags = ["Tech", "Cloud"]
 
 +++
 

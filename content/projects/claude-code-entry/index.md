@@ -6,7 +6,7 @@ RFPの作成を題材に、エージェント型AIとの協業を体験します
 weight = 50
 
 [taxonomies]
-tags = ["Claude Code"]
+tags = ["Tech", "Generative AI"]
 
 [extra]
 local_image = "cover.webp"

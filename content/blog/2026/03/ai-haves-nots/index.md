@@ -9,7 +9,7 @@ description = """
 date = 2026-03-13
 
 [taxonomies]
-tags = ["Generative AI", "IT Governance"]
+tags = ["Current Affairs", "Business"]
 
 [extra]
 social_media_card = "ogp.webp"

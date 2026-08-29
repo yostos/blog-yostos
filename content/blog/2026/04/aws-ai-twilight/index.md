@@ -3,7 +3,7 @@ title = "個人視点で見るAWSのAIサービスの10年"
 description = "かつて「IAMキー1本で訓練済みAPIを叩ける気軽さ」が魅力だったAWSのAI。LLM時代に個人視点で何が残っているかを、BedrockとAmazon Q Developerまで含めて観察します。"
 date = 2026-04-22T10:20:00+09:00
 [taxonomies]
-tags = ["AWS", "Tech", "Generative AI"]
+tags = ["Tech", "Cloud"]
 [extra]
 social_media_card = "ogp.webp"
 local_image = "cover.webp"

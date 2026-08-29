@@ -4,7 +4,7 @@ description = "Drone footage of Inubosaki Lighthouse, located at the easternmost
 date = 2025-09-30
 
 [taxonomies]
-tags = ["Video","Drone", "Chiba","Sea"]
+tags = ["Creative", "Movie"]
 [extra]
 social_media_card = "ogp.webp"
 +++

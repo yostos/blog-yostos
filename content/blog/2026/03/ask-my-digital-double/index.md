@@ -9,7 +9,7 @@ BGE-M3 による日本語 embedding、Llama 3.3 70B によるペルソナ付き�
 date = 2026-03-20T00:00:01+09:00
 updated = 2026-05-07
 [taxonomies]
-tags = ["Tech", "Generative AI", "Weblog","Cloudflare"]
+tags = ["Tech", "Cloud"]
 [extra]
 social_media_card = "ogp.webp"
 local_image = "cover.webp"

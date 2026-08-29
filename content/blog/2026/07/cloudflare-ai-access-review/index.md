@@ -3,7 +3,7 @@ title = "CloudflareのAI対策見直しとAIエージェント対応度診断"
 description = "2026年2月に整えたCloudflareのAIボット対策を4か月ぶりに見直しました。検索とAI学習を兼ねる「混在クローラー」を9月15日からブロック対象に含めるという仕様変更や、Agent Readinessスキャンで受けた10個の指摘を、個人ブログの視点で整理します。"
 date = 2026-07-08
 [taxonomies]
-tags = ["Tech", "Security", "Weblog"]
+tags = ["Tech", "Cloud"]
 [extra]
 social_media_card = "ogp.webp"
 local_image = "cover.webp"

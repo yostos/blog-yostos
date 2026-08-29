@@ -4,7 +4,7 @@ description = "OpenAI会長のインタビューから、生成AIブームとド
 date = 2025-10-31
 
 [taxonomies]
-tags = ["Tech", "Generative AI", "Current Affairs"]
+tags = ["Tech", "Generative AI"]
 [extra]
 social_media_card = "ogp.webp"
 +++

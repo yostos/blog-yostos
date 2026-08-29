@@ -11,7 +11,7 @@ Spotifyプリセットのターゲット
 """
 date = 2026-02-23
 [taxonomies]
-tags = ["Music", "Music Production"]
+tags = ["Creative", "Guitar Play"]
 [extra]
 social_media_card = "ogp.webp"
 +++

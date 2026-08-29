@@ -4,7 +4,7 @@ description = "npm パッケージの公開を手動で行っていると、毎�
 date = 2025-12-05
 
 [taxonomies]
-tags = ["Tech","Node"]
+tags = ["Tech", "Programming"]
 [extra]
 social_media_card = "ogp.webp"
 +++

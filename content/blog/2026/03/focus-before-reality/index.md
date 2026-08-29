@@ -3,7 +3,7 @@ title = "Photo Friday: Hazy"
 description = "A fleeting moment before the world fully awakens — captured in a quiet blur, where only the warmth in your hands is certain."
 date = 2026-03-22T09:31:44+09:00
 [taxonomies]
-tags =[ "Photography","Photo Friday" ]
+tags = ["Creative", "Photography"]
 [extra]
 social_media_card = "ogp.webp"
 local_image = "cover.jpg"

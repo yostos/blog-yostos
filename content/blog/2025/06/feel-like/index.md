@@ -4,7 +4,7 @@ description = "ネオソウルのギター教室に行くと必ず課題曲に�
 date = 2025-06-05
 
 [taxonomies]
-tags = ["Music", "Guitar"]
+tags = ["Creative", "Guitar Play"]
 [extra]
 social_media_card = "ogp.webp"
 +++

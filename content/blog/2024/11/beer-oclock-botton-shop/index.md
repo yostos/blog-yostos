@@ -4,7 +4,7 @@ description = "千葉で有名なクラフトビールの店 Beer O'clockが移�
 date = 2024-11-27
 
 [taxonomies]
-tags = ["Gourmet"]
+tags = ["Trivialities", "Gourmet"]
 [extra]
 social_media_card = "ogp.webp"
 +++

@@ -4,7 +4,7 @@ description = "It appears that a joint investigation team, including police forc
 date = 2025-01-15
 
 [taxonomies]
-tags = ["Current Affairs","Korea"]
+tags = ["Current Affairs", "Geopolitics"]
 [extra]
 social_media_card = "ogp.webp"
 +++

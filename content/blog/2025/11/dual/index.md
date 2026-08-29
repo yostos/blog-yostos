@@ -4,7 +4,7 @@ description = "映画『果てしなきスカーレット』を見て影響さ�
 date = 2025-11-21
 
 [taxonomies]
-tags = ["Splatoon", "Game"]
+tags = ["Entertainment", "Game"]
 [extra]
 social_media_card = "ogp.webp"
 +++

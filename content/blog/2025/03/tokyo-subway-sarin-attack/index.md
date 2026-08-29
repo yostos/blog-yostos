@@ -4,7 +4,7 @@ description = "本書は、オウム真理教が事件を起こした当時警�
 date = 2025-03-26
 
 [taxonomies]
-tags = ["Books"]
+tags = ["Entertainment", "Books"]
 [extra]
 social_media_card = "ogp.webp"
 +++

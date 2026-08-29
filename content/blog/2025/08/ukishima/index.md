@@ -4,7 +4,7 @@ description = "千葉県鋸南町勝山浮島を撮影してきました。古�
 date = 2025-08-24
 
 [taxonomies]
-tags = ["Video","Drone", "Chiba","Sea"]
+tags = ["Creative", "Movie"]
 [extra]
 social_media_card = "ogp.webp"
 +++

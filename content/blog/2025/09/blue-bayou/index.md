@@ -4,7 +4,7 @@ description = "Performed Linda Ronstadt's \"Blue Bayou\" inspired by the Netflix
 date = 2025-09-28
 
 [taxonomies]
-tags = ["Music", "Guitar", "Movies", "Entertainment"]
+tags = ["Creative", "Guitar Play"]
 [extra]
 social_media_card = "ogp.webp"
 +++

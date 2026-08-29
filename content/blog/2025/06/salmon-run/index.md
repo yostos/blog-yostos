@@ -4,7 +4,7 @@ description = "仕事できる奴らと仕事すると楽しいが・・・"
 date = 2025-06-10
 
 [taxonomies]
-tags = ["Splatoon", "Game"]
+tags = ["Trivialities", "Life"]
 [extra]
 social_media_card = "ogp.webp"
 +++

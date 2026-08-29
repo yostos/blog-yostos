@@ -4,7 +4,7 @@ description = "ちょっと必要があって報道各社のリンクポリシ�
 date = 2024-09-10
 
 [taxonomies]
-tags = ["Current Affairs","Old Media"]
+tags = ["Current Affairs", "Media"]
 [extra]
 social_media_card = "ogp.webp"
 +++

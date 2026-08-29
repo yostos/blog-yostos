@@ -5,7 +5,7 @@ AWSに新しいクレジットカードを登録しようとしたら「Your aut
 """
 date = 2026-07-24T11:55:34+09:00
 [taxonomies]
-tags = ["Tech", "Cloud", "AWS"]
+tags = ["Tech", "Cloud"]
 [extra]
 social_media_card = "ogp.webp"
 local_image = "cover.webp"

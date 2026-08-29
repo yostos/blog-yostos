@@ -4,7 +4,7 @@ description = "4月に入って日本語対応のApple Intelligenceをサポー�
 date = 2025-04-18
 
 [taxonomies]
-tags = ["Tech", "Mac","Apple"]
+tags = ["Tech", "CLI"]
 [extra]
 social_media_card = "ogp.webp"
 +++

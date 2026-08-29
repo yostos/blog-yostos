@@ -5,7 +5,7 @@ date = 2024-10-23
 updated = 2026-07-01
 
 [taxonomies]
-tags = ["Tech","Messaging Apps" ,"Security"]
+tags = ["Tech", "Security"]
 [extra]
 social_media_card = "ogp.webp"
 +++

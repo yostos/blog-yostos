@@ -4,7 +4,7 @@ description = "Just past noon, a sugar-dusted doughnut sparkles in the bright wi
 date = 2025-06-08
 
 [taxonomies]
-tags = ["Photography","Photo Friday"]
+tags = ["Creative", "Photography"]
 [extra]
 social_media_card = "ogp.webp"
 +++

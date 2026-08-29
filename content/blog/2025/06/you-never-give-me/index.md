@@ -4,7 +4,7 @@ description = "この曲には先日購入したHudson Broadcastが合うかな�
 date = 2025-06-20
 
 [taxonomies]
-tags = ["Music", "Guitar"]
+tags = ["Creative", "Guitar Play"]
 [extra]
 social_media_card = "ogp.webp"
 +++

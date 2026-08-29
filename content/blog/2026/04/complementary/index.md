@@ -6,8 +6,7 @@ Photo Friday のお題「Complementary」に合わせて撮影した一枚を紹
 date = 2026-04-17T06:03:42+09:00
 
 [taxonomies]
-tags = ["Photography", "Photo Friday"]
-
+tags = ["Creative", "Photography"]
 [extra]
 social_media_card = "ogp.webp"
 local_image = "ground-palette.jpg"

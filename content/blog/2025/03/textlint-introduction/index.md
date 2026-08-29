@@ -4,7 +4,7 @@ description = "textlintを活用して日本語の技術ブログ記事の品質
 date = 2025-03-23
 
 [taxonomies]
-tags = ["Tech","Writing","Software","Weblog"]
+tags = ["Tech", "Weblog"]
 [extra]
 social_media_card = "ogp.webp"
 +++

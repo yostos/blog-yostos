@@ -4,7 +4,7 @@ description = "中島聡氏のメールマガジンに「戦争責任にケジ�
 date = 2025-08-18
 
 [taxonomies]
-tags = ["Current Affairs", "China"]
+tags = ["Current Affairs", "Geopolitics"]
 [extra]
 social_media_card = "ogp.webp"
 +++

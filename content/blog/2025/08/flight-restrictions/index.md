@@ -4,7 +4,7 @@ description = "国土交通省から韓国大統領来日に伴う無人航空�
 date = 2025-08-23
 
 [taxonomies]
-tags = ["Drone", "Current Affairs"]
+tags = ["Current Affairs", "Geopolitics"]
 [extra]
 social_media_card = "ogp.webp"
 +++

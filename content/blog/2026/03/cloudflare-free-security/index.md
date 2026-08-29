@@ -3,7 +3,7 @@ title = "無料で始める Cloudflare セキュリティ対策"
 description = "個人ブログにAI Chat機能を追加した翌日、スキャンボットの集中アクセスを確認しました。Cloudflareの無料プランだけで実施できるBot Fight Mode、WAFカスタムルール、Rate Limitingの3つの対策を紹介します。"
 date = 2026-03-23
 [taxonomies]
-tags = ["Tech", "Security", "Cloudflare"]
+tags = ["Tech", "Security"]
 [extra]
 social_media_card = "ogp.webp"
 local_image = "cover.webp"

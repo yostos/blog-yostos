@@ -5,7 +5,7 @@ TS系のPPSE Classicでは出しづらい、エッジの効いたゲイン高め
 """
 date = 2026-07-03T13:25:59+09:00
 [taxonomies]
-tags = ["Guitar Pedals"]
+tags = ["Gadget", "Guitar"]
 [extra]
 social_media_card = "ogp.webp"
 local_image = "cover.webp"

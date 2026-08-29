@@ -4,7 +4,7 @@ description = "今月一杯で閉館してしまう。千葉県佐倉市のDIC�
 date = 2025-03-18
 
 [taxonomies]
-tags = ["Current Affairs","Art","Chiba"]
+tags = ["Entertainment", "Art"]
 [extra]
 social_media_card = "ogp.webp"
 +++

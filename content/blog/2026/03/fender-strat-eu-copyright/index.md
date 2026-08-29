@@ -8,7 +8,7 @@ description = """
 date = 2026-03-19
 
 [taxonomies]
-tags = ["Guitar", "Current Affairs"]
+tags = ["Gadget", "Guitar"]
 
 [extra]
 local_image = "cover.webp"

@@ -7,7 +7,7 @@ ArcからSafariへ乗り換えた記録です。\
 """
 date = 2026-03-17T15:34:11+09:00
 [taxonomies]
-tags = ["Mac", "Tech", "Software"]
+tags = ["Tech", "Software"]
 [extra]
 social_media_card = "ogp.webp"
 local_image = "cover.webp"

@@ -4,7 +4,7 @@ description = "Against the odds, victory with an unfamiliar yellow weapon. I fel
 date = 2025-04-21
 
 [taxonomies]
-tags = ["Splatoon", "Game"]
+tags = ["Entertainment", "Game"]
 [extra]
 social_media_card = "ogp.webp"
 +++

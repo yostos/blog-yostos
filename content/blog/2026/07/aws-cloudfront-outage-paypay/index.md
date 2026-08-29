@@ -3,7 +3,7 @@ title = "AWS障害でPayPayが利用不可に フランクフルトの一AZが�
 description = "2026年7月16日、AWSのCDN「CloudFront」で障害が発生し、PayPayの決済やニコニコ生放送、はてなブログなど多数のサービスに影響が出ました。発生源はフランクフルトの単一AZという局所的な障害でしたが、なぜ日本を含む世界9か国に波及したのか、その仕組みを整理します。"
 date = 2026-07-16
 [taxonomies]
-tags = ["Tech", "AWS", "Current Affairs"]
+tags = ["Tech", "Cloud"]
 [extra]
 social_media_card = "ogp.webp"
 local_image = "cover.webp"

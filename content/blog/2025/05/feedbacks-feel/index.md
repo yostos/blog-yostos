@@ -4,7 +4,7 @@ description = "ディストーションにBOSS DF-1を使っていて、うっ�
 date = 2025-05-17
 
 [taxonomies]
-tags = ["Music", "Guitar"]
+tags = ["Creative", "Guitar Play"]
 [extra]
 social_media_card = "ogp.webp"
 +++

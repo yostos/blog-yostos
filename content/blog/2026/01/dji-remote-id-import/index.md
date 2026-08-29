@@ -8,7 +8,7 @@ DJI NEOの修理後にRemote IDが消失。スマートフォンとの
 date = 2026-01-20
 
 [taxonomies]
-tags =["Drone"]
+tags = ["Gadget", "Drone"]
 [extra]
 social_media_card = "ogp.webp"
 +++

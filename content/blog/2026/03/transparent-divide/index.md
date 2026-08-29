@@ -5,7 +5,7 @@ A wall of glass and steel rises into the sky, grid upon grid, clear yet impenetr
 """
 date = 2026-03-28T10:34:17+09:00
 [taxonomies]
-tags = ["Photography", "Photo Friday"]
+tags = ["Creative", "Photography"]
 [extra]
 social_media_card = "ogp.webp"
 local_image = "transparent-divide.jpg"

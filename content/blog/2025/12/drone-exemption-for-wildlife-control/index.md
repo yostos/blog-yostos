@@ -4,7 +4,7 @@ description = "2025年12月5日、航空法第132条の92の特例に獣害対�
 date = 2025-12-10
 
 [taxonomies]
-tags = ["Drone", "Current Affairs"]
+tags = ["Current Affairs", "Disaster"]
 [extra]
 social_media_card = "ogp.webp"
 +++

@@ -6,7 +6,7 @@ Singletonは現代の設計手法により非推奨となりました。\
 date = 2026-04-02T10:15+09:00
 
 [taxonomies]
-tags = ["Tech", "Software", "Go"]
+tags = ["Tech", "Software Engineering"]
 
 [extra]
 social_media_card = "ogp.webp"

@@ -4,7 +4,7 @@ description = "五月の穏やかな午後に柔らかな日差しを浴びな�
 date = 2025-04-27
 
 [taxonomies]
-tags = ["Music", "Guitar"]
+tags = ["Creative", "Guitar Play"]
 [extra]
 social_media_card = "ogp.webp"
 +++

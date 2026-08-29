@@ -4,7 +4,7 @@ description = "デザイン入門のようなコースをうけていて「色�
 date = 2025-01-25
 
 [taxonomies]
-tags = ["Tech", "Software","CLI","Accessibility"]
+tags = ["Tech", "CLI"]
 [extra]
 social_media_card = "ogp.webp"
 +++

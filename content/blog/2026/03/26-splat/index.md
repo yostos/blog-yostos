@@ -3,7 +3,7 @@ title = "久しぶりにスプラトゥーンやったら、結構変わって�
 description = "久しぶりにスプラトゥーン3をプレイしたら、Ver11.0.0で追加された新システム「イカフロー」で撃ち合いの楽しさが変わっていました。連続キルで発動する強化状態の仕組みと、復帰後の所感をまとめています。"
 date = 2026-03-26T08:54:18+09:00
 [taxonomies]
-tags = ["Entertainment", "Game", "Splatoon"]
+tags = ["Entertainment", "Game"]
 [extra]
 social_media_card = "ogp.webp"
 local_image = "cover.webp"

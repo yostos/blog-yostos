@@ -8,7 +8,7 @@ SPFにはDNSルックアップ上限10回の制約があり、\
 date = 2026-03-03
 
 [taxonomies]
-tags = ["Tech", "Security", "Mail", "DNS"]
+tags = ["Tech", "Security"]
 
 [extra]
 social_media_card = "ogp.webp"

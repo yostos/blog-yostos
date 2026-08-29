@@ -4,7 +4,7 @@ description = "Intelは今期も赤字で、しかも2兆円を上回る赤字�
 date = 2024-11-01
 
 [taxonomies]
-tags = ["Tech", "Current Affairs"]
+tags = ["Current Affairs", "Business"]
 [extra]
 social_media_card = "ogp.webp"
 +++

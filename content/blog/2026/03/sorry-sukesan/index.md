@@ -3,7 +3,7 @@ title = "資さんうどんを食べてきた"
 description = "関東進出のたびに大行列を生む北九州のソウルフード「資さんうどん」が千葉市に初出店。福岡で育ち、出汁文化に親しんできた筆者が子ども時代のうどんの記憶とともに「こてはし台店」を体験します。"
 date = 2026-03-21T08:43:34+09:00
 [taxonomies]
-tags = ["Gourmet", "Chiba"]
+tags = ["Trivialities", "Gourmet"]
 [extra]
 social_media_card = "ogp.webp"
 local_image = "cover.webp"

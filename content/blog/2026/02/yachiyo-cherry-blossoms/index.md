@@ -8,7 +8,7 @@ DJI Air 3SとDJI NEOの映像でお届けします。\
 date = 2026-02-27T20:15:00+09:00
 
 [taxonomies]
-tags = ["Video","Drone", "Chiba","River"]
+tags = ["Creative", "Movie"]
 
 [extra]
 local_image = "cover.jpg"

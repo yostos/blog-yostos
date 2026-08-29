@@ -9,7 +9,7 @@ description = """
 date = 2026-02-09T12:30:00+09:00
 
 [taxonomies]
-tags = ["Generative AI", "Tech", "Career"]
+tags = ["Tech", "Generative AI"]
 
 [extra]
 canonical_url = "https://zenn.dev/yostos/articles/ai-human-divergence"

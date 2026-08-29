@@ -4,7 +4,7 @@ description = "A guitar performance of \"Nagisa Moderato\" by Masayoshi Takanaka
 date = 2025-07-26
 
 [taxonomies]
-tags = ["Music", "Guitar"]
+tags = ["Creative", "Guitar Play"]
 [extra]
 social_media_card = "ogp.webp"
 +++

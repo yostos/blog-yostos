@@ -6,7 +6,7 @@ date = 2026-05-19
 
 
 [taxonomies]
-tags = ["Drone"]
+tags = ["Gadget", "Drone"]
 
 [extra]
 social_media_card = "ogp.webp"

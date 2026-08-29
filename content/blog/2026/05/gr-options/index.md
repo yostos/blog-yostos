@@ -4,7 +4,7 @@ description = """本体を手に入れたら、次は周辺アクセサリーで
 date = 2026-05-27T08:12:52+09:00
 
 [taxonomies]
-tags = ["Photography", "Gadget"]
+tags = ["Gadget", "Camera"]
 
 [extra]
 social_media_card = "ogp.webp"

@@ -6,7 +6,7 @@ from architecture diagrams."""
 weight = 70
 
 [taxonomies]
-tags = ["Python", "AWS"]
+tags = ["Tech", "Cloud"]
 
 [extra]
 local_image = "cover.webp"

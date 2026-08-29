@@ -4,7 +4,7 @@ description = "今更ですが、新シーズンなのでがんばりましょ�
 date = 2025-06-17
 
 [taxonomies]
-tags = ["Splatoon", "Game"]
+tags = ["Entertainment", "Game"]
 [extra]
 social_media_card = "ogp.webp"
 +++

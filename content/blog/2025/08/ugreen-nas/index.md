@@ -4,7 +4,7 @@ description = "A 2-month review of the excellent cost-performance UGREEN NASync 
 date = 2025-08-31
 
 [taxonomies]
-tags = ["Tech","Gadget"]
+tags = ["Gadget", "Computers"]
 [extra]
 social_media_card = "ogp.webp"
 +++

@@ -5,7 +5,7 @@ Anthropic CEOが語った「エンジニアはもうコードを書かない」�
 """
 date = 2026-04-09T07:23:22+09:00
 [taxonomies]
-tags = ["Generative AI", "Claude Code"]
+tags = ["Tech", "Generative AI"]
 [extra]
 social_media_card = "ogp.webp"
 local_image = "cover.webp"

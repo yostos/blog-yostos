@@ -4,7 +4,7 @@ description = "そう言えば、しばらくぶらぶらしていましたが�
 date = 2025-04-07
 
 [taxonomies]
-tags = ["Career","Splatoon","Game"]
+tags = ["Trivialities", "Life"]
 [extra]
 social_media_card = "ogp.webp"
 +++

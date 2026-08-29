@@ -4,7 +4,7 @@ description = "国産ギターメーカーのフェルナンデスが倒産し�
 date = 2024-07-15
 
 [taxonomies]
-tags = ["Guitar","Current Affairs"]
+tags = ["Gadget", "Guitar"]
 [extra]
 social_media_card = "ogp.webp"
 +++

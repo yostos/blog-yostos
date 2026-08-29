@@ -5,7 +5,7 @@ Photo Friday の「Bench」へ寄せた一枚。眺めのために据えられ�
 """
 date = 2026-06-07T17:49:33+09:00
 [taxonomies]
-tags =[ "Photography","Photo Friday" ]
+tags = ["Creative", "Photography"]
 [extra]
 social_media_card = "ogp.webp"
 local_image = "cover.webp"

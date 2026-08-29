@@ -4,7 +4,7 @@ description = "Macのメニュー管理アプリのBartenderが結構まずい�
 date = 2024-11-12
 
 [taxonomies]
-tags = ["Tech","Software","Mac"]
+tags = ["Tech", "Software"]
 [extra]
 social_media_card = "ogp.webp"
 +++

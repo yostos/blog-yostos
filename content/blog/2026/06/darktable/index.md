@@ -5,7 +5,7 @@ RAW 現像に、無料でありながら高機能な darktable を選びまし�
 """
 date = 2026-06-12T09:46:20+09:00
 [taxonomies]
-tags =[ "Tech","Photography" ]
+tags = ["Creative", "Photography"]
 [extra]
 social_media_card = "ogp.webp"
 local_image = "cover.webp"

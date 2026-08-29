@@ -4,7 +4,7 @@ description = "Strymon から Fairfaxという新しい歪み系のペダルが�
 date = 2025-12-21
 
 [taxonomies]
-tags = ["Guitar Pedals"]
+tags = ["Gadget", "Guitar"]
 [extra]
 social_media_card = "ogp.webp"
 +++

@@ -10,7 +10,7 @@ Neural DSP Archetype Cory Wong Xで音作りをしています。
 date = 2026-01-25
 
 [taxonomies]
-tags =["Music","Guitar"]
+tags = ["Creative", "Guitar Play"]
 [extra]
 social_media_card = "ogp.webp"
 +++

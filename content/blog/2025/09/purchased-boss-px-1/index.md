@@ -4,7 +4,7 @@ description = "海外では大変バッシングされているBOSSの新しい�
 date = 2025-09-27
 
 [taxonomies]
-tags = ["Guitar Pedals"]
+tags = ["Gadget", "Guitar"]
 [extra]
 social_media_card = "ogp.webp"
 +++

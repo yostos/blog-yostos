@@ -3,7 +3,7 @@ title = "パンを焼いてみた"
 description = "ル・クルーゼのブレッド・オーブンで、フランスパンの原点ともいえるブール（Boule）を焼いてみました。全粒粉を使ったレシピと、自分でパンを焼く理由を紹介します。"
 date = 2026-04-04T05:58:21+09:00
 [taxonomies]
-tags = ["Gourmet"]
+tags = ["Trivialities", "Gourmet"]
 [extra]
 social_media_card = "ogp.webp"
 local_image = "cover.jpg"

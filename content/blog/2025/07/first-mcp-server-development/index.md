@@ -4,7 +4,7 @@ description = "Model Context Protocol（MCP）を使って、コマンドライ�
 date = 2025-07-08
 
 [taxonomies]
-tags = ["Tech", "Generative AI","CLI","TypeScript"]
+tags = ["Tech", "Generative AI"]
 [extra]
 social_media_card = "ogp.webp"
 +++

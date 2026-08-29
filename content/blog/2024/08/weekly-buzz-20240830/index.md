@@ -4,7 +4,7 @@ description = "今週は、NVIDIA関連、Telegram CEO逮捕、台風などを�
 date = 2024-08-30
 
 [taxonomies]
-tags = ["Weekly Buzz","Current Affairs"]
+tags = ["Current Affairs", "Weekly Buzz"]
 [extra]
 social_media_card = "ogp.webp"
 +++

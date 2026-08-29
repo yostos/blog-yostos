@@ -4,7 +4,7 @@ description = "高市政権には大変期待していますが、高市首相�
 date = 2025-12-03
 
 [taxonomies]
-tags = ["Current Affairs"]
+tags = ["Current Affairs", "Politics"]
 [extra]
 social_media_card = "ogp.webp"
 +++

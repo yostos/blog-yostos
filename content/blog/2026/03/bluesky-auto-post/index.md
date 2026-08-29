@@ -8,7 +8,7 @@ git diffによる新規記事の判定、リンクカード付き投稿、\
 """
 date = 2026-03-18
 [taxonomies]
-tags = ["Tech", "Weblog", "Generative AI"]
+tags = ["Tech", "Weblog"]
 [extra]
 social_media_card = "ogp.webp"
 local_image = "cover.webp"

@@ -4,7 +4,7 @@ description = "日本政府が米増産への政策転換を表明しました�
 date = 2025-08-06
 
 [taxonomies]
-tags = ["Current Affairs"]
+tags = ["Current Affairs", "Politics"]
 [extra]
 social_media_card = "ogp.webp"
 +++

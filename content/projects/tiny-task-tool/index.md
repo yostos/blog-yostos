@@ -6,7 +6,7 @@ A digital sheet of paper for your terminal."""
 weight = 20
 
 [taxonomies]
-tags = ["Go", "CLI"]
+tags = ["Tech", "CLI"]
 
 [extra]
 local_image = "cover.webp"

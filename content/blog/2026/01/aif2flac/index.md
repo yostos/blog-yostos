@@ -9,7 +9,7 @@ Bashスクリプトを作成しました。測定と適用を一度のコマン�
 date = 2026-01-14
 
 [taxonomies]
-tags =["Music Production","CLI"]
+tags = ["Tech", "CLI"]
 [extra]
 social_media_card = "ogp.webp"
 +++

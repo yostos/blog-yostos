@@ -4,7 +4,7 @@ description = "最近気になってWEBデザイン関連の認定資格を調�
 date = 2025-03-09
 
 [taxonomies]
-tags = ["Certification", "Tech"]
+tags = ["Tech", "Certification"]
 [extra]
 social_media_card = "ogp.webp"
 +++

@@ -4,7 +4,7 @@ description = "先日実家の漫画を整理した際に小学生の頃に始�
 date = 2025-01-24
 
 [taxonomies]
-tags = ["Books", "Anime","Manga"]
+tags = ["Entertainment", "Manga"]
 [extra]
 social_media_card = "ogp.webp"
 +++

@@ -4,7 +4,7 @@ description = "先日発売されたScaler3ですが、音楽理論を知らな�
 date = 2025-05-31
 
 [taxonomies]
-tags = ["Music Production", "Software"]
+tags = ["Tech", "Software"]
 [extra]
 social_media_card = "ogp.webp"
 +++

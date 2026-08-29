@@ -4,7 +4,7 @@ description = "自民党と日本維新の会との連立合意について。�
 date = 2025-10-20
 
 [taxonomies]
-tags = ["Current Affairs"]
+tags = ["Current Affairs", "Politics"]
 [extra]
 social_media_card = "ogp.webp"
 +++

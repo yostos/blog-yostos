@@ -4,7 +4,7 @@ description = "Micro.blogを利用したブログを運用していましたが�
 date = 2025-03-17
 
 [taxonomies]
-tags = ["Tech","Web","Weblog"]
+tags = ["Tech", "Weblog"]
 [extra]
 social_media_card = "ogp.webp"
 +++

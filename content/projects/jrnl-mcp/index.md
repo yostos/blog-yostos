@@ -6,7 +6,7 @@ Operate your journal directly from Claude."""
 weight = 30
 
 [taxonomies]
-tags = ["TypeScript", "Claude Code"]
+tags = ["Tech", "Generative AI"]
 
 [extra]
 local_image = "cover.webp"

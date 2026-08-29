@@ -4,7 +4,7 @@ description = "中森明菜さんが7年ぶりに復活か？"
 date = 2024-07-15
 
 [taxonomies]
-tags = ["Guitar","Music"]
+tags = ["Creative", "Guitar Play"]
 [extra]
 social_media_card = "ogp.webp"
 +++

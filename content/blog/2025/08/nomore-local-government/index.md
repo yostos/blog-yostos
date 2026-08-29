@@ -4,7 +4,7 @@ description = "After working at a local government affiliated organization, the 
 date = 2025-08-28
 
 [taxonomies]
-tags = ["Current Affairs", "Career"]
+tags = ["Current Affairs", "Politics"]
 [extra]
 social_media_card = "ogp.webp"
 +++

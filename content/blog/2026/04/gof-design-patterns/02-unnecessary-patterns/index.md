@@ -6,7 +6,7 @@ description = """GoFの23パターンをGo言語の視点から再検討しま�
 date = 2026-04-01T10:00:00+09:00
 
 [taxonomies]
-tags = ["Tech", "Software", "Go"]
+tags = ["Tech", "Software Engineering"]
 
 [extra]
 social_media_card = "ogp.webp"

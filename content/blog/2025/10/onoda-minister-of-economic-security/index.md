@@ -4,7 +4,7 @@ description = "小野田経済安保相の驚愕のスピードで記者会見�
 date = 2025-10-22
 
 [taxonomies]
-tags = ["Current Affairs"]
+tags = ["Current Affairs", "Politics"]
 [extra]
 social_media_card = "ogp.webp"
 +++

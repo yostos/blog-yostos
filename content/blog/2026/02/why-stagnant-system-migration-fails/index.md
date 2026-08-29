@@ -8,7 +8,7 @@ IT部門が弱い組織で塩漬けシステムが「無理ゲー」になる構
 date = 2026-02-05
 
 [taxonomies]
-tags = ["IT Governance", "Tech"]
+tags = ["Tech", "IT Governance"]
 
 [extra]
 social_media_card = "ogp.webp"

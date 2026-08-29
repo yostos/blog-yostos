@@ -4,7 +4,7 @@ description = "うっかり実装を忘れていたsitemap.xmlとrobots.txtをNe
 date = 2025-03-25
 
 [taxonomies]
-tags = ["Tech","Web"]
+tags = ["Tech", "Weblog"]
 [extra]
 social_media_card = "ogp.webp"
 +++

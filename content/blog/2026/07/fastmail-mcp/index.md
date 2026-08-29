@@ -7,7 +7,7 @@ description = """
 """
 date = 2026-07-15T14:04:12+09:00
 [taxonomies]
-tags =[ "Generative AI" ]
+tags = ["Tech", "Cloud"]
 [extra]
 social_media_card = "ogp.webp"
 local_image = "cover.webp"

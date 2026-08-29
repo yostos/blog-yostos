@@ -8,7 +8,7 @@ GitHub Pagesはセキュリティヘッダの設定ができません。
 """
 date = 2026-02-06
 [taxonomies]
-tags = ["Security", "SSG"]
+tags = ["Tech", "Security"]
 [extra]
 social_media_card = "ogp.webp"
 mermaid = true

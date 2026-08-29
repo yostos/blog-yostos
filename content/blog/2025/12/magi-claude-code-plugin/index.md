@@ -4,7 +4,7 @@ description = "エヴァンゲリオンに登場するMAGIシステムを参考�
 date = 2025-12-12
 
 [taxonomies]
-tags = ["Tech", "Generative AI","Claude Code"]
+tags = ["Tech", "Generative AI"]
 
 [extra]
 social_media_card = "ogp.webp"

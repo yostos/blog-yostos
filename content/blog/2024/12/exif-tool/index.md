@@ -4,7 +4,7 @@ description = "I recently embarked on a journey to digitize my old photographs. 
 date = 2024-12-30
 
 [taxonomies]
-tags = ["Tech", "Photography"]
+tags = ["Tech", "CLI"]
 [extra]
 social_media_card = "ogp.webp"
 +++

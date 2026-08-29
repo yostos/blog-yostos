@@ -4,7 +4,7 @@ description = "I recently purchased a DJI Neo drone, and in Japan, it's mandator
 date = 2025-01-10
 
 [taxonomies]
-tags = ["Tech","PDF","CLI"]
+tags = ["Tech", "CLI"]
 [extra]
 social_media_card = "ogp.webp"
 +++

@@ -8,7 +8,7 @@ OpenAIと新たな契約を締結しました。両社とも同じ安全性の�
 """
 date = 2026-03-02T08:37:01+09:00
 [taxonomies]
-tags = ["Current Affairs", "Generative AI"]
+tags = ["Current Affairs", "Business"]
 [extra]
 local_image = "cover.webp"
 social_media_card = "ogp.webp"

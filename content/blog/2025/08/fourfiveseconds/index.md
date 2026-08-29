@@ -4,7 +4,7 @@ description = "隠れたポール参加の名曲を演奏してみました。"
 date = 2025-08-14
 
 [taxonomies]
-tags = ["Music","Guitar"]
+tags = ["Creative", "Guitar Play"]
 [extra]
 social_media_card = "ogp.webp"
 +++

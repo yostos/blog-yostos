@@ -6,7 +6,7 @@ to ASCII art using 8x8 dot pattern matching."""
 weight = 10
 
 [taxonomies]
-tags = ["Go", "CLI"]
+tags = ["Tech", "CLI"]
 
 [extra]
 local_image = "cover.webp"

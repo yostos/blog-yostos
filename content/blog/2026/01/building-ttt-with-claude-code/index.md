@@ -9,7 +9,7 @@ description = """
 date = 2026-01-23
 
 [taxonomies]
-tags =["Tech", "OSS", "Go", "CLI", "Task Management"]
+tags = ["Tech", "CLI"]
 
 [extra]
 social_media_card = "ogp.webp"

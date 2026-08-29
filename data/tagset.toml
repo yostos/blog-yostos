@@ -1,0 +1,312 @@
+# タグセット定義
+#
+# 第1層は固定7種。第2層は必ず1つの第1層に所属する。
+# 書き方と運用は docs/tag-rule.md、形式の選定理由は
+# docs/architectural-decision.md の ADR-0003 を参照。
+#
+# 初期化: 2026-08-29 に既存記事から第2層タグを抽出して作成。
+# 各タグのコメントは現時点の記事数。
+# parent = "n/a" は第1層への所属が未確定のタグ。
+
+schema_version = 1
+
+# ---------------------------------------------------------------
+# 第1層（固定7種。増減させない）
+# ---------------------------------------------------------------
+
+[[layer1]]
+name = "Tech"
+description = "ソフトウェア、クラウド、AI、開発ツールなど技術全般。"
+
+[[layer1]]
+name = "Current Affairs"
+description = "政治、経済、社会の時事的な話題。"
+
+[[layer1]]
+name = "Creative"
+description = "音楽、デザイン、映像、文章などの創作と表現。"
+
+[[layer1]]
+name = "Entertainment"
+description = "映画、ゲーム、アニメ、書籍などの娯楽作品。"
+
+[[layer1]]
+name = "Gadget"
+description = "PC、周辺機器、モバイル端末などの機器とその使用感。"
+
+[[layer1]]
+name = "Trivialities"
+description = "日常の雑記。暮らし、食、旅、仕事まわりの小さな出来事。"
+
+[[layer1]]
+name = "Automotive"
+description = "自動車と二輪車。運転、整備、車両にまつわる話題。"
+
+# ---------------------------------------------------------------
+# 第2層 / Tech
+# ---------------------------------------------------------------
+
+[[layer2]]
+name = "Generative AI"                      # 49
+parent = "Tech"
+description = "生成AIモデルとその活用。LLM、画像生成、プロンプト設計。"
+
+[[layer2]]
+name = "Security"                           # 13
+parent = "Tech"
+description = "情報セキュリティ。脆弱性、認証、プライバシー保護。"
+
+[[layer2]]
+name = "Software"                           # 7
+parent = "Tech"
+description = "ソフトウェア製品とアプリケーションの紹介、比較、使い方。"
+
+[[layer2]]
+name = "Weblog"                             # 14
+parent = "Tech"
+description = "ブログの構築と運営。静的サイト生成、テーマ、デプロイ。"
+
+[[layer2]]
+name = "CLI"                                # 12
+parent = "Tech"
+description = "コマンドラインツールとターミナル環境。"
+
+[[layer2]]
+name = "Cloud"                              # 18
+parent = "Tech"
+description = "クラウドコンピューティング全般。インフラとマネージドサービス。"
+
+[[layer2]]
+name = "Web"                                # 5
+parent = "Tech"
+description = "Web 技術全般。HTML、CSS、ブラウザ、Web 標準。"
+
+[[layer2]]
+name = "IT Governance"                      # 4
+parent = "Tech"
+description = "企業の IT 統制。規程、監査、リスク管理。"
+
+[[layer2]]
+name = "Documentation"                      # 2
+parent = "Tech"
+description = "文書の作成と管理。記法、ノート、ナレッジの蓄積。"
+
+[[layer2]]
+name = "API"                                # 2
+parent = "Tech"
+description = "API の設計と利用。"
+
+[[layer2]]
+name = "Software Engineering"               # 4
+parent = "Tech"
+description = "ソフトウェア開発の設計、プロセス、方法論。"
+
+[[layer2]]
+name = "Programming"                        # 1
+parent = "Tech"
+description = "プログラミング一般。実装手法とコーディング。"
+
+
+[[layer2]]
+name = "Editor"                             # 1
+parent = "Tech"
+description = "テキストエディタと執筆・編集環境。"
+
+[[layer2]]
+name = "Font"                               # 4
+parent = "Tech"
+description = "フォントと書体。"
+
+[[layer2]]
+name = "Certification"                      # 4
+parent = "Tech"
+description = "資格試験と受験の記録。"
+
+# ---------------------------------------------------------------
+# 第2層 / Current Affairs
+# ---------------------------------------------------------------
+
+[[layer2]]
+name = "Business"                           # 12
+parent = "Current Affairs"
+description = "企業の経営、事業、人事。業界動向と経営者の動静。"
+
+[[layer2]]
+name = "Weekly Buzz"                        # 10
+parent = "Current Affairs"
+description = "週ごとに時事の話題をまとめる定期連載。"
+
+[[layer2]]
+name = "Politics"                           # 16
+parent = "Current Affairs"
+description = "政治をめぐる話題。"
+
+[[layer2]]
+name = "Geopolitics"                        # 7
+parent = "Current Affairs"
+description = "地政学の政治、経済、社会問題"
+
+[[layer2]]
+name = "Media"                              # 3
+parent = "Current Affairs"
+description = "新聞やテレビなど既存マスメディアとその課題。"
+
+[[layer2]]
+name = "Show Business"                      # 2
+parent = "Current Affairs"
+description = "芸能界とタレント、テレビ番組をめぐる話題。"
+
+[[layer2]]
+name = "Disaster"                           # 6
+parent = "Current Affairs"
+description = "災害と事故。自然災害、被害の記録、公的機関の対応。"
+
+# ---------------------------------------------------------------
+# 第2層 / Creative
+# ---------------------------------------------------------------
+
+[[layer2]]
+name = "Photography"                        # 16
+parent = "Creative"
+description = "写真の撮影、カメラ機材、作品の公開。"
+
+[[layer2]]
+name = "Movie"                              # 15
+parent = "Creative"
+description = "映像作品の制作。撮影、編集、公開。"
+
+[[layer2]]
+name = "Guitar Play"                        # 47
+parent = "Creative"
+description = "ギターの演奏と練習。"
+
+# ---------------------------------------------------------------
+# 第2層 / Entertainment
+# ---------------------------------------------------------------
+
+[[layer2]]
+name = "Game"                               # 15
+parent = "Entertainment"
+description = "ビデオゲーム全般。"
+
+[[layer2]]
+name = "Books"                              # 4
+parent = "Entertainment"
+description = "書籍と読書。"
+
+[[layer2]]
+name = "Films"                              # 10
+parent = "Entertainment"
+description = "映画やドラマなどの映像作品とその感想。"
+
+[[layer2]]
+name = "Manga"                              # 1
+parent = "Entertainment"
+description = "マンガ作品。"
+
+[[layer2]]
+name = "Music"                              # 1
+parent = "Entertainment"
+description = "音楽の聴取。配信サービス、アルバム、アーティスト。"
+
+[[layer2]]
+name = "Concerts"                           # 2
+parent = "Entertainment"
+description = "ライブ、コンサート、音楽フェス。会場で聴く音楽の記録。"
+
+[[layer2]]
+name = "Art"                                # 2
+parent = "Entertainment"
+description = "美術と芸術作品、展覧会。"
+
+# ---------------------------------------------------------------
+# 第2層 / Gadget
+# ---------------------------------------------------------------
+
+[[layer2]]
+name = "Guitar"                             # 26
+parent = "Gadget"
+description = "ギター本体とアンプなどの機材。"
+
+[[layer2]]
+name = "Drone"                              # 11
+parent = "Gadget"
+description = "ドローンの機体、飛行、空撮、関連する規制。"
+
+[[layer2]]
+name = "Peripherals"                        # 5
+parent = "Gadget"
+description = "キーボード、マウスなどPCの周辺機器。"
+
+[[layer2]]
+name = "Camera"                             # 3
+parent = "Gadget"
+description = "カメラとレンズなどの撮影機材。"
+
+[[layer2]]
+name = "Apparel"                            # 1
+parent = "Gadget"
+description = "衣類やバッグなど身に着ける道具。"
+
+[[layer2]]
+name = "Everyday Goods"                     # 1
+parent = "Gadget"
+description = "電子機器ではない日用の道具。刃物、文房具、時計など。"
+
+[[layer2]]
+name = "Mobile"                             # 1
+parent = "Gadget"
+description = "携帯回線やプロバイダなど通信サービスの契約。"
+
+[[layer2]]
+name = "Computers"                          # 3
+parent = "Gadget"
+description = "Mac、Android端末、NASなど計算機本体の製品。"
+
+# ---------------------------------------------------------------
+# 第2層 / Trivialities
+# ---------------------------------------------------------------
+
+[[layer2]]
+name = "Gourmet"                            # 9
+parent = "Trivialities"
+description = "食べ物と飲食店。"
+
+[[layer2]]
+name = "Travel"                             # 6
+parent = "Trivialities"
+description = "旅行と外出の記録。"
+
+[[layer2]]
+name = "Life"                               # 6
+parent = "Trivialities"
+description = "日々の暮らしと身の回りの出来事。"
+
+[[layer2]]
+name = "Seasons"                            # 2
+parent = "Trivialities"
+description = "季節の移り変わりと年中行事。"
+
+[[layer2]]
+name = "Insights"                           # 3
+parent = "Trivialities"
+description = "日々の気付きと、経験から得た物事の見方。"
+
+# ---------------------------------------------------------------
+# 第2層 / Automotive
+# ---------------------------------------------------------------
+
+[[layer2]]
+name = "Cars"                               # 1
+parent = "Automotive"
+description = "自動車全般。構造、整備、市場の話題。"
+
+[[layer2]]
+name = "SUBARU"                             # 1
+parent = "Automotive"
+description = "SUBARU車。所有する車種と、その運転や整備。"
+
+# ---------------------------------------------------------------
+# End of Definition
+# ---------------------------------------------------------------
+

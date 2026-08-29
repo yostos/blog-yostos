@@ -8,7 +8,7 @@ description = """
 """
 date = 2026-01-30
 [taxonomies]
-tags =["Tech", "Weblog", "AWS"]
+tags = ["Tech", "Weblog"]
 [extra]
 social_media_card = "ogp.webp"
 +++

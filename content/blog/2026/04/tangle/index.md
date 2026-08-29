@@ -3,7 +3,7 @@ title = "Photo Friday: Knots That Time Forgot"
 description = "絡み合う老木の枝が静かな空に伸びる風景を撮影しました。"
 date = 2026-04-05T16:30:32+09:00
 [taxonomies]
-tags = ["Photography", "Photo Friday"]
+tags = ["Creative", "Photography"]
 [extra]
 social_media_card = "ogp.webp"
 local_image = "tangle.jpg"

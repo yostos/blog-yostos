@@ -8,7 +8,7 @@ GoでCLIツール img2char として再実装した経緯と技術を紹介し�
 date = 2026-02-21
 
 [taxonomies]
-tags = ["Tech", "CLI", "Go"]
+tags = ["Tech", "CLI"]
 
 [extra]
 social_media_card = "ogp.webp"

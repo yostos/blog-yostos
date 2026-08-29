@@ -4,7 +4,7 @@ description = "I saw the movie Under Ninja yesterday.I was looking forward to se
 date = 2025-02-25
 
 [taxonomies]
-tags = ["Movies","Entertainment"]
+tags = ["Entertainment", "Films"]
 [extra]
 social_media_card = "ogp.webp"
 +++

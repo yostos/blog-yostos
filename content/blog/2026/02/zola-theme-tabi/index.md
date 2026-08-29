@@ -8,7 +8,7 @@ Zolaの高機能テーマ「tabi」には、
 """
 date = 2026-02-24T12:00:00+09:00
 [taxonomies]
-tags = ["Tech", "Weblog","Zola"]
+tags = ["Tech", "Weblog"]
 
 [extra]
 social_media_card = "ogp.webp"

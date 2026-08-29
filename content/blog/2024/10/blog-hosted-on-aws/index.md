@@ -4,7 +4,7 @@ description = "メインブログを CloudflareからAWS S3に移行してみま
 date = 2024-10-21
 
 [taxonomies]
-tags = ["Tech", "AWS","Weblog"]
+tags = ["Tech", "Weblog"]
 [extra]
 social_media_card = "ogp.webp"
 +++

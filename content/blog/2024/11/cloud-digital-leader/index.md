@@ -4,7 +4,7 @@ description = "Google CloudのCloud Digital Leaderを受験してきました。
 date = 2024-11-08
 
 [taxonomies]
-tags = ["Career","Certification", "Google Cloud"]
+tags = ["Tech", "Certification"]
 [extra]
 social_media_card = "ogp.webp"
 +++

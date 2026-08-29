@@ -5,7 +5,7 @@ Photo Friday の「Weathered」へ寄せた一枚。千葉モノレールの柱�
 """
 date = 2026-04-29T05:58:49+09:00
 [taxonomies]
-tags =[ "Photography","Photo Friday" ]
+tags = ["Creative", "Photography"]
 [extra]
 social_media_card = "ogp.webp"
 local_image = "shedding.jpg"

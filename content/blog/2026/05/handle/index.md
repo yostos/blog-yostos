@@ -5,7 +5,7 @@ A weathered industrial valve handle bolted into a tiled wall, the dark glossy ti
 """
 date = 2026-05-15T23:06:55+09:00
 [taxonomies]
-tags = ["Photography", "Photo Friday", "Flickr"]
+tags = ["Creative", "Photography"]
 [extra]
 social_media_card = "ogp.webp"
 local_image = "cover.webp"

@@ -5,7 +5,7 @@ date = 2020-05-06T15:32:22+09:00
 updated = 2020-05-07T20:26:00+09:00
 
 [taxonomies]
-tags = ["Current Affairs"]
+tags = ["Current Affairs", "Disaster"]
 
 [extra]
 social_media_card = "ogp.webp"

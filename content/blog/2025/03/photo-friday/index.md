@@ -4,7 +4,7 @@ description = "Captured at the moment when industrial silhouettes merge with the
 date = 2025-03-25
 
 [taxonomies]
-tags = ["Photography","Photo Friday"]
+tags = ["Creative", "Photography"]
 [extra]
 social_media_card = "ogp.webp"
 +++

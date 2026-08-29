@@ -4,7 +4,7 @@ description = "In Japan, there's a tradition where people exchange greeting post
 date = 2024-12-25
 
 [taxonomies]
-tags = ["Life"]
+tags = ["Trivialities", "Seasons"]
 [extra]
 social_media_card = "ogp.webp"
 +++

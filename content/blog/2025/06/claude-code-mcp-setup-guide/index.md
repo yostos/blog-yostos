@@ -4,7 +4,7 @@ description = "Claude CodeでInkdrop MCPサーバーを設定し、リモートM
 date = 2025-06-21
 
 [taxonomies]
-tags = ["Tech", "Generative AI","Claude Code"]
+tags = ["Tech", "Generative AI"]
 [extra]
 social_media_card = "ogp.webp"
 +++

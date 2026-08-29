@@ -9,7 +9,7 @@ date = 2026-08-13T22:55:00+09:00
 updated = 2026-08-15T20:00:00+09:00
 
 [taxonomies]
-tags = ["Current Affairs", "Chiba"]
+tags = ["Current Affairs", "Disaster"]
 
 [extra]
 social_media_card = "ogp.webp"

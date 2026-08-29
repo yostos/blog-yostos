@@ -4,7 +4,7 @@ description = "ついにAWSの最終日です"
 date = 2024-07-31
 
 [taxonomies]
-tags = ["Life", "Career", "AWS"]
+tags = ["Trivialities", "Life"]
 [extra]
 social_media_card = "ogp.webp"
 +++

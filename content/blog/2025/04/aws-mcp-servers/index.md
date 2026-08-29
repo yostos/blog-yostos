@@ -4,7 +4,7 @@ description = "4月1日のAWS公式ブログで、AWS MCP Serversの記事が掲
 date = 2025-04-16
 
 [taxonomies]
-tags = ["Tech", "AWS", "Generative AI"]
+tags = ["Tech", "Generative AI"]
 [extra]
 social_media_card = "ogp.webp"
 +++

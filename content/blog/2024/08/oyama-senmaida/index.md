@@ -4,7 +4,7 @@ description = "美しい棚田が並ぶ大山千枚田に入ってきました�
 date = 2024-08-26
 
 [taxonomies]
-tags = ["Travel", "Photography"]
+tags = ["Creative", "Photography"]
 [extra]
 social_media_card = "ogp.webp"
 +++

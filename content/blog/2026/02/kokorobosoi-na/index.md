@@ -7,7 +7,7 @@ description = """
 楽曲の魅力と、新生活の頃の思い出を綴ります。
 """
 date = 2026-02-11T13:56:00+09:00
-tags = ["Music", "Guitar", "Anime"]
+tags = ["Creative", "Guitar Play"]
 [extra]
 social_media_card = "ogp.webp"
 

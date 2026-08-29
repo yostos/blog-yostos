@@ -4,7 +4,7 @@ description = "1987年、社会人になったばかりの頃にラジオから�
 date = 2025-11-29
 
 [taxonomies]
-tags = ["Music", "Guitar"]
+tags = ["Creative", "Guitar Play"]
 [extra]
 social_media_card = "ogp.webp"
 +++

@@ -7,7 +7,7 @@ DJI JAPANの公式Xアカウントで、Avata 360と見られる\
 """
 date = 2026-03-06
 [taxonomies]
-tags = ["Drone"]
+tags = ["Gadget", "Drone"]
 [extra]
 social_media_card = "ogp.webp"
 local_image = "cover.webp"

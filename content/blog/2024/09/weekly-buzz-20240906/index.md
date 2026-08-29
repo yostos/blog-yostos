@@ -4,7 +4,7 @@ description = "今週、気になったのは、イトーヨーカドー閉店�
 date = 2024-09-06
 
 [taxonomies]
-tags = ["Weekly Buzz", "Current Affairs"]
+tags = ["Current Affairs", "Weekly Buzz"]
 [extra]
 social_media_card = "ogp.webp"
 +++

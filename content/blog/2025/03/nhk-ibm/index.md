@@ -4,7 +4,7 @@ description = "NHKが日本IBMに対して54億円の損害賠償を求めて提
 date = 2025-03-31
 
 [taxonomies]
-tags = ["Tech", "Current Affairs", "IBM"]
+tags = ["Current Affairs", "Business"]
 [extra]
 social_media_card = "ogp.webp"
 +++

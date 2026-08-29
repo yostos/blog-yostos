@@ -4,7 +4,7 @@ description = "ちょっと間が開いてしまいましたが、この間に�
 date = 2024-10-18
 
 [taxonomies]
-tags = ["Weekly Buzz", "Current Affairs"]
+tags = ["Current Affairs", "Weekly Buzz"]
 [extra]
 social_media_card = "ogp.webp"
 +++

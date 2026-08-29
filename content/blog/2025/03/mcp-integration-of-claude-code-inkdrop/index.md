@@ -8,7 +8,7 @@ social_media_card = "ogp.webp"
 mermaid = true
 
 [taxonomies]
-tags = ["Tech", "Generative AI", "Note-taking", "Productivity"]
+tags = ["Tech", "Generative AI"]
 +++
 
 [前回の記事](/articles/2025/03/28/claude-integration-with-inkdrop)では、 InkdropとClaude Desktopの統合について紹介しました。今回は一歩進んで、Claude CodeをMCPサーバーとして活用する方法とそのメリットについて詳しく解説します。

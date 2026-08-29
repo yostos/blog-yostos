@@ -4,7 +4,7 @@ description = "Chairman Onodera, overly concerned about Chinese AI, reveals a la
 date = 2025-02-07
 
 [taxonomies]
-tags = ["Current Affairs"]
+tags = ["Current Affairs", "Geopolitics"]
 [extra]
 social_media_card = "ogp.webp"
 +++

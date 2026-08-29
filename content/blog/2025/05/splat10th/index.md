@@ -4,7 +4,7 @@ description = "スプラトゥーンが10周年を迎えたらしいです。め
 date = 2025-05-28
 
 [taxonomies]
-tags = ["Splatoon", "Game"]
+tags = ["Entertainment", "Game"]
 [extra]
 social_media_card = "ogp.webp"
 +++

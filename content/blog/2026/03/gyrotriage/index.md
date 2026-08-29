@@ -9,7 +9,7 @@ DaVinci ResolveのGyroflow OpenFXプラグインに入力するパラメータ�
 date = 2026-03-07T22:00:00+09:00
 updated = 2026-06-04
 [taxonomies]
-tags = ["Drone", "Software"]
+tags = ["Tech", "CLI"]
 [extra]
 social_media_card = "ogp.webp"
 local_image = "cover.webp"

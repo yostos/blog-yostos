@@ -4,7 +4,7 @@ description = "2025年9月15日からAWS AmplifyがNode.js 14/16/18のサポー�
 date = 2025-09-14
 
 [taxonomies]
-tags = ["Tech", "AWS","Node"]
+tags = ["Tech", "Cloud"]
 [extra]
 social_media_card = "ogp.webp"
 +++

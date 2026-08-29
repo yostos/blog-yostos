@@ -4,7 +4,7 @@ description = "今週末のスプラトゥーンは春フェスでした。"
 date = 2025-04-13
 
 [taxonomies]
-tags = ["Splatoon", "Game"]
+tags = ["Entertainment", "Game"]
 [extra]
 social_media_card = "ogp.webp"
 +++

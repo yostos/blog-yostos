@@ -7,7 +7,7 @@ description = """
 date = 2026-07-28T17:00:45+09:00
 updated = 2026-07-29T07:20:00+09:00
 [taxonomies]
-tags =[ "Current Affairs" ]
+tags = ["Current Affairs", "Disaster"]
 [extra]
 social_media_card = "ogp.webp"
 local_image = "cover.webp"

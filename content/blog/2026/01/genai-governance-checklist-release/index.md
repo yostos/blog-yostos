@@ -9,7 +9,7 @@ ChatGPT・Claude・Gemini等のSaaS型生成AIを業務利用する際の
 date = 2026-01-29
 
 [taxonomies]
-tags =["Tech","Generative AI","IT Governance"]
+tags = ["Tech", "Generative AI"]
 
 [extra]
 social_media_card = "ogp.webp"

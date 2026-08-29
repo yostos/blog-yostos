@@ -4,7 +4,7 @@ description = "スプラでKAT-TUN中丸氏と対戦？"
 date = 2024-07-24
 
 [taxonomies]
-tags = ["Current Affairs", "Game", "Splatoon"]
+tags = ["Current Affairs", "Show Business"]
 [extra]
 social_media_card = "ogp.webp"
 +++

@@ -4,7 +4,7 @@ description = "40年ぶりくらいに高中正義さんのライブに行って
 date = 2025-09-21
 
 [taxonomies]
-tags = ["Music"]
+tags = ["Entertainment", "Concerts"]
 [extra]
 social_media_card = "ogp.webp"
 +++

@@ -6,7 +6,7 @@ Photo Friday の「Bark」へ寄せた一枚。
 """
 date = 2026-06-14T17:49:33+09:00
 [taxonomies]
-tags =[ "Photography","Photo Friday" ]
+tags = ["Creative", "Photography"]
 [extra]
 social_media_card = "ogp.webp"
 local_image = "cover.webp"

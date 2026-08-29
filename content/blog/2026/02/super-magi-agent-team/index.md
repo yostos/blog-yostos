@@ -10,7 +10,7 @@ their final votes.
 """
 date = 2026-02-14
 [taxonomies]
-tags = ["Tech", "Generative AI", "Claude Code", "CLI"]
+tags = ["Tech", "Generative AI"]
 [extra]
 social_media_card = "ogp.webp"
 mermaid = true

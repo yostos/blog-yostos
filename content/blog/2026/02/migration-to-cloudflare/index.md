@@ -6,7 +6,7 @@ GitHub PagesからCloudflare Workersへブログを移転した際の落とし�
 """
 date = 2026-02-17
 [taxonomies]
-tags = ["Tech", "Security", "Weblog"]
+tags = ["Tech", "Cloud"]
 [extra]
 social_media_card = "ogp.webp"
 canonical_url = "https://zenn.dev/yostos/articles/migration-to-cloudflare"

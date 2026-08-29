@@ -4,7 +4,7 @@ description = "暑い。松田聖子さんの『小麦色のマーメイド』�
 date = 2025-08-29
 
 [taxonomies]
-tags = ["Music", "Guitar"]
+tags = ["Creative", "Guitar Play"]
 [extra]
 social_media_card = "ogp.webp"
 +++

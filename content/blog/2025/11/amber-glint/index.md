@@ -4,7 +4,7 @@ description = "A fleeting amber glint dances across autumn leaves, as afternoon 
 date = 2025-11-18
 
 [taxonomies]
-tags = ["Photography", "Photo Friday"]
+tags = ["Creative", "Photography"]
 [extra]
 social_media_card = "ogp.webp"
 +++

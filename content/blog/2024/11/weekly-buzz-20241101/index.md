@@ -4,7 +4,7 @@ description = "すっかり肌寒くなりました。先週末帰省して、�
 date = 2024-11-01
 
 [taxonomies]
-tags = ["Weekly Buzz", "Current Affairs"]
+tags = ["Current Affairs", "Weekly Buzz"]
 [extra]
 social_media_card = "ogp.webp"
 +++

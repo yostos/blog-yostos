@@ -4,7 +4,7 @@ description = "昨年オープンしたShinra Yoro Valleyで温泉を堪能し�
 date = 2025-10-26
 
 [taxonomies]
-tags = ["Travel"]
+tags = ["Trivialities", "Travel"]
 [extra]
 social_media_card = "ogp.webp"
 +++

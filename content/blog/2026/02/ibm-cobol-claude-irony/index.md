@@ -9,7 +9,7 @@ COBOLの構造的課題とツールの限界を考察します。
 """
 date = 2026-02-24T17:30:00+09:00
 [taxonomies]
-tags = ["IBM", "Generative AI", "Current Affairs"]
+tags = ["Tech", "Generative AI"]
 [extra]
 social_media_card = "ogp.webp"
 tldr = """

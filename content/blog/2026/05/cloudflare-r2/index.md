@@ -9,7 +9,7 @@ description = """
 date = 2026-05-22
 
 [taxonomies]
-tags = ["Tech", "Cloudflare", "AWS"]
+tags = ["Tech", "Cloud"]
 
 [extra]
 social_media_card = "ogp.webp"

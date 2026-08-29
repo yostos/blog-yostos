@@ -7,7 +7,7 @@ description = """\
 """
 date = 2026-02-18
 [taxonomies]
-tags = ["Claude Code", "Generative AI"]
+tags = ["Tech", "Generative AI"]
 [extra]
 social_media_card = "ogp.webp"
 canonical_url = "https://zenn.dev/yostos/articles/claude-code-entry"

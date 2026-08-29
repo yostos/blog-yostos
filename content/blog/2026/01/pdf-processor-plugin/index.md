@@ -9,7 +9,7 @@ Claude Codeプラグイン「pdf-processor」を開発しました。
 date = 2026-01-02
 
 [taxonomies]
-tags =["Tech","Claude Code","PDF"]
+tags = ["Tech", "Generative AI"]
 [extra]
 social_media_card = "ogp.webp"
 +++

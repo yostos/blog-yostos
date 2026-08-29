@@ -4,7 +4,7 @@ description = "Initial attempt at manual flight control with the DJI Neo. From s
 date = 2025-11-04
 
 [taxonomies]
-tags = ["Drone"]
+tags = ["Gadget", "Drone"]
 [extra]
 social_media_card = "ogp.webp"
 +++

@@ -4,7 +4,7 @@ description = "高中正義さんの1988年リリースのアルバム『Hot Pep
 date = 2025-04-04
 
 [taxonomies]
-tags = ["Music", "Guitar"]
+tags = ["Creative", "Guitar Play"]
 [extra]
 social_media_card = "ogp.webp"
 +++

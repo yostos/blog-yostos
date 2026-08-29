@@ -4,7 +4,7 @@ description = "世界遺産「大峯奥駈道」と日本百名山「大台ケ�
 date = 2024-10-28
 
 [taxonomies]
-tags = ["Travel"]
+tags = ["Trivialities", "Travel"]
 [extra]
 social_media_card = "ogp.webp"
 +++

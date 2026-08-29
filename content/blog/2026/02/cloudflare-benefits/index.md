@@ -3,7 +3,7 @@ title = "Cloudflare無料プランだけで個人サイトのセキュリティ�
 description = "Cloudflareの無料プランで利用できるWAF・ボット対策・AIクローラー対策などのセキュリティ機能を、AWS AmplifyやGitHub Pagesと比較しながら紹介します。"
 date = 2026-02-20
 [taxonomies]
-tags = ["Tech", "Security", "Weblog"]
+tags = ["Tech", "Security"]
 [extra]
 social_media_card = "ogp.webp"
 local_image = "cover.webp"

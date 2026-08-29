@@ -4,7 +4,7 @@ description = "採譜アプリとして有名なFinaleが開発・販売を修�
 date = 2024-08-27
 
 [taxonomies]
-tags = ["Music", "Software"]
+tags = ["Tech", "Software"]
 [extra]
 social_media_card = "ogp.webp"
 +++

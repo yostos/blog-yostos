@@ -4,7 +4,7 @@ description = "映画『機動警察パトレイバー THE MOVIE』(1989年)の�
 date = 2024-09-24
 
 [taxonomies]
-tags = ["Movies","Anime", "Entertainment"]
+tags = ["Entertainment", "Films"]
 [extra]
 social_media_card = "ogp.webp"
 +++
