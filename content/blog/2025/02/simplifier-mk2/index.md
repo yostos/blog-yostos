@@ -4,7 +4,7 @@ description = "I purchased the Simplifier MK-II from Simplifier Amp which was th
 date = 2025-02-11
 
 [taxonomies]
-tags = ["Gadget", "Guitar"]
+tags = ["Creative", "Guitar"]
 [extra]
 social_media_card = "ogp.webp"
 +++

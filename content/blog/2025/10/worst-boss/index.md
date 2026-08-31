@@ -4,7 +4,7 @@ description = "管理職として不適格な人が必ず口にする言葉、�
 date = 2025-10-07
 
 [taxonomies]
-tags = ["Trivialities", "Insights"]
+tags = ["Tech", "IT Governance"]
 [extra]
 social_media_card = "ogp.webp"
 +++

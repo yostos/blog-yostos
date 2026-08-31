@@ -4,7 +4,7 @@ description = "Paul McCartneyの写真展が六本木でやっていたので見
 date = 2024-08-08
 
 [taxonomies]
-tags = ["Entertainment", "Art"]
+tags = ["Entertainment", "Listening"]
 [extra]
 social_media_card = "ogp.webp"
 +++

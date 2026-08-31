@@ -4,7 +4,7 @@ description = "あまりの日本の酷暑に音楽的な逃避行してしま�
 date = 2025-08-07
 
 [taxonomies]
-tags = ["Creative", "Guitar Play"]
+tags = ["Creative", "Guitar"]
 [extra]
 social_media_card = "ogp.webp"
 +++

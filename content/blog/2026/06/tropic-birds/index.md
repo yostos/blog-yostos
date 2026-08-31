@@ -5,7 +5,7 @@ NHK『クローズアップ現代』が伝えた、半世紀を経て世界に�
 """
 date = 2026-06-10T14:23:57+09:00
 [taxonomies]
-tags = ["Creative", "Guitar Play"]
+tags = ["Creative", "Guitar"]
 [extra]
 social_media_card = "ogp.webp"
 local_image = "cover.webp"

@@ -8,7 +8,7 @@ description = """
 date = 2026-02-26T15:26:15+09:00
 
 [taxonomies]
-tags = ["Creative", "Movie"]
+tags = ["Creative", "Aerial Videography"]
 
 [extra]
 social_media_card = "ogp.webp"

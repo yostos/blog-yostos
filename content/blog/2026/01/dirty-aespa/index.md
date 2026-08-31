@@ -8,7 +8,7 @@ NHK紅白歌合戦でのaespa出演をめぐる騒動と、午後8時台の
 date = 2026-01-01
 
 [taxonomies]
-tags = ["Current Affairs", "Media"]
+tags = ["Current Affairs", "Journalism"]
 [extra]
 social_media_card = "ogp.webp"
 +++

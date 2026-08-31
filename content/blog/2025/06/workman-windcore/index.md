@@ -4,7 +4,7 @@ description = "ワークマンの空調ウェア「ウィンドコア」を購�
 date = 2025-06-27
 
 [taxonomies]
-tags = ["Gadget", "Apparel"]
+tags = ["Gadget", "Everyday Goods"]
 [extra]
 social_media_card = "ogp.webp"
 +++

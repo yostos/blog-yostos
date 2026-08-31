@@ -4,7 +4,7 @@ description = "ドローン界に歴史的な転換点が到来？ DJIがMini 4 
 date = 2025-05-29
 
 [taxonomies]
-tags = ["Gadget", "Drone"]
+tags = ["Creative", "Aerial Videography"]
 [extra]
 social_media_card = "ogp.webp"
 +++

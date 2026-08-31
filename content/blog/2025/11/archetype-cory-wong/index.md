@@ -4,7 +4,7 @@ description = "Neural DSPのブラックフライデーセールでArchetype: Co
 date = 2025-11-24
 
 [taxonomies]
-tags = ["Gadget", "Guitar"]
+tags = ["Creative", "Guitar"]
 [extra]
 social_media_card = "ogp.webp"
 +++

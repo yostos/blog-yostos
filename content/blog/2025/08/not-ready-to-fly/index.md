@@ -4,7 +4,7 @@ description = "\"Ready To Fly\"のコピー中。イントロのギターアン�
 date = 2025-08-30
 
 [taxonomies]
-tags = ["Creative", "Guitar Play"]
+tags = ["Creative", "Guitar"]
 [extra]
 social_media_card = "ogp.webp"
 +++

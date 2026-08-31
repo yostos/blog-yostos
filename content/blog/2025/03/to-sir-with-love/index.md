@@ -4,7 +4,7 @@ description = "たしか就職した頃に初めて聞いて、1960代っぽい�
 date = 2025-03-27
 
 [taxonomies]
-tags = ["Creative", "Guitar Play"]
+tags = ["Creative", "Guitar"]
 [extra]
 social_media_card = "ogp.webp"
 +++

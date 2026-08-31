@@ -4,7 +4,7 @@ description = "高中正義さんの1981年リリースのアルバム『Alone�
 date = 2025-07-18
 
 [taxonomies]
-tags = ["Creative", "Guitar Play"]
+tags = ["Creative", "Guitar"]
 [extra]
 social_media_card = "ogp.webp"
 +++

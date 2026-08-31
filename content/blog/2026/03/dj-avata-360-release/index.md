@@ -8,7 +8,7 @@ DJI公式ストアでAvata 360のリリース日が\
 """
 date = 2026-03-11T05:14:46+09:00
 [taxonomies]
-tags = ["Gadget", "Drone"]
+tags = ["Creative", "Aerial Videography"]
 [extra]
 social_media_card = "ogp.webp"
 local_image = "cover.webp"

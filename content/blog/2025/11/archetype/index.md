@@ -4,7 +4,7 @@ description = "Thanksgiving Day is coming up soon.Neural DSP, which develops and
 date = 2025-11-16
 
 [taxonomies]
-tags = ["Gadget", "Guitar"]
+tags = ["Creative", "Guitar"]
 [extra]
 social_media_card = "ogp.webp"
 +++

@@ -4,7 +4,7 @@ description = "先日購入したHudson Broadcastですが、1960年代のクラ
 date = 2025-05-30
 
 [taxonomies]
-tags = ["Creative", "Guitar Play"]
+tags = ["Creative", "Guitar"]
 [extra]
 social_media_card = "ogp.webp"
 +++

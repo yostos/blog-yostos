@@ -4,7 +4,7 @@ description = "Strymon Compadreに満足していなかったわけではあり�
 date = 2025-05-24
 
 [taxonomies]
-tags = ["Gadget", "Guitar"]
+tags = ["Creative", "Guitar"]
 [extra]
 social_media_card = "ogp.webp"
 +++

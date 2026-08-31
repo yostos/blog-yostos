@@ -4,7 +4,7 @@ description = "Pixel 8 Proからの買い替えでNothing Phone (3)を2週間使
 date = 2025-09-17
 
 [taxonomies]
-tags = ["Gadget", "Computers"]
+tags = ["Gadget", "Hardware"]
 [extra]
 social_media_card = "ogp.webp"
 +++

@@ -4,7 +4,7 @@ description = "PE-1500RIにはオリジナルのブリッジが付いていま�
 date = 2025-04-07
 
 [taxonomies]
-tags = ["Gadget", "Guitar"]
+tags = ["Creative", "Guitar"]
 [extra]
 social_media_card = "ogp.webp"
 +++

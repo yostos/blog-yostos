@@ -4,7 +4,7 @@ description = """DJI Avata2を購入し、屋内フットサルコートでマ�
 最新のAvata 360ではなくAvata2を選んだ理由と、実機で感じたシミュレーターとの違いをお伝えします。"""
 date = 2026-04-03T15:48:20+09:00
 [taxonomies]
-tags =[ "Gadget","Drone"  ]
+tags = ["Creative", "Aerial Videography"]
 [extra]
 social_media_card = "ogp.webp"
 local_image = "cover.webp"

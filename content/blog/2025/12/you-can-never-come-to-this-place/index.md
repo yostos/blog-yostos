@@ -4,7 +4,7 @@ description = "数ヶ月前の高中正義のコンサート、アンコール�
 date = 2025-12-30
 
 [taxonomies]
-tags = ["Creative", "Guitar Play"]
+tags = ["Creative", "Guitar"]
 [extra]
 social_media_card = "ogp.webp"
 +++

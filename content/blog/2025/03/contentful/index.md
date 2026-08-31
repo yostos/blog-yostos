@@ -4,7 +4,7 @@ description = "このブログでは直接App Router配下に記事を書いて�
 date = 2025-03-24
 
 [taxonomies]
-tags = ["Tech","Web"]
+tags = ["Tech", "Weblog"]
 [extra]
 social_media_card = "ogp.webp"
 +++

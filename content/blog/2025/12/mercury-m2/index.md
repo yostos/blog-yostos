@@ -4,7 +4,7 @@ description = "After four years with my previous mouse, I upgraded to the GravaS
 date = 2025-12-30
 
 [taxonomies]
-tags = ["Gadget", "Peripherals"]
+tags = ["Gadget", "Hardware"]
 [extra]
 social_media_card = "ogp.webp"
 +++

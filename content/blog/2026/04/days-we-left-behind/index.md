@@ -4,7 +4,7 @@ description = "Paul McCartneyの5年半ぶりの新アルバムが5月末にリ�
 date = 2026-04-10T12:16:59+09:00
 
 [taxonomies]
-tags = ["Creative", "Guitar Play"]
+tags = ["Creative", "Guitar"]
 
 [extra]
 social_media_card = "ogp.webp"

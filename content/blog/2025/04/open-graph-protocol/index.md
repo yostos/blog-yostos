@@ -4,7 +4,7 @@ description = "このブログは適当に実装したので、Open Graph Protoc
 date = 2025-04-07
 
 [taxonomies]
-tags = ["Tech", "Web"]
+tags = ["Tech", "Weblog"]
 [extra]
 social_media_card = "ogp.webp"
 +++

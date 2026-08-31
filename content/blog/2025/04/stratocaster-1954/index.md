@@ -4,7 +4,7 @@ description = "I always wanted an original Fender🎸 at least once in my life. 
 date = 2025-04-27
 
 [taxonomies]
-tags = ["Gadget", "Guitar"]
+tags = ["Creative", "Guitar"]
 [extra]
 social_media_card = "ogp.webp"
 +++

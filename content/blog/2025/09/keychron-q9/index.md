@@ -4,7 +4,7 @@ description = "A review of the Keychron Q9 40% keyboard - exploring its unique d
 date = 2025-09-25
 
 [taxonomies]
-tags = ["Gadget", "Peripherals"]
+tags = ["Gadget", "Hardware"]
 [extra]
 social_media_card = "ogp.webp"
 +++

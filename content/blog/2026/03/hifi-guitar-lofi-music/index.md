@@ -9,7 +9,7 @@ Billboard Hot 100のトップ5曲（2000〜2024年）を音響分析した結果
 date = 2026-03-04
 
 [taxonomies]
-tags = ["Creative", "Guitar Play"]
+tags = ["Creative", "Guitar"]
 
 [extra]
 social_media_card = "ogp.webp"

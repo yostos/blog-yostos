@@ -5,7 +5,7 @@ description = """連載最終回。GoFの23パターンのうち、OOPに依存�
 date = 2026-04-06T08:06+09:00
 
 [taxonomies]
-tags = ["Tech", "Software Engineering"]
+tags = ["Tech", "Software Architecture"]
 
 [extra]
 social_media_card = "ogp.webp"

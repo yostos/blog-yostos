@@ -5,7 +5,7 @@ FPVドローンシミュレーター「LiftOff」で飛行練習を始めまし�
 """
 date = 2026-04-08T10:03:40+09:00
 [taxonomies]
-tags = ["Entertainment", "Game"]
+tags = ["Creative", "Aerial Videography"]
 [extra]
 social_media_card = "ogp.webp"
 local_image = "cover.webp"

@@ -4,7 +4,7 @@ description = "多くのブティックエフェクターが溢れる現代の�
 date = 2025-05-20
 
 [taxonomies]
-tags = ["Gadget", "Guitar"]
+tags = ["Creative", "Guitar"]
 [extra]
 social_media_card = "ogp.webp"
 +++

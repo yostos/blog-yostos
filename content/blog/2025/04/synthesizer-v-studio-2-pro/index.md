@@ -4,7 +4,7 @@ description = "歌声合成ソフトウェア「Synthesizer V」の新バージ�
 date = 2025-04-15
 
 [taxonomies]
-tags = ["Tech", "Software"]
+tags = ["Tech", "Application"]
 [extra]
 social_media_card = "ogp.webp"
 +++

@@ -4,7 +4,7 @@ description = "Amazonのプライム感謝先行セールで少し安くなっ�
 date = 2025-10-09
 
 [taxonomies]
-tags = ["Gadget", "Peripherals"]
+tags = ["Gadget", "Hardware"]
 [extra]
 social_media_card = "ogp.webp"
 +++

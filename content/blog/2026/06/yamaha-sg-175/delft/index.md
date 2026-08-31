@@ -5,7 +5,7 @@ description = """
 """
 date = 2026-06-06T09:57:20+09:00
 [taxonomies]
-tags = ["Gadget", "Guitar"]
+tags = ["Creative", "Guitar"]
 +++
 
 <!-- textlint-disable -->

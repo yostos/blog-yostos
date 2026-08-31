@@ -4,7 +4,7 @@ description = "REBECCAの1987年リリースの『真夏の雨』を演奏して
 date = 2025-07-06
 
 [taxonomies]
-tags = ["Creative", "Guitar Play"]
+tags = ["Creative", "Guitar"]
 [extra]
 social_media_card = "ogp.webp"
 +++

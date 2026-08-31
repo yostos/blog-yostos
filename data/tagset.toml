@@ -57,17 +57,17 @@ parent = "Tech"
 description = "情報セキュリティ。脆弱性、認証、プライバシー保護。"
 
 [[layer2]]
-name = "Software"                           # 7
+name = "Application"                        # 8
 parent = "Tech"
 description = "ソフトウェア製品とアプリケーションの紹介、比較、使い方。"
 
 [[layer2]]
-name = "Weblog"                             # 14
+name = "Weblog"                             # 17
 parent = "Tech"
-description = "ブログの構築と運営。静的サイト生成、テーマ、デプロイ。"
+description = "ブログとWebサイトの構築と運営。静的サイト生成、テーマ、デプロイ。"
 
 [[layer2]]
-name = "CLI"                                # 12
+name = "CLI"                                # 13
 parent = "Tech"
 description = "コマンドラインツールとターミナル環境。"
 
@@ -76,10 +76,6 @@ name = "Cloud"                              # 18
 parent = "Tech"
 description = "クラウドコンピューティング全般。インフラとマネージドサービス。"
 
-[[layer2]]
-name = "Web"                                # 5
-parent = "Tech"
-description = "Web 技術全般。HTML、CSS、ブラウザ、Web 標準。"
 
 [[layer2]]
 name = "IT Governance"                      # 4
@@ -97,20 +93,11 @@ parent = "Tech"
 description = "API の設計と利用。"
 
 [[layer2]]
-name = "Software Engineering"               # 4
+name = "Software Architecture"              # 4
 parent = "Tech"
-description = "ソフトウェア開発の設計、プロセス、方法論。"
-
-[[layer2]]
-name = "Programming"                        # 1
-parent = "Tech"
-description = "プログラミング一般。実装手法とコーディング。"
+description = "ソフトウェアの設計と構造。デザインパターン、パラダイム、実装手法。"
 
 
-[[layer2]]
-name = "Editor"                             # 1
-parent = "Tech"
-description = "テキストエディタと執筆・編集環境。"
 
 [[layer2]]
 name = "Font"                               # 4
@@ -147,9 +134,9 @@ parent = "Current Affairs"
 description = "地政学の政治、経済、社会問題"
 
 [[layer2]]
-name = "Media"                              # 3
+name = "Journalism"                         # 3
 parent = "Current Affairs"
-description = "新聞やテレビなど既存マスメディアとその課題。"
+description = "新聞やテレビなど報道機関とその課題。"
 
 [[layer2]]
 name = "Show Business"                      # 2
@@ -171,14 +158,14 @@ parent = "Creative"
 description = "写真の撮影、カメラ機材、作品の公開。"
 
 [[layer2]]
-name = "Movie"                              # 15
+name = "Aerial Videography"                 # 26
 parent = "Creative"
-description = "映像作品の制作。撮影、編集、公開。"
+description = "ドローンによる空撮と映像作品の制作。機体、飛行、撮影、編集、公開、関連する規制。"
 
 [[layer2]]
-name = "Guitar Play"                        # 47
+name = "Guitar"                             # 73
 parent = "Creative"
-description = "ギターの演奏と練習。"
+description = "ギターの演奏と練習、機材。エフェクター、アンプ、カバー演奏。"
 
 # ---------------------------------------------------------------
 # 第2層 / Entertainment
@@ -205,63 +192,33 @@ parent = "Entertainment"
 description = "マンガ作品。"
 
 [[layer2]]
-name = "Music"                              # 1
+name = "Listening"                          # 4
 parent = "Entertainment"
-description = "音楽の聴取。配信サービス、アルバム、アーティスト。"
+description = "音楽を聴く体験。配信サービス、アルバム、ライブ、コンサート。"
 
-[[layer2]]
-name = "Concerts"                           # 2
-parent = "Entertainment"
-description = "ライブ、コンサート、音楽フェス。会場で聴く音楽の記録。"
-
-[[layer2]]
-name = "Art"                                # 2
-parent = "Entertainment"
-description = "美術と芸術作品、展覧会。"
 
 # ---------------------------------------------------------------
 # 第2層 / Gadget
 # ---------------------------------------------------------------
 
-[[layer2]]
-name = "Guitar"                             # 26
-parent = "Gadget"
-description = "ギター本体とアンプなどの機材。"
 
 [[layer2]]
-name = "Drone"                              # 11
+name = "Hardware"                           # 8
 parent = "Gadget"
-description = "ドローンの機体、飛行、空撮、関連する規制。"
+description = "計算機本体と周辺機器。Mac、Android端末、NAS、キーボード、マウスなど。"
+
+
 
 [[layer2]]
-name = "Peripherals"                        # 5
+name = "Everyday Goods"                     # 2
 parent = "Gadget"
-description = "キーボード、マウスなどPCの周辺機器。"
-
-[[layer2]]
-name = "Camera"                             # 3
-parent = "Gadget"
-description = "カメラとレンズなどの撮影機材。"
-
-[[layer2]]
-name = "Apparel"                            # 1
-parent = "Gadget"
-description = "衣類やバッグなど身に着ける道具。"
-
-[[layer2]]
-name = "Everyday Goods"                     # 1
-parent = "Gadget"
-description = "電子機器ではない日用の道具。刃物、文房具、時計など。"
+description = "衣類や刃物、文房具など、電子機器ではない日用の道具。"
 
 [[layer2]]
 name = "Mobile"                             # 1
 parent = "Gadget"
 description = "携帯回線やプロバイダなど通信サービスの契約。"
 
-[[layer2]]
-name = "Computers"                          # 3
-parent = "Gadget"
-description = "Mac、Android端末、NASなど計算機本体の製品。"
 
 # ---------------------------------------------------------------
 # 第2層 / Trivialities
@@ -287,10 +244,6 @@ name = "Seasons"                            # 2
 parent = "Trivialities"
 description = "季節の移り変わりと年中行事。"
 
-[[layer2]]
-name = "Insights"                           # 3
-parent = "Trivialities"
-description = "日々の気付きと、経験から得た物事の見方。"
 
 # ---------------------------------------------------------------
 # 第2層 / Automotive

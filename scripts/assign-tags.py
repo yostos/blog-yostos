@@ -1,8 +1,14 @@
 #!/usr/bin/env python3
-"""記事のタグを決めて frontmatter にセットする。
+"""記事から選んだキーワードでタグを決め、frontmatter にセットする。
 
-記事を Voyage AI で埋め込み、data/tag-vectors.json の各第2層タグと
-コサイン類似度を取り、最上位のタグとその親の第1層タグを書き込む。
+キーワードは記事を読んだ Claude が選ぶ。本スクリプトは受け取った語を
+空白で連結して1つの文字列として埋め込み、data/tag-vectors.json の
+各第2層タグ（タグ名の埋め込み）とコサイン類似度を取って、
+最上位のタグとその親の第1層タグを書き込む。
+
+語を1語ずつタグと突き合わせてはならない。組み合わせでしか表せない意味が
+失われ、精度が大きく落ちる。理由は docs/architectural-decision.md の
+ADR-0006 を参照。
 
 Requires: VOYAGE_API_KEY
 """
@@ -14,6 +20,8 @@ import sys
 import tomllib
 
 import tag_embedding as te
+
+EXPECTED_KEYWORDS = 5
 
 
 def load_parents():
@@ -40,8 +48,12 @@ def set_tags(front, layer1, layer2):
 
 
 def main():
-    parser = argparse.ArgumentParser(description="記事のタグを決めて frontmatter にセットする")
+    parser = argparse.ArgumentParser(
+        description="キーワードから記事のタグを決めて frontmatter にセットする")
     parser.add_argument("article", help="記事のパス（content/.../index.md）")
+    parser.add_argument("keywords", nargs="+",
+                        help=f"記事の内容を表す英単語（{EXPECTED_KEYWORDS}語）。"
+                             " 名詞句は引用符でまとめる")
     parser.add_argument("--top", type=int, default=3, help="表示する候補数（既定 3）")
     parser.add_argument("--dry-run", action="store_true",
                         help="類似度を表示するだけで frontmatter を書き換えない")
@@ -50,6 +62,9 @@ def main():
     path = os.path.abspath(args.article)
     if not os.path.exists(path):
         raise SystemExit(f"Error: {args.article} がありません")
+    if len(args.keywords) != EXPECTED_KEYWORDS:
+        print(f"Warning: キーワードは{EXPECTED_KEYWORDS}語を想定しています"
+              f"（{len(args.keywords)}語が渡されました）", file=sys.stderr)
 
     data = te.load_vectors()
     parents = load_parents()
@@ -60,11 +75,13 @@ def main():
         raise SystemExit(f"Error: {args.article} に frontmatter がありません")
     front, body = parts
 
-    vectors, tokens = te.embed([te.embed_text(front, body)], te.api_key())
+    query = " ".join(args.keywords)
+    vectors, tokens = te.embed([query], te.api_key())
     ranked = rank(vectors[0], data["tags"])
     if not ranked:
         raise SystemExit("Error: 比較できるタグがありません")
 
+    print(f"キーワード: {query}", file=sys.stderr)
     print(f"消費 {tokens:,} トークン", file=sys.stderr)
     print(f"現在のタグ: {te.tags_of(front) or 'なし'}", file=sys.stderr)
     for i, (score, name) in enumerate(ranked[:args.top], 1):
@@ -77,7 +94,7 @@ def main():
         raise SystemExit(f"Error: {best} の親が tagset.toml にありません")
 
     if args.dry_run:
-        print(f"--dry-run のため書き換えません", file=sys.stderr)
+        print("--dry-run のため書き換えません", file=sys.stderr)
         return
 
     updated = set_tags(front, layer1, best)

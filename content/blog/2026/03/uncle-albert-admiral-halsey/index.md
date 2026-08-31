@@ -6,7 +6,7 @@ Paul McCartneyの名曲「Uncle Albert/Admiral Halsey」を演奏しました。
 """
 date = 2026-03-12
 [taxonomies]
-tags = ["Creative", "Guitar Play"]
+tags = ["Creative", "Guitar"]
 [extra]
 social_media_card = "ogp.webp"
 +++

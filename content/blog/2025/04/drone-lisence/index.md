@@ -4,7 +4,7 @@ description = "やっと二等無人航空機操縦士の技能証明書が郵�
 date = 2025-04-10
 
 [taxonomies]
-tags = ["Gadget", "Drone"]
+tags = ["Creative", "Aerial Videography"]
 [extra]
 social_media_card = "ogp.webp"
 +++

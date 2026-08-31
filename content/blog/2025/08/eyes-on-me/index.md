@@ -4,7 +4,7 @@ description = "This song appears to be unavailable for streaming due to copyrigh
 date = 2025-08-10
 
 [taxonomies]
-tags = ["Creative", "Guitar Play"]
+tags = ["Creative", "Guitar"]
 [extra]
 social_media_card = "ogp.webp"
 +++

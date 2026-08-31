@@ -4,7 +4,7 @@ description = "1983 年リリースの高中正義さんのアルバム『CAN I 
 date = 2025-04-09
 
 [taxonomies]
-tags = ["Creative", "Guitar Play"]
+tags = ["Creative", "Guitar"]
 [extra]
 social_media_card = "ogp.webp"
 +++

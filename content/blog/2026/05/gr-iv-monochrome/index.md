@@ -6,7 +6,7 @@ description = """モノクロ写真しか撮れず、価格は28万円前後。�
 date = 2026-05-21
 
 [taxonomies]
-tags = ["Gadget", "Camera"]
+tags = ["Creative", "Photography"]
 
 [extra]
 social_media_card = "ogp.webp"

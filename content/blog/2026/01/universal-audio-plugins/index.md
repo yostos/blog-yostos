@@ -11,7 +11,7 @@ Logic Proでの実際の使い方を詳しく解説します。
 date = 2026-01-11
 
 [taxonomies]
-tags = ["Gadget", "Guitar"]
+tags = ["Creative", "Guitar"]
 [extra]
 social_media_card = "ogp.webp"
 +++

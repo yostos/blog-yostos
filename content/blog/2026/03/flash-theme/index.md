@@ -8,7 +8,7 @@ Queenの「Flash's Theme」をギターでカバーしました。
 date = 2026-03-01T20:34:29+09:00
 
 [taxonomies]
-tags = ["Creative", "Guitar Play"]
+tags = ["Creative", "Guitar"]
 
 [extra]
 local_image = "cover.webp"

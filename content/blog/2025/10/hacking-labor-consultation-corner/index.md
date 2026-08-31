@@ -4,7 +4,7 @@ description = "業務をアサインされないなどの労働問題に直面�
 date = 2025-10-28
 
 [taxonomies]
-tags = ["Trivialities", "Insights"]
+tags = ["Current Affairs", "Business"]
 [extra]
 social_media_card = "ogp.webp"
 +++

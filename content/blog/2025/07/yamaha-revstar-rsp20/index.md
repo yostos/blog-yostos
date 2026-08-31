@@ -4,7 +4,7 @@ description = "ギター不況と言われ、あのフェルナンデスが倒�
 date = 2025-07-22
 
 [taxonomies]
-tags = ["Gadget", "Guitar"]
+tags = ["Creative", "Guitar"]
 [extra]
 social_media_card = "ogp.webp"
 +++

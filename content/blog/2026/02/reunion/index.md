@@ -9,7 +9,7 @@ LiSA × Uruの「再会(produced by Ayase)」を
 """
 date = 2026-02-18T20:16:16+09:00
 [taxonomies]
-tags = ["Creative", "Guitar Play"]
+tags = ["Creative", "Guitar"]
 [extra]
 social_media_card = "ogp.webp"
 +++

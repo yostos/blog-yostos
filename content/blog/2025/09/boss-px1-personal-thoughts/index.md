@@ -4,7 +4,7 @@ description = "A dream-like compact effect pedal that can recreate BOSS's legend
 date = 2025-09-08
 
 [taxonomies]
-tags = ["Gadget", "Guitar"]
+tags = ["Creative", "Guitar"]
 [extra]
 social_media_card = "ogp.webp"
 +++

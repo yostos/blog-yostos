@@ -4,7 +4,7 @@ description = "8,800円という脅威の低価格でNAMまで使えてしまう
 date = 2025-08-26
 
 [taxonomies]
-tags = ["Gadget", "Guitar"]
+tags = ["Creative", "Guitar"]
 [extra]
 social_media_card = "ogp.webp"
 +++

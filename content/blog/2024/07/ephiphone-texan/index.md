@@ -4,7 +4,7 @@ description = "ついにEpiphone USA Texanを購入してしまいました。"
 date = 2024-07-24
 
 [taxonomies]
-tags = ["Gadget", "Guitar"]
+tags = ["Creative", "Guitar"]
 [extra]
 social_media_card = "ogp.webp"
 +++
