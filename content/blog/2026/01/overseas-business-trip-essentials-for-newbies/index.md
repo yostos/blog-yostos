@@ -7,7 +7,7 @@ description = """
 実務的な準備ポイントをまとめました。
 """
 date = 2026-01-24
-updated = 2026-08-31
+updated = 2026-09-01
 
 [taxonomies]
 tags = ["Trivialities", "Travel"]
@@ -97,18 +97,44 @@ PCは必ず機内持ち込み手荷物にしてください。預け荷物にす
 現地でのインターネット接続手段を事前に確保しておくことは非常に重要です。
 まず、会社で海外用のモバイルルーターを貸し出していないか確認してください。用意がある会社も多いです。
 
-会社にない場合は、自分で手配します。主な選択肢は以下の2つです。
+<!-- textlint-disable -->
 
-- ポケットWiFiレンタル
-  - 空港や事前予約でレンタルできるモバイルルーター
-  - 設定が簡単で、PCとスマホを同時接続できる
-  - 端末の持ち歩きと充電が必要。紛失・破損時は弁償リスクあり
+{% aside(position="right") %}
+mineoは音声通話とSMSなら海外でも使えますが、着信にも料金がかかる従量課金です。使わないでください。
+{% end %}
+
+<!-- textlint-enable -->
+
+会社にない場合は、自分で手配します。
+日本の携帯会社には、国内のデータ量をそのまま海外で使える定額サービスがあります。
+ドコモの「世界そのままギガ」ならフランスは24時間980円で、事前の申し込みが必要です。
+ただし、mineoは海外でのデータ通信そのものに対応していません。
+
+選択肢は次の2つです。
+
 - eSIM
   - スマートフォンに直接データプランを追加する方式
   - 端末が増えず、アプリやWebで購入してすぐ使える
   - eSIM対応端末が必要。PCはテザリング経由で接続
+- ポケットWiFiレンタル
+  - 空港や事前予約でレンタルできるモバイルルーター
+  - 設定が簡単で、PCとスマホを同時接続できる
+  - 端末の持ち歩きと充電が必要。紛失・破損時は弁償リスクあり
 
-短期間であればeSIMが手軽です。PCを頻繁に使う場合はポケットWiFiの方が便利かもしれません。
+フランスへの短期出張ならeSIMで十分です。
+日額で積み上がるポケットWiFiのレンタル料より安く収まることが多く、PCもテザリング経由で問題なく使えます。
+
+eSIMは出発前に日本で調達しておいてください。
+現地では身分証明の提示など、手続きが煩雑です。
+
+お勧めはUbigiです。1週間の出張なら10GBのプランで十分足ります。
+
+- [Ubigi](https://cellulardata.ubigi.com/rates-and-coverage/france-data-plans/france-10gb-7-days/)
+  - NTTコミュニケーションズ傘下のTransatelが運営。日本語のサイトで購入できる
+  - フランス向けは10GBを7日間使えて8ドル
+- [Airalo](https://www.airalo.com/france-esim)
+  - 取り扱う国と地域が広い
+  - フランス向けは3GBを7日間で6.50ユーロから
 
 ## スマートフォンの設定
 
@@ -116,12 +142,12 @@ PCは必ず機内持ち込み手荷物にしてください。預け荷物にす
 
 設定は回線ごとに切り替えます。使う手段に応じて次のようにしてください。
 
-| 回線 | ポケットWiFiの場合 | eSIMの場合 |
-|---|---|---|
-| 国内SIM | データ通信オフ、データローミングオフ | 回線を無効化 |
-| 現地用eSIM | 使わない | データローミングをオン |
+| 回線 | キャリアの定額サービスの場合 | ポケットWiFiの場合 | eSIMの場合 |
+|---|---|---|---|
+| 国内SIM | データローミングをオン | データ通信オフ、データローミングオフ | 回線を無効化 |
+| 現地用eSIM | 使わない | 使わない | データローミングをオン |
 
-国内SIMのローミングを切り忘れると、知らないうちに国内キャリア経由で通信してしまい、帰国後に高額な請求を受ける可能性があります。
+定額サービスを使わないのに国内SIMのローミングを切り忘れると、知らないうちに国内キャリア経由で通信してしまい、帰国後に高額な請求を受ける可能性があります。
 一方、現地用eSIMは現地の回線を借りて通信する仕組みなので、こちらはオンにしないと繋がりません。
 
 設定画面の場所はiPhoneとAndroidで異なります。
@@ -148,7 +174,7 @@ CIO NovaPort TRIO II 67Wは、USB-Cポート2つとUSB-Aポート1つを搭載�
 ### モバイルバッテリー
 
 モバイルバッテリーも忘れずに持参してください。
-スマホはGrabやマップ、翻訳アプリなど現地で頻繁に使うため、バッテリー切れは致命的です。
+スマホはUberやマップ、翻訳アプリなど現地で頻繁に使うため、バッテリー切れは致命的です。
 
 信頼できるメーカーのものを選んでください。
 安価な無名ブランド品は発火リスクがあり、機内での事故は致命的です。AnkerやCIOなど、品質管理がしっかりしたメーカーの製品をお勧めします。
@@ -178,9 +204,14 @@ A・B・BF・C・O・SEタイプに対応し、50g未満と軽量で持ち運び
 
 海外での支払いは、基本的にクレジットカードを使うことをお勧めします。為替手数料も両替より有利な場合が多く、利用明細が残るので経費精算にも便利です。
 
-現金は、屋台やタクシー、チップなど少額の支払い用に持っておく程度で十分です。1週間程度の出張であれば、4万円相当の現地通貨があれば困ることはないでしょう。
+フランスではタクシーもクレジットカードで支払えます。
+金額にかかわらずカード決済を受け付けることが法律で義務づけられており、稼働する決済端末を車内に備えることも義務です。
 
-多くの場合、両替は空港よりも現地の銀行や両替所のレートが良いです。ただし、到着直後にタクシーや軽食で現金が必要になることもあるので、空港で5,000円程度は両替しておくと安心です。
+現金が要るのは、マルシェや公衆トイレ、チップくらいです。
+これに加えて、フランスでは加盟店がカード決済の最低利用金額を決められます。
+店内に掲示していれば合法で、小さなブーランジェリーなどで「カードは10ユーロから」と貼り出されているのはこのためです。
+1週間程度の出張なら、1万5,000円相当の現地通貨があれば困ることはないでしょう。
+この程度の額なら、両替は到着した空港で済ませて構いません。
 
 トラベラーズチェックは現在ほとんど使われていないため、考慮する必要はありません。
 
@@ -188,7 +219,7 @@ A・B・BF・C・O・SEタイプに対応し、50g未満と軽量で持ち運び
 
 - 海外利用が止められていないか
 - 利用限度額が足りているか。宿泊費をまとめて決済すると届いてしまうことがある
-- ICチップの暗証番号を覚えているか。サインで通せる国ばかりではない
+- ICチップの暗証番号を覚えているか。フランスは暗証番号が必須で、サインでは通らない
 
 カードは2枚以上を別々の場所に分けて持ちます。
 不正利用の検知などで突然1枚が使えなくなることもあります。その場で代わりを出せないと、支払いや移動が止まります。
@@ -197,6 +228,10 @@ A・B・BF・C・O・SEタイプに対応し、50g未満と軽量で持ち運び
 普段の支払いは、Googleウォレットに登録してタッチ決済にすると安全です。
 実際のカード番号は店に渡らず、端末ごとの仮想カード番号と1回限りの暗号で決済するため、スキミングや加盟店からの漏洩で番号を盗まれません。
 カードを手元から離さずに済み、暗証番号を覗き見される心配もなくなります。
+フランスではもう1つ利点があります。
+カードのタッチ決済は1回50ユーロが上限で、超えるとカードを挿して暗証番号を入れなければなりません。
+一方、スマートフォンのタッチ決済はこの上限の対象外です。
+端末側で本人確認を済ませているためで、金額を気にせず使えます。
 出発前に端末のNFCをオンにして、国内で一度使って動作を確かめておいてください。
 物理カードは、バッテリー切れやATMでの現金引き出しに備えて必ず併用します。
 
@@ -225,22 +260,23 @@ BoltやFreeNowも使えますが、まず1つ入れるならUberです。
 
 ## チップについて
 
-チップの習慣は渡航先によって大きく異なります。
+フランスでは、レストランやカフェのサービス料が料金に含まれています。
+メニューや請求書には「prix service compris」と表示する義務があり、そこに書かれた金額がそのまま支払う額です。
+チップは完全に任意で、店側から要求できません。
 
-アメリカでは飲食店やタクシーで15〜20%のチップが事実上必須ですが、アジア圏では基本的に不要な国が多いです。
-中国・韓国・日本ではチップを渡す習慣がなく、渡すとかえって困惑されることもあります。
+統計によるとフランス人は半数の人がチップを渡しています。
+特に不満が無ければ次の額を目安に渡すとよいでしょう。
 
-タイの場合は少し事情が異なり、以下のような場面では少額のチップを渡すことがあります。
+- カフェで飲み物を1杯なら渡さなくてよい。釣り銭の小銭を残す程度でいい
+- レストランで食事をして満足したなら、1〜3ユーロをテーブルに置く
+- ホテルのポーターやハウスキーピングには1〜2ユーロ
+- タクシーは端数を切り上げる程度でよい
 
-- ホテルのポーターやベッドメイク：20〜50バーツ程度
-- マッサージやスパ：50〜100バーツ程度
-- 高級レストラン：サービス料が含まれていなければ端数を切り上げる程度
+アメリカのようにチップを払わずとも非難はされません。
+サービスに不満がある場合はチップなしでも大丈夫です。
 
-屋台やフードコート、コンビニなどではチップは不要です。
-タクシーも基本的には不要ですが、お釣りの端数を渡す程度は喜ばれます。
-
-チップは現金で渡すのが基本です。小額紙幣を用意しておくと便利です。なお、タイでは硬貨を渡すのは失礼にあたるとされているため、必ず紙幣で渡してください。
-このあたりの感覚は国によって異なり、欧米では小銭を置いていくことも珍しくありません。
+現金が心もとない場合は、カードでもチップを渡せます。
+決済端末でチップの有無を聞かれることもあれば、金額を伝えて会計に上乗せしてもらうこともできます。
 
 ## 経費精算の準備
 
@@ -336,6 +372,17 @@ BoltやFreeNowも使えますが、まず1つ入れるならUberです。
 - [EU MAG（駐日欧州連合代表部）](https://eumag.jp/article/qa082025a/). 「出入域システム（EES）について教えてください」
 - [EU MAG（駐日欧州連合代表部）](https://eumag.jp/article/basicinfo0724a/). 「EU域内の移動の自由（シェンゲン協定）」
 - [DGCCRF（フランス経済・財務省）](https://www.economie.gouv.fr/dgccrf/les-fiches-pratiques/transition-ecologique-quelles-obligations-pour-les-cafes-et). 「Transition écologique : quelles obligations pour les cafés et restaurateurs ?」
+- [DGCCRF（フランス経済・財務省）](https://www.economie.gouv.fr/dgccrf/les-fiches-pratiques/taxis-vtc-motos-pro-ce-quil-faut-savoir). 「Taxis, VTC, motos-pro : ce qu'il faut savoir」
+- [DGCCRF（フランス経済・財務省）](https://www.economie.gouv.fr/dgccrf/les-fiches-pratiques/pourboire). 「Pourboire」
+- [Institut CSA](https://csa.eu/news/les-francais-et-les-pourboires-2/). 「Les Français et les Pourboires」
+- [フランス経済・財務省](https://www.economie.gouv.fr/actualites/paiement-sans-contact-par-carte-bancaire-le-plafond-releve-50-euros). 「Paiement sans contact par carte bancaire : le plafond relevé à 50 euros」
+- [フランス経済・財務省](https://www.economie.gouv.fr/particuliers/mes-droits-conso/bien-consommer/paiement-sans-contact-comment-ca-fonctionne). 「Paiement sans contact : comment ça fonctionne ?」
+- [フランス経済・財務省](https://www.economie.gouv.fr/entreprises/gerer-son-entreprise-au-quotidien/gerer-un-commerce/cartes-bancaires-cheques-especes-quels-moyens-de-paiement-de-vos-clients-etes-vous). 「Cartes bancaires, chèques, espèces : quels moyens de paiement de vos clients êtes-vous obligé d'accepter ?」
+- [NTTドコモ](https://www.docomo.ne.jp/service/world/roaming/sonomama-giga/). 「世界そのままギガ」
+- [mineo ユーザーサポート](https://support.mineo.jp/usqa/service/basic/area/4206846_8853.html). 「海外で電話やメール、インターネットを使うことができますか？」
+- [mineo ユーザーサポート](https://support.mineo.jp/usqa/service/basic/charge/4206857_8854.html). 「国際電話サービス／国際ローミングサービスの限度額を知りたい。」
+- [Orange Travel](https://travel.orange.com/en/sim-card-registration). 「Identity Verification」
+- [Transatel](https://www.transatel.com/news-and-insights/press-releases/ntt-communications-completes-acquisition-of-majority-stake-in-transatel-a-global-connectivity-solution-provider-for-the-mvno-and-iot-markets/). 「NTT Communications Completes Acquisition of Majority Stake in Transatel」
 - [Google ウォレット ヘルプ](https://support.google.com/wallet/answer/12059601?hl=ja). 「Google ウォレット アプリに追加したお支払い方法を管理する」
 - [税関](https://www.customs.go.jp/kaigairyoko/shinkokusho.htm). 「入国（帰国）時における「携帯品・別送品申告書」の提出」
 - [外務省](https://www.ezairyu.mofa.go.jp/tabireg/index.html). 「たびレジ（海外旅行登録）」
