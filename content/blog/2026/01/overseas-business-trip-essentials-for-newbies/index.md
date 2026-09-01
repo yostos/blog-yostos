@@ -22,6 +22,8 @@ local_image = "cover.avif"
 
 <!-- textlint-enable -->
 
+この記事は海外出張初心者に向けたアドバイスです。特定の知り合いを想定して書いているので、**渡航先はフランスを前提**として書いています。ただし、他の国でも役立つ情報は多いと思います。
+
 <details>
 <summary>Table of Contents</summary>
 <!-- toc -->
@@ -78,6 +80,53 @@ PCは必ず機内持ち込み手荷物にしてください。預け荷物にす
 
 空港のセキュリティチェックではPCをバッグから取り出す必要があります。
 取り出しやすい場所に入れておくとスムーズです。
+
+## スーツケースを買う(2026-09-01追記)
+
+1週間の出張なら70L前後が目安です。
+これより小さいと書類や土産で足りなくなり、大きいと預け入れの重量制限に近づきます。
+
+見るべきは、キャスター、本体重量、保証の3点です。デザインや色は最後で構いません。
+以下が推奨するベスト3です。
+
+| モデル                         | 容量 |  重量 |     価格 | キャスター | 保証                                   |
+| ------------------------------ | ---: | ----: | -------: | ---------- | -------------------------------------- |
+| プロテカ 360G5                 |  71L | 4.2kg | 99,000円 | 双輪       | 3年完全無償（航空会社の破損も対象）    |
+| プロテカ エアロフレックスDX2   |  71L | 3.1kg | 93,500円 | 単輪       | 3年完全無償（航空会社の破損も対象）    |
+| サムソナイト C-LITE スピナー69 |  68L | 2.5kg | 89,100円 | 双輪       | 条件付き10年（航空会社の破損は対象外） |
+
+結論から言うと、初めての1台にはプロテカの360G5をお勧めします。理由は3つあります。
+
+キャスター
+: プロテカは他社より一段上。「ベアロンホイール」という高耐久のクロム鋼ベアリングを使った独自開発のホイールで摩擦係数を約50%軽減。「サイレントキャスター」は従来モデルに対し体感音量を約30%軽減。静音で軽く転がるのは想像以上にストレス軽減。フランスのように石畳が多いと、双輪が安定。
+
+保証
+: プロテカは日本製で購入から3年間、完全無償。他社が対応しない航空会社の取り扱いによる破損も対象。
+
+開閉方式
+: 縦横どちらにも開ける360度ファスナー。荷物を底側にまとめる1気室と、蓋側と底側に分ける2気室を切り替えられる。ホテルの狭い部屋で、立てたまま縦に開けられるのが効く。
+
+プロテカ360G5は、2026年8月に発売されたばかりの最新モデルでもあります。
+
+<!-- textlint-disable -->
+
+<div class="kaerebalink-box" style="text-align:left;padding-bottom:20px;font-size:small;zoom: 1;overflow: hidden;"><div class="kaerebalink-image" style="float:left;margin:0 15px 10px 0;"><a href="https://hb.afl.rakuten.co.jp/hgc/g00qlfd5.9srin191.g00qlfd5.9sriod9e/kaereba_main_202609012103547332?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Face-store%2F02623%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Face-store%2Fi%2F10009865%2F&rafcid=wsc_i_is_c7c582dc-0853-4585-9176-66e2a26d9c5b" target="_blank" ><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/ace-store/cabinet/item2026/proteca/02623.jpg?_ex=128x128" style="border: none;" /></a></div><div class="kaerebalink-info" style="line-height:120%;zoom: 1;overflow: hidden;"><div class="kaerebalink-name" style="margin-bottom:10px;line-height:120%"><a href="https://hb.afl.rakuten.co.jp/hgc/g00qlfd5.9srin191.g00qlfd5.9sriod9e/kaereba_main_202609012103547332?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Face-store%2F02623%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Face-store%2Fi%2F10009865%2F&rafcid=wsc_i_is_c7c582dc-0853-4585-9176-66e2a26d9c5b" target="_blank" >【 エース公式 】 PROTECA プロテカ 360G5 メンズ レディース スーツケース キャリーケース 日本製 双輪 360度オープン キャスターストッパー Lサイズ ブランド おしゃれ ブラック 全5色 71L 02623</a><div class="kaerebalink-powered-date" style="font-size:8pt;margin-top:5px;font-family:verdana;line-height:120%">posted with <a href="https://kaereba.com" rel="nofollow" target="_blank">カエレバ</a></div></div><div class="kaerebalink-detail" style="margin-bottom:5px;"></div><div class="kaerebalink-link1" style="margin-top:10px;"><div class="shoplinkrakuten" style="display:inline;margin-right:5px"><a href="https://hb.afl.rakuten.co.jp/hgc/1300574f.7d238558.13005750.4bcd8088/kaereba_main_202609012103547332?pc=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2F%25E3%2583%2597%25E3%2583%25AD%25E3%2583%2586%25E3%2582%25AB%2520360G5%2F-%2Ff.1-p.1-s.1-sf.0-st.A-v.2%3Fx%3D0%26scid%3Daf_ich_link_urltxt&m=http%3A%2F%2Fm.rakuten.co.jp%2F" target="_blank" >楽天市場</a></div><div class="shoplinkamazon" style="display:inline;margin-right:5px"><a href="https://www.amazon.co.jp/gp/search?keywords=%E3%83%97%E3%83%AD%E3%83%86%E3%82%AB%20360G5&__mk_ja_JP=%E3%82%AB%E3%82%BF%E3%82%AB%E3%83%8A&tag=yostosweb-22" target="_blank" >Amazon</a></div></div></div><div class="booklink-footer" style="clear: left"></div></div>
+
+<!-- textlint-enable -->
+
+弱点は重さです。
+重量差が実際に効くのは、階段や段差で持ち上げる場面です。
+石畳を転がしている時間のほうが長いなら、軽さよりもキャスター性能を優先しましょう。
+
+石畳を歩く機会の少ない都市が中心で、とにかく軽くしたいならエアロフレックスDX2です。
+クロスファイバーという、ポリプロピレン繊維を樹脂フィルムで挟んで加熱圧着した素材を使っており、強い力を受けても元の形に戻ります。
+サムソナイトのCurvと同じ発想の素材で、71Lで3.1kgという軽さと堅牢性を両立しています。単輪であることだけが弱点です。
+
+購入時には保証の条件にも注意してください。
+
+- 保証は正規販売店で購入した製品だけが対象である。並行輸入品とアウトレット品は対象外
+- 保証書に店印を押してもらうか、レシートを添えて保管する。保証書は再発行されない
+- 販売店の商品ページに「10年保証」とあっても、完全無償で修理されるのは3年である
 
 ## 機内での座席選び
 
@@ -142,10 +191,10 @@ eSIMは出発前に日本で調達しておいてください。
 
 設定は回線ごとに切り替えます。使う手段に応じて次のようにしてください。
 
-| 回線 | キャリアの定額サービスの場合 | ポケットWiFiの場合 | eSIMの場合 |
-|---|---|---|---|
-| 国内SIM | データローミングをオン | データ通信オフ、データローミングオフ | 回線を無効化 |
-| 現地用eSIM | 使わない | 使わない | データローミングをオン |
+| 回線       | キャリアの定額サービスの場合 | ポケットWiFiの場合                   | eSIMの場合             |
+| ---------- | ---------------------------- | ------------------------------------ | ---------------------- |
+| 国内SIM    | データローミングをオン       | データ通信オフ、データローミングオフ | 回線を無効化           |
+| 現地用eSIM | 使わない                     | 使わない                             | データローミングをオン |
 
 定額サービスを使わないのに国内SIMのローミングを切り忘れると、知らないうちに国内キャリア経由で通信してしまい、帰国後に高額な請求を受ける可能性があります。
 一方、現地用eSIMは現地の回線を借りて通信する仕組みなので、こちらはオンにしないと繋がりません。
@@ -159,7 +208,7 @@ eSIMは出発前に日本で調達しておいてください。
 
 ## 充電器と電源
 
-海外では電源コンセントの形状が日本と異なります。充電器と変換プラグを忘れずに持参してください。
+フランスの電源コンセントは日本と形状が異なります。充電器と変換プラグを忘れずに持参してください。
 
 ### USB充電器
 
@@ -188,17 +237,32 @@ CIO NovaPort TRIO II 67Wは、USB-Cポート2つとUSB-Aポート1つを搭載�
 
 ### 変換プラグ
 
-渡航先が決まっていない段階では、マルチタイプの変換プラグを用意しておくと安心です。
-1台で世界中のほとんどの国に対応できます。
+フランスのコンセントはCタイプとSEタイプで、どちらも丸いピンが2本並んだ形です。
+日本のAタイプのプラグは挿さらないので、変換プラグが要ります。
 
-お勧めはカシムラのマルチ変換プラグです。
-A・B・BF・C・O・SEタイプに対応し、50g未満と軽量で持ち運びに便利です。
+買うのはCタイプの変換プラグ1個で足ります。
+SEタイプのコンセントにもCタイプのプラグは挿さるため、フランス国内ならこれ1つで困りません。
+カシムラのWP-3は35×47mmほどの大きさで13gしかなく、荷物になりません。
+充電器側で口数を増やせるので、変換プラグは1口で構いません。
+
+この先ほかの国にも行くなら、マルチタイプを選んでおくと使い回せます。
+カシムラのマルチ変換プラグはA・B・BF・C・O・SEタイプに対応して50g未満です。
 エレコムやサンワサプライの製品も品質が安定しています。
 
 変換プラグは電圧を変換しません。
-使用する機器が海外の電圧（多くの国で220〜240V）に対応しているか確認してください。
-最近のノートPCやスマホの充電器は「100〜240V」対応のものがほとんどです。
-ヘアドライヤーなど日本専用の家電製品は変圧器なしで使えませんが、持っていくことは稀でしょう。
+フランスの電源は230V・50Hzで、日本の100Vとは異なります。
+最近のノートPCやスマートフォンの充電器は「100〜240V」対応のものがほとんどなので、変圧器は不要です。
+出発前に、手持ちの充電器の表示を確認しておいてください。
+
+ヘアドライヤーは持っていかないでください。
+日本専用の100V製品はフランスでは使えず、変圧器は重くて出張の荷物には向きません。
+ホテルの備え付けを使ってください。
+
+電気シェーバーは、本体かACアダプターの表示を確認してください。
+「100-240V」と書かれていれば、変換プラグを介してそのまま使えます。
+「100V」とだけ表示されている国内専用機は持っていかないでください。
+変圧器を使っても電圧が不安定になり、故障や事故につながるとメーカーが明示しています。
+USB充電に対応した機種なら変換プラグすら要らず、PC用の充電器から充電できます。
 
 ## 現金とカードの使い分け
 
@@ -264,7 +328,7 @@ BoltやFreeNowも使えますが、まず1つ入れるならUberです。
 メニューや請求書には「prix service compris」と表示する義務があり、そこに書かれた金額がそのまま支払う額です。
 チップは完全に任意で、店側から要求できません。
 
-統計によるとフランス人は半数の人がチップを渡しています。
+統計によると、フランス人の半数がチップを渡しています。
 特に不満が無ければ次の額を目安に渡すとよいでしょう。
 
 - カフェで飲み物を1杯なら渡さなくてよい。釣り銭の小銭を残す程度でいい
@@ -297,7 +361,7 @@ BoltやFreeNowも使えますが、まず1つ入れるならUberです。
 
 ## 水と食事
 
-フランスの水道水は飲めます。パリの水道水も水質基準を満たしているので、ペットボトルを買う必要も、氷を避ける必要もありません。
+フランスの水道水は飲めます。パリでも水質基準を満たしているので、ペットボトルを買う必要も、氷を避ける必要もありません。
 
 レストランで「Une carafe d'eau, s'il vous plaît」と頼めば、水道水が無料で出てきます。
 テーブルサービスのある飲食店には無料で飲料水を提供する義務があり、メニューなどへの明示も求められています。
@@ -350,7 +414,7 @@ BoltやFreeNowも使えますが、まず1つ入れるならUberです。
 
 最後に、中国への出張について触れておきます。
 
-初めての海外出張で中国を打診された場合、可能であれば断ることをお勧めします。
+海外出張で中国を打診された場合は、断りましょう。
 
 現在の中国は地政学的リスクが非常に高く、日本人ビジネスパーソンにとって安全とは言えない状況です。
 スパイ容疑での拘束事例も報告されており、何気ない行動が思わぬトラブルにつながる可能性があります。
@@ -358,8 +422,10 @@ BoltやFreeNowも使えますが、まず1つ入れるならUberです。
 また、インターネット規制（グレートファイアウォール）によりGoogle、LINE、Gmailなどが使えず、VPNの準備が必要になるなど、通信面でのハードルも高いです。
 決済もWeChat PayやAlipayが主流で、外国人が使うには事前準備が必要です。
 
-中国出張を避けられない場合は、会社のセキュリティ部門や法務部門に相談し、十分な対策を講じてから渡航してください。
-初心者が単独で対応するには荷が重すぎます。
+このリスクは、会社が対策を講じて担保できる種類のものではありません。
+セキュリティ部門や法務部門に相談したところで、身柄を拘束された社員を会社が取り戻せるわけではないからです。
+それでも中国出張を避けられないのなら、私はその会社を辞めることを勧めます。
+断れない1回の出張に、自分の身の安全を賭ける価値はありません。
 
 ## References
 
@@ -379,6 +445,9 @@ BoltやFreeNowも使えますが、まず1つ入れるならUberです。
 - [フランス経済・財務省](https://www.economie.gouv.fr/particuliers/mes-droits-conso/bien-consommer/paiement-sans-contact-comment-ca-fonctionne). 「Paiement sans contact : comment ça fonctionne ?」
 - [フランス経済・財務省](https://www.economie.gouv.fr/entreprises/gerer-son-entreprise-au-quotidien/gerer-un-commerce/cartes-bancaires-cheques-especes-quels-moyens-de-paiement-de-vos-clients-etes-vous). 「Cartes bancaires, chèques, espèces : quels moyens de paiement de vos clients êtes-vous obligé d'accepter ?」
 - [NTTドコモ](https://www.docomo.ne.jp/service/world/roaming/sonomama-giga/). 「世界そのままギガ」
+- [Enedis](https://www.enedis.fr/fonctionnement-du-reseau). 「Comment fonctionne le réseau électrique ?」
+- [カシムラ](https://www.kashimura.com/goods/kaigai/plug/wp3.html). 「海外用変換プラグ Cタイプ WP-3」
+- [パナソニック](https://jpn.faq.panasonic.com/app/answers/detail/a_id/10759/). 「【メンズシェーバー】海外でも使用できますか？」
 - [mineo ユーザーサポート](https://support.mineo.jp/usqa/service/basic/area/4206846_8853.html). 「海外で電話やメール、インターネットを使うことができますか？」
 - [mineo ユーザーサポート](https://support.mineo.jp/usqa/service/basic/charge/4206857_8854.html). 「国際電話サービス／国際ローミングサービスの限度額を知りたい。」
 - [Orange Travel](https://travel.orange.com/en/sim-card-registration). 「Identity Verification」
@@ -391,6 +460,13 @@ BoltやFreeNowも使えますが、まず1つ入れるならUberです。
 - [政府広報オンライン](https://www.gov-online.go.jp/article/201412/entry-7500.html). 「飛行機へ持ち込めないもの」
 - [日本航空](https://www.jal.co.jp/jp/ja/info/2025/other/250701/). 「機内でのモバイルバッテリーの収納・使用に関するお願い」
 - [Paris Aéroport](https://www.parisaeroport.fr/en/passengers/transport-parking/taxi/cdg). 「How to take a taxi at Paris-CDG airport?」
+- [エース](https://store.ace.jp/shop/g/g02623-01/). 「プロテカ 360G5 スーツケース 日本製 双輪 71L 02623」
+- [エース](https://store.ace.jp/shop/g/g01523-02/). 「プロテカ エアロフレックスDX2 スーツケース 日本製 71L 01523」
+- [プロテカ（エース）](https://www.proteca.jp/special/japan-premium/). 「旅の心地よさを極めた、メイド・イン・ジャパン。」
+- [プロテカ（エース）](https://www.proteca.jp/concept/warranty.php). 「製品保証について」
+- [プロテカ（エース）](https://www.proteca.jp/product/premium-care.php). 「3年間完全無償修理保証 プレミアムケア」
+- [サムソナイト](https://www.samsonite.co.jp/samsonite/c-lite/spinner69/black/ss-122860-1041.html). 「シーライト スピナー69」
+- [サムソナイト](https://www.samsonite.co.jp/guarantee.html). 「保証と修理について」
 
 {% end %}
 
