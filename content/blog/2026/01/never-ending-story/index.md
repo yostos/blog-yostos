@@ -20,7 +20,7 @@ social_media_card = "ogp.webp"
 物語全体を振り返ると、私の中で最も鮮明に残っていたのが、DustinとSusieが無線越しに歌う、あの瞬間でした。
 その記憶をもとに、あの曲を再現してみました。
 
-<iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/soundcloud%253Atracks%253A2240923832&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/yostos" title="Yostos" target="_blank" style="color: #cccccc; text-decoration: none;">Yostos</a> · <a href="https://soundcloud.com/yostos/never-ending-story-stranger-things-version" title="Never Ending Story (Stranger Things version)" target="_blank" style="color: #cccccc; text-decoration: none;">Never Ending Story (Stranger Things version)</a></div>
+{{ youtube(id="eYsqXQ5uCUY") }}
 
 あのシーンが描かれるのは、
 シーズン3・第8話（最終話）「スターコート・モールの戦い（The Battle of Starcourt）」。
