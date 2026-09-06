@@ -40,7 +40,7 @@ ADTプラグインも買ってみようと
 Revstarを使ってレコーディングし、
 Logic Proでミックスしています。
 
-<iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/soundcloud%3Atracks%3A2257478333%3Fsecret_token%3Ds-g7IuqQCunpg&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/yostos" title="Yostos" target="_blank" style="color: #cccccc; text-decoration: none;">Yostos</a> · <a href="https://soundcloud.com/yostos/rain/s-g7IuqQCunpg" title="Rain(Beatles Cover)" target="_blank" style="color: #cccccc; text-decoration: none;">Rain(Beatles Cover)</a></div>
+{{ youtube(id="9PYn9WJ3g4c") }}
 
 ## REEL ADT：60年代の革新技術を再現
 
