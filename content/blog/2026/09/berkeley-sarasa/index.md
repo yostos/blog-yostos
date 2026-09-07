@@ -5,6 +5,7 @@ WezTerm のフォント設定を、欧文 Berkeley Mono、全角 更紗ゴシッ
 セル幅を実測して scale を決め、全角が正確に2セルへ収まる状態にしています。
 """
 date = 2026-09-07T13:04:27+09:00
+updated = 2026-09-08
 [taxonomies]
 tags = ["Tech", "Font"]
 [extra]
@@ -90,19 +91,22 @@ Berkeley Monoは 'A' を0.600 emで送り、日本語のグリフは持ちませ
 
 もうひとつはWezTerm自身の `ls-fonts` です。こちらは「設定を与えたときに実際にどのファイルの
 どのフェイスが選ばれ、送り幅がいくつになるか」を返します。`--codepoints` には
-調べたい文字をUnicodeのコードポイントで渡します。`3042` はU+3042、ひらがなの「あ」です。
+調べたい文字をUnicodeのコードポイントで渡します。`41` はU+0041の 'A'、
+`3042` はU+3042、ひらがなの「あ」です。ここで読み込む `test.lua` は、
+Berkeley Monoと更紗ゴシックを並べただけの素の設定です。
 
 ```bash,name=check.sh
-wezterm --config-file ./test.lua ls-fonts --codepoints 3042
+wezterm --config-file ./test.lua ls-fonts --codepoints 41,3042
 ```
 
 ```text
-0 あ \u{3042} x_adv=24 cells=2 glyph=10207 wezterm.font("Sarasa Term J", ...)
+0 A  \u{41}   x_adv=12 cells=1 wezterm.font("Berkeley Mono", ...)
+1 あ \u{3042} x_adv=20 cells=2 wezterm.font("Sarasa Term J", ...)
 ```
 
-読み方はこうです。「あ」は更紗ゴシックから取られ、送り幅を表す `x_adv` は24ピクセル、
-占める幅は `cells=2` で2セル。このときのセル幅は12ピクセルなので、送り幅はちょうど2倍で、
-全角がセル2つに過不足なく収まっています。ここがズレていると日本語混じりの表や罫線が崩れます。
+上記の結果から次のことがわかります。
+
+'A' はBerkeley Monoから取られ、送り幅を表す `x_adv` は12ピクセル、占める幅は `cells=1` で1セルです。ここから1セルの幅が12ピクセルだと実測で分かります。「あ」は更紗ゴシックから取られ、`cells=2` は2セルを占めるべき文字だというWezTermの判定です。2セルなら24ピクセル必要なのに、`x_adv` は20ピクセルしかありません。4ピクセル足りない状態です。この4ピクセルをどう埋めるかが次節の話になります。ここがズレたままだと日本語混じりの表や罫線が崩れます。
 
 フォントファイルの設計値と、WezTermが実際に採用する値は一致しないことがあるため、
 この2つを突き合わせる必要がありました。
