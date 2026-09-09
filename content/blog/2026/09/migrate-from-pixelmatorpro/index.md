@@ -3,7 +3,7 @@ title = "サブスクになったPixelmator Proから移行先を考える"
 description = """
 ずっと愛用してきたPixelmator Proが、Appleの買収を経てサブスクリプションの一部になりました。買い切り版はApp Storeに残っていますが、更新は3系で止まったままです。画像編集にしか使わない私が、年額17,800円を払い続ける理由はあるのでしょうか。移行先として名前の挙がる4つのアプリを検討しました。
 """
-date = 2026-09-09
+date = 2026-09-09T08:17:18+09:00
 [taxonomies]
 tags = ["Tech", "Application"]
 [extra]
