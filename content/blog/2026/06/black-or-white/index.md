@@ -13,7 +13,7 @@ local_image = "cover.webp"
 
 映画『Michael』の公開が楽しみで、ついマイケル・ジャクソンが1991年に発表した「Black or White」をカバーしてみました。
 
-<iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay; encrypted-media" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/soundcloud%253Atracks%253A2341825985&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/yostos" title="Yostos" target="_blank" style="color: #cccccc; text-decoration: none;">Yostos</a> · <a href="https://soundcloud.com/yostos/black-or-white" title="Black or White" target="_blank" style="color: #cccccc; text-decoration: none;">Black or White</a></div>
+{{ youtube(id="NKflnDPcHAk") }}
 
 この曲を選んだのは、マイケルの幻の復帰公演を記録した『This Is It』で華麗にリフを弾いていたOrianthi Panagarisが印象に残っていたからです。
 

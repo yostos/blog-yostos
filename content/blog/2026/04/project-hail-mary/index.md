@@ -81,7 +81,7 @@ Andy Weirの原作は数年前に楽しく読んで気に入っていた作品�
 
 本作で印象に残ったのは、なんといっても挿入歌の選曲でした。特にThe Beatlesの「Two Of Us」は、GraceとRockyのバディ関係にそのまま重なってきて、観終わったあともしばらく耳から離れませんでした。気に入ってしまったので、自分でも弾いて録ってみたバージョンを置いておきます。
 
-<iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/soundcloud%253Atracks%253A2308330112&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/yostos" title="Yostos" target="_blank" style="color: #cccccc; text-decoration: none;">Yostos</a> · <a href="https://soundcloud.com/yostos/two-of-us/s-bJyHdAGXah2" title="Two Of Us" target="_blank" style="color: #cccccc; text-decoration: none;">Two Of Us</a></div>
+{{ youtube(id="gASHxts8WXA") }}
 
 作中で印象的に使われていた挿入歌を並べておきます。
 
@@ -99,7 +99,10 @@ Andy Weirの原作は数年前に楽しく読んで気に入っていた作品�
 
 映画版『プロジェクト・ヘイルメアリー』の最大のパラドックスは、原作の二層構造こそが読後の満足感の源泉だったのに、映像化する過程で平準化されて、「均質に良質な感動作」になってしまった点にあります。作品としての完成度は高くても、原作を読んだ人ほど、あの前半の不安げな暗さが削られたことに物足りなさを感じる構造になっています。
 
-個人的には、映画版は好意的に受け取りました。Goslingは相変わらず魅力的ですし、なによりRockyのパペット演技は特筆に値します。フルCGに頼らず、多くの場面でJames Ortizが操演と声の両方を担当した実在の造形物として画面にいるので、視線の動きやちょっとした間合いに手触りがあり、GraceとRockyが距離を詰めていく後半の友情シーンは、原作を読んだときの感触がそのまま立ち上がってきました。この存在感は、主演を食いかねないほどです。
+個人的には、映画版は好意的に受け取りました。
+Goslingは相変わらず魅力的ですし、なによりRockyのパペット演技は特筆に値します。
+フルCGに頼らず、多くの場面でJames Ortizが操演と声の両方を担当した実在の造形物として画面にいます。
+視線の動きやちょっとした間合いに手触りがあり、GraceとRockyが距離を詰めていく後半の友情シーンは原作を読んだときの感触がそのまま立ち上がってきました。この存在感は、主演を食いかねないほどです。
 
 それでも、読み終えた直後のあの「複雑な重さ」を映画で体験できると期待していた自分には、どこか物足りなさが残ったのも事実です。これは映画化の失敗というより、小説という形式が持っていた強度を、映像メディアに完全には移植できなかった、というだけの話なのかもしれません。『The Martian』の映画化が成功したのは、あの作品が最初から比較的一貫した「火星でのサバイバル」という単層構造だったからで、『プロジェクト・ヘイルメアリー』は原作の構造そのものが映像化に抗う性質を持っていた、ということなのでしょう。
 
