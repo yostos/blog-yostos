@@ -9,7 +9,7 @@ tags = ["Tech", "Application"]
 social_media_card = "ogp.webp"
 +++
 
-とりあえず、昨年Synthersizer V 1で作った藤原さくらさんの「[Just One Girl](https://soundcloud.com/yostos/just-one-girl-1?si=b7db2a56715c423eb6402905f5029c64&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing)
+とりあえず、昨年Synthersizer V 1で作った藤原さくらさんの「Just One Girl
 」をSynthesizer V 2でヴォーカル部分をリテイクしてみました。
 
 {{ youtube(id="M_wFVSNXj3c")}}

@@ -16,7 +16,7 @@ social_media_card = "ogp.webp"
 前年に発表されたアルバム『SAUDADE』には未収録ですが、同時期に制作されたのだ
 と思います。B面は同アルバム収録の「[Eona](https://soundcloud.com/yostos/eona?si=1e399235825841aca9fb1c0a0a288c75&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing)」でした。
 
-「[To You](https://soundcloud.com/yostos/to-you?si=454fd11c1e9746e287ef038f9ad18a14&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing)」は、当時マツダ ファミリアのテレビCMにも使われていたのを覚えています。
+「[To You](https://youtu.be/nifC9LlAdCY?si=_ClCG3EYLGro9U1Z)」は、当時マツダ ファミリアのテレビCMにも使われていたのを覚えています。
 
 {{ youtube(id="ig67gsNMpnU") }}
 
