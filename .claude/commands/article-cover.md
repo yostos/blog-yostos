@@ -1,10 +1,10 @@
 ---
-description: Generate a cover image for an article using OpenAI gpt-image-2 API. Read article content, craft a prompt, generate 1536x864 (16:9) AVIF image.
+description: Generate a cover image for an article using OpenAI gpt-image-2.5 Flare API. Read article content, craft a prompt, generate 1536x864 (16:9) AVIF image.
 ---
 
 # Article Cover Image Generation
 
-Generate a cover image (cover.avif) for an article using OpenAI gpt-image-2 API.
+Generate a cover image (cover.avif) for an article using OpenAI gpt-image-2.5 Flare API.
 
 ## Steps
 
@@ -18,7 +18,7 @@ Read the article content to understand the theme and key topics.
 Based on the article content:
 
 - Identify the core theme and visual concepts
-- Craft a gpt-image-2 prompt that captures the article's essence
+- Craft a gpt-image-2.5 Flare prompt that captures the article's essence
 - Show the prompt to the user for approval before generating
 
 ### 3. Generate Image

@@ -1,11 +1,12 @@
 #!/bin/bash
 set -euo pipefail
 
-# Generate cover image using OpenAI gpt-image-2 API
+# Generate cover image using OpenAI gpt-image-2.5 Flare API
 # Requires: OPENAI_API_KEY, curl, jq, avifenc
-# Note: gpt-image-2 does not honor output_format (it returns PNG bytes
-# regardless of the requested format). We request PNG and convert to
-# AVIF via avifenc.
+# Note: gpt-image-2.5 can return png, jpeg or webp, but we deliberately
+# keep the default PNG. It is the only lossless option among them, and
+# feeding a lossless intermediate to avifenc avoids stacking a second
+# generation of lossy artifacts on top of the AVIF encode.
 #
 # AVIF is used for photographic and AI-generated cover images only.
 # Diagrams, charts and screenshots must stay lossless WebP:
@@ -13,7 +14,7 @@ set -euo pipefail
 
 SIZE="1536x864"
 QUALITY="high"
-MODEL="gpt-image-2"        # image_generation tool model
+MODEL="gpt-image-2.5-flare"  # image_generation tool model
 HOST_MODEL="gpt-4.1-mini"  # host model that drives the image tool
 AVIF_QUALITY="60"
 
@@ -27,7 +28,9 @@ Options:
   -s  Size: 1536x864, 2048x1152, 1024x1024, etc.
       Must be multiples of 16, aspect ratio within 3:1 to 1:3.
       (default: 1536x864 = 16:9)
-  -q  Quality: low, medium, or high (default: high)
+  -q  Quality: low, medium, high, xhigh, or max (default: high)
+      gpt-image-2.5 adds xhigh and max above high. They cost more per
+      image, so covers stay at high unless asked otherwise.
   -w  AVIF encoder quality (0-100, default: 60)
       60 is roughly equivalent to the previous cwebp -q 80.
 
@@ -75,11 +78,11 @@ RESP_FILE=$(mktemp -t cover-resp-XXXXXX)
 TMP_PNG=$(mktemp -t cover-XXXXXX).png
 trap 'rm -f "$RESP_FILE" "$TMP_PNG"' EXIT
 
-# A high-quality gpt-image-2 render can take several minutes — longer than the
+# A high-quality render can still take a couple of minutes — longer than the
 # ~60s idle timeout that closes a synchronous (or streamed) connection before
 # the image is ready. Submit the job in background mode via the Responses API
 # and poll for it, so every HTTP request is short-lived and never hits the
-# timeout. The image_generation tool drives gpt-image-2; the host model just
+# timeout. The image_generation tool drives gpt-image-2.5 Flare; the host model just
 # forwards the prompt verbatim.
 echo "Submitting background job..."
 SUBMIT=$(curl -s --max-time 60 https://api.openai.com/v1/responses \
