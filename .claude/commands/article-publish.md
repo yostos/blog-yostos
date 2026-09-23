@@ -18,7 +18,15 @@ If issues are found, stop and fix them before continuing.
 
 ### 2. Regenerate OGP Image
 
-- Delete the existing OGP image (the file specified by social_media_card in frontmatter)
+- Move the existing OGP image to the Trash. Write out the single target file in full
+  (the file specified by social_media_card in frontmatter). Never pass a wildcard or a
+  directory, and never regenerate by deleting more than the one article's image:
+
+```bash
+trash content/blog/YYYY/MM/slug/ogp.webp
+```
+
+- Do NOT use `rm`. `trash` is reversible, so a mistaken target can be recovered
 - Run `npm run ogp` to regenerate
 
 ### 3. Link Check
