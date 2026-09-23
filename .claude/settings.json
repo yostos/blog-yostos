@@ -6,7 +6,7 @@
       "MultiEdit",
       "Bash(mkdir:*)",
       "Bash(touch:*)",
-      "Bash(trash content/blog/:*",
+      "Bash(trash content/blog/:*)",
       "Task"
     ]
   },
