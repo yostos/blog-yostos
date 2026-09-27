@@ -7,7 +7,7 @@ description = """
 実務的な準備ポイントをまとめました。
 """
 date = 2026-01-24
-updated = 2026-09-01
+updated = 2026-09-27
 
 [taxonomies]
 tags = ["Trivialities", "Travel"]
@@ -29,6 +29,27 @@ local_image = "cover.avif"
 <!-- toc -->
 </details>
 
+## 出張前準備チェックリスト(2026-09-27追記)
+
+出発前に、本文で触れた重要な準備が済んでいるかを次の表で確認してください。
+詳しい理由や選び方は各セクションで説明しています。
+
+| 分類     | 項目                         | 確認すること                                                    |
+| -------- | ---------------------------- | :-------------------------------------------------------------- |
+| 書類     | パスポート                   | 残有効期限が帰国予定時点で3ヶ月以上。紛失に備えて、ホテルの金庫に置く紙のコピーか、PCなどに入れたPDFを用意した |
+| 書類     | ホテル予約                   | 予約を確認できるものをすぐ出せる                                |
+| 書類     | eチケット控え                | 帰りの便の分をスマートフォンか紙ですぐ出せる                    |
+| 書類     | 訪問先からの招待メール       | 印刷しておく。招待メールを得られない場合(通常はそんなことはない)、自社の正式な出張証明書(英文、可能であればレターヘッド入りの書式) |
+| 書類     | 訪問先                       | 会社名、担当者名、住所、連絡先（電話番号、メールアドレス）をすぐ出せる |
+| 書類     | 残高証明書                   | 渡航直前に発行した。ドコモSMTBネット銀行ならWebサイトからPDFを無料で即時発行できる |
+| 書類     | 海外旅行保険証明書（英文）   | **入国審査で提示を求められる必須書類**。会社の海外出張保険（補償3万ユーロ以上）に加入し、証明書を発行してもらった |
+| 手続き   | Visit Japan Web              | アカウントを作り、パスポート情報と携帯品・別送品の申告を登録した |
+| 手続き   | たびレジ                     | 登録した                                                        |
+| 通信     | データ通信                   | 会社のモバイルルーター、キャリアの定額サービス、eSIMのいずれかを手配した |
+| 電源     | コンセントの変換プラグ       | 日本のプラグをフランスのコンセントに挿すためのCタイプを用意した |
+| お金     | クレジットカード             | 2枚以上を別々の場所に入れた。海外利用が止められていないこと、利用限度額が足りること、ICチップの暗証番号を覚えていることを確認した。スマートフォンのGoogleウォレットに登録し、国内で一度タッチ決済を使って動作を確かめた |
+| 連絡     | 緊急連絡先                   | 会社の緊急連絡先と、現地の日本大使館・領事館の連絡先を控えた。家族に滞在先ホテルと現地連絡先を伝えた |
+
 ## 出入国の手続き(2026-08-31追記)
 
 <!-- textlint-disable -->
@@ -43,6 +64,22 @@ local_image = "cover.avif"
 短期出張であればビザは不要で、任意の180日間のうち滞在日数の合計が90日を超えなければ滞在できます。
 パスポートはシェンゲン圏を出国する時点で3か月以上の残存有効期間が必要です。
 
+入国審査では、滞在の目的、滞在中の資金、帰国の手段を示すものを求められることがあります。
+フランス政府の案内に沿って、次のものをすぐ出せるようにしておいてください。
+
+- ホテルの予約を確認できるもの
+- 帰りの便のeチケット控え（旅程表）
+- 訪問先からの招待メール（Invitation）の印刷。得られない場合は、会社の正式な出張証明書（英文。可能であればレターヘッド入り）
+- 訪問先の会社名と担当者名
+- クレジットカード
+- 銀行の残高証明書。ドコモSMTBネット銀行ならWebサイトからPDFを無料で即時発行できるので、渡航直前に用意する
+- フランス渡航用の海外旅行保険証明書（英文）
+
+海外旅行保険は、入っておいたほうがよいという程度のものではなく、**フランスの入国条件**として確認しておくべきものです。
+France-Visasは、90日以内の観光や出張には旅行保険への加入が義務（mandatory）だと明記しています。
+補償額は最低3万ユーロで、医療搬送と救急・入院治療の費用を含み、滞在期間中シェンゲン圏全域で有効でなければなりません。
+会社に海外出張保険への加入を求め、英文の保険証明書を発行してもらっておいてください。
+
 2026年4月10日から、シェンゲン圏29カ国のすべての国境検問所でEES（出入域システム）の運用が始まりました。
 入国時と出国時に顔画像と指紋が電子的に記録される仕組みで、これまでのパスポートへのスタンプ押印に代わるものです。
 渡航前の申請は必要ありません。
@@ -50,6 +87,10 @@ local_image = "cover.avif"
 事前申請が必要なETIAS（欧州渡航情報認証制度）は2026年第4四半期の導入が予定されていますが、
 2026年8月時点で開始時期は確定していません。
 出発前に外務省の海外安全ホームページとフランス大使館のサイトで最新の情報を確認してください。
+
+あわせて、外務省の海外旅行登録サービス「たびレジ」にも登録しておいてください。
+渡航先の安全情報や緊急時の連絡がメールで届きます。
+3か月未満の短期渡航では登録は任意ですが、強くお勧めします。
 
 帰国時にも準備があります。
 Visit Japan Webに携帯品・別送品の申告を登録しておくと、QRコードで電子申告ゲートを通過できます。
@@ -383,32 +424,44 @@ BoltやFreeNowも使えますが、まず1つ入れるならUberです。
 体内時計は光でリセットされるため、ホテルに直行して寝てしまうと調整が長引きます。
 眠くても現地の就寝時刻まで起きているほうが、翌日以降が楽になります。
 
+## 犯罪からの防衛(2026-09-27追記)
+
+スリと置き引きへの備えとして、次のことを習慣にしてください。
+
+- 財布をズボンの後ろポケットに入れない
+- スマートフォンはネックストラップなどで常に身に付ける
+- リュックは使わない。背後からカッターで切られ、中身を盗まれる
+- 親切そうに話しかけてきた人に気を取られている間に、別の人が盗むという手口も多い。話しかけられても無視する
+- メトロや鉄道では、荷物を体の前に抱えて身体から離さない
+- クレジットカード2枚は同じ鞄に入れない
+- パスポートは常に携帯する。紛失に備えて、コピーをホテルの金庫などに保管するか、PDFにしてPCなどに入れておく
+
+## 語学(2026-09-27追記)
+
+基本は英語で構いませんが、ホテルなどでは最低限、次の言葉を覚えておいてください。
+
+<!-- author-approved: フランス語フレーズの訳語で、敬体は言い換えられないため -->
+<!-- textlint-disable -->
+
+- Bonjour（こんにちは）
+- Bonsoir（こんばんは）
+- Merci（ありがとう）
+- S'il vous plaît（お願いします）
+- Excusez-moi（すみません）
+
+<!-- textlint-enable -->
+
 ## その他の備え
 
 出発前に以下の準備も忘れずに行ってください。
 
-- たびレジへの登録
-  - 外務省が提供する海外旅行登録サービス
-  - 登録すると渡航先の安全情報や緊急時の連絡がメールで届く
-  - 3か月未満の短期渡航者は任意だが、登録を強く推奨
-- パスポートの残存有効期間の確認
-  - 国によっては入国時に6か月以上の残存有効期間が必要
-  - 残存有効期間が1年未満の場合は新しいパスポートへの切り替えを検討
-- パスポートと航空券のコピー
-  - 紙のコピーと、クラウドストレージにデジタルコピーの両方を用意
-  - 万が一紛失した際の再発行手続きがスムーズになる
-- 海外旅行保険の確認
-  - 会社の法人カードに付帯している場合が多いので、補償内容を確認
-  - 付帯がない場合は個別に加入を検討
-- 緊急連絡先の共有
-  - 会社の緊急連絡先、現地の日本大使館・領事館の連絡先を控えておく
-  - 家族にも滞在先ホテルや現地連絡先を伝えておく
 - 常備薬の持参
   - 普段使用している薬があれば必ず持参
   - 胃腸薬や解熱鎮痛剤もあると安心
 - 予防接種
-  - 短期の都市部出張であれば通常不要
-  - 心配な場合は出発2週間前までに渡航外来で相談
+  - 厚生労働省検疫所（FORTH）は、フランスを含む西ヨーロッパへの渡航で麻しん・風しんの予防接種の検討を勧めている
+  - 接種が1回だけの人や接種したか分からない人は、母子健康手帳で接種歴を確認し、早めに渡航外来で相談する
+  - 水痘、破傷風、インフルエンザ、ダニ媒介脳炎は、行程や年齢、免疫の状況によって検討される
 
 ## 中国への出張について
 
@@ -437,6 +490,8 @@ BoltやFreeNowも使えますが、まず1つ入れるならUberです。
 - [在日フランス大使館](https://jp.diplomatie.gouv.fr/ja/ees-le-nouveau-systeme-europeen-de-gestion-des-frontieres-entre-en-service-le-10-avril-2026). 「ヨーロッパの新国境管理システム「EES」が2026年4月10日より運用開始」
 - [EU MAG（駐日欧州連合代表部）](https://eumag.jp/article/qa082025a/). 「出入域システム（EES）について教えてください」
 - [EU MAG（駐日欧州連合代表部）](https://eumag.jp/article/basicinfo0724a/). 「EU域内の移動の自由（シェンゲン協定）」
+- [France-Visas（フランス政府）](https://www.france-visas.gouv.fr/web/france-visas/votre-arrivee-en-france). 「Votre arrivée en France」
+- [France-Visas（フランス政府）](https://france-visas.gouv.fr/en/faq). 「Frequently asked questions」
 - [DGCCRF（フランス経済・財務省）](https://www.economie.gouv.fr/dgccrf/les-fiches-pratiques/transition-ecologique-quelles-obligations-pour-les-cafes-et). 「Transition écologique : quelles obligations pour les cafés et restaurateurs ?」
 - [DGCCRF（フランス経済・財務省）](https://www.economie.gouv.fr/dgccrf/les-fiches-pratiques/taxis-vtc-motos-pro-ce-quil-faut-savoir). 「Taxis, VTC, motos-pro : ce qu'il faut savoir」
 - [DGCCRF（フランス経済・財務省）](https://www.economie.gouv.fr/dgccrf/les-fiches-pratiques/pourboire). 「Pourboire」
@@ -445,6 +500,7 @@ BoltやFreeNowも使えますが、まず1つ入れるならUberです。
 - [フランス経済・財務省](https://www.economie.gouv.fr/particuliers/mes-droits-conso/bien-consommer/paiement-sans-contact-comment-ca-fonctionne). 「Paiement sans contact : comment ça fonctionne ?」
 - [フランス経済・財務省](https://www.economie.gouv.fr/entreprises/gerer-son-entreprise-au-quotidien/gerer-un-commerce/cartes-bancaires-cheques-especes-quels-moyens-de-paiement-de-vos-clients-etes-vous). 「Cartes bancaires, chèques, espèces : quels moyens de paiement de vos clients êtes-vous obligé d'accepter ?」
 - [NTTドコモ](https://www.docomo.ne.jp/service/world/roaming/sonomama-giga/). 「世界そのままギガ」
+- [ドコモSMTBネット銀行](https://help.netbk.co.jp/faq_detail.html?id=5530). 「〔証明書の種類〕 証明書の発行方法・手数料・見本」
 - [Enedis](https://www.enedis.fr/fonctionnement-du-reseau). 「Comment fonctionne le réseau électrique ?」
 - [カシムラ](https://www.kashimura.com/goods/kaigai/plug/wp3.html). 「海外用変換プラグ Cタイプ WP-3」
 - [パナソニック](https://jpn.faq.panasonic.com/app/answers/detail/a_id/10759/). 「【メンズシェーバー】海外でも使用できますか？」
@@ -456,6 +512,7 @@ BoltやFreeNowも使えますが、まず1つ入れるならUberです。
 - [税関](https://www.customs.go.jp/kaigairyoko/shinkokusho.htm). 「入国（帰国）時における「携帯品・別送品申告書」の提出」
 - [外務省](https://www.ezairyu.mofa.go.jp/tabireg/index.html). 「たびレジ（海外旅行登録）」
 - [外務省](https://www.mofa.go.jp/mofaj/toko/index.html). 「海外渡航・滞在」
+- [厚生労働省検疫所 FORTH](https://www.forth.go.jp/moreinfo/topics/useful_vaccination.html). 「海外渡航のためのワクチン（予防接種）」
 - [外務省 海外安全ホームページ](https://www.anzen.mofa.go.jp/info/pcspotinfo_2025C029.html). 「中国：反スパイ法に関する注意喚起」
 - [政府広報オンライン](https://www.gov-online.go.jp/article/201412/entry-7500.html). 「飛行機へ持ち込めないもの」
 - [日本航空](https://www.jal.co.jp/jp/ja/info/2025/other/250701/). 「機内でのモバイルバッテリーの収納・使用に関するお願い」
