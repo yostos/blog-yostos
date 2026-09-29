@@ -18,4 +18,4 @@ shocked me. Though I don't fully understand the true meaning of this song,
 to me it seems to express determination in the face of fear of collapse and
 anxiety about the future.
 
-{{ youtube(id="7p_WhVluOTs") }}
+{{< youtube id="7p_WhVluOTs" />}}

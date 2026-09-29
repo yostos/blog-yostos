@@ -17,7 +17,7 @@ local_image = "cover.jpg"
 
 <!-- textlint-disable -->
 
-{{ image(src="cover.jpg", alt="Cover") }}
+{{< image src="cover.jpg" alt="Cover" />}}
 
 <!-- textlint-enable -->
 
@@ -35,7 +35,7 @@ local_image = "cover.jpg"
 
 <!-- textlint-disable -->
 
-{{ image(src="./torii.jpg", alt="西の一之鳥居") }}
+{{< image src="./torii.jpg" alt="西の一之鳥居" />}}
 
 <!-- textlint-enable -->
 

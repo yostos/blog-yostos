@@ -18,7 +18,7 @@ tldr = """
 """
 +++
 
-{{ image(src="cover.webp",alt="Cover") }}
+{{< image src="cover.webp" alt="Cover" />}}
 
 <details>
 <summary>Table of Contents</summary>
@@ -137,9 +137,9 @@ Fastmail MCPサーバー自身のツール説明にも「対話的なカレン�
 
 <!-- textlint-disable -->
 
-{% aside(position="right") %}
+{% <aside position="right"> %}
 claude.aiはWeb版のClaudeを指します。
-{% end %}
+{% </aside> %}
 
 <!-- textlint-enable -->
 
@@ -195,9 +195,9 @@ Fastmail MCPはリリースされたばかりの機能であり、こうした�
 
 <!-- textlint-disable -->
 
-{% aside(position="right") %}
+{% <aside position="right"> %}
 MulmoClaudeは中島聡氏が開発するClaude Codeを利用したローカルAIアシスタント育成プラットフォーム
-{% end %}
+{% </aside> %}
 
 <!-- textlint-enable -->
 

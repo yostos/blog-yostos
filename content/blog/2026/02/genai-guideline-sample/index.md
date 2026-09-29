@@ -22,7 +22,7 @@ social_media_card = "ogp.webp"
 
 <!-- textlint-disable -->
 
-{{ image(src="./cover.webp",alt="cover")}}
+{{< image src="./cover.webp" alt="cover" />}}
 
 <!-- textlint-enable -->
 
@@ -41,7 +41,7 @@ social_media_card = "ogp.webp"
 
 <!-- textlint-disable -->
 
-{{ linkcard(url="https://github.com/yostos/genai-governance-checklist") }}
+{{< linkcard url="https://github.com/yostos/genai-governance-checklist" />}}
 
 <!-- textlint-enable -->
 
@@ -185,7 +185,7 @@ ChatGPTを導入しよう」
 
 <!-- textlint-disable -->
 
-{% admonition(type="warning", title="免責事項") %}
+{% <admonition type="warning" title="免責事項"> %}
 本サンプルは情報提供を目的としており、
 法的助言を構成するものではありません。
 実際のガイドライン策定にあたっては、
@@ -196,7 +196,7 @@ ChatGPTを導入しよう」
 必要な対策は異なります。
 本サンプルの利用によって生じた損害について、
 筆者は一切の責任を負いません。
-{% end %}
+{% </admonition> %}
 
 <!-- textlint-enable -->
 

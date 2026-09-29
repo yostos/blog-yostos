@@ -9,7 +9,7 @@ tags = ["Creative", "Guitar"]
 social_media_card = "ogp.webp"
 +++
 
-{{ youtube(id="IcMhCv5s730") }}
+{{< youtube id="IcMhCv5s730" />}}
 
 - Guitar: Epiphone USA Texan
 - Vocal: Synthesizer V (Sheena)

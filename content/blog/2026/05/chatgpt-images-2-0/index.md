@@ -18,7 +18,7 @@ OpenAIが2026年4月21日にリリースしたChatGPT Images 2.0(API名 gpt-imag
 
 <!-- textlint-disable -->
 
-{{ image(src="cover.webp", alt="Cover") }}
+{{< image src="cover.webp" alt="Cover" />}}
 
 <!-- textlint-enable -->
 
@@ -170,7 +170,7 @@ ChatGPT Images 2.0は、価格が下がり、解像度とアスペクト比の�
 
 ## References
 
-{% references() %}
+{% <references> %}
 
 - [OpenAI](https://openai.com/index/introducing-chatgpt-images-2-0/).「Introducing ChatGPT Images 2.0」
 - [OpenAI API Docs](https://developers.openai.com/api/docs/models/gpt-image-1).「GPT Image 1 Model」(価格比較用)
@@ -178,4 +178,4 @@ ChatGPT Images 2.0は、価格が下がり、解像度とアスペクト比の�
 - [TechCrunch](https://techcrunch.com/2026/04/21/chatgpts-new-images-2-0-model-is-surprisingly-good-at-generating-text/).「ChatGPT's new Images 2.0 model is surprisingly good at generating text」
 - [The New Stack](https://thenewstack.io/chatgpt-images-20-openai/).「With the launch of ChatGPT Images 2.0, OpenAI now 'thinks' before it draws」
 
-{% end %}
+{% </references> %}

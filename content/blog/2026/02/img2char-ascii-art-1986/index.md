@@ -17,14 +17,14 @@ local_image="cover.webp"
 
 ## はじめに
 
-{{ image(src="cover.webp", alt="img2charによる変換例") }}
+{{< image src="cover.webp" alt="img2charによる変換例" />}}
 _左の画像はMidjourneyで生成したものです_
 
 1986年、パソコン通信は黎明期でASCIInetがまだ実験運用の時代でした。その頃の私はグラフィック（おそらくモノクロの有名歌手の画像）を自作プログラムでASCII文字の絵にして、あるパソコン通信のBBS（電子掲示板）に投稿しました。
 
 あれから約40年。当時のアルゴリズムをGoで再実装し、CLIツール `img2char` として公開しました。
 
-{{ linkcard(url="https://github.com/yostos/img2char") }}
+{{< linkcard url="https://github.com/yostos/img2char" />}}
 
 この記事では、当時の背景と `img2char` のアルゴリズムを紹介します。
 
@@ -173,7 +173,7 @@ img2char input_640x200.png
 
 興味を持っていただけたら、ぜひ試してみてください。
 
-{{ linkcard(url="https://github.com/yostos/img2char") }}
+{{< linkcard url="https://github.com/yostos/img2char" />}}
 
 ## 参考
 

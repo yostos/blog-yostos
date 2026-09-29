@@ -14,7 +14,7 @@ local_image = "cover.webp"
 
 <!-- textlint-disable -->
 
-{{ image(src="cover.webp", alt="Cover") }}
+{{< image src="cover.webp" alt="Cover" />}}
 
 <!-- textlint-enable -->
 
@@ -37,7 +37,7 @@ NVIDIAのジェンスン・ファンCEOが5月米カーネギーメロン大学�
 
 <!-- textlint-disable -->
 
-{{ youtube(id="FZh_0uRgrg4") }}
+{{< youtube id="FZh_0uRgrg4" />}}
 
 <!-- textlint-enable -->
 

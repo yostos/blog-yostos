@@ -11,7 +11,7 @@ social_media_card = "ogp.webp"
 
 <!-- textlint-disable -->
 
-{{ image(src="typepad.webp", alt="Typepad") }}
+{{< image src="typepad.webp" alt="Typepad" />}}
 
 <!-- textlint-enable -->
 

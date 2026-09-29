@@ -15,7 +15,7 @@ katex = true
 
 <!-- textlint-disable -->
 
-{{ image(src="cover.webp", alt="Cover") }}
+{{< image src="cover.webp" alt="Cover" />}}
 
 <!-- textlint-enable -->
 
@@ -114,7 +114,7 @@ $$\text{集団免疫閾値} = \left(1 - \frac{1}{\text{再生産数}}\right) \ti
 
 <!-- textlint-disable -->
 
-{{ image(src="covid19-graph1.png", alt="再生産数2.5の場合の隔離人口率推移予測") }}
+{{< image src="covid19-graph1.png" alt="再生産数2.5の場合の隔離人口率推移予測" />}}
 
 <!-- textlint-enable -->
 
@@ -135,7 +135,7 @@ https://scitechlabo.blogspot.com/2020/04/ecdc.html
 
 <!-- textlint-disable -->
 
-{{ image(src="covid19-graph2.png", alt="再生産数1.5の場合の隔離人口率推移予測") }}
+{{< image src="covid19-graph2.png" alt="再生産数1.5の場合の隔離人口率推移予測" />}}
 
 <!-- textlint-enable -->
 
@@ -164,7 +164,7 @@ Amazonで購入した [マスクホルダー](https://amzn.to/3b9c5vo) を利用
 
 <!-- textlint-disable -->
 
-{{ image(src="mask.jpg", alt="キッチンペーパーで作るマスク") }}
+{{< image src="mask.jpg" alt="キッチンペーパーで作るマスク" />}}
 
 <!-- textlint-enable -->
 

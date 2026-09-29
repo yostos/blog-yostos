@@ -9,7 +9,7 @@ tags = ["Creative", "Guitar"]
 social_media_card = "ogp.webp"
 +++
 
-{{ youtube(id="DaMIRADV1EE") }}
+{{< youtube id="DaMIRADV1EE" />}}
 
 この曲には先日購入したHudson Broadcastが合うかなと思いしてみました。
 

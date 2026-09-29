@@ -87,7 +87,7 @@ the public will.
 
 <!-- textlint-disable -->
 
-{{ image(src="tv-asahi.webp", alt="テレビ朝日ニュースステーションの偏向報道") }}
+{{< image src="tv-asahi.webp" alt="テレビ朝日ニュースステーションの偏向報道" />}}
 
 <!-- textlint-enable -->
 

@@ -11,7 +11,7 @@ social_media_card = "ogp.webp"
 
 <!-- textlint-disable -->
 
-{{ image(src="top.webp", alt="FwriteDown") }}
+{{< image src="top.webp" alt="FwriteDown" />}}
 
 <!-- textlint-enable -->
 
@@ -76,7 +76,7 @@ FwriteDownはこれまでブラウザベースで提供されていました。
 
 <!-- textlint-disable -->
 
-{{ image(src="price.webp", alt="Price") }}
+{{< image src="price.webp" alt="Price" />}}
 
 <!-- textlint-enable -->
 

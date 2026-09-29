@@ -11,7 +11,7 @@ local_image = "tangle.jpg"
 
 <!-- textlint-disable -->
 <figure>
-{{ image(src="tangle.jpg",alt="Knots That Time Forgot") }}
+{{< image src="tangle.jpg" alt="Knots That Time Forgot" />}}
 <figcaption>Knots That Time Forgot</figcaption>
 </figure>
 <!-- textlint-enable -->

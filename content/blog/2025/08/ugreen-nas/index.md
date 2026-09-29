@@ -11,7 +11,7 @@ social_media_card = "ogp.webp"
 
 <!-- textlint-disable -->
 
-{{ image(src="ugreen-nas.webp", alt="UGREEN NAS") }}
+{{< image src="ugreen-nas.webp" alt="UGREEN NAS" />}}
 
 <!-- textlint-enable -->
 

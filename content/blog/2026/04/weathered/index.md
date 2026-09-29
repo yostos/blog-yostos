@@ -13,7 +13,7 @@ local_image = "shedding.jpg"
 
 <!-- textlint-disable -->
 
-{{ image(src="shedding.jpg", alt="skin", caption="Shedding") }}
+{{< image src="shedding.jpg" alt="skin" caption="Shedding" />}}
 
 <!-- textlint-enable -->
 

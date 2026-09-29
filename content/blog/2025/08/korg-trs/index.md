@@ -11,7 +11,7 @@ social_media_card = "ogp.webp"
 
 <!-- textlint-disable -->
 
-{{ image(src="trs.webp", alt="KORG Nu:tekt TR-S") }}
+{{< image src="trs.webp" alt="KORG Nu:tekt TR-S" />}}
 
 <!-- textlint-enable -->
 
@@ -56,7 +56,7 @@ Nutubeでシミュレーションしてくるエフェクターです。
 
 ## KORG TR-Sで弾いてみた
 
-{{ youtube(id="5nHSZ8GDcSQ") }}
+{{< youtube id="5nHSZ8GDcSQ" />}}
 
 パワー管ということで、アンプシミュレーターのSimplifier MK-IIのSend - Returnに
 KORG TR-Sをセットしてみましたが、インピーダンスの関係かSimplifier MK-II

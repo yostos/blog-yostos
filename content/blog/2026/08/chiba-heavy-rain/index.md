@@ -18,7 +18,7 @@ local_image = "cover.webp"
 
 <!-- textlint-disable -->
 
-{{ image(src="cover.webp",alt="雷雨の中の千葉ポートタワー",caption="生成AIによるイメージ画像です") }}
+{{< image src="cover.webp" alt="雷雨の中の千葉ポートタワー" caption="生成AIによるイメージ画像です" />}}
 
 <!-- textlint-enable -->
 
@@ -125,7 +125,7 @@ local_image = "cover.webp"
 
 <!-- textlint-disable -->
 
-{{ image(src="underpass-map.webp",alt="千葉駅周辺の地図。道路冠水注意箇所が線路沿いに点在している",caption="「ハザードマップポータルサイト」の道路冠水想定箇所を表示して作成（2026-08-14に利用）。背景地図は地理院タイル（淡色地図）") }}
+{{< image src="underpass-map.webp" alt="千葉駅周辺の地図。道路冠水注意箇所が線路沿いに点在している" caption="「ハザードマップポータルサイト」の道路冠水想定箇所を表示して作成（2026-08-14に利用）。背景地図は地理院タイル（淡色地図）" />}}
 
 <!-- textlint-enable -->
 
@@ -162,7 +162,7 @@ JAFには13日夜から15日昼までに約2000件のレッカー要請が寄せ
 
 <!-- textlint-disable -->
 
-{% references() %}
+{% <references> %}
 
 - [気象庁](https://www.jma.go.jp/jma/press/2608/13a/20260813_tokukei.html). 報道発表資料「千葉県にレベル５大雨特別警報発表」（令和8年8月13日、国土交通省水管理・国土保全局との合同発表）
 - [気象庁](https://www.jma.go.jp/jma/press/2608/13a/20260813_tokukei.pdf). 「千葉県にレベル５大雨特別警報発表」資料全文（PDF）
@@ -188,6 +188,6 @@ JAFには13日夜から15日昼までに約2000件のレッカー要請が寄せ
 - [国土交通省関東地方整備局千葉国道事務所](https://www.ktr.mlit.go.jp/kisha/chiba_index.html). 記者発表資料
 - [e-Gov 法令検索](https://laws.e-gov.go.jp/law/336AC0000000223). 災害対策基本法 第76条の6（災害時における車両の移動等）
 
-{% end %}
+{% </references> %}
 
 <!-- textlint-enable -->

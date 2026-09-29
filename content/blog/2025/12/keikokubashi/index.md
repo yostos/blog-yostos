@@ -11,7 +11,7 @@ social_media_card = "ogp.webp"
 
 <!-- textlint-disable -->
 
-{{ image(src="keikokubashi.webp", alt="渓谷橋") }}
+{{< image src="keikokubashi.webp" alt="渓谷橋" />}}
 
 <!-- textlint-enable -->
 
@@ -33,4 +33,4 @@ social_media_card = "ogp.webp"
 
 今では養老渓谷を象徴する橋となっています。
 
-{{ youtube(id="KZ613jRe8cI") }}
+{{< youtube id="KZ613jRe8cI" />}}

@@ -13,4 +13,4 @@ social_media_card = "ogp.webp"
 
 これまでの政権との対比もさることながら、身近なリーダーもこうあって欲しいものだと心底思います。
 
-{{ youtube(id="mmyhS8Du1Mg") }}
+{{< youtube id="mmyhS8Du1Mg" />}}

@@ -11,7 +11,7 @@ social_media_card = "ogp.webp"
 local_image = "cover.webp"
 +++
 
-{{ image(src="cover.webp",alt="Cover") }}
+{{< image src="cover.webp" alt="Cover" />}}
 
 <details>
 <summary>Table of Contents</summary>
@@ -32,9 +32,9 @@ local_image = "cover.webp"
 
 <!-- textlint-disable -->
 
-{% aside(position="right") %}
+{% <aside position="right"> %}
 1987年の9月か10月の横浜スタジアムのコンサートに行ったのを懐かしく思い出しました。
-{% end %}
+{% </aside> %}
 
 <!-- textlint-enable -->
 

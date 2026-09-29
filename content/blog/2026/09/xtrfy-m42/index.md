@@ -18,7 +18,7 @@ local_image = "cover.avif"
 
 <!-- textlint-disable -->
 
-{{ image(src="cover.avif", alt="Cover") }}
+{{< image src="cover.avif" alt="Cover" />}}
 
 <!-- textlint-enable -->
 

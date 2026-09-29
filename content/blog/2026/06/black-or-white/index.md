@@ -13,7 +13,7 @@ local_image = "cover.webp"
 
 映画『Michael』の公開が楽しみで、ついマイケル・ジャクソンが1991年に発表した「Black or White」をカバーしてみました。
 
-{{ youtube(id="NKflnDPcHAk") }}
+{{< youtube id="NKflnDPcHAk" />}}
 
 この曲を選んだのは、マイケルの幻の復帰公演を記録した『This Is It』で華麗にリフを弾いていたOrianthi Panagarisが印象に残っていたからです。
 

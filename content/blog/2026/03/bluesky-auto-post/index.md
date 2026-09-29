@@ -20,7 +20,7 @@ Bluesky AT Protocol APIでリンクカード付き投稿を行うように自動
 
 <!-- textlint-disable -->
 
-{{ image(src="cover.webp", alt="Cover") }}
+{{< image src="cover.webp" alt="Cover" />}}
 
 <!-- textlint-enable -->
 
@@ -117,9 +117,9 @@ jobs:
       - name: Post to Bluesky
         if: steps.detect.outputs.has_new == 'true'
         env:
-          BLUESKY_IDENTIFIER: ${{ secrets.BLUESKY_IDENTIFIER }}
-          BLUESKY_APP_PASSWORD: ${{ secrets.BLUESKY_APP_PASSWORD }}
-          NEW_ARTICLES: ${{ steps.detect.outputs.articles }}
+          BLUESKY_IDENTIFIER: ${% raw %}{{ secrets.BLUESKY_IDENTIFIER }}{% endraw %}
+          BLUESKY_APP_PASSWORD: ${% raw %}{{ secrets.BLUESKY_APP_PASSWORD }}{% endraw %}
+          NEW_ARTICLES: ${% raw %}{{ steps.detect.outputs.articles }}{% endraw %}
         run: |
           echo "$NEW_ARTICLES" | while IFS= read -r article; do
             [ -z "$article" ] && continue
@@ -190,11 +190,11 @@ Blueskyは投稿時にURLからOGPを自動取得しません。リンクカー�
 
 ## References
 
-{% references() %}
+{% <references> %}
 
 - [Bluesky](https://docs.bsky.app/docs/advanced-guides/posts). "Sending Post with the Bluesky API"
 - [AT Protocol](https://atproto.com/specs/xrpc). "XRPC Specification"
 
-{% end %}
+{% </references> %}
 
 <!-- textlint-enable -->

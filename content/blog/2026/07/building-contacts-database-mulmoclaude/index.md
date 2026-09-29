@@ -19,7 +19,7 @@ CSVを読み込ませて要件を伝えるだけで、スキーマ定義・カ�
 
 <!-- textlint-disable -->
 
-{{ image(src="cover.webp",alt="Cover") }}
+{{< image src="cover.webp" alt="Cover" />}}
 
 <!-- textlint-enable -->
 
@@ -43,7 +43,7 @@ CSVを読み込ませて要件を伝えるだけで、スキーマ定義・カ�
 
 <!-- textlint-disable -->
 
-{{ aside(text="FileMakerは、Apple傘下のClaris社が開発するデータベース構築ツール", position="right") }}
+{{< aside text="FileMakerは、Apple傘下のClaris社が開発するデータベース構築ツール" position="right" />}}
 
 <!-- textlint-enable -->
 
@@ -90,7 +90,7 @@ MulmoClaudeはClaude Code CLIをバックエンドに利用するため、多少
 
 <!-- textlint-disable -->
 
-{{ image(src="table.webp",alt="住所録テーブル表示",caption="住所録テーブル表示" )}}
+{{< image src="table.webp" alt="住所録テーブル表示" caption="住所録テーブル表示" />}}
 
 <!-- textlint-enable -->
 
@@ -99,7 +99,7 @@ MulmoClaudeでは属性がenumのフィールドがあればカンバン方式�
 
 <!-- textlint-disable -->
 
-{{ image(src="kanban.webp",alt="住所録カンバン表示",caption="住所録カンバン表示" )}}
+{{< image src="kanban.webp" alt="住所録カンバン表示" caption="住所録カンバン表示" />}}
 
 <!-- textlint-enable -->
 
@@ -107,7 +107,7 @@ MulmoClaudeでは属性がenumのフィールドがあればカンバン方式�
 
 <!-- textlint-disable -->
 
-{{ image(src="record.webp",alt="住所録レコード表示",caption="住所録レコード表示" )}}
+{{< image src="record.webp" alt="住所録レコード表示" caption="住所録レコード表示" />}}
 
 <!-- textlint-enable -->
 

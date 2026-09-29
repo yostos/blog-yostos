@@ -23,7 +23,7 @@ Cloudflare スタックだけで構築しました。ask.codedchords.dev で公�
 
 <!-- textlint-disable -->
 
-{{ image(src="cover.webp", alt="Cover") }}
+{{< image src="cover.webp" alt="Cover" />}}
 
 <!-- textlint-enable -->
 
@@ -48,12 +48,12 @@ Cloudflare スタックだけで構築しました。ask.codedchords.dev で公�
 
 <!-- textlint-disable -->
 
-{% admonition(type="tip", title="Q&A の例") %}
+{% <admonition type="tip" title="Q&A の例"> %}
 **Q:** CIOも設置せず、IT Governanceの取り組みを行なわない理事長が「生成AIを導入したい」と言っています。どうすべきですか？
 
 **A:** その理事長に、生成AIの導入が「新しいシステムの導入」と違うことを説明する必要があります。生成AIは、組織の判断の中枢に組み込まれ、自社固有の文脈で動く必要があります。そのためには、IT部門だけでなく、業務部門の理解と協力が必要です。
 また、生成AIの導入には、データの整備、セキュリティの確保、コンプライアンスの確保などの準備が必要です。CIOを設置せず、IT Governanceの取り組みを行なわない組織では、これらの準備を十分に整えることが難しいでしょう。（以下、省略）
-{% end %}
+{% </admonition> %}
 
 <!-- textlint-enable -->
 
@@ -63,7 +63,7 @@ Cloudflare スタックだけで構築しました。ask.codedchords.dev で公�
 
 <!-- textlint-disable -->
 
-{{ linkcard(url="https://github.com/yostos/yostos-persona") }}
+{{< linkcard url="https://github.com/yostos/yostos-persona" />}}
 
 <!-- textlint-enable -->
 
@@ -81,10 +81,10 @@ Cloudflare スタックだけで構築しました。ask.codedchords.dev で公�
 
 <!-- textlint-disable -->
 
-{% mermaid() %}
+{% <mermaid> %}
 graph LR
 Articles[ブログ記事<br>Markdown]--> Parse[front matter解析<br>+ セクション分割]--> EMB1[BGE-M3<br>embedding]--> V[(Vectorize)]
-{% end %}
+{% </mermaid> %}
 
 <!-- textlint-enable -->
 
@@ -92,13 +92,13 @@ Articles[ブログ記事<br>Markdown]--> Parse[front matter解析<br>+ セクシ
 
 <!-- textlint-disable -->
 
-{% mermaid() %}
+{% <mermaid> %}
 graph LR
 Q[質問]--> EMB2[BGE-M3<br>embedding]--> V[(Vectorize)]
 V -->|類似チャンク| LLM[Llama 3.3 70B]
 Persona[ペルソナ設定]--> LLM
 LLM --> A[回答 +<br>参考記事リンク]
-{% end %}
+{% </mermaid> %}
 
 <!-- textlint-enable -->
 
@@ -251,12 +251,12 @@ Vectorizeも無料枠に十分収まります。
 
 <!-- textlint-disable -->
 
-{% references() %}
+{% <references> %}
 
 - [Cloudflare](https://developers.cloudflare.com/workers-ai/). "Workers AI"
 - [Cloudflare](https://developers.cloudflare.com/vectorize/). "Vectorize"
 - [BAAI](https://huggingface.co/BAAI/bge-m3). "BGE-M3"
 
-{% end %}
+{% </references> %}
 
 <!-- textlint-enable -->

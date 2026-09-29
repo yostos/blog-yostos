@@ -19,7 +19,7 @@ tldr = """
 
 <!-- textlint-disable -->
 
-{{ image(src="cover.webp",alt="Cover",caption="生成AIによる画像です") }}
+{{< image src="cover.webp" alt="Cover" caption="生成AIによる画像です" />}}
 
 <!-- textlint-enable -->
 
@@ -143,7 +143,7 @@ tldr = """
 
 <!-- textlint-disable -->
 
-{% references() %}
+{% <references> %}
 
 - [国会会議録検索システム](https://kokkai.ndl.go.jp/).「第221回国会参議院予算委員会公聴会第1号令和8年3月24日」
 - [内閣官房](https://www.cas.go.jp/jp/seisaku/nipponseichosenryaku/kaigi/dai3/shiryou4-1.pdf).「日本成長戦略会議（第3回）資料4-1会田卓司『過度な緊縮志向を断ち切る投資拡大の積極財政』」
@@ -152,6 +152,6 @@ tldr = """
 - [財務省](https://www.mof.go.jp/tax_policy/summary/consumption/index.htm).「消費税など（消費課税）に関する資料」
 - [厚生労働省](https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/nenkin/nenkin/zaisei-kensyo/index.html).「将来の公的年金の財政見通し（財政検証）」
 
-{% end %}
+{% </references> %}
 
 <!-- textlint-enable -->

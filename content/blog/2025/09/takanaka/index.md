@@ -11,7 +11,7 @@ social_media_card = "ogp.webp"
 
 <!-- textlint-disable -->
 
-{{ image(src="takanaka.webp", alt="高中正義 SUPER TAKANAKA WORLD LIVE 2025-2026") }}
+{{< image src="takanaka.webp" alt="高中正義 SUPER TAKANAKA WORLD LIVE 2025-2026" />}}
 
 <!-- textlint-enable -->
 

@@ -17,7 +17,7 @@ local_image = "cover.webp"
 
 <!-- textlint-disable -->
 
-{{ image(src="cover.webp", alt="Cover") }}
+{{< image src="cover.webp" alt="Cover" />}}
 
 <details>
 <summary>Table of Contents</summary>
@@ -124,12 +124,12 @@ Avata 360は非常に気になる存在です。
 
 ## References
 
-{% references() %}
+{% <references> %}
 
 - [DroneXL](https://dronexl.co/). "The Real DJI AVATA 360 Leaks"
 - [DroneXL](https://dronexl.co/). "DJI Avata 360 Price Leak"
 - [Daily Camera News](https://www.dailycameranews.com/). "DJI Avata 360 Drone Rumors: 2026 Release, Specs, Price"
 - Antigravity. "[Antigravity A1 Specs](https://www.antigravity.tech/us/drone/antigravity-a1/specs)"
-  {% end %}
+  {% </references> %}
 
 <!-- textlint-enable -->

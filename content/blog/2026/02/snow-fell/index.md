@@ -12,7 +12,7 @@ social_media_card = "ogp.webp"
 
 <!-- textlint-disable -->
 
-{{ image(src="./cover.webp", alt="Cover") }}
+{{< image src="./cover.webp" alt="Cover" />}}
 
 <!-- textlint-enable -->
 
@@ -24,6 +24,6 @@ day to remember. Time to go vote and help decide Japan's future.
 
 <!-- textlint-disable -->
 
-{{ youtube(id="iwExG31dSco") }}
+{{< youtube id="iwExG31dSco" />}}
 
 <!-- textlint-enable -->

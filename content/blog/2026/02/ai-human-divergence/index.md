@@ -18,7 +18,7 @@ social_media_card = "ogp.webp"
 
 <!-- textlint-disable -->
 
-{{ image(src="./cover.webp", alt="Cover") }}
+{{< image src="./cover.webp" alt="Cover" />}}
 
 <!-- textlint-enable -->
 
@@ -209,11 +209,11 @@ Markdownを30分勉強し、Claude Proを使い始めましょう。
 
 <!-- textlint-disable -->
 
-{% admonition(type="note", title="なぜClaudeなのか") %}
+{% <admonition type="note" title="なぜClaudeなのか"> %}
 私がClaudeを例に挙げているのは、2026年2月時点で
 非エンジニア向けのエージェント機能（Cowork）を
 提供しているのがAnthropicだけだからです。
 認知の拡張を始めるなら、ChatGPTでもGeminiでも構いません。
-{% end %}
+{% </admonition> %}
 
 <!-- textlint-enable -->

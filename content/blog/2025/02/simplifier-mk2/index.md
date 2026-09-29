@@ -16,7 +16,7 @@ but I was drawn to the word "analog" and ended up purchasing the
 
 <!-- textlint-disable -->
 
-{{ image(src="simlifier-mk2.webp", alt="Simpilifer MK-II") }}
+{{< image src="simlifier-mk2.webp" alt="Simpilifer MK-II" />}}
 
 <!-- textlint-enable -->
 

@@ -44,7 +44,7 @@ Japanese article published on Zenn:
 
 <!-- textlint-disable -->
 
-{{ linkcard(url="https://github.com/yostos/claude-code-plugins") }}
+{{< linkcard url="https://github.com/yostos/claude-code-plugins" />}}
 
 <!-- textlint-enable -->
 
@@ -161,7 +161,7 @@ the minority opinion.
 
 <!-- textlint-disable -->
 
-{% mermaid() %}
+{% <mermaid> %}
 flowchart LR
   subgraph Phase2["Phase 2: Independent Analysis"]
     M[MELCHIOR] --> V1[Vote]
@@ -171,7 +171,7 @@ flowchart LR
   V1 --> T[Vote Result]
   V2 --> T
   V3 --> T
-{% end %}
+{% </mermaid> %}
 
 <!-- textlint-enable -->
 
@@ -192,7 +192,7 @@ opinions are split.
 
 <!-- textlint-disable -->
 
-{% mermaid() %}
+{% <mermaid> %}
 flowchart LR
   subgraph Phase2["Phase 2: Independent Analysis"]
     M[MELCHIOR] --> V1[Vote]
@@ -208,7 +208,7 @@ flowchart LR
     D[Structured Debate]
   end
   Phase3 --> R
-{% end %}
+{% </mermaid> %}
 
 <!-- textlint-enable -->
 
@@ -246,7 +246,7 @@ a four-round structured debate protocol.
 
 <!-- textlint-disable -->
 
-{% mermaid() %}
+{% <mermaid> %}
 sequenceDiagram
   participant A as Majority A
   participant B as Majority B
@@ -263,7 +263,7 @@ sequenceDiagram
   Note over A,C: Round 4
   C->>A: Final rebuttal (last word)
   C->>B: Final rebuttal (last word)
-{% end %}
+{% </mermaid> %}
 
 <!-- textlint-enable -->
 

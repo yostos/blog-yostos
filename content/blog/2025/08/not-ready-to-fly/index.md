@@ -18,4 +18,4 @@ layered in.
 When I think about how they achieved this overdubbing on tape back in the
 '70s, I'm truly amazed. The precision and skill required is just incredible.
 
-{{ youtube(id="EeoT13DiIX4") }}
+{{< youtube id="EeoT13DiIX4" />}}

@@ -11,7 +11,7 @@ social_media_card = "ogp.webp"
 
 <!-- textlint-disable -->
 
-{{ image(src="kontora.svg", alt="コントラ体") }}
+{{< image src="kontora.svg" alt="コントラ体" />}}
 
 <!-- textlint-enable -->
 

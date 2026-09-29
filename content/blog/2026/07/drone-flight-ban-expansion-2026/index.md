@@ -16,7 +16,7 @@ tldr = """
 
 <!-- textlint-disable -->
 
-{{ image(src="cover.webp",alt="Cover") }}
+{{< image src="cover.webp" alt="Cover" />}}
 
 <!-- textlint-enable -->
 
@@ -31,9 +31,9 @@ tldr = """
 
 <!-- textlint-disable -->
 
-{% admonition(type="note", title="免責事項") %}
+{% <admonition type="note" title="免責事項"> %}
 本記事の内容は執筆時点(2026年7月7日)の情報に基づく個人の見解であり、法的助言を目的としたものではありません。実際に飛行を計画される際は、国土交通省や警察庁、各空港管理者等が公表する最新の公式情報を必ずご確認ください。
-{% end %}
+{% </admonition> %}
 
 <!-- textlint-enable -->
 
@@ -45,7 +45,7 @@ tldr = """
 
 <!-- textlint-disable -->
 
-{{ image(src="narita.webp",alt="成田国際空港周辺の飛行禁止エリア",caption="成田国際空港周辺の飛行禁止エリア")}}
+{{< image src="narita.webp" alt="成田国際空港周辺の飛行禁止エリア" caption="成田国際空港周辺の飛行禁止エリア" />}}
 
 <!-- textlint-enable -->
 
@@ -66,7 +66,7 @@ tldr = """
 
 <!-- textlint-disable -->
 
-{{ image(src="map2.webp",alt="成田国際空港周辺制限表面",caption="成田国際空港周辺制限表面")}}
+{{< image src="map2.webp" alt="成田国際空港周辺制限表面" caption="成田国際空港周辺制限表面" />}}
 
 <!-- textlint-enable -->
 
@@ -100,7 +100,7 @@ tldr = """
 
 <!-- textlint-disable -->
 
-{{ aside(text="DIPS2.0は、無人航空機の飛行計画通報や許可・承認申請をオンラインで行う国土交通省のシステムです。") }}
+{{< aside text="DIPS2.0は、無人航空機の飛行計画通報や許可・承認申請をオンラインで行う国土交通省のシステムです。" />}}
 
 <!-- textlint-enable -->
 

@@ -27,7 +27,7 @@ Cloudflare Pagesにブログを移行したことで、Cloudflare Web Analytics�
 
 <!-- textlint-disable -->
 
-{{ image(src="cls.webp", alt="CLS", caption="Cloudflare Web Analytics画面") }}
+{{< image src="cls.webp" alt="CLS" caption="Cloudflare Web Analytics画面" />}}
 
 <!-- textlint-enable -->
 
@@ -54,7 +54,7 @@ CLSはページの読み込み中にコンテンツが予期せずずれる現�
 <!-- textlint-disable -->
 
 ```html,name=templates/shortcodes/image.html
-{{ remote_text(src="templates/shortcodes/image.html", start=37, end=43) }}
+{{< remote_text src="image-shortcode.txt" start={37} end={43} />}}
 ```
 
 <!-- textlint-enable -->
@@ -66,7 +66,7 @@ Zolaの`get_image_metadata`関数はビルド時に画像ファイルを読み�
 <!-- textlint-disable -->
 
 ```html,name=templates/shortcodes/image.html
-{{ remote_text(src="templates/shortcodes/image.html", start=89, end=95) }}
+{{< remote_text src="image-shortcode.txt" start={89} end={95} />}}
 ```
 
 <!-- textlint-enable -->
@@ -76,7 +76,7 @@ Zolaの`get_image_metadata`関数はビルド時に画像ファイルを読み�
 <!-- textlint-disable -->
 
 ```Markdown
-{{ remote_text(src="example-usage.txt") }}
+{{< remote_text src="example-usage.txt" />}}
 ```
 
 <!-- textlint-enable -->
@@ -94,7 +94,7 @@ Zola依存にはなりますが、記述を複雑にせずCLS対策ができま�
 <!-- textlint-disable -->
 
 ```html,name=templates/shortcodes/image.html
-{{ remote_text(src="templates/shortcodes/image.html") }}
+{{< remote_text src="image-shortcode.txt" />}}
 ```
 
   <!-- textlint-enable -->
@@ -105,12 +105,12 @@ Zola依存にはなりますが、記述を複雑にせずCLS対策ができま�
 
 <!-- textlint-disable -->
 
-{% references() %}
+{% <references> %}
 
 - web.dev. 「[Cumulative Layout Shift (CLS)](https://web.dev/articles/cls)」
 - web.dev. 「[Core Web Vitals](https://web.dev/articles/vitals)」
 - Zola. "[Shortcodes](https://www.getzola.org/documentation/content/shortcodes/)"
 - Zola. "[Overview - get_image_metadata](https://www.getzola.org/documentation/templates/overview/#get-image-metadata)"
-  {% end %}
+  {% </references> %}
 
 <!-- textlint-enable -->

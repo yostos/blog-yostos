@@ -19,7 +19,7 @@ tldr = "AWS ProServeがAIエージェントを「デジタル従業員」とし�
 
 <!-- textlint-disable -->
 
-{{ image(src="cover.webp", alt="AIロボットとビジネスパーソンが会議室で協働するイメージ") }}
+{{< image src="cover.webp" alt="AIロボットとビジネスパーソンが会議室で協働するイメージ" />}}
 
 <!-- textlint-enable -->
 
@@ -27,7 +27,7 @@ tldr = "AWS ProServeがAIエージェントを「デジタル従業員」とし�
 
 <!-- textlint-disable -->
 
-{{ linkcard(url="https://www.businessinsider.com/amazon-aws-cloud-customers-proserve-consulting-fees-ai-automates-work-2026-2") }}
+{{< linkcard url="https://www.businessinsider.com/amazon-aws-cloud-customers-proserve-consulting-fees-ai-automates-work-2026-2" />}}
 
 <!-- textlint-enable -->
 
@@ -106,14 +106,14 @@ ProServeの変革が示しているのは、AIの進化によってコンサル�
 
 <!-- textlint-disable -->
 
-{% admonition(type="warning", title="ご留意ください") %}
+{% <admonition type="warning" title="ご留意ください"> %}
 筆者は2021〜2024年にAWS ProServeに在籍していましたが、本記事は公開情報（Business Insiderの報道等）および筆者の個人的な所感に基づいており、AWSの機密情報を開示するものではありません。記載内容は筆者個人の見解であり、AWSの公式見解を代表するものではありません。
-{% end %}
+{% </admonition> %}
 
 <!-- textlint-enable -->
 <!-- textlint-disable -->
 
-{% references() %}
+{% <references> %}
 
 - [Business Insider](https://www.businessinsider.com/). "[AI rewrites the economics of Amazon's cloud-consulting business](https://www.businessinsider.com/amazon-aws-cloud-customers-proserve-consulting-fees-ai-automates-work-2026-2)" (Eugene Kim, Feb 26, 2026)
 - [Business Insider](https://www.businessinsider.com/). "[Amazon's cloud reboot shows the future of consulting in the AI era](https://www.businessinsider.com/amazon-cloud-reboot-future-consulting-ai-era-2026-3)" (Alistair Barr, Mar 4, 2026)
@@ -122,6 +122,6 @@ ProServeの変革が示しているのは、AIの進化によってコンサル�
 - [Dnyuz](https://dnyuz.com/). "[McKinsey says it has 25,000 AI agents. Its rivals say that's not a metric of success.](https://dnyuz.com/2026/02/13/mckinsey-says-it-has-25000-ai-agents-its-rivals-say-thats-not-a-metric-of-success/)" (Feb 13, 2026)
 - [note](https://note.com/). 「[AWS ProServe（プロフェッショナルサービス）とは？](https://note.com/jazzy_slug5355/n/n6d3fa6120c79)」
 
-{% end %}
+{% </references> %}
 
 <!-- textlint-enable -->

@@ -13,7 +13,7 @@ local_image = "cover.webp"
 
 <!-- textlint-disable -->
 
-{{ image(src="cover.webp",alt="Cover") }}
+{{< image src="cover.webp" alt="Cover" />}}
 
 <!-- textlint-enable -->
 
@@ -42,7 +42,7 @@ RC Motion3で選べる飛行モードでは、機体下方と後方のビジョ�
 
 <!-- textlint-disable -->
 
-{{ youtube(id="8ODkP9i9sPw") }}
+{{< youtube id="8ODkP9i9sPw" />}}
 
 <!-- textlint-enable -->
 

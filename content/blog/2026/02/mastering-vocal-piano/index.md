@@ -18,7 +18,7 @@ social_media_card = "ogp.webp"
 
 <!-- textlint-disable -->
 
-{{ image(src="./cover.webp", alt="Cover") }}
+{{< image src="./cover.webp" alt="Cover" />}}
 
 <!-- textlint-enable -->
 
@@ -51,7 +51,7 @@ iZotope Insight 2は優れたメーターですが、
 プラグインはUADxを中心に、最終段のリミッターには
 L4 Ultramaximizerを使っています。
 
-{{ youtube(id="dHZHmzGSz4Q") }}
+{{< youtube id="dHZHmzGSz4Q" />}}
 
 ## シグナルチェイン
 
@@ -91,7 +91,7 @@ Decibelはストリーミングプラットフォームごとの
 
 <!-- textlint-disable -->
 
-{{ image(src="decibel-spotify-preset.png", alt="Decibel Spotifyプリセット") }}
+{{< image src="decibel-spotify-preset.png" alt="Decibel Spotifyプリセット" />}}
 
 <!-- textlint-enable -->
 
@@ -135,7 +135,7 @@ L4 Ultramaximizerを外した状態で
 
 <!-- textlint-disable -->
 
-{{ image(src="decibel-full-view.webp", alt="Decibel全体表示（L4なし）") }}
+{{< image src="decibel-full-view.webp" alt="Decibel全体表示（L4なし）" />}}
 
 <!-- textlint-enable -->
 

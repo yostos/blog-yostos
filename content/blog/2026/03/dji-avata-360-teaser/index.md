@@ -15,7 +15,7 @@ local_image = "cover.webp"
 
 <!-- textlint-disable -->
 
-{{ image(src="cover.webp", alt="DJI Avata 360 ティザー") }}
+{{< image src="cover.webp" alt="DJI Avata 360 ティザー" />}}
 
 <!-- textlint-enable -->
 

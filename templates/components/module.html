@@ -1,5 +1,5 @@
 {#- ============================================================
-    module.html - Side-by-side image + text shortcode for Zola
+    module.html - Side-by-side image + text component for Zola
 
     Copyright (c) 2026 Toshiyuki Yoshida
     Released under the MIT License.
@@ -7,27 +7,37 @@
 
     Repository: https://github.com/yostos/blog-yostos
 
-    Body shortcode that places a (narrow) image on the left and the
+    Block component that places a (narrow) image on the left and the
     rendered Markdown body on the right. On narrow viewports the two
     stack vertically (image on top). Image path resolution mirrors
     image.html (colocated path first, then project-root fallback).
 
     Usage:
-      {% module(src="./panel.webp", alt="説明") %}
+      {% <module src="./panel.webp" alt="説明"> %}
       本文（Markdown）...
-      {% end %}
+      {% </module> %}
 
     Parameters:
       src   - Image path or remote URL (required)
       alt   - Alt text for accessibility (recommended)
+      page  - Implicit: the calling page, used to resolve
+              colocated paths
     ============================================================ -#}
+{% component module(src: string, @page = {}, alt = "") %}
 
-{%- set src = src | trim_start_matches(pat="./") -%}
+{%- set src = src | trim_start(pat="./") -%}
+{%- set meta = {} -%}
 
-{%- if src is starting_with("http") -%}
+{%- if src is starting_with(pat="http") -%}
     {%- set image_url = src -%}
 {%- else -%}
-    {%- set colocated_path = page.colocated_path | default(value="") -%}
+    {%- set colocated_path = "" -%}
+    {%- if page and page.relative_path -%}
+        {%- set page_dirs = (page.relative_path | split(pat="/"))[:-1] -%}
+        {%- if page_dirs | length > 0 -%}
+            {%- set colocated_path = page_dirs | join(sep="/") ~ "/" -%}
+        {%- endif -%}
+    {%- endif -%}
     {%- set resolved_path = colocated_path ~ src -%}
     {%- set meta = get_image_metadata(path=resolved_path, allow_missing=true) -%}
     {%- if meta -%}
@@ -38,21 +48,18 @@
     {%- endif -%}
 {%- endif -%}
 
-{%- set alt_text = alt | default(value="") -%}
-
 <div class="module">
   <div class="module-image">
     <img
       src="{{ image_url }}"
-      alt="{{ alt_text }}"
+      alt="{{ alt }}"
       {%- if meta and meta.width %} width="{{ meta.width }}"{% endif %}
       {%- if meta and meta.height %} height="{{ meta.height }}"{% endif %}
       loading="lazy"
     />
   </div>
   <div class="module-body">
-
 {{ body | markdown | safe }}
-
   </div>
 </div>
+{% endcomponent module %}

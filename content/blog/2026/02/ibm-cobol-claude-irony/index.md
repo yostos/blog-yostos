@@ -52,7 +52,7 @@ AIが高速に処理できると主張しています。
 
 <!-- textlint-disable -->
 
-{{ linkcard(url="https://claude.com/blog/how-ai-helps-break-cost-barrier-cobol-modernization") }}
+{{< linkcard url="https://claude.com/blog/how-ai-helps-break-cost-barrier-cobol-modernization" />}}
 
 <!-- textlint-enable -->
 
@@ -337,7 +337,7 @@ Anthropic、IBM、AWSのいずれであっても、
 
 <!-- textlint-disable -->
 
-{% references() %}
+{% <references> %}
 - CNBC.
   "[IBM is the latest AI casualty.
   Shares tank 13% on Anthropic programming
@@ -361,17 +361,17 @@ Anthropic、IBM、AWSのいずれであっても、
 - AWS.
   "[Blu Age Runtime high level
   architecture](https://docs.aws.amazon.com/m2/latest/userguide/ba-shared-architecture.html)"
-{% end %}
+{% </references> %}
 
 <!-- textlint-enable -->
 
 <!-- textlint-disable -->
 
-{% admonition(type="note", title="免責事項") %}
+{% <admonition type="note" title="免責事項"> %}
 本記事は投資助言を目的とするものではありません。
 筆者は現在IBMとの雇用関係はなく、
 記載された情報は全て公開情報に基づく
 個人の見解です。
-{% end %}
+{% </admonition> %}
 
 <!-- textlint-enable -->

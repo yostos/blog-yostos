@@ -17,7 +17,7 @@ local_image = "cover.webp"
 
 <!-- textlint-disable -->
 
-{{ image(src="cover.webp", alt="gyrotriage HUD出力例") }}
+{{< image src="cover.webp" alt="gyrotriage HUD出力例" />}}
 
 <!-- textlint-enable -->
 
@@ -57,7 +57,7 @@ DaVinci ResolveなどでGyroflow OpenFXプラグインを使う場合、調整�
 
 <!-- textlint-disable -->
 
-{{ linkcard(url="https://github.com/yostos/gyrotriage") }}
+{{< linkcard url="https://github.com/yostos/gyrotriage" />}}
 
 <!-- textlint-enable -->
 
@@ -189,7 +189,7 @@ gyrotriageで推定したパラメータを微調整なしでそのままGyroflo
 
 <!-- textlint-disable -->
 
-{{ youtube(id="uEInUgQIBrs") }}
+{{< youtube id="uEInUgQIBrs" />}}
 
 <!-- textlint-enable -->
 
@@ -203,10 +203,10 @@ gyrotriageで推定したパラメータを微調整なしでそのままGyroflo
 
 <!-- textlint-disable -->
 
-{% references() %}
+{% <references> %}
 
 - [Gyroflow](https://gyroflow.xyz/). 「Gyroflow - Video stabilization using gyroscope data」
 
-{% end %}
+{% </references> %}
 
 <!-- textlint-enable -->

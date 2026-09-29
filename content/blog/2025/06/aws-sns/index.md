@@ -45,7 +45,7 @@ Pythonの実行環境が必要です。
 
 処理概要です。あくまでデモです。
 
-{% mermaid() %}
+{% <mermaid> %}
 graph TD
 A[ユーザー]--> B[Python GUIアプリケーション]
 B --> C[.env.localファイル]
@@ -94,7 +94,7 @@ C --> D[AWS認証情報<br/>ACCESS_KEY_ID<br/>SECRET_ACCESS_KEY<br/>REGION]
     style N fill:#e8f5e8
     style R fill:#ffebee
 
-{% end %}
+{% </mermaid> %}
 
 実際に任意のSMSに送信するには、AWSの管理コンソールでSANDBOXを解除する必要が
 あります。また、このままだとユーザー認証していないので誰でも送信できてし

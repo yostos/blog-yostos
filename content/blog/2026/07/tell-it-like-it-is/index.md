@@ -16,7 +16,7 @@ local_image = "cover.webp"
 
 <!-- textlint-disable -->
 
-{{ image(src="cover.webp", alt="Cover") }}
+{{< image src="cover.webp" alt="Cover" />}}
 
 1989年7月26日リリースの高中正義さんのアルバム
 「GAPS!」から
@@ -28,7 +28,7 @@ local_image = "cover.webp"
 当しており、東京とマイアミの2拠点でのレコーディングだったようです。
 当時のマイアミ発ポップス／ダンスミュージックの潮流と高中サウンドを掛け合わせたリゾート感の強いアルバムでした。
 
-{{ youtube(id="k29QqEBexCQ") }}
+{{< youtube id="k29QqEBexCQ" />}}
 
 この曲のようにEmilio自身がヴォーカルを取る曲はAORテイストでした。
 

@@ -19,7 +19,7 @@ tldr = "千葉県産業振興センターのR8事業計画は、県から繰り�
 
 <!-- textlint-disable -->
 
-{{ image(src="cover.webp", alt="Cover") }}
+{{< image src="cover.webp" alt="Cover" />}}
 
 <!-- textlint-enable -->
 
@@ -36,9 +36,9 @@ tldr = "千葉県産業振興センターのR8事業計画は、県から繰り�
 
 <!-- textlint-disable -->
 
-{% admonition(type="warning", title="記事の前提と情報源") %}
+{% <admonition type="warning" title="記事の前提と情報源"> %}
 本記事の分析は、すべてセンター及び千葉県が一般に公開している資料に基づいています。参照した資料についてはReferencesセクションを確認ください。
-{% end %}
+{% </admonition> %}
 
 <!-- textlint-enable -->
 
@@ -69,7 +69,7 @@ tldr = "千葉県産業振興センターのR8事業計画は、県から繰り�
 
 <!-- textlint-disable -->
 
-{{ image(src="incomes.svg", alt="千葉県産業振興センター 経常収益の財源構成比推移（R2〜R8）") }}
+{{< image src="incomes.svg" alt="千葉県産業振興センター 経常収益の財源構成比推移（R2〜R8）" />}}
 
 <!-- textlint-enable -->
 
@@ -137,7 +137,7 @@ R8事業計画では、「センター運営基盤強化事業」として以下
 
 <!-- textlint-disable -->
 
-{{ image(src="man-cost.svg", alt="千葉県産業振興センター 非常勤専門人材への支出推移（R2〜R8）") }}
+{{< image src="man-cost.svg" alt="千葉県産業振興センター 非常勤専門人材への支出推移（R2〜R8）" />}}
 
 <!-- textlint-enable -->
 
@@ -289,7 +289,7 @@ R8事業計画は、県から繰り返し指摘されている課題にほぼ向
 
 <!-- textlint-disable -->
 
-{% references() %}
+{% <references> %}
 
 - 千葉県産業振興センター「[令和8年度 事業計画書及び収支予算書](https://www.ccjc-net.or.jp/contents_detail.php?co=cat&frmId=2516&frmCd=49-2-0-0-0)」
 - 千葉県産業振興センター「[令和6年度 事業報告書及び決算報告書](https://www.ccjc-net.or.jp/contents_detail.php?co=cat&frmId=2298&frmCd=49-2-0-0-0)」
@@ -301,6 +301,6 @@ R8事業計画は、県から繰り返し指摘されている課題にほぼ向
 - 千葉県 「[公益財団法人千葉県産業振興センター｜経営状況等の評価結果の公表（令和6年度・令和7年度）](https://www.pref.chiba.lg.jp/keisei/kousha/sangyoshinko.html)」
 - 千葉県 「[令和8年度当初予算案について](https://www.pref.chiba.lg.jp/zaisei/press/r8nendo/r8tousyo-yosanan.html)」
 
-{% end %}
+{% </references> %}
 
 <!-- textlint-enable -->

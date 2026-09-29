@@ -13,7 +13,7 @@ local_image = "cover.webp"
 
 <!-- textlint-disable -->
 
-{{ image(src="cover.webp",alt="Cover") }}
+{{< image src="cover.webp" alt="Cover" />}}
 
 <!-- textlint-enable -->
 
@@ -23,4 +23,4 @@ local_image = "cover.webp"
 
 [再生](https://e.pcloud.link/publink/show?code=XZg1ccZOL7p5uANzBk2Ot8sQqWFCfeV57JV)
 
-{{ youtube(id="B-63Xmp4p0s") }}
+{{< youtube id="B-63Xmp4p0s" />}}

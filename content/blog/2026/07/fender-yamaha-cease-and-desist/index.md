@@ -24,7 +24,7 @@ tldr = """
 
 <!-- textlint-disable -->
 
-{{ image(src="cover.webp", alt="Cover") }}
+{{< image src="cover.webp" alt="Cover" />}}
 
 <!-- textlint-enable -->
 
@@ -83,13 +83,13 @@ Pacificaは1990年の発売以来、特にエントリークラスの「Pacifica
 
 <!-- textlint-disable -->
 
-{% references() %}
+{% <references> %}
 
 - Bangkok Post（Reuters）.「Fender escalates Stratocaster copyright fight, taking aim at Yamaha」（2026年7月15日）
 - [Yamaha Music Hub](https://hub.yamaha.com/guitars/g-electric/a-brief-history-of-pacifica-guitars/).「A Brief History of Pacifica Guitars」
 - [Wikipedia](https://en.wikipedia.org/wiki/Yamaha_Pacifica).「Yamaha Pacifica」
 - [Wikipedia](https://en.wikipedia.org/wiki/Yamaha_electric_guitar_models).「Yamaha electric guitar models」
 
-{% end %}
+{% </references> %}
 
 <!-- textlint-enable -->

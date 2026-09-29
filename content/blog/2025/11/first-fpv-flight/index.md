@@ -25,4 +25,4 @@ The low-level flight dynamics offer a completely different
 piloting experience compared to traditional high-altitude
 aerial photography workflows.
 
-{{ youtube(id="OCa_NgF0AIs") }}
+{{< youtube id="OCa_NgF0AIs" />}}

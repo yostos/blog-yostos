@@ -9,7 +9,7 @@ tags = ["Creative", "Guitar"]
 social_media_card = "ogp.webp"
 +++
 
-{{ youtube(id="vh--7DaUe4s") }}
+{{< youtube id="vh--7DaUe4s" />}}
 
 A few months ago, I [attended a Takanaka Masayoshi concert](/articles/2025/09/21/takanaka). The encore finale was "You Can Never Come To This Place" - I never imagined I'd get to hear this beloved track from the legendary album "Rainbow Grapefruit" performed live, and I was truly moved.
 

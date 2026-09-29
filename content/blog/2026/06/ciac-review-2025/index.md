@@ -20,7 +20,7 @@ tldr = "千葉県産業振興センターの令和7年度決算では、前年�
 
 <!-- textlint-disable -->
 
-{{ image(src="cover.webp", alt="Cover") }}
+{{< image src="cover.webp" alt="Cover" />}}
 
 <!-- textlint-enable -->
 
@@ -39,9 +39,9 @@ tldr = "千葉県産業振興センターの令和7年度決算では、前年�
 
 <!-- textlint-disable -->
 
-{% admonition(type="warning", title="記事の前提と情報源") %}
+{% <admonition type="warning" title="記事の前提と情報源"> %}
 本記事の分析は、すべてセンター及び千葉県が一般に公開している資料に基づいています。参照した資料についてはReferencesセクションを確認ください。金額は令和7年度（令和7年4月〜令和8年3月）の決算値です。
-{% end %}
+{% </admonition> %}
 
 <!-- textlint-enable -->
 
@@ -118,12 +118,12 @@ tldr = "千葉県産業振興センターの令和7年度決算では、前年�
 
 <!-- textlint-disable -->
 
-{% references() %}
+{% <references> %}
 
 - 千葉県産業振興センター「[令和7年度 事業報告書及び決算報告書](https://www.ccjc-net.or.jp/contents_detail.php?co=cat&frmId=2298&frmCd=49-2-0-0-0)」
 - 千葉県産業振興センター「[令和6年度 事業報告書及び決算報告書](https://www.ccjc-net.or.jp/contents_detail.php?co=cat&frmId=2298&frmCd=49-2-0-0-0)」
 - 千葉県 「[公益財団法人千葉県産業振興センター｜経営状況等の評価結果の公表（令和6年度・令和7年度）](https://www.pref.chiba.lg.jp/keisei/kousha/sangyoshinko.html)」
 
-{% end %}
+{% </references> %}
 
 <!-- textlint-enable -->

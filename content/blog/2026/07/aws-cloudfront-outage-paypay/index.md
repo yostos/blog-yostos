@@ -14,7 +14,7 @@ tldr = """
 
 <!-- textlint-disable -->
 
-{{ image(src="cover.webp", alt="Cover") }}
+{{< image src="cover.webp" alt="Cover" />}}
 
 <!-- textlint-enable -->
 
@@ -72,7 +72,7 @@ AWSのステータスサイトによると、障害の直接的な引き金はCl
 
 <!-- textlint-disable -->
 
-{% references() %}
+{% <references> %}
 
 - ITmedia NEWS.「AWSで障害 「CloudFront」世界規模で不調 PayPayに影響、noteやニコニコ生放送もつながりにくく」
 - ケータイ Watch.「PayPayの障害はAWSが原因、決済は「オフライン支払いモード」を」
@@ -82,6 +82,6 @@ AWSのステータスサイトによると、障害の直接的な引き金はCl
 - Sunday Guardian Live.「AWS CloudFront Outage Today: Amazon Web Services Confirms Service Disruption as '5xx Errors' Hit Websites Across Multiple Regions」
 - The Nightly.「AWS outage update: CloudFront experience global outage, operation issue」
 
-{% end %}
+{% </references> %}
 
 <!-- textlint-enable -->

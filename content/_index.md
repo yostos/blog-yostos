@@ -1,4 +1,5 @@
 +++
+title = ""  # tabi v5 の page_header は string 必須（null 不可）。ホームの見出しは空のまま
 [extra]
 header = { title = "⠽⠕⠎⠞⠕⠎", img = "images/profile.webp", img_dark = "images/profile-r.webp", img_alt = "yostos" }
 section_path = "blog/_index.md"

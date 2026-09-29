@@ -21,7 +21,7 @@ Zennの生成AIガイドラインは「人が主体」という原則で AI 利�
 
 <!-- textlint-disable -->
 
-{{ image(src="cover.webp", alt="Cover") }}
+{{< image src="cover.webp" alt="Cover" />}}
 
 <!-- textlint-enable -->
 
@@ -99,12 +99,12 @@ Zennのガイドラインは、生成AI時代のコンテンツプラットフ�
 
 ## References
 
-{% references() %}
+{% <references> %}
 
 - [Zenn](https://info.zenn.dev/2026-03-10-ai-contents-guideline). 「コンテンツの執筆における生成AIの利用について」
 - [zenn-dev/zenn-community](https://github.com/zenn-dev/zenn-community/issues/78). "記事に canonical_url を設定できるように · Issue #78"
 - [Zenn](https://zenn.dev/akari1106/articles/993e42b4430f36). 「Zennの自動翻訳機能から学ぶプロダクト開発の難しさ」
 
-{% end %}
+{% </references> %}
 
 <!-- textlint-enable -->

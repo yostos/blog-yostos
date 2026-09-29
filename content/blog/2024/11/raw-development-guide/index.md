@@ -47,7 +47,7 @@ Here are the results from my Python program:
 
 <!-- textlint-disable -->
 
-{{ image(src="comparison-result.webp", alt="Result of Comparison") }}
+{{< image src="comparison-result.webp" alt="Result of Comparison" />}}
 
 <!-- textlint-enable -->
 

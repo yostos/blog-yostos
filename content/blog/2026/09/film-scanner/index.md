@@ -18,7 +18,7 @@ local_image = "cover.avif"
 
 <!-- textlint-disable -->
 
-{{ image(src="cover.avif", alt="Cover") }}
+{{< image src="cover.avif" alt="Cover" />}}
 
 <!-- textlint-enable -->
 
@@ -82,7 +82,7 @@ vips icc_transform in.tif out.jpg[Q=92,subsample-mode=off] \
 
 <!-- textlint-disable -->
 
-{{ image(src="crop-detail.avif", alt="機関車の写ったコマを等倍で切り出した画像") }}
+{{< image src="crop-detail.avif" alt="機関車の写ったコマを等倍で切り出した画像" />}}
 
 <!-- textlint-enable -->
 
@@ -95,7 +95,7 @@ vips icc_transform in.tif out.jpg[Q=92,subsample-mode=off] \
 
 <!-- textlint-disable -->
 
-{{ image(src="crop-tone.avif", alt="逆光のコマを等倍で切り出した画像") }}
+{{< image src="crop-tone.avif" alt="逆光のコマを等倍で切り出した画像" />}}
 
 <!-- textlint-enable -->
 
@@ -126,12 +126,12 @@ Kodachromeを3600dpiで取り込んだ結果は、等倍まで拡大してもフ
 
 <!-- textlint-disable -->
 
-{% references() %}
+{% <references> %}
 
 - [Plustek](https://plustek.com/us/products/film-photo-scanners/opticfilm-9000i-ai/). "OpticFilm 9000i Ai Professional 35mm Film Scanner"
 - [SilverFast](https://www.silverfast.com/about-silverfast-why-scanning-basics-of-scanning/scanning-kodachromes/). "Scan your Kodachromes and get Amazing Digital Images"
 - [SilverFast](https://www.silverfast.com/about-silverfast-why-scanning-basics-of-scanning/why-silverfast/silverfast-feature-highlights/isrd-dust-scratches-removal-eliminate-defects-with-infrared-channel/). "iSRD is SilverFast's dust and scratch removal using infrared technology"
 
-{% end %}
+{% </references> %}
 
 <!-- textlint-enable -->

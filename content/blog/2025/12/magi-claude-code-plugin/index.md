@@ -52,7 +52,7 @@ MAGIは、アニメ「新世紀エヴァンゲリオン」に登場する架空�
 
 Magiシステムは4つのエージェントで構成されています。
 
-{% mermaid() %}
+{% <mermaid> %}
 
 flowchart LR
    U[fa:fa-user User]
@@ -71,7 +71,7 @@ flowchart LR
     A --->|5.result|U
 
     
-{% end %}
+{% </mermaid> %}
 
 | Agent | Role |
 | - | - | 

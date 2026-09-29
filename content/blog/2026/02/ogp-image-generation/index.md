@@ -41,7 +41,7 @@ OGP画像が未設定の場合、
 
 <!-- textlint-disable -->
 
-{{ image(src="./before.webp", alt="対応前：すべての記事で同じ画像") }}
+{{< image src="./before.webp" alt="対応前：すべての記事で同じ画像" />}}
 
 <!-- textlint-enable -->
 
@@ -50,7 +50,7 @@ OGP画像が未設定の場合、
 
 <!-- textlint-disable -->
 
-{{ image(src="./after.webp", alt="対応後：記事タイトル入りのOGP画像") }}
+{{< image src="./after.webp" alt="対応後：記事タイトル入りのOGP画像" />}}
 
 <!-- textlint-enable -->
 
@@ -163,12 +163,12 @@ OGP画像がないとエラーになるのが
 
 <!-- textlint-disable -->
 
-{% admonition(type="info", title="関連記事") %}
+{% <admonition type="info" title="関連記事"> %}
 実装の技術的な詳細は
 Zennに投稿しています。
 
 [Zola + tabiテーマでOGP画像を自動生成する
 （Zenn）](https://zenn.dev/yostos/articles/zola-ogp-auto-generation)
-{% end %}
+{% </admonition> %}
 
 <!-- textlint-enable -->

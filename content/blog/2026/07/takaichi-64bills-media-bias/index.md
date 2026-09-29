@@ -16,7 +16,7 @@ tldr = "第221特別国会で政府提出法案64本が全て成立し、戦後4
 
 <!-- textlint-disable -->
 
-{{ image(src="cover.webp", alt="Cover") }}
+{{< image src="cover.webp" alt="Cover" />}}
 
 <!-- textlint-enable -->
 

@@ -20,7 +20,7 @@ social_media_card = "ogp.webp"
 物語全体を振り返ると、私の中で最も鮮明に残っていたのが、DustinとSusieが無線越しに歌う、あの瞬間でした。
 その記憶をもとに、あの曲を再現してみました。
 
-{{ youtube(id="eYsqXQ5uCUY") }}
+{{< youtube id="eYsqXQ5uCUY" />}}
 
 あのシーンが描かれるのは、
 シーズン3・第8話（最終話）「スターコート・モールの戦い（The Battle of Starcourt）」。

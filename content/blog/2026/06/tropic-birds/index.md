@@ -11,7 +11,7 @@ social_media_card = "ogp.webp"
 local_image = "cover.webp"
 +++
 
-{{ image(src="cover.webp",alt="Cover") }}
+{{< image src="cover.webp" alt="Cover" />}}
 
 Just the other day I attended the [triumphant homecoming concert](/blog/2026/05/takanaka/) of Masayoshi Takanaka's world tour, and then yesterday he was featured on NHK's "Close-up Gendai" program.
 
@@ -22,7 +22,7 @@ One thing he said in the program stays with me:
 
 I was deeply moved by the sight of one musician connecting with audiences across half a century through the power of technological change.
 
-{{ youtube(id="xohtSg9i7fY") }}
+{{< youtube id="xohtSg9i7fY" />}}
 
 As a tribute, I covered "TROPIC BIRDS" — the live version, not the album version. My memory is hazy and I've blended a few different versions together. I played it on the [YAMAHA SG-175](/blog/2026/06/yamaha-sg-175/) I picked up the other day.
 

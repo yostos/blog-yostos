@@ -11,7 +11,7 @@ social_media_card = "ogp.webp"
 local_image = "cover.webp"
 +++
 
-{{ image(src="cover.webp",alt="Cover") }}
+{{< image src="cover.webp" alt="Cover" />}}
 
 <details>
 <summary>Table of Contents</summary>
@@ -54,11 +54,11 @@ darktableは高機能なのですが、Lightroomのように機能が整理さ�
 
 ### lens correction
 
-{% module(src="./lens-correction.webp", alt="darktableのlens correctionモジュール") %}
+{% <module src="./lens-correction.webp" alt="darktableのlens correctionモジュール"> %}
 
 `lens correction` を有効にすると、Lensfunデータベースを参照して歪曲と周辺減光を自動補正します。GRの単焦点にもわずかな樽型の歪曲と周辺減光があり、これをまず取り除いておきます。
 
-{% end %}
+{% </module> %}
 
 6月12日時点では、Lensfunの公式データベースにRICOH GR IV Monochromeはまだ登録されていません。ただしGR IV(カラー機)は登録済みで、Monochromeのレンズ(光学系)はGR IVとまったく同じです。違いはセンサー前のカラーフィルターの有無だけなので、補正すべき歪曲・周辺減光のデータは共通して使えます。
 
@@ -83,83 +83,83 @@ darktableは `~/.local/share/lensfun/` 配下に置いたXMLを読み込みま�
 
 ### exposure
 
-{% module(src="./exposure.webp", alt="darktableのexposureモジュール") %}
+{% <module src="./exposure.webp" alt="darktableのexposureモジュール"> %}
 
 scene-referredワークフローの起点です。前述のとおり、ここでは主要被写体の中間調が適正になるよう露出だけを決め、白飛びや黒つぶれは気にしません。スライダーを動かして、見せたい部分の明るさを合わせます。
 
-{% end %}
+{% </module> %}
 
 ### sigmoid
 
-{% module(src="./sigmoid.webp", alt="darktableのsigmoidモジュール") %}
+{% <module src="./sigmoid.webp" alt="darktableのsigmoidモジュール"> %}
 
 scene-referredな広いダイナミックレンジを、モニタが表示できる範囲へ圧縮するトーンマッピングです。darktableではfilmic rgbやagxと同じ役割を担い、`sigmoid` はそのなかでも素直に効きます。基本はcontrastで圧縮の強さを、skewでシャドウ側とハイライト側のどちらを持ち上げるかを決めるだけです。モノクロではprimaries(色の扱い)の各パラメータは結果に影響しないので、触る必要はありません。
 
-{% end %}
+{% </module> %}
 
 ### denoise (profiled)
 
-{% module(src="./denoise.webp", alt="darktableのdenoise (profiled) モジュール") %}
+{% <module src="./denoise.webp" alt="darktableのdenoise (profiled) モジュール"> %}
 
 高感度で撮った暗所のカットなどで、輝度ノイズのザラつきが気になるなら使います。
 
 センサーごとに測定されたノイズの統計プロファイルを参照してノイズを除去するモジュールです。モノクロは輝度ノイズがそのまま見えるぶん、ザラつきが目立ちやすいので、気になるカットで抑えます。低感度で破綻がなければ飛ばして構いません。
 
-{% end %}
+{% </module> %}
 
 ### rotate and perspective
 
-{% module(src="./rotate.webp", alt="darktableのrotate and perspectiveモジュール") %}
+{% <module src="./rotate.webp" alt="darktableのrotate and perspectiveモジュール"> %}
 
 水平が傾いてしまったカットや、建築物の垂直を立て直したいときに使います。GRはノーファインダー撮影が多く、水平も傾きやすいカメラです。
 
 rotationスライダーで角度を調整するか、画像上で水平にしたい線をドラッグして指定すると、その線が水平(または垂直)になるよう自動で回転します。パースの崩れを直したいときは、隠れているlens shiftやshearのコントロールも使えますが、スナップ中心の用途なら水平出しだけで十分です。
 
-{% end %}
+{% </module> %}
 
 ### retouch
 
-{% module(src="./retouch.webp", alt="darktableのretouchモジュール") %}
+{% <module src="./retouch.webp" alt="darktableのretouchモジュール"> %}
 
 センサーのゴミや、写り込んだ不要物が目立つときに使います。
 
 ヒーリングやクローンで対象を周囲になじませて消すモジュールです。モノクロは小さなゴミも意外と目立つので、気になるときだけ使い、なければ飛ばします。
 
-{% end %}
+{% </module> %}
 
 ### tone equalizer
 
-{% module(src="./tone-equalizer.webp", alt="darktableのtone equalizerモジュール") %}
+{% <module src="./tone-equalizer.webp" alt="darktableのtone equalizerモジュール"> %}
 
 特定の明るさ帯だけを覆い焼き・焼き込みしたいときに使います。たとえばシャドウだけ持ち上げたいが全体は明るくしたくない、といった局所的な明暗調整に向きます。
 
 露出帯(-8EV〜0EV)ごとに明るさを持ち上げ・押し下げでき、全体ではなく狙った帯だけに局所コントラストを足せます。
 
-{% end %}
+{% </module> %}
 
 ### diffuse or sharpen
 
-{% module(src="./diffuse-or-sharpen.webp", alt="darktableのdiffuse or sharpenモジュール") %}
+{% <module src="./diffuse-or-sharpen.webp" alt="darktableのdiffuse or sharpenモジュール"> %}
 
 仕上げに解像感を一段上げたいときに使うシャープ化モジュールです。
 
 偏微分方程式ベースで、プリセット(sharpen demosaicingなど)から選ぶと扱いやすくなります。軽く整える程度なら、旧来の `sharpen` モジュールでも十分です。
 
-{% end %}
+{% </module> %}
 
 ### crop
 
-{% module(src="./crop.webp", alt="darktableのcropモジュール") %}
+{% <module src="./crop.webp" alt="darktableのcropモジュール"> %}
 
 周辺の不要な部分を切り落として構図を整えたいときに使います。
 
 darktableは露出やトーンの調整を画面全体に対して効かせるので、トリミングは仕上げの段階に回します。アスペクト比は自由(freehand)のまま、不要な周辺を切り落として構図を決めます。
 
-{% end %}
+{% </module> %}
 
 ## References
 
-{% references() %}
+{% <references> %}
 
 - [darktable user manual](https://docs.darktable.org/usermanual/development/en/). darktable公式ユーザーマニュアル
 - [darktable user manual](https://docs.darktable.org/usermanual/development/en/overview/workflow/process/).「the pixelpipe and module order」scene-referredワークフローと処理の流れ
@@ -170,5 +170,5 @@ darktableは露出やトーンの調整を画面全体に対して効かせる�
 - [Lensfun](https://lensfun.github.io/). レンズ補正データベースのプロジェクトサイト([GitHub リポジトリ](https://github.com/lensfun/lensfun))
 - [discuss.pixls.us](https://discuss.pixls.us/t/darktable-4-8-location-of-lensfun-database-for-personal-use/44682).「darktable 4.8 location of lensfun database for personal use」ユーザー領域へのLensfunデータ追加方法
 
-{% end %}
+{% </references> %}
 

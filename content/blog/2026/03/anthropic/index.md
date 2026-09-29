@@ -23,7 +23,7 @@ AnthropicとOpenAIは同じ2つのレッドライン（自律型兵器禁止・�
 
 <!-- textlint-disable -->
 
-{{ image(src="cover.webp", alt="Cover") }}
+{{< image src="cover.webp" alt="Cover" />}}
 
 <!-- textlint-enable -->
 
@@ -55,14 +55,14 @@ Anthropicは排除以前から米国政府・防衛市場に深く関与して�
 <!-- textlint-disable -->
 <details>
   <summary>情報元</summary>
-{% references() %}
+{% <references> %}
 - Palantir. "[Anthropic and Palantir Partner to Bring Claude AI Models to AWS for U.S. Government Intelligence and Defense Operations](https://investors.palantir.com/news-details/2024/Anthropic-and-Palantir-Partner-to-Bring-Claude-AI-Models-to-AWS-for-U.S.-Government-Intelligence-and-Defense-Operations/)". 2024-11-07
 - Anthropic. "[Claude in Amazon Bedrock achieves FedRAMP High authorization](https://www.anthropic.com/news/claude-in-amazon-bedrock-fedramp-high)". 2025-06-11
 - AWS. "[Amazon Bedrock models achieve FedRAMP High and DoD IL 4/5](https://aws.amazon.com/about-aws/whats-new/2025/05/amazon-bedrock-models-fedramp-high-dod-il-4-5-govcloud/)". 2025-05-23
 - Anthropic. "[Anthropic and the Department of Defense to advance responsible AI in defense operations](https://www.anthropic.com/news/anthropic-and-the-department-of-defense-to-advance-responsible-ai-in-defense-operations)". 2025-07-14
 - GSA. "[GSA Strikes OneGov Deal with Anthropic](https://www.gsa.gov/about-us/newsroom/news-releases/gsa-strikes-onegov-deal-with-anthropic-08122025)". 2025-08-12
 - Anthropic. "[Offering expanded Claude access across all three branches of government](https://www.anthropic.com/news/offering-expanded-claude-access-across-all-three-branches-of-government)". 2025-08-12
-{% end %}
+{% </references> %}
 
 </details>
 <!-- textlint-enable -->
@@ -86,13 +86,13 @@ Anthropicは排除以前から米国政府・防衛市場に深く関与して�
 
 <details>
   <summary>情報元</summary>
-{% references() %}
+{% <references> %}
 - Anthropic. "[Usage Policy](https://www.anthropic.com/legal/aup)"
 - Semafor. "[Exclusive: Palantir partnership is at heart of Anthropic, Pentagon rift](https://www.semafor.com/article/02/17/2026/palantir-partnership-is-at-heart-of-anthropic-pentagon-rift)". 2026-02-17
 - NBC News. "[Tensions between the Pentagon and AI giant Anthropic reach a boiling point](https://www.nbcnews.com/tech/security/anthropic-ai-defense-war-venezuela-maduro-rcna259603)". 2026-02
 - Lawfare. "[Hegseth Memo Instructs Defense Dept. to Use Military AI Platform](https://www.lawfaremedia.org/article/hegseth-memo-instructs-defense-dept.-to-use-military-ai-platform)". 2026-01
 - Anthropic. "[Statement from Dario Amodei on Department of War Discussions](https://www.anthropic.com/news/statement-department-of-war)". 2026-02-26
-{% end %}
+{% </references> %}
 
 </details>
 <!-- textlint-enable -->
@@ -115,12 +115,12 @@ Anthropicは排除以前から米国政府・防衛市場に深く関与して�
 <!-- textlint-disable -->
 <details>
   <summary>情報元</summary>
-{% references() %}
+{% <references> %}
 - Donald Trump. Truth Social post（全連邦機関へのAnthropic即時利用停止指示）. 2026-02-27
 - Pete Hegseth (@SecWar). "[This week, Anthropic delivered a master class in arrogance...](https://x.com/SecWar/status/2027507717469049070)". X. 2026-02-27
 - Anthropic. "[Statement on the comments from Secretary of War Pete Hegseth](https://www.anthropic.com/news/statement-comments-secretary-war)". 2026-02-27
 - U.S. Code. "[10 U.S.C. § 3252 — Supply chain risk](https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title10-section3252)"
-{% end %}
+{% </references> %}
 
 </details>
 <!-- textlint-enable -->
@@ -152,14 +152,14 @@ Anthropicは2021年、Dario AmodeiとDaniela Amodeiが「AI開発においてス
 <!-- textlint-disable -->
 <details>
   <summary>情報元</summary>
-{% references() %}
+{% <references> %}
 - Anthropic. "[Company](https://www.anthropic.com/company)"
 - Anthropic. "[Core Views on AI Safety](https://www.anthropic.com/news/core-views-on-ai-safety)". 2023
 - Anthropic. "[The Long-Term Benefit Trust](https://www.anthropic.com/news/the-long-term-benefit-trust)". 2023
 - Anthropic. "[Statement from Dario Amodei on Department of War Discussions](https://www.anthropic.com/news/statement-department-of-war)". 2026-02-26
 - OpenAI. "[Our agreement with the Department of War](https://openai.com/index/our-agreement-with-the-department-of-war/)". 2026-02-27
 - Dario Amodei. "[Machines of Loving Grace](https://darioamodei.com/essay/machines-of-loving-grace)". 2024-10
-{% end %}
+{% </references> %}
 
 </details>
 <!-- textlint-enable -->
@@ -184,7 +184,7 @@ Anthropic排除と同日の2月27日、OpenAIはペンタゴンと新たな契�
 <!-- textlint-disable -->
 <details>
   <summary>情報元</summary>
-{% references() %}
+{% <references> %}
 - OpenAI. "[Our agreement with the Department of War](https://openai.com/index/our-agreement-with-the-department-of-war/)". 2026-02-28
 - Sam Altman (@sama). "[Tonight, we reached an agreement with the Department of War...](https://x.com/sama/status/2027578652477821175)". X. 2026-02-27
 - Sam Altman (@sama). AMA on Pentagon deal. X. 2026-03-01
@@ -192,7 +192,7 @@ Anthropic排除と同日の2月27日、OpenAIはペンタゴンと新たな契�
 - Anthropic. "[Statement on the comments from Secretary of War Pete Hegseth](https://www.anthropic.com/news/statement-comments-secretary-war)". 2026-02-27
 - FEC. "[Individual contributions — Dario Amodei](https://www.fec.gov/data/receipts/individual-contributions/?contributor_name=dario+amodei)"
 - The White House. "[The Stargate Project](https://www.whitehouse.gov/briefings-statements/2025/01/the-stargate-project/)". 2025-01-21
-{% end %}
+{% </references> %}
 
 </details>
 <!-- textlint-enable -->

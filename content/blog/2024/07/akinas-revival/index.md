@@ -9,7 +9,7 @@ tags = ["Creative", "Guitar"]
 social_media_card = "ogp.webp"
 +++
 
-{{ youtube(id="8htsxgHVSRk") }}
+{{< youtube id="8htsxgHVSRk" />}}
 
 **中森明菜さん**が7月12日から14日にかけて都内でファンクラブ限定イベン
 トを7年ぶりのコンサートを行ったのを祝福して、

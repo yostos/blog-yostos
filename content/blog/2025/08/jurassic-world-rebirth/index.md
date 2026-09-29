@@ -20,4 +20,4 @@ social_media_card = "ogp.webp"
 
 そんな気分を落ち着ける為、ジョン・ウィリアムスのあの名曲を弾いてみました。
 
-{{ youtube(id="GysWvbwKQt0") }}
+{{< youtube id="GysWvbwKQt0" />}}

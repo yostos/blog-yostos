@@ -1,5 +1,5 @@
 ---
-description: Code review for blog config, templates, shortcodes, and workflows.
+description: Code review for blog config, templates, components, and workflows.
 ---
 
 # Blog Config/Template Code Review
@@ -16,7 +16,7 @@ Review based on what was changed:
 
 - **config.toml**: TOML syntax validity, setting values, consistency with tabi theme
 - **templates/**: Tera template syntax, correctness of theme overrides
-- **shortcodes/**: Shortcode behavior, consistency with CLAUDE.md documentation
+- **templates/components/**: Component behavior, consistency with CLAUDE.md documentation; output must not contain blank lines inside HTML blocks (Markdown turns indented lines after them into code blocks)
 - **GitHub Actions (.github/workflows/)**: Workflow syntax, deploy configuration consistency
 - **package.json / npm scripts**: Dependency changes, script consistency
 

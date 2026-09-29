@@ -19,7 +19,7 @@ tldr = "Billboard Hot 100トップ5曲（2000〜2024年、計125曲）をlibrosa
 
 <!-- textlint-disable -->
 
-{{ image(src="cover.webp", alt="Cover画像") }}
+{{< image src="cover.webp" alt="Cover画像" />}}
 
 <!-- textlint-enable -->
 
@@ -59,7 +59,7 @@ Billboard Year-End Hot 100のトップ5曲を2000年から2024年まで、計125
 
 <!-- textlint-disable -->
 
-{{ linkcard(url="https://github.com/yostos/music-trend-analysis")}}
+{{< linkcard url="https://github.com/yostos/music-trend-analysis" />}}
 
 <!-- textlint-enable -->
 
@@ -67,7 +67,7 @@ Billboard Year-End Hot 100のトップ5曲を2000年から2024年まで、計125
 
 <!-- textlint-disable -->
 
-{{ image(src="rms_db.webp", alt="RMS Loudness (dB) の推移") }}
+{{< image src="rms_db.webp" alt="RMS Loudness (dB) の推移" />}}
 
 <!-- textlint-enable -->
 
@@ -96,7 +96,7 @@ Billboard Year-End Hot 100のトップ5曲を2000年から2024年まで、計125
 
 <!-- textlint-disable -->
 
-{{ image(src="spectral_centroid.webp", alt="Spectral Centroid (Hz) の推移") }}
+{{< image src="spectral_centroid.webp" alt="Spectral Centroid (Hz) の推移" />}}
 
 <!-- textlint-enable -->
 
@@ -123,7 +123,7 @@ Billboard Year-End Hot 100のトップ5曲を2000年から2024年まで、計125
 
 <!-- textlint-disable -->
 
-{{ image(src="spectral_rolloff.webp", alt="Spectral Rolloff (Hz) の推移") }}
+{{< image src="spectral_rolloff.webp" alt="Spectral Rolloff (Hz) の推移" />}}
 
 <!-- textlint-enable -->
 
@@ -148,7 +148,7 @@ Billboard Year-End Hot 100のトップ5曲を2000年から2024年まで、計125
 
 <!-- textlint-disable -->
 
-{{ image(src="spectral_bandwidth.webp", alt="Spectral Bandwidth (Hz) の推移") }}
+{{< image src="spectral_bandwidth.webp" alt="Spectral Bandwidth (Hz) の推移" />}}
 
 <!-- textlint-enable -->
 
@@ -175,7 +175,7 @@ Billboard Year-End Hot 100のトップ5曲を2000年から2024年まで、計125
 
 <!-- textlint-disable -->
 
-{{ image(src="tempo.webp", alt="Tempo (BPM) の推移") }}
+{{< image src="tempo.webp" alt="Tempo (BPM) の推移" />}}
 
 <!-- textlint-enable -->
 
@@ -200,7 +200,7 @@ Billboard Year-End Hot 100のトップ5曲を2000年から2024年まで、計125
 
 <!-- textlint-disable -->
 
-{{ image(src="zero_crossing_rate.webp", alt="Zero Crossing Rate の推移") }}
+{{< image src="zero_crossing_rate.webp" alt="Zero Crossing Rate の推移" />}}
 
 <!-- textlint-enable -->
 
@@ -247,7 +247,7 @@ Post Maloneの"Rockstar"(0.0262)が最小値であることは象徴的です。
 
 <!-- textlint-disable -->
 
-{% admonition(type="warning", title="分析の限界") %}
+{% <admonition type="warning" title="分析の限界"> %}
 
 今回の分析にはいくつかの制約があります。
 
@@ -256,7 +256,7 @@ Post Maloneの"Rockstar"(0.0262)が最小値であることは象徴的です。
 - librosaのビートトラッキングによるテンポ推定は、特にヒップホップやトラップでハーフタイム/ダブルタイムの誤判定が起こりやすい
 - RMSはLUFSとは異なる指標であり、厳密なラウドネス比較には向かない
 
-{% end %}
+{% </admonition> %}
 
 <!-- textlint-enable -->
 
@@ -264,12 +264,12 @@ Post Maloneの"Rockstar"(0.0262)が最小値であることは象徴的です。
 
 <!-- textlint-disable -->
 
-{% references() %}
+{% <references> %}
 
 - [GitHub](https://github.com/yostos/music-trend-analysis). 「music-trend-analysis — 分析コード」
 - [librosa](https://librosa.org/). "librosa: Audio and Music Signal Analysis in Python"
 - [Billboard](https://www.billboard.com/). "Year-End Hot 100 Songs"
 
-{% end %}
+{% </references> %}
 
 <!-- textlint-enable -->

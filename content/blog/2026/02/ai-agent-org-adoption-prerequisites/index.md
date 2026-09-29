@@ -20,17 +20,17 @@ canonical_url = "https://zenn.dev/yostos/articles/ai-agent-org-adoption-prerequi
 
 <!-- textlint-disable -->
 
-{% admonition(type="note") %}
+{% <admonition type="note"> %}
 この記事は
 [Zenn.dev](https://zenn.dev/yostos/articles/ai-agent-org-adoption-prerequisites)
 に掲載した記事の転載です。
-{% end %}
+{% </admonition> %}
 
 <!-- textlint-enable -->
 
 <!-- textlint-disable -->
 
-{{ image(src="./cover.webp", alt="Cover") }}
+{{< image src="./cover.webp" alt="Cover" />}}
 
 <!-- textlint-enable -->
 
@@ -213,7 +213,7 @@ OpenAI・Anthropic・Googleといった
 
 <!-- textlint-disable -->
 
-{{ linkcard(url="https://codedchords.dev/blog/2026/02/why-genai-wrapper-services-are-a-trap/") }}
+{{< linkcard url="https://codedchords.dev/blog/2026/02/why-genai-wrapper-services-are-a-trap/" />}}
 
 <!-- textlint-enable -->
 
@@ -241,7 +241,7 @@ OpenAI・Anthropic・Googleといった
 
 <!-- textlint-disable -->
 
-{{ linkcard(url="https://codedchords.dev/blog/2026/02/death-of-clerical-work/") }}
+{{< linkcard url="https://codedchords.dev/blog/2026/02/death-of-clerical-work/" />}}
 
 <!-- textlint-enable -->
 

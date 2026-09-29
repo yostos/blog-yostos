@@ -13,7 +13,7 @@ tldr = """かつて個人開発者の遊び場だったAWSのAIサービスは�
 
 <!-- textlint-disable -->
 
-{{ image(src="cover.webp", alt="Cover") }}
+{{< image src="cover.webp" alt="Cover" />}}
 
 <!-- textlint-enable -->
 

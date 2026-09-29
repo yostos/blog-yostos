@@ -13,7 +13,7 @@ local_image = "cover.webp"
 
 <!-- textlint-disable -->
 
-{{ image(src="cover.webp",alt="Cover") }}
+{{< image src="cover.webp" alt="Cover" />}}
 
 <!-- textlint-enable -->
 
@@ -105,7 +105,7 @@ Fableが、恋しいです。
 
 <!-- textlint-disable -->
 
-{% references() %}
+{% <references> %}
 
 - [Anthropic](https://www.anthropic.com/news/fable-mythos-access).「Statement on the US government directive to suspend access to Fable 5 and Mythos 5」公式声明
 - [Anthropic](https://platform.claude.com/docs/en/about-claude/models/overview).「Models overview」モデル一覧と仕様
@@ -115,6 +115,6 @@ Fableが、恋しいです。
 - [CodeRabbit](https://www.coderabbit.ai/blog/fable-5-model-review).「Claude Fable 5 Model Review」コーディング性能のレビュー
 - [TrueFoundry](https://www.truefoundry.com/blog/claude-fable-5-vs-opus-4-8-benchmarks-pricing-when-to-use-each).「Claude Fable 5 vs Opus 4.8: Benchmarks, Pricing & When to Use Each」料金と使い分け
 
-{% end %}
+{% </references> %}
 
 <!-- textlint-enable -->

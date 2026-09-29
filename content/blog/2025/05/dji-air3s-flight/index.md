@@ -16,7 +16,7 @@ social_media_card = "ogp.webp"
 実際の飛行の様子です。
 編集は適当です。
 
-{{ youtube(id="AvvVyyDk6ew") }}
+{{< youtube id="AvvVyyDk6ew" />}}
 
 今回自動航行も予定していましたが、崖で視界の確保できない不安があったの
 ですべてマニュアルで飛ばしました。
@@ -52,7 +52,7 @@ social_media_card = "ogp.webp"
 
 <!-- textlint-disable -->
 
-{{ image(src="flow.png", alt="Flow") }}
+{{< image src="flow.png" alt="Flow" />}}
 
 <!-- textlint-enable -->
 

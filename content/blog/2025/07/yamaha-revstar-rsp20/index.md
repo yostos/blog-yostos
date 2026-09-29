@@ -11,7 +11,7 @@ social_media_card = "ogp.webp"
 
 <!-- textlint-disable -->
 
-{{ image(src="revstar.webp", alt="YAMAHA REVSTAR") }}
+{{< image src="revstar.webp" alt="YAMAHA REVSTAR" />}}
 
 <!-- textlint-enable -->
 
@@ -70,7 +70,7 @@ REVSTARは2022年のモデル変更で鳴りの良さを計算したチャンバ
 
 <!-- textlint-disable -->
 
-{{ image(src="japanese.webp", alt="日本製") }}
+{{< image src="japanese.webp" alt="日本製" />}}
 
 <!-- textlint-enable -->
 
@@ -81,7 +81,7 @@ REVSTARは2022年のモデル変更で鳴りの良さを計算したチャンバ
 
 ## YAMAHA REVSTARを弾いてみた
 
-{{ youtube(id="01R8SaT6ctE" )}}
+{{< youtube id="01R8SaT6ctE" />}}
 
 とても鳴りがいいなと思いました。ボディ構成やチャンバー加工、カーボンファイン
 バーのネックとボディへの埋設もあると思いますが

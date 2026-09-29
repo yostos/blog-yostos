@@ -11,7 +11,7 @@ local_image = "cover.jpg"
 
 <!-- textlint-disable -->
 
-{{ image(src="cover.jpg",alt="Cover") }}
+{{< image src="cover.jpg" alt="Cover" />}}
 
 <!-- textlint-enable -->
 
@@ -23,7 +23,7 @@ local_image = "cover.jpg"
 
 <!-- textlint-disable -->
 
-{{ youtube(id="8hnrznbhvmQ") }}
+{{< youtube id="8hnrznbhvmQ" />}}
 
 <!-- textlint-enable -->
 

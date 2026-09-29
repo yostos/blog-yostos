@@ -20,7 +20,7 @@ tldr = """
 
 <!-- textlint-disable -->
 
-{{ image(src="cover.avif",alt="Cover") }}
+{{< image src="cover.avif" alt="Cover" />}}
 
 <!-- textlint-enable -->
 
@@ -229,12 +229,12 @@ Voyageは1024次元のままその水準を保つので、この二択を迫ら�
 
 <!-- textlint-disable -->
 
-{% references() %}
+{% <references> %}
 
 - [Doug's search blog and newsletter](https://softwaredoug.com/blog/2026/08/10/hypothetical-classifications). 「Don't classify. Hallucinate!」
 - [Anthropic](https://platform.claude.com/docs/en/build-with-claude/embeddings). 「Embeddings」
 - [Voyage AI](https://docs.voyageai.com/docs/embeddings). 「Text Embeddings」
 
-{% end %}
+{% </references> %}
 
 <!-- textlint-enable -->

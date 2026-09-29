@@ -18,7 +18,7 @@ AIを使いつつも自力で開発できる力を意図的に維持し続ける
 
 <!-- textlint-disable -->
 
-{{ image(src="cover.webp", alt="Cover") }}
+{{< image src="cover.webp" alt="Cover" />}}
 
 <!-- textlint-enable -->
 
@@ -178,12 +178,12 @@ New York TimesのAnil Dashの言葉が示唆的です。
 
 <!-- textlint-disable -->
 
-{% references() %}
+{% <references> %}
 
 - The New York Times Magazine. "Coding After Coders: The End of Computer Programming as We Know It" `https://www.nytimes.com/2026/03/12/magazine/ai-coding-programming-jobs-claude-chatgpt.html`
 - Yahoo Finance. "Accenture CEO says failure to use AI will cost workers a promotion—or their job" `https://finance.yahoo.com/news/want-promotion-accenture-ceo-says-063000196.html`
 - CNBC. "Why AI may kill career advancement for many young workers" `https://www.cnbc.com/2025/11/20/why-ai-may-kill-career-advancement-for-many-young-workers.html`
 
-{% end %}
+{% </references> %}
 
 <!-- textlint-enable -->

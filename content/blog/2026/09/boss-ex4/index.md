@@ -13,7 +13,7 @@ local_image = "cover.avif"
 
 <!-- textlint-disable -->
 
-{{ image(src="cover.avif",alt="Cover") }}
+{{< image src="cover.avif" alt="Cover" />}}
 
 <!-- textlint-enable -->
 
@@ -76,13 +76,13 @@ BOSSの主なマルチエフェクターについて、音質面の仕様をま�
 
 <!-- textlint-disable -->
 
-{% references() %}
+{% <references> %}
 
 - [BOSS](https://www.boss.info/us/products/ex-4/). "EX-4 | Effects Expander"
 - [BOSS](https://www.boss.info/us/products/gt-1000core/). "GT-1000CORE"
 - [BOSS](https://www.boss.info/us/products/gx-100/). "GX-100"
 - [BOSS](https://www.boss.info/us/products/me-90/). "ME-90"
 
-{% end %}
+{% </references> %}
 
 <!-- textlint-enable -->

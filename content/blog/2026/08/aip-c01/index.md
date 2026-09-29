@@ -20,7 +20,7 @@ tldr = """
 
 <!-- textlint-disable -->
 
-{{ image(src="cover.webp",alt="Cover") }}
+{{< image src="cover.webp" alt="Cover" />}}
 
 <!-- textlint-enable -->
 
@@ -121,7 +121,7 @@ Whizlabsを進めながら、引っかかった箇所をAWSの公式ドキュメ
 
 <!-- textlint-disable -->
 
-{{ image(src="study-notes-toc.webp",alt="まとめ資料の目次",caption="Claude Code に積み上げさせたまとめ資料の目次") }}
+{{< image src="study-notes-toc.webp" alt="まとめ資料の目次" caption="Claude Code に積み上げさせたまとめ資料の目次" />}}
 
 <!-- textlint-enable -->
 
@@ -140,7 +140,7 @@ Whizlabsをベースにしていますが、まとめ資料や公式ドキュメ
 
 <!-- textlint-disable -->
 
-{{ image(src="quiz-practice.webp",alt="模擬問題集の演習画面",caption="自作した模擬問題集の演習画面") }}
+{{< image src="quiz-practice.webp" alt="模擬問題集の演習画面" caption="自作した模擬問題集の演習画面" />}}
 
 <!-- textlint-enable -->
 
@@ -150,7 +150,7 @@ Whizlabsをベースにしていますが、まとめ資料や公式ドキュメ
 
 <!-- textlint-disable -->
 
-{{ image(src="progress-dashboard.webp",alt="進捗ダッシュボード",caption="ドメイン別の習得状況と出題形式別の内訳を表示する進捗ダッシュボード") }}
+{{< image src="progress-dashboard.webp" alt="進捗ダッシュボード" caption="ドメイン別の習得状況と出題形式別の内訳を表示する進捗ダッシュボード" />}}
 
 <!-- textlint-enable -->
 
@@ -167,9 +167,9 @@ Whizlabsをベースにしていますが、まとめ資料や公式ドキュメ
 
 <!-- textlint-disable -->
 
-{% admonition(type="warning", title="本番の出題傾向ではありません") %}
+{% <admonition type="warning" title="本番の出題傾向ではありません"> %}
 私が公式模試やWhizlabsから学習する中で気付いた傾向であって、本番の出題傾向ではありません。
-{% end %}
+{% </admonition> %}
 
 <!-- textlint-enable -->
 
@@ -194,7 +194,7 @@ Whizlabsをベースにしていますが、まとめ資料や公式ドキュメ
 
 <!-- textlint-disable -->
 
-{{ aside(position="right", text="合否は合計スコアだけで決まり、セクションごとの合格ラインは存在しません。") }}
+{{< aside position="right" text="合否は合計スコアだけで決まり、セクションごとの合格ラインは存在しません。" />}}
 
 <!-- textlint-enable -->
 
@@ -232,7 +232,7 @@ AWS自身が、生成AIを活用したアーキテクチャーのベストプラ
 
 <!-- textlint-disable -->
 
-{% references() %}
+{% <references> %}
 
 - [AWS](https://docs.aws.amazon.com/ja_jp/aws-certification/latest/ai-professional-01/ai-professional-01.html). 「AWS Certified Generative AI Developer - Professional (AIP-C01) 試験ガイド」
 - [AWS](https://aws.amazon.com/jp/certification/certified-generative-ai-developer-professional/). 「AWS Certified Generative AI Developer - Professional」
@@ -240,6 +240,6 @@ AWS自身が、生成AIを活用したアーキテクチャーのベストプラ
 - [Credly](https://www.credly.com/badges/aa2ad3fb-8d51-4b81-9387-2c826e0f83ca/public_url). 「AWS Certified Generative AI Developer - Professional（デジタルバッジ）」
 - [Whizlabs](https://www.whizlabs.com/aws-certified-generative-ai-developer-professional/). 「AWS Certified Generative AI Developer - Professional (AIP-C01) Certification Training」
 
-{% end %}
+{% </references> %}
 
 <!-- textlint-enable -->

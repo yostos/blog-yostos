@@ -12,7 +12,7 @@ social_media_card = "ogp.webp"
 Fanal Fantasy VIIIの主題歌で1999年にヒットした曲ですが、現在版権の問題なの
 か日本のサブスクではオリジナルを聞くことが出来ないので、演奏してみました。
 
-{{ youtube(id="IIARV6JFUPI") }}
+{{< youtube id="IIARV6JFUPI" />}}
 
 Final Fantasyはファミコン、スーパーファミコン時代は欠かさずプレイしていました。
 その後プラットフォームがPlayStationに変わったFinal FantasyVIIくらいから、

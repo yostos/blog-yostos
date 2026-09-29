@@ -19,11 +19,11 @@ tags = ["Gadget", "Hardware"]
 
 <!-- textlint-disable -->
 
-{% admonition(type="note") %}
+{% <admonition type="note"> %}
 この記事は
 [Zenn](https://zenn.dev/yostos/articles/hhkb-why-changed-architecture)
 からの転載です。
-{% end %}
+{% </admonition> %}
 
 <!-- textlint-enable -->
 
@@ -275,7 +275,7 @@ smoothnessIndex = smoothSum / (width - 61);
 
 <!-- textlint-disable -->
 
-{{ image(src="./profile_comparison.webp", alt="プロファイル比較解析") }}
+{{< image src="./profile_comparison.webp" alt="プロファイル比較解析" />}}
 
 <!-- textlint-enable -->
 

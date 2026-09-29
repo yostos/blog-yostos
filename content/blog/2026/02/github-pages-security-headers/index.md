@@ -17,11 +17,11 @@ canonical_url = "https://zenn.dev/yostos/articles/github-pages-security-headers"
 
 <!-- textlint-disable -->
 
-{% admonition(type="note") %}
+{% <admonition type="note"> %}
 この記事は
 [Zenn.dev](https://zenn.dev/yostos/articles/github-pages-security-headers)
 に掲載した記事の転載です。
-{% end %}
+{% </admonition> %}
 
 <!-- textlint-enable -->
 
@@ -87,14 +87,14 @@ XSS経由でマルウェアを注入されたりするリスクがあります�
 
 <!-- textlint-disable -->
 
-{% mermaid() %}
+{% <mermaid> %}
 flowchart LR
 A[フォームがある？] -->|Yes| B[対応すべき]
 A -->|No| C[サイトの性質は？]
 C -->|個人ブログ| D[放置OK]
 C -->|企業サイト| E[できれば対応]
 C -->|公的機関| F[対応すべき]
-{% end %}
+{% </mermaid> %}
 
 <!-- textlint-enable -->
 
@@ -135,11 +135,11 @@ GitHub Pagesで静的ブログを公開している場合、
 
 <!-- textlint-disable -->
 
-{% admonition(type="note", title="免責事項") %}
+{% <admonition type="note" title="免責事項"> %}
 本記事は情報提供を目的としており、
 個別の状況に応じた判断は読者ご自身の責任でお願いします。
 セキュリティ要件は組織やサービスによって異なるため、
 必要に応じて専門家にご相談ください。
-{% end %}
+{% </admonition> %}
 
 <!-- textlint-enable -->

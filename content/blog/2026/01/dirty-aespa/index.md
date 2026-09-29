@@ -19,7 +19,7 @@ Online rumors have been circulating that the approximately 4% viewership drop ar
 
 <!-- textlint-disable -->
 
-{{ image(src="ratings.webp", alt="Viewership ratings around 8 PM on December 31, 2026") }}
+{{< image src="ratings.webp" alt="Viewership ratings around 8 PM on December 31, 2026" />}}
 
 <!-- textlint-enable -->
 
@@ -39,7 +39,7 @@ The group's insensitive actions and NHK's controversial decision to feature them
 
 <!-- textlint-disable -->
 
-{{ image(src="ratings.webp", alt="2026-12-31 20時前後の視聴率") }}
+{{< image src="ratings.webp" alt="2026-12-31 20時前後の視聴率" />}}
 
 <!-- textlint-enable -->
 

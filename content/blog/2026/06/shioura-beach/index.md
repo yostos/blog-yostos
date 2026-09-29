@@ -12,7 +12,7 @@ local_image = "cover.webp"
 
 <!-- textlint-disable -->
 
-{{ image(src="cover.webp",alt="Cover") }}
+{{< image src="cover.webp" alt="Cover" />}}
 
 <!-- textlint-enable -->
 
@@ -20,7 +20,7 @@ local_image = "cover.webp"
 
 <!-- textlint-disable -->
 
-{{ youtube(id="2BXc6aWcP64") }}
+{{< youtube id="2BXc6aWcP64" />}}
 
 <!-- textlint-enable -->
 

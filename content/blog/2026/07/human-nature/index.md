@@ -13,7 +13,7 @@ local_image = "cover.webp"
 
 <!-- textlint-disable -->
 
-{{ image(src="cover.webp",alt="Cover") }}
+{{< image src="cover.webp" alt="Cover" />}}
 
 <!-- textlint-enable -->
 
@@ -31,6 +31,6 @@ Orianthi Panagarisが弾いています。
 
 この曲はアルバム『Thriller』に収録されていますが、作曲したTOTOのキーボーディストSteve Porcaroのデモには、もともとギターパートはありませんでした。レコーディングをサポートしていたSteve Lukatherに、プロデューサーのQuincy Jonesが"Funk it"と一言リクエストし、即興で弾いたのがこのリフです。
 
-{{ youtube(id="aGMiNEEuAqk") }}
+{{< youtube id="aGMiNEEuAqk" />}}
 
 あまりの出来の良さにQuincyはこの曲のアレンジクレジットにSteveの名前を入れました。セッションミュージシャンとしては異例の扱いです。

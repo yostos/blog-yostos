@@ -11,7 +11,7 @@ social_media_card = "ogp.webp"
 
 <!-- textlint-disable -->
 
-{{ image(src="texan.jpg") }}
+{{< image src="texan.jpg" />}}
 
 <!-- textlint-enable -->
 
@@ -55,7 +55,7 @@ L.R.Baggs VTCピックアップ・システムもマウントされているの�
 
 大事にしてします。
 
-{{ youtube(id="4Cw-Am4haNQ") }}
+{{< youtube id="4Cw-Am4haNQ" />}}
 
 ## 2024-07-31追記
 

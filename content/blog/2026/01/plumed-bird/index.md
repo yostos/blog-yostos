@@ -15,7 +15,7 @@ tags = ["Creative", "Guitar"]
 social_media_card = "ogp.webp"
 +++
 
-{{ youtube(id="qG1F1-dcovw") }}
+{{< youtube id="qG1F1-dcovw" />}}
 
 高中正義の名盤「虹伝説THE RAINBOW GOBLINS」より「Plumed Bird」のギターカバーを録音しました。
 

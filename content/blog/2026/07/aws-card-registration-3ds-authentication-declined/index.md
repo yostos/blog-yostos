@@ -16,7 +16,7 @@ AWSで新しいクレジットカードを登録しようとすると「Your aut
 
 <!-- textlint-disable -->
 
-{{ image(src="cover.webp", alt="Cover") }}
+{{< image src="cover.webp" alt="Cover" />}}
 
 <!-- textlint-enable -->
 

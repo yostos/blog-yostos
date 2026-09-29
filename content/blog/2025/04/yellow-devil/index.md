@@ -13,4 +13,4 @@ Against the odds, victory with an unfamiliar yellow weapon. I felt like a hesita
 
 久しぶりのケルビン525デコです。
 
-{{ youtube(id="jtZye5cvYic") }}
+{{< youtube id="jtZye5cvYic" />}}

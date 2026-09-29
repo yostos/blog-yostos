@@ -12,7 +12,7 @@ local_image = "cover.webp"
 
 <!-- textlint-disable -->
 
-{{ image(src="cover.webp",alt="Cover") }}
+{{< image src="cover.webp" alt="Cover" />}}
 
 <!-- textlint-enable -->
 
@@ -49,7 +49,7 @@ DIPS2.0関連の申請手続きは完了しましたが、まだ包括申請の�
 
 <!-- textlint-disable -->
 
-{{ youtube(id="2WDjFyIxCIM") }}
+{{< youtube id="2WDjFyIxCIM" />}}
 
 <!-- textlint-enable -->
 

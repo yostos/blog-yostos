@@ -18,12 +18,12 @@ canonical_url = "https://zenn.dev/yostos/articles/why-stagnant-system-migration-
 
 <!-- textlint-disable -->
 
-{% admonition(type="note") %}
+{% <admonition type="note"> %}
 この記事は
 [Zenn.dev](https://zenn.dev/yostos/articles/why-stagnant-system-migration-fails)
 に掲載した記事の転載です。
 本記事は特定の組織や個人を指すものではありません。
-{% end %}
+{% </admonition> %}
 
 <!-- textlint-enable -->
 
@@ -146,7 +146,7 @@ SaaSを選択したとしても、SaaS製品の選定とギャップ分析、
 
 <!-- textlint-disable -->
 
-{% mermaid() %}
+{% <mermaid> %}
 
 flowchart TD
 A[仕様が不明] --> B[要件を洗い出せない]
@@ -159,7 +159,7 @@ G --> H[意思決定ができない]
 H --> I[移行失敗]
 I -.-> A
 
-{% end %}
+{% </mermaid> %}
 
 <!-- textlint-enable -->
 
@@ -216,7 +216,7 @@ SaaSに適応させる能力が必須であり、
 
 <!-- textlint-disable -->
 
-{% admonition(type="tip", title="超ハードモードをクリアした事例：浜松倉庫株式会社") %}
+{% <admonition type="tip" title="超ハードモードをクリアした事例：浜松倉庫株式会社"> %}
 静岡県の中堅倉庫会社である[浜松倉庫](https://www.hamamatsu-soko.co.jp/)は、
 長年使い続けたスクラッチ開発の倉庫管理システム（WMS）を3年かけて刷新し、
 経済産業省「DXセレクション2024」でグランプリを受賞しました。
@@ -232,7 +232,7 @@ SaaSに適応させる能力が必須であり、
    「もし1年でやれと言われたら失敗していた」（取締役談）
 
 参考：[J-Net21 浜松倉庫事例](https://j-net21.smrj.go.jp/special/dx/20240924.html)
-{% end %}
+{% </admonition> %}
 
 <!-- textlint-enable -->
 

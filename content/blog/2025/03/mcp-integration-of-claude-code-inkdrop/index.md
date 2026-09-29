@@ -116,7 +116,7 @@ Claude DesktopにはInkdropもMCP Serverとして登録されているので、�
 
 <!-- textlint-disable -->
 
-{% mermaid() %}
+{% <mermaid> %}
 
 flowchart TB
 UserReq[ユーザーリクエスト/指示]
@@ -160,7 +160,7 @@ InkdropMCP[inkdropapp/mcp-server]
     class UserReq other
 
 `
-{% end %}
+{% </mermaid> %}
 
 <!-- textlint-enable -->
 

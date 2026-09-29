@@ -13,7 +13,7 @@ local_image = "cover.webp"
 
 <!-- textlint-disable -->
 
-{{ image(src="cover.webp",alt="Cover") }}
+{{< image src="cover.webp" alt="Cover" />}}
 
 <!-- textlint-enable -->
 
@@ -79,9 +79,9 @@ PPSE ClassicとSoul Drivenの前段は、ともにTS系のクリッピング回�
 
 ## References
 
-{% references() %}
+{% <references> %}
 
 - [Aion FX](https://aionfx.com/news/tracing-journal-xotic-soul-driven-boost-overdrive/).「Tracing Journal: Xotic Soul Driven — Boost/Overdrive」実機トレース記事
 - [Aion FX](https://aionfx.com/news/tracing-journal-xotic-sl-drive/).「Tracing Journal: Xotic SL Drive」Soul Drivenの回路構成についての言及
 
-{% end %}
+{% </references> %}

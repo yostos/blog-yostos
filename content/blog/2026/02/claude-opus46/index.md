@@ -14,7 +14,7 @@ social_media_card = "ogp.webp"
 
 <!-- textlint-disable -->
 
-{{ youtube(id="dPn3GBI8lII") }}
+{{< youtube id="dPn3GBI8lII" />}}
 
 <!-- textlint-enable -->
 

@@ -11,7 +11,7 @@ social_media_card = "ogp.webp"
 
 <!-- textlint-disable -->
 
-{{ image(src="pocket-master.webp", alt="Sonic Pocket Master") }}
+{{< image src="pocket-master.webp" alt="Sonic Pocket Master" />}}
 
 <!-- textlint-enable -->
 

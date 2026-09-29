@@ -11,7 +11,7 @@ social_media_card = "ogp.webp"
 
 <!-- textlint-disable -->
 
-{{ image(src="archetype.webp", alt="Neural DSP Archetype") }}
+{{< image src="archetype.webp" alt="Neural DSP Archetype" />}}
 
 <!-- textlint-enable -->
 

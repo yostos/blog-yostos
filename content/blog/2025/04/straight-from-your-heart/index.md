@@ -9,7 +9,7 @@ tags = ["Creative", "Guitar"]
 social_media_card = "ogp.webp"
 +++
 
-{{ youtube(id="10N_ckvHzOI")}}
+{{< youtube id="10N_ckvHzOI" />}}
 
 I played 'STRAIGHT FROM YOUR HEART' from Masayoshi Takanaka's 1983 album
 'CAN I SING?

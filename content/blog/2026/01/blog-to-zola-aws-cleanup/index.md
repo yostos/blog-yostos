@@ -15,7 +15,7 @@ social_media_card = "ogp.webp"
 
 <!-- textlint-disable -->
 
-{{ full_width_image(src="./zola.webp",alt="Zola")}}
+{{< full_width_image src="./zola.webp" alt="Zola" />}}
 
 <!-- textlint-enable -->
 
@@ -101,11 +101,11 @@ aws acm list-certificates --region us-east-1 \
 
 <!-- textlint-disable -->
 
-{% admonition(type="warning", title="削除作業の注意") %}
+{% <admonition type="warning" title="削除作業の注意"> %}
 以下ではコマンド例を示していますが、実際の削除作業では各コマンドの出力を目視で
 確認し、削除対象が正しいことを1つずつ確かめながら進めました。
 AWSリソースの削除は取り消しができないため、慎重に作業することをおすすめします。
-{% end %}
+{% </admonition> %}
 
 <!-- textlint-enable -->
 

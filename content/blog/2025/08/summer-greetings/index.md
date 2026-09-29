@@ -24,4 +24,4 @@ social_media_card = "ogp.webp"
 
 どうぞお体に気をつけて、この夏を乗り切ってください。
 
-{{ youtube(id="T1dxOydqc_A") }}
+{{< youtube id="T1dxOydqc_A" />}}

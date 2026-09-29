@@ -11,7 +11,7 @@ social_media_card = "ogp.webp"
 
 <!-- textlint-disable -->
 
-{{ image(src="r0000634.jpg", alt="PPSE Classic and '79") }}
+{{< image src="r0000634.jpg" alt="PPSE Classic and '79" />}}
 
 <!-- textlint-enable -->
 

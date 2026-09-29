@@ -20,4 +20,4 @@ social_media_card = "ogp.webp"
 いわれています。その際に鹿六雁命が近辺で取れた魚や貝を料理して差し出したのが
 、日本料理の発祥といわれています。
 
-{{ youtube(id="MsZtpeuAjvU") }}
+{{< youtube id="MsZtpeuAjvU" />}}

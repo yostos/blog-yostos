@@ -19,7 +19,7 @@ social_media_card = "ogp.webp"
 
 <!-- textlint-disable -->
 
-{{ image(src="./shiramazu.webp", alt="白間津海岸") }}
+{{< image src="./shiramazu.webp" alt="白間津海岸" />}}
 
 <!-- textlint-enable -->
 
@@ -53,7 +53,7 @@ social_media_card = "ogp.webp"
 
 <!-- textlint-disable -->
 
-{{ youtube(id="tbD4qbXH71Q") }}
+{{< youtube id="tbD4qbXH71Q" />}}
 
 <!-- textlint-enable -->
 
@@ -75,10 +75,10 @@ social_media_card = "ogp.webp"
 
 <!-- textlint-disable -->
 
-{% admonition(type="info", title="ドローン飛行について") %}
+{% <admonition type="info" title="ドローン飛行について"> %}
 二等無人航空機操縦士ライセンスを保有し、包括申請済みです。
 撮影にあたっては南房総市商工観光部観光プロモーション課の許可を得て、
 千葉県警察本部館山警察署に通報しています。
-{% end %}
+{% </admonition> %}
 
 <!-- textlint-enable -->

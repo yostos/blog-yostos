@@ -11,7 +11,7 @@ social_media_card = "ogp.webp"
 
 <!-- textlint-disable -->
 
-{{ image(src="ac-booster-v2.webp", alt="AC Booster V2") }}
+{{< image src="ac-booster-v2.webp" alt="AC Booster V2" />}}
 
 <!-- textlint-enable -->
 
@@ -61,11 +61,11 @@ EQはTrebleが1時、Bassは12時です。
 Simplifier MK-IIからDIで直接Macに取り込み、リバーブとディレイはLogic Proで
 かけています。
 
-{{ youtube(id="Wq6wGHdIcQY") }}
+{{< youtube id="Wq6wGHdIcQY" />}}
 
 Distortionまで行かないけれど、ちょっと荒々しい歪みと適度なコンプレッション感
 で弾いていて楽しいペダルです。
 
 以下の動画に詳しい解説があり、とても良い音で鳴らしていて参考になります。
 
-{{ youtube(id="ehqrZiQ-eXs") }}
+{{< youtube id="ehqrZiQ-eXs" />}}

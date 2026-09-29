@@ -15,7 +15,7 @@ social_media_card = "ogp.webp"
 
 <!-- textlint-disable -->
 
-{{ image(src="drone.webp", alt="DJI NEO with FPV Goggles") }}
+{{< image src="drone.webp" alt="DJI NEO with FPV Goggles" />}}
 
 <!-- textlint-enable -->
 

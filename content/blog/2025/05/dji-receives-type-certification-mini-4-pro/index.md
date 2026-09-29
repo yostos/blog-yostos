@@ -92,7 +92,7 @@ DJI Air3Sは、DJI機では始めて前方赤外線LiDARセンサーを搭載し
 
 Air 3Sの安定飛行とウェイポイントの滑らかな動きをぜひご覧ください。
 
-{{ youtube(id="HTimBV-n7Tg") }}
+{{< youtube id="HTimBV-n7Tg" />}}
 
 ## まとめ ―― 技術と制度、両輪で加速する日本のドローンライフ
 

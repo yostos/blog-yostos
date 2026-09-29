@@ -20,7 +20,7 @@ social_media_card = "ogp.webp"
 
 <!-- textlint-disable -->
 
-{{ image(src="be.jpg", alt="気持ち悪いランチ") }}
+{{< image src="be.jpg" alt="気持ち悪いランチ" />}}
 
 <!-- textlint-enable -->
 

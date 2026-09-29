@@ -15,7 +15,7 @@ tldr = """
 
 <!-- textlint-disable -->
 
-{{ image(src="cover.webp", alt="Cover") }}
+{{< image src="cover.webp" alt="Cover" />}}
 
 <!-- textlint-enable -->
 
@@ -74,7 +74,7 @@ Cloudflareは[isitagentready.com](https://isitagentready.com/)という無料の
 
 <!-- textlint-disable -->
 
-{{ image(src="agent-readiness.webp",alt="Agent Readiness",caption="当サイトのAgent Readiness") }}
+{{< image src="agent-readiness.webp" alt="Agent Readiness" caption="当サイトのAgent Readiness" />}}
 
 <!-- textlint-enable -->
 
@@ -132,7 +132,7 @@ Agent Readinessスキャンの10個の指摘を並べてみると、その多く
 
 <!-- textlint-disable -->
 
-{% references() %}
+{% <references> %}
 
 - [Cloudflare](https://blog.cloudflare.com/content-signals-policy/). "Giving users choice with Cloudflare's new Content Signals Policy"
 - [Cloudflare](https://developers.cloudflare.com/bots/additional-configurations/managed-robots-txt/). "robots.txt setting"
@@ -149,6 +149,6 @@ Agent Readinessスキャンの10個の指摘を並べてみると、その多く
 - [Agent Skills](https://agentskills.io/). "Agent Skills"
 - [Chrome Developers](https://developer.chrome.com/blog/webmcp-epp). "WebMCP Early Preview Program"
 
-{% end %}
+{% </references> %}
 
 <!-- textlint-enable -->

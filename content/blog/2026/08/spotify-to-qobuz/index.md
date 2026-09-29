@@ -22,7 +22,7 @@ mermaid = true
 
 <!-- textlint-disable -->
 
-{{ image(src="cover.webp",alt="Cover") }}
+{{< image src="cover.webp" alt="Cover" />}}
 
 <!-- textlint-enable -->
 
@@ -90,9 +90,9 @@ Bluetoothを挟まないので、Qobuzのハイレゾ音源をそのまま鳴ら
 
 <!-- textlint-disable -->
 
-{% aside(position="right") %}
+{% <aside position="right"> %}
 **DSEE**: 圧縮で失われた高音域や細かな音を補完してハイレゾ相当まで引き上げるソニーの技術。有線接続なら最大192kHz/32bitまで拡張
-{% end %}
+{% </aside> %}
 
 <!-- textlint-enable -->
 
@@ -120,13 +120,13 @@ DACを持ち歩くよりお手軽ですが、現状のウォークマンには�
 
 <!-- textlint-disable -->
 
-{% mermaid() %}
+{% <mermaid> %}
 xychart-beta
 title "ソニー ET&S分野の売上高（兆円）"
 x-axis [2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025]
 y-axis "売上高（兆円）" 0 --> 4
 bar [3.01, 3.54, 3.37, 3.00, 2.38, 2.60, 2.32, 1.99, 2.07, 2.34, 2.48, 2.45, 2.41, 2.26]
-{% end %}
+{% </mermaid> %}
 
 <!-- textlint-enable -->
 
@@ -149,12 +149,12 @@ Spotifyとは月額数百円の差があるので、しばらくこの状態で�
 
 <!-- textlint-disable -->
 
-{% references() %}
+{% <references> %}
 
 - ソニー. [ウォークマン NW-A300シリーズ](https://www.sony.jp/walkman/products/NW-A300_series/)
 - ソニー. [ハイレゾストリーミング機能を使う（NW-A300シリーズ）](https://www.sony.jp/support/walkman/guide/nw-a300s/contents/TP1000735012.html)
 - ソニーグループ. [投資家情報](https://www.sony.com/ja/SonyInfo/IR/)
 
-{% end %}
+{% </references> %}
 
 <!-- textlint-enable -->

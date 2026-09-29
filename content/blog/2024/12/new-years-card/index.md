@@ -32,6 +32,6 @@ onward."
 
 <!-- textlint-disable -->
 
-{{ image(src="greetingcard.jpg", alt="New Year's Card") }}
+{{< image src="greetingcard.jpg" alt="New Year's Card" />}}
 
 <!-- textlint-enable -->

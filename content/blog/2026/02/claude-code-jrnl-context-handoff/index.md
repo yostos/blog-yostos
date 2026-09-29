@@ -21,9 +21,9 @@ canonical_url = "https://zenn.dev/yostos/articles/claude-code-jrnl-context-hando
 
 <!-- textlint-disable -->
 
-{% admonition(type="info", title="転載記事") %}
+{% <admonition type="info" title="転載記事"> %}
 この記事は[Zenn](https://zenn.dev/yostos/articles/claude-code-jrnl-context-handoff)に掲載した記事の転載です。
-{% end %}
+{% </admonition> %}
 
 <!-- textlint-enable -->
 
@@ -51,7 +51,7 @@ canonical_url = "https://zenn.dev/yostos/articles/claude-code-jrnl-context-hando
   **Auto Memory**との棲み分けも解説
 
 <!-- textlint-disable -->
- {{ linkcard(url="https://github.com/yostos/claude-code-plugins") }}
+ {{< linkcard url="https://github.com/yostos/claude-code-plugins" />}}
 <!-- textlint-enable -->
 
 ## きっかけ — MCPからプラグインへ、そして活用法の発見
@@ -201,14 +201,14 @@ jrnl-toolsが目指すのは、
 
 <!-- textlint-disable -->
 
-{% mermaid() %}
+{% <mermaid> %}
 graph TD
 A["Project A<br/>(Claude Code)"] --> J
 B["Project B<br/>(Claude Code)"] --> J
 C["Project C<br/>(Claude Code)"] --> J
 J["jrnl (グローバル)<br/>作業ログ / ハンドオフ / アイデア"]
 J --> R["どのプロジェクトからでもアクセス可能"]
-{% end %}
+{% </mermaid> %}
 
 <!-- textlint-enable -->
 
@@ -261,10 +261,10 @@ TODO.md、設計ドキュメント、
 
 <!-- textlint-disable -->
 
-{% mermaid() %}
+{% <mermaid> %}
 graph LR
 H["jrnl（オリエンテーションガイド）<br/>Handoff:<br/>TODO.md Phase 9を確認<br/>issue #2に取り組み中"] -- "参照" --> P["プロジェクト文書（詳細な状態）<br/>TODO.md<br/>docs/architecture.md<br/>CLAUDE.md<br/>ソースコード"]
-{% end %}
+{% </mermaid> %}
 
 <!-- textlint-enable -->
 

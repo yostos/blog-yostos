@@ -18,7 +18,7 @@ tldr = """\
 
 <!-- textlint-disable -->
 
-{{ image(src="cover.webp", alt="Cover") }}
+{{< image src="cover.webp" alt="Cover" />}}
 
 <!-- textlint-enable -->
 
@@ -45,9 +45,9 @@ tldr = """\
 
 <!-- textlint-disable -->
 
-{% aside(position="right") %}
+{% <aside position="right"> %}
 Workspaceは、APIキー・権限・課金・月次上限を環境やチーム単位で分離できる、Anthropic Console固有の論理単位です。
-{% end %}
+{% </aside> %}
 
 <!-- textlint-enable -->
 
@@ -102,9 +102,9 @@ Claude Platform on AWSが構造的に行っているのは、レイヤーの分�
 
 <!-- textlint-disable -->
 
-{% aside(position="right") %}
+{% <aside position="right"> %}
 本記事における「Cloud 2.0」の定義: LLMエージェントがCloudのワークロードの主役となる新しいレイヤーを指す、本記事独自の用語として用います。
-{% end %}
+{% </aside> %}
 
 <!-- textlint-enable -->
 
@@ -143,9 +143,9 @@ Anthropicは2026年に入ってから、AWSと$100Bを超える複数年コン�
 
 <!-- textlint-disable -->
 
-{% aside(position="right") %}
+{% <aside position="right"> %}
 TrainiumはAWSが自社開発するAI学習・推論用カスタムチップです。Nvidia GPUへの依存を減らす狙いがあり、Anthropicの大型契約はその外販ボリュームの一翼を担います。
-{% end %}
+{% </aside> %}
 
 <!-- textlint-enable -->
 
@@ -169,7 +169,7 @@ Bedrockがそうであるように、AWSは引き続き「自社の推論基盤�
 
 ## References
 
-{% references() %}
+{% <references> %}
 
 - [AWS Machine Learning Blog](https://aws.amazon.com/blogs/machine-learning/introducing-claude-platform-on-aws-anthropics-native-platform-through-your-aws-account/).「Introducing Claude Platform on AWS, Anthropic's native platform through your AWS account」
 - [AWS](https://aws.amazon.com/claude-platform/).「Claude Platform on AWS」(製品ページ)
@@ -177,4 +177,4 @@ Bedrockがそうであるように、AWSは引き続き「自社の推論基盤�
 - [Anthropic](https://www.anthropic.com/news/anthropic-amazon-compute).「Anthropic and Amazon expand collaboration for up to 5GW of Trainium compute」(2026年4月20日)
 - [About Amazon](https://www.aboutamazon.com/news/company-news/amazon-invests-additional-5-billion-anthropic-ai).「Amazon and Anthropic expand strategic collaboration」
 
-{% end %}
+{% </references> %}

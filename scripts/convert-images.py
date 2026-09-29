@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Convert Markdown images ![alt](src) to {{ image() }} shortcode."""
+"""Convert Markdown images ![alt](src) to {{< image />}} component calls."""
 import re
 import glob
 
@@ -53,9 +53,9 @@ def process_file(filepath):
             src = m.group(3)
 
             if alt:
-                shortcode = f'{indent}{{{{ image(src="{src}", alt="{alt}") }}}}'
+                shortcode = f'{indent}{{{{< image src="{src}" alt="{alt}" />}}}}'
             else:
-                shortcode = f'{indent}{{{{ image(src="{src}") }}}}'
+                shortcode = f'{indent}{{{{< image src="{src}" />}}}}'
 
             if in_textlint_disable:
                 # Already inside textlint-disable block, just replace syntax

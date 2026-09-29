@@ -16,7 +16,7 @@ local_image = "cover.avif"
 
 <!-- textlint-disable -->
 
-{{ image(src="cover.avif",alt="Cover") }}
+{{< image src="cover.avif" alt="Cover" />}}
 
 <!-- textlint-enable -->
 
@@ -101,11 +101,11 @@ local_image = "cover.avif"
 
 <!-- textlint-disable -->
 
-{% admonition(type="note", title="調査範囲") %}
+{% <admonition type="note" title="調査範囲"> %}
 
 表は個人で確認できた範囲をまとめたもので、すべての記事を網羅してはいません。
 
-{% end %}
+{% </admonition> %}
 
 <!-- textlint-enable -->
 
@@ -131,10 +131,10 @@ local_image = "cover.avif"
 
 <!-- textlint-disable -->
 
-{% references() %}
+{% <references> %}
 
 - [外務省](https://www.mofa.go.jp/mofaj/fp/un/pageit_000001_03218.html). 「第81回国連総会における 高市早苗内閣総理大臣の一般討論演説」
 
-{% end %}
+{% </references> %}
 
 <!-- textlint-enable -->

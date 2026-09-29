@@ -45,7 +45,7 @@ ContentfulではまずSpaceを作ることになりますが、今回は無料�
 
 <!-- textlint-disable -->
 
-{{ image(src="content-model.webp", alt="Content Model") }}
+{{< image src="content-model.webp" alt="Content Model" />}}
 
 <!-- textlint-enable -->
 

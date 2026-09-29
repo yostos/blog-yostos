@@ -31,4 +31,4 @@ social_media_card = "ogp.webp"
 
 しかし、指がもう10代のようには動きませんね。
 
-{{ youtube(id="TgrD-HGYHpg") }}
+{{< youtube id="TgrD-HGYHpg" />}}

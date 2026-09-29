@@ -13,13 +13,13 @@ local_image = "cover.webp"
 
 <!-- textlint-disable -->
 
-{{ image(src="cover.webp",alt="Cover") }}
+{{< image src="cover.webp" alt="Cover" />}}
 
 <!-- textlint-enable -->
 
 最近、中森明菜さんがテレビ出演で「復活」と話題になっているのを見て、彼女がライバルとされていた1980年代初頭の松田聖子さんを思い出しました。ちょうど夏らしい曲を探していたこともあり、彼女の古いアルバム『Pineapple』から「パイナップル・アイランド」をカバーしてみました。
 
-{{ youtube(id="vhoyaQSEdc") }}
+{{< youtube id="vhoyaQSEdc" />}}
 
 ## アイドルからアーチストへ
 

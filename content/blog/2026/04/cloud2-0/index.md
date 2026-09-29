@@ -18,7 +18,7 @@ Cloudflareの「Agents Week 2026」は、LLMエージェントが主役となる
 
 <!-- textlint-disable -->
 
-{{ image(src="cover.webp", alt="Cover") }}
+{{< image src="cover.webp" alt="Cover" />}}
 
 <!-- textlint-enable -->
 
@@ -37,9 +37,9 @@ Cloudflareがエージェント向けプラットフォームのロードマッ�
 
 <!-- textlint-disable -->
 
-{% aside(position="right") %}
+{% <aside position="right"> %}
 本記事における「Cloud 2.0」の定義: LLMエージェントがCloudのワークロードの主役となる新しいレイヤーを指す、本記事独自の用語として用います。過去に同じ表記が別の意味で使われてきた経緯がありますが、本記事の主張とは無関係です。
-{% end %}
+{% </aside> %}
 
 <!-- textlint-enable -->
 
@@ -181,7 +181,7 @@ Cloud 1.0時代、CDNとセキュリティのベンダーとして3強の外側�
 
 ## References
 
-{% references() %}
+{% <references> %}
 
 - [Cloudflare](https://blog.cloudflare.com/welcome-to-agents-week/).「Welcome to Agents Week」(米国ナレッジワーカー試算の出典)
 - [Cloudflare](https://blog.cloudflare.com/agents-week-in-review/).「Building the agentic cloud — Agents Week in Review」(発表総まとめ)
@@ -194,4 +194,4 @@ Cloud 1.0時代、CDNとセキュリティのベンダーとして3強の外側�
 - [AWS](https://aws.amazon.com/bedrock/agentcore/).「Amazon Bedrock AgentCore」(Runtime / Memory / Code Interpreter / Browser / Gateway / Identity / Policy / Evaluations / Observability)
 - [AWS](https://aws.amazon.com/about-aws/whats-new/2026/04/agentcore-browser-os-actions/).「AgentCore Browser adds OS-level interactions」(2026年4月8日)
 
-{% end %}
+{% </references> %}

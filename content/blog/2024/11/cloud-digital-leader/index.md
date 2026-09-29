@@ -13,6 +13,6 @@ Googleも資格認定管理にCertMerticsを使っていますが、結果はお
 
 <!-- textlint-disable -->
 
-{{ image(src="badge.png", alt="Google Cloud Digital Leader Budge") }}
+{{< image src="badge.png" alt="Google Cloud Digital Leader Budge" />}}
 
 <!-- textlint-enable -->

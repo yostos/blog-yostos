@@ -13,7 +13,7 @@ local_image = "cover.avif"
 
 <!-- textlint-disable -->
 
-{{ image(src="cover.avif",alt="Cover") }}
+{{< image src="cover.avif" alt="Cover" />}}
 
 <!-- textlint-enable -->
 
@@ -46,7 +46,7 @@ AppZapperにアプリをドラッグ&ドロップすると、アプリ本体だ�
 
 <!-- textlint-disable -->
 
-{{ youtube(id="JRBNZQgb59M") }}
+{{< youtube id="JRBNZQgb59M" />}}
 
 <!-- textlint-enable -->
 
@@ -58,9 +58,9 @@ John Gruberも[AppZapper 3000の紹介記事](https://daringfireball.net/2026/09
 
 <!-- textlint-disable -->
 
-{% admonition(type="info",title="John Gruber") %}
+{% <admonition type="info" title="John Gruber"> %}
 John Gruberは、2002年からApple関連のブログDaring Fireballを運営しています。Apple界隈で最も影響力のある書き手のひとりで、2004年にAaron Swartzの協力を得て軽量マークアップ言語Markdownを考案した人物でもあります。
-{% end %}
+{% </admonition> %}
 
 <!-- textlint-enable -->
 

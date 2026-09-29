@@ -11,7 +11,7 @@ social_media_card = "ogp.webp"
 local_image = "cover.webp"
 +++
 
-{{ image(src="cover.webp", alt="Cover") }}
+{{< image src="cover.webp" alt="Cover" />}}
 
 5月29日にPaul McCartneyの5年半ぶりの新アルバム『The Boys of Dungeon Lane』のリリースが予定されています。
 どうやらリバプール時代の思い出を詰め込んだアルバムのようです。
@@ -24,7 +24,7 @@ local_image = "cover.webp"
 
 <!-- textlint-disable -->
 
-{{ youtube(id="DfkpKoF3xww") }}
+{{< youtube id="DfkpKoF3xww" />}}
 
 <!-- textlint-enable -->
 

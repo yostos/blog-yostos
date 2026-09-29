@@ -18,7 +18,7 @@ tldr = """
 
 <!-- textlint-disable -->
 
-{{ image(src="cover.webp", alt="浸水した地下室に並ぶ廃液タンク", caption="生成AIによるイメージ画像です") }}
+{{< image src="cover.webp" alt="浸水した地下室に並ぶ廃液タンク" caption="生成AIによるイメージ画像です" />}}
 
 <!-- textlint-enable -->
 
@@ -189,7 +189,7 @@ QSTの詳細報告書は、この種の法令報告事象では提出まで数�
 
 <!-- textlint-disable -->
 
-{% references() %}
+{% <references> %}
 
 政府機関およびQSTのページはリンク切れが予想されるため、URLを併記しています。
 
@@ -206,6 +206,6 @@ QSTの詳細報告書は、この種の法令報告事象では提出まで数�
 - [千葉市](https://www.city.chiba.jp/100th/history/index.html). 「千葉市のあゆみ」（年表）。https://www.city.chiba.jp/100th/history/index.html
 - 読売新聞、共同通信、NHK、TBSほか各社の報道（いずれも2026年8月17日）
 
-{% end %}
+{% </references> %}
 
 <!-- textlint-enable -->

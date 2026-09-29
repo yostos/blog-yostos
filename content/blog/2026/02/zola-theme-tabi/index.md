@@ -77,16 +77,16 @@ info、warning、danger、tip、noteなどの
 タイプを指定できます。
 
 ```markdown
-{%/* admonition(type="warning", title="注意") */%}
+{% raw %}{% admonition(type="warning", title="注意") %}{% endraw %}
 ここに警告メッセージを書きます。
-{%/* end */%}
+{% raw %}{% end %}{% endraw %}
 ```
 
 <!-- textlint-disable -->
 
-{% admonition(type="warning", title="注意") %}
+{% <admonition type="warning" title="注意"> %}
 ここに警告メッセージを書きます。
-{% end %}
+{% </admonition> %}
 
 <!-- textlint-enable -->
 
@@ -101,16 +101,16 @@ PCなどの表示では記事の左右に表示され、
 
 <!-- textlint-disable -->
 
-{% aside(position="right")%}
+{% <aside position="right"> %}
 右側にも表示できます。
-{% end %}
+{% </aside> %}
 
 <!-- textlint-enable -->
 
 ```markdown
-{%/* aside(position="right") */%}
+{% raw %}{% aside(position="right") %}{% endraw %}
 補足情報をここに書きます。
-{%/* end */%}
+{% raw %}{% end %}{% endraw %}
 ```
 
 ### multilingual_quote
@@ -121,18 +121,15 @@ PCなどの表示では記事の左右に表示され、
 `author` パラメータで出典も表示できます。
 
 ```markdown
-{{/* multilingual_quote(
+{% raw %}{{ multilingual_quote(
   translated="考える、ゆえに我あり。",
   original="Cogito, ergo sum.",
-  author="René Descartes") */}}
+  author="René Descartes") }}{% endraw %}
 ```
 
 <!-- textlint-disable -->
 
-{{multilingual_quote(
-  translated="考える、ゆえに我あり。",
-  original="Cogito, ergo sum.",
-  author="René Descartes")}}
+{{< multilingual_quote translated="考える、ゆえに我あり。" original="Cogito, ergo sum." author="René Descartes" />}}
 
 <!-- textlint-enable -->
 
@@ -142,20 +139,20 @@ PCなどの表示では記事の左右に表示され、
 パラメータはなく、内部にMarkdownを記述できます。
 
 ```markdown
-{%/* references() */%}
+{% raw %}{% references() %}{% endraw %}
 
 - WEBサイト. 「[記事名](https://example.com)」.
 - 著者(2026). 『書名』.
-  {%/* end */%}
+  {% raw %}{% end %}{% endraw %}
 ```
 
 <!-- textlint-disable -->
 
-{% references() %}
+{% <references> %}
 
 - Example Site. 「[Zolaで技術ブログを作る](https://example.com/article)」
 - 結城浩. (2020). 『[数学ガール](https://example.com/book)』
-  {% end %}
+  {% </references> %}
 
 <!-- textlint-enable -->
 
@@ -166,12 +163,12 @@ JavaScriptを使わず、
 CSSとチェックボックスで実装されています。
 
 ```markdown
-犯人は、{{/* spoiler(text="執事でした。") */}}
+犯人は、{% raw %}{{ spoiler(text="執事でした。") }}{% endraw %}
 ```
 
 <!-- textlint-disable -->
 
-犯人は、{{ spoiler(text="執事でした。") }}
+犯人は、{{< spoiler text="執事でした。" />}}
 
 <!-- textlint-enable -->
 
@@ -381,10 +378,10 @@ Frontmatterに設定するだけで済むと知り、
 
 <!-- textlint-disable -->
 
-{% references() %}
+{% <references> %}
 
 - tabi. "[tabi documentation](https://welpo.github.io/tabi/)"
 
-{% end %}
+{% </references> %}
 
 <!-- textlint-enable -->

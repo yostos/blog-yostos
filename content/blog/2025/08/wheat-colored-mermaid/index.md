@@ -21,7 +21,7 @@ I suddenly remembered this song, so I decided to perform it. Everything
 except the guitar is programmed sequenced. The vocals are done with
 Synthesizer V.
 
-{{ youtube(id="oCwPzTi5TJg")}}
+{{< youtube id="oCwPzTi5TJg" />}}
 
 松田聖子さんが歌うこの曲の原曲は1982年7月にリリースされ、地元を離れた最初の
 夏だったのでよく憶えています。

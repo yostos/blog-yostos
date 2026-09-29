@@ -13,7 +13,7 @@ local_image = "cover.avif"
 
 <!-- textlint-disable -->
 
-{{ image(src="cover.avif",alt="Cover") }}
+{{< image src="cover.avif" alt="Cover" />}}
 
 <!-- textlint-enable -->
 
@@ -25,7 +25,7 @@ local_image = "cover.avif"
 
 <!-- textlint-disable -->
 
-{{ youtube(id="OMDaCgqhS28") }}
+{{< youtube id="OMDaCgqhS28" />}}
 
 <!-- textlint-enable -->
 
@@ -38,11 +38,11 @@ local_image = "cover.avif"
 
 <!-- textlint-disable -->
 
-{% references() %}
+{% <references> %}
 
 - [デジマート・マガジン](https://www.digimart.net/magazine/article/2015112501692.html). 「魅惑のジャパン・ビンテージ YAMAHA SG-175〜feat.稲葉政裕」
 
-{% end %}
+{% </references> %}
 
 <!-- textlint-enable -->
 

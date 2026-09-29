@@ -12,7 +12,7 @@ tldr = "エプスタイン文書は、日本政府のデジタル推進に関す
 
 <!-- textlint-disable -->
 
-{{ image(src="cover.webp", alt="Cover") }}
+{{< image src="cover.webp" alt="Cover" />}}
 
 <!-- textlint-enable -->
 
@@ -192,7 +192,7 @@ Blockstreamへの投資は、伊藤氏との共同事業体であるKyara Invest
 
 <!-- textlint-disable -->
 
-{% references() %}
+{% <references> %}
 
 - [U.S. Department of Justice](https://www.justice.gov/epstein). Epstein Library（エプスタイン文書公開ポータル）
 - [U.S. Department of Justice](https://www.justice.gov/opa/pr/department-justice-publishes-35-million-responsive-pages-compliance-epstein-files). "Department of Justice Publishes 3.5 Million Responsive Pages in Compliance with the Epstein Files Transparency Act"
@@ -215,6 +215,6 @@ Blockstreamへの投資は、伊藤氏との共同事業体であるKyara Invest
 - [e-Gov法令検索](https://laws.e-gov.go.jp/law/323AC1000000194/). 政治資金規正法（昭和二十三年法律第百九十四号）
 - 高市早苗総務大臣記者会見（2019年10月8日）. 暗号資産の政治資金規正法上の扱いに関する見解
 
-{% end %}
+{% </references> %}
 
 <!-- textlint-enable -->

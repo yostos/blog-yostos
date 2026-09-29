@@ -1,5 +1,5 @@
 ---
-description: Run article quality review. Check frontmatter, shortcode conventions, writing style, and assets.
+description: Run article quality review. Check frontmatter, component conventions, writing style, and assets.
 ---
 
 # Article Quality Review
@@ -17,15 +17,17 @@ Read the article frontmatter and verify:
   - Within 200 characters
 - date format is valid (YYYY-MM-DD)
 
-## 2. Shortcode Conventions
+## 2. Component Conventions
 
 Check the article body:
 
 - No Markdown image syntax `![alt](path)` is used
-  - If found, propose replacement with image shortcode wrapped in textlint-disable/enable
-- Body shortcodes (`{% %} ... {% end %}`) are wrapped in
+  - If found, propose replacement with the image component wrapped in textlint-disable/enable
+- Block components (`{% <name> %} ... {% </name> %}`) are wrapped in
   `<!-- textlint-disable -->` / `<!-- textlint-enable -->`
-- Inline shortcodes (`{{ }}`) are also wrapped
+- Inline components (`{{< name />}}`) are also wrapped
+- No old shortcode syntax (`{{ name(...) }}`, `{% name(...) %}`, `{% end %}`) remains
+- Literal `{{ }}` / `{% %}` / `{# #}` (e.g. `${{ secrets.X }}` in code blocks) are wrapped in `{% raw %}` ... `{% endraw %}`
 
 ## 3. Writing Style
 

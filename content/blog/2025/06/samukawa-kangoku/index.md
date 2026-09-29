@@ -31,7 +31,7 @@ social_media_card = "ogp.webp"
 
 <!-- textlint-disable -->
 
-{{ image(src="samukawa.webp", alt="千葉古地図") }}
+{{< image src="samukawa.webp" alt="千葉古地図" />}}
 
 <!-- textlint-enable -->
 
@@ -43,7 +43,7 @@ social_media_card = "ogp.webp"
   width="425"
   height="350"
   src="https://www.openstreetmap.org/export/embed.html?bbox=140.11248350143435%2C35.59471587191188%2C140.12416720390323%2C35.602488757310795&amp;layer=mapnik&amp;marker=35.59860240897393%2C140.11832535266876"
-  style={{ border: "1px solid black" }}
+  style={% raw %}{{ border: "1px solid black" }}{% endraw %}
 />
 <br />
 <small>
@@ -66,4 +66,4 @@ social_media_card = "ogp.webp"
 
 拝殿の裏には弁財天が鎮座しておりご神水もあります。正殿より、むしろこちら(=裏手)にご神気が満ちている印象です。
 
-{{ youtube(id="DJl6NVe-JLw") }}
+{{< youtube id="DJl6NVe-JLw" />}}

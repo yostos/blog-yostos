@@ -39,7 +39,7 @@ canonical_url = "https://zenn.dev/yostos/articles/building-ttt-with-claude-code"
 
 <!-- textlint-disable -->
 
-{{ image(src="demo.gif", alt="ttt demo") }}
+{{< image src="demo.gif" alt="ttt demo" />}}
 
 <!-- textlint-enable -->
 

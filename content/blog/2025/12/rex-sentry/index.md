@@ -11,7 +11,7 @@ social_media_card = "ogp.webp"
 
 <!-- textlint-disable -->
 
-{{ image(src="rex1.webp", alt="REX Sentry") }}
+{{< image src="rex1.webp" alt="REX Sentry" />}}
 
 <!-- textlint-enable -->
 
@@ -57,7 +57,7 @@ REX Sentryは米国のRex Supply社のものです。
 
 <!-- textlint-disable -->
 
-{{ image(src="rex2.webp", alt="REX Sentry") }}
+{{< image src="rex2.webp" alt="REX Sentry" />}}
 
 <!-- textlint-enable -->
 

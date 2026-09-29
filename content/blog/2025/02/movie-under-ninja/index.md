@@ -14,7 +14,7 @@ social_media_card = "ogp.webp"
 
 <!-- textlint-disable -->
 
-{{ image(src="under-ninja.webp") }}
+{{< image src="under-ninja.webp" />}}
 
 <!-- textlint-enable -->
 

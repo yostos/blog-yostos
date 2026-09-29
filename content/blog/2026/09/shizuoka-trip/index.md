@@ -13,7 +13,7 @@ local_image = "cover.avif"
 
 <!-- textlint-disable -->
 
-{{ image(src="cover.avif", alt="Cover", caption="さわやかのげんこつハンバーグ") }}
+{{< image src="cover.avif" alt="Cover" caption="さわやかのげんこつハンバーグ" />}}
 
 <!-- textlint-enable -->
 
@@ -52,7 +52,7 @@ local_image = "cover.avif"
 
 <!-- textlint-disable -->
 
-{{ image(src="fuwafuwa.avif", alt="たまごふわふわ", caption="たまごふわふわ") }}
+{{< image src="fuwafuwa.avif" alt="たまごふわふわ" caption="たまごふわふわ" />}}
 
 <!-- textlint-enable -->
 

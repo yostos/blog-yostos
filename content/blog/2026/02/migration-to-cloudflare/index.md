@@ -14,11 +14,11 @@ canonical_url = "https://zenn.dev/yostos/articles/migration-to-cloudflare"
 
 <!-- textlint-disable -->
 
-{% admonition(type="note") %}
+{% <admonition type="note"> %}
 この記事は
 [Zenn.dev](https://zenn.dev/yostos/articles/migration-to-cloudflare)
 に掲載した記事の転載です。
-{% end %}
+{% </admonition> %}
 
 <!-- textlint-enable -->
 
@@ -93,8 +93,8 @@ jobs:
       - name: Deploy to Cloudflare
         uses: cloudflare/wrangler-action@v3
         with:
-          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          apiToken: ${% raw %}{{ secrets.CLOUDFLARE_API_TOKEN }}{% endraw %}
+          accountId: ${% raw %}{{ secrets.CLOUDFLARE_ACCOUNT_ID }}{% endraw %}
           wranglerVersion: "4"
           command: deploy
 ```

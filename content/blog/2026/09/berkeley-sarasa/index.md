@@ -15,7 +15,7 @@ local_image = "cover.avif"
 
 <!-- textlint-disable -->
 
-{{ image(src="cover.avif", alt="Cover") }}
+{{< image src="cover.avif" alt="Cover" />}}
 
 <!-- textlint-enable -->
 
@@ -330,7 +330,7 @@ A      x_adv=12  cells=1   1セルぴったり
 
 <!-- textlint-disable -->
 
-{{ image(src="wezterm.webp", alt="日本語と欧文が混在する原稿をWezTermで表示した画面",caption="日本語と欧文が混在する原稿をWezTermで表示した画面") }}
+{{< image src="wezterm.webp" alt="日本語と欧文が混在する原稿をWezTermで表示した画面" caption="日本語と欧文が混在する原稿をWezTermで表示した画面" />}}
 
 <!-- textlint-enable -->
 
@@ -340,7 +340,7 @@ A      x_adv=12  cells=1   1セルぴったり
 
 <!-- textlint-disable -->
 
-{% references() %}
+{% <references> %}
 
 - [Berkeley Graphics](https://berkeleygraphics.com/typefaces/berkeley-mono/). "Berkeley Mono Typeface"
 - [Sarasa Gothic](https://github.com/be5invis/Sarasa-Gothic). 「更紗ゴシック」
@@ -348,6 +348,6 @@ A      x_adv=12  cells=1   1セルぴったり
 - [WezTerm](https://wezterm.org/config/fonts.html). "Font Configuration"
 - [Adobe Type Tools](https://github.com/adobe-fonts/source-han-sans). "Source Han Sans"
 
-{% end %}
+{% </references> %}
 
 <!-- textlint-enable -->

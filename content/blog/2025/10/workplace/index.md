@@ -11,4 +11,4 @@ social_media_card = "ogp.webp"
 
 スプラトゥーンやっていたら、どこかの職場みたいな状況で草。
 
-{{ youtube(id="qwQvlF5C6ow") }}
+{{< youtube id="qwQvlF5C6ow" />}}

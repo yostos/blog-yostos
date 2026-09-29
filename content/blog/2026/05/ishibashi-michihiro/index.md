@@ -11,7 +11,7 @@ social_media_card = "ogp.webp"
 local_image = "cover.webp"
 +++
 
-{{ image(src="cover.webp",alt="Cover") }}
+{{< image src="cover.webp" alt="Cover" />}}
 
 <details>
 <summary>Table of Contents</summary>

@@ -14,7 +14,7 @@ local_image = "cover.webp"
 
 <!-- textlint-disable -->
 
-{{ image(src="cover.webp", alt="Cover") }}
+{{< image src="cover.webp" alt="Cover" />}}
 
 <!-- textlint-enable -->
 
@@ -98,6 +98,6 @@ Go言語が示したのは、OOPの制約に起因するパターンは言語設
 
 <!-- textlint-disable -->
 
-{{ linkcard(url="https://github.com/yostos/gof-go-samples") }}
+{{< linkcard url="https://github.com/yostos/gof-go-samples" />}}
 
 <!-- textlint-enable -->

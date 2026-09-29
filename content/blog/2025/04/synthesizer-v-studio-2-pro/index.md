@@ -12,7 +12,7 @@ social_media_card = "ogp.webp"
 とりあえず、昨年Synthersizer V 1で作った藤原さくらさんの「Just One Girl
 」をSynthesizer V 2でヴォーカル部分をリテイクしてみました。
 
-{{ youtube(id="M_wFVSNXj3c")}}
+{{< youtube id="M_wFVSNXj3c" />}}
 
 以前のバージョンでもかなりリアルなヴォーカルなのであまり改善点がわからないか
 もしれませんが、以下に変更点をまとめておきます。

@@ -23,7 +23,7 @@ tldr = """\
 
 <!-- textlint-disable -->
 
-{{ image(src="cover.webp", alt="Cover") }}
+{{< image src="cover.webp" alt="Cover" />}}
 
 <!-- textlint-enable -->
 
@@ -174,7 +174,7 @@ GatekeeperとcapabilityはCloudflare OSが既存の社内システムとどう�
 
 <!-- textlint-disable -->
 
-{% references() %}
+{% <references> %}
 
 - [Cloudflare Blog](https://blog.cloudflare.com/cloudflare-os/). "Cloudflare OS: an open platform for agents, apps, and work"
 - [Cloudflare](https://www.cloudflare.com/press/press-releases/2026/cloudflare-os-is-the-first-ai-workspace-built-around-how-companies-actually-work/). "Cloudflare OS Is the First AI Workspace Built Around How Companies Actually Work"
@@ -184,6 +184,6 @@ GatekeeperとcapabilityはCloudflare OSが既存の社内システムとどう�
 - [Microsoft Azure Blog](https://azure.microsoft.com/en-us/blog/microsoft-build-2026-building-agentic-apps-with-microsoft-fabric-and-microsoft-databases/). "Microsoft Build 2026: Building agentic apps with Microsoft Fabric and Microsoft Databases"
 - [Kenton Varda (X)](https://x.com/KentonVarda/status/2084990137180590572). "This is a remake of Sandstorm.io, my startup from 10 years ago"
 
-{% end %}
+{% </references> %}
 
 <!-- textlint-enable -->

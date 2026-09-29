@@ -11,7 +11,7 @@ social_media_card = "ogp.webp"
 
 <!-- textlint-disable -->
 
-{{ image(src="povo.webp", alt="POVO2.0") }}
+{{< image src="povo.webp" alt="POVO2.0" />}}
 
 <!-- textlint-enable -->
 
@@ -26,7 +26,7 @@ social_media_card = "ogp.webp"
 
 <!-- textlint-disable -->
 
-{{ image(src="rakuten-plan.webp", alt="楽天モバイルプラン") }}
+{{< image src="rakuten-plan.webp" alt="楽天モバイルプラン" />}}
 
 <!-- textlint-enable -->
 

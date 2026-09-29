@@ -13,7 +13,7 @@ local_image = "cover.webp"
 
 <!-- textlint-disable -->
 
-{{ image(src="cover.webp",alt="Cover") }}
+{{< image src="cover.webp" alt="Cover" />}}
 
 <!-- textlint-enable -->
 
@@ -32,7 +32,7 @@ local_image = "cover.webp"
 : 135個以上のイクラ納品となっていますが、実績で変わってしまうので150個程度は納品しておきたい。
 <!-- textlint-disable -->
 
-{{ youtube(id="91rvf2iRNIE")}}
+{{< youtube id="91rvf2iRNIE" />}}
 
 <!-- textlint-enable -->
 

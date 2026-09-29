@@ -13,7 +13,7 @@ local_image = "cover.avif"
 
 <!-- textlint-disable -->
 
-{{ image(src="cover.avif",alt="Cover") }}
+{{< image src="cover.avif" alt="Cover" />}}
 
 <!-- textlint-enable -->
 
@@ -63,7 +63,7 @@ SYSTEM61は、スチール弦のアコースティックギター向けに開発
 
 <!-- textlint-disable -->
 
-{{ youtube(id="EZKre34PkWo") }}
+{{< youtube id="EZKre34PkWo" />}}
 
 <!-- textlint-enable -->
 

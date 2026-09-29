@@ -12,7 +12,7 @@ local_image = "cover.jpg"
 <figure>
 
 <!-- textlint-disable -->
-{{ image(src="cover.jpg",alt="Cover") }}
+{{< image src="cover.jpg" alt="Cover" />}}
 <!-- textlint-enable -->
 
 <footer>

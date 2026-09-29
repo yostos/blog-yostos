@@ -11,7 +11,7 @@ social_media_card = "ogp.webp"
 
 <!-- textlint-disable -->
 
-{{ image(src="mail.webp", alt="Mail with AI") }}
+{{< image src="mail.webp" alt="Mail with AI" />}}
 
 <!-- textlint-enable -->
 

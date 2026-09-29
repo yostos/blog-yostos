@@ -9,7 +9,7 @@ tags = ["Creative", "Guitar"]
 social_media_card = "ogp.webp"
 +++
 
-{{ youtube(id="A5lpflkHU1o")}}
+{{< youtube id="A5lpflkHU1o" />}}
 
 マイアミサウンド全開で、今ではあまり聞けないなんとも懐かしい曲調です。
 確かレコーディングもマイアミだったかな。

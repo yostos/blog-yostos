@@ -27,6 +27,6 @@ social_media_card = "ogp.webp"
 
 <!-- textlint-disable -->
 
-{{ image(src="intel-vs-amd.webp", alt="Intel vs AMD") }}
+{{< image src="intel-vs-amd.webp" alt="Intel vs AMD" />}}
 
 <!-- textlint-enable -->

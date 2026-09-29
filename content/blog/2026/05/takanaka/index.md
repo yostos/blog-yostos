@@ -13,7 +13,7 @@ local_image = "cover.webp"
 
 <!-- textlint-disable -->
 
-{{ image(src="cover.webp",alt="Cover") }}
+{{< image src="cover.webp" alt="Cover" />}}
 
 <!-- textlint-enable -->
 
@@ -28,4 +28,4 @@ local_image = "cover.webp"
 
 [^1]: 渋谷公会堂
 
-{{ youtube(id="JakrL7xwhpg") }}
+{{< youtube id="JakrL7xwhpg" />}}

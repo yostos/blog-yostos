@@ -14,7 +14,7 @@ tldr = "三菱UFJ銀行がPPAP（パスワード付きZIPの別送）を廃止�
 
 <!-- textlint-disable -->
 
-{{ image(src="cover.webp", alt="Cover") }}
+{{< image src="cover.webp" alt="Cover" />}}
 
 <!-- textlint-enable -->
 
@@ -129,11 +129,11 @@ PKIが普及しなかった最大の理由が「最初の一歩を誰も踏み�
 
 <!-- textlint-disable -->
 
-{% references() %}
+{% <references> %}
 
 - [株式会社三菱UFJ銀行](https://www.bk.mufg.jp/info/pdf/20260608_send_attachments.pdf). 「当行からの添付ファイル送信方法の変更に関するご案内」（2026年6月8日）
 - [Coded Chords](/blog/2025/06/aws-sns/). 「AWSからSMSにメッセージを送る」（2025年6月9日）
 
-{% end %}
+{% </references> %}
 
 <!-- textlint-enable -->

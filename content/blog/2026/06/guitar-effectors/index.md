@@ -13,7 +13,7 @@ local_image = "cover.webp"
 
 <!-- textlint-disable -->
 
-{{ image(src="cover.webp", alt="Cover", link_to_self=true) }}
+{{< image src="cover.webp" alt="Cover" link_to_self={true} />}}
 
 <!-- textlint-enable -->
 

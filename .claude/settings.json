@@ -61,7 +61,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "FILE=$(jq -r '.tool_input.file_path') && echo \"$FILE\" | grep -q '^content/.*\\.md$' && grep -Pn '!\\[.*\\]\\(' \"$FILE\" 2>/dev/null | head -1 && echo '{\"reason\":\"Markdown画像記法 ![alt](path) を検出しました。image ショートコードを使い、textlint-disable/enable で囲んでください: <!-- textlint-disable --> {{ image(src=path, alt=text) }} <!-- textlint-enable -->\"}' || true"
+            "command": "FILE=$(jq -r '.tool_input.file_path') && echo \"$FILE\" | grep -q '^content/.*\\.md$' && grep -Pn '!\\[.*\\]\\(' \"$FILE\" 2>/dev/null | head -1 && echo '{\"reason\":\"Markdown画像記法 ![alt](path) を検出しました。image コンポーネントを使い、textlint-disable/enable で囲んでください: <!-- textlint-disable --> {{< image src=\\\"path\\\" alt=\\\"text\\\" />}} <!-- textlint-enable -->\"}' || true"
           }
         ]
       },
@@ -70,7 +70,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "FILE=$(jq -r '.tool_input.file_path') && echo \"$FILE\" | grep -q '^content/.*\\.md$' && grep -Pn '!\\[.*\\]\\(' \"$FILE\" 2>/dev/null | head -1 && echo '{\"reason\":\"Markdown画像記法 ![alt](path) を検出しました。image ショートコードを使い、textlint-disable/enable で囲んでください: <!-- textlint-disable --> {{ image(src=path, alt=text) }} <!-- textlint-enable -->\"}' || true"
+            "command": "FILE=$(jq -r '.tool_input.file_path') && echo \"$FILE\" | grep -q '^content/.*\\.md$' && grep -Pn '!\\[.*\\]\\(' \"$FILE\" 2>/dev/null | head -1 && echo '{\"reason\":\"Markdown画像記法 ![alt](path) を検出しました。image コンポーネントを使い、textlint-disable/enable で囲んでください: <!-- textlint-disable --> {{< image src=\\\"path\\\" alt=\\\"text\\\" />}} <!-- textlint-enable -->\"}' || true"
           }
         ]
       }

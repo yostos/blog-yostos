@@ -14,7 +14,7 @@ local_image = "transparent-divide.jpg"
 <!-- textlint-disable -->
 
 <figure>
-{{ image(src="transparent-divide.jpg",alt="Transparent Divide") }}
+{{< image src="transparent-divide.jpg" alt="Transparent Divide" />}}
 <figcaption>Transparent Divide</figcaption>
 </figure>
 

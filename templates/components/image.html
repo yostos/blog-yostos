@@ -1,0 +1,102 @@
+{#- ============================================================
+    image.html - Image component for Zola
+
+    Copyright (c) 2026 Toshiyuki Yoshida
+    Released under the MIT License.
+    https://opensource.org/licenses/MIT
+
+     Repository: https://github.com/yostos/blog-yostos
+
+
+    Renders an <img> tag with automatic path resolution,
+    image metadata (width/height), cache busting, and lazy loading.
+
+    Usage:
+      {{< image src="photo.avif" alt="説明" />}}
+
+    Parameters:
+      src          - Image path or remote URL (required)
+      alt          - Alt text for accessibility (recommended)
+      caption      - Caption text displayed below the image (optional)
+                     When specified, wraps output in <figure>/<figcaption>
+      lazy_loading - Enable lazy loading (default: true)
+      link_to_self - Wrap the image in a link to the image file itself,
+                     opening in a new tab (default: false)
+      page         - Implicit: the calling page, used to resolve
+                     colocated paths
+    ============================================================ -#}
+{% component image(src: string, @page = {}, alt = "", caption = "", lazy_loading = true, link_to_self = false) %}
+
+{#- Strip leading "./" from src to normalize colocated paths
+    e.g. "./photo.jpg" -> "photo.jpg" -#}
+{%- set src = src | trim_start(pat="./") -%}
+{%- set meta = {} -%}
+
+{#- ---- URL resolution ---- -#}
+{%- if src is starting_with(pat="http") -%}
+    {#- Remote image: use src as-is. Metadata cannot be retrieved
+        for external URLs, so width/height will not be set. -#}
+    {%- set image_url = src -%}
+
+{%- else -%}
+    {#- Local image: first try resolving relative to the page's
+        colocated directory (e.g. content/blog/my-post/photo.jpg).
+        This supports the co-location pattern where content and
+        assets live in the same directory. -#}
+    {%- set colocated_path = "" -%}
+    {%- if page and page.relative_path -%}
+        {%- set page_dirs = (page.relative_path | split(pat="/"))[:-1] -%}
+        {%- if page_dirs | length > 0 -%}
+            {%- set colocated_path = page_dirs | join(sep="/") ~ "/" -%}
+        {%- endif -%}
+    {%- endif -%}
+    {%- set resolved_path = colocated_path ~ src -%}
+    {%- set meta = get_image_metadata(path=resolved_path, allow_missing=true) -%}
+
+    {%- if meta -%}
+        {#- Colocated path resolved successfully -#}
+        {%- set image_url = get_url(path=resolved_path, cachebust=true) -%}
+
+    {%- else -%}
+        {#- Fallback: treat src as an absolute path from the project root.
+            This handles images placed under the static/ directory,
+            e.g. src="/images/shared.jpg"
+            If this also fails, output the URL anyway so the page does
+            not break; width/height will be omitted. This may indicate
+            a missing or misspelled image path. -#}
+        {%- set meta = get_image_metadata(path=src, allow_missing=true) -%}
+        {%- set image_url = get_url(path=src, cachebust=true) -%}
+    {%- endif -%}
+{%- endif -%}
+
+{#- ---- Output ----
+    The output is parsed as Markdown. Keep each tag complete on its own
+    line so Markdown treats it as an HTML block instead of wrapping the
+    image in <p>. -#}
+{%- set img_tag -%}
+<img src="{{ image_url }}" alt="{{ alt }}"
+{%- if meta and meta.width %} width="{{ meta.width }}"{% endif %}
+{%- if meta and meta.height %} height="{{ meta.height }}"{% endif %}
+{%- if lazy_loading %} loading="lazy"{% endif %} />
+{%- endset -%}
+{%- if caption %}
+<figure>
+{%- if link_to_self %}
+<a href="{{ image_url }}" target="_blank" rel="noopener">
+{%- endif %}
+{{ img_tag | safe }}
+{%- if link_to_self %}
+</a>
+{%- endif %}
+<figcaption>{{ caption }}</figcaption>
+</figure>
+{%- else %}
+{%- if link_to_self %}
+<a href="{{ image_url }}" target="_blank" rel="noopener">
+{%- endif %}
+{{ img_tag | safe }}
+{%- if link_to_self %}
+</a>
+{%- endif %}
+{%- endif %}
+{% endcomponent image %}

@@ -15,7 +15,7 @@ social_media_card = "ogp.webp"
 映画を見たこともなければ1967年当時のヒット状況など知りませんが、
 ラジオか何かでかなり後になって耳にしてからお気に入りです。
 
-{{ youtube(id="lni11gU5NcI")}}
+{{< youtube id="lni11gU5NcI" />}}
 
 Accoustic GuitarはEpiphone Texan、Clean GuitarはFender Stratocaster、Vocalは
 Synthesizer V、後はLogic Proの音源を使った打ち込みです。

@@ -15,7 +15,7 @@ tldr = "macOS TahoeでpCloud Driveが起動せず、開こうとするとOS全�
 
 <!-- textlint-disable -->
 
-{{ image(src="cover.webp",alt="Cover") }}
+{{< image src="cover.webp" alt="Cover" />}}
 
 <!-- textlint-enable -->
 
@@ -117,9 +117,9 @@ token = {"access_token":"<rclone config の認証で自動生成されるアク�
 
 <!-- textlint-disable -->
 
-{% aside(position="right") %}
+{% <aside position="right"> %}
 私はプライバシーを重視しているので、ヨーロッパリージョン(`eapi.pcloud.com`)を使っています。
-{% end %}
+{% </aside> %}
 
 <!-- textlint-enable -->
 
@@ -174,7 +174,7 @@ macOS Tahoeとの互換性によるpCloud Drive不具合から、一旦rcloneに
 
 <!-- textlint-disable -->
 
-{{ image(src="cost-comparison.svg", alt="2TBストレージの累計コスト。pCloudは2021年に約38,200円の買い切り、Dropboxは年額15,840円で累計が増え、約2.4年でpCloudが有利になる。") }}
+{{< image src="cost-comparison.svg" alt="2TBストレージの累計コスト。pCloudは2021年に約38,200円の買い切り、Dropboxは年額15,840円で累計が増え、約2.4年でpCloudが有利になる。" />}}
 
 <!-- textlint-enable -->
 
@@ -184,7 +184,7 @@ macOS Tahoeとの互換性によるpCloud Drive不具合から、一旦rcloneに
 
 <!-- textlint-disable -->
 
-{% references() %}
+{% <references> %}
 
 - [pCloud](https://www.pcloud.com/release-notes/mac-os.html). 「pCloud for macOS リリースノート」
 - [pCloud](https://www.pcloud.com/ja/help/general-help-center/what-if-i-uninstall-pcloud-from-my-computer). 「コンピュータからpCloudをアンインストールするとどうなりますか」
@@ -193,6 +193,6 @@ macOS Tahoeとの互換性によるpCloud Drive不具合から、一旦rcloneに
 - [rclone](https://rclone.org/pcloud/). "pCloud backend documentation"
 - [Mole](https://github.com/tw93/mole). "tw93/Mole"
 
-{% end %}
+{% </references> %}
 
 <!-- textlint-enable -->

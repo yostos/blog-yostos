@@ -21,7 +21,7 @@ tldr = """
 
 <!-- textlint-disable -->
 
-{{ image(src="cover.avif",alt="Cover") }}
+{{< image src="cover.avif" alt="Cover" />}}
 
 <!-- textlint-enable -->
 
@@ -55,7 +55,7 @@ AVIFは、Alliance for Open Media（AOMedia）が策定した静止画フォー�
 
 <!-- textlint-disable -->
 
-{{ aside(position="right", text="Can I useはWeb技術のブラウザ対応状況をまとめたサイト") }}
+{{< aside position="right" text="Can I useはWeb技術のブラウザ対応状況をまとめたサイト" />}}
 
 <!-- textlint-enable -->
 
@@ -201,13 +201,13 @@ OGP画像（`social_media_card`）はWebPのまま据え置きます。ブラウ
 
 <!-- textlint-disable -->
 
-{% references() %}
+{% <references> %}
 
 - [Alliance for Open Media](https://aomedia.org/press%20releases/alliance-to-deliver-next-generation-open-media-formats/). "Alliance for Open Media Established to Deliver Next-Generation Open Media Formats"
 - [AOMediaCodec](https://aomediacodec.github.io/av1-avif/). "AV1 Image File Format (AVIF)"
 - [Can I use](https://caniuse.com/avif). "AVIF image format"
 - [Cloudinary](https://github.com/cloudinary/ssimulacra2). "SSIMULACRA 2 - Structural SIMilarity Unveiling Local And Compression Related Artifacts"
 
-{% end %}
+{% </references> %}
 
 <!-- textlint-enable -->

@@ -11,4 +11,4 @@ social_media_card = "ogp.webp"
 
 昨年オープンしたShinra Yoro Valleyで温泉を堪能してきました。
 
-{{ youtube(id="HzTwnByRpRU") }}
+{{< youtube id="HzTwnByRpRU" />}}

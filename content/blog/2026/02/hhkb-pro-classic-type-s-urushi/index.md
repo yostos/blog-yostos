@@ -14,7 +14,7 @@ social_media_card = "ogp.webp"
 
 <!-- textlint-disable -->
 
-{{ image(src="./0.webp", alt="HHKB Professional Classic Type-S") }}
+{{< image src="./0.webp" alt="HHKB Professional Classic Type-S" />}}
 
 <!-- textlint-enable -->
 
@@ -66,7 +66,7 @@ Classic Type-Sの良さを挙げてみます。
 
 <!-- textlint-disable -->
 
-{{ image(src="./1.webp", alt="HHKB Professional専用漆塗Esc＆Controlキーセットの箱") }}
+{{< image src="./1.webp" alt="HHKB Professional専用漆塗Esc＆Controlキーセットの箱" />}}
 
 <!-- textlint-enable -->
 
@@ -84,7 +84,7 @@ PFUから発売されている
 
 <!-- textlint-disable -->
 
-{{ image(src="./2.webp", alt="HHKB Professional専用漆塗Esc＆Controlキーセットの内容") }}
+{{< image src="./2.webp" alt="HHKB Professional専用漆塗Esc＆Controlキーセットの内容" />}}
 
 <!-- textlint-enable -->
 
@@ -93,7 +93,7 @@ PFUから発売されている
 
 <!-- textlint-disable -->
 
-{{ image(src="./3.webp", alt="HHKB Professional専用漆塗Esc＆Controlキーセットのセット例") }}
+{{< image src="./3.webp" alt="HHKB Professional専用漆塗Esc＆Controlキーセットのセット例" />}}
 
 <!-- textlint-enable -->
 

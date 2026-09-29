@@ -14,7 +14,7 @@ local_image = "ground-palette.jpg"
 
 <!-- textlint-disable -->
 
-{{ image(src="ground-palette.jpg", alt="Ground Palette", caption="Ground Palette") }}
+{{< image src="ground-palette.jpg" alt="Ground Palette" caption="Ground Palette" />}}
 
 <!-- textlint-enable -->
 

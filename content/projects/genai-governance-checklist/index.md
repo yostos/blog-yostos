@@ -16,7 +16,7 @@ show_reading_time = false
 
 <!-- textlint-disable -->
 
-{{ image(src="cover.webp", alt="genai-governance-checklist") }}
+{{< image src="cover.webp" alt="genai-governance-checklist" />}}
 
 <!-- textlint-enable -->
 

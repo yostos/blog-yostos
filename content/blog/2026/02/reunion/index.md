@@ -16,7 +16,7 @@ social_media_card = "ogp.webp"
 
 <!-- textlint-disable -->
 
-{{ image(src="./cover.webp", alt="Cover") }}
+{{< image src="./cover.webp" alt="Cover" />}}
 
 <!-- textlint-enable -->
 
@@ -30,7 +30,7 @@ LiSA × Uruの「再会(produced by Ayase)」を
 パートを打ち込みで制作し、ミックスと
 マスタリングの工程に集中しています。
 
-{{ youtube(id="mQGICLmQVCs") }}
+{{< youtube id="mQGICLmQVCs" />}}
 
 ## トラック構成
 

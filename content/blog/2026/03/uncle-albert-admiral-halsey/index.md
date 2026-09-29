@@ -13,7 +13,7 @@ social_media_card = "ogp.webp"
 
 Paul McCartneyの「Uncle Albert/Admiral Halsey」を演奏してみました。
 
-{{ youtube(id="Wdb4h79IHGY") }}
+{{< youtube id="Wdb4h79IHGY" />}}
 
 この曲は1971年のアルバム「Ram」に収録された、Paul & Linda McCartney名義の楽曲です。ビートルズ解散後のポールにとって、ソロとしての初の全米No.1シングルとなりました。グラミー賞のBest Arrangement Accompanying Vocalist(s)も受賞しています。
 

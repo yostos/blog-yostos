@@ -9,7 +9,7 @@ tags = ["Entertainment", "Films"]
 social_media_card = "ogp.webp"
 +++
 
-{{ youtube(id="tk9FDjJd6zM") }}
+{{< youtube id="tk9FDjJd6zM" />}}
 
 ## Introduction
 

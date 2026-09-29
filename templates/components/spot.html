@@ -1,18 +1,19 @@
-{% set parts = geo | split(pat="?") %}
-{% set coords = parts[0] | replace(from="geo:", to="") | split(pat=",") %}
-{% set lat = coords[0] | trim %}
-{% set lon = coords[1] | trim %}
-{% set_global zoom = 15 %}
-{% if parts | length > 1 %}
-  {% for param in parts[1] | split(pat="&") %}
-    {% if param is starting_with("z=") %}
-      {% set_global zoom = param | replace(from="z=", to="") | trim %}
-    {% endif %}
-  {% endfor %}
-{% endif %}
-
+{% component spot(geo: string, name = "", address = "", tel = "", access = "") %}
+{#- Emit no blank lines: the output is parsed as Markdown, and indented
+    lines after a blank line inside an HTML block become a code block. -#}
+{%- set parts = geo | split(pat="?") %}
+{%- set coords = parts[0] | replace(from="geo:", to="") | split(pat=",") %}
+{%- set lat = coords[0] | trim %}
+{%- set lon = coords[1] | trim %}
+{%- set zoom = 15 %}
+{%- if parts | length > 1 %}
+  {%- for param in parts[1] | split(pat="&") %}
+    {%- if param is starting_with(pat="z=") %}
+      {%- set_global zoom = param | replace(from="z=", to="") | trim %}
+    {%- endif %}
+  {%- endfor %}
+{%- endif %}
 <div class="spot">
-
   <div class="spot-map">
     <div class="openstreetmap-wrapper">
       <div class="openstreetmap-container">
@@ -25,34 +26,28 @@
       </small>
     </div>
   </div>
-
-  {% if name or address or tel or access %}
+  {%- if name or address or tel or access %}
   <div class="spot-info">
-    {% if name %}
+    {%- if name %}
       <h4 class="spot-name">{{ name }}</h4>
-    {% endif %}
-
+    {%- endif %}
     <dl class="spot-meta">
-      {% if address %}
+      {%- if address %}
         <dt>住所</dt>
         <dd>{{ address }}</dd>
-      {% endif %}
-
-      {% if tel %}
+      {%- endif %}
+      {%- if tel %}
         <dt>電話</dt>
         <dd>{{ tel }}</dd>
-      {% endif %}
-
-      {% if access %}
+      {%- endif %}
+      {%- if access %}
         <dt>アクセス</dt>
         <dd>{{ access }}</dd>
-      {% endif %}
+      {%- endif %}
     </dl>
   </div>
-  {% endif %}
-
+  {%- endif %}
 </div>
-
 <script>
 (function(){
   var a={{ lat }},o={{ lon }},z={{ zoom }},
@@ -63,3 +58,4 @@
     +"&layer=mapnik&marker="+a+"%2C"+o;
 })();
 </script>
+{% endcomponent spot %}

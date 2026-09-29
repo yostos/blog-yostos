@@ -14,4 +14,4 @@ social_media_card = "ogp.webp"
 ゴタゴタしてなかなかサーモンランをできなかったので
 楽しかったなぁ。
 
-{{ youtube(id="-OMUu-IkZLI") }}
+{{< youtube id="-OMUu-IkZLI" />}}

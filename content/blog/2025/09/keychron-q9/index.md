@@ -11,7 +11,7 @@ social_media_card = "ogp.webp"
 
 <!-- textlint-disable -->
 
-{{ image(src="keychron-q9.webp", alt="Keychron Q9") }}
+{{< image src="keychron-q9.webp" alt="Keychron Q9" />}}
 
 <!-- textlint-enable -->
 

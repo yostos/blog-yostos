@@ -17,7 +17,7 @@ local_image = "cover.webp"
 tldr = "パランティアQ4決算は「AIを本気で使う企業」と「様子を見ている企業」の格差が既に修復不可能なレベルに達しつつあることを示しました。千葉銀行のような地銀でさえ動き始めた今、「汎用LLMを入れた」「IT部門に任せた」では遅い。生成AI導入が従来のIT投資と根本的に何が違うのかを整理します。"
 +++
 
-{{ image(src="cover.webp",alt="Cover") }}
+{{< image src="cover.webp" alt="Cover" />}}
 
 <details>
 <summary>Table of Contents</summary>
@@ -83,13 +83,13 @@ tldr = "パランティアQ4決算は「AIを本気で使う企業」と「様�
 
 <!-- textlint-disable -->
 
-{% references() %}
+{% <references> %}
 
 - [Fortune](https://fortune.com/). "[Palantir CEO Alex Karp says Trump has a point about the AI race: 'There's a real hesitance to adopt these kind of products in the West'](https://fortune.com/2026/02/04/palantir-ceo-alex-karp-europe-canada-falling-behind-ai-adoption-haves-have-nots/)" (Feb 4, 2026)
 - 日本経済新聞. 「千葉銀行、AIが2000人の業務代替へ 営業・人材育成など多領域」（2026年3月12日）
 - [千葉銀行](https://www.chibabank.co.jp/). 「[株式会社千葉銀行によるエッジテクノロジー株式会社の株式等に対する公開買付けの開始に関するお知らせ（概要版）](https://www.chibabank.co.jp/news/news20240906_02_001)」（2024年9月6日）
 - 日本経済新聞. 「千葉銀行、AIシステムのエッジテクノロジーをTOB」（2024年9月6日）
 
-{% end %}
+{% </references> %}
 
 <!-- textlint-enable -->

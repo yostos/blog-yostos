@@ -12,4 +12,4 @@ social_media_card = "ogp.webp"
 今シーズンあまりできませんでしたが、10周年おめでとう。
 久しぶりにやってみました。まぁ、いつもとかわりませんが。
 
-{{ youtube(id="7a0XixPJLYY") }}
+{{< youtube id="7a0XixPJLYY" />}}

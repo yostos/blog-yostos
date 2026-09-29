@@ -10,13 +10,13 @@ tags = ["Creative", "Guitar"]
 
 <!-- textlint-disable -->
 
-{% admonition(type="note", title="出典") %}
+{% <admonition type="note" title="出典"> %}
 この記事は [International Musician & Recording World, October 1975](https://www.muzines.co.uk/articles/yamaha-sg-175/6665) 掲載の Stephen Delft の記事です。
-{% end %}
+{% </admonition> %}
 
-{% aside(position="right") %}
+{% <aside position="right"> %}
 Stephen Delft はおそらく英国の個人ギター工房の製作者と思われます。
-{% end %}
+{% </aside> %}
 
 <!-- textlint-enable -->
 
@@ -41,9 +41,9 @@ SG-175は全体的にワンオフの個人工房のギター製作者を満足�
 
 <!-- textlint-disable -->
 
-{% aside(position="right") %}
+{% <aside position="right"> %}
 ヤマハでは「ホンジュラスマホガニー」とされています。当時の欧州のレビュー記事では本マホガニーに対して "American mahogany" という表現が使われていました。
-{% end %}
+{% </aside> %}
 
 <!-- textlint-enable -->
 
@@ -62,9 +62,9 @@ SG-175は全体的にワンオフの個人工房のギター製作者を満足�
 
 <!-- textlint-disable -->
 
-{% aside(position="right") %}
+{% <aside position="right"> %}
 私の個体は側面まで塗られていました。私のものは2回目のモディファイ後の最終版ですが、この記事はその前のバージョンだったための違いかもしれません。
-{% end %}
+{% </aside> %}
 
 <!-- textlint-enable -->
 
@@ -119,9 +119,9 @@ SG-175は、よく設計され、よく作られたギターであり、その�
 
 <!-- textlint-disable -->
 
-{% aside(position="right") %}
+{% <aside position="right"> %}
 つまり彼は、SG-175のネック構造、ボディ構造、木材、基本設計に価値があると考えており、SG-90も高く評価しています。
-{% end %}
+{% </aside> %}
 
 <!-- textlint-enable -->
 

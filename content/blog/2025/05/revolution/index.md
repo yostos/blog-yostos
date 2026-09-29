@@ -14,7 +14,7 @@ The Beatlesの"Revolution"のイントロの割れたCasinoの音が、
 折角コンソールをベースにした[Hudson Broadcast](https://amzn.to/4kEhheL)を購
 入したので、この曲を演奏してみました。
 
-{{ youtube(id="-yoaOUFM1V4") }}
+{{< youtube id="-yoaOUFM1V4" />}}
 
 Introのギターと、Rhythm GuitarはEpiphone CasinoをHudson Broadcastでめいっぱい歪ませ
 ています。もう一本はAriaPro II PE-1500RIをOverdriveとBroadcastを通しています

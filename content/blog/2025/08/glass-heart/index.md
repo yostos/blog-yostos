@@ -23,4 +23,4 @@ Netflixで配信が始まった『グラス・ハート』の評判がよいよ�
 るドラムを打ち込みで再現してみました。
 ヴォーカルはSynthesizer Vを使用しています。
 
-{{ youtube(id="pMUfGyDaMes") }}
+{{< youtube id="pMUfGyDaMes" />}}

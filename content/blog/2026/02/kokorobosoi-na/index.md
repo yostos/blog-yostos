@@ -15,7 +15,7 @@ social_media_card = "ogp.webp"
 
 <!-- textlint-disable -->
 
-{{ image(src="./cover.webp", alt="Cover") }}
+{{< image src="./cover.webp" alt="Cover" />}}
 
 <!-- textlint-enable -->
 
@@ -25,7 +25,7 @@ social_media_card = "ogp.webp"
 第2代目エンディングテーマ「心細いな」を
 コピーしてみました。
 
-{{ youtube(id="Jvi-Xf7mKP0") }}
+{{< youtube id="Jvi-Xf7mKP0" />}}
 
 この曲は第22話（1982年4月）から
 第43話（同年9月）まで使用された第2代目のエンディングテーマ曲です。

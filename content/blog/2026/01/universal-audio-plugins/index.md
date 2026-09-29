@@ -24,7 +24,7 @@ I took advantage of Universal Audio's sale to build my mastering-focused plugin 
 
 <!-- textlint-disable -->
 
-{{ image(src="pultec-eqp.webp", alt="Pultec EQP-1A") }}
+{{< image src="pultec-eqp.webp" alt="Pultec EQP-1A" />}}
 
 <!-- textlint-enable -->
 
@@ -34,13 +34,13 @@ The famous "low-end trick" of simultaneously boosting and cutting the low freque
 
 **In Logic Pro**, the Pultec EQP-1A is extremely versatile and can be used at multiple stages of production. As an **Audio FX insert on individual tracks**, it excels at shaping kick drums and bass guitars with the famous "low-end trick," adding clarity while maintaining weight. On vocal tracks, gentle high-frequency boosts add air and presence without harshness. The EQP-1A is also highly effective on **instrument buses** (such as drum buses or vocal buses), adding cohesive tonal shaping across grouped elements. Additionally, many mastering engineers use it on the final **master track** to add subtle sweetness and harmonic richness to the entire mix. The UAD plugin collection includes the HLF-3C for high frequencies and MEQ-5 for midrange, extending the Pultec family's sonic palette across the frequency spectrum.
 
-<div style={{ clear: 'both' }}></div>
+<div style={% raw %}{{ clear: 'both' }}{% endraw %}></div>
 
 ### LA-2A Tube Compressor
 
 <!-- textlint-disable -->
 
-{{ image(src="la-2a-comp.webp", alt="LA-2A Tube Compressor") }}
+{{< image src="la-2a-comp.webp" alt="LA-2A Tube Compressor" />}}
 
 <!-- textlint-enable -->
 
@@ -54,13 +54,13 @@ Some engineers use it on a **vocal bus** for group processing when handling back
 Unlike mix bus compressors, the LA-2A is rarely used on the master track.
 Its characteristics are best showcased when applied to specific sources rather than the entire mix.
 
-<div style={{ clear: 'both' }}></div>
+<div style={% raw %}{{ clear: 'both' }}{% endraw %}></div>
 
 ### Lexicon 224 Digital Reverb
 
 <!-- textlint-disable -->
 
-{{ image(src="lexicon-224.webp", alt="Lexicon 224 Digital Reverb") }}
+{{< image src="lexicon-224.webp" alt="Lexicon 224 Digital Reverb" />}}
 
 <!-- textlint-enable -->
 
@@ -70,13 +70,13 @@ Introduced in 1978, the Lexicon 224 revolutionized music production as the world
 
 The most common applications include drum overheads and room mics for creating classic 1980s drum ambience. Lead and background vocals benefit from added depth and dimension. Guitar solos and synth pads can create vast soundscapes. Using reverb on an Aux track (rather than as an insert) also conserves CPU resources. Multiple tracks can share the same reverb instance. Some engineers use the Lexicon 224 on **dedicated reverb buses for specific instruments** (such as "Drum Reverb" or "Vocal Reverb"). This enables different reverb settings for different sonic elements in the mix.
 
-<div style={{ clear: 'both' }}></div>
+<div style={% raw %}{{ clear: 'both' }}{% endraw %}></div>
 
 ### SSL G Bus Compressor
 
 <!-- textlint-disable -->
 
-{{ image(src="ssl-g-bus-comp.webp", alt="SSL G Bus Compressor") }}
+{{< image src="ssl-g-bus-comp.webp" alt="SSL G Bus Compressor" />}}
 
 <!-- textlint-enable -->
 
@@ -92,13 +92,13 @@ The SSL G Bus Compressor is also effective on **submix buses**. On drum buses, i
 It's also commonly used on instrument group buses (all guitars, all synths, background vocals) to create a more unified sound within each section.
 Unlike individual track compressors like the LA-2A, the SSL G Bus Compressor reveals its true value in processing multiple elements simultaneously. It's not suitable for application to single tracks.
 
-<div style={{ clear: 'both' }}></div>
+<div style={% raw %}{{ clear: 'both' }}{% endraw %}></div>
 
 ### Ampex ATR-102 Mastering Tape Recorder
 
 <!-- textlint-disable -->
 
-{{ image(src="ampex-atr-102.webp", alt="Ampex ATR-102 Mastering Tape Recorder") }}
+{{< image src="ampex-atr-102.webp" alt="Ampex ATR-102 Mastering Tape Recorder" />}}
 
 <!-- textlint-enable -->
 

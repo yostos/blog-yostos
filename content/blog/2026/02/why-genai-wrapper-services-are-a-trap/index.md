@@ -17,17 +17,17 @@ mermaid = true
 
 <!-- textlint-disable -->
 
-{% admonition(type="note") %}
+{% <admonition type="note"> %}
 この記事は
 [Zenn.dev](https://zenn.dev/yostos/articles/why-genai-wrapper-services-are-a-trap)
 に掲載した記事の転載です。
-{% end %}
+{% </admonition> %}
 
 <!-- textlint-enable -->
 
 <!-- textlint-disable -->
 
-{{ image(src="./cover.webp", alt="Cover") }}
+{{< image src="./cover.webp" alt="Cover" />}}
 
 <!-- textlint-enable -->
 
@@ -46,7 +46,7 @@ mermaid = true
 
 <!-- textlint-disable -->
 
-{{ linkcard(url="https://www.ccsnet.co.jp/service/c-chatsupport/") }}
+{{< linkcard url="https://www.ccsnet.co.jp/service/c-chatsupport/" />}}
 
 <!-- textlint-enable -->
 
@@ -54,9 +54,9 @@ mermaid = true
 
 <!-- textlint-disable -->
 
-{% admonition(type="warning") %}
+{% <admonition type="warning"> %}
 以下の分析はすべて2026年2月時点のWebサイト上の公開情報にもとづく筆者個人の見解であり、サービスの内部実装を直接検証したものではありません。実際のサービスには公開されていない機能や価格優位性がある可能性があります。導入を検討される際は、各サービス提供者の最新情報を直接ご確認ください。
-{% end %}
+{% </admonition> %}
 
 <!-- textlint-enable -->
 
@@ -76,13 +76,13 @@ C-chatSupportの場合、月額5万円（キャンペーン価格、通常7万�
 
 <!-- textlint-disable -->
 
-{% mermaid() %}
+{% <mermaid> %}
 xychart-beta
 title "50ユーザーの月額基本料金（万円）"
 x-axis ["C-chatSupport", "ChatGPT Business", "Claude Team", "M365 Copilot"]
 y-axis "万円" 0 --> 25
 bar [5, 19, 19, 23]
-{% end %}
+{% </mermaid> %}
 
 <!-- textlint-enable -->
 

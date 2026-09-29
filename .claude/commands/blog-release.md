@@ -41,7 +41,7 @@ Release blog infrastructure changes through a branch-based workflow.
 - Show the current latest tag with `git tag --sort=-v:refname | head -5`
 - Based on the changes, propose a semver version:
   - Patch (Z): bug fixes, minor config tweaks
-  - Minor (Y): new features, new shortcodes, new templates
+  - Minor (Y): new features, new components, new templates
   - Major (X): breaking changes, major restructuring
 - Ask the user to confirm or adjust the version
 - `git tag v<X.Y.Z>`

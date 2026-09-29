@@ -13,7 +13,7 @@ local_image = "katori.webp"
 
 <!-- textlint-disable -->
 
-{{ image(src="katori.webp",alt="香取神宮",caption="香取神宮") }}
+{{< image src="katori.webp" alt="香取神宮" caption="香取神宮" />}}
 
 <!-- textlint-enable -->
 
@@ -40,7 +40,7 @@ local_image = "katori.webp"
 
 <!-- textlint-disable -->
 
-{{ image(src="ikisu.webp",alt="息栖神社",caption="息栖神社") }}
+{{< image src="ikisu.webp" alt="息栖神社" caption="息栖神社" />}}
 
 <!-- textlint-enable -->
 

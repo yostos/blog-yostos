@@ -1,6 +1,16 @@
-# tabi テーマ ショートコード一覧
+# tabi テーマ コンポーネント一覧
 
-tabi テーマで使用できるショートコードのリファレンスです。
+tabi テーマ（v5 以降）で使用できるコンポーネントのリファレンスです。
+
+Zola 0.23 でショートコードは廃止され、Tera 2 のコンポーネントに置き換わりました。
+記事本文からの呼び出し方は次の 2 通りです。
+
+- インライン: `{{< name key="value" />}}`
+- ブロック: `{% <name key="value"> %}` 〜 `{% </name> %}`
+
+文字列以外の値（真偽値・数値など）は `{...}` で囲みます（例: `full_width={true}`）。
+本文全体が Tera で処理されるため、`{{ }}` や `{% %}` をそのまま表示したいコード例は
+`{% raw %}` 〜 `{% endraw %}` で囲みます。
 
 ## Admonition（注意書き）
 
@@ -10,16 +20,16 @@ tabi テーマで使用できるショートコードのリファレンスです
 `danger`（赤）
 
 ```markdown
-{{ admonition(type="warning", text="短い警告メッセージ") }}
+{{< admonition type="warning" text="短い警告メッセージ" />}}
 ```
 
 複数行の場合:
 
 ```markdown
-{% admonition(type="warning", title="カスタムタイトル") %}
+{% <admonition type="warning" title="カスタムタイトル"> %}
 長い内容をここに書けます。
 Markdown も使用可能です。
-{% end %}
+{% </admonition> %}
 ```
 
 パラメータ:
@@ -31,17 +41,17 @@ Markdown も使用可能です。
 **使用例:**
 
 ```markdown
-{% admonition(type="warning", title="互換性に関する注意") %}
+{% <admonition type="warning" title="互換性に関する注意"> %}
 この機能は Chrome 90 以降でのみ動作します。
 古いブラウザでは正常に表示されない可能性があります。
-{% end %}
+{% </admonition> %}
 
-{{ admonition(type="tip", text="npm install --save-dev を使うと開発依存関係として追加されます。") }}
+{{< admonition type="tip" text="npm install --save-dev を使うと開発依存関係として追加されます。" />}}
 
-{% admonition(type="danger", title="データ損失の危険性") %}
+{% <admonition type="danger" title="データ損失の危険性"> %}
 この操作を実行すると、既存のデータが**完全に削除**されます。
 バックアップを取ってから実行してください。
-{% end %}
+{% </admonition> %}
 ```
 
 ## Aside（サイドノート）
@@ -49,16 +59,16 @@ Markdown も使用可能です。
 本文の横に補足情報を表示します（PC では余白に、モバイルでは独立ブロックに）。
 
 ```markdown
-{{ aside(text="補足情報をここに書きます。") }}
+{{< aside text="補足情報をここに書きます。" />}}
 ```
 
 複数行の場合:
 
 ```markdown
-{% aside(position="right") %}
+{% <aside position="right"> %}
 長い補足情報。
 Markdown も使用可能。
-{% end %}
+{% </aside> %}
 ```
 
 パラメータ:
@@ -69,18 +79,18 @@ Markdown も使用可能。
 
 ```markdown
 React は Facebook が開発した JavaScript ライブラリです。
-{% aside() %}
+{% <aside> %}
 2013年にオープンソース化され、現在では最も人気のある
 フロントエンドフレームワークの一つとなっています。
-{% end %}
+{% </aside> %}
 
-{{ aside(text="TypeScript は Microsoft が開発した JavaScript の
-スーパーセットです。") }}
+{{< aside text="TypeScript は Microsoft が開発した JavaScript の
+スーパーセットです。" />}}
 ```
 
-## 画像ショートコード
+## 画像コンポーネント
 
-すべての画像ショートコードで使用可能な共通パラメータ:
+すべての画像コンポーネントで使用可能な共通パラメータ:
 - `raw_path`: true にすると src をそのまま使用
 - `inline`: true にするとインライン表示
 - `full_width`: true にするとヘッダー幅まで拡大
@@ -89,15 +99,11 @@ React は Facebook が開発した JavaScript ライブラリです。
 **共通パラメータの使用例:**
 
 ```markdown
-{{ invertible_image(src="diagram.webp", alt="図",
-   full_width=true) }}
+{{< invertible_image src="diagram.webp" alt="図" full_width={true} />}}
 
-{{ dimmable_image(src="photo.webp", alt="写真",
-   inline=true, lazy_loading=false) }}
+{{< dimmable_image src="photo.webp" alt="写真" inline={true} lazy_loading={false} />}}
 
-{{ dual_theme_image(light_src="ui-light.webp",
-   dark_src="ui-dark.webp", alt="UI",
-   raw_path=true) }}
+{{< dual_theme_image light_src="ui-light.webp" dark_src="ui-dark.webp" alt="UI" raw_path={true} />}}
 ```
 
 ### dual_theme_image（ライト/ダーク切り替え画像）
@@ -105,16 +111,13 @@ React は Facebook が開発した JavaScript ライブラリです。
 ライトモードとダークモードで異なる画像を表示します。
 
 ```markdown
-{{ dual_theme_image(light_src="img/day.webp", dark_src="img/night.webp",
-   alt="説明") }}
+{{< dual_theme_image light_src="img/day.webp" dark_src="img/night.webp" alt="説明" />}}
 ```
 
 **使用例:**
 
 ```markdown
-{{ dual_theme_image(light_src="screenshots/ui-light.webp",
-   dark_src="screenshots/ui-dark.webp",
-   alt="アプリケーションのUI") }}
+{{< dual_theme_image light_src="screenshots/ui-light.webp" dark_src="screenshots/ui-dark.webp" alt="アプリケーションのUI" />}}
 ```
 
 ### invertible_image（反転画像）
@@ -122,17 +125,15 @@ React は Facebook が開発した JavaScript ライブラリです。
 ダークモードで色を反転します。グラフや図に適しています。
 
 ```markdown
-{{ invertible_image(src="img/graph.webp", alt="グラフ") }}
+{{< invertible_image src="img/graph.webp" alt="グラフ" />}}
 ```
 
 **使用例:**
 
 ```markdown
-{{ invertible_image(src="diagrams/architecture.webp",
-   alt="システムアーキテクチャ図") }}
+{{< invertible_image src="diagrams/architecture.webp" alt="システムアーキテクチャ図" />}}
 
-{{ invertible_image(src="charts/performance.webp",
-   alt="パフォーマンス比較グラフ", full_width=true) }}
+{{< invertible_image src="charts/performance.webp" alt="パフォーマンス比較グラフ" full_width={true} />}}
 ```
 
 ### dimmable_image（減光画像）
@@ -140,14 +141,13 @@ React は Facebook が開発した JavaScript ライブラリです。
 ダークモードで画像を暗くします。明るい写真に適しています。
 
 ```markdown
-{{ dimmable_image(src="img/photo.webp", alt="写真") }}
+{{< dimmable_image src="img/photo.webp" alt="写真" />}}
 ```
 
 **使用例:**
 
 ```markdown
-{{ dimmable_image(src="photos/sunset.webp",
-   alt="夕焼けの風景写真") }}
+{{< dimmable_image src="photos/sunset.webp" alt="夕焼けの風景写真" />}}
 ```
 
 ### image_hover（ホバー切り替え画像）
@@ -155,17 +155,13 @@ React は Facebook が開発した JavaScript ライブラリです。
 マウスホバーで画像を切り替えます。ビフォー/アフターの比較に適しています。
 
 ```markdown
-{{ image_hover(default_src="img/before.webp", hovered_src="img/after.webp",
-   default_alt="変更前", hovered_alt="変更後") }}
+{{< image_hover default_src="img/before.webp" hovered_src="img/after.webp" default_alt="変更前" hovered_alt="変更後" />}}
 ```
 
 **使用例:**
 
 ```markdown
-{{ image_hover(default_src="optimization/before.webp",
-   hovered_src="optimization/after.webp",
-   default_alt="最適化前のパフォーマンス",
-   hovered_alt="最適化後のパフォーマンス") }}
+{{< image_hover default_src="optimization/before.webp" hovered_src="optimization/after.webp" default_alt="最適化前のパフォーマンス" hovered_alt="最適化後のパフォーマンス" />}}
 ```
 
 ### image_toggler（クリック切り替え画像）
@@ -173,17 +169,13 @@ React は Facebook が開発した JavaScript ライブラリです。
 クリックで画像を切り替えます。
 
 ```markdown
-{{ image_toggler(default_src="img/a.webp", toggled_src="img/b.webp",
-   default_alt="画像A", toggled_alt="画像B") }}
+{{< image_toggler default_src="img/a.webp" toggled_src="img/b.webp" default_alt="画像A" toggled_alt="画像B" />}}
 ```
 
 **使用例:**
 
 ```markdown
-{{ image_toggler(default_src="settings/default.webp",
-   toggled_src="settings/custom.webp",
-   default_alt="デフォルト設定",
-   toggled_alt="カスタム設定") }}
+{{< image_toggler default_src="settings/default.webp" toggled_src="settings/custom.webp" default_alt="デフォルト設定" toggled_alt="カスタム設定" />}}
 ```
 
 ### full_width_image（全幅画像）
@@ -191,14 +183,13 @@ React は Facebook が開発した JavaScript ライブラリです。
 ヘッダー幅まで拡大した画像を表示します。
 
 ```markdown
-{{ full_width_image(src="img/wide.webp", alt="ワイド画像") }}
+{{< full_width_image src="img/wide.webp" alt="ワイド画像" />}}
 ```
 
 **使用例:**
 
 ```markdown
-{{ full_width_image(src="screenshots/dashboard.webp",
-   alt="ダッシュボード全体のスクリーンショット") }}
+{{< full_width_image src="screenshots/dashboard.webp" alt="ダッシュボード全体のスクリーンショット" />}}
 ```
 
 ## Mermaid（ダイアグラム）
@@ -207,11 +198,11 @@ Mermaid 記法でダイアグラムを描画します。使用するには front
 `mermaid = true` を設定する必要があります。
 
 ```markdown
-{% mermaid() %}
+{% <mermaid> %}
 flowchart LR
     A[開始] --> B[処理]
     B --> C[終了]
-{% end %}
+{% </mermaid> %}
 ```
 
 パラメータ:
@@ -221,7 +212,7 @@ flowchart LR
 **使用例:**
 
 ```markdown
-{% mermaid() %}
+{% <mermaid> %}
 sequenceDiagram
     participant User
     participant App
@@ -230,15 +221,15 @@ sequenceDiagram
     App->>API: 認証リクエスト
     API-->>App: トークン
     App-->>User: ログイン成功
-{% end %}
+{% </mermaid> %}
 
-{% mermaid(full_width=true) %}
+{% <mermaid full_width={true}> %}
 graph TD
     A[ユーザー入力] --> B{バリデーション}
     B -->|OK| C[データ保存]
     B -->|NG| D[エラー表示]
     C --> E[成功メッセージ]
-{% end %}
+{% </mermaid> %}
 ```
 
 ## remote_text（外部テキスト埋め込み）
@@ -247,7 +238,7 @@ graph TD
 
 ````markdown
 ```python
-{{ remote_text(src="https://example.com/script.py") }}
+{{< remote_text src="https://example.com/script.py" />}}
 ```
 ````
 
@@ -260,12 +251,11 @@ graph TD
 
 ````markdown
 ```python
-{{ remote_text(src="https://raw.githubusercontent.com/user/repo/main/example.py") }}
+{{< remote_text src="https://raw.githubusercontent.com/user/repo/main/example.py" />}}
 ```
 
 ```rust
-{{ remote_text(src="https://raw.githubusercontent.com/user/repo/main/src/main.rs",
-   start=10, end=25) }}
+{{< remote_text src="https://raw.githubusercontent.com/user/repo/main/src/main.rs" start={10} end={25} />}}
 ```
 ````
 
@@ -274,17 +264,14 @@ graph TD
 原文と翻訳の両方を表示する引用ブロックです。
 
 ```markdown
-{{ multilingual_quote(original="原文", translated="翻訳", author="著者名") }}
+{{< multilingual_quote original="原文" translated="翻訳" author="著者名" />}}
 ```
 
 **使用例:**
 
 ```markdown
-{{ multilingual_quote(
-   original="The only way to do great work is to love what you do.",
-   translated="偉大な仕事をする唯一の方法は、
-   自分がやっていることを愛することです。",
-   author="Steve Jobs") }}
+{{< multilingual_quote original="The only way to do great work is to love what you do." translated="偉大な仕事をする唯一の方法は、
+   自分がやっていることを愛することです。" author="Steve Jobs" />}}
 ```
 
 ## references（参考文献）
@@ -292,17 +279,17 @@ graph TD
 ハンギングインデントの参考文献リストを作成します。
 
 ```markdown
-{% references() %}
+{% <references> %}
 著者名 (年). タイトル. *ジャーナル名*, 巻(号), ページ.
 
 次の参考文献...
-{% end %}
+{% </references> %}
 ```
 
 **使用例:**
 
 ```markdown
-{% references() %}
+{% <references> %}
 Smith, J. (2024). Understanding Web Performance. *Journal of Web
 Development*, 15(3), 234-256.
 
@@ -310,7 +297,7 @@ Tanaka, T. (2023). Modern JavaScript Patterns. O'Reilly Media.
 
 Mozilla Developer Network. (2024). CSS Grid Layout.
 https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout
-{% end %}
+{% </references> %}
 ```
 
 ## spoiler（ネタバレ/スポイラー）
@@ -318,7 +305,7 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout
 クリックするまでテキストをぼかして隠します。
 
 ```markdown
-答えは {{ spoiler(text="42") }} です。
+答えは {{< spoiler text="42" />}} です。
 ```
 
 パラメータ:
@@ -329,10 +316,9 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout
 
 ```markdown
 クイズ: JavaScriptで非同期処理を扱う方法は？
-答え: {{ spoiler(text="Promise、async/await、コールバック") }}
+答え: {{< spoiler text="Promise、async/await、コールバック" />}}
 
-映画のラスト: {{ spoiler(text="主人公は実は幽霊だった",
-   fixed_blur=true) }}
+映画のラスト: {{< spoiler text="主人公は実は幽霊だった" fixed_blur={true} />}}
 ```
 
 ## wide_container（幅広コンテナ）
@@ -340,19 +326,19 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout
 テーブルやコードブロックをヘッダー幅まで拡大します。
 
 ```markdown
-{% wide_container() %}
+{% <wide_container> %}
 
 | 列1 | 列2 | 列3 |
 |-----|-----|-----|
 | A   | B   | C   |
 
-{% end %}
+{% </wide_container> %}
 ```
 
 **使用例:**
 
 ```markdown
-{% wide_container() %}
+{% <wide_container> %}
 
 | フレームワーク | 初回読込 | バンドルサイズ | TypeScript | 学習曲線 |
 |---------------|---------|--------------|-----------|---------|
@@ -361,7 +347,7 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout
 | Angular       | 普通    | 130 KB       | ✅        | 高      |
 | Svelte        | 非常に速い | 2 KB      | ✅        | 低      |
 
-{% end %}
+{% </wide_container> %}
 ```
 
 ## force_text_direction（テキスト方向強制）
@@ -369,9 +355,9 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout
 テキストの方向を強制的に変更します。
 
 ```markdown
-{% force_text_direction(direction="rtl") %}
+{% <force_text_direction direction="rtl"> %}
 右から左に表示されるテキスト
-{% end %}
+{% </force_text_direction> %}
 ```
 
 パラメータ:
@@ -380,13 +366,13 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout
 **使用例:**
 
 ```markdown
-{% force_text_direction(direction="rtl") %}
+{% <force_text_direction direction="rtl"> %}
 مرحبا بك في مدونتي
-{% end %}
+{% </force_text_direction> %}
 
-{% force_text_direction(direction="ltr") %}
+{% <force_text_direction direction="ltr"> %}
 This text is forced left-to-right even in RTL context
-{% end %}
+{% </force_text_direction> %}
 ```
 
 ## iine（いいねボタン）
@@ -394,7 +380,7 @@ This text is forced left-to-right even in RTL context
 iine.to のいいねボタンを追加します。
 
 ```markdown
-{{ iine(slug="/blog/post/like", icon="heart", label="いいね") }}
+{{< iine slug="/blog/post/like" icon="heart" label="いいね" />}}
 ```
 
 パラメータ:
@@ -406,15 +392,14 @@ iine.to のいいねボタンを追加します。
 
 ```markdown
 記事は役に立ちましたか？
-{{ iine(icon="👍", label="役に立った") }}
+{{< iine icon="👍" label="役に立った" />}}
 
-{{ iine(slug="/blog/tutorial/react", icon="heart",
-   label="この記事にいいね") }}
+{{< iine slug="/blog/tutorial/react" icon="heart" label="この記事にいいね" />}}
 ```
 
 ## コードブロックのファイル名表示
 
-Zola 0.20.0 以降の標準機能です（ショートコードではありません）。
+Zola 0.20.0 以降の標準機能です（コンポーネントではありません）。
 
 ````markdown
 ```rust,name=src/main.rs

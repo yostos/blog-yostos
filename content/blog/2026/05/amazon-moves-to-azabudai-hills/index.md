@@ -13,7 +13,7 @@ local_image = "cover.webp"
 
 <!-- textlint-disable -->
 
-{{ image(src="cover.webp", alt="Cover") }}
+{{< image src="cover.webp" alt="Cover" />}}
 
 <!-- textlint-enable -->
 
@@ -34,9 +34,9 @@ local_image = "cover.webp"
 
 ## References
 
-{% references() %}
+{% <references> %}
 
 - [Amazonプレスセンター](https://press.aboutamazon.com/jp/2026/5/amazon-expands-tokyo-office).「Amazon、東京オフィスを拡張し、麻布台ヒルズに新拠点を開設」
 - [東洋経済オンライン](https://toyokeizai.net/articles/-/652759).「虎ノ門『2つのヒルズ』期待と不安が交錯する事情　森ビルの大量供給で激しいテナント争奪戦」(2023年2月17日)
 
-{% end %}
+{% </references> %}

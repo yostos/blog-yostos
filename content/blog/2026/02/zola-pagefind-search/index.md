@@ -75,13 +75,13 @@ CloudCannonが開発した静的サイト向けの
 
 <!-- textlint-disable -->
 
-{% aside(position="right") %}
+{% <aside position="right"> %}
 セグメンテーションとは、
 文章を単語に分割する処理。
 英語のように単語がスペースで
 区切られていない日本語・中国語・韓国語は
 単語を区切る処理が必要。
-{% end %}
+{% </aside> %}
 
 <!-- textlint-enable -->
 
@@ -95,13 +95,13 @@ Extended版が自動的にダウンロードされます。
 
 <!-- textlint-disable -->
 
-{% admonition(type="note", title="Note") %}
+{% <admonition type="note" title="Note"> %}
 PagefindのセグメンテーションはMeCabのような
 品詞分解を行う形態素解析ではなく、
 Unicode標準に基づく単語境界の検出です。
 そのため「走る」で「走った」がヒットするような
 活用形の展開（ステミング）には対応していません。
-{% end %}
+{% </admonition> %}
 
 <!-- textlint-enable -->
 
@@ -175,9 +175,9 @@ force_language: ja
 `templates/search.html`にPagefind UIを配置します。
 
 ```html,name=templates/search.html
-{% extends "base.html" %}
+{% raw %}{% extends "base.html" %}{% endraw %}
 
-{% block main_content %}
+{% raw %}{% block main_content %}{% endraw %}
 <main>
   <div class="wide-container">
     <link
@@ -212,7 +212,7 @@ force_language: ja
     </script>
   </div>
 </main>
-{% endblock main_content %}
+{% raw %}{% endblock main_content %}{% endraw %}
 ```
 
 tabiの`base.html`を継承することで、

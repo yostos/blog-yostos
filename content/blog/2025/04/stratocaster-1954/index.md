@@ -15,7 +15,7 @@ I always wanted an original Fender🎸 at least once in my life. And by purechan
 
 <!-- textlint-disable -->
 
-{{ image(src="strato.webp", alt="Stratocaster") }}
+{{< image src="strato.webp" alt="Stratocaster" />}}
 
 <!-- textlint-enable -->
 

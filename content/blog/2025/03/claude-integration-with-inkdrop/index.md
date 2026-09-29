@@ -108,7 +108,7 @@ chmod +x ~/bin/inkdrop-mcp
 
 <!-- textlint-disable -->
 
-{{ image(src="setup-claude.webp", alt="Setting画面") }}
+{{< image src="setup-claude.webp" alt="Setting画面" />}}
 
 <!-- textlint-enable -->
 
@@ -167,7 +167,7 @@ MCP統合で何ができるかは、[inkdrop/mcp-server](https://github.com/inkd
 
 <!-- textlint-disable -->
 
-{{ image(src="dialog-claude.webp", alt="確認画面") }}
+{{< image src="dialog-claude.webp" alt="確認画面" />}}
 
 <!-- textlint-enable -->
 
@@ -176,7 +176,7 @@ MCP統合で何ができるかは、[inkdrop/mcp-server](https://github.com/inkd
 
 <!-- textlint-disable -->
 
-{{ image(src="exampe-claude.webp", alt="結果画面") }}
+{{< image src="exampe-claude.webp" alt="結果画面" />}}
 
 <!-- textlint-enable -->
 

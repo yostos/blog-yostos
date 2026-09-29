@@ -20,7 +20,7 @@ social_media_card = "ogp.webp"
 
 <!-- textlint-disable -->
 
-{{ image(src="openai-security.webp", alt="セキュリティ設定画面") }}
+{{< image src="openai-security.webp" alt="セキュリティ設定画面" />}}
 
 <!-- textlint-enable -->
 

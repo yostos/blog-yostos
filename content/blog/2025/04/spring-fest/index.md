@@ -12,4 +12,4 @@ social_media_card = "ogp.webp"
 もう大きな改修はないはずですが、
 Nintedoはこうやってフェスを定期的にやってくれています。ありがたい。
 
-{{ youtube(id="5s3rJRe7GwY") }}
+{{< youtube id="5s3rJRe7GwY" />}}

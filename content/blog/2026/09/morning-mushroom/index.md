@@ -13,7 +13,7 @@ local_image = "cover.avif"
 
 <!-- textlint-disable -->
 
-{{ image(src="cover.avif", alt="Cover", caption="オオシロカラカサタケ") }}
+{{< image src="cover.avif" alt="Cover" caption="オオシロカラカサタケ" />}}
 
 <!-- textlint-enable -->
 
@@ -23,7 +23,7 @@ local_image = "cover.avif"
 
 <!-- textlint-disable -->
 
-{{ image(src="1.avif", alt="オオシロカラカサタケの幼菌", caption="オオシロカラカサタケの幼菌") }}
+{{< image src="1.avif" alt="オオシロカラカサタケの幼菌" caption="オオシロカラカサタケの幼菌" />}}
 
 <!-- textlint-enable -->
 
@@ -33,7 +33,7 @@ local_image = "cover.avif"
 
 <!-- textlint-disable -->
 
-{{ image(src="2.avif", alt="シバフタケ", caption="シバフタケ") }}
+{{< image src="2.avif" alt="シバフタケ" caption="シバフタケ" />}}
 
 <!-- textlint-enable -->
 

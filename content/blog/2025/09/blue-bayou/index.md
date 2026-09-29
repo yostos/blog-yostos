@@ -14,7 +14,7 @@ I watched the Denzel Washington movie "Man on Fire" on Netflix, a slightly older
 The song that the protagonist holds dear as his emotional anchor was Linda Ronstadt's "Blue Bayou".
 Feeling nostalgic, I decided to perform it.
 
-{{ youtube(id="_tHeXBZrlsw") }}
+{{< youtube id="_tHeXBZrlsw" />}}
 
 1977 was the year I entered junior high school and started listening to Western music.
 That year, songs like "How Deep Is Your Love" (Bee Gees), "You Light Up My Life" (Debby Boone),

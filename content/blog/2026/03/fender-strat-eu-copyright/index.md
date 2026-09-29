@@ -22,7 +22,7 @@ tldr = """
 
 <!-- textlint-disable -->
 
-{{ image(src="cover.webp", alt="Cover") }}
+{{< image src="cover.webp" alt="Cover" />}}
 
 <!-- textlint-enable -->
 
@@ -97,12 +97,12 @@ Stratocasterの発売は1954年です。意匠権（design right）であればE
 
 <!-- textlint-disable -->
 
-{% references() %}
+{% <references> %}
 
 - Fender. Newsroom: "[FENDER WINS LANDMARK COURT RULING PROTECTING THE ICONIC STRATOCASTER® BODY DESIGN](https://spotlight.fender.com/newsroom/news/1004)"
 - [Bird & Bird](https://www.twobirds.com/en/news-and-deals/2026/germany/bird-and-bird-erstreitet-wegweisendes-urteil-fuer-fender-zum-schutz-des-stratocaster-designs). "Bird & Bird secures landmark ruling for Fender protecting iconic Stratocaster® design"
 - [PRS Guitars Forum](https://forums.prsguitars.com/threads/fender-wins-lawsuit-in-germany-eu-over-copyright-on-the-stratocaster-body-shape-silver-sky-impacted.63262/). "Fender wins lawsuit in Germany/EU over copyright on the Stratocaster body shape (Silver Sky impacted?)"
 
-{% end %}
+{% </references> %}
 
 <!-- textlint-enable -->

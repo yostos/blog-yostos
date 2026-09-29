@@ -13,7 +13,7 @@ social_media_card = "ogp.webp"
 
 ## Feel Like Makin' Love
 
-{{ youtube(id="bwrFS81nme0")}}
+{{< youtube id="bwrFS81nme0" />}}
 
 最初はEpiphone Casino、2ターン目はストラトにオートワウ、3ターン目はストラト
 にオーバードライブを掛けています。
@@ -28,4 +28,4 @@ Neo Soul風になるのでよく練習曲になるのでしょうか。
 Noe Soul風味な曲を弾いたらロハスな気分になったので、豆腐とミニトマトのたまご
 スープを作って海岸で海風を楽しみながらランチに行ってきました。
 
-{{ youtube(id="zovwWyZCFMA") }}
+{{< youtube id="zovwWyZCFMA" />}}

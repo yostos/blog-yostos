@@ -43,7 +43,7 @@ Blogの"Spotlight"という**Template**をベースにカスタマイズしま�
 
 <!-- textlint-disable -->
 
-{{ image(src="spotlight.webp", alt="Tailwind Plus: Spotlight template") }}
+{{< image src="spotlight.webp" alt="Tailwind Plus: Spotlight template" />}}
 
 <!-- textlint-enable -->
 

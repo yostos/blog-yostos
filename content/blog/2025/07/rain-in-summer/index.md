@@ -9,7 +9,7 @@ tags = ["Creative", "Guitar"]
 social_media_card = "ogp.webp"
 +++
 
-{{ youtube(id="ZHERTyll7R8") }}
+{{< youtube id="ZHERTyll7R8" />}}
 
 夏になると、1987年の夏に同僚と見に行ったREBECCAの"FROM THE FAR EAST"という西
 武球場でのライブを思い出します。

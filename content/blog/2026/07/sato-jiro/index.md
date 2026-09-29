@@ -13,7 +13,7 @@ social_media_card = "ogp.webp"
 local_image = "cover.webp"
 +++
 
-{{ image(src="cover.webp",alt="Cover") }}
+{{< image src="cover.webp" alt="Cover" />}}
 
 <details>
 <summary>Table of Contents</summary>
@@ -88,7 +88,7 @@ local_image = "cover.webp"
 さて、一方の当事者の橋本愛氏ですが、週刊文春に以前連載を持っていたようです。
 文春とはビジネスパートナーなんですね。
 
-{{ image(src="hashimoto.webp",alt="橋本愛 私の読書日記",caption="橋本愛氏 週刊文春連載")}}
+{{< image src="hashimoto.webp" alt="橋本愛 私の読書日記" caption="橋本愛氏 週刊文春連載" />}}
 
 まぁ連載のタイトルを見ると「お察し」という感じです。
 
@@ -115,7 +115,7 @@ local_image = "cover.webp"
 
 佐藤氏は2024年2月、自身のXで強迫性障害を患っていることを公表しています。
 
-{{ aside(text="強迫性障害（OCD）は、不安な考えが繰り返し頭に浮かぶ「強迫観念」と、それを打ち消すために特定の行動を繰り返してしまう「強迫行為」を特徴とする精神疾患です。", position="right") }}
+{{< aside text="強迫性障害（OCD）は、不安な考えが繰り返し頭に浮かぶ「強迫観念」と、それを打ち消すために特定の行動を繰り返してしまう「強迫行為」を特徴とする精神疾患です。" position="right" />}}
 
 双方の主張が真っ向から対立し、何ら決着していない段階で、こうした事情を抱える人物に対して「深刻なハラスメント」という断定的なレッテルを貼り、スピンオフ降板という実害を伴う処分という重い十字架を背負わせています。
 
@@ -160,7 +160,7 @@ local_image = "cover.webp"
 
 <!-- textlint-disable -->
 
-{% references() %}
+{% <references> %}
 
 - 文春オンライン.「佐藤二朗（57）が橋本愛（30）に"問題行為"を起こしていた フジテレビ調査では「深刻なハラスメント」認定《『夫婦別姓刑事』で共演》」
 - 週刊女性PRIME.「橋本愛と佐藤二朗、フジ『夫婦別姓刑事』での"ハラスメントトラブル"、事務所と局の言い分は？コメント《全文掲載》」
@@ -175,6 +175,6 @@ local_image = "cover.webp"
 - 週刊女性PRIME.「『踊る大捜査線』本広克行監督が佐藤二朗撮影前日の"降板通告"を否定するも、埋まらないフジテレビとの溝」
 - [佐藤二朗氏 Xポスト（強迫性障害の公表）](https://x.com/actor_satojiro/status/1754683368028151993)
 
-{% end %}
+{% </references> %}
 
 <!-- textlint-enable -->

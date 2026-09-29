@@ -20,7 +20,7 @@ tldr = """
 
 <!-- textlint-disable -->
 
-{{ image(src="cover.avif",alt="Cover") }}
+{{< image src="cover.avif" alt="Cover" />}}
 
 <!-- textlint-enable -->
 
@@ -100,7 +100,7 @@ Google Cloudに関しては2024年にGoogle Cloud Digital Leaderを取得した�
 
 <!-- textlint-disable -->
 
-{{ image(src="gcp-aws-mapping.webp",alt="GCPとAWSの対比表の一部",caption="ノートの付録に置いたGCP↔AWS対比表（抜粋）") }}
+{{< image src="gcp-aws-mapping.webp" alt="GCPとAWSの対比表の一部" caption="ノートの付録に置いたGCP↔AWS対比表（抜粋）" />}}
 
 <!-- textlint-enable -->
 
@@ -108,15 +108,15 @@ Google Cloudに関しては2024年にGoogle Cloud Digital Leaderを取得した�
 
 <!-- textlint-disable -->
 
-{{ linkcard(url="https://github.com/yostos/gail-materials") }}
+{{< linkcard url="https://github.com/yostos/gail-materials" />}}
 
 <!-- textlint-enable -->
 
 <!-- textlint-disable -->
 
-{% admonition(type="warning", title="個人の学習ノートです") %}
+{% <admonition type="warning" title="個人の学習ノートです"> %}
 私が自分の理解を整理するために書いたものであり、Google LLC が作成・監修・承認したものではありません。記載内容の正確性は保証しません。判断に使う前に、公式の試験ガイドと製品ドキュメントで一次情報を確認してください。
-{% end %}
+{% </admonition> %}
 
 <!-- textlint-enable -->
 
@@ -159,7 +159,7 @@ Google Cloudに関しては2024年にGoogle Cloud Digital Leaderを取得した�
 
 <!-- textlint-disable -->
 
-{% references() %}
+{% <references> %}
 
 - [Google Cloud](https://cloud.google.com/learn/certification/generative-ai-leader?hl=ja). 「Generative AI Leader 認定資格」
 - [Google Cloud](https://services.google.com/fh/files/misc/generative_ai_leader_exam_guide_english.pdf). 「Generative AI Leader Certification exam guide」
@@ -168,6 +168,6 @@ Google Cloudに関しては2024年にGoogle Cloud Digital Leaderを取得した�
 - [Google Cloud](https://support.google.com/cloud-certification/answer/9438208?hl=ja). 「Google Cloud 認定資格に関するよくある質問」
 - [Google Cloud](https://cloud.google.com/learn/certification/agentic-architect). 「Professional Agentic Architect Certification」
 
-{% end %}
+{% </references> %}
 
 <!-- textlint-enable -->

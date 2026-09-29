@@ -12,7 +12,7 @@ local_image = "cover.webp"
 tldr = "macOSの変更で起動可能なクローンが作れなくなり、長年使ってきたSuperDuperを手放しました。信用しきれないTime Machineも避け、rsyncでホームディレクトリを差分・鏡像コピーする方式へ移行しています。標準のopenrsyncは使わずHomebrew版を入れ、クラウド系を除外し、launchdで週一回まわす構成です。"
 +++
 
-{{ image(src="cover.webp",alt="Cover") }}
+{{< image src="cover.webp" alt="Cover" />}}
 
 <details>
 <summary>Table of Contents</summary>
@@ -88,11 +88,11 @@ Bootableにできないのなら、システムボリュームまで丸ごとコ
 
 <!-- textlint-disable -->
 
-{% admonition(type="warning", title="標準のrsyncは使わない") %}
+{% <admonition type="warning" title="標準のrsyncは使わない"> %}
 
 Sequoia/Tahoe標準のrsyncは`openrsync`という別実装で、出来がよくありません。`-a`で特殊ファイルに当たると止まる、拡張属性でクラッシュするといった報告があります。標準のものは避け、Homebrewで本家のrsync(3.x系)を入れて使いましょう。
 
-{% end %}
+{% </admonition> %}
 
 <!-- textlint-enable -->
 

@@ -16,7 +16,7 @@ show_reading_time = false
 
 <!-- textlint-disable -->
 
-{{ image(src="cover.webp", alt="tiny-task-tool") }}
+{{< image src="cover.webp" alt="tiny-task-tool" />}}
 
 <!-- textlint-enable -->
 

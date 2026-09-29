@@ -11,7 +11,7 @@ social_media_card = "ogp.webp"
 
 <!-- textlint-disable -->
 
-{{ image(src="switch.webp", alt="Switch2") }}
+{{< image src="switch.webp" alt="Switch2" />}}
 
 <!-- textlint-enable -->
 本日22時から[Nintendo

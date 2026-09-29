@@ -31,7 +31,7 @@ Amazon社内のClaude Code
 
 <!-- textlint-disable -->
 
-{{ linkcard(url="https://www.businessinsider.com/amazon-engineers-grate-against-internal-limits-claude-code-kiro-ai-2026-2") }}
+{{< linkcard url="https://www.businessinsider.com/amazon-engineers-grate-against-internal-limits-claude-code-kiro-ai-2026-2" />}}
 
 <!-- textlint-enable -->
 

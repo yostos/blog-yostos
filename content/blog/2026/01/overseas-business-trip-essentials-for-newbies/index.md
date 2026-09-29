@@ -18,7 +18,7 @@ local_image = "cover.avif"
 
 <!-- textlint-disable -->
 
-{{ image(src="cover.avif", alt="Cover") }}
+{{< image src="cover.avif" alt="Cover" />}}
 
 <!-- textlint-enable -->
 
@@ -54,9 +54,9 @@ local_image = "cover.avif"
 
 <!-- textlint-disable -->
 
-{% aside(position="right") %}
+{% <aside position="right"> %}
 シェンゲン圏とは、域内の国境検査を廃止した29カ国の枠組みです。
-{% end %}
+{% </aside> %}
 
 <!-- textlint-enable -->
 
@@ -147,9 +147,9 @@ Visit Japan Webに携帯品・別送品の申告を登録しておくと、QRコ
 
 <!-- textlint-disable -->
 
-{% aside(position="right") %}
+{% <aside position="right"> %}
 私物PCの場合は、当然業務では使わないこと
-{% end %}
+{% </aside> %}
 
 <!-- textlint-enable -->
 
@@ -232,9 +232,9 @@ PCは必ず機内持ち込み手荷物にしてください。預け荷物にす
 
 <!-- textlint-disable -->
 
-{% aside(position="right") %}
+{% <aside position="right"> %}
 mineoは音声通話とSMSなら海外でも使えますが、着信にも料金がかかる従量課金です。使わないでください。
-{% end %}
+{% </aside> %}
 
 <!-- textlint-enable -->
 
@@ -527,7 +527,7 @@ BoltやFreeNowも使えますが、まず1つ入れるならUberです。
 
 <!-- textlint-disable -->
 
-{% references() %}
+{% <references> %}
 
 - [外務省 海外安全ホームページ](https://www.anzen.mofa.go.jp/). 「海外安全情報」
 - [在日フランス大使館](https://jp.diplomatie.gouv.fr/ja/ees-le-nouveau-systeme-europeen-de-gestion-des-frontieres-entre-en-service-le-10-avril-2026). 「ヨーロッパの新国境管理システム「EES」が2026年4月10日より運用開始」
@@ -568,6 +568,6 @@ BoltやFreeNowも使えますが、まず1つ入れるならUberです。
 - [サムソナイト](https://www.samsonite.co.jp/samsonite/c-lite/spinner69/black/ss-122860-1041.html). 「シーライト スピナー69」
 - [サムソナイト](https://www.samsonite.co.jp/guarantee.html). 「保証と修理について」
 
-{% end %}
+{% </references> %}
 
 <!-- textlint-enable -->

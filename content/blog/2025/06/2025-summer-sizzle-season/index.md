@@ -11,4 +11,4 @@ social_media_card = "ogp.webp"
 
 今更ですが、新シーズンなのでがんばりましょう。新武器がたくさん追加されましたが、今シーズンはケルビンで戦いましょう。
 
-{{ youtube(id="Y7zc45JgZDk") }}
+{{< youtube id="Y7zc45JgZDk" />}}

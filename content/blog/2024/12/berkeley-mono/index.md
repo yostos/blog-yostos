@@ -64,7 +64,7 @@ Berkeley Monoは少し前に一部で話題になっていましたが、リガ�
 
 <!-- textlint-disable -->
 
-{{ image(src="fonts.jpg", alt="Fonts Comparison") }}
+{{< image src="fonts.jpg" alt="Fonts Comparison" />}}
 
 <!-- textlint-enable -->
 

@@ -13,7 +13,7 @@ local_image = "cover.avif"
 
 <!-- textlint-disable -->
 
-{{ image(src="cover.avif",alt="Cover",caption="Weeds at dawn") }}
+{{< image src="cover.avif" alt="Cover" caption="Weeds at dawn" />}}
 
 <!-- textlint-enable -->
 

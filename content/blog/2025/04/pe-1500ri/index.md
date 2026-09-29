@@ -11,7 +11,7 @@ social_media_card = "ogp.webp"
 
 <!-- textlint-disable -->
 
-{{ image(src="pe-1500.webp", alt="Aria Pro II PE1500RI") }}
+{{< image src="pe-1500.webp" alt="Aria Pro II PE1500RI" />}}
 
 <!-- textlint-enable -->
 

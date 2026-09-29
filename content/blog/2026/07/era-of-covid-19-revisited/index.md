@@ -13,7 +13,7 @@ local_image = "cover.webp"
 
 <!-- textlint-disable -->
 
-{{ image(src="cover.webp", alt="Cover") }}
+{{< image src="cover.webp" alt="Cover" />}}
 
 <!-- textlint-enable -->
 
@@ -118,7 +118,7 @@ Modernaが候補ワクチンmRNA-1273の設計を終えたのはその数日後�
 
 <!-- textlint-disable -->
 
-{{ image(src="immunity-comparison.webp", alt="実際の抗体保有率とワクチン接種率の推移(2020-2023)") }}
+{{< image src="immunity-comparison.webp" alt="実際の抗体保有率とワクチン接種率の推移(2020-2023)" />}}
 
 <!-- textlint-enable -->
 
@@ -217,7 +217,7 @@ _厚生労働省の抗体保有率調査（感染による免疫）と、
 
 <!-- textlint-disable -->
 
-{% references() %}
+{% <references> %}
 
 - WHO. "[14.9 million excess deaths associated with the COVID-19 pandemic in 2020 and 2021](https://www.who.int/news/item/05-05-2022-14.9-million-excess-deaths-were-associated-with-the-covid-19-pandemic-in-2020-and-2021)"
 - 厚生労働省. 「[新型コロナウイルス感染症に関する抗体保有状況調査について](https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000121431_00132.html)」
@@ -226,6 +226,6 @@ _厚生労働省の抗体保有率調査（感染による免疫）と、
 - Baden, L.R. et al. (2021). "Efficacy and Safety of the mRNA-1273 SARS-CoV-2 Vaccine". New England Journal of Medicine.
 - Mohammed, H. et al. (2023). "[A Systematic Review and Meta-Analysis on the Real-World Effectiveness of COVID-19 Vaccines against Infection, Symptomatic and Severe COVID-19 Disease Caused by the Omicron Variant](https://pmc.ncbi.nlm.nih.gov/articles/PMC9965204/)". Vaccines.
 
-{% end %}
+{% </references> %}
 
 <!-- textlint-enable -->

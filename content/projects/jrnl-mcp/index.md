@@ -16,7 +16,7 @@ show_reading_time = false
 
 <!-- textlint-disable -->
 
-{{ image(src="cover.webp", alt="jrnl-mcp") }}
+{{< image src="cover.webp" alt="jrnl-mcp" />}}
 
 <!-- textlint-enable -->
 

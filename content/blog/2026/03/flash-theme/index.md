@@ -17,7 +17,7 @@ social_media_card = "ogp.webp"
 
 1980年公開の映画「フラッシュ・ゴードン」のサウンドトラックに収録されたQueenの「Flash's Theme」をカバーしてみました。
 
-{{ youtube(id="S3KHjjv0cvQ") }}
+{{< youtube id="S3KHjjv0cvQ" />}}
 
 「The Game」「Another One Bites the Dust」で商業的・音楽的にピークを迎えていた時期の作品です。ブライアン・メイのギター、フレディ・マーキュリーの圧倒的なボーカル、そしてQueenならではの分厚いコーラスワーク。その後の低迷期を前にした、まさに絶頂期のQueenのエネルギーを感じる曲です。残念ながら映画自体は駄作でしたが。
 

@@ -22,7 +22,7 @@ local_image = "cover.webp"
 
 <!-- textlint-disable -->
 
-{{ image(src="cover.webp",alt="Cover") }}
+{{< image src="cover.webp" alt="Cover" />}}
 
 <!-- textlint-enable -->
 
@@ -39,7 +39,7 @@ local_image = "cover.webp"
 
 <!-- textlint-disable -->
 
-{{ image(src="claude-state.webp",alt="タブラインに表示されたClaude Codeの状態",caption="タブラインに表示されたClaude Codeの状態") }}
+{{< image src="claude-state.webp" alt="タブラインに表示されたClaude Codeの状態" caption="タブラインに表示されたClaude Codeの状態" />}}
 
 <!-- textlint-enable -->
 
@@ -53,7 +53,7 @@ claude-stateは、Claude CodeとWezTermの間に状態ファイルを1枚挟ん�
 
 <!-- textlint-disable -->
 
-{% mermaid() %}
+{% <mermaid> %}
 flowchart LR
 subgraph hooks["Claude Codeのフック"]
 A["UserPromptSubmit"]
@@ -70,7 +70,7 @@ S --> F["状態ファイル<br/>~/.cache/wezterm-claude-state/"]
 S -. BEL .-> P["ペインの明滅"]
 F --> W["wezterm.lua"]
 W --> T["タブライン"]
-{% end %}
+{% </mermaid> %}
 
 <!-- textlint-enable -->
 
@@ -295,13 +295,13 @@ Claude Codeを1本しか動かさないのであれば目の前の画面を見�
 
 <!-- textlint-disable -->
 
-{% references() %}
+{% <references> %}
 
 - MulmoTerminal. [GitHub - receptron/mulmoterminal](https://github.com/receptron/mulmoterminal)
 - tabline.wez. [GitHub - michaelbrusegard/tabline.wez](https://github.com/michaelbrusegard/tabline.wez)
 - WezTerm. [公式ドキュメント](https://wezterm.org/)
 - Claude Code. [Hooks reference](https://docs.claude.com/en/docs/claude-code/hooks)
 
-{% end %}
+{% </references> %}
 
 <!-- textlint-enable -->

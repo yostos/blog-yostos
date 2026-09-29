@@ -19,6 +19,6 @@ social_media_card = "ogp.webp"
 
 <!-- textlint-disable -->
 
-{{ image(src="postcard.png", alt="年賀状発行枚数の推移") }}
+{{< image src="postcard.png" alt="年賀状発行枚数の推移" />}}
 
 <!-- textlint-enable -->

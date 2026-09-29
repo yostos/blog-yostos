@@ -16,7 +16,7 @@ local_image = "cover.webp"
 
 <!-- textlint-disable -->
 
-{{ image(src="cover.webp", alt="Cover") }}
+{{< image src="cover.webp" alt="Cover" />}}
 
 <!-- textlint-enable -->
 
@@ -33,7 +33,7 @@ DJI Avata 2でシネマティックな映像を撮るために、自分が使っ
 
 <!-- textlint-disable -->
 
-{{ youtube(id="ogwig1EU4CQ") }}
+{{< youtube id="ogwig1EU4CQ" />}}
 
 <!-- textlint-enable -->
 
@@ -47,9 +47,9 @@ ISOはできる限り低く抑えるのが基本で、ISO 100が理想的です�
 
 <!-- textlint-disable -->
 
-{% admonition(type="info", title="180度ルールとは") %}
+{% <admonition type="info" title="180度ルールとは"> %}
 映画撮影で標準的に用いられるシャッター角度の慣習に由来します。フィルムカメラの回転シャッターが180度（半回転）開いている間に露光することから、露光時間がフレーム間隔の半分になります。デジタルカメラでは「シャッタースピード = 1 /（フレームレート × 2）」と換算します。このルールに従うと、人間の目に自然に見える適度なモーションブラーが得られ、映画的（シネマティック）な質感になります。シャッタースピードをこれより速くするとブラーが減りパラパラとした硬い映像に、遅くするとブラーが過剰になり不明瞭な映像になります。
-{% end %}
+{% </admonition> %}
 
 <!-- textlint-enable -->
 
@@ -65,9 +65,9 @@ ND濃度は撮影環境の明るさに応じて選びます。私は[K&F Concept
 
 <!-- textlint-disable -->
 
-{% aside(position="right") %}
+{% <aside position="right"> %}
 PL（偏光フィルター）は水面やガラスなどの反射を抑え、空を濃く・葉の緑を鮮やかに見せる効果がある。NDとの複合フィルターは光量減衰と偏光の両方を1枚で兼ねる。
-{% end %}
+{% </aside> %}
 
 <!-- textlint-enable -->
 
@@ -127,7 +127,7 @@ FOVについて、ノーマルは画角が狭すぎるため非推奨です。�
 
 <!-- textlint-disable -->
 
-{{ image(src="./rate.webp") }}
+{{< image src="./rate.webp" />}}
 
 <!-- textlint-enable -->
 
@@ -171,9 +171,9 @@ FOVについて、ノーマルは画角が狭すぎるため非推奨です。�
 
 <!-- textlint-disable -->
 
-{% aside(position="right") %}
+{% <aside position="right"> %}
 150m以上の飛行は包括申請の対象外で個別申請が必要となるため、一般的な飛行では150m未満に収める必要がある。
-{% end %}
+{% </aside> %}
 
 <!-- textlint-enable -->
 

@@ -13,7 +13,7 @@ local_image = "cover.webp"
 
 <!-- textlint-disable -->
 
-{{ image(src="cover.webp",alt="Cover") }}
+{{< image src="cover.webp" alt="Cover" />}}
 
 <!-- textlint-enable -->
 
@@ -38,14 +38,14 @@ MXR Distortion+は「オペアンプ1個+クリッピングダイオード2本�
 
 <!-- textlint-disable -->
 
-{% admonition(type="warning", title="「現行品はシリコンダイオード」という誤情報に注意") %}
+{% <admonition type="warning" title="「現行品はシリコンダイオード」という誤情報に注意"> %}
 購入前に調べていて気になったのは、「現行品はシリコンダイオード(1N4148等)に変更されている」という記述が一定数出回っている点です。しかしメーカー公式マニュアルの記載と食い違うため、DIYクローンや改造記事の情報が、いつの間にか「現行品の標準仕様」であるかのように広まったものと考えられます。この手の製品仕様は、可能な限りメーカー公式の一次資料に当たるのが安全だと感じました。
 
 これを信じて「スクリプト版でなければ本物でない」や「ヴィンテージでなければDistortion+の音は出ない」などと言われることがあります。
 音は違うと思いますが、そもそもヴィンテージは個体差が激しいエフェクターなので、個人的には現行品で十分だと思います。
 
 電源はオリジナルが9V電池駆動のみだったのに対し、現行M104はDCジャック(センターマイナス9V)にも対応し、赤色LEDインジケーターとトゥルーバイパスを備えており使い勝手もよくなっています。
-{% end %}
+{% </admonition> %}
 
 <!-- textlint-enable -->
 
@@ -98,7 +98,7 @@ Distortion+は、かなり音量が下がります。
 
 <!-- textlint-disable -->
 
-{{ youtube(id="EpUqd7L04ic") }}
+{{< youtube id="EpUqd7L04ic" />}}
 
 <!-- textlint-enable -->
 
@@ -125,7 +125,7 @@ BOSSのペダルの4〜5倍の価格と高嶺の花でとても手が出ませ�
 
 <!-- textlint-disable -->
 
-{% references() %}
+{% <references> %}
 
 - 高中正義『SAUDADE』バンド・スコア. シンコーミュージック, 1982年10月20日発行, ISBN4-401-15179-8
 - [MXR M104 Distortion+ 公式マニュアル(Dunlop, PDF)](https://www.jimdunlop.com/content/manuals/M104.pdf). "Organic, germanium-powered clipping"と明記。現行M104がゲルマニウムダイオードであることの一次資料
@@ -135,6 +135,6 @@ BOSSのペダルの4〜5倍の価格と高嶺の花でとても手が出ませ�
 - [Crave Guitars](https://www.craveguitars.co.uk/home/features/effects/feature-1975-mxr-distortion/). "Feature – 1975 MXR Distortion +"
 - [ToneHome](https://www.tonehome.de/mxr-innovations/distortion/). "MXR Innovations Distortion+"。ヴィンテージ個体の解析でゲルマニウムダイオード使用を確認
 
-{% end %}
+{% </references> %}
 
 <!-- textlint-enable -->

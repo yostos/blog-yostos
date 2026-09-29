@@ -2,7 +2,7 @@
 
 [![Deploy to GitHub Pages](https://github.com/yostos/blog-yostos/actions/workflows/deploy.yml/badge.svg)](https://github.com/yostos/blog-yostos/actions/workflows/deploy.yml)
 [![Textlint](https://github.com/yostos/blog-yostos/actions/workflows/textlint.yml/badge.svg)](https://github.com/yostos/blog-yostos/actions/workflows/textlint.yml)
-[![Zola](https://img.shields.io/badge/Zola-0.22.1-blue?logo=zola)](https://www.getzola.org/)
+[![Zola](https://img.shields.io/badge/Zola-0.23.6-blue?logo=zola)](https://www.getzola.org/)
 [![Theme: tabi](https://img.shields.io/badge/Theme-tabi-orange)](https://github.com/welpo/tabi)
 [![Articles](https://img.shields.io/badge/Articles-237+-green)](https://blog.yostos.org)
 
@@ -84,7 +84,7 @@ git push --no-verify    # Skip pre-push
 
 ### Prerequisites
 
-- [Zola](https://www.getzola.org/) 0.22.1+
+- [Zola](https://www.getzola.org/) 0.23.6+
 - [Node.js](https://nodejs.org/) 20+
 
 ```bash
@@ -183,7 +183,7 @@ content/
       index.md        # Article content (TOML frontmatter)
       ogp.webp        # OGP image (auto-generated)
       *.webp          # Article images
-templates/            # Custom templates and shortcodes
+templates/            # Custom templates and components
 static/               # Static assets (CSS, images, favicon)
 themes/tabi/          # tabi theme (git submodule)
 scripts/

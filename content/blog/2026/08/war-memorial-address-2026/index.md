@@ -19,7 +19,7 @@ mermaid = true
 
 <!-- textlint-disable -->
 
-{{ image(src="cover.webp", alt="全国戦没者追悼式で式辞を述べる高市首相", caption="出典：首相官邸ホームページ。16:9に切り出し、縮小して使用") }}
+{{< image src="cover.webp" alt="全国戦没者追悼式で式辞を述べる高市首相" caption="出典：首相官邸ホームページ。16:9に切り出し、縮小して使用" />}}
 
 <!-- textlint-enable -->
 
@@ -55,7 +55,7 @@ table tbody tr:nth-child(even) {
 
 <!-- textlint-disable -->
 
-{% mermaid() %}
+{% <mermaid> %}
 flowchart TD
 y1996["1996 橋本"] --> y1997["1997 橋本"] --> y1998["1998 小渕"] --> y1999["1999 小渕"]
 y1999 --> y2000["2000 森"]
@@ -73,7 +73,7 @@ y2022 --> y2023["2023 岸田"]
 y2022 --> y2024["2024 岸田"]
 y2024 --> y2025["2025 石破"]
 y2024 --> y2026["2026 高市"]
-{% end %}
+{% </mermaid> %}
 
 <!-- textlint-enable -->
 
@@ -164,7 +164,7 @@ y2024 --> y2026["2026 高市"]
 
 <!-- textlint-disable -->
 
-{% references() %}
+{% <references> %}
 
 - [首相官邸](https://www.kantei.go.jp/jp/105/statement/2026/0815shikiji.html). 「全国戦没者追悼式 内閣総理大臣式辞」（2026年8月15日）
 - [首相官邸](https://www.kantei.go.jp/jp/105/actions/202608/15tsuitoushiki.html). 「全国戦没者追悼式」（2026年8月15日）。カバー画像の出典
@@ -173,6 +173,6 @@ y2024 --> y2026["2026 高市"]
 - [Internet Archive Wayback Machine](https://web.archive.org/). 首相官邸サイトの過去ページを保存したアーカイブ。1996-2009年および2013年の式辞
 - [安倍晋三デジタルミュージアム](https://abeshinzo-digitalmuseum.com/pdf/20140815_MemorialSpeech.pdf). 「全国戦没者追悼式 内閣総理大臣式辞」（2014年8月15日）
 
-{% end %}
+{% </references> %}
 
 <!-- textlint-enable -->

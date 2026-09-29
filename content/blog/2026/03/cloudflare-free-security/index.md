@@ -17,7 +17,7 @@ Rate Limiting の3層防御を設定しました。\
 
 <!-- textlint-disable -->
 
-{{ image(src="cover.webp", alt="Cover") }}
+{{< image src="cover.webp" alt="Cover" />}}
 
 <!-- textlint-enable -->
 
@@ -125,12 +125,12 @@ Cloudflareを使っているなら、無料プランの範囲でもBot Fight Mod
 
 <!-- textlint-disable -->
 
-{% references() %}
+{% <references> %}
 
 - [Cloudflare](https://developers.cloudflare.com/bots/get-started/free/). "Bot Fight Mode"
 - [Cloudflare](https://developers.cloudflare.com/waf/custom-rules/). "Custom rules"
 - [Cloudflare](https://developers.cloudflare.com/waf/rate-limiting-rules/). "Rate limiting rules"
 
-{% end %}
+{% </references> %}
 
 <!-- textlint-enable -->

@@ -15,7 +15,7 @@ local_image = "cover.webp"
 
 <!-- textlint-disable -->
 
-{{ image(src="cover.webp", alt="Cover") }}
+{{< image src="cover.webp" alt="Cover" />}}
 
 <!-- textlint-enable -->
 
@@ -46,7 +46,7 @@ MacPaw[^1]の次の2つのソフトウェアを使用していました。
 
 <!-- textlint-disable -->
 
-{{ linkcard(url="https://github.com/tw93/mole") }}
+{{< linkcard url="https://github.com/tw93/mole" />}}
 
 <!-- textlint-enable -->
 
@@ -72,7 +72,7 @@ mo installer  # Downloads内の.dmg/.pkgの整理
 
 <!-- textlint-disable -->
 
-{{ linkcard(url="https://github.com/qarmin/czkawka") }}
+{{< linkcard url="https://github.com/qarmin/czkawka" />}}
 
 <!-- textlint-enable -->
 
@@ -145,7 +145,7 @@ GUIの常駐アプリをCLIに置き換え、メニューバーをOS標準機能
 
 <!-- textlint-disable -->
 
-{% references() %}
+{% <references> %}
 
 - [GitHub - tw93/mole](https://github.com/tw93/mole). "Mole - Deep clean and optimize your Mac"
 - [GitHub - qarmin/czkawka](https://github.com/qarmin/czkawka). "Multi functional app to find duplicates, empty folders, similar images etc."
@@ -154,6 +154,6 @@ GUIの常駐アプリをCLIに置き換え、メニューバーをOS標準機能
 - [Apple Support](https://support.apple.com/guide/mac-help/change-menu-bar-settings-mchlad96d366/mac). "Change Menu Bar settings on Mac"
 - [Engadget](https://www.engadget.com/ai/the-browser-company-stops-active-development-of-arc-in-favor-of-new-ai-focused-product-153045276.html). "The Browser Company stops active development of Arc in favor of new AI-focused product"
 
-{% end %}
+{% </references> %}
 
 <!-- textlint-enable -->

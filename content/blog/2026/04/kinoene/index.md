@@ -11,7 +11,7 @@ local_image = "cover.webp"
 
 <!-- textlint-disable -->
 
-{{ image(src="cover.webp",alt="Cover") }}
+{{< image src="cover.webp" alt="Cover" />}}
 
 <!-- textlint-enable -->
 
@@ -22,7 +22,7 @@ local_image = "cover.webp"
 
 <!-- textlint-disable -->
 
-{{ image(src="./kinoene.jpg", alt="春の大試飲会の様子") }}
+{{< image src="./kinoene.jpg" alt="春の大試飲会の様子" />}}
 
 <!-- textlint-enable -->
 

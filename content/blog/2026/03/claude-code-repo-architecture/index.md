@@ -22,7 +22,7 @@ Workflows（Commands）・Guardrails（Hooks）・Progressive Context（docs/）
 
 <!-- textlint-disable -->
 
-{{ image(src="cover.webp", alt="Cover") }}
+{{< image src="cover.webp" alt="Cover" />}}
 
 <!-- textlint-enable -->
 
@@ -216,7 +216,7 @@ CLAUDE.mdは458行から117行になりました。削減した341行が消え�
 
 <!-- textlint-disable -->
 
-{% references() %}
+{% <references> %}
 
 - [Shraddha Bharuka (@BharukaShraddha)](https://x.com/BharukaShraddha/status/2029836408232497678). "The Anatomy of a Claude Code Project"
 - [Anthropic](https://docs.anthropic.com/en/docs/claude-code/overview). "Claude Code Overview"
@@ -225,6 +225,6 @@ CLAUDE.mdは458行から117行になりました。削減した341行が消え�
 - [Anthropic](https://docs.anthropic.com/en/docs/claude-code/hooks). "Hooks"
 - [Anthropic](https://docs.anthropic.com/en/docs/claude-code/skills). "Skills"
 
-{% end %}
+{% </references> %}
 
 <!-- textlint-enable -->

@@ -11,7 +11,7 @@ social_media_card = "ogp.webp"
 
 夏です。6月で梅雨明け宣言はまだですが、マジで夏です。
 
-{{ youtube(id="9UopHa8D4b8")}}
+{{< youtube id="9UopHa8D4b8" />}}
 
 ギターはFender Stratocasterで、
 エフェクターはUniversal Audio Max Preamp & Dual Compressor, Free The ToneのOverdriveland、

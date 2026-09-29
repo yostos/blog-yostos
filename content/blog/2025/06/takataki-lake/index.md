@@ -18,7 +18,7 @@ social_media_card = "ogp.webp"
 
 ## 夜明けの高滝湖と湖畔美術館
 
-{{ youtube(id="yOx8d9Q8JPQ") }}
+{{< youtube id="yOx8d9Q8JPQ" />}}
 
 梅雨にもかかわらず今朝は天気に恵まれ、
 夜明け前からブラックバスを狙う釣り人がボートの準備をされていました。

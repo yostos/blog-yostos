@@ -13,7 +13,7 @@ local_image = "cover.webp"
 
 <!-- textlint-disable -->
 
-{{ image(src="cover.webp",alt="Cover") }}
+{{< image src="cover.webp" alt="Cover" />}}
 
 <!-- textlint-enable -->
 
@@ -81,7 +81,7 @@ Andy Weirの原作は数年前に楽しく読んで気に入っていた作品�
 
 本作で印象に残ったのは、なんといっても挿入歌の選曲でした。特にThe Beatlesの「Two Of Us」は、GraceとRockyのバディ関係にそのまま重なってきて、観終わったあともしばらく耳から離れませんでした。気に入ってしまったので、自分でも弾いて録ってみたバージョンを置いておきます。
 
-{{ youtube(id="gASHxts8WXA") }}
+{{< youtube id="gASHxts8WXA" />}}
 
 作中で印象的に使われていた挿入歌を並べておきます。
 

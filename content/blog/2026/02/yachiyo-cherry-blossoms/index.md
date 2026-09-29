@@ -17,7 +17,7 @@ social_media_card = "ogp.webp"
 
 <!-- textlint-disable -->
 
-{{ image(src="cover.jpg", alt="Cover") }}
+{{< image src="cover.jpg" alt="Cover" />}}
 
 <!-- textlint-enable -->
 
@@ -32,7 +32,7 @@ social_media_card = "ogp.webp"
 
 <!-- textlint-disable -->
 
-{{ youtube(id="2z4e3ZYIMRg") }}
+{{< youtube id="2z4e3ZYIMRg" />}}
 
 <!-- textlint-enable -->
 
@@ -61,11 +61,6 @@ social_media_card = "ogp.webp"
 
 <!-- textlint-disable -->
 
-{{ spot(geo="geo:35.76044,140.10773?z=16"
-        name="新川千本桜",
-        address="千葉県八千代市米本",
-        tel="",
-        access="最寄りは米本団地バス停"
-) }}
+{{< spot geo="geo:35.76044,140.10773?z=16" name="新川千本桜" address="千葉県八千代市米本" tel="" access="最寄りは米本団地バス停" />}}
 
 <!-- textlint-enable -->

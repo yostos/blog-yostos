@@ -14,7 +14,7 @@ tags = ["Tech", "API"]
 
 <!-- textlint-disable -->
 
-{{ image(src="cover.avif", alt="Cover") }}
+{{< image src="cover.avif" alt="Cover" />}}
 
 <!-- textlint-enable -->
 
@@ -309,13 +309,13 @@ GPT-image-2からGPT-image-2.5 Flareへの移行は、スクリプトのモデ�
 
 <!-- textlint-disable -->
 
-{% references() %}
+{% <references> %}
 
 - [OpenAI](https://developers.openai.com/api/docs/guides/image-generation). 「Image generation」
 - [OpenAI](https://developers.openai.com/api/docs/pricing). 「Pricing」
 - [OpenAI](https://developers.openai.com/api/docs/models/gpt-image-2.5-flare). 「GPT-Image-2.5 Flare」
 - [OpenAI](https://developers.openai.com/api/docs/changelog). 「Changelog」
 
-{% end %}
+{% </references> %}
 
 <!-- textlint-enable -->

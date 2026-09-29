@@ -11,14 +11,14 @@ social_media_card = "ogp.webp"
 
 <!-- textlint-disable -->
 
-{{ image(src="revstar.webp", alt="YAMAHA REVSTAR") }}
+{{< image src="revstar.webp" alt="YAMAHA REVSTAR" />}}
 
 <!-- textlint-enable -->
 
 折角新しいギター、YAMAHA REVSTAR RSP20を買ったので、『渚・モデラート』を弾い
 てみました。
 
-{{ youtube(id="Qvt7BY9wypQ")}}
+{{< youtube id="Qvt7BY9wypQ" />}}
 
 今回使用したYAMAHA REVSTAR RSP20のピックアップは程よい出力でモダンな中高域を提供しますが、
 トーンノブを引くことでオーバーワウンドピックアップのような効果が得られる「Focus Switch」

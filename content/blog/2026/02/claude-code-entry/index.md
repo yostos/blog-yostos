@@ -15,7 +15,7 @@ canonical_url = "https://zenn.dev/yostos/articles/claude-code-entry"
 
 <!-- textlint-disable -->
 
-{{ image(src="./cover.webp", alt="Cover") }}
+{{< image src="./cover.webp" alt="Cover" />}}
 
 <!-- textlint-enable -->
 
@@ -28,11 +28,11 @@ canonical_url = "https://zenn.dev/yostos/articles/claude-code-entry"
 
 </details>
 
-{% admonition(type="note") %}
+{% <admonition type="note"> %}
 この記事は
 [Zenn.dev](https://zenn.dev/yostos/articles/claude-code-entry)
 に掲載した記事の転載です。
-{% end %}
+{% </admonition> %}
 
 <!-- textlint-enable -->
 
@@ -46,7 +46,7 @@ Coworkの正式展開を待たなくても、エージェント型AIとの協業
 
 <!-- textlint-disable -->
 
-{{ linkcard(url="https://github.com/yostos/claude-code-entry") }}
+{{< linkcard url="https://github.com/yostos/claude-code-entry" />}}
 
 <!-- textlint-enable -->
 

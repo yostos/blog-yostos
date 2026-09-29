@@ -19,7 +19,7 @@ LINE・WhatsApp・iMessage・Signalなどの主要アプリは、登録に電話
 
 <!-- textlint-disable -->
 
-{{ image(src="cover.webp", alt="Cover") }}
+{{< image src="cover.webp" alt="Cover" />}}
 
 <!-- textlint-enable -->
 
@@ -86,9 +86,9 @@ WhatsAppとiMessageも、垂直的匿名性はありません。メッセージ�
 
 <!-- textlint-disable -->
 
-{% aside(position="right") %}
+{% <aside position="right"> %}
 ただし、Signalのメタ情報の電話番号、登録日、最終接続日のみ。
-{% end %}
+{% </aside> %}
 
 <!-- textlint-enable -->
 
@@ -164,9 +164,9 @@ LINE・WhatsApp・iMessage・Signalなど主要なメッセージングアプリ
 
 <!-- textlint-disable -->
 
-{% aside(position="right") %}
+{% <aside position="right"> %}
 米国報道機関ではSignalが使用されているケースが多いようです。
-{% end %}
+{% </aside> %}
 
 <!-- textlint-enable -->
 
@@ -181,7 +181,7 @@ LINE・WhatsApp・iMessage・Signalなど主要なメッセージングアプリ
 
 <!-- textlint-disable -->
 
-{% references() %}
+{% <references> %}
 
 - [Threema](https://threema.com/en/blog/anonymity-at-the-system-level-the-ultimate-privacy-protection). "Anonymity at the System Level: The Ultimate Privacy Protection"
 - [Threema](https://threema.ch/en/blog/posts/news-alleged-weaknesses-statement). "Statement on ETH Findings"
@@ -197,6 +197,6 @@ LINE・WhatsApp・iMessage・Signalなど主要なメッセージングアプリ
 - [LINE Help Center](https://help.line.me/line/smartphone/categoryId/20010067/3/pc). "Letter Sealing"
 - [LINEヤフー](https://www.lycorp.co.jp/ja/privacy-security/security/transparency/encryption-report/2025/).「LINE暗号化状況レポート（2025年）」
 
-{% end %}
+{% </references> %}
 
 <!-- textlint-enable -->

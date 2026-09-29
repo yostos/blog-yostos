@@ -11,7 +11,7 @@ social_media_card = "ogp.webp"
 
 <!-- textlint-disable -->
 
-{{ image(src="inbousaki.webp", alt="Inubosaki Lighthouse") }}
+{{< image src="inbousaki.webp" alt="Inubosaki Lighthouse" />}}
 
 <!-- textlint-enable -->
 
@@ -22,7 +22,7 @@ social_media_card = "ogp.webp"
 
 Today, I captured drone footage of Inubosaki Lighthouse, located at the easternmost point of the Kanto region.
 
-{{ youtube(id="dv22mPGs-j8") }}
+{{< youtube id="dv22mPGs-j8" />}}
 
 ## About Inubosaki Lighthouse
 

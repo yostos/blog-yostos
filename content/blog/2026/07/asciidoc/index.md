@@ -15,7 +15,7 @@ local_image = "cover.webp"
 
 <!-- textlint-disable -->
 
-{{ image(src="cover.webp", alt="Cover") }}
+{{< image src="cover.webp" alt="Cover" />}}
 
 <!-- textlint-enable -->
 
@@ -133,7 +133,7 @@ asciidoctor-pdf sample.adoc -o sample.pdf
 
 <!-- textlint-disable -->
 
-{{ image(src="sample.webp", alt="AsciiDoc生成結果") }}
+{{< image src="sample.webp" alt="AsciiDoc生成結果" />}}
 
 <!-- textlint-enable -->
 

@@ -12,5 +12,5 @@ social_media_card = "ogp.webp"
 こういうことがあると心配で公園にも行けなくなります。
 
 <!-- textlint-disable -->
-{{ youtube(id="ZiJLiOgLkzE") }}
+{{< youtube id="ZiJLiOgLkzE" />}}
 <!-- textlint-enable -->

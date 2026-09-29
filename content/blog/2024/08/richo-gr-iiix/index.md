@@ -16,6 +16,6 @@ social_media_card = "ogp.webp"
 
 <!-- textlint-disable -->
 
-{{ image(src="R0000316.jpg", alt="Sample photo taken with the GR IIIx") }}
+{{< image src="R0000316.jpg" alt="Sample photo taken with the GR IIIx" />}}
 
 <!-- textlint-enable -->

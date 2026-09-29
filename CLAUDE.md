@@ -29,14 +29,14 @@ npm run lint                     # textlint (content/**/*.md)
 npm run lint:fix                 # textlint auto-fix
 bash scripts/indexnow.sh <path>  # Notify IndexNow
 bash scripts/generate-cover.sh   # Generate article cover image (used by article-cover skill)
-python scripts/convert-images.py # One-off migration: rewrite ![](  ) to {{ image() }}
+python scripts/convert-images.py # One-off migration: rewrite ![](  ) to {{< image />}}
 ```
 
 ## Directory Structure
 
 ```
 content/          # Blog articles (Markdown + assets)
-templates/        # Zola template overrides (macros, partials, shortcodes)
+templates/        # Zola template overrides (components, partials)
 themes/tabi/      # tabi theme (git submodule — run `git submodule update --init --recursive` after clone)
 scripts/          # OGP generation, image conversion, IndexNow
 tools/            # Additional tooling and docs
@@ -73,30 +73,39 @@ echo "Hello"
 ```
 ````
 
-## Shortcodes
+## Components
 
-See `docs/tabi-shortcodes.md` for shortcode syntax details.
+Zola 0.23 replaced shortcodes with Tera 2 components (see `docs/zola-0.23-migration-log.md`).
+See `docs/tabi-shortcodes.md` for component syntax details.
 
-All shortcodes must be wrapped in textlint-disable/enable comments:
+- Inline: `{{< name key="value" />}}`
+- Block: `{% <name key="value"> %}` ... `{% </name> %}`
+- Non-string values go in braces: `link_to_self={true}`
+
+All components must be wrapped in textlint-disable/enable comments:
 
 ```markdown
 <!-- textlint-disable -->
 
-{{ image(src="photo.webp", alt="説明テキスト") }}
+{{< image src="photo.webp" alt="説明テキスト" />}}
 
 <!-- textlint-enable -->
 ```
 
-When the user requests a references section, place it as `## References` using the `references` shortcode.
-**IMPORTANT**: `references` is a body shortcode (`{% %}`), NOT a function shortcode (`{{ }}`):
+The whole Markdown body is rendered by Tera. Literal `{{ }}`, `{% %}` or `{# #}` in an article
+(e.g. GitHub Actions `${{ secrets.X }}`, template examples) must be wrapped in
+`{% raw %}` ... `{% endraw %}`, even inside code blocks.
+
+When the user requests a references section, place it as `## References` using the `references` component.
+**IMPORTANT**: `references` is a block component (`{% <references> %}`), NOT an inline one (`{{< />}}`):
 
 ```markdown
-{% references() %}
+{% <references> %}
 
 - [サイト名](URL). 「記事タイトル」
 - [Site](URL). "Title"
 
-{% end %}
+{% </references> %}
 ```
 
 Do NOT list news media outlets (newspapers, TV, wire services, news sites) in References.
@@ -127,7 +136,7 @@ katex = true                    # math rendering (optional)
 
 Cover image is also used within the article.
 The following line is required at the beginning of the article body:
-`{{ image(src="cover.avif", alt="Cover") }}`
+`{{< image src="cover.avif" alt="Cover" />}}`
 
 ### Image Format
 
@@ -178,5 +187,5 @@ See `docs/tag-rule.md` for comprehensive tagging rules and guidelines.
 
 - Do not run `npm run lint` during drafting (only on user request)
 - Using `<!-- textlint-disable -->` to bypass errors is prohibited
-  - Exceptions: shortcodes, license text, user-approved cases
+  - Exceptions: components, license text, user-approved cases
   - Approved cases must include `<!-- author-approved: reason -->` comment

@@ -11,4 +11,4 @@ social_media_card = "ogp.webp"
 
 そう言えば、しばらくぶらぶらしていましたが、4月から仕事に復帰しました。
 
-{{ youtube(id="5c65vfd276Y") }}
+{{< youtube id="5c65vfd276Y" />}}

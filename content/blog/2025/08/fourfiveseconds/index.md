@@ -9,7 +9,7 @@ tags = ["Creative", "Guitar"]
 social_media_card = "ogp.webp"
 +++
 
-{{ youtube(id="JdVtoCf3m6Y") }}
+{{< youtube id="JdVtoCf3m6Y" />}}
 
 Guitar: Epiphon USA Texan, Epiphone Casino
 

@@ -11,7 +11,7 @@ social_media_card = "ogp.webp"
 
 <!-- textlint-disable -->
 
-{{ image(src="max.webp", alt="UAFX Max Preamp & Dual Compressor") }}
+{{< image src="max.webp" alt="UAFX Max Preamp & Dual Compressor" />}}
 
 <!-- textlint-enable -->
 
@@ -51,7 +51,7 @@ UA610をシミュレートしています。
 UA 1176です。ディストーションはAria Pro II PE-1500にLA-2A + Overdriveland
 です。
 
-{{ youtube(id="oSOKiIVgj6o")}}
+{{< youtube id="oSOKiIVgj6o" />}}
 
 ## 使ってみた感想
 

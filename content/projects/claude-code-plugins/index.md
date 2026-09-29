@@ -16,7 +16,7 @@ show_reading_time = false
 
 <!-- textlint-disable -->
 
-{{ image(src="cover.webp", alt="claude-code-plugins") }}
+{{< image src="cover.webp" alt="claude-code-plugins" />}}
 
 <!-- textlint-enable -->
 

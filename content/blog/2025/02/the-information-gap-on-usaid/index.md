@@ -11,7 +11,7 @@ social_media_card = "ogp.webp"
 
 <!-- textlint-disable -->
 
-{{ image(src="censorship.webp") }}
+{{< image src="censorship.webp" />}}
 
 <!-- textlint-enable -->
 

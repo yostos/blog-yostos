@@ -11,7 +11,7 @@ social_media_card = "ogp.webp"
 
 <!-- textlint-disable -->
 
-{{ image(src="broadcast.webp", alt="Hudson Broadcast") }}
+{{< image src="broadcast.webp" alt="Hudson Broadcast" />}}
 
 <!-- textlint-enable -->
 
@@ -66,7 +66,7 @@ Hudson Broadcastの見た目はシンプルで、各コントロールが効果�
 
 実際の音は私なんかが弾くより、こちらの動画が分かりやすいと思います。
 
-{{ youtube(id="m-col0HDi3E") }}
+{{< youtube id="m-col0HDi3E" />}}
 
 個人的には、ストラトキャスターのリアピックアップとローゲイン設定を組み合わせた
 時の豊かな低音と温かな歪みが特に印象的で、非常にムーディーなサウンドが作れる

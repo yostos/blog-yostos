@@ -40,7 +40,7 @@ ADTプラグインも買ってみようと
 Revstarを使ってレコーディングし、
 Logic Proでミックスしています。
 
-{{ youtube(id="9PYn9WJ3g4c") }}
+{{< youtube id="9PYn9WJ3g4c" />}}
 
 ## REEL ADT：60年代の革新技術を再現
 

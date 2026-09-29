@@ -17,7 +17,7 @@ tldr = """
 
 <!-- textlint-disable -->
 
-{{ image(src="cover.webp", alt="Cover") }}
+{{< image src="cover.webp" alt="Cover" />}}
 
 <!-- textlint-enable -->
 
@@ -133,7 +133,7 @@ IT業界では十数年前まで、中国のエンジニアを安価なリソー
 
 <!-- textlint-disable -->
 
-{% references() %}
+{% <references> %}
 
 - 全国人民代表大会. 「中华人民共和国民族团结进步促进法」
 - [European Parliament](https://www.europarl.europa.eu/doceo/document/TA-10-2026-0152_EN.pdf). "The new Chinese law on 'ethnic unity and progress' and the intensified suppression of ethnic identities"
@@ -142,6 +142,6 @@ IT業界では十数年前まで、中国のエンジニアを安価なリソー
 - Cornell University, Department of Government. "Ethnic unity law contradicts China's constitution, puts premium on assimilation"
 - [Law on Promoting Ethnic Unity and Progress - Wikipedia](https://en.wikipedia.org/wiki/Law_on_Promoting_Ethnic_Unity_and_Progress)
 
-{% end %}
+{% </references> %}
 
 <!-- textlint-enable -->

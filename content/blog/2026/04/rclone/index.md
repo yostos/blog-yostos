@@ -15,7 +15,7 @@ mermaid = true
 
 <!-- textlint-disable -->
 
-{{ image(src="cover.webp", alt="Cover") }}
+{{< image src="cover.webp" alt="Cover" />}}
 
 <!-- textlint-enable -->
 
@@ -259,9 +259,9 @@ S3では1ファイル内の並列度は `--s3-upload-concurrency` が直接コ�
 
 <!-- textlint-disable -->
 
-{% aside(position="right") %}
+{% <aside position="right"> %}
 `caffeinate` は macOS に標準で含まれるコマンドです。
-{% end %}
+{% </aside> %}
 
 <!-- textlint-enable -->
 
@@ -368,17 +368,17 @@ rcloneのチューニングとS3のライフサイクルを組み合わせて、
 
 <!-- textlint-disable -->
 
-{% aside(position="right") %}
+{% <aside position="right"> %}
 左記は保管料のみ。取り出す場合には別途料金が発生します。
-{% end %}
+{% </aside> %}
 
-{% mermaid() %}
+{% <mermaid> %}
 xychart-beta
 title "年度ごとのS3保管料金（千円）"
 x-axis ["1年目", "2年目", "3年目", "4年目", "5年目"]
 y-axis "料金（千円）" 0 --> 7
 bar [1.6, 4.2, 5.5, 5.5, 5.5]
-{% end %}
+{% </mermaid> %}
 
 <!-- textlint-enable -->
 

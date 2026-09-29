@@ -13,14 +13,14 @@ social_media_card = "ogp.webp"
 
 <!-- textlint-disable -->
 
-{{ image(src="feedback.png") }}
+{{< image src="feedback.png" />}}
 
 <!-- textlint-enable -->
 
 「なんあエンディングでディストーションの音が埋もれてるなぁ」と思ったら、
 ポラリティ反転を放置していました。
 
-{{ youtube(id="yuGNJLlGflg") }}
+{{< youtube id="yuGNJLlGflg" />}}
 
 クリーンとディストーションの効いたギターが交互に絡み合う曲です。
 

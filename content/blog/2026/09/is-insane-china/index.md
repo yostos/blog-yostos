@@ -14,7 +14,7 @@ toc_ignore_pattern = '[\p{Hiragana}\p{Katakana}\p{Han}]'
 
 <!-- textlint-disable -->
 
-{{ image(src="cover.avif", alt="Cover") }}
+{{< image src="cover.avif" alt="Cover" />}}
 
 <!-- textlint-enable -->
 

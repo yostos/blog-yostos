@@ -15,7 +15,7 @@ local_image = "cover.webp"
 
 <!-- textlint-disable -->
 
-{{ image(src="cover.webp", alt="Cover") }}
+{{< image src="cover.webp" alt="Cover" />}}
 
 <!-- textlint-enable -->
 
@@ -127,10 +127,10 @@ local_image = "cover.webp"
 
 <!-- textlint-disable -->
 
-{% references() %}
+{% <references> %}
 
 - [首相官邸](https://www.kantei.go.jp/jp/105/statement/2026/0728kaiken.html). 「熊本県熊本地方を震源とする地震についての会見」
 
-{% end %}
+{% </references> %}
 
 <!-- textlint-enable -->

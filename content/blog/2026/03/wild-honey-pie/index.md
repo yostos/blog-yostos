@@ -11,11 +11,11 @@ social_media_card = "ogp.webp"
 local_image = "cover.webp"
 +++
 
-{{ image(src="cover.webp",alt="Cover") }}
+{{< image src="cover.webp" alt="Cover" />}}
 
 The Beatlesの俗称ホワイトアルバムから小曲"Wild Honey Pie"を演奏してみました。
 
-{{ youtube(id="F-ylsZAjkmU") }}
+{{< youtube id="F-ylsZAjkmU" />}}
 
 ポールが一人で録音したお遊び的な曲です。最終的なトラックリストから外れかけましたが、パティ・ボイド[^1]が気に入ったため収録されました。
 
