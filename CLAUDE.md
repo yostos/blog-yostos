@@ -96,6 +96,20 @@ The whole Markdown body is rendered by Tera. Literal `{{ }}`, `{% %}` or `{# #}`
 (e.g. GitHub Actions `${{ secrets.X }}`, template examples) must be wrapped in
 `{% raw %}` ... `{% endraw %}`, even inside code blocks.
 
+For a quotation with attribution, use the site's `blockquote` component
+(`templates/components/blockquote.html`). All parameters are optional; the attribution
+renders as "— author、source", with `source` (or `author`) linked to `cite`:
+
+```markdown
+<!-- textlint-disable -->
+
+{% <blockquote cite="https://..." source="記事・文書の名前" author="発言者・発行元"> %}
+引用文（Markdown 可）
+{% </blockquote> %}
+
+<!-- textlint-enable -->
+```
+
 When the user requests a references section, place it as `## References` using the `references` component.
 **IMPORTANT**: `references` is a block component (`{% <references> %}`), NOT an inline one (`{{< />}}`):
 

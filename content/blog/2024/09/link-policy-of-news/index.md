@@ -14,18 +14,10 @@ social_media_card = "ogp.webp"
 
 異なるのが朝日新聞社。リンク自由とは記載があるものの、申告が必要とされている。
 
-<blockquote cite="https://www.asahi.com/policy/link.html">
-  朝日新聞デジタルにリンクを張った際は、そのサイトの内容とアドレス及びリンク
-  の趣旨 , お名前 , ご連絡先 , 下記の注意事項を了解した上でリンクした旨などを記
-  載しお問い合わせフォームからお知らせください。
-  <footer>
-    <cite>
-      <ul>
-        <li>
-          朝日新聞デジタル{" "}
-          <a href="https://www.asahi.com/policy/link.html">リンクについて</a>
-        </li>
-      </ul>
-    </cite>
-  </footer>
-</blockquote>
+<!-- textlint-disable -->
+
+{% <blockquote cite="https://www.asahi.com/policy/link.html" source="リンクについて" author="朝日新聞デジタル"> %}
+朝日新聞デジタルにリンクを張った際は、そのサイトの内容とアドレス及びリンクの趣旨 , お名前 , ご連絡先 , 下記の注意事項を了解した上でリンクした旨などを記載しお問い合わせフォームからお知らせください。
+{% </blockquote> %}
+
+<!-- textlint-enable -->

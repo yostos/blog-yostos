@@ -1,0 +1,48 @@
+{#- ============================================================
+    blockquote.html - Quotation with attribution for Zola
+
+    Copyright (c) 2026 Toshiyuki Yoshida
+    Released under the MIT License.
+    https://opensource.org/licenses/MIT
+
+    Repository: https://github.com/yostos/blog-yostos
+
+    Block component that wraps a quotation in <figure>, with the
+    attribution in <figcaption> as "— author、source".
+
+    Usage:
+      {% <blockquote cite="https://..." source="記事名" author="発言者"> %}
+      引用文（Markdown）...
+      {% </blockquote> %}
+
+    Parameters (all optional):
+      cite    - Source URL. Set as the cite attribute of <blockquote>
+                and used as the link target of the attribution
+      source  - Title of the quoted document, wrapped in <cite>
+      author  - Speaker or publisher
+
+    Attribution:
+      author + source -> — author、source
+      source only     -> — source
+      author only     -> — author
+      neither         -> no <figcaption>
+    The link goes on source, or on author when source is omitted.
+
+    The output is parsed as Markdown, so it must not contain blank
+    lines (indented lines after one would become a code block).
+    ============================================================ -#}
+{% component blockquote(cite = "", source = "", author = "") %}
+{%- set link_open = '<a href="' ~ (cite | escape_html) ~ '">' if cite else "" -%}
+{%- set link_close = "</a>" if cite else "" -%}
+<figure class="blockquote">
+<blockquote{% if cite %} cite="{{ cite }}"{% endif %}>
+{{ body | markdown | trim | safe }}
+</blockquote>
+{%- if source or author %}
+<figcaption>—
+{%- if author %} {% if not source %}{{ link_open | safe }}{% endif %}{{ author }}{% if not source %}{{ link_close | safe }}{% endif %}{% endif %}
+{%- if author and source %}、{% elif source %} {% endif %}
+{%- if source %}<cite>{{ link_open | safe }}{{ source }}{{ link_close | safe }}</cite>{% endif %}</figcaption>
+{%- endif %}
+</figure>
+{% endcomponent blockquote %}

@@ -92,6 +92,53 @@ v5.0.0では、テーマが提供していたショートコードがすべて�
 
 あわせて、後方互換のためだけに残されていた設定が廃止されました。日付の書式も、`%Y-%m-%d`のようなstrftimeの形式ではなく、`y-MM-dd`のようなUnicodeの書式（UTS #35）で書く必要があります。こうした設定やテンプレートの書き換え方は、作者がtabiのサイトで移行ガイドとしてまとめています。
 
+## 新しい形式でコンポーネントを作る
+
+このブログでは、出典付きの引用を`<blockquote>`で手書きしていました。記事ごとに出典の書き方がばらばらで、HTMLの中に書いたMarkdownのリンクがリンクにならず、文字のまま表示されている記事もありました。そこで、0.23の新しい形式で引用用のコンポーネントを作ってみました。
+
+コンポーネントは`templates/components/`に置いたファイルで定義します。
+
+```html,name=templates/components/blockquote.html
+{% raw %}{% component blockquote(cite = "", source = "", author = "") %}
+{%- set link_open = '<a href="' ~ (cite | escape_html) ~ '">' if cite else "" -%}
+{%- set link_close = "</a>" if cite else "" -%}
+<figure class="blockquote">
+<blockquote{% if cite %} cite="{{ cite }}"{% endif %}>
+{{ body | markdown | trim | safe }}
+</blockquote>
+{%- if source or author %}
+<figcaption>—
+{%- if author %} {% if not source %}{{ link_open | safe }}{% endif %}{{ author }}{% if not source %}{{ link_close | safe }}{% endif %}{% endif %}
+{%- if author and source %}、{% elif source %} {% endif %}
+{%- if source %}<cite>{{ link_open | safe }}{{ source }}{{ link_close | safe }}</cite>{% endif %}</figcaption>
+{%- endif %}
+</figure>
+{% endcomponent blockquote %}{% endraw %}
+```
+
+`component`の行で引数とそのデフォルト値を宣言し、ブロックの中に書いた本文は`body`という変数で受け取ります。本文は`markdown`フィルタで変換しているので、引用文の中にリンクやリストをMarkdownで書けます。呼び出す側での`import`は不要です。
+
+記事からは次のように呼び出します。引数はすべて省略でき、出典は「— 著者、出典」の形で表示されます。`cite`を指定すると、`<blockquote>`の`cite`属性に入るとともに、出典名がそのURLへのリンクになります。
+
+```text
+{% raw %}{% <blockquote cite="https://www.mofa.go.jp/mofaj/fp/un/pageit_000001_03218.html" source="第81回国連総会における 高市早苗内閣総理大臣の一般討論演説"> %}
+同時に、81年を経た国連憲章も、見直されなければなりません。
+{% </blockquote> %}{% endraw %}
+```
+
+出力されるHTMLは次のとおりです。
+
+```html
+<figure class="blockquote">
+<blockquote cite="https://www.mofa.go.jp/mofaj/fp/un/pageit_000001_03218.html">
+<p>同時に、81年を経た国連憲章も、見直されなければなりません。</p>
+</blockquote>
+<figcaption>— <cite><a href="https://www.mofa.go.jp/mofaj/fp/un/pageit_000001_03218.html">第81回国連総会における 高市早苗内閣総理大臣の一般討論演説</a></cite></figcaption>
+</figure>
+```
+
+作るうえで注意が必要なのは、コンポーネントの出力がMarkdownの変換より前に本文へ埋め込まれることです。出力するHTMLの途中に空行があると、その後のインデントされた行がコードブロックとして扱われてしまいます。そのため、制御タグを{% raw %}`{%- ... %}`{% endraw %}のように書いて、余計な改行を出さないようにしています。
+
 ## まとめ
 
 Zola 0.23は、テーマやテンプレートを書く人にとっては大きな改善です。ショートコードとマクロに分かれていた部品がコンポーネントに一本化され、同じ部品をテンプレートと記事の両方から呼び出せるようになりました。引数に型を付けられるので、渡す値の誤りはビルド時にエラーとして見つかります。Tera 2ではオプショナルチェーンや三項演算子なども使えるようになり、エラーメッセージも呼び出し元までたどれる形になりました。

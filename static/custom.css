@@ -446,3 +446,15 @@ pre,
     flex: 0.6;
   }
 }
+
+/* blockquote コンポーネント（出典付き引用）
+   tabi は figure を inline-block、figcaption を中央寄せにしている（画像キャプション用）。
+   引用では横幅いっぱいに広げ、出典を右寄せにする */
+figure.blockquote {
+  display: block;
+  margin: 1em 0;
+}
+
+figure.blockquote figcaption {
+  text-align: right;
+}

@@ -32,21 +32,13 @@ Berkeley Monoは少し前に一部で話題になっていましたが、リガ�
 
 紹介文には以下のように書かれています。
 
-<blockquote cite="https://berkeleygraphics.com/typefaces/berkeley-mono/">
-  Berkeley Mono is a love letter to the golden era of computing. The era that
-  gave rise to a generation of people who celebrated automation and reveled in
-  the joy of computing, when transistors replaced cogs, and machine-readable
-  typefaces were developed, for when humans and machines truly interfaced on an
-  unprecedented scale.
-  <footer>
-    <cite>
-      Berkeley Graphics -{" "}
-      <a href="https://berkeleygraphics.com/typefaces/berkeley-mono/">
-        Berkeley Mono
-      </a>
-    </cite>
-  </footer>
-</blockquote>
+<!-- textlint-disable -->
+
+{% <blockquote cite="https://berkeleygraphics.com/typefaces/berkeley-mono/" source="Berkeley Mono" author="Berkeley Graphics"> %}
+Berkeley Mono is a love letter to the golden era of computing. The era that gave rise to a generation of people who celebrated automation and reveled in the joy of computing, when transistors replaced cogs, and machine-readable typefaces were developed, for when humans and machines truly interfaced on an unprecedented scale.
+{% </blockquote> %}
+
+<!-- textlint-enable -->
 
 確かにちょっと懐かしい「コンピューター」らしい文字のデザインです。
 

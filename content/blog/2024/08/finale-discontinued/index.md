@@ -34,19 +34,10 @@ They feel there is "no incremental value for our customers" anymore.
 That said, Finale is the de facto standard in Japan's classical music community.
 So for those involved, it's not exactly a laughing matter where they can joke that "Finale has reached its finale."
 
-<blockquote>
-  Today, Finale is no longer the future of the notation industry—a reality after
-  35 years, and I want to be candid about this. Instead of releasing new
-  versions of Finale that would offer only marginal value to our users, we’ve
-  made the decision to end its development.
-  <footer>
-    <cite>
-      {" "}
-      the finale blog -{" "}
-      <a href="https://www.finalemusic.com/blog/end-of-finale-new-journey-dorico-letter-from-president/">
-        {" "}
-        The End of Finale
-      </a>
-    </cite>
-  </footer>
-</blockquote>
+<!-- textlint-disable -->
+
+{% <blockquote cite="https://www.finalemusic.com/blog/end-of-finale-new-journey-dorico-letter-from-president/" source="The End of Finale" author="the finale blog"> %}
+Today, Finale is no longer the future of the notation industry—a reality after 35 years, and I want to be candid about this. Instead of releasing new versions of Finale that would offer only marginal value to our users, we’ve made the decision to end its development.
+{% </blockquote> %}
+
+<!-- textlint-enable -->

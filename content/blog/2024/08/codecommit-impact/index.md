@@ -9,23 +9,16 @@ tags = ["Tech", "Cloud"]
 social_media_card = "ogp.webp"
 +++
 
-<blockquote>
-  Amazon's recent decision to stop accepting new users for several cloud
-  services caught some customers, partners and even a few employees by surprise.
-  (Amazon
-  が展開中の複数のクラウドサービスについて新規ユーザー登録受付を中止したことで、顧客や協力企業の間で混乱が広がっている。)
-  <footer>
-    <cite>
-      Business Insider -{" "}
-      <a href="https://www.businessinsider.com/aws-deprioritized-cloud-services-surprising-customers-salespeople-2024-8">
-        Amazon decision to deprioritize 7 cloud services caught customers and
-        even some salespeople by surprise
-      </a>
-    </cite>
-  </footer>
-</blockquote>
-
 以下の記事は、最近の報道などを見た個人的な意見です。既に中の人ではないので、この件に関しては報道以上の情報は持ち合わせていません。
+
+<!-- textlint-disable -->
+
+{% <blockquote cite="https://www.businessinsider.com/aws-deprioritized-cloud-services-surprising-customers-salespeople-2024-8" source="Amazon decision to deprioritize 7 cloud services caught customers and even some salespeople by surprise" author="Business Insider"> %}
+Amazon's recent decision to stop accepting new users for several cloud services caught some customers, partners and even a few employees by surprise.
+(Amazon が展開中の複数のクラウドサービスについて新規ユーザー登録受付を中止したことで、顧客や協力企業の間で混乱が広がっている。)
+{% </blockquote> %}
+
+<!-- textlint-enable -->
 
 ## サービス凍結の状況
 
