@@ -109,22 +109,18 @@ npm run lint:fix
 
 ## Link Card
 
-Display URLs as rich preview cards using the `linkcard` shortcode.
+Display a URL as a rich preview card using the `linkcard` component
+(`templates/components/linkcard.html`). Every URL is rendered through the
+[Hatena Blog Card](https://hatenablog-parts.com/) iframe, so no metadata
+fetching or build step is needed.
 
-- **GitHub repositories** — Fetches metadata via GitHub API and renders a custom card
-- **Other URLs** — Displays via [Hatena Blog Card](https://hatenablog-parts.com/) iframe
+```markdown
+<!-- textlint-disable -->
 
-```bash
-# Fetch GitHub repo metadata (required before commit)
-npm run linkcard
+{{< linkcard url="https://example.com/article" />}}
 
-# Preview what would be fetched (dry-run)
-npm run linkcard:dry-run
+<!-- textlint-enable -->
 ```
-
-GitHub URL以外は iframe で描画されるため、スクリプト実行は不要です（実行しても無害です）。
-
-Details: [`docs/linkcard.md`](docs/linkcard.md)
 
 ## OGP Image Generation
 
@@ -188,10 +184,7 @@ static/               # Static assets (CSS, images, favicon)
 themes/tabi/          # tabi theme (git submodule)
 scripts/
   generate-ogp.mjs      # OGP image generator
-  generate-linkcard.mjs # GitHub metadata fetcher for linkcard
   fonts/                # OGP fonts (gitignored - obtain separately, see Font Setup)
-data/
-  linkcard.json         # Cached GitHub repo metadata
 config.toml           # Zola configuration
 CLAUDE.md             # Claude Code AI assistant configuration
 ```

@@ -39,18 +39,11 @@ social_media_card = "ogp.webp"
 ないかなと思います。東京ガス本千葉ビルの辺りで、現在は巨大なガスタンクが建っ
 ています。
 
-<iframe
-  width="425"
-  height="350"
-  src="https://www.openstreetmap.org/export/embed.html?bbox=140.11248350143435%2C35.59471587191188%2C140.12416720390323%2C35.602488757310795&amp;layer=mapnik&amp;marker=35.59860240897393%2C140.11832535266876"
-  style={% raw %}{{ border: "1px solid black" }}{% endraw %}
-/>
-<br />
-<small>
-  <a href="https://www.openstreetmap.org/?mlat=35.598602&amp;mlon=140.118325#map=17/35.598602/140.118325">
-    大きな地図を表示
-  </a>
-</small>
+<!-- textlint-disable -->
+
+{{< spot geo="geo:35.598602,140.118325?z=15" name="寒川監獄（推定地）" address="千葉県千葉市中央区港町" access="最寄りはJR本千葉駅" />}}
+
+<!-- textlint-enable -->
 
 海に近い低地であったこともあり、腸チフスが監獄内で流行したりと衛生状態はよく
 なかったようです。そのためか1907(明治40)年には、

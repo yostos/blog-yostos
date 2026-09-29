@@ -417,8 +417,8 @@ raw で囲んだリテラルの内訳
 ### 移行と無関係に見つかった既存の問題（未対応）
 
 - `2026/07/zero` 記事の pCloud リンクが 404。`zola check` が失敗する（scheduled check は main でも 2026-09-15 から失敗）
-- `README.md` の Link Card 節が、`3241072 refactor: simplify linkcard` で廃止された GitHub カード機能を説明したまま
-- MDX 移行時の残骸 `style={{ ... }}`（`samukawa-kangoku`, `universal-audio-plugins`）
+- `README.md` の Link Card 節が、`3241072 refactor: simplify linkcard` で廃止された GitHub カード機能を説明したまま → 現在の実装（全 URL をはてなブログカードの iframe で表示）に合わせて修正済み
+- MDX 移行時の残骸 `style={{ ... }}`（`samukawa-kangoku`, `universal-audio-plugins`）→ `samukawa-kangoku` は手書きの OSM iframe を `spot` コンポーネント（`geo:35.598602,140.118325?z=15`）に置き換えて解消。`universal-audio-plugins` は未対応
 
 ### Step 10: /blog-review
 
