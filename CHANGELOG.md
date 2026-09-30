@@ -2,30 +2,12 @@
 
 All notable changes to this project will be documented in this file.
 
-The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
+The format is based on [Keep a Changelog](https://keepachangelog.com/en/2.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
 
 ## [2.0.0] - 2026-09-29
-
-### Changed (BREAKING)
-- Migrate to Zola 0.23.6 and tabi v5
-  - Shortcodes replaced with Tera 2 components
-    (`templates/components/`); article syntax changes from
-    `{{ name(key="value") }}` to `{{< name key="value" />}}`
-    and from `{% name() %}...{% end %}` to
-    `{% <name> %}...{% </name> %}`
-  - The whole Markdown body is now rendered by Tera; literal
-    `{{ }}` / `{% %}` must be wrapped in `{% raw %}`
-  - `image`, `linkcard`, `module`, `spot`, `youtube` and
-    `list_posts` moved to components
-  - All articles converted with
-    `scripts/migrate-shortcodes-zola-0.23.py`
-  - Removed `static/giallo.css`
-  - CI pinned to Zola 0.23.6
-  - Migration log in `docs/zola-0.23-migration-log.md`
-- Set site language to `ja`
 
 ### Added
 - `blockquote` component for quotations with author, source
@@ -44,6 +26,26 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Claude Code hook that checks commit message prefixes
 
 ### Changed
+- **Breaking:** Migrate to Zola 0.23.6 and tabi v5
+  - Shortcodes replaced with Tera 2 components
+    (`templates/components/`); article syntax changes from
+    `{{ name(key="value") }}` to `{{< name key="value" />}}`
+    and from `{% name() %}...{% end %}` to
+    `{% <name> %}...{% </name> %}`
+  - The whole Markdown body is now rendered by Tera; literal
+    `{{ }}` / `{% %}` must be wrapped in `{% raw %}`
+  - `image`, `linkcard`, `module`, `spot`, `youtube` and
+    `list_posts` moved to components
+  - All articles converted with
+    `scripts/migrate-shortcodes-zola-0.23.py`
+  - Unpublished drafts and content kept outside `content/` still
+    use the old syntax and fail to build; convert them with
+    `python scripts/migrate-shortcodes-zola-0.23.py <dir>`
+    (`--dry-run` to preview)
+  - Removed `static/giallo.css`
+  - CI pinned to Zola 0.23.6
+  - Migration log in `docs/zola-0.23-migration-log.md`
+- **Breaking:** Set site language to `ja`
 - Cover images generated as AVIF; image format rules for new
   articles documented (AVIF for photos, lossless WebP for
   diagrams)
@@ -51,10 +53,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Body font switched to system sans-serif (Helvetica Neue /
   Hiragino Sans); Google Fonts import removed
 - SixBraille font limited to braille glyphs in the banner header
-- Profile images shrunk to 384px bilevel WebP (about 9 KB to
-  122 bytes)
+- Profile images reduced to 384px bilevel WebP
 - Embedded SoundCloud players replaced with YouTube
-- Removed unused neovim-theme submodule
+
+### Removed
+- Unused neovim-theme submodule
 
 ### Fixed
 - Broken images on articles whose directory names contained
@@ -172,3 +175,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - standardize tags and fix external links
 - update styling and fix navigation menu
 - rename zola.toml to config.toml
+
+[Unreleased]: https://github.com/yostos/blog-yostos/compare/v2.0.0...HEAD
+[2.0.0]: https://github.com/yostos/blog-yostos/compare/v1.2.2...v2.0.0
+[1.2.2]: https://github.com/yostos/blog-yostos/compare/v1.2.1...v1.2.2
+[1.2.1]: https://github.com/yostos/blog-yostos/compare/v1.2.0...v1.2.1
+[1.2.0]: https://github.com/yostos/blog-yostos/compare/v1.1.0...v1.2.0
+[1.1.0]: https://github.com/yostos/blog-yostos/compare/v1.0.1...v1.1.0
+[1.0.1]: https://github.com/yostos/blog-yostos/compare/v1.0.0...v1.0.1
+[1.0.0]: https://github.com/yostos/blog-yostos/releases/tag/v1.0.0
