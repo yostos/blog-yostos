@@ -94,3 +94,9 @@ static/fonts/BerkeleyMono-*.woff2
 ### Python
 __pycache__/
 *.py[cod]
+
+# Environment files may hold real secrets. .env.op holds only 1Password
+# secret references (op://...), so it is safe to commit.
+.env
+.env.*
+!.env.op

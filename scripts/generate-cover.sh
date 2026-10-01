@@ -2,7 +2,7 @@
 set -euo pipefail
 
 # Generate cover image using OpenAI gpt-image-2.5 Flare API
-# Requires: OPENAI_API_KEY, curl, jq, avifenc
+# Requires: OPENAI_API_KEY (or .env.op + 1Password CLI), curl, jq, avifenc
 # Note: gpt-image-2.5 can return png, jpeg or webp, but we deliberately
 # keep the default PNG. It is the only lossless option among them, and
 # feeding a lossless intermediate to avifenc avoids stacking a second
@@ -60,6 +60,15 @@ done
 
 if [ -z "${PROMPT:-}" ] || [ -z "${OUTPUT:-}" ]; then
   usage
+fi
+
+# Resolve OPENAI_API_KEY from 1Password when .env.op exists at the repo
+# root. The script re-runs itself under `op run`, so the key lives only in
+# this process tree and `op run` masks it if it ever reaches stdout.
+# Without .env.op, the key is read from the shell environment as before.
+ENV_OP="$(cd "$(dirname "$0")/.." && pwd)/.env.op"
+if [ -f "$ENV_OP" ] && [ -z "${COVER_OP_RESOLVED:-}" ]; then
+  exec env COVER_OP_RESOLVED=1 op run --env-file "$ENV_OP" -- bash "$0" "$@"
 fi
 
 if [ -z "${OPENAI_API_KEY:-}" ]; then
