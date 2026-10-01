@@ -7,6 +7,7 @@ Zolaの高機能テーマ「tabi」には、
 見落としがちな機能をまとめて紹介します。
 """
 date = 2026-02-24T12:00:00+09:00
+updated = 2026-10-01
 [taxonomies]
 tags = ["Tech", "Weblog"]
 
@@ -38,6 +39,14 @@ tabiは多機能なテーマですが、
 </details>
 
 ## ショートコード
+
+<!-- textlint-disable -->
+
+{% <admonition type="warning" title="tabi v5以降をお使いの方へ"> %}
+この記事の記法サンプルはtabi v4以前のものです。tabi v5でショートコードはコンポーネントに置き換わったため、このままでは動作しません。v5での書き方は、記事末尾の「tabi v5での記法の変更」を参照してください。
+{% </admonition> %}
+
+<!-- textlint-enable -->
 
 tabiには18種類のビルトインショートコードと、
 このブログ用に自作したカスタムショートコード
@@ -373,6 +382,37 @@ Frontmatterに設定するだけで済むと知り、
 テーマの機能を活かしきれていないと
 感じている方は、一度公式ドキュメントを
 眺めてみることをおすすめします。
+
+## tabi v5での記法の変更
+
+2026年9月13日にリリースされたtabi v5.0.0は、Zola 0.23を必須としています。Zola 0.23でテンプレートエンジンのTeraがv2に上がってショートコードが廃止され、tabiのショートコードもすべてTera 2の「コンポーネント」に置き換わりました。変更の経緯は「[Zola 0.23とtabi v5への移行](@/blog/2026/09/zola-0-23-migration/index.md)」にまとめています。
+
+本文で紹介したサンプルは、v5では次のように書きます。
+
+```markdown
+{% raw %}{% <admonition type="warning" title="注意"> %}
+ここに警告メッセージを書きます。
+{% </admonition> %}
+
+{% <aside position="right"> %}
+補足情報をここに書きます。
+{% </aside> %}
+
+{{< multilingual_quote translated="考える、ゆえに我あり。" original="Cogito, ergo sum." author="René Descartes" />}}
+
+{% <references> %}
+
+- WEBサイト. 「[記事名](https://example.com)」.
+- 著者(2026). 『書名』.
+
+{% </references> %}
+
+犯人は、{{< spoiler text="執事でした。" />}}{% endraw %}
+```
+
+本文を持つものは{% raw %}`{% <名前 引数> %}`と`{% </名前> %}`{% endraw %}で囲み、本文を持たないものは{% raw %}`{{< 名前 引数 />}}`{% endraw %}と書きます。引数はカンマで区切らず、文字列以外の値は`{true}`のように波括弧で囲みます。
+
+表で非推奨とした`add_src_to_code_block`は、v5で削除されました。コードブロックのラベルをリンクにするには、`config.toml`で`code_block_name_links = true`を設定します。
 
 ## References
 
