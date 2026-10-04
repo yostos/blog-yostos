@@ -99,7 +99,7 @@ Stratocasterのハーフトーンのような音になりますが、コイル�
 
 ## まとめ
 
-元々所有していた、[Fender Stratocaster 70周年記念モデル](../../../04/27/stratocaster-1954/)(シングルコイル) ,
+元々所有していた、[Fender Stratocaster 70周年記念モデル](@/blog/2025/04/stratocaster-1954/index.md)(シングルコイル) ,
 1981年製Epiphone CASINO(P-90)、
 Aria Pro II PE-1500RI(ハイゲインハムバッカー)でコレクションは完結しているは
 ずでした。
