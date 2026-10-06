@@ -384,7 +384,7 @@ L4で仕上げた音源ならLRAはたいてい11 LU以下なので、`LRA=11`�
 そのため現在は、ラウドネスには手を加えず、形式だけを変換しています。FLACは可逆圧縮なので、L4で仕上げた結果がそのまま残ります。
 
 ```bash
-ffmpeg -i xxxx.aiff -c:a flac xxxx.flac
+ffmpeg -i xxxx.aiff -c:a flac -compression_level 8 xxxx.flac
 ```
 
 マスタリング済みの音源に使う理由はなくなりましたが、このスクリプトの価値がまったくなくなったわけではありません。次のような場面では今でも役に立ちます。
