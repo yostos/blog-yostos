@@ -55,6 +55,31 @@ LSPへの対応も、Neovimが先行しました。Microsoftが2016年にLSPを�
 - LSP: Emacs 29からLSPクライアントのEglotが同梱されている。 `M-x eglot` で言語サーバーに接続すれば、補完、定義ジャンプ、Flymakeによる診断表示がそのまま使える。Emacs 30では独自実装のJSONパーサーが入り、言語サーバーとの通信が速くなった。
 - 構文解析: Emacs 29からtree-sitterを標準で利用できる。 `python-ts-mode` のような `*-ts-mode` 系のメジャーモードが、構文木に基づくハイライト、インデント、構造単位の移動を提供する。ただし言語ごとの文法ファイルは同梱されていないため、 `treesit-install-language-grammar` などで別途インストールする必要がある。
 
+私の設定から、use-packageの例を3つ抜き出します。パッケージアーカイブから導入するMagit、Emacs本体に同梱されているEglot、そして `:vc` でGitHubから直接取得するclaude-code.elです。
+
+```emacs-lisp,name=init.el
+;; パッケージアーカイブから導入し、キーを割り当てる
+(use-package magit
+  :ensure t
+  :bind (("C-x g" . magit-status)
+         ("C-x M-g" . magit-dispatch)))
+
+;; 同梱パッケージなので :ensure nil。Python のバッファで自動的に言語サーバーへ接続する
+(use-package eglot
+  :ensure nil
+  :hook ((python-mode python-ts-mode) . eglot-ensure))
+
+;; MELPA には無いので GitHub から直接取る
+(use-package claude-code
+  :ensure t
+  :vc (:url "https://github.com/stevemolitor/claude-code.el" :rev :newest)
+  :bind-keymap ("C-c k" . claude-code-command-map)
+  :config
+  (claude-code-mode 1))
+```
+
+パッケージの取得元、キー割り当て、フック、読み込み後の設定が1つのブロックにまとまっています。
+
 ほかにも、Emacs 28でElispをネイティブコードにコンパイルする機能(native compilation)が入り、Emacs 30ではlibgccjitがあれば既定で有効になりました。Emacs 30では、キー操作の候補を表示するwhich-key、EditorConfigのサポート、入力中の補完候補をインライン表示する `completion-preview-mode` も標準になりました。2026年8月にリリースされたEmacs 31.1では、ミニバッファ補完やウィンドウ配置の操作がさらに改良されています。
 
 一方のNeovimでは、パッケージ管理をめぐる状況が変わりました。私はlazy.nvimを組み込んだLazyVimを使ってきましたが、2026年3月のNeovim 0.12で標準のパッケージマネージャーvim.packが搭載されました。lazy.nvimを使い続けてよいのか、いずれvim.packに移行すべきなのか、LazyVimは今後どうなるのか。設定の土台が揺らいだように感じたことも、Emacsへの移行を考えた理由の1つです。
@@ -121,6 +146,51 @@ GUIで動くことで、表現力にも余裕が生まれます。ターミナ�
 
 たとえば、Elfeedで読んだ記事やMewで受け取ったメールの一部をOrg modeのメモに取り込み、gptelでLLMに要約や翻訳をさせ、その結果をさらにClaude Codeへの指示として渡す。こうした流れを、アプリケーションを切り替えることなく1つの環境の中で進められます。集めたテキストは、矩形編集やキーボードマクロ、Org modeの見出しの付け替え(refile)といったEmacsの編集機能で整理し、1つの文書に集約できます。
 
+こうしたテキストを受け止めるのがorg-roamです。私の設定では、キャプチャテンプレートを2つ用意しています。 `d` は空のノードを作る通常のテンプレート、 `c` は呼び出したときに選択していた範囲( `%i` )を本文に取り込むテンプレートです。メールやRSSの記事で気になった部分を選択して `org-roam-capture` を呼べば、その部分がそのまま新しいノードになります。
+
+```emacs-lisp,name=init.el
+(use-package org-roam
+  :ensure t
+  :custom
+  (org-roam-directory (file-truename "~/org/roam"))
+  ;; ノード一覧にタグを表示する（分類はタグのみなので）
+  (org-roam-node-display-template
+   (concat "${title:*} " (propertize "${tags:20}" 'face 'org-tag)))
+  (org-roam-capture-templates
+   '(("d" "default" plain "%?"
+      :target (file+head
+               "%<%Y%m%d%H%M%S>.org"
+               "#+title: ${title}\n#+filetags: \n#+date: %U\n#+startup: showall\n")
+      :unnarrowed t)
+     ("c" "clip" plain "%i\n\n%?"
+      :target (file+head "%<%Y%m%d%H%M%S>.org"
+                         "#+title: ${title}\n")
+      :unnarrowed t)))
+  ;; 日誌（org-roam-dailies）は 1 日 1 ファイル、1 回ごとに時刻付きの見出しを足す
+  (org-roam-dailies-capture-templates
+   '(("l" "Log" entry
+      "* %<%H:%M> %?"
+      :target (file+head+olp
+               "%<%Y-%m-%d>.org"
+               "#+title: %<%Y-%m-%d %a>\n#+filetags: :JOURNAL:\n\n* Log\n* Notes\n"
+               ("Log")))
+     ("n" "Notes" entry
+      "* %?\n%U"
+      :target (file+head+olp
+               "%<%Y-%m-%d>.org"
+               "#+title: %<%Y-%m-%d %a>\n#+filetags: :JOURNAL:\n\n* Log\n* Notes\n"
+               ("Notes")))))
+  :bind (("C-c n f" . org-roam-node-find)
+         ("C-c n i" . org-roam-node-insert)
+         ("C-c n c" . org-roam-capture)
+         ("C-c n l" . org-roam-buffer-toggle)
+         ("C-c n t" . org-roam-tag-add))
+  :bind-keymap ("C-c n j" . org-roam-dailies-map)
+  :config
+  (require 'org-roam-dailies)
+  (org-roam-db-autosync-mode))
+```
+
 人間の仕事が「書く」ことから「集めて、AIとやり取りし、まとめる」ことへ移りつつある今、テキストのハブとして機能するEmacsは、時代に合ったツールだと考えています。
 
 ## なぜVS Codeではないのか
@@ -131,9 +201,7 @@ GUIで動くことで、表現力にも余裕が生まれます。ターミナ�
 
 まず、画面の周囲をサイドバーやパネルで埋めるインターフェイスが嫌いです。
 
-設計の面でも、編集に特化したVim、OSのような環境を目指すEmacsと比べると、VS Codeはどちらにも振り切れていない中途半端なツールに見えます。拡張機能は公開されたAPIの範囲でしか動けず、Emacsのようにエディタ自体を書き換えることはできません。Org modeの拡張も基本機能にとどまり、アジェンダやBabelは使えません。
-
-いろいろ並べましたが、結局はMicrosoftの製品というだけで格好悪く感じてしまう世代なのです。
+設計の考え方も、編集に特化したVimやOSのような環境を目指すEmacsとは異なります。VS Codeの拡張機能は公開されたAPIの範囲で動く設計になっており、Emacsのようにエディタ自体を書き換えることはできません。Org modeの拡張も基本機能にとどまり、アジェンダやBabelは使えません。
 
 ## まとめ
 
@@ -142,6 +210,20 @@ GUIで動くことで、表現力にも余裕が生まれます。ターミナ�
 そのうえでEmacsには、Neovimにはない強みがあります。howmに近いメモ環境を実現するorg-roamと、成熟したOrg modeがあります。メール、RSS、Web、そしてClaude CodeやLLMまでを1つの環境に取り込めます。GUIで動くため、ターミナルの制約も受けません。
 
 生成AIの時代に人間が担う仕事は、あちこちにあるテキストを集め、LLMとやり取りし、成果物に仕上げることです。Emacsでは、メール、RSSの記事、メモ、Claude Codeやgptelとの対話をすべて同じバッファとして扱えます。それらをElispで思いどおりにつなぎ、Org modeで1つの文書にまとめられます。さまざまなテキストとLLMをつなぎ、成果物を仕上げる環境として、Emacsに勝るものはありません。十数年ぶりに戻ってきたEmacsは、AIの時代にこそ真価を発揮するエディタになっていました。
+
+## References
+
+<!-- textlint-disable -->
+
+{% <references> %}
+
+- [GNU Mailing Lists](https://lists.gnu.org/archive/html/info-gnu-emacs/2026-08/msg00004.html). "Emacs 31.1 released"
+- [GitHub](https://github.com/neovim/neovim/releases/tag/v0.12.0). "Nvim 0.12.0"
+- [Neovim](https://neovim.io/doc/user/news-0.12/). "News-0.12"
+
+{% </references> %}
+
+<!-- textlint-enable -->
 
 [^1]: MINCEは「MINCE Is Not Complete Emacs」の略。発売元のMark of the Unicornは、現在は音楽機器メーカーのMOTUとして知られている。
 

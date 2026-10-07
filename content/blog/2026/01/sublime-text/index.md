@@ -9,7 +9,7 @@ VS Codeに市場シェアを奪われても品質を保ち続ける職人主義�
 date = 2026-01-08
 
 [taxonomies]
-tags = ["Tech", "Application"]
+tags = ["Tech", "Editor"]
 [extra]
 social_media_card = "ogp.webp"
 +++
