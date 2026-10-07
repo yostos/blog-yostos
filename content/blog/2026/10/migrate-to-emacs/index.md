@@ -7,6 +7,9 @@ date = 2026-10-07
 [extra]
 social_media_card = "ogp.webp"
 local_image = "cover.avif"
+
+[taxonomies]
+tags = ["Tech", "Editor"]
 +++
 
 <!-- textlint-disable -->

@@ -72,6 +72,11 @@ parent = "Tech"
 description = "コマンドラインツールとターミナル環境。"
 
 [[layer2]]
+name = "Editor"                             # 1
+parent = "Tech"
+description = "テキストエディタとその環境。設定、拡張、乗り換え。"
+
+[[layer2]]
 name = "Cloud"                              # 18
 parent = "Tech"
 description = "クラウドコンピューティング全般。インフラとマネージドサービス。"
