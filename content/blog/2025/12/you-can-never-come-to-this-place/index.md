@@ -11,7 +11,7 @@ social_media_card = "ogp.webp"
 
 {{< youtube id="vh--7DaUe4s" />}}
 
-A few months ago, I [attended a Takanaka Masayoshi concert](/articles/2025/09/21/takanaka). The encore finale was "You Can Never Come To This Place" - I never imagined I'd get to hear this beloved track from the legendary album "Rainbow Grapefruit" performed live, and I was truly moved.
+A few months ago, I [attended a Takanaka Masayoshi concert](@/blog/2025/09/takanaka/index.md). The encore finale was "You Can Never Come To This Place" - I never imagined I'd get to hear this beloved track from the legendary album "Rainbow Grapefruit" performed live, and I was truly moved.
 
 While the emotion was still fresh, I decided to challenge myself to master this piece before the year ended. With its rapid-fire phrases, I honestly felt like giving up many times, but I kept practicing, remembering the excitement of that concert.
 It's far from perfect, but I played it with all my love for this song and the emotion I felt at that concert.

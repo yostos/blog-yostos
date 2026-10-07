@@ -95,7 +95,7 @@ AWSの新しいCEO Matt Garmanが以下のように語ったと報じられま�
 
 人間が作成したアルゴリズムを使わずニューラルネットでシステムを作成すると言うSoftware 2.0は、最先端でも理解しているエンジニアもほとんどいないため実案件で使われるようになるには少し時間が掛かるでしょう。
 
-[以前の記事](/articles/2024/08/09/Software-Development-Using-AI)で書いたよう、当面はCopliotのようなAIの補完ツール、Anthropic社の[Cloude3 Sonnet Artifacts]のようなAIと協働して開発を進めるモデルを経てAIにアルゴリズムを開発させる形態へと徐々に移行していくでしょう。
+[以前の記事](@/blog/2024/08/software-development-using-ai/index.md)で書いたよう、当面はCopilotのようなAIの補完ツール、Anthropic社のClaude 3 Sonnet ArtifactsのようなAIと協働して開発を進めるモデルを経てAIにアルゴリズムを開発させる形態へと徐々に移行していくでしょう。
 
 この文脈でAIが活用されている間は最終的な成果物の評価はエンジニアに委ねられるため、
 これまで以上に高度なコーディングスキルが求められるでしょう。

@@ -30,7 +30,7 @@ social_media_card = "ogp.webp"
 特徴的です。テクニカルでありながらも、繊細なニュアンスと表現力が求められる難曲だ
 と思います。
 
-リードギターには[YAMAHA REVSTAR RSP20](/articles/2025/07/22/yamaha-revstar-rsp20)を使用しました。
+リードギターには[YAMAHA REVSTAR RSP20](@/blog/2025/07/yamaha-revstar-rsp20/index.md)を使用しました。
 オリジナルでは高中正義がYAMAHA SGを使用しており、同じYAMAHAのハムバッカー搭載ギターとしてREVSTARを使用しました。
 リフやバッキングにはFender Stratocasterを使用し、シングルコイルとハムバッカーのコントラストを出しています。
 
@@ -59,4 +59,4 @@ When playing this piece, I focused on:
 | Audio Interface  | MOTU M2                                |
 | Amp Sim          | Neural DSP Archetype Cory Wong X       |
 
-For the lead guitar, I used the [YAMAHA REVSTAR RSP20](/articles/2025/07/22/yamaha-revstar-rsp20). Since Takanaka used a YAMAHA SG in the original recording, I chose the REVSTAR as a fellow YAMAHA humbucker-equipped guitar. The Fender Stratocaster provides contrast with its single-coil pickups for the backing parts.
+For the lead guitar, I used the [YAMAHA REVSTAR RSP20](@/blog/2025/07/yamaha-revstar-rsp20/index.md). Since Takanaka used a YAMAHA SG in the original recording, I chose the REVSTAR as a fellow YAMAHA humbucker-equipped guitar. The Fender Stratocaster provides contrast with its single-coil pickups for the backing parts.

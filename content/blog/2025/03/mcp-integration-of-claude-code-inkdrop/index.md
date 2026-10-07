@@ -11,7 +11,7 @@ mermaid = true
 tags = ["Tech", "Generative AI"]
 +++
 
-[前回の記事](/articles/2025/03/28/claude-integration-with-inkdrop)では、 InkdropとClaude Desktopの統合について紹介しました。今回は一歩進んで、Claude CodeをMCPサーバーとして活用する方法とそのメリットについて詳しく解説します。
+[前回の記事](@/blog/2025/03/claude-integration-with-inkdrop/index.md)では、 InkdropとClaude Desktopの統合について紹介しました。今回は一歩進んで、Claude CodeをMCPサーバーとして活用する方法とそのメリットについて詳しく解説します。
 
 <!-- toc -->
 
@@ -30,7 +30,7 @@ claude mcp serve
 
 ## Claude DesktopにClaude CodeをMCP Serverとして登録
 
-[Inkdropと同様](/articles/2025/03/28/claude-integration-with-inkdrop)に、Claude Desktopに
+[Inkdropと同様](@/blog/2025/03/claude-integration-with-inkdrop/index.md)に、Claude Desktopに
 Claude CodeをMCP Serverとして登録します。
 
 また、`bash`の問題が起きそうだったので、例のごとくシェルスクリプトでWrapし`~/bin/claude-code-mcp`というファイル名で配置し実行権限を付けした。

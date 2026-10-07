@@ -39,7 +39,7 @@ social_media_card = "ogp.webp"
 
 これらの投資の大半はGPUなど「学習プロセス」を司るインフラでしょう。
 
-[9月6日の記事](/articles/2024/09/06/Weekly-buzz-20240906)でNVIDIA
+[9月6日の記事](@/blog/2024/09/weekly-buzz-20240906/index.md)でNVIDIA
 について次のように書きましたが、まだまだ「学習プロセス」の時代は続きそうで
 す。
 

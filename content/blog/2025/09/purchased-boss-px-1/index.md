@@ -20,7 +20,7 @@ social_media_card = "ogp.webp"
   <!-- toc -->
 </details>
 
-以前の[記事](/articles/2025/09/08/boss-px1-personal-thoughts)では
+以前の[記事](@/blog/2025/09/boss-px1-personal-thoughts/index.md)では
 技術的には興味深いが、
 使い方が思い浮かばないなどと書いていました。
 

@@ -56,7 +56,7 @@ Free The Toneの「Overdriveland」は、伝説的なDUMBLEアンプのサウン
 昇圧が可能です。昇圧すると歪み感は押さえられヘッドルームが広がり
 輪郭のはっきりした押し出し感のある音になります。
 
-[先日Xotic AC Booster V2で弾いた](/articles/2025/04/27/we-are-all-alone)曲を
+[先日Xotic AC Booster V2で弾いた](@/blog/2025/04/we-are-all-alone/index.md)曲を
 Overdrivelandでも弾いてみました。
 
 <SoundCloudEmbed

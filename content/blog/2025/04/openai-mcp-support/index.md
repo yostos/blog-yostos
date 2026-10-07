@@ -49,7 +49,7 @@ Model Context Protocol (MCP)は、大規模言語モデル(LLM)に対する指�
 - **Context（コンテキスト）** - モデルが参照すべき情報や知識を提供する
 - **Protocol（プロトコル）** - モデルの動作や応答方法のルールを設定する
 
-[以前の記事](/articles/2025/03/28/claude-integration-with-inkdrop)では、
+[以前の記事](@/blog/2025/03/claude-integration-with-inkdrop/index.md)では、
 **Context**を使って独自のナレッジ(Inkdrop)をClaudeに追加するということをやっただけですが、
 Claude活用の可能性が途端に広がりものすごい効果を体感できました。これまでも
 Contextの部分にだけ限るとRAG (Retrieval-Augmented Generation)という手法があ
