@@ -13,10 +13,8 @@ tags = ["Tech", "Generative AI"]
 
 [extra]
 social_media_card = "ogp.webp"
-canonical_url = "https://zenn.dev/yostos/articles/genai-governance-checklist-release"
 +++
 
-この記事は [Zenn に掲載したオリジナル記事](https://zenn.dev/yostos/articles/genai-governance-checklist-release) の転載です。
 
 <!-- more -->
 
