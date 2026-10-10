@@ -25,6 +25,12 @@ fi
 # Extract TOML frontmatter between +++ markers
 frontmatter=$(sed -n '/^+++$/,/^+++$/p' "$article_path" | sed '1d;$d')
 
+# Skip drafts: they are not published, so there is nothing to link to
+if echo "$frontmatter" | grep -q '^draft *= *true'; then
+  echo "Skip: $article_path is a draft"
+  exit 0
+fi
+
 # Extract title
 title=$(echo "$frontmatter" | grep '^title' | head -1 | sed 's/^title *= *"\(.*\)"/\1/')
 if [ -z "$title" ]; then
