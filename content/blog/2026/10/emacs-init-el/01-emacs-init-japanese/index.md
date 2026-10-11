@@ -31,6 +31,8 @@ local_image = "cover.avif"
 
 この連載が、その一助になればと考えています。
 
+初期設定の全体については[Gist](https://gist.github.com/yostos/631d858c283b1a15fc487f474c837a86)をご覧ください。
+
 ----
 ## Emacsの日本語環境
 
