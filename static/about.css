@@ -1,0 +1,115 @@
+/* About page specific styles */
+
+/* このページだけ本文フォントを Berkeley Mono にする */
+:root {
+  --sans-serif-font:
+    "BerkeleyMono", "Hiragino Sans", "Hiragino Kaku Gothic ProN",
+    "Noto Sans JP", monospace;
+  --serif-font: var(--sans-serif-font);
+  --header-font: var(--sans-serif-font);
+  --post-font-family: var(--sans-serif-font);
+}
+
+/* ナビゲーションは Inter が直接指定されているため上書きする */
+header {
+  font-family: var(--sans-serif-font);
+}
+
+.about-profile {
+  line-height: 1.6;
+}
+
+.about-profile h2 {
+  margin-top: 1.25rem;
+  margin-bottom: 0.3rem;
+  border-bottom: none;
+  padding-bottom: 0;
+  color: var(--meta-color);
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* 直前のプロフィール欄が下余白を持つので、最初の見出しは詰める */
+.about-profile h2:first-child {
+  margin-top: 0;
+}
+
+.about-profile h2::before {
+  content: "##";
+  margin-right: 0.8ch;
+}
+
+.about-profile p {
+  margin: 0;
+  line-height: 1.6;
+}
+
+.about-profile ul {
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+.about-profile li {
+  position: relative;
+  margin: 0.15rem 0;
+  padding-left: 2ch;
+}
+
+.about-profile li::before {
+  content: "-";
+  position: absolute;
+  left: 0;
+  color: var(--meta-color);
+}
+
+.about-profile .cert-list li {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  column-gap: 1.5rem;
+}
+
+.about-profile .cert-name {
+  flex: 1 1 auto;
+}
+
+.about-profile .cert-issuer,
+.about-profile .cert-year,
+.about-profile .explore-desc {
+  color: var(--meta-color);
+  font-size: 0.85em;
+}
+
+.about-profile .cert-year {
+  font-variant-numeric: tabular-nums;
+}
+
+/* 期限切れの表示は発行元の前に置き、年度の列を揃えたままにする */
+.about-profile .cert-expired {
+  color: var(--meta-color);
+  font-size: 0.75em;
+  font-style: oblique;
+}
+
+/* Explore はリンク名の列幅を揃え、説明文の開始位置を合わせる */
+.about-profile #Explore + ul {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  column-gap: 2ch;
+}
+
+.about-profile #Explore + ul li {
+  display: grid;
+  grid-column: 1 / -1;
+  grid-template-columns: subgrid;
+  align-items: baseline;
+}
+
+/* 狭い画面では発行元と年度を資格名の下に回す */
+@media (max-width: 600px) {
+  .about-profile .cert-name {
+    flex-basis: 100%;
+  }
+}
