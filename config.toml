@@ -8,13 +8,13 @@ theme = "tabi"
 default_language = "ja"
 compile_sass = true
 minify_html = false
-build_search_index = false  # 日本語非対応のためPagefindを別途使用
+build_search_index = false # 日本語非対応のためPagefindを別途使用
 generate_feeds = true
 
-taxonomies = [{name = "tags", feed = true}]
+taxonomies = [{ name = "tags", feed = true }]
 
 [slugify]
-anchors = "safe"  # 日本語見出しのアンカーリンクを保持
+anchors = "safe" # 日本語見出しのアンカーリンクを保持
 
 [search]
 include_title = true
@@ -29,7 +29,7 @@ definition_list = true
 
 [markdown.highlighting]
 theme = "catppuccin-frappe"
-style = "class"  # tabi必須
+style = "class"             # tabi必須
 
 [extra]
 enable_csp = false
@@ -45,8 +45,8 @@ social_media_card = "images/coded-chords.webp"
 favicon = "apple-touch-icon.png"
 copy_button = true
 code_block_name_links = true
-mermaid = false  # ページ単位で [extra] mermaid = true で有効化
-serve_local_mermaid = false  # CDNから最新版Mermaidを読み込む
+mermaid = false                                                                                                                      # ページ単位で [extra] mermaid = true で有効化
+serve_local_mermaid = false                                                                                                          # CDNから最新版Mermaidを読み込む
 show_previous_next_article_links = true
 stylesheets = ["custom.css"]
 copyright = "© $CURRENT_YEAR $AUTHOR • Content licensed under [CC BY-NC-ND 4.0](https://creativecommons.org/licenses/by-nc-nd/4.0/)"
@@ -56,24 +56,23 @@ show_remote_changes = true
 full_content_in_feed = true
 
 menu = [
-    { name = "blog", url = "blog", trailing_slash = true },
-    { name = "archive", url = "archive", trailing_slash = true },
-    { name = "tags", url = "tags", trailing_slash = true },
-    { name = "music", url = "music", trailing_slash = true },
-    { name = "projects", url = "projects", trailing_slash = true },
-    { name = "ask", url = "https://ask.codedchords.dev", trailing_slash = false },
-    { name = "find", url = "search", trailing_slash = true },
+  { name = "about", url = "about", trailing_slash = true },
+  { name = "blog", url = "blog", trailing_slash = true },
+  { name = "archive", url = "archive", trailing_slash = true },
+  { name = "tags", url = "tags", trailing_slash = true },
+  { name = "projects", url = "projects", trailing_slash = true },
+  { name = "ask", url = "https://ask.codedchords.dev", trailing_slash = false },
+  { name = "find", url = "search", trailing_slash = true },
 ]
 
 socials = [
-    { name = "github", url = "https://github.com/yostos", icon = "github" },
-    { name = "bluesky", url = "https://bsky.app/profile/codedchords.dev", icon = "bluesky" },
-    { name = "nostr", url = "https://nostter.app/nprofile1qqsz8c9hcxxw2rydxkg8r0x32d4ql8h6mdkgrdf4982jfqclay7cakgvxxml9", icon = "nostr" },
+  { name = "github", url = "https://github.com/yostos", icon = "github" },
+  { name = "bluesky", url = "https://bsky.app/profile/codedchords.dev", icon = "bluesky" },
+  { name = "nostr", url = "https://nostter.app/nprofile1qqsz8c9hcxxw2rydxkg8r0x32d4ql8h6mdkgrdf4982jfqclay7cakgvxxml9", icon = "nostr" },
+  { name = "youtube", url = "https://www.youtube.com/@yostos-guitar", icon = "youtube" },
 ]
 
-footer_menu = [
-    { url = "license", name = "license", trailing_slash = true },
-]
+footer_menu = [{ url = "license", name = "license", trailing_slash = true }]
 
 [extra.analytics]
 service = "goatcounter"
@@ -104,41 +103,41 @@ domain = "codedchords.dev"
 [link_checker]
 # 外部リンクチェックから除外するURLプレフィックス
 skip_prefixes = [
-    # 政府系サイト（User-Agentベースのアクセス制限）
-    "https://www.gov-online.go.jp/",
-    "https://www.mofa.go.jp/",
-    "https://www.mlit.go.jp/",
-    "https://www.meti.go.jp/",
-    "https://www.maff.go.jp/",
-    "https://laws.e-gov.go.jp/",
-    "https://www.sanae.gr.jp/",
-    # アンカー仕様問題
-    "https://www.openstreetmap.org/",
-    # サーバー接続問題・レート制限
-    "https://flyers.plus/",
-    "https://venturebeat.com/",
-    # botアクセスをブロック（403 Forbidden）
-    "https://www.bloomberg.com/",
-    "https://soundcloud.com/",
-    "https://flic.kr/",
-    "https://www.npmjs.com/",
-    # botアクセスをブロック（403 Forbidden、ブラウザでは閲覧可能）
-    "https://www.mizuhobank.co.jp/",
-    # レート制限による偽陽性（実行のたびに別URLが失敗）
-    "https://github.com/",
-    # レート制限による偽陽性（429 Too Many Requests）
-    "https://youtu.be/",
-    "https://www.youtube.com/",
-    "https://www.uaudio.com/",
-    "https://dmprovisuals.com/",
-    # botアクセスをブロック（ブラウザでは閲覧可能）
-    "https://controlhub.top/",
-    # サーバー接続問題・一時エラー（ブラウザでは200）
-    "https://electrelic.com/",
-    "https://www.sixfivemedia.com/",
-    # Acceptヘッダーなしで415を返す（ブラウザでは200）
-    "https://www.asciiart.eu/",
-    # 商品削除・bot判定で404/405になりやすい（アフィリエイトリンク）
-    "https://amzn.to/",
-    "https://www.amazon.co.jp/",
+  # 政府系サイト（User-Agentベースのアクセス制限）
+  "https://www.gov-online.go.jp/",
+  "https://www.mofa.go.jp/",
+  "https://www.mlit.go.jp/",
+  "https://www.meti.go.jp/",
+  "https://www.maff.go.jp/",
+  "https://laws.e-gov.go.jp/",
+  "https://www.sanae.gr.jp/",
+  # アンカー仕様問題
+  "https://www.openstreetmap.org/",
+  # サーバー接続問題・レート制限
+  "https://flyers.plus/",
+  "https://venturebeat.com/",
+  # botアクセスをブロック（403 Forbidden）
+  "https://www.bloomberg.com/",
+  "https://soundcloud.com/",
+  "https://flic.kr/",
+  "https://www.npmjs.com/",
+  # botアクセスをブロック（403 Forbidden、ブラウザでは閲覧可能）
+  "https://www.mizuhobank.co.jp/",
+  # レート制限による偽陽性（実行のたびに別URLが失敗）
+  "https://github.com/",
+  # レート制限による偽陽性（429 Too Many Requests）
+  "https://youtu.be/",
+  "https://www.youtube.com/",
+  "https://www.uaudio.com/",
+  "https://dmprovisuals.com/",
+  # botアクセスをブロック（ブラウザでは閲覧可能）
+  "https://controlhub.top/",
+  # サーバー接続問題・一時エラー（ブラウザでは200）
+  "https://electrelic.com/",
+  "https://www.sixfivemedia.com/",
+  # Acceptヘッダーなしで415を返す（ブラウザでは200）
+  "https://www.asciiart.eu/",
+  # 商品削除・bot判定で404/405になりやすい（アフィリエイトリンク）
+  "https://amzn.to/",
+  "https://www.amazon.co.jp/",
 ]

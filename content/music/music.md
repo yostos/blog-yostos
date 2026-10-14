@@ -4,6 +4,9 @@ template = "info-page.html"
 path = "music"
 +++
 
+<!-- このページは既にメニューからは外れている -->
+<!-- 404対応のためだけにページは残す -->
+
 I play guitar and create music as a hobby.
 Here are my original tracks and cover songs.
 
