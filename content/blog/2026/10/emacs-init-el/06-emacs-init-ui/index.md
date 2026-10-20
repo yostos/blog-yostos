@@ -1,7 +1,7 @@
 +++
 title = "AI時代のEmacs設定術(6): Emacsを楽しく彩る"
 description = """
-Emacsを起動すると、GNUのロゴと案内文が出るだけです。設定を少し加えれば、起動画面も配色も自分好みに彩れます。起動画面を入口に変えるdashboard、doom-themesとdoom-modelineによる配色とモードライン、括弧を色分けするrainbow-delimiters、遊び心のnyan-modeを、私のinit.elをもとに紹介します。
+Emacsを起動すると、GNUのロゴと案内文が出るだけです。設定を少し加えれば、起動画面も配色も自分好みに彩れます。起動画面を入口に変えるdashboard、doom-themesとdoom-modelineによる配色とモードライン、括弧を色分けするrainbow-delimiters、ファイル一覧を彩るdirvish、遊び心のnyan-modeを、私のinit.elをもとに紹介します。
 """
 date = 2026-10-20T12:57:20+09:00
 [extra]
@@ -83,7 +83,7 @@ MELPAにあるので、`use-package`に書いて`dashboard-setup-startup-hook`�
 
 バナーの下には、よく開くものへのボタンを1行に並べています。今日の日誌を開くJournal、org-roamのノードを探すRoam、howmのメニューを開くHowm、[5回目](@/blog/2026/10/emacs-init-el/05-emacs-init-reading/index.md)で紹介したMewとElfeed、[3回目](@/blog/2026/10/emacs-init-el/03-emacs-init-claude-code/index.md)で紹介したghostelのターミナルを開くTerminalの6つです。ボタンは、`dashboard-navigator-buttons`に、アイコン、タイトル、マウスを重ねたときの説明、押したときに呼ぶ関数を1組にして並べます。
 
-ボタンのアイコンもnerd-iconsです。アイコンは`nerd-icons-mdicon`などの関数を呼んで作るので、リストをバッククォートで書き、関数を呼ぶところにカンマを付けています。関数を呼ぶ以上、nerd-iconsが読み込まれている必要があるため、`:custom`ではなく、パッケージを読み込んだ後に実行される`:config`で設定しました。
+ボタンのアイコンもnerd-iconsです。アイコンは`nerd-icons-mdicon`などの関数を呼んで作るので、リストをバッククォートで書き、関数を呼ぶところにカンマを付けています。関数を呼ぶには、nerd-iconsが読み込まれている必要があります。そのため、`:custom`ではなく、パッケージを読み込んだ後に実行される`:config`で設定しました。
 
 ボタンは、カーソルを合わせて`RET`を押すか、クリックすれば動きます。ただ、そのたびにカーソルを動かすのは手間なので、ボタンと同じ操作を、カーソルの位置に関係なく1キーで呼べるようにしました。dashboardの画面では、小文字の`j`、`k`、`r`、`p`、`m`、`a`、`e`、`g`と数字がすでに使われています。一覧のショートカットの大文字も、dashboardが一覧を逆の順で移るのに使います。そこで、これらを避けた大文字の`J`、`O`、`H`、`W`、`F`、`T`を割り当てました。ボタンのタイトルの括弧の中にキーを書いておくと、画面を見るだけでキーがわかります。
 
@@ -128,7 +128,7 @@ MELPAにあるので、`use-package`に書いて`dashboard-setup-startup-hook`�
 
 Emacsにも、ほかのエディタと同じく配色を切り替えるテーマがあります。modus-themesなど20あまりが標準で入っていて、`M-x customize-themes`で試せます。MELPAにも多くのテーマがあります。
 
-数あるテーマの中から私が選んだのは、doom-themesです。doom-themesは、Vimのキー操作を標準にしたEmacsの設定集Doom Emacsのために作られたテーマ集ですが、テーマだけを単体のパッケージとして使えます[^1]。doom-themesを選んだのは、色を変えるだけでなく、太字や斜体の使い分けまで作り込まれているからです。`doom-themes-enable-bold`と`doom-themes-enable-italic`を`t`にすれば、キーワードやコメントなどに太字や斜体が付きます。`doom-themes-org-config`を呼べば、Org modeの見出しなどもテーマに合わせて表示されます。どのテーマもこの作り込みが共通なので、テーマを替えても同じ見やすさを保てます。私はその中から、明るい配色のdoom-oksolar-lightを使っています。
+数あるテーマの中から私が選んだのは、doom-themesです。doom-themesは、Vimのキー操作を標準にしたEmacsの設定集Doom Emacsのために作られたテーマ集ですが、テーマだけを単体のパッケージとして使えます[^1]。doom-themesを選んだのは、配色だけでなく、太字や斜体の使い分けまで作り込まれているからです。`doom-themes-enable-bold`と`doom-themes-enable-italic`を`t`にすれば、キーワードやコメントなどに太字や斜体が付きます。`doom-themes-org-config`を呼べば、Org modeの見出しなどもテーマに合わせて表示されます。どのテーマもこの作り込みが共通なので、テーマを替えても同じ見やすさを保てます。私はその中から、明るい配色のdoom-oksolar-lightを使っています。
 
 ほかのエディタのステータスバーにあたるモードラインは、doom-modelineに替えています。doom-modelineは、Doom Emacsのモードラインを単体のパッケージにしたもので、ファイルの種類やGitのブランチ、エラーの数などをアイコンと一緒に表示します。doom-themesのテーマはdoom-modelineの部品の色まで定義しているので、モードラインだけが浮くことなく、画面全体の配色が揃います。アイコンにはnerd-iconsを使います。アイコンのフォントの入れ方は、[1回目](@/blog/2026/10/emacs-init-el/01-emacs-init-japanese/index.md)で説明しました。同じnerd-iconsで、補完候補、diredのファイル一覧、corfuのポップアップにもアイコンを付けています。この設定も1回目に載せています。
 
@@ -160,6 +160,56 @@ rainbow-delimitersは、括弧を深さごとに色分けするパッケージ�
   :hook (prog-mode . rainbow-delimiters-mode))
 ```
 
+## ファイル一覧を彩る
+
+Emacsには、ディレクトリの中身を一覧にして、ファイルを開いたり、コピーや削除をしたりできるdiredが標準で入っています。dirvishは、このdiredに、カーソルのあるファイルのプレビューや、アイコン、Gitの状態などの表示を加えるパッケージです。diredの上に作られているので、diredのキー操作はそのまま使えます。`dirvish-override-dired-mode`を有効にしておくと、`C-x d`でディレクトリを開いたときや、`C-x C-f`でディレクトリを選んだときにも、diredの代わりにdirvishが開きます。
+
+標準のdiredは、`ls -l`の出力をそのまま並べるだけです。私の設定では、これに加えて、ファイルの種類を示すアイコンが付き、Gitで変更したファイルなどには行の左端に状態を示す印が付きます。ディレクトリにはファイルの数が表示され、中身がディレクトリ1つだけの入れ子は、奥のディレクトリまで1行にまとめて表示されます。
+
+プレビューには、外部のコマンドを使います。コードの冒頭のコメントに書いたコマンドをHomebrewで入れておけば、画像やPDFに加えて、次のように動画のサムネイルやメタデータも表示できます。
+
+<!-- textlint-disable -->
+
+{{< image src="dirvish.webp" alt="dirvishで動画ファイルをプレビューした画面" caption="動画ファイルを選ぶと、右側にサムネイルとメタデータが表示される" />}}
+
+<!-- textlint-enable -->
+
+`C-c t`に割り当てた`dirvish-side`は、フレームの左にdirvishをサイドバーとして開き、もう一度押すと閉じます。ほかのエディタのファイルツリーのように使えます。ディレクトリの上で`TAB`を押すと、そのディレクトリの中身をその場で展開します。
+
+dirvishの操作はメニューから選べます。`?`で操作の一覧を兼ねたメニューが開くので、キーを忘れても困りません。また、`a`を押すと、登録しておいたよく開くディレクトリへすぐに移れます。
+
+```emacs-lisp,name=init.el
+;; dired をプレビュー・アイコン・Git 状態つきの表示にする。C-c t でサイドバー
+;; 前提: fd / vips / poppler / ffmpegthumbnailer / mediainfo（brew。プレビュー用）
+(use-package dirvish
+  :init
+  ;; C-x d や C-x C-f でディレクトリを開いたときも dirvish にする
+  (dirvish-override-dired-mode 1)
+  :custom
+  ;; a で飛べるディレクトリ
+  (dirvish-quick-access-entries
+   '(("h" "~/"                 "Home")
+     ("o" "~/org/"             "Org")
+     ("w" "~/howm/"            "Howm")
+     ("g" "~/ghq/"             "ghq")
+     ("e" "~/.config/emacs/"   "Emacs")))
+  ;; 各行に出す情報。アイコンは nerd-icons を使う
+  (dirvish-attributes '(vc-state subtree-state nerd-icons collapse file-time file-size))
+  :bind (("C-c t" . dirvish-side)          ; 左にサイドバーとして開く・閉じる
+         :map dirvish-mode-map
+              ("?"   . dirvish-dispatch)        ; 操作メニュー
+              ("a"   . dirvish-quick-access)
+              ("TAB" . dirvish-subtree-toggle)  ; サブディレクトリをその場で展開
+              ("s"   . dirvish-quicksort)
+              ("f"   . dirvish-file-info-menu)
+              ("y"   . dirvish-yank-menu)
+              ("^"   . dirvish-history-last)
+              ("h"   . dirvish-history-jump)
+              ("v"   . dirvish-vc-menu)
+              ("M-l" . dirvish-ls-switches-menu)
+              ("M-m" . dirvish-mark-menu)))
+```
+
 ## 遊び心を加える
 
 最後に、遊び心のあるパッケージを1つ加えています。nyan-modeは、カーソルがバッファのどこにいるかを、虹を引いて飛ぶニャンキャットで表示するパッケージです。ニャンキャットは、2011年ごろにインターネットで流行した、虹を引きながら宇宙を飛ぶ猫のアニメーションです。バッファの先頭にいるときは虹が短く、末尾に近づくほど虹が伸びていきます。見た目は遊びですが、スクロールバーの代わりとして実用にもなります。虹のバーをクリックすると、バッファのその位置へジャンプできます。
@@ -181,9 +231,10 @@ doom-modelineはnyan-modeに対応していて、`nyan-mode`を有効にする�
 - 配色：doom-themesで、色だけでなく太字や斜体まで作り込まれたテーマを使う
 - モードライン：doom-modelineで、ファイルの種類やGitのブランチをアイコンと一緒に表示する
 - 括弧：rainbow-delimitersで、深さごとに色を変える
+- ファイル一覧：dirvishで、diredにプレビューやアイコン、Gitの状態を加える。`C-c t`でサイドバーとして開く
 - 遊び心：nyan-modeで、バッファの位置をニャンキャットで表示する
 
-見た目の設定は、なくてもEmacsは使えます。それでも、毎日長い時間向き合う道具だからこそ、開くのが楽しくなる見た目にしておく価値があります。dashboardは、見た目を整えるだけでなく、よく使うファイルや機能への入口にもなります。
+見た目の設定がなくても、Emacsは使えます。それでも、毎日長い時間向き合う道具だからこそ、開くのが楽しくなる見た目にしておく価値があります。dashboardは、見た目を整えるだけでなく、よく使うファイルや機能への入口にもなります。
 
 [^1]: Vimのキー操作を使いたいならVimを使うので、Doom Emacs自体は使っていません。
 
@@ -199,6 +250,7 @@ doom-modelineはnyan-modeに対応していて、`nyan-mode`を有効にする�
 - [doom-themes](https://github.com/doomemacs/themes)
 - [doom-modeline](https://github.com/seagle0128/doom-modeline)
 - [rainbow-delimiters](https://github.com/Fanael/rainbow-delimiters)
+- [dirvish](https://github.com/alexluigit/dirvish)
 - [nyan-mode](https://github.com/TeMPOraL/nyan-mode)
 
 {% </references> %}
