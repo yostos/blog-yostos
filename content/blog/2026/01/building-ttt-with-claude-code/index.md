@@ -13,7 +13,6 @@ tags = ["Tech", "CLI"]
 
 [extra]
 social_media_card = "ogp.webp"
-canonical_url = "https://zenn.dev/yostos/articles/building-ttt-with-claude-code"
 +++
 
  <details>
