@@ -93,6 +93,11 @@ PHPプロジェクトは10月21日22時台（日本時間）、予告してい�
 
 <!-- textlint-enable -->
 
+高市首相のツイートは一発でITリテラシーが低い人にも、その深刻さを納得させることができたでしょう。
+いまだに技術的なリスクが経営を直撃するインパクトになり得ることを理解できない経営層が日本には多いので、現場は非常に助かったと思います。
+
+
+
 政府機関や自治体、銀行は、首相の投稿より前の21日夕方から、Webサイトやサービスを次々に止めていました。厚生労働省は16時から、介護サービス情報公表システムを「緊急の脆弱性対応」のため翌日12時まで停止しました。財務省もホームページの一部コンテンツを止め、管理下のWebサーバーの緊急点検と修正の適用に入りました。
 
 自治体では、札幌市が21時に公式ホームページを止め、簡易サイトに切り替えました。会津若松市はホームページの一部機能や公共施設予約システム、除雪運行システムなど16のサービスを停止し、日野市も問い合わせフォームを止めています。
@@ -107,9 +112,30 @@ PHPプロジェクトは10月21日22時台（日本時間）、予告してい�
 
 一方で、自社のWebサイトがPHPで動いているかどうかを把握していない組織も少なくないはずです。ホームページやECサイト、会員サイトの制作や運用を外部に任せていれば、なおさらです。経営層の方は、首相が直接呼びかけるほどの脆弱性だと受け止めてください。そのうえで、自社のサイトがPHPを使っているか、誰がいつ更新するのかを、今日のうちに確かめてください。更新の目途が立たないなら、首相の呼びかけにあるとおり、サイトを一時的に止めることも選択肢になります。
 
-<!-- textlint-disable -->
+## 続報(2026-10-22 16:30)
+
+私自身の利用したことのあるサイトでいうと、次のようなサイトが本日対応のため一時停止していました。
+
+- ScanSnap Home/Cloud/Cloud+ (PFU)
+- メニコン会員サイト
+- JRE MALL
+- CLIP STUDIO
+- リンクシェア
+- CoSTORY
+
+修正版の公開から1日たち、攻撃と被害の状況も見えてきました。
+
+Amazonは、公表の4日前にあたる10月17日の時点で、同社が攻撃の観測用に置いているおとりのサーバーがPHP2Shellを狙った攻撃を受けていたと公表しました。修正版の公開後は、複数の攻撃者による攻撃を観測しており、すでに広く悪用されていると評価しています。侵害の有無を調べるときは、公表日ではなく10月17日までさかのぼるよう勧めています。
+
+国内では、POSシステムや勤怠管理などのクラウドサービスを提供するバルテックが22日、「PHPの脆弱性を標的としたサイバー攻撃」による不正アクセスで、顧客情報が流出したとみなされる事実を確認したと公表しました。同社は悪用された脆弱性を明らかにしておらず、PHP2Shellによるものかは分かっていません。20を超えるサービスを止めており、復旧は早くても10月26日の見込みです。
+
+PHPを書いた覚えがなくても対象になるという話は、ネットワーク機器にも当てはまります。Palo Alto Networksは、ファイアウォールのOSであるPAN-OSと管理製品のPanoramaも影響を受けると公表しました。影響は管理画面に限られますが、修正版の公開時期は未定です。それまでは、管理画面に接続できる相手を信頼できる社内のアドレスに絞るよう求めています。こうした製品は、サーバーのPHPを更新しても直りません。
+
+JPCERT/CCは22日の注意喚起で、侵害を調べる観点を示しました。不自然に長いPHPSESSIDのCookie、不審なmultipart/form-dataのリクエストとその前後のメモリ不足エラーやHTTP 500、PHPのワーカープロセスが異常終了や再起動を繰り返した痕跡などです。こうした痕跡がなくても、攻撃を受けていないとは断定できないとしています。修正版を当てたら終わりではなく、当てる前に侵入されていないかを確かめる段階に入っています。
 
 ## References
+
+<!-- textlint-disable -->
 
 {% <references> %}
 
@@ -118,6 +144,11 @@ PHPプロジェクトは10月21日22時台（日本時間）、予告してい�
 - [GitHub php/php-src](https://github.com/php/php-src/security/advisories/GHSA-w8hw-w9fx-j79w). "RCE via OOM corruption (GHSA-w8hw-w9fx-j79w)"
 - [GitHub php/php-src](https://github.com/php/php-src/security/advisories/GHSA-6wmf-4rv5-p3rp). "RCE via stale global state (GHSA-6wmf-4rv5-p3rp)"
 - [IPA](https://www.ipa.go.jp/security/security-alert/2026/pre-alert20261021.html). 「【事前準備のお願い】PHPのセキュリティリリース公開予定について」
+- [IPA](https://www.ipa.go.jp/security/security-alert/2026/alert20261022.html). 「PHPの脆弱性対策について(CVE-2026-109618、CVE-2026-109619：PHP2shell)」
+- [JPCERT/CC](https://www.jpcert.or.jp/at/2026/at260033.html). 「PHPにおける複数の脆弱性（CVE-2026-109618、CVE-2026-109619）に関する注意喚起」
+- [Amazon Web Services](https://aws.amazon.com/blogs/security/amazon-threat-intelligence-identifies-php2shell-exploitation-prior-to-public-disclosure-in-madpot/). "Amazon Threat Intelligence identifies PHP2Shell exploitation prior to public disclosure in MadPot"
+- [Palo Alto Networks](https://security.paloaltonetworks.com/CVE-2026-109618). "Impact of Critical Vulnerabilities in PHP (CVE-2026-109618, CVE-2026-109619) on Palo Alto Networks Products"
+- [バルテック](https://www.webjapan.co.jp/maintenance/serviceteishi261022/). 「不正アクセスによるお客様情報流出の可能性および一部サービス停止のお知らせ」
 - [財務省](https://www.mof.go.jp/public_relations/ohter/20261021231537.html). 「PHPの脆弱性対応に伴うWebサイト・一部コンテンツの一時停止のお知らせ」
 - [厚生労働省](https://www.kaigokensaku.mhlw.go.jp/). 「介護サービス情報公表システム システムメンテナンスに関するお知らせ」
 - [札幌市](https://www.city.sapporo.jp/). 「公式ホームページ緊急メンテナンス」
