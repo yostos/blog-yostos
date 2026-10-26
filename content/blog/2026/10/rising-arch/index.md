@@ -61,4 +61,4 @@ The rising arch of the rainbow was so bright
 
 「Rising Arch」は小曲ながら、3種類のハーモニクス奏法に苦労し、ヴォコーダーもTAL-Vocoderに替えて臨んだ1曲になりました。
 
-まだ公開していない曲もありますが、このアルバム『虹伝説』のカバーも残り2曲となりました。死ぬまでに完成できればよいのですが。
+まだ公開していない曲もありますが、この[アルバム『虹伝説』のカバー](https://www.youtube.com/playlist?list=PLaDUOLNFRA_k)も残り2曲となりました。死ぬまでに完成できればよいのですが。
