@@ -3,7 +3,7 @@ title = "awsfig"
 description = """\
 Generate AWS CDK scripts \
 from architecture diagrams."""
-weight = 70
+weight = 80
 
 [taxonomies]
 tags = ["Tech", "Cloud"]

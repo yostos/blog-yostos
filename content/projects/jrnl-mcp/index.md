@@ -3,7 +3,7 @@ title = "jrnl-mcp"
 description = """\
 An MCP server for jrnl. \
 Operate your journal directly from Claude."""
-weight = 30
+weight = 40
 
 [taxonomies]
 tags = ["Tech", "Generative AI"]

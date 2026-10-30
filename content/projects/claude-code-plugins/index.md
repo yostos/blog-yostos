@@ -3,7 +3,7 @@ title = "claude-code-plugins"
 description = """\
 My Claude Code plugins library. \
 MAGI, pdf-processor, and more."""
-weight = 40
+weight = 50
 
 [taxonomies]
 tags = ["Tech", "Generative AI"]

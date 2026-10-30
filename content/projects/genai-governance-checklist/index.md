@@ -3,7 +3,7 @@ title = "生成AIガバナンスチェックリスト"
 description = """\
 NIST AI RMF準拠の生成AIガバナンスチェックリストです。\
 全7章・120項目で、ガイドライン策定の抜け漏れを防ぎます。"""
-weight = 60
+weight = 70
 
 [taxonomies]
 tags = ["Tech", "Generative AI"]

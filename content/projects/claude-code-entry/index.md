@@ -3,7 +3,7 @@ title = "非エンジニアのためのClaude Code入門ハンズオン"
 description = """\
 非エンジニア向けのClaude Code入門ハンズオン教材です。\
 RFPの作成を題材に、エージェント型AIとの協業を体験します。"""
-weight = 50
+weight = 60
 
 [taxonomies]
 tags = ["Tech", "Generative AI"]

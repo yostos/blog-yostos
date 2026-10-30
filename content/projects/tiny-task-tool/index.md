@@ -3,7 +3,7 @@ title = "tiny-task-tool"
 description = """\
 A minimal TUI task manager. \
 A digital sheet of paper for your terminal."""
-weight = 20
+weight = 30
 
 [taxonomies]
 tags = ["Tech", "CLI"]
