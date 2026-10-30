@@ -6,7 +6,7 @@ built to make Emacs a hub for everyday text work."""
 weight = 20
 
 [taxonomies]
-tags = ["Tech", "Generative AI"]
+tags = ["Tech", "Editor"]
 
 [extra]
 local_image = "cover.webp"
