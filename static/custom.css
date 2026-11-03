@@ -447,6 +447,14 @@ pre,
   }
 }
 
+/* image コンポーネントのキャプション付き画像
+   tabi は figure を inline-block にしているため、キャプションを付けると左寄せになる。
+   display: table で幅を画像に合わせたまま中央に置く（キャプションも画像幅で折り返す） */
+figure {
+  display: table;
+  margin-inline: auto;
+}
+
 /* blockquote コンポーネント（出典付き引用）
    tabi は figure を inline-block、figcaption を中央寄せにしている（画像キャプション用）。
    引用では横幅いっぱいに広げ、出典を右寄せにする */
