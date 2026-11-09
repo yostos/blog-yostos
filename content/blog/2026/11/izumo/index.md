@@ -13,7 +13,7 @@ local_image = "cover.avif"
 
 <!-- textlint-disable -->
 
-{{< youtube id="ZC5vOiURUhw" />}}
+{{< youtube id="y3Wgd8D30fE" />}}
 
 <!-- textlint-enable -->
 
