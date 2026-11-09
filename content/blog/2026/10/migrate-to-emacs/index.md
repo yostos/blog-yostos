@@ -4,6 +4,7 @@ description = """
 大半の開発者がVS Codeを使い、Vimでさえ少数派となり、Emacsユーザーなどほとんど見かけなくなった今日、私は十数年ぶりにNeovimからEmacsへ戻りました。懐古趣味がないとは言えませんが、生成AIの時代だからこそEmacsを選ぶだけの理由があります。
 """
 date = 2026-10-07
+updated = 2026-11-10
 [extra]
 social_media_card = "ogp.webp"
 local_image = "cover.avif"
@@ -27,6 +28,8 @@ tags = ["Tech", "Editor"]
 私は十数年ぶりにEditorをNeovimからEmacsに戻しました。
 
 大半の開発者がVS Codeを使いVimでさえ少数派となりEmacsユーザーなどほとんど見かけなくなった今日、あえてのEmacsです。懐古趣味がないとは言えませんが、生成AIの時代だからこそEmacsを選ぶだけの理由があります。
+
+私のinit.elの中身は、連載「[AI時代のEmacs設定術](@/blog/2026/10/emacs-init-el/_index.md)」で機能ごとに解説しています。この記事では、設定の前提となるEmacsを選んだ理由を書きます。
 
 ## そもそもEmacsユーザーだった
 
@@ -210,6 +213,8 @@ GUIで動くことで、表現力にも余裕が生まれます。ターミナ�
 そのうえでEmacsには、Neovimにはない強みがあります。howmに近いメモ環境を実現するorg-roamと、成熟したOrg modeがあります。メール、RSS、Web、そしてClaude CodeやLLMまでを1つの環境に取り込めます。GUIで動くため、ターミナルの制約も受けません。
 
 生成AIの時代に人間が担う仕事は、あちこちにあるテキストを集め、LLMとやり取りし、成果物に仕上げることです。Emacsでは、メール、RSSの記事、メモ、Claude Codeやgptelとの対話をすべて同じバッファとして扱えます。それらをElispで思いどおりにつなぎ、Org modeで1つの文書にまとめられます。さまざまなテキストとLLMをつなぎ、成果物を仕上げる環境として、Emacsに勝るものはありません。十数年ぶりに戻ってきたEmacsは、AIの時代にこそ真価を発揮するエディタになっていました。
+
+ここで紹介した環境を実現する設定は、連載「[AI時代のEmacs設定術](@/blog/2026/10/emacs-init-el/_index.md)」で機能ごとに解説しています。
 
 ## References
 
