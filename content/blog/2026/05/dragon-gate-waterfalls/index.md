@@ -1,8 +1,8 @@
 +++
-title = "【DJI AVATA2】龍門の滝"
+title = "【DJI Avata 2】龍門の滝"
 description = """
 幅65メートル、落差20メートルの大瀑布、栃木県那須烏山市の龍門の滝。\
-大蛇伝説と烏山線が真上を駆け抜ける珍しいロケーションを、DJI AVATA2で空撮してきました。
+大蛇伝説と烏山線が真上を駆け抜ける珍しいロケーションを、DJI Avata 2で空撮してきました。
 """
 date = 2026-05-26T12:02:28+09:00
 [taxonomies]
@@ -18,7 +18,7 @@ local_image = "cover.webp"
 
 <!-- textlint-enable -->
 
-栃木県那須烏山市の江川にある「龍門の滝」をAVATA2で撮影してきました。
+栃木県那須烏山市の江川にある「龍門の滝」をAvata 2で撮影してきました。
 以下がその動画です。
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/tSNsHG12jYw?si=5vyIa9Gd4gazp2H5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
@@ -41,4 +41,4 @@ local_image = "cover.webp"
 
 周辺は森に囲まれていて、新緑の中で鳥たちのさえずりがよく響く、気持ちの良い環境です。栃木という土地柄、近隣で目撃情報が多いわけではないものの、念のため熊鈴だけは持って入りました。
 
-撮影機材はDJI AVATA2で、設定や仕上げは[シネマティック設定ガイド](/blog/2026/04/dji-avata2-cinematic/)に書いた内容を踏襲しています。滝の正面を低くなめていくカットと、後退しながら全景を引いていくカットを中心に構成しました。
+撮影機材はDJI Avata 2で、設定や仕上げは[シネマティック設定ガイド](/blog/2026/04/dji-avata2-cinematic/)に書いた内容を踏襲しています。滝の正面を低くなめていくカットと、後退しながら全景を引いていくカットを中心に構成しました。
