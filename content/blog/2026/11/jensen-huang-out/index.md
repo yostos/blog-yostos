@@ -34,13 +34,17 @@ tags = ["Tech", "IT Governance"]
 
 ## Alice Huang氏とMegaspeedをめぐる疑惑
 
-米国の情報機関は、Alice Huang氏を中国の情報機関の協力者とみています。ただし、フアン氏がいわゆるハニートラップにかかったのかどうかは、現時点では分かっていません。
+米国の情報機関は、Alice Huang氏を中国の情報機関の協力者とみています。ただし、司法省はまだ結論を出しておらず、中国政府はスパイであることを否定しています。シンガポール当局は2025年にMegaspeedの捜査で本人を聴取し、旅券を没収しましたが、犯罪を立証する証拠は不十分と結論づけました。フアン氏がいわゆるハニートラップにかかったのかどうかも、現時点では分かっていません。
 
 Alice Huang氏は2023年に8か月間、シンガポールのクラウド事業者Megaspeedでマネージングディレクターを務めました。Megaspeedは東南アジアにおけるNVIDIAの大口顧客で、マレーシアの子会社Speedmatrixを通じてNVIDIAの先端チップを大量に購入しています。購入額は約20億ドルから75億ドル以上まで報道によって開きがあります。チップを置いたマレーシアとインドネシアのデータセンターは、中国の顧客に遠隔でサービスしているように見えたと報じられています。
 
 東南アジアに置いたチップの計算能力を中国企業に貸すこと自体は、現行の規則では違法ではありません。問題になるのは、チップそのものを中国へ持ち込むことです。米当局はMegaspeedを輸出規制違反の疑いで調べています。チップの使い先としては、Alice Huang氏の妹が創業株主に名を連ねる中国のShanghai Century Litongの名前も報じられています。Megaspeedは違反を否定し、マレーシア政府も国内法に違反した証拠はないとしています。
 
 この件がただの不倫で済まなかったのは、フアン氏が長年、対中輸出規制の緩和を訴えてきたからです。2025年12月には、トランプ大統領がH200の対中輸出を承認しています。規制の緩和を求めてきた経営者が、規制をすり抜けた疑いのある企業の関係者と親密だったことで、私生活の問題が安全保障の問題として扱われることになりました。なお、NVIDIAの取締役会は、国家安全保障が損なわれたと考える理由はないとしています。
+
+政権の対応も問われています。NYTによると、トランプ大統領は2人の関係について少なくとも2回警告を受けながら対応せず、5月の訪中にもフアン氏を同行させていました。11月10日には本人に電話をかけ、CEOの座を守るために戦うよう促していたと報じられています。Reutersによると、フアン氏とともに対中販売の緩和を進めてきたラトニック商務長官の進退も、ホワイトハウス内で協議されています。
+
+議会では両党から対中輸出の規制を強めるよう求める声が上がり、ジョンソン下院議長も制限に向けた合意が広がっていると述べました。上院銀行委員会は、フアン氏とラトニック長官に証言を求めています。フアン氏の失脚は、本人が訴えてきた規制緩和とは逆に、規制強化への流れを生んでいます。
 
 ## ジェンスン・フアンの功罪と今後のNVIDIA
 
@@ -61,7 +65,7 @@ Alice Huang氏は2023年に8か月間、シンガポールのクラウド事業�
 
 そう考えると、NVIDIAのかじ取りには、一般的な半導体メーカーとは違う経営が求められます。NVIDIAは製造をTSMCに委託しており、自ら担っているのは、チップ、ソフトウェア、ネットワーク機器を一体の計算基盤として設計し、その上に開発者と顧客をつなぎとめることです。必要なのは、技術の行き先を読んで何年も先に賭ける判断と、それを社内外に納得させる力です。60人を超える幹部と直接やり取りするフアン氏の経営は、この判断を一人に集約する仕組みでもありました。後任に問われるのは、優れた経営者であること以上に、この賭けを引き継げるかどうかだと私は考えます。
 
-当面は、CFOのColette Kress氏が暫定CEOを兼務し、取締役会が社内外から後任を探すとされています。Kress氏はウォール街にはなじみがあるものの、フアン氏が築いてきた取引先や政府との関係は持っていません。トランプ大統領はApple前CEOのTim Cook氏を後任に推していますが、本人が関心を示した兆しはありません。Cook氏はAppleでサプライチェーンの運営に手腕を発揮してきた経営者で、技術の賭けを自ら主導してきたフアン氏とは型が異なります。影響はNVIDIAにとどまらず、買収で合意しているHugging Faceや、上場に合わせて約100億ドルの投資を予定しているAnthropicなど、AI業界全体に及びます。
+当面は、CFOのColette Kress氏が暫定CEOを兼務し、取締役会が社内外から後任を探すとされています。Kress氏はウォール街にはなじみがあるものの、フアン氏が築いてきた取引先や政府との関係は持っていません。投資家やアナリストの間では、Kress氏のほか、古参エンジニアのIan Buck氏も社内の有力候補とみられています。初の会長には、Synopsys元CEOで長年取締役を務めてきたHarvey Jones氏が就きました。トランプ大統領はApple前CEOのTim Cook氏を後任に推していますが、本人が関心を示した兆しはありません。Cook氏はAppleでサプライチェーンの運営に手腕を発揮してきた経営者で、技術の賭けを自ら主導してきたフアン氏とは型が異なります。影響はNVIDIAにとどまらず、買収で合意しているHugging Faceや、上場に合わせて約100億ドルの投資を予定しているAnthropicなど、AI業界全体に及びます。
 
 ## まとめ
 
@@ -81,6 +85,9 @@ Alice Huang氏は2023年に8か月間、シンガポールのクラウド事業�
 
 - BBC. "The rise and fall of Jensen Huang - how the tech superstar became mired in scandal" `https://www.bbc.com/news/articles/cmze750zg0jeo`
 - The New York Times. "What to Know About Colette Kress, Nvidia's New Interim Chief Executive" `https://www.nytimes.com/2026/11/12/business/nvidia-colette-kress-jensen-huang.html`
+- The New York Times. "Trump Had Urged Nvidia's Jensen Huang to Fight for His Job" `https://www.nytimes.com/2026/11/12/us/politics/trump-jensen-huang-nvidia.html`
+- AP News. "Nvidia seeks a way forward without its co-founder after Jensen Huang resigns" `https://apnews.com/article/nvidia-megaspeed-china-singapore-huang-5403f152a601cf82ce939f1d24fffa0f`
+- Reuters. "Nvidia CEO Jensen Huang resigns in blow to AI boom he helped foster" `https://www.reuters.com/business/retail-consumer/nvidia-ceo-jensen-huang-step-down-big-blow-ai-boom-2026-11-12/`
 - Al Jazeera. "Why did Nvidia CEO Jensen Huang resign, and who is Colette Kress?" `https://www.aljazeera.com/news/2026/11/12/why-did-nvidia-ceo-jensen-huang-resign-and-who-is-colette-kress`
 - CNBC. "What we know so far about Nvidia partner Megaspeed's Asia footprint" `https://www.cnbc.com/2026/11/12/nvidia-megaspeed-alice-huang-jensen-.html`
 - Fortune. "How Megaspeed built a network in Singapore and Malaysia to move $7.5 billion of Nvidia chips to Chinese companies" `https://fortune.com/2026/11/11/megaspeed-nvidia-chips-china-singapore-malaysia/`
