@@ -32,7 +32,7 @@ mermaid = true
 </details>
 
 最近、SpotifyでPodcastばかり聞いていて音楽をほとんど聞いていないことに気付きました。
-これはさすがに違うだろうと、Spotifyから[Qobuz](https://www.qobuz.com/)に一度乗り換えをすることにしました。
+これはさすがに違うだろうと、SpotifyからQobuzに一度乗り換えをすることにしました。
 
 ## Qobuzとは
 

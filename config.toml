@@ -139,5 +139,6 @@ skip_prefixes = [
   "https://www.asciiart.eu/",
   # 商品削除・bot判定で404/405になりやすい（アフィリエイトリンク）
   "https://amzn.to/",
+  "https://link.amazon/",
   "https://www.amazon.co.jp/",
 ]

@@ -24,7 +24,7 @@ Blender界隈でBlenderとClaudeをMCP接続してClaudeに3Dモデリングさ�
 - Python 3.10以降
 - uv package manager
 
-Blenderは無料の3Dモデリングツールなので、[公式サイト](https://www.blender.org/)からダウンロードしてインストールしておきます。
+Blenderは無料の3Dモデリングツールなので、公式サイト[^blender]からダウンロードしてインストールしておきます。
 
 Pythonの環境は整えておきましょう。
 
@@ -100,3 +100,5 @@ Claudeには以下のように依頼しています。
 AIを使って自然言語でモデリングできるようになれば結構革新的かなと思います。
 
 MCPでいろいろ拡がっていきますね。
+
+[^blender]: Blender公式サイトは、http://www.blender.org/
