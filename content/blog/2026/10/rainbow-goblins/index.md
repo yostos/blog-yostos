@@ -46,13 +46,13 @@ local_image = "cover.avif"
 
 参加メンバーは次のとおりです。
 
-| パート | メンバー |
-| --- | --- |
-| Drums | 宮崎全弘 |
-| Bass | 田中章弘 |
-| Keyboards | 小林泉美、石川清澄 |
-| Percussion | 菅原由紀、木村誠 |
-| Sax | 薩摩光二 |
+| パート     | メンバー           |
+| ---------- | ------------------ |
+| Drums      | 宮崎全弘           |
+| Bass       | 田中章弘           |
+| Keyboards  | 小林泉美、石川清澄 |
+| Percussion | 菅原由紀、木村誠   |
+| Sax        | 薩摩光二           |
 
 当日のステージは、音楽に合わせて7色に点滅する巨大な虹のネオン・アーチやレーザー光線で彩られ、7人のメンバーはそれぞれ色の違うゴブリンの衣装をまとっていたそうです。高中さんは黄色のジャンプスーツと虹色に染めた髪、手にはレインボー・メタリックのヤマハSGという出で立ちでした。
 
@@ -63,7 +63,8 @@ local_image = "cover.avif"
 
 <!-- textlint-disable -->
 
-{{< youtube id="m3VVAePLbp4" />}}
+{{< youtube id="\_-JRAansMk4"}
+{{< youtube id="MtMw_OOTnRA"}
 
 <!-- textlint-enable -->
 
