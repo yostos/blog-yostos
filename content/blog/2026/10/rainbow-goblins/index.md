@@ -64,7 +64,7 @@ local_image = "cover.avif"
 <!-- textlint-disable -->
 
 {{< youtube id="_-JRAansMk4" />}}
-{{< youtube id="ZH50Q1tpxI" />}}
+{{< youtube id="DZH50Q1tpxI" />}}
 
 <!-- textlint-enable -->
 
