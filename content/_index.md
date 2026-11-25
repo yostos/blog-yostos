@@ -1,10 +1,9 @@
 +++
 title = ""  # tabi v5 の page_header は string 必須（null 不可）。ホームの見出しは空のまま
 [extra]
-header = { title = "⠽⠕⠎⠞⠕⠎", img = "images/profile.webp", img_dark = "images/profile-r.webp", img_alt = "yostos" }
+header = { title = "⠽⠕⠎⠞⠕⠎" }
 section_path = "blog/_index.md"
 max_posts = 10
 +++
 
-I write code and music, in roughly equal measure. This blog is where I keep the notes: tech, music production, gear, and whatever rabbit holes I fall into.
-[about→](/about/)
+I write code and music, in roughly equal measure. Field notes from wherever curiosity takes me. [about→](/about/)

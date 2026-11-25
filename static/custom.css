@@ -113,6 +113,11 @@ header {
   font-family: "BerkeleyMono", var(--sans-serif-font);
 }
 
+/* ナビバーと本文の間を詰める（テーマの既定は 6vmin） */
+.content {
+  margin-top: 3vmin;
+}
+
 /* サイトタイトル */
 .home-title {
   font-family: "BerkeleyMono", sans-serif;
