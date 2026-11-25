@@ -125,3 +125,41 @@ Claude 関連
 - `.claude/simple-commit.local.md` の接頭辞の表を、PR のタイトルの表と同じ8種類にした
 - `CLAUDE.md` の Git Operations に、運用の概要、作業前のブランチ確認、PR のタイトルの3項目を加えた。
   Hosting 節のデプロイの説明と、Directory Structure の `docs/` の説明を直した
+
+commit `b5ccc3f` を PR #9 として出した。必須にする予定の `textlint` と `ogp-check`、
+および `claude-review` がすべて通ったことを確かめ、squash merge した。
+`main` のコミットは `ea390cd`（`feat!: publish through PRs with required checks (#9)`）で、
+GitHub が PR 番号を末尾に付けた。リモートのブランチはマージ時に自動で削除され、
+ローカルのブランチは `git branch -D` で削除した。
+マージ後の `deploy.yml` は成功した。記事を含まないため `bluesky-post.yml` は動かなかった。
+
+`claude-review` のレビューで、次の指摘があった。いずれもマージを止めるものではないので、
+対応するかどうかは別途判断する。
+
+- `textlint.yml` は actor が `claude` / `claude[bot]` のときジョブをスキップし、
+  スキップは必須チェックで成功扱いになる。Claude の bot が作る PR は検査されずに通る
+- `ogp-check.yml` は `ogp.webp` の有無だけを確かめ、タイトル変更後の古い画像は検出できない
+  （削除した hook と同じ）
+- `ogp-check.yml` の `--diff-filter=ACM` はリネーム（`R`）を含まない。
+  スラッグを変えた記事は検査から漏れる
+- `ogp-check.yml` は `base.sha` との2点差分をとるため、`main` が進むと
+  無関係なファイルを拾うことがある（過剰に検査する方向で、見逃しは起きない）
+- `article-publish.md` の `git branch -D` は、PR がマージ済みかを確かめずに強制削除する
+
+### 2026-11-25 段階3: main の Ruleset
+
+`gh api -X POST repos/yostos/blog-yostos/rulesets` で Ruleset `protect-main`（ID 28077355）を作った。
+
+- 対象: デフォルトブランチ（`~DEFAULT_BRANCH`）、状態: active、バイパス: なし
+- ルール: `deletion`、`non_fast_forward`、`pull_request`（承認数 0、許可するマージ方式は squash のみ）、
+  `required_status_checks`（`textlint` と `ogp-check`、GitHub Actions から報告されるもの）
+
+### 2026-11-25 段階4: 確認と後片付け
+
+- `gh api repos/yostos/blog-yostos/rules/branches/main` で、4つのルールが `main` に適用されていることを確かめた
+- 空のコミットを作って `main` に直接 push し、
+  `GH013: Repository rule violations found` / `Changes must be made through a pull request.`
+  で拒否されることを確かめた。空のコミットは `git reset --hard origin/main` で取り消した
+- このクローンで `git config --unset core.hooksPath` を実行した
+- この作業記録の追記自体を、新しい運用の手順（ブランチ、PR、検査、squash merge）で反映した
+- 残る確認は、次の記事の公開で `/article-publish` の新しい手順を通しで試すこと
