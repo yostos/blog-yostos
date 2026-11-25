@@ -1,0 +1,42 @@
+name: OGP Check
+
+# Required status check for main. Do not add a `paths:` filter:
+# a required check whose workflow never starts stays pending and blocks the merge.
+
+on:
+  pull_request:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  ogp-check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          fetch-depth: 0
+
+      - name: Check ogp.webp for added or modified articles
+        env:
+          BASE_SHA: ${{ github.event.pull_request.base.sha }}
+          HEAD_SHA: ${{ github.event.pull_request.head.sha }}
+        run: |
+          articles=$(git diff --name-only --diff-filter=ACM "$BASE_SHA" "$HEAD_SHA" \
+            | grep -E '^content/blog/.*/index\.md$' || true)
+
+          if [ -z "$articles" ]; then
+            echo "No added or modified articles."
+            exit 0
+          fi
+
+          missing=0
+          for file in $articles; do
+            dir=$(dirname "$file")
+            if [ ! -f "$dir/ogp.webp" ]; then
+              echo "::error file=$file::Missing $dir/ogp.webp. Run 'npm run ogp' to generate it."
+              missing=1
+            fi
+          done
+          exit $missing
