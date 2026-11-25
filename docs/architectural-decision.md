@@ -631,3 +631,98 @@ Ruleset のバイパス対象には管理者も含めて誰も登録しない。
   Hosting 節のデプロイの説明を直す
 - 誤字修正でも PR を作る手間が増える。検査の結果が分かるのは PR を作った後になる
 - `claude-code-review.yml` がすべての PR で動くようになる。残すかどうかは未決定である
+
+## ADR-0008: Issue で執筆依頼を受けず、PR の必須チェックにビルドとカバー画像の検査を加える
+
+- **Status**: Accepted
+- **Date**: 2026-11-26
+- **Deciders**: yostos
+
+### Context
+
+ADR-0007 で、記事の公開を PR のマージに一本化した。その上で、GitHub Issue に書いた執筆依頼から
+Claude が下書きを作り、Draft PR として出す仕組みを検討した（`docs/draft-automation-plan.md`）。
+実行環境の試験まで進めたところで、次の問題が分かった。
+
+- このリポジトリは public である。Issue の本文とコメント、下書きのブランチ、commit、Draft PR はすべて誰でも読める。
+  Draft は公開範囲を変えない。本文を書き換えても編集履歴から読め、外部のアーカイブにも本文ごと残る
+- 執筆依頼には、記事にするか決まっていない構想やアイデアが入る。下書きの段階の本文も公開されることになる
+- 非公開に保つ方法は二つあり、どちらも負担が大きい
+  - 依頼と下書きを、ブログのリポジトリを複製した private リポジトリに置く。
+    リポジトリが2つになり、`main` の追従と、公開側へ移す手順が要る
+  - ブログのリポジトリを private にする。個人アカウントの private リポジトリで Ruleset を使うには GitHub Pro 以上が要る。
+    全ページのフッターと「変更履歴」のリンク、および記事からスクリプトへのリンクが読者には 404 になる
+
+あわせて、検討の中で自動化と関係なく次のことが分かった。
+
+- PR の必須チェックは textlint と OGP の有無だけで、ビルドの失敗はマージ後の `deploy.yml` まで検出されない。
+  `social_media_card` や本文冒頭の画像の行があってファイルがないと、ビルドが失敗する
+  （tabi の `throw()` と、`get_url(cachebust=true)` のエラー。2026-11-26 に試験で確認）
+- CLAUDE.md は新しい記事にカバー画像を必須としているが、検査がない。436記事のうち253記事には `local_image` がない。
+  `local_image` があっても、本文冒頭の画像の行を意図して置かない記事もある
+- 執筆と作業のルールの一部は Mac の `~/.claude` のメモリにしかない。Issue で `@claude` に頼んだ作業は
+  GitHub Actions で動き、リポジトリにあるものしか読めない
+- `claude.yml` は、checkout が git の設定に残す `GITHUB_TOKEN` の認証のせいで push できなかった。
+  `persist-credentials: false` を指定すると、Claude GitHub App のトークンで push でき、
+  その push で必須チェックも起動した（PR #13、2026-11-26 に試験で確認）
+
+検討と試験の経緯は `docs/draft-automation-plan.md` と `docs/draft-automation-log.md` にある。
+
+### Decision
+
+1. **Issue で記事の執筆依頼を受けない。** Issue はブログのデザインや機能の修正に使い、記事の修正に使うこともある。
+   公開する前の構想を Issue に書かない
+2. **Claude に対応を頼むかどうかは、Issue に `@claude` を書くかどうかで決める。** 既存の `claude.yml` を使う。
+   Claude の変更も、ブランチと PR を通してオーナーがマージする
+3. **PR の必須チェックに `zola build` を加える。** `zola check` は使わない
+4. **PR で追加された記事のカバー画像を、必須チェックで検査する。** `local_image` とそのファイルがあることだけを確かめ、
+   本文冒頭の画像の行は求めない
+5. **メモリにある執筆と作業のルールを CLAUDE.md に移す。**
+   「下書き中に lint を実行しない」と「`zola build` を勝手に走らせない」は Mac での対話の作業に限り、
+   Actions 上の作業では実行する
+6. **`claude-code-review.yml` は残し、機能の変更の PR だけで動かす。** 記事だけを変える PR では動かさない。
+   `@claude` が push した PR でも動くように、`allowed_bots` に `claude` を加える
+
+### Alternatives Considered
+
+| 候補 | 不採用理由 |
+|------|------------|
+| Issue から下書きを自動で作り、Draft PR で出す | 構想と仕上げる前の下書きが公開される |
+| 執筆依頼と下書きを private リポジトリに置く | リポジトリが2つになり、`main` の追従、公開側へ移す手順、push 前に commit をまとめる手順が要る。効果が負担に見合わない |
+| ブログのリポジトリを private にする | Ruleset を残すには GitHub Pro が要る。ソースと変更履歴へのリンクが切れる。Actions も課金の対象になる |
+| カバー画像の検査を全記事に適用する | 古い記事の多くにカバー画像がなく、既存の記事で失敗する |
+| カバー画像の検査で本文冒頭の画像の行も求める | 新しい記事でも画像の行を意図して置かないことがあり、正しい記事が落ちる |
+| `zola check` を使う | 外部リンクも確かめるので時間がかかり、相手のサイトの都合でも失敗する |
+| `claude-code-review.yml` を削除する | PR #9 と PR #11 で実際に不具合を見つけており、機能の変更では役に立っている |
+| `claude-code-review.yml` をすべての PR で動かす | 記事の文章は手元の `/article-review` がレビューする。コード向けの観点で記事を見る意味は薄く、利用枠を使うだけになる |
+| `@claude` の PR では `claude-code-review.yml` を動かさない | Claude が書いた機能の変更こそ、マージ前に別の目で見る価値がある |
+| `zola build` を手元でだけ実行する | 手元での実行を忘れた場合や、`@claude` の PR を防げない |
+
+### Rationale
+
+- **公開範囲は運用で守る**: Public なリポジトリで構想を非公開に保つ仕組みは、どれもリポジトリかプランを増やす。
+  執筆依頼を Issue に書かなければ、構想が公開されることはなくなり、追加の仕組みは要らない
+- **`@claude` は今の仕組みで足りる**: `claude.yml` は Issue の `@claude` で起動し、PR #13 の修正で push と必須チェックまで動く
+- **ルールを検査で担保する**: ビルドが通ることと、新しい記事にカバー画像があることは、誰が作った PR にも当てはまる要件である。
+  OGP 画像を `ogp-check.yml` で担保しているのと同じく、必須チェックでマージを止める
+- **レビューは対象に合った道具で行う**: 機能の変更は `claude-code-review.yml` が、記事の文章は `/article-review` が見る
+- **ルールの置き場所を一つにする**: CLAUDE.md に移せば、Mac の Claude と Actions の Claude が同じルールを読む
+
+### Known Limitations
+
+- 書き込み権限のない人が `@claude` を書いたときに Claude が起動しないかは、まだ確かめていない
+- `claude-code-action` の既定の `bot_id` は `github-actions[bot]` のものなので、`@claude` の commit は
+  GitHub の画面で `github-actions[bot]` の commit として表示される
+- `claude.yml` の checkout から `persist-credentials: false` を外すと、push が `github-actions[bot]` として行われ、権限不足で失敗する
+- カバー画像の検査は追加された記事だけを見るので、既存の記事から `local_image` を消しても検出しない
+- `ogp.webp` が今のタイトルとタグで作られているかは検査しない（ADR-0007 から変わらない）
+- これまでに public で公開した内容は取り消せない
+
+### Consequences
+
+- `docs/repository-workflow.md` の「Issue による執筆依頼」の節を「Issue の使い方」に書き換えた
+- `.github/workflows/claude.yml` の checkout に `persist-credentials: false` を指定した（PR #13）
+- `.github/workflows/zola-build.yml` と `.github/workflows/cover-check.yml` を作り、Ruleset の必須チェックに加える
+- `CLAUDE.md` にメモリのルールを移す
+- `.github/workflows/claude-code-review.yml` に `paths-ignore` と `allowed_bots` を加える。ADR-0007 で未決定とした扱いが、これで決まる
+- 下書きの自動化の検討文書と作業ログは、取りやめた記録として残す。続ける作業は作業ログで管理する
