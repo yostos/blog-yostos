@@ -176,11 +176,28 @@ GitHub が PR 番号を末尾に付けた。リモートのブランチはマー
   要件は「すべての記事に OGP 画像があること」であり、変更された記事に絞る理由がない。
   絞り込みは、コミットのたびに動く hook で待ち時間を減らすための工夫だった。
   全記事（436件）を検査する作りに置き換え、変更された記事を探す処理をなくした。
-  あわせて frontmatter の `social_media_card = "ogp.webp"` も検査に加えた
+  あわせて frontmatter の `[extra]` の `social_media_card` が `ogp.webp` であることも検査に加えた。
+  frontmatter は文字列の一致ではなく TOML として読む。Zola は秒を省いた日時
+  （`2026-04-27T16:30+09:00`）を受け付ける TOML 1.1 で読むので、
+  TOML 1.1 に対応した Python 3.15 の `tomllib` を使う。3.14 以前では3記事が読めなかった
 - 全記事を調べた結果、`content/blog/2026/06/yamaha-sg-175/delft/index.md` だけ
   `social_media_card` の指定がなく、`ogp.webp` があるのに使われていなかった。frontmatter に指定を加えた
 - `article-publish.md` の `git branch -D`: マージと削除が別の手順なので、
   マージに失敗しても公開されていない作業を消すおそれがある。
-  `gh pr merge --squash --delete-branch` に変え、マージが成功したときだけ削除されるようにした。
-  `blog-release.md` と `docs/repository-workflow.md` の手順6も同じ方法に直した
+  要件を「マージが成功したら、ローカルでも `main` を最新にして戻り、マージしたブランチは残さない」と定め、
+  手順を `gh pr merge --squash --delete-branch`、`git switch main`、`git pull`、
+  ブランチが残っていれば PR が merged であることを確かめて `git branch -D`、の順にした。
+  マージが失敗したら、その時点で止める。
+  `blog-release.md` と `docs/repository-workflow.md` の手順6も同じ手順に直した
 - タイトル変更後の古い OGP 画像を検出できない: 対応しないとオーナーが決めた
+
+この修正の PR #11 で、`claude-review` が次の4点を指摘した。
+
+- frontmatter を文字列の一致で調べている: 要件そのものを確かめていないので、TOML として読む作りに直した（上記）
+- gh の `main` への切り替えだけが失敗すると、作業ブランチの上で `git pull` が動く: `git switch main` を戻した（上記）
+- `main` を別の git worktree で開いていると切り替えに失敗する: worktree は使っていないので対応しない。
+  失敗しても `git switch main` で止まる
+- `content/blog/` の下の記事でない `index.md` を誤って検査する: Zola では `index.md` はすべて公開ページなので、対応しない
+
+また、bot が `GITHUB_TOKEN` で push した場合は、ワークフロー自体が起動しないとの留意点があった。
+下書きの自動化で bot の push 方法を決めるときに考慮する。

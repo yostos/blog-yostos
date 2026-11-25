@@ -55,11 +55,15 @@ Follow [Keep a Changelog 2.0.0](https://keepachangelog.com/en/2.0.0/).
 ### 6. Merge
 
 - `gh pr merge --squash --delete-branch` to merge the PR (only squash merge is allowed)
-  - Only when the merge succeeds, gh switches to `main` and deletes the local branch
+  - If the merge fails, stop here and report the cause; do not delete the branch
+  - On success, gh switches to `main` and deletes the local branch
 
-### 7. Pull
+### 7. Switch to main & Pull
 
+- `git switch main` (no-op if gh already switched)
 - `git pull origin main`
+- If the local branch still exists, confirm the PR state is `MERGED` with
+  `gh pr view <number> --json state`, then delete it with `git branch -D <branch>`
 
 ### 8. Tag
 

@@ -19,21 +19,32 @@ jobs:
     steps:
       - uses: actions/checkout@v6
 
+      # 3.15 or later: tomllib supports TOML 1.1, which Zola accepts
+      # (e.g. `date = 2026-04-27T16:30+09:00` without seconds).
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.15'
+
       - name: Check ogp.webp and social_media_card for all articles
+        shell: python
         run: |
-          missing=0
-          count=0
-          while IFS= read -r file; do
-            count=$((count + 1))
-            dir=$(dirname "$file")
-            if [ ! -f "$dir/ogp.webp" ]; then
-              echo "::error file=$file::Missing $dir/ogp.webp. Run 'npm run ogp' to generate it."
-              missing=1
-            fi
-            if ! grep -qE '^social_media_card[[:space:]]*=[[:space:]]*"ogp\.webp"' "$file"; then
-              echo "::error file=$file::Missing social_media_card = \"ogp.webp\" in [extra]."
-              missing=1
-            fi
-          done < <(find content/blog -name index.md | sort)
-          echo "Checked $count articles."
-          exit $missing
+          import pathlib, re, sys, tomllib
+
+          failed = False
+          articles = sorted(pathlib.Path("content/blog").rglob("index.md"))
+          for path in articles:
+              if not (path.parent / "ogp.webp").is_file():
+                  print(f"::error file={path}::Missing {path.parent}/ogp.webp. Run 'npm run ogp' to generate it.")
+                  failed = True
+              m = re.match(r"\+\+\+\n(.*?)\n\+\+\+", path.read_text(encoding="utf-8"), re.S)
+              try:
+                  card = tomllib.loads(m.group(1)).get("extra", {}).get("social_media_card") if m else None
+              except tomllib.TOMLDecodeError as e:
+                  print(f"::error file={path}::Invalid TOML frontmatter: {e}")
+                  failed = True
+                  continue
+              if card != "ogp.webp":
+                  print(f"::error file={path}::[extra] social_media_card must be \"ogp.webp\" (found: {card!r}).")
+                  failed = True
+          print(f"Checked {len(articles)} articles.")
+          sys.exit(1 if failed else 0)
