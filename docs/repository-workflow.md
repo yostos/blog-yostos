@@ -27,9 +27,17 @@ Issue の依頼から自動で作る下書きのいずれにも同じルール�
    そのブランチに切り替えて作業し、新しいブランチは切らない
 4. コミットしてブランチを push し、PR を作る。PR のタイトルは「PR のタイトル」の節に従う
 5. PR の検査が通ったら、squash merge する。マージで `main` が更新され、公開される
-6. `main` に戻って `git pull` し、ローカルの作業ブランチを `git branch -D` で削除する。
-   squash merge したブランチは、`git branch -d` では未マージと判定されて削除できない。
+6. マージが成功したら、ローカルでも `main` を最新にして戻り、マージしたブランチは残さない。
+   マージが失敗したときは、ブランチを削除しない。
    リモートの作業ブランチは、マージ時に GitHub が自動で削除する
+   1. `gh pr merge --squash --delete-branch` でマージする。gh はマージが成功したときだけ、
+      `main` に切り替えてローカルの作業ブランチを削除する。
+      GitHub の画面でマージした場合は、この手順を飛ばす
+   2. `git switch main` で `main` に戻る
+   3. `git pull` で `main` を最新にする
+   4. ローカルの作業ブランチが残っていたら、PR が merged になっていることを確かめてから
+      `git branch -D` で削除する。squash merge したブランチは、
+      `git branch -d` では未マージと判定されて削除できない
 
 ## 検査
 
@@ -43,8 +51,13 @@ commit や push の時点では検査しない。
 
 | ワークフロー | 内容 |
 |------|------|
-| `textlint.yml` | 記事全体を textlint で検査する |
-| `ogp-check.yml` | 追加・変更された記事に `ogp.webp` があるかを確かめる |
+| `textlint.yml` | 記事全体を textlint で検査する。PR を作った人や push した人が誰でも検査する |
+| `ogp-check.yml` | `content/blog/` のすべての記事に `ogp.webp` があり、frontmatter に `social_media_card = "ogp.webp"` があるかを確かめる |
+
+検査の対象は、PR で変更した記事に絞らない。
+すべての記事に OGP 画像があることが要件であり、全記事を調べても数秒で終わるためである。
+`content/projects/` のページは `cover.webp` を OGP 画像に使うので、対象外とする。
+`ogp.webp` が今のタイトルとタグで作られているかは検査しない。
 
 ## マージ方式
 
@@ -120,7 +133,7 @@ PR の作成時と、PR への push のたびに、次のワークフローが�
 | ワークフロー | 内容 |
 |------|------|
 | `textlint.yml` | 記事を textlint で検査する（必須） |
-| `ogp-check.yml` | `ogp.webp` の有無を確かめる（必須） |
+| `ogp-check.yml` | 全記事の `ogp.webp` と `social_media_card` を確かめる（必須） |
 | `claude-code-review.yml` | Claude Code が PR をレビューする |
 
 `claude-code-review.yml` は Claude のサブスクリプションの利用枠を使う。

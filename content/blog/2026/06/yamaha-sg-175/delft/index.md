@@ -6,6 +6,9 @@ description = """
 date = 2026-06-06T09:57:20+09:00
 [taxonomies]
 tags = ["Creative", "Guitar"]
+
+[extra]
+social_media_card = "ogp.webp"
 +++
 
 <!-- textlint-disable -->

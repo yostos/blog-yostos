@@ -2,6 +2,9 @@ name: OGP Check
 
 # Required status check for main. Do not add a `paths:` filter:
 # a required check whose workflow never starts stays pending and blocks the merge.
+#
+# Every article must have an OGP image, so this checks all articles,
+# not only the ones changed in the PR.
 
 on:
   pull_request:
@@ -15,28 +18,33 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v6
+
+      # 3.15 or later: tomllib supports TOML 1.1, which Zola accepts
+      # (e.g. `date = 2026-04-27T16:30+09:00` without seconds).
+      - uses: actions/setup-python@v6
         with:
-          fetch-depth: 0
+          python-version: '3.15'
 
-      - name: Check ogp.webp for added or modified articles
-        env:
-          BASE_SHA: ${{ github.event.pull_request.base.sha }}
-          HEAD_SHA: ${{ github.event.pull_request.head.sha }}
+      - name: Check ogp.webp and social_media_card for all articles
+        shell: python
         run: |
-          articles=$(git diff --name-only --diff-filter=ACM "$BASE_SHA" "$HEAD_SHA" \
-            | grep -E '^content/blog/.*/index\.md$' || true)
+          import pathlib, re, sys, tomllib
 
-          if [ -z "$articles" ]; then
-            echo "No added or modified articles."
-            exit 0
-          fi
-
-          missing=0
-          for file in $articles; do
-            dir=$(dirname "$file")
-            if [ ! -f "$dir/ogp.webp" ]; then
-              echo "::error file=$file::Missing $dir/ogp.webp. Run 'npm run ogp' to generate it."
-              missing=1
-            fi
-          done
-          exit $missing
+          failed = False
+          articles = sorted(pathlib.Path("content/blog").rglob("index.md"))
+          for path in articles:
+              if not (path.parent / "ogp.webp").is_file():
+                  print(f"::error file={path}::Missing {path.parent}/ogp.webp. Run 'npm run ogp' to generate it.")
+                  failed = True
+              m = re.match(r"\+\+\+\n(.*?)\n\+\+\+", path.read_text(encoding="utf-8"), re.S)
+              try:
+                  card = tomllib.loads(m.group(1)).get("extra", {}).get("social_media_card") if m else None
+              except tomllib.TOMLDecodeError as e:
+                  print(f"::error file={path}::Invalid TOML frontmatter: {e}")
+                  failed = True
+                  continue
+              if card != "ogp.webp":
+                  print(f"::error file={path}::[extra] social_media_card must be \"ogp.webp\" (found: {card!r}).")
+                  failed = True
+          print(f"Checked {len(articles)} articles.")
+          sys.exit(1 if failed else 0)
