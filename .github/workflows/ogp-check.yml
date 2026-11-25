@@ -2,6 +2,9 @@ name: OGP Check
 
 # Required status check for main. Do not add a `paths:` filter:
 # a required check whose workflow never starts stays pending and blocks the merge.
+#
+# Every article must have an OGP image, so this checks all articles,
+# not only the ones changed in the PR.
 
 on:
   pull_request:
@@ -15,28 +18,22 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v6
-        with:
-          fetch-depth: 0
 
-      - name: Check ogp.webp for added or modified articles
-        env:
-          BASE_SHA: ${{ github.event.pull_request.base.sha }}
-          HEAD_SHA: ${{ github.event.pull_request.head.sha }}
+      - name: Check ogp.webp and social_media_card for all articles
         run: |
-          articles=$(git diff --name-only --diff-filter=ACM "$BASE_SHA" "$HEAD_SHA" \
-            | grep -E '^content/blog/.*/index\.md$' || true)
-
-          if [ -z "$articles" ]; then
-            echo "No added or modified articles."
-            exit 0
-          fi
-
           missing=0
-          for file in $articles; do
+          count=0
+          while IFS= read -r file; do
+            count=$((count + 1))
             dir=$(dirname "$file")
             if [ ! -f "$dir/ogp.webp" ]; then
               echo "::error file=$file::Missing $dir/ogp.webp. Run 'npm run ogp' to generate it."
               missing=1
             fi
-          done
+            if ! grep -qE '^social_media_card[[:space:]]*=[[:space:]]*"ogp\.webp"' "$file"; then
+              echo "::error file=$file::Missing social_media_card = \"ogp.webp\" in [extra]."
+              missing=1
+            fi
+          done < <(find content/blog -name index.md | sort)
+          echo "Checked $count articles."
           exit $missing

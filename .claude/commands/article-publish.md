@@ -66,11 +66,11 @@ lychee -s https -s http -u "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) Appl
   - The title becomes the commit title on `main`
 - Wait for the required checks: `gh pr checks --watch`
   - If `textlint` or `ogp-check` fails, fix the errors, commit, push, and wait again
-- Merge with `gh pr merge --squash`
-- Switch back and clean up:
-  - `git switch main`
-  - `git pull origin main`
-  - `git branch -D <branch>` (`-d` fails after a squash merge; the remote branch is deleted by GitHub)
+- Merge with `gh pr merge --squash --delete-branch`
+  - Only when the merge succeeds, gh switches to `main` and deletes the local branch
+    (GitHub deletes the remote branch). If the merge fails, nothing is deleted
+  - Do not delete the branch with `git branch -D` yourself
+- Update `main`: `git pull origin main`
 
 Merging updates `main`, and the deploy workflow deploys to Cloudflare Workers.
 

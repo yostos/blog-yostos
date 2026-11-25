@@ -54,11 +54,11 @@ Follow [Keep a Changelog 2.0.0](https://keepachangelog.com/en/2.0.0/).
 
 ### 6. Merge
 
-- `gh pr merge --squash` to merge the PR (only squash merge is allowed)
+- `gh pr merge --squash --delete-branch` to merge the PR (only squash merge is allowed)
+  - Only when the merge succeeds, gh switches to `main` and deletes the local branch
 
-### 7. Switch to main & Pull
+### 7. Pull
 
-- `git checkout main`
 - `git pull origin main`
 
 ### 8. Tag
