@@ -29,6 +29,10 @@ jobs:
         uses: actions/checkout@v6
         with:
           fetch-depth: 1
+          # Do not leave GITHUB_TOKEN in git config. Its auth header takes
+          # precedence over the App token the action sets on the remote URL,
+          # so pushes would run as github-actions[bot] (contents: read) and fail.
+          persist-credentials: false
 
       - name: Run Claude Code
         id: claude
