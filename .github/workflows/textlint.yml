@@ -1,8 +1,8 @@
 name: Textlint
 
 on:
-  push:
-    branches: [main]
+  # PRs only. main accepts changes only through PRs that passed this
+  # check, so running it again after the merge adds nothing.
   pull_request:
     branches: [main]
 
