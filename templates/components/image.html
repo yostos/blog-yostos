@@ -61,9 +61,10 @@
         {#- Fallback: treat src as an absolute path from the project root.
             This handles images placed under the static/ directory,
             e.g. src="/images/shared.jpg"
-            If this also fails, output the URL anyway so the page does
-            not break; width/height will be omitted. This may indicate
-            a missing or misspelled image path. -#}
+            If the file does not exist here either, the build fails:
+            get_url with cachebust=true needs the file to compute its
+            hash. A missing or misspelled image path therefore stops
+            the build instead of producing a broken image. -#}
         {%- set meta = get_image_metadata(path=src, allow_missing=true) -%}
         {%- set image_url = get_url(path=src, cachebust=true) -%}
     {%- endif -%}
