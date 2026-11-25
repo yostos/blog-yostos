@@ -35,50 +35,42 @@ The blog has been running since 2024, with **237+ articles** covering these topi
 | Comments | [giscus](https://giscus.app/) |
 | CI/CD | GitHub Actions |
 | Linting | [textlint](https://textlint.github.io/) |
-| Git Hooks | [Husky](https://typicode.github.io/husky/) + [lint-staged](https://github.com/lint-staged/lint-staged) |
 
 ## CI/CD Pipeline
 
-This project has a 3-stage quality gate for content:
+All changes, including typo fixes, go through a branch and a pull request.
+`main` is protected, and publishing means squash-merging a pull request.
+See `docs/repository-workflow.md` for the full rules.
 
 ```
-[Local Development]
+[Branch]
      │
-     ├─ git commit → pre-commit (OGP check + lint-staged)
-     │
-     └─ git push   → pre-push (npm run lint: all files)
+     └─ commit / push (no local hooks)
             │
             ▼
-[GitHub Actions]
+[Pull Request] ── required checks
      │
      ├─ textlint.yml ──────────── Text quality check
      │
-     ├─ deploy.yml ────────────── zola build (internal link validation)
+     └─ ogp-check.yml ─────────── ogp.webp exists for changed articles
+            │
+            ▼ squash merge
+[main]
      │
-     └─ zola-check-scheduled.yml ─ Monthly external link check
+     ├─ deploy.yml ────────────── zola build and deploy
+     │
+     └─ bluesky-post.yml ──────── Post new articles to Bluesky
 ```
 
 ### Workflows
 
 | Workflow | Trigger | Purpose |
 |----------|---------|---------|
-| **Textlint** | Push/PR to main | Lint all Markdown files |
-| **Deploy** | Push to main | Build and deploy to GitHub Pages |
+| **Textlint** | Push/PR to main | Lint all Markdown files (required check) |
+| **OGP Check** | PR to main | Check `ogp.webp` for added or modified articles (required check) |
+| **Deploy** | Push to main | Build and deploy |
+| **Bluesky Post** | Push to main (`content/**`) | Post new articles to Bluesky |
 | **Zola Check** | Monthly (15th) / Manual | Validate external links |
-
-### Local Hooks (Husky)
-
-| Hook | Command | Scope |
-|------|---------|-------|
-| **pre-commit** | OGP check + `npx lint-staged` | Staged article files |
-| **pre-push** | `npm run lint` | All `content/**/*.md` |
-
-To bypass hooks in emergencies (not recommended):
-
-```bash
-git commit --no-verify  # Skip pre-commit
-git push --no-verify    # Skip pre-push
-```
 
 ## Development
 

@@ -564,3 +564,70 @@ centroid が「このブログでの使われ方」を表すのに対し、
 - `.claude/commands/article-tag.md` の手順を、5語の選定と連結に置き換える
 - 旧方式の `tag-vectors.json` は `data/tag-vectors.centroid-20260831.json.bak`
   に退避してある。移行が定着した時点で削除する
+
+---
+
+## ADR-0007: 記事の公開をGitHub FlowのPRマージに一本化
+
+- **Status**: Accepted
+- **Date**: 2026-11-25
+- **Deciders**: yostos
+
+### Context
+
+これまで記事は `main` に直接 push して公開していた（`/article-publish` が
+`git push origin main` を実行する）。
+
+将来、GitHub Issue に書いた執筆依頼をもとに、Claude Code で下書きを作って
+ブランチを push する仕組みを計画している。実行環境は Raspberry Pi か
+GitHub Actions のどちらかで、まだ決めていない。
+下書きはそのまま公開できる品質ではなく、必ず Mac で仕上げる必要がある。
+`main` への直接 push を続けると、自動で作るブランチと公開の流れが噛み合わない。
+そこで自動化より先に、ブログの運用を変える。
+
+### Decision
+
+**GitHub Flow** を採用する。`main` を保護し、すべての変更をブランチと PR で行い、
+PR の squash merge を公開とする。誤字修正も例外とせず、
+Ruleset のバイパス対象には管理者も含めて誰も登録しない。
+検査はすべて PR で行い、commit 時と push 時の hook は廃止する。
+運用の詳細は `docs/repository-workflow.md` に定める。
+
+### Alternatives Considered
+
+| 候補 | 不採用理由 |
+|------|------------|
+| `main` への直接 push を続ける | 自動で作るブランチを同じ流れに乗せられない |
+| `develop` ブランチを置く Git Flow | 書き手が1人のブログでは利点がなく、マージが2倍になるだけ |
+| 誤字修正だけ直接 push を許す | `main` の保護に抜け道ができ、「公開はPRのマージだけ」という前提が崩れる |
+| 管理者にバイパスを許す | 同上 |
+| 緊急時に Ruleset を一時的に無効にする | 実質的に管理者のバイパスと同じになる。承認数 0 なので、緊急時も修正の PR をすぐマージできる |
+| rebase merge / merge commit を許す | rebase merge では `bluesky-post.yml` の `HEAD~1` 差分検出から新規記事が漏れる。方式を1つに揃えるため merge commit も使わない |
+| commit 時・push 時の hook で検査を続ける | 書きかけの commit や自動で作る下書きが止まる。hook はクローンごとに `npm install` で入るため、環境によって検査の有無が変わる |
+
+### Rationale
+
+- **自動化との整合**: 自動で作ったブランチも、Mac で作ったブランチも、同じ PR の流れで公開できる
+- **既存ワークフローとの互換**: PR のマージは `main` への push として扱われるため、
+  `deploy.yml` と `bluesky-post.yml` のトリガーを変えずに済む
+- **検査の一元化**: 必須のステータスチェックは環境に関係なく効くため、
+  どこで作った変更でも、検査を通ったものだけが公開される
+- **履歴の形式を維持**: squash merge のコミットタイトルに Conventional Commits 形式の
+  PR タイトルを使えば、`main` の履歴はこれまでと同じ1記事1コミットになる
+
+### Consequences
+
+- GitHub の Ruleset で `main` を保護する（PR 必須、承認数 0、必須のステータスチェック、
+  バイパスなし、force push とブランチ削除を禁止）
+- リポジトリの設定を変える（マージ方式を squash merge のみにする、
+  squash のタイトルを `PR_TITLE`・本文を `PR_BODY` にする、マージ後に作業ブランチを自動で削除する）
+- OGP 画像の有無を検査する `.github/workflows/ogp-check.yml` を新しく作る
+- husky の hook（`.husky/pre-commit`、`.husky/pre-push`）と、`package.json` の
+  `prepare`・`lint-staged` の設定、husky と lint-staged の依存を削除する
+- `.claude/commands/article-publish.md` の push 手順を、ブランチ・PR・マージに書き換え、
+  lint-staged の記述を直す
+- `.claude/commands/blog-release.md` の `gh pr merge` に `--squash` を付ける
+- `CLAUDE.md` に、作業前にブランチを確認する手順とこの運用ルールへの参照を加え、
+  Hosting 節のデプロイの説明を直す
+- 誤字修正でも PR を作る手間が増える。検査の結果が分かるのは PR を作った後になる
+- `claude-code-review.yml` がすべての PR で動くようになる。残すかどうかは未決定である

@@ -12,6 +12,14 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Git Operations
 
+- **Workflow**: GitHub Flow. `main` is protected; every change, including typo fixes,
+  goes through a branch and a PR, and publishing means squash-merging the PR.
+  See `docs/repository-workflow.md`
+- **Before starting work**: Check the current branch. If on `main`, create a branch first
+  (`content/<slug>` for articles; `feature/`, `fix/`, `refactor/` for other changes).
+  If already on a branch (e.g. a draft branch created by automation), keep working on it
+- **PR title**: Follow the prefix rules in `docs/repository-workflow.md` ("PR のタイトル").
+  The PR title becomes the commit title on `main`
 - **Staging**: Always use `git add .` to stage all changes. Never stage individual files.
 - **Commit**: Use `/simple-commit:commit` skill (auto-generates Conventional Commits format)
 - Local rules: See `.claude/simple-commit.local.md`
@@ -41,13 +49,13 @@ themes/tabi/      # tabi theme (git submodule — run `git submodule update --in
 scripts/          # OGP generation, image conversion, IndexNow
 tools/            # Additional tooling and docs
 static/           # Static assets served at site root
-docs/             # Project documentation (tag rules, architecture decisions)
+docs/             # Project documentation (repository workflow, tag rules, architecture decisions)
 ```
 
 ## Hosting
 
 - Cloudflare Workers (`wrangler.toml`), domain: `codedchords.dev`
-- Deploy: push to main triggers GitHub Actions → zola build → Cloudflare Workers
+- Deploy: merging a PR updates `main`, which triggers GitHub Actions → zola build → Cloudflare Workers
 
 ## Table of Contents
 

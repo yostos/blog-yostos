@@ -1,5 +1,5 @@
 ---
-description: Publish an article. Run review, regenerate OGP, verify build, commit, and push to main automatically.
+description: Publish an article. Run review, regenerate OGP, check links, commit on a branch, open a PR, wait for checks, and squash-merge it.
 ---
 
 # Article Publish
@@ -7,9 +7,19 @@ description: Publish an article. Run review, regenerate OGP, verify build, commi
 Execute the full publish workflow automatically.
 Prerequisite: the user has already confirmed the article via `zola serve` preview.
 
+`main` is protected: publishing means squash-merging a pull request.
+See `docs/repository-workflow.md` for the rules.
+
 ## Steps
 
 Execute in order. Stop and report if any step fails.
+
+### 0. Check the Branch
+
+- Run `git branch --show-current`
+- If on `main`: create a branch with `git switch -c content/<slug>`
+  (`<slug>` is the article directory name)
+- If already on a branch (including a draft branch created by automation): stay on it
 
 ### 1. Run /article-review
 
@@ -46,13 +56,23 @@ lychee -s https -s http -u "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) Appl
 
 - `git add .` to stage all changes
 - Use `/simple-commit:commit` skill to create the commit
-  - lint-staged runs textlint automatically on commit
-  - If textlint fails, fix the errors and retry
 
-### 5. Push
+### 5. Open a PR and Merge
 
-Run `git push origin main` to publish.
-GitHub Actions deploy workflow will auto-trigger and deploy to Cloudflare Workers.
+- `git push -u origin <branch>`
+- If the branch has no PR yet, create one with `gh pr create`
+  - Title: follow the "PR のタイトル" section of `docs/repository-workflow.md`
+    (article changes use `content:`, e.g. `content: add <topic> article`)
+  - The title becomes the commit title on `main`
+- Wait for the required checks: `gh pr checks --watch`
+  - If `textlint` or `ogp-check` fails, fix the errors, commit, push, and wait again
+- Merge with `gh pr merge --squash`
+- Switch back and clean up:
+  - `git switch main`
+  - `git pull origin main`
+  - `git branch -D <branch>` (`-d` fails after a squash merge; the remote branch is deleted by GitHub)
+
+Merging updates `main`, and the deploy workflow deploys to Cloudflare Workers.
 
 ### 6. IndexNow Notification
 
