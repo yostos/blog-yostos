@@ -1,7 +1,7 @@
 # リポジトリ運用ルール
 
 **制定日**: 2026-11-25
-**改定日**: 2026-11-26（Issue の使い方を改めた）
+**改定日**: 2026-11-26（Issue の使い方と、検査を動かすタイミングを改めた）
 **関連ADR**: `docs/architectural-decision.md` ADR-0007、ADR-0008
 
 記事の執筆・変更と公開の手順を定める。GitHub Flow に従い、
@@ -43,7 +43,8 @@ Issue で `@claude` に依頼した作業のいずれにも同じルールを適
 ## 検査
 
 検査はすべて PR で行い、通らなければマージできない。
-commit や push の時点では検査しない。
+ブランチへの commit や push の時点では検査しない。
+リポジトリ全体の状態を確かめる検査は、マージ後の `main` でも動かす（「PR とマージで動くワークフロー」の節）。
 
 ブランチでは書きかけの状態で commit や push をするのが普通であり、
 公開されるのはマージの時点だからである。
@@ -128,23 +129,31 @@ GitHub の Ruleset で `main` に次の制約をかける。
 
 ## PR とマージで動くワークフロー
 
-PR の作成時と、PR への push のたびに、次のワークフローが動く。
+PR では、PR の作成時と PR への push のたびに動く。`main` への push は PR のマージで起きる。
 
-| ワークフロー | 内容 |
-|------|------|
-| `textlint.yml` | 記事を textlint で検査する（必須） |
-| `ogp-check.yml` | 全記事の `ogp.webp` と `social_media_card` を確かめる（必須） |
-| `claude-code-review.yml` | Claude Code が PR をレビューする |
+| ワークフロー | 種類 | PR | `main` への push | 理由 |
+|------|------|:---:|:---:|------|
+| `textlint.yml` | 必須チェック | ○ | ○ | 全記事を見る。`main` では、マージ後の状態を確かめる |
+| `ogp-check.yml` | 必須チェック | ○ | ○ | 全記事を見る。`main` での実行は作業 1-7 で加える |
+| `zola-build.yml` | 必須チェック | ○ | × | サイト全体を見る。`main` では `deploy.yml` が同じビルドをし、失敗すればデプロイが止まる。作業 1-2 で作る |
+| `cover-check.yml` | 必須チェック | ○ | × | PR で追加された記事だけを見るので、`main` では対象を決められない。作業 1-3 で作る |
+| `claude-code-review.yml` | レビュー（必須ではない） | ○ | × | PR の差分を読んでコメントする。`content/` 以外を変える PR だけで動かす（作業 1-8 で絞り込む） |
+| `deploy.yml` | デプロイ | × | ○ | 公開はマージで行う。Zola でビルドし、Cloudflare Workers にデプロイする |
+| `bluesky-post.yml` | 投稿 | × | ○ | `content/**` が変わったときに動き、新規記事があれば Bluesky に投稿する |
 
-`claude-code-review.yml` は Claude のサブスクリプションの利用枠を使う。
-すべての変更が PR を通るようになるので、残すかどうかは未決定である。
+作業の番号は `docs/draft-automation-log.md` のものである。
 
-PR のマージは `main` への push として扱われ、次のワークフローが動く。
+PR の必須チェックのうち、リポジトリ全体の状態を確かめるものは、`main` への push でも動かす。
+Ruleset は、マージの前にブランチを最新にすること（`strict_required_status_checks_policy`）を求めていない。
+そのため、PR の検査の後に別の PR がマージされると、実際に `main` にできる組み合わせは検査されていない。
+`main` での実行は、この食い違いを拾うためにある。`zola-build.yml` だけは、同じビルドを `deploy.yml` が行うので例外とする。
 
-| ワークフロー | 内容 |
-|------|------|
-| `deploy.yml` | Zola でビルドし、Cloudflare Workers にデプロイする |
-| `bluesky-post.yml` | 新規記事があれば Bluesky に投稿する |
+このほか、PR とも push とも関係なく動くワークフローがある。
+
+- `zola-check`: 月1回と手動で、外部リンクを確かめる
+- `claude.yml`: Issue と PR のコメントの `@claude` で起動する（「Issue の使い方」の節）
+
+`claude-code-review.yml` と `claude.yml` は、Claude のサブスクリプションの利用枠を使う。
 
 ## Issue の使い方
 
