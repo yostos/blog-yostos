@@ -1,7 +1,8 @@
 # 記事の下書き自動化 作業ログ
 
 **開始日**: 2026-11-26
-**状態**: 下書きの自動化は取りやめた（2026-11-26）。検討の中で見つけた、自動化と関係なく必要な作業を続ける
+**状態**: 下書きの自動化は取りやめた（2026-11-26）。検討の中で見つけた作業は、2026-11-26 にすべて実装した。
+残りは「記録」の末尾にある、実際の運用で確かめる項目である
 **関連文書**: `docs/draft-automation-plan.md`（取りやめた検討の記録）、`docs/architectural-decision.md` ADR-0008、
 `docs/repository-workflow.md`
 
@@ -51,9 +52,9 @@ Issue で `@claude` に頼んだ作業は GitHub Actions で動き、リポジ�
 
 完了条件
 
-- [ ] メモリのすべての項目について、CLAUDE.md に移したか、移さない理由を PR の説明に書いた
-- [ ] CLAUDE.md に個人的な情報（メールアドレス、私生活の詳細など）が含まれていない。CLAUDE.md は公開される
-- [ ] lint と `zola build` のルールが Mac での対話の作業に限られ、Actions 上の作業では実行すると読める
+- [x] メモリのすべての項目について、CLAUDE.md に移したか、移さない理由を PR の説明に書いた
+- [x] CLAUDE.md に個人的な情報（メールアドレス、私生活の詳細など）が含まれていない。CLAUDE.md は公開される
+- [x] lint と `zola build` のルールが Mac での対話の作業に限られ、Actions 上の作業では実行すると読める
 - [ ] 移したメモリが削除され、`MEMORY.md` に残っていない
 
 #### 作業 1-2: PR の必須チェックに `zola build` を加える
@@ -102,7 +103,7 @@ CLAUDE.md は新しい記事にカバー画像を必須としているが、検�
 - [ ] `local_image` はあるがファイルがない記事を追加した試験の PR で失敗する
 - [ ] カバー画像のある記事を追加した PR と、既存の記事だけを変えた PR で成功する
 - [ ] Ruleset の必須チェックに加わっている
-- [ ] 上の文書とコマンドが更新されている
+- [x] 上の文書とコマンドが更新されている
 
 #### 作業 1-5: `/article-publish` が OGP 画像のない記事で止まらないようにする
 
@@ -218,7 +219,7 @@ ADR-0007 から未決定だった扱いを、2026-11-26 にオーナーと決め
 - [x] `docs/repository-workflow.md` の「Issue による執筆依頼」が、Issue の使い方と `@claude` での依頼の仕方に書き換わっている
 - [x] ADR-0008 が、執筆依頼を受けない決定と、続ける作業の決定を記録している
 - [x] `docs/draft-automation-plan.md` の状態が「取りやめ」になり、理由が書かれている
-- [ ] `CLAUDE.md` の Git Operations と `.claude/commands/article-publish.md` の手順 0 にある
+- [x] `CLAUDE.md` の Git Operations と `.claude/commands/article-publish.md` の手順 0 にある
   「draft branch created by automation」を、`@claude` が作ったブランチの例に直している
 
 ### 済んだ作業
@@ -404,3 +405,37 @@ PR #23 で `.github/workflows/zola-build.yml` を作った。Zola は `deploy.ym
   `gh api repos/yostos/blog-yostos/rules/branches/main` で、必須チェックが `textlint`、`ogp-check`、`zola-build` の3つであることを確かめた
 - 試験の PR #24 で、`image.html` に存在しない関数の呼び出しを入れた。`zola-build` が
   `Unknown function this_function_does_not_exist` で失敗し、PR の状態が `BLOCKED` になった。PR #24 はマージせずに閉じた
+
+### 2026-11-26 作業 1-3、1-1、2-1 を1本の PR で実装
+
+オーナーの指示で、残りの作業を1本の PR にまとめ、試験の PR は作らないことにした。
+
+作業 1-3（追加された記事のカバー画像の検査）
+
+- `.github/workflows/cover-check.yml` を作った。PR の base との merge base からの差分（`--diff-filter=A`）で、
+  追加された `content/blog/**/index.md` を拾い、`local_image` があり、記事のディレクトリにそのファイルがあることを確かめる。
+  絶対パスの `local_image` も失敗にする
+- この PR には記事の追加がないので、確かめられたのは「追加された記事がなければ成功する」ことだけである。
+  `local_image` がない記事、ファイルがない記事、カバー画像のある記事を追加した場合の動作は、試験をしていない。
+  次に記事を追加する PR で確かめる
+- CLAUDE.md の「本文冒頭の画像の行は必須」という記述を、意図して置かない記事もある実態に合わせて直した
+
+作業 1-1（メモリのルールを CLAUDE.md に移す）
+
+- メモリ54件のうち、記事の書き方・編集・調査・画像・ビルド・作業ログに関わるものを CLAUDE.md に移した。
+  gnu.org をリンク確認から外すルールは `/article-publish` の lychee のコマンドに移した。
+  記事の commit の接頭辞のルールは、すでに `docs/repository-workflow.md` と `.claude/simple-commit.local.md` にある
+- オーナーとのやり取りの仕方（報告、確認、承認、提案の出し方など）に関わるものは、リポジトリのルールではないのでメモリに残した
+- 移した項目と残した項目の一覧、残した理由は PR の説明に書いた
+- 移したメモリの削除は、オーナーの承認を得てから行う
+
+作業 2-1 の残り
+
+- `CLAUDE.md` と `/article-publish` の「draft branch created by automation」を、`@claude` が push したブランチの例に直した
+
+実際の運用で確かめる項目
+
+- 新しい記事の公開で、`/article-publish` の手順 2 が止まらずに OGP 画像を作る（作業 1-5）
+- `@claude` の commit が `claude[bot]` として表示される（作業 1-10）
+- 記事だけの PR で `claude-review` が動かず、`@claude` が push した PR では動く（作業 1-8）
+- 記事を追加する PR で、カバー画像の検査が正しく成功・失敗する（作業 1-3）

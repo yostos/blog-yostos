@@ -1,0 +1,70 @@
+name: Cover Check
+
+# Required status check for main. Do not add a `paths:` filter:
+# a required check whose workflow never starts stays pending and blocks the merge.
+#
+# CLAUDE.md requires a cover image (local_image) for new articles. This checks
+# only articles added by the PR: many older articles have no cover. The body's
+# cover image line is not required, because some articles leave it out on purpose.
+#
+# It does not run on push to main: which articles were added depends on the PR.
+
+on:
+  pull_request:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  cover-check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          fetch-depth: 0
+
+      # 3.15 or later: tomllib supports TOML 1.1, which Zola accepts
+      # (e.g. `date = 2026-04-27T16:30+09:00` without seconds).
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.15'
+
+      - name: Check local_image of added articles
+        shell: python
+        env:
+          BASE_SHA: ${{ github.event.pull_request.base.sha }}
+        run: |
+          import os, pathlib, re, subprocess, sys, tomllib
+
+          # Three dots: compare with the merge base, so commits added to main
+          # after the branch was created are not picked up.
+          out = subprocess.run(
+              ["git", "diff", "--name-only", "--diff-filter=A",
+               f"{os.environ['BASE_SHA']}...HEAD", "--", "content/blog/"],
+              check=True, capture_output=True, text=True).stdout
+          added = [pathlib.Path(p) for p in out.split() if p.endswith("/index.md")]
+          if not added:
+              print("No added articles. Skipping.")
+              sys.exit(0)
+
+          failed = False
+          for path in added:
+              m = re.match(r"\+\+\+\n(.*?)\n\+\+\+", path.read_text(encoding="utf-8"), re.S)
+              try:
+                  image = tomllib.loads(m.group(1)).get("extra", {}).get("local_image") if m else None
+              except tomllib.TOMLDecodeError as e:
+                  print(f"::error file={path}::Invalid TOML frontmatter: {e}")
+                  failed = True
+                  continue
+              if not image:
+                  print(f"::error file={path}::[extra] local_image is missing. New articles need a cover image.")
+                  failed = True
+              elif image.startswith("/"):
+                  print(f"::error file={path}::local_image must be a path relative to the article directory (found: {image!r}).")
+                  failed = True
+              elif not (path.parent / image).is_file():
+                  print(f"::error file={path}::local_image {image!r} does not exist in {path.parent}.")
+                  failed = True
+          print(f"Checked {len(added)} added articles.")
+          sys.exit(1 if failed else 0)
