@@ -109,7 +109,7 @@ GitHub の Ruleset で `main` に次の制約をかける。
 | 対象 | `main` ブランチ |
 | マージ前の PR | 必須 |
 | 必要な承認数 | 0 |
-| 必須のステータスチェック | `textlint.yml`、`ogp-check.yml`、`zola-build.yml` |
+| 必須のステータスチェック | `textlint`、`ogp-check`、`zola-build`（各ワークフローのジョブ名） |
 | バイパスを許可する人 | なし（管理者も含む） |
 | force push | 禁止 |
 | ブランチの削除 | 禁止 |
