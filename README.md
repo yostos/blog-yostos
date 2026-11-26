@@ -4,9 +4,9 @@
 [![Textlint](https://github.com/yostos/blog-yostos/actions/workflows/textlint.yml/badge.svg)](https://github.com/yostos/blog-yostos/actions/workflows/textlint.yml)
 [![Zola](https://img.shields.io/badge/Zola-0.23.6-blue?logo=zola)](https://www.getzola.org/)
 [![Theme: tabi](https://img.shields.io/badge/Theme-tabi-orange)](https://github.com/welpo/tabi)
-[![Articles](https://img.shields.io/badge/Articles-237+-green)](https://blog.yostos.org)
+[![Articles](https://img.shields.io/badge/Articles-430+-green)](https://codedchords.dev)
 
-**Live Site**: [https://blog.yostos.org](https://blog.yostos.org)
+**Live Site**: [https://codedchords.dev](https://codedchords.dev)
 
 ## About This Blog
 
@@ -23,7 +23,7 @@ This blog covers a diverse range of topics:
 - **Books & Manga** — Reviews and recommendations
 - **Life & Career** — Personal reflections
 
-The blog has been running since 2024, with **237+ articles** covering these topics.
+The blog has been running since 2024, with **430+ articles** covering these topics.
 
 ## Tech Stack
 
@@ -31,7 +31,7 @@ The blog has been running since 2024, with **237+ articles** covering these topi
 |-----------|------------|
 | Static Site Generator | [Zola](https://www.getzola.org/) |
 | Theme | [tabi](https://github.com/welpo/tabi) |
-| Hosting | GitHub Pages |
+| Hosting | [Cloudflare Workers](https://workers.cloudflare.com/) |
 | Comments | [giscus](https://giscus.app/) |
 | CI/CD | GitHub Actions |
 | Linting | [textlint](https://textlint.github.io/) |
