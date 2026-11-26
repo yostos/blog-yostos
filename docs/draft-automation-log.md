@@ -375,7 +375,8 @@ PR #21 自身では、`claude-review` は成功と表示されたがレビュー
 
 ### 2026-11-26 作業 1-9: 書き込み権限のない人の `@claude`
 
-`claude-code-action`（v1）のソースで確かめた。`claude.yml` は変えない。
+`claude-code-action` のソースで確かめた。`claude.yml` は `@v1` を使っており、確認した時点の `v1` タグは commit `c148296601107048fe24605a3dfb32a317a6f4c7` を指していた。
+`v1` は新しい版が出ると指す先が変わるので、見直すときはこの commit のソースを読む。`claude.yml` は変えない。
 
 - `src/entrypoints/run.ts` は、Issue と PR のイベントで `checkWritePermissions` を呼び、
   権限がなければ `Actor does not have write permissions to the repository` で終える
