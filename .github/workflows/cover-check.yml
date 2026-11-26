@@ -37,13 +37,14 @@ jobs:
         run: |
           import os, pathlib, re, subprocess, sys, tomllib
 
-          # Three dots: compare with the merge base, so commits added to main
-          # after the branch was created are not picked up.
+          # HEAD is the PR's merge commit and BASE_SHA is the base branch commit
+          # it was made from, so the diff holds only the PR's own changes.
+          # -z keeps paths with spaces or non-ASCII characters intact.
           out = subprocess.run(
-              ["git", "diff", "--name-only", "--diff-filter=A",
+              ["git", "diff", "-z", "--name-only", "--diff-filter=A",
                f"{os.environ['BASE_SHA']}...HEAD", "--", "content/blog/"],
               check=True, capture_output=True, text=True).stdout
-          added = [pathlib.Path(p) for p in out.split() if p.endswith("/index.md")]
+          added = [pathlib.Path(p) for p in out.split("\0") if p.endswith("/index.md")]
           if not added:
               print("No added articles. Skipping.")
               sys.exit(0)
@@ -51,13 +52,20 @@ jobs:
           failed = False
           for path in added:
               m = re.match(r"\+\+\+\n(.*?)\n\+\+\+", path.read_text(encoding="utf-8"), re.S)
+              if not m:
+                  print(f"::error file={path}::No TOML frontmatter (+++ ... +++) found at the top of the file.")
+                  failed = True
+                  continue
               try:
-                  image = tomllib.loads(m.group(1)).get("extra", {}).get("local_image") if m else None
+                  image = tomllib.loads(m.group(1)).get("extra", {}).get("local_image")
               except tomllib.TOMLDecodeError as e:
                   print(f"::error file={path}::Invalid TOML frontmatter: {e}")
                   failed = True
                   continue
-              if not image:
+              if image is not None and not isinstance(image, str):
+                  print(f"::error file={path}::local_image must be a string (found: {image!r}).")
+                  failed = True
+              elif not image:
                   print(f"::error file={path}::[extra] local_image is missing. New articles need a cover image.")
                   failed = True
               elif image.startswith("/"):
