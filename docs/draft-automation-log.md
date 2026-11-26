@@ -24,7 +24,7 @@ Ruleset の変更（1-2、1-3）とメモリの削除（1-1）は、そのつど
 |------|------|------|
 | 1 | docs | ADR-0008 とこのログなど、取りやめと続ける作業の文書 |
 | 2 | 1-6 の2本 | `image.html` のコメント、`hifi-guitar-lofi-music` のパス |
-| 3 | 1-7 | `textlint.yml` の `push: main` の削除 |
+| 3 | 1-7 | `ogp-check.yml` を `main` への push でも動かす |
 | 4 | 1-8 | `claude-code-review.yml` の絞り込みと `allowed_bots` |
 | 5 | 1-5 | `/article-publish` の `trash` の修正 |
 | 6 | 1-2 | `zola-build.yml` と Ruleset |
@@ -129,19 +129,31 @@ CLAUDE.md は新しい記事にカバー画像を必須としているが、検�
 - [ ] `image.html` のコメントが実際の動作と一致している
 - [ ] `hifi-guitar-lofi-music` のカバー画像が記事一覧と記事のページで表示される（オーナーがプレビューで確認）
 
-#### 作業 1-7: `textlint.yml` の `push: main` を削除する
+#### 作業 1-7: `ogp-check.yml` を `main` への push でも動かす
 
-`main` への直接 push を禁止したので、マージ後に同じ検査を繰り返すだけになっている。
+当初は「`textlint.yml` の `push: main` を削除する」としていた。マージ後に同じ検査を繰り返すだけだと考えたためである。
+これは誤りだった。Ruleset はマージの前にブランチを最新にすることを求めていないので、
+PR の検査の後に別の PR がマージされると、実際に `main` にできる組み合わせは検査されない。
+`main` での実行には、マージ後の状態を確かめるという役目がある。削除の PR #17 は閉じた。
+
+あわせて検査ごとに見直し、PR と `main` への push のどちらで動かすかを `docs/repository-workflow.md`
+「PR とマージで動くワークフロー」の表にまとめた（2026-11-26 にオーナーが承認）。
+リポジトリ全体を見る `ogp-check.yml` が、`main` で動いていなかった。
+
+- `zola-build.yml`（1-2）は `main` で動かさない。`deploy.yml` が同じビルドをする
+- `cover-check.yml`（1-3）は `main` で動かさない。PR で追加された記事だけを見るので、`main` では対象を決められない
 
 変更するもの
 
-- `.github/workflows/textlint.yml`: `on:` から `push` を削除する
-- `README.md` と `docs/repository-workflow.md` に、マージ後に textlint が動くという記述があれば直す
+- `.github/workflows/ogp-check.yml`: `on:` に `push: branches: [main]` を加える
+- `README.md` の Workflows の表と CI/CD Pipeline の図: OGP Check のトリガーを直す
+- `docs/repository-workflow.md` の表: 「作業 1-7 で加える」を消す
 
 完了条件
 
-- [ ] PR では `textlint` が動き、マージ後の `main` では動かない
-- [ ] 上の文書に古い記述が残っていない
+- [ ] PR と、マージ後の `main` の両方で `ogp-check` が動き、成功する
+- [ ] `textlint.yml` の `push: main` が残っている
+- [ ] 上の文書が実際の動作と一致している
 
 #### 作業 1-8: `claude-code-review.yml` を機能の変更の PR だけで動かす
 
@@ -331,3 +343,10 @@ Claude に頼むかどうかは `@claude` を書くかどうかで決める。
 
 ADR-0007 から未決定だった扱いを、オーナーと決めた。削除せず、記事だけを変える PR では動かさず、
 `@claude` が push した PR でも動くようにする。理由と変更内容は作業 1-8 に、決定は ADR-0008 の決定6に書いた。
+
+### 2026-11-26 作業 1-7 の見直し
+
+`textlint.yml` の `push: main` を削除する PR #17 を作ったところで、README の Textlint のバッジが `main` での実行結果を表示しており、
+更新されなくなることに気づいた。一般的な運用を調べる中で、`main` での実行が、PR の検査とマージ後の状態の食い違いを拾う役目を持つことが分かった。
+このリポジトリの Ruleset は `strict_required_status_checks_policy` が false で、食い違いが起こりうる。
+PR #17 は閉じ、作業 1-7 を「`ogp-check.yml` を `main` への push でも動かす」に書き換えた。
