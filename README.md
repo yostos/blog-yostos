@@ -1,6 +1,6 @@
 # Coded Chords
 
-[![Deploy to GitHub Pages](https://github.com/yostos/blog-yostos/actions/workflows/deploy.yml/badge.svg)](https://github.com/yostos/blog-yostos/actions/workflows/deploy.yml)
+[![Deploy to Cloudflare Workers](https://github.com/yostos/blog-yostos/actions/workflows/deploy.yml/badge.svg)](https://github.com/yostos/blog-yostos/actions/workflows/deploy.yml)
 [![Textlint](https://github.com/yostos/blog-yostos/actions/workflows/textlint.yml/badge.svg)](https://github.com/yostos/blog-yostos/actions/workflows/textlint.yml)
 [![Zola](https://img.shields.io/badge/Zola-0.23.6-blue?logo=zola)](https://www.getzola.org/)
 [![Theme: tabi](https://img.shields.io/badge/Theme-tabi-orange)](https://github.com/welpo/tabi)
