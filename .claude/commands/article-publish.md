@@ -28,7 +28,9 @@ If issues are found, stop and fix them before continuing.
 
 ### 2. Regenerate OGP Image
 
-- Move the existing OGP image to the Trash. Write out the single target file in full
+- If the article has no `ogp.webp` yet (a new article), skip the Trash step below and
+  only run `npm run ogp`. `trash` fails on a missing file and would stop this procedure
+- Otherwise, move the existing OGP image to the Trash. Write out the single target file in full
   (the file specified by social_media_card in frontmatter). Never pass a wildcard or a
   directory, and never regenerate by deleting more than the one article's image:
 

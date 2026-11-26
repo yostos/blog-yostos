@@ -355,3 +355,18 @@ PR #17 は閉じ、作業 1-7 を「`ogp-check.yml` を `main` への push で�
 
 PR #20 で `ogp-check.yml` に `push: main` を加え、README の表と図、`docs/repository-workflow.md` の表を直した。
 マージ後の `main`（`92370ea`）で `OGP Check` が動き、成功した。`Textlint` も引き続き `main` で動いている。
+
+### 2026-11-26 作業 1-8: `claude-code-review.yml` の絞り込み
+
+PR #21 で `paths-ignore: content/**` と `allowed_bots: claude` を加えた。
+`allowed_bots` は bot 名の末尾の `[bot]` を無視して比べるので、`claude` と `claude[bot]` のどちらでも同じである（`src/github/validation/actor.ts`）。
+
+PR #21 自身では、`claude-review` は成功と表示されたがレビューは行われなかった。`claude-code-action` は、
+ワークフローのファイルがデフォルトブランチのものと一致しないと実行を飛ばす
+（`Skipping action due to workflow validation`）。変更はマージ後の PR から効くので、完了条件は後の PR で確かめる。
+
+### 2026-11-26 作業 1-5: `/article-publish` の手順 2
+
+`trash` は存在しないファイルを渡すと終了コード 5 で失敗することを確かめた。
+`ogp.webp` がない新しい記事では `trash` を飛ばし、`npm run ogp` だけを実行する手順にした。
+完了条件は、次に新しい記事を公開するときに確かめる。
