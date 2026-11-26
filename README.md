@@ -57,6 +57,8 @@ See `docs/repository-workflow.md` for the full rules.
             ▼ squash merge
 [main]
      │
+     ├─ textlint.yml, ogp-check.yml ── re-check the merged state
+     │
      ├─ deploy.yml ────────────── zola build and deploy
      │
      └─ bluesky-post.yml ──────── Post new articles to Bluesky
@@ -67,7 +69,7 @@ See `docs/repository-workflow.md` for the full rules.
 | Workflow | Trigger | Purpose |
 |----------|---------|---------|
 | **Textlint** | Push/PR to main | Lint all Markdown files (required check) |
-| **OGP Check** | PR to main | Check `ogp.webp` and `social_media_card` for all articles (required check) |
+| **OGP Check** | Push/PR to main | Check `ogp.webp` and `social_media_card` for all articles (required check) |
 | **Deploy** | Push to main | Build and deploy |
 | **Bluesky Post** | Push to main (`content/**`) | Post new articles to Bluesky |
 | **Zola Check** | Monthly (15th) / Manual | Validate external links |

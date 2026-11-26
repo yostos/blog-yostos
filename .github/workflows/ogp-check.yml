@@ -5,8 +5,14 @@ name: OGP Check
 #
 # Every article must have an OGP image, so this checks all articles,
 # not only the ones changed in the PR.
+#
+# It also runs on push to main. The Ruleset does not require branches to be
+# up to date before merging, so the merged state can differ from what the
+# PR checked.
 
 on:
+  push:
+    branches: [main]
   pull_request:
     branches: [main]
 
