@@ -19,7 +19,7 @@ Execute in order. Stop and report if any step fails.
 - Run `git branch --show-current`
 - If on `main`: create a branch with `git switch -c content/<slug>`
   (`<slug>` is the article directory name)
-- If already on a branch (including a draft branch created by automation): stay on it
+- If already on a branch (e.g. a branch that `@claude` pushed): stay on it
 
 ### 1. Run /article-review
 
@@ -48,10 +48,11 @@ fi
 Check only the target article's links with `lychee` (do NOT run site-wide `zola check`, it scans ~350 articles and is too slow):
 
 ```bash
-lychee -s https -s http -u "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36" content/blog/YYYY/MM/slug/index.md
+lychee -s https -s http --exclude 'gnu\.org' -u "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36" content/blog/YYYY/MM/slug/index.md
 ```
 
 - `-s https -s http` restricts checking to external URLs and skips Zola's internal `@/...` link syntax (lychee misinterprets these as local file paths and reports false-positive errors)
+- `--exclude 'gnu\.org'` skips gnu.org, which times out under lychee. Do not recheck it with curl
 - `-u` sends a browser User-Agent. The default (`lychee/x.y.z`) is rejected as a bot by several sites, producing 403 false positives
 - Verify internal `@/...` references separately by confirming the target file exists, e.g. `test -f content/blog/YYYY/MM/other-slug/index.md`
 - Fix any real errors before continuing
@@ -69,7 +70,7 @@ lychee -s https -s http -u "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) Appl
     (article changes use `content:`, e.g. `content: add <topic> article`)
   - The title becomes the commit title on `main`
 - Wait for the required checks: `gh pr checks --watch`
-  - If `textlint`, `ogp-check`, or `zola-build` fails, fix the errors, commit, push, and wait again
+  - If `textlint`, `ogp-check`, `zola-build`, or `cover-check` fails, fix the errors, commit, push, and wait again
 - Merge and clean up. Goal: once the merge succeeds, the local repo is on an up-to-date
   `main` and the merged branch is gone
   1. `gh pr merge --squash --delete-branch`. If the merge fails, stop here and report
