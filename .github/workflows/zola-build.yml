@@ -1,0 +1,35 @@
+name: Zola Build
+
+# Required status check for main. Do not add a `paths:` filter:
+# a required check whose workflow never starts stays pending and blocks the merge.
+#
+# Without this check, a broken build is found only after the merge, when
+# deploy.yml fails. It does not run on push to main because deploy.yml runs
+# the same build there.
+#
+# `zola check` is not used: it also checks external links, which is slow and
+# fails when other sites are down.
+
+on:
+  pull_request:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  zola-build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          submodules: recursive
+
+      # Keep the version in sync with deploy.yml.
+      - name: Setup Zola
+        uses: taiki-e/install-action@v2
+        with:
+          tool: zola@0.23.6
+
+      - name: Build
+        run: zola build --output-dir "$RUNNER_TEMP/public"

@@ -69,7 +69,7 @@ lychee -s https -s http -u "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) Appl
     (article changes use `content:`, e.g. `content: add <topic> article`)
   - The title becomes the commit title on `main`
 - Wait for the required checks: `gh pr checks --watch`
-  - If `textlint` or `ogp-check` fails, fix the errors, commit, push, and wait again
+  - If `textlint`, `ogp-check`, or `zola-build` fails, fix the errors, commit, push, and wait again
 - Merge and clean up. Goal: once the merge succeeds, the local repo is on an up-to-date
   `main` and the merged branch is gone
   1. `gh pr merge --squash --delete-branch`. If the merge fails, stop here and report

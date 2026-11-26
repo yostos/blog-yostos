@@ -73,10 +73,10 @@ Issue で `@claude` に頼んだ作業は GitHub Actions で動き、リポジ�
 
 完了条件
 
-- [ ] 記事を含まない PR でもジョブが起動し、成功する
-- [ ] `{% raw %}` を外すなどしてビルドを壊した試験の PR で、ジョブが失敗し、マージできない
-- [ ] Ruleset の必須チェックに加わっている（`gh api repos/yostos/blog-yostos/rules/branches/main` で確認）
-- [ ] 上の文書とコマンドが更新されている
+- [x] 記事を含まない PR でもジョブが起動し、成功する
+- [x] `{% raw %}` を外すなどしてビルドを壊した試験の PR で、ジョブが失敗し、マージできない
+- [x] Ruleset の必須チェックに加わっている（`gh api repos/yostos/blog-yostos/rules/branches/main` で確認）
+- [x] 上の文書とコマンドが更新されている
 
 #### 作業 1-3: PR で追加された記事のカバー画像を検査する
 
@@ -393,3 +393,14 @@ Claude は動かず、Secrets も使われない。失敗した実行が Actions
 `claude-code-action` の `bot_id` の既定値は `41898282` で、これは `github-actions[bot]` のユーザー ID である。
 `gh api 'users/claude[bot]'` で `claude[bot]` の ID が `209825114` であることを確かめ、`claude.yml` に `bot_id` と `bot_name` を指定した。
 完了条件は、次に `@claude` が commit したときに確かめる。
+
+### 2026-11-26 作業 1-2: `zola build` を PR の必須チェックに加える
+
+PR #23 で `.github/workflows/zola-build.yml` を作った。Zola は `deploy.yml` と同じ 0.23.6 で、出力先は `$RUNNER_TEMP/public` にした。
+あわせて `docs/repository-workflow.md`、README、`/article-publish` の手順 5 を直した。
+
+- PR #23（記事を含まない PR）で `zola-build` が起動し、15秒で成功した
+- オーナーの承認を得て、Ruleset `protect-main` の必須チェックに `zola-build` を加えた。
+  `gh api repos/yostos/blog-yostos/rules/branches/main` で、必須チェックが `textlint`、`ogp-check`、`zola-build` の3つであることを確かめた
+- 試験の PR #24 で、`image.html` に存在しない関数の呼び出しを入れた。`zola-build` が
+  `Unknown function this_function_does_not_exist` で失敗し、PR の状態が `BLOCKED` になった。PR #24 はマージせずに閉じた
