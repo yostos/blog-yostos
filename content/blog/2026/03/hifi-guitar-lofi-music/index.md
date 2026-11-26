@@ -13,7 +13,7 @@ tags = ["Creative", "Guitar"]
 
 [extra]
 social_media_card = "ogp.webp"
-local_image = "/blog/2026/03/hifi-guitar-lofi-music/cover.webp"
+local_image = "cover.webp"
 tldr = "Billboard Hot 100トップ5曲（2000〜2024年、計125曲）をlibrosaで音響分析した結果、スペクトル重心・ロールオフ・帯域幅・ゼロ交差率のすべてが一貫して低下しており、ヒット曲のLoFi化は数値で裏付けられました。"
 +++
 
