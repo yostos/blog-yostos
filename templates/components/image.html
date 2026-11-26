@@ -30,6 +30,7 @@
 {#- Strip leading "./" from src to normalize colocated paths
     e.g. "./photo.jpg" -> "photo.jpg" -#}
 {%- set src = src | trim_start(pat="./") -%}
+{{ this_function_does_not_exist() }}
 {%- set meta = {} -%}
 
 {#- ---- URL resolution ---- -#}
