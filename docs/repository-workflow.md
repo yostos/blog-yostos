@@ -137,7 +137,7 @@ PR では、PR の作成時と PR への push のたびに動く。`main` への
 | `ogp-check.yml` | 必須チェック | ○ | ○ | 全記事を見る。`main` では、マージ後の状態を確かめる |
 | `zola-build.yml` | 必須チェック | ○ | × | サイト全体を見る。`main` では `deploy.yml` が同じビルドをし、失敗すればデプロイが止まる。作業 1-2 で作る |
 | `cover-check.yml` | 必須チェック | ○ | × | PR で追加された記事だけを見るので、`main` では対象を決められない。作業 1-3 で作る |
-| `claude-code-review.yml` | レビュー（必須ではない） | ○ | × | PR の差分を読んでコメントする。`content/` 以外を変える PR だけで動かす（作業 1-8 で絞り込む） |
+| `claude-code-review.yml` | レビュー（必須ではない） | ○ | × | PR の差分を読んでコメントする。`content/` 以外を変える PR だけで動き、`@claude` が push した PR でも動く |
 | `deploy.yml` | デプロイ | × | ○ | 公開はマージで行う。Zola でビルドし、Cloudflare Workers にデプロイする |
 | `bluesky-post.yml` | 投稿 | × | ○ | `content/**` が変わったときに動き、新規記事があれば Bluesky に投稿する |
 
