@@ -28,14 +28,14 @@ If issues are found, stop and fix them before continuing.
 
 ### 2. Regenerate OGP Image
 
-- If the article has no `ogp.webp` yet (a new article), skip the Trash step below and
-  only run `npm run ogp`. `trash` fails on a missing file and would stop this procedure
-- Otherwise, move the existing OGP image to the Trash. Write out the single target file in full
-  (the file specified by social_media_card in frontmatter). Never pass a wildcard or a
-  directory, and never regenerate by deleting more than the one article's image:
+- Move the existing OGP image to the Trash, only if it exists. A new article has no
+  `ogp.webp` yet, and `trash` fails on a missing file, which would stop this procedure.
+  Write out the single target file in full (the file specified by social_media_card in
+  frontmatter), in both places. Never pass a wildcard or a directory, and never regenerate
+  by deleting more than the one article's image:
 
 ```bash
-trash content/blog/YYYY/MM/slug/ogp.webp
+test -f content/blog/YYYY/MM/slug/ogp.webp && trash content/blog/YYYY/MM/slug/ogp.webp
 ```
 
 - Do NOT use `rm`. `trash` is reversible, so a mistaken target can be recovered
