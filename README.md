@@ -52,7 +52,9 @@ See `docs/repository-workflow.md` for the full rules.
      │
      ├─ textlint.yml ──────────── Text quality check
      │
-     └─ ogp-check.yml ─────────── ogp.webp exists for all articles
+     ├─ ogp-check.yml ─────────── ogp.webp exists for all articles
+     │
+     └─ zola-build.yml ────────── The site builds
             │
             ▼ squash merge
 [main]
@@ -70,6 +72,7 @@ See `docs/repository-workflow.md` for the full rules.
 |----------|---------|---------|
 | **Textlint** | Push/PR to main | Lint all Markdown files (required check) |
 | **OGP Check** | Push/PR to main | Check `ogp.webp` and `social_media_card` for all articles (required check) |
+| **Zola Build** | PR to main | Build the site with `zola build` (required check) |
 | **Deploy** | Push to main | Build and deploy |
 | **Bluesky Post** | Push to main (`content/**`) | Post new articles to Bluesky |
 | **Zola Check** | Monthly (15th) / Manual | Validate external links |

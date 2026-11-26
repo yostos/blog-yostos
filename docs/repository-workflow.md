@@ -54,6 +54,7 @@ Issue で `@claude` に依頼した作業のいずれにも同じルールを適
 |------|------|
 | `textlint.yml` | 記事全体を textlint で検査する。PR を作った人や push した人が誰でも検査する |
 | `ogp-check.yml` | `content/blog/` のすべての記事に `ogp.webp` があり、frontmatter に `social_media_card = "ogp.webp"` があるかを確かめる |
+| `zola-build.yml` | `zola build` でサイト全体をビルドできるかを確かめる。出力は一時ディレクトリに捨てる。外部リンクも確かめる `zola check` は使わない |
 
 検査の対象は、PR で変更した記事に絞らない。
 すべての記事に OGP 画像があることが要件であり、全記事を調べても数秒で終わるためである。
@@ -108,7 +109,7 @@ GitHub の Ruleset で `main` に次の制約をかける。
 | 対象 | `main` ブランチ |
 | マージ前の PR | 必須 |
 | 必要な承認数 | 0 |
-| 必須のステータスチェック | `textlint.yml`、`ogp-check.yml` |
+| 必須のステータスチェック | `textlint.yml`、`ogp-check.yml`、`zola-build.yml` |
 | バイパスを許可する人 | なし（管理者も含む） |
 | force push | 禁止 |
 | ブランチの削除 | 禁止 |
@@ -135,7 +136,7 @@ PR では、PR の作成時と PR への push のたびに動く。`main` への
 |------|------|:---:|:---:|------|
 | `textlint.yml` | 必須チェック | ○ | ○ | 全記事を見る。`main` では、マージ後の状態を確かめる |
 | `ogp-check.yml` | 必須チェック | ○ | ○ | 全記事を見る。`main` では、マージ後の状態を確かめる |
-| `zola-build.yml` | 必須チェック | ○ | × | サイト全体を見る。`main` では `deploy.yml` が同じビルドをし、失敗すればデプロイが止まる。作業 1-2 で作る |
+| `zola-build.yml` | 必須チェック | ○ | × | サイト全体を見る。`main` では `deploy.yml` が同じビルドをし、失敗すればデプロイが止まる |
 | `cover-check.yml` | 必須チェック | ○ | × | PR で追加された記事だけを見るので、`main` では対象を決められない。作業 1-3 で作る |
 | `claude-code-review.yml` | レビュー（必須ではない） | ○ | × | PR の差分を読んでコメントする。`content/` 以外を変える PR だけで動き、`@claude` が push した PR でも動く |
 | `deploy.yml` | デプロイ | × | ○ | 公開はマージで行う。Zola でビルドし、Cloudflare Workers にデプロイする |
