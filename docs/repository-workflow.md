@@ -169,4 +169,5 @@ Issue は、ブログのデザインや機能の修正に使う。記事の修�
 - 書き込み権限のない人が `@claude` を書いても、Claude は作業しない。`claude-code-action` が依頼者の権限を確かめ、
   write か admin でなければエラーで終える。ワークフローの実行自体は始まるので、失敗した実行が Actions に残る
   （2026-11-26 にソースで確認。`docs/draft-automation-log.md` の作業 1-9）
-- `@claude` の commit は `claude[bot]` の commit として表示される
+- `claude.yml` で `bot_id` に `claude[bot]` のユーザー ID を指定し、`@claude` の commit が `claude[bot]` の commit として表示されるようにした。
+  表示はまだ確かめていない（`docs/draft-automation-log.md` の作業 1-10）
