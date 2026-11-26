@@ -17,7 +17,9 @@ GitHub の設定（Ruleset、App）を変えるときは、その都度オーナ
 
 作業は次の順に進め、作業ごとに1つの PR にする（2026-11-26 にオーナーが承認）。
 必須チェックを加える 1-2 と 1-3 で、失敗させる試験の PR をほかの変更と混ぜないためである。
-PR の作成から、検査が通った後の squash merge までは Claude が行う。
+PR の作成は Claude が行う。マージは、PR ごとにオーナーの承認を得てから行う。
+当初は検査が通ればマージまで Claude が行うとしていたが、サイトの出力を変えない PR を立て続けにマージして
+デプロイを6回余分に起こしたため、2026-11-26 にオーナーが承認なしのマージを禁止した。
 Ruleset の変更（1-2、1-3）とメモリの削除（1-1）は、そのつどオーナーの承認を得る。
 
 | 順序 | PR | 作業 |
@@ -193,8 +195,8 @@ ADR-0007 から未決定だった扱いを、2026-11-26 にオーナーと決め
 
 完了条件
 
-- [ ] 書き込み権限のない人の依頼で起動しないことが、根拠とともにこの文書の「記録」に書かれている
-- [ ] `docs/repository-workflow.md`「Issue の使い方」の「まだ確かめていない」という記述が直っている
+- [x] 書き込み権限のない人の依頼で起動しないことが、根拠とともにこの文書の「記録」に書かれている
+- [x] `docs/repository-workflow.md`「Issue の使い方」の「まだ確かめていない」という記述が直っている
 
 #### 作業 1-10: `@claude` の commit を `claude[bot]` として表示する（優先度は低い）
 
@@ -355,3 +357,39 @@ PR #17 は閉じ、作業 1-7 を「`ogp-check.yml` を `main` への push で�
 
 PR #20 で `ogp-check.yml` に `push: main` を加え、README の表と図、`docs/repository-workflow.md` の表を直した。
 マージ後の `main`（`92370ea`）で `OGP Check` が動き、成功した。`Textlint` も引き続き `main` で動いている。
+
+### 2026-11-26 作業 1-8: `claude-code-review.yml` の絞り込み
+
+PR #21 で `paths-ignore: content/**` と `allowed_bots: claude` を加えた。
+`allowed_bots` は bot 名の末尾の `[bot]` を無視して比べるので、`claude` と `claude[bot]` のどちらでも同じである（`src/github/validation/actor.ts`）。
+
+PR #21 自身では、`claude-review` は成功と表示されたがレビューは行われなかった。`claude-code-action` は、
+ワークフローのファイルがデフォルトブランチのものと一致しないと実行を飛ばす
+（`Skipping action due to workflow validation`）。変更はマージ後の PR から効くので、完了条件は後の PR で確かめる。
+
+### 2026-11-26 作業 1-5: `/article-publish` の手順 2
+
+`trash` は存在しないファイルを渡すと終了コード 5 で失敗することを確かめた。
+`ogp.webp` がない新しい記事では `trash` を飛ばし、`npm run ogp` だけを実行する手順にした。
+完了条件は、次に新しい記事を公開するときに確かめる。
+
+### 2026-11-26 作業 1-9: 書き込み権限のない人の `@claude`
+
+`claude-code-action` のソースで確かめた。`claude.yml` は `@v1` を使っており、確認した時点の `v1` タグは commit `c148296601107048fe24605a3dfb32a317a6f4c7` を指していた。
+`v1` は新しい版が出ると指す先が変わるので、見直すときはこの commit のソースを読む。`claude.yml` は変えない。
+
+- `src/entrypoints/run.ts` は、Issue と PR のイベントで `checkWritePermissions` を呼び、
+  権限がなければ `Actor does not have write permissions to the repository` で終える
+- `src/github/validation/permissions.ts` は、依頼者（コメントや Issue を書いた人）の権限を
+  collaborator の API で調べ、`admin` か `write` のときだけ通す
+- この確認を外す `allowed_non_write_users` は、`claude.yml` で指定していない
+- bot の依頼は、別の確認（`checkHumanActor`）で `allowed_bots` にないものが拒否される。`claude.yml` は `allowed_bots` を指定していない
+
+ワークフローの起動条件は `@claude` を含むかだけなので、第三者が書いた場合も実行は始まり、権限の確認で失敗して終わる。
+Claude は動かず、Secrets も使われない。失敗した実行が Actions に残るだけなので、起動条件に作成者の条件は加えない。
+
+### 2026-11-26 作業 1-10: `@claude` の commit の表示名
+
+`claude-code-action` の `bot_id` の既定値は `41898282` で、これは `github-actions[bot]` のユーザー ID である。
+`gh api 'users/claude[bot]'` で `claude[bot]` の ID が `209825114` であることを確かめ、`claude.yml` に `bot_id` と `bot_name` を指定した。
+完了条件は、次に `@claude` が commit したときに確かめる。

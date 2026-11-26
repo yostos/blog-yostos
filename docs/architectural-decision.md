@@ -710,9 +710,9 @@ Claude が下書きを作り、Draft PR として出す仕組みを検討した�
 
 ### Known Limitations
 
-- 書き込み権限のない人が `@claude` を書いたときに Claude が起動しないかは、まだ確かめていない
-- `claude-code-action` の既定の `bot_id` は `github-actions[bot]` のものなので、`@claude` の commit は
-  GitHub の画面で `github-actions[bot]` の commit として表示される
+- 書き込み権限のない人が `@claude` を書いたときは、`claude-code-action` が権限を確かめて作業せずに終える（2026-11-26 にソースで確認）。実行自体は始まり、失敗として残る
+- `claude-code-action` の既定の `bot_id` は `github-actions[bot]` のものである。`claude.yml` で `claude[bot]` の ID を指定したが、
+  この指定を外すと、`@claude` の commit が `github-actions[bot]` の commit として表示される
 - `claude.yml` の checkout から `persist-credentials: false` を外すと、push が `github-actions[bot]` として行われ、権限不足で失敗する
 - カバー画像の検査は追加された記事だけを見るので、既存の記事から `local_image` を消しても検出しない
 - `ogp.webp` が今のタイトルとタグで作られているかは検査しない（ADR-0007 から変わらない）

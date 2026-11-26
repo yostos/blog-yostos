@@ -166,5 +166,8 @@ Issue は、ブログのデザインや機能の修正に使う。記事の修�
   `claude.yml` が起動する。`@claude` を書かない Issue は、オーナーが自分で対応する
 - `@claude` の直後に全角の括弧などを続けると、起動しないことがある。`@claude` の後には半角の空白を置く
 - Claude の変更も、ほかの変更と同じくブランチと PR を通し、必須チェックとオーナーのマージを経て反映する
-- 書き込み権限のない人が `@claude` を書いたときに Claude が起動しないかは、まだ確かめていない
-  （`docs/draft-automation-log.md` 作業 1-9）
+- 書き込み権限のない人が `@claude` を書いても、Claude は作業しない。`claude-code-action` が依頼者の権限を確かめ、
+  write か admin でなければエラーで終える。ワークフローの実行自体は始まるので、失敗した実行が Actions に残る
+  （2026-11-26 にソースで確認。`docs/draft-automation-log.md` の作業 1-9）
+- `claude.yml` で `bot_id` に `claude[bot]` のユーザー ID を指定し、`@claude` の commit が `claude[bot]` の commit として表示されるようにした。
+  表示はまだ確かめていない（`docs/draft-automation-log.md` の作業 1-10）

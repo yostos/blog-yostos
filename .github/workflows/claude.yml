@@ -40,6 +40,11 @@ jobs:
         with:
           claude_code_oauth_token: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
 
+          # Commit as claude[bot] (user ID 209825114). The default bot_id is
+          # github-actions[bot]'s, so commits showed as github-actions[bot].
+          bot_id: "209825114"
+          bot_name: "claude[bot]"
+
           # This is an optional setting that allows Claude to read CI results on PRs
           additional_permissions: |
             actions: read
