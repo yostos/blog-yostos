@@ -3,12 +3,12 @@ name: Claude Code Review
 on:
   pull_request:
     types: [opened, synchronize]
-    # Optional: Only run on specific file changes
-    # paths:
-    #   - "src/**/*.ts"
-    #   - "src/**/*.tsx"
-    #   - "src/**/*.js"
-    #   - "src/**/*.jsx"
+    # Review only PRs that change something besides articles. Article prose
+    # is reviewed locally with /article-review. A PR that changes both
+    # articles and other files still runs. This is not a required check, so
+    # the filter cannot leave a PR waiting.
+    paths-ignore:
+      - "content/**"
 
 jobs:
   claude-review:
@@ -36,6 +36,9 @@ jobs:
         uses: anthropics/claude-code-action@v1
         with:
           claude_code_oauth_token: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+          # Review PRs that @claude pushed to as well. Without this, runs
+          # started by the claude bot fail with "non-human actor".
+          allowed_bots: claude
           prompt: |
             REPO: ${{ github.repository }}
             PR NUMBER: ${{ github.event.pull_request.number }}

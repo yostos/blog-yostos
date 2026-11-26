@@ -151,9 +151,9 @@ PR の検査の後に別の PR がマージされると、実際に `main` に�
 
 完了条件
 
-- [ ] PR と、マージ後の `main` の両方で `ogp-check` が動き、成功する
-- [ ] `textlint.yml` の `push: main` が残っている
-- [ ] 上の文書が実際の動作と一致している
+- [x] PR と、マージ後の `main` の両方で `ogp-check` が動き、成功する
+- [x] `textlint.yml` の `push: main` が残っている
+- [x] 上の文書が実際の動作と一致している
 
 #### 作業 1-8: `claude-code-review.yml` を機能の変更の PR だけで動かす
 
@@ -350,3 +350,8 @@ ADR-0007 から未決定だった扱いを、オーナーと決めた。削除�
 更新されなくなることに気づいた。一般的な運用を調べる中で、`main` での実行が、PR の検査とマージ後の状態の食い違いを拾う役目を持つことが分かった。
 このリポジトリの Ruleset は `strict_required_status_checks_policy` が false で、食い違いが起こりうる。
 PR #17 は閉じ、作業 1-7 を「`ogp-check.yml` を `main` への push でも動かす」に書き換えた。
+
+### 2026-11-26 作業 1-7: `ogp-check.yml` を `main` でも動かす
+
+PR #20 で `ogp-check.yml` に `push: main` を加え、README の表と図、`docs/repository-workflow.md` の表を直した。
+マージ後の `main`（`92370ea`）で `OGP Check` が動き、成功した。`Textlint` も引き続き `main` で動いている。
