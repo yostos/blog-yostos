@@ -1,5 +1,5 @@
 #!/bin/bash
-# IndexNow: Notify Bing (and other search engines) of new/updated URLs
+# IndexNow: Notify Bing (and other search engines) of new article URLs
 # Usage: ./scripts/indexnow.sh https://codedchords.dev/posts/my-article/
 #        ./scripts/indexnow.sh --no-wait https://codedchords.dev/posts/my-article/
 
