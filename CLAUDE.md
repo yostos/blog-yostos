@@ -35,7 +35,7 @@ npm run search                   # Build pagefind search index
 npm run search:dry-run           # Preview pagefind index
 npm run lint                     # textlint (content/**/*.md)
 npm run lint:fix                 # textlint auto-fix
-bash scripts/indexnow.sh <path>  # Notify IndexNow
+bash scripts/indexnow.sh <url>   # Notify IndexNow of a new article URL
 bash scripts/generate-cover.sh   # Generate article cover image (used by article-cover skill)
 python scripts/convert-images.py # One-off migration: rewrite ![](  ) to {{< image />}}
 ```

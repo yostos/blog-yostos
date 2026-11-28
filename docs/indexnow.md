@@ -24,13 +24,13 @@ Bing Webmaster Tools 向けの IndexNow 連携。
 
 ```bash
 # 基本（デプロイ完了を待ってから送信）
-./scripts/indexnow.sh https://codedchords.dev/posts/my-article/
+./scripts/indexnow.sh https://codedchords.dev/blog/YYYY/MM/slug/
 
 # 複数URL
-./scripts/indexnow.sh https://codedchords.dev/posts/article1/ https://codedchords.dev/posts/article2/
+./scripts/indexnow.sh https://codedchords.dev/blog/YYYY/MM/slug1/ https://codedchords.dev/blog/YYYY/MM/slug2/
 
 # デプロイ済みを確認済みならポーリングをスキップ
-./scripts/indexnow.sh --no-wait https://codedchords.dev/posts/my-article/
+./scripts/indexnow.sh --no-wait https://codedchords.dev/blog/YYYY/MM/slug/
 ```
 
 ### 動作
