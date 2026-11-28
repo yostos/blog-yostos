@@ -85,7 +85,10 @@ Merging updates `main`, and the deploy workflow deploys to Cloudflare Workers.
 
 ### 6. IndexNow Notification
 
-Notify search engines of the new/updated article URL via IndexNow.
+Notify search engines of the new article URL via IndexNow.
+
+- Only new articles are notified. Skip this step for updates to existing articles,
+  including articles updated in the same PR as a new one
 
 - Determine the article URL by converting the content path directly:
   - `content/blog/YYYY/MM/slug/index.md` → `https://codedchords.dev/blog/YYYY/MM/slug/`

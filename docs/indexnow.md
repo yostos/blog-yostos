@@ -1,7 +1,7 @@
 # IndexNow
 
 Bing Webmaster Tools 向けの IndexNow 連携。
-記事公開後に検索エンジンへ新規・更新URLを即座に通知する。
+記事公開後に検索エンジンへ新規記事のURLを即座に通知する。
 
 ## 仕組み
 
@@ -10,6 +10,11 @@ Bing Webmaster Tools 向けの IndexNow 連携。
 3. Bing（および IndexNow 対応エンジン）がクロール・インデックスを実施
 
 対応検索エンジン: Bing, Yandex, Seznam, Naver
+
+## 通知する記事
+
+通知するのは新規記事だけで、既存記事の更新は通知しない。
+新規記事と同じ PR で更新した既存記事も通知しない。
 
 ## スクリプト
 
@@ -34,6 +39,9 @@ Bing Webmaster Tools 向けの IndexNow 連携。
 2. 200 応答を確認後、IndexNow API (`https://api.indexnow.org/IndexNow`) に JSON POST
 3. レスポンスコードを解釈して結果を表示
 
+固定の待ち時間はない。新規記事のURLはデプロイが終わるまで404を返すため、200 応答をデプロイ完了とみなす。
+デプロイ前から200を返す既存記事のURLは、通知の対象外なので渡さない（「通知する記事」を参照）。
+
 ### レスポンスコード
 
 | コード | 意味 |
@@ -53,7 +61,7 @@ Bing Webmaster Tools 向けの IndexNow 連携。
 ## /article-publish との連携
 
 `/article-publish` の最終ステップ（Step 6）で自動実行される。
-git push 後、デプロイ完了を待機してから IndexNow に送信する。
+PR のマージ後、デプロイ完了を待機してから IndexNow に送信する。
 
 ## 参考
 

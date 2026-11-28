@@ -1,5 +1,5 @@
 #!/bin/bash
-# IndexNow: Notify Bing (and other search engines) of new/updated URLs
+# IndexNow: Notify Bing (and other search engines) of new article URLs
 # Usage: ./scripts/indexnow.sh https://codedchords.dev/posts/my-article/
 #        ./scripts/indexnow.sh --no-wait https://codedchords.dev/posts/my-article/
 
@@ -49,8 +49,6 @@ wait_for_url() {
 
 # Poll each URL before submitting
 if [ "$no_wait" = false ]; then
-  echo "Waiting 180s for GitHub Actions deploy to complete..."
-  sleep 180
   for url in "${urls[@]}"; do
     wait_for_url "$url"
   done
